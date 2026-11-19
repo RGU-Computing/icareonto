@@ -76,7 +76,7 @@
       "Source record ID": "INV-Spain-R4",
       "Source reference": "MAYA_Health_Literacy_Resource_Inventory.xlsx — Spain!4",
       "Suggested support needs": "",
-      "To-do": "Check if this is a more direct link - https://www.seom.org/images/Infografia_pacientes_Ejercicio_y_cancer.pdf",
+      "To-do": "",
       "URL check date": "46327",
       "URL check result": "Reachable",
       "_row": 7
@@ -415,9 +415,9 @@
       "To-do": "",
       "URL check date": "46327",
       "URL check result": "Reachable",
-      "_row": 16
+      "_row": 15
     },
-    "source_row": 16
+    "source_row": 15
   },
   {
     "id": "MAYA-EDU-0018",
@@ -457,9 +457,9 @@
       "To-do": "Check publication/update date",
       "URL check date": "46327",
       "URL check result": "Reachable",
-      "_row": 17
+      "_row": 16
     },
-    "source_row": 17
+    "source_row": 16
   },
   {
     "id": "MAYA-EDU-0019",
@@ -499,9 +499,9 @@
       "To-do": "Check publication/update date",
       "URL check date": "46327",
       "URL check result": "Reachable",
-      "_row": 18
+      "_row": 17
     },
-    "source_row": 18
+    "source_row": 17
   },
   {
     "id": "MAYA-EDU-0020",
@@ -541,9 +541,9 @@
       "To-do": "Check publication/update date",
       "URL check date": "46327",
       "URL check result": "Reachable",
-      "_row": 19
+      "_row": 18
     },
-    "source_row": 19
+    "source_row": 18
   },
   {
     "id": "MAYA-EDU-0021",
@@ -583,9 +583,9 @@
       "To-do": "Check publication/update date",
       "URL check date": "46327",
       "URL check result": "Reachable",
-      "_row": 20
+      "_row": 19
     },
-    "source_row": 20
+    "source_row": 19
   },
   {
     "id": "MAYA-EDU-0023",
@@ -625,9 +625,9 @@
       "To-do": "Check publication/update date",
       "URL check date": "46327",
       "URL check result": "Reachable",
-      "_row": 21
+      "_row": 20
     },
-    "source_row": 21
+    "source_row": 20
   },
   {
     "id": "MAYA-EDU-0030",
@@ -667,9 +667,9 @@
       "To-do": "",
       "URL check date": "46327",
       "URL check result": "Reachable",
-      "_row": 22
+      "_row": 21
     },
-    "source_row": 22
+    "source_row": 21
   },
   {
     "id": "MAYA-EDU-0077a",
@@ -709,9 +709,9 @@
       "To-do": "",
       "URL check date": "46344",
       "URL check result": "Reachable",
-      "_row": 23
+      "_row": 22
     },
-    "source_row": 23
+    "source_row": 22
   },
   {
     "id": "MAYA-EDU-0077b",
@@ -751,9 +751,9 @@
       "To-do": "",
       "URL check date": "46344",
       "URL check result": "Reachable",
-      "_row": 24
+      "_row": 23
     },
-    "source_row": 24
+    "source_row": 23
   },
   {
     "id": "MAYA-EDU-0077c",
@@ -793,9 +793,9 @@
       "To-do": "",
       "URL check date": "46344",
       "URL check result": "Reachable",
-      "_row": 25
+      "_row": 24
     },
-    "source_row": 25
+    "source_row": 24
   },
   {
     "id": "MAYA-EDU-0170",
@@ -835,9 +835,9 @@
       "To-do": "",
       "URL check date": "46344",
       "URL check result": "Reachable",
-      "_row": 26
+      "_row": 25
     },
-    "source_row": 26
+    "source_row": 25
   },
   {
     "id": "MAYA-EDU-0171",
@@ -877,9 +877,9 @@
       "To-do": "",
       "URL check date": "46344",
       "URL check result": "Reachable",
-      "_row": 27
+      "_row": 26
     },
-    "source_row": 27
+    "source_row": 26
   },
   {
     "id": "MAYA-EDU-0172",
@@ -919,9 +919,9 @@
       "To-do": "",
       "URL check date": "46344",
       "URL check result": "Reachable",
-      "_row": 28
+      "_row": 27
     },
-    "source_row": 28
+    "source_row": 27
   },
   {
     "id": "MAYA-EDU-0173",
@@ -961,9 +961,9 @@
       "To-do": "",
       "URL check date": "46344",
       "URL check result": "Reachable",
-      "_row": 29
+      "_row": 28
     },
-    "source_row": 29
+    "source_row": 28
   },
   {
     "id": "MAYA-EDU-0099",
@@ -1003,9 +1003,9 @@
       "To-do": "",
       "URL check date": "46344",
       "URL check result": "Reachable",
-      "_row": 30
+      "_row": 29
     },
-    "source_row": 30
+    "source_row": 29
   },
   {
     "id": "MAYA-EDU-0167a",
@@ -1045,9 +1045,9 @@
       "To-do": "",
       "URL check date": "46344",
       "URL check result": "Reachable",
-      "_row": 31
+      "_row": 30
     },
-    "source_row": 31
+    "source_row": 30
   },
   {
     "id": "MAYA-EDU-0061",
@@ -1087,9 +1087,9 @@
       "To-do": "Confirm publication/update date",
       "URL check date": "46344",
       "URL check result": "Reachable",
-      "_row": 32
+      "_row": 31
     },
-    "source_row": 32
+    "source_row": 31
   },
   {
     "id": "MAYA-EDU-0046",
@@ -1129,9 +1129,9 @@
       "To-do": "",
       "URL check date": "46344",
       "URL check result": "Reachable",
-      "_row": 33
+      "_row": 32
     },
-    "source_row": 33
+    "source_row": 32
   },
   {
     "id": "MAYA-EDU-0174",
@@ -1171,9 +1171,9 @@
       "To-do": "",
       "URL check date": "46344",
       "URL check result": "Reachable",
-      "_row": 34
+      "_row": 33
     },
-    "source_row": 34
+    "source_row": 33
   },
   {
     "id": "MAYA-EDU-0175",
@@ -1213,9 +1213,9 @@
       "To-do": "",
       "URL check date": "46344",
       "URL check result": "Reachable",
-      "_row": 35
+      "_row": 34
     },
-    "source_row": 35
+    "source_row": 34
   },
   {
     "id": "MAYA-EDU-0176",
@@ -1255,9 +1255,9 @@
       "To-do": "",
       "URL check date": "46344",
       "URL check result": "Reachable",
-      "_row": 36
+      "_row": 35
     },
-    "source_row": 36
+    "source_row": 35
   },
   {
     "id": "MAYA-EDU-0177",
@@ -1297,8 +1297,8 @@
       "To-do": "",
       "URL check date": "46344",
       "URL check result": "Reachable",
-      "_row": 37
+      "_row": 36
     },
-    "source_row": 37
+    "source_row": 36
   }
 ]

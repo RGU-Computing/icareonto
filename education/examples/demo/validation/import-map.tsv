@@ -7,10 +7,10 @@ http://maya-project.eu/icareonto/clinical-profile	../../../serialisation/modules
 http://maya-project.eu/icareonto/core	../../../serialisation/modules/core.ttl
 http://maya-project.eu/icareonto/cv-risk	../../../serialisation/modules/cv-risk.ttl
 http://maya-project.eu/icareonto/dialogue	../../../serialisation/modules/dialogue.ttl
-http://maya-project.eu/icareonto/education/dataset	../../data/catalogue/releases/7508bbc05b9401585a547578/dataset.ttl
+http://maya-project.eu/icareonto/education/dataset	../../data/catalogue/releases/0f15f7278a850b7d772783e5/dataset.ttl
 http://maya-project.eu/icareonto/education/demo/graph	participant-education.ttl
-http://maya-project.eu/icareonto/education/graphs/activities	../../data/catalogue/releases/7508bbc05b9401585a547578/activity-templates.ttl
-http://maya-project.eu/icareonto/education/graphs/resources	../../data/catalogue/releases/7508bbc05b9401585a547578/catalogue.ttl
+http://maya-project.eu/icareonto/education/graphs/activities	../../data/catalogue/releases/0f15f7278a850b7d772783e5/activity-templates.ttl
+http://maya-project.eu/icareonto/education/graphs/resources	../../data/catalogue/releases/0f15f7278a850b7d772783e5/catalogue.ttl
 http://maya-project.eu/icareonto/exercise	../../../serialisation/modules/exercise.ttl
 http://maya-project.eu/icareonto/healthhub-service	../../../serialisation/modules/healthhub-service.ttl
 http://maya-project.eu/icareonto/imports/prov-reference	../../../serialisation/imports/prov-reference.ttl

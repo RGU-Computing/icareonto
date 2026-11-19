@@ -18,6 +18,9 @@
   Spanish and English.
 - Refreshed catalogue exports, source integrity metadata, the selected
   educational example and associated validation reports.
+- Removed the unapproved row from the public source worksheet and
+  refreshed curation provenance after clearing a completed resource to-do;
+  the 31 published resources and their coverage are unchanged.
 - Refreshed ontology fingerprints and dependent catalogue and demonstration
   assets after adding licence metadata; the technical version remains
   `0.1.0-draft`.
