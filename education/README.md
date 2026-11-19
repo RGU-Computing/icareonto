@@ -1,6 +1,6 @@
 # Education Resource Selector
 
-This workflow reads the reviewed resource worksheet and publishes ontology-based metadata, resource-selection results and three draft educational activity templates. The current collection has **16 approved, complete resources**. MAYA-EDU-0014 is on hold and excluded. The workbook is the curation input; the generated JSON and RDF can be used without Excel or the source workbook at runtime.
+This workflow reads the reviewed resource worksheet and publishes ontology-based metadata, resource-selection results and three draft educational activity templates. The current collection has **31 approved, complete resources** across Spanish (9), English (7), German (5), Italian (4), Polish (3) and Portuguese (3). MAYA-EDU-0014 is on hold and excluded. The workbook is the curation input; the generated JSON and RDF can be used without Excel or the source workbook at runtime.
 
 The [tool overview](../TOOLS.md) describes the selector's role and its relationship to the other components.
 

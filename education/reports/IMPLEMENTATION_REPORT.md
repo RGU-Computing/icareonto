@@ -1,10 +1,10 @@
 # Initial MAYA educational resource workflow
 
-Implemented and checked on 3 November 2026. This package connects the reviewed educational-resource catalogue to ontology-based selection and draft learning activities. It is an offline, reusable workflow for subsequent Health Hub and avatar integration.
+Initially implemented and checked on 3 November 2026; the packaged catalogue and selected example were refreshed on 18 November 2026. This package connects the reviewed educational-resource catalogue to ontology-based selection and draft learning activities. It is an offline, reusable workflow for subsequent Health Hub and avatar integration.
 
 ## Current collection and ontology
 
-The release contains **16 resources** marked both Approved and Complete in the saved Release resources worksheet. MAYA-EDU-0014 remains excluded because it is On hold and To complete. Approved resources with verified registration requirements remain eligible, with their access conditions exposed to the delivery component.
+The release contains **31 resources** marked both Approved and Complete in the saved Release resources worksheet: nine Spanish, seven English, five German, four Italian, three Polish and three Portuguese. The 18 November update adds 15 resources to the earlier 16-resource catalogue. MAYA-EDU-0014 remains excluded because it is On hold and To complete. Approved resources with verified registration requirements remain eligible, with their access conditions exposed to the delivery component.
 
 The ontology was refreshed from `icareonto_review_workbook_v021126.xlsx`, retaining version `0.1.0-draft`. It contains 17 modules, 283 classes, 284 object properties, 137 data properties, **304 controlled values** and 62 schemes. The knowledge-resource module now includes DigitalHealthPrivacyAndTrust and MentalHealthAndEmotionalWellbeing and the revised topic definitions. Comparing module RDF against the previous package found changes only in knowledge-resource.
 
@@ -21,6 +21,8 @@ Selection requires matching audience, journey stage, language, at least one iden
 The fictional post-treatment cardiovascular example selects **MAYA-EDU-0004** for an identified comprehension need and a Spanish language preference. Its RDF links a fictional participant and needs-identification event to a draft care plan, goal and HealthLiteracyIntervention using the real resource metadata. The English nutrition request selects **MAYA-EDU-0023** and exposes its registration requirement. These examples do not assert delivered interventions, completed learning or improved literacy.
 
 ## Validation
+
+Catalogue graph validation, the 40 educational workflow checks and the selected educational example's OWLAPI/HermiT validation were repeated for the 18 November refresh. Ontology reconciliation and CQ results below refer to the existing, unchanged ontology baseline.
 
 | Validation activity | Result |
 |---|---|

@@ -1,0 +1,15 @@
+{
+  "files": {
+    "activity-templates.ttl": "eaa7d4bd8083dc96b6251e68dc4494e2897ec770f1ee3090970396004ba8f571",
+    "catalog-v001.xml": "5b58d9114d768b59e2842b6625ba238511ac429e18cd5aca3e1f269b7e051029",
+    "catalogue.json": "b1489a21118c1ccb47fac1027c06afce4adb6cddfb6c17be32e00cf5126fd319",
+    "catalogue.ttl": "742adbf9c27bb8f846997afe483296c1540e9d5abb0bea4ddfc4c8e330e134a0",
+    "dataset.trig": "944f2b49eb236d078f72bb253ac4c622faa90bae64b399eddda7719e42948ef7",
+    "dataset.ttl": "a0a56978df419b4e9435dd36905345a75b8d0a0170d29e4ca3e2651d06947ea0",
+    "validation/build-report.json": "fadd842246249545798d045b04a140a06c31dd3a7077596a656551c823fcb41b",
+    "validation/import-map.tsv": "44b40052a035255cbe0833c9a36cc18037330e51b22197d5899c097d81f563b6",
+    "validation/shacl-report.ttl": "4a53a3befd9bcdb7273ef3d6e47a83be519927771faee49ef0d2a44ee23be2be",
+    "validation/source-records.json": "60f676477aa247a14473db72e10cb606b21552cbb08ecd1dd6147caa24418a24"
+  },
+  "release_id": "3aad17371b1650d7262664e8"
+}

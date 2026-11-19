@@ -1,3 +1,12 @@
+## [Unreleased]
+
+### Changed
+
+- Expanded the reviewed educational catalogue from 16 to 31 resources,
+  adding German, Italian, Polish and Portuguese coverage alongside
+  Spanish and English.
+- Refreshed catalogue exports, source integrity metadata, the selected
+  educational example and associated validation reports.
 
 ## [0.1.0-draft] – 2026-11-06
 

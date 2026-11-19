@@ -27,7 +27,15 @@
         <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0019>,
         <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0020>,
         <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0021>,
-        <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0030> .
+        <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0030>,
+        <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0046>,
+        <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0077a>,
+        <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0077b>,
+        <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0077c>,
+        <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0099>,
+        <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0167a>,
+        <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0170>,
+        <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0177> .
 
 <http://maya-project.eu/icareonto/education/activity-templates/EDU-CV-FOLLOWUP> a icare:EducationActivity,
         icare:HealthLiteracyIntervention,
@@ -46,7 +54,10 @@
         icare:InformationComprehensionSupportNeed ;
     icare:healthLiteracyInterventionUsesResource <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0004>,
         <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0017>,
-        <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0018> .
+        <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0018>,
+        <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0077a>,
+        <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0077b>,
+        <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0077c> .
 
 <http://maya-project.eu/icareonto/education/activity-templates/EDU-HEALTHY-CHOICES> a icare:EducationActivity,
         icare:HealthLiteracyIntervention,
@@ -66,7 +77,15 @@
     icare:healthLiteracyInterventionUsesResource <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0005>,
         <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0007>,
         <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0008>,
-        <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0023> .
+        <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0023>,
+        <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0046>,
+        <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0061>,
+        <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0077a>,
+        <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0077b>,
+        <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0077c>,
+        <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0167a>,
+        <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0170>,
+        <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0176> .
 
 <http://maya-project.eu/icareonto/education/graphs/activities> a owl:Ontology ;
     rdfs:label "MAYA draft educational activity templates"@en ;

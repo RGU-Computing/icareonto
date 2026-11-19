@@ -7,7 +7,10 @@
       "candidate_resource_ids": [
         "MAYA-EDU-0004",
         "MAYA-EDU-0017",
-        "MAYA-EDU-0018"
+        "MAYA-EDU-0018",
+        "MAYA-EDU-0077a",
+        "MAYA-EDU-0077b",
+        "MAYA-EDU-0077c"
       ],
       "id": "EDU-CV-FOLLOWUP",
       "iri": "http://maya-project.eu/icareonto/education/activity-templates/EDU-CV-FOLLOWUP",
@@ -43,7 +46,15 @@
         "MAYA-EDU-0005",
         "MAYA-EDU-0007",
         "MAYA-EDU-0008",
-        "MAYA-EDU-0023"
+        "MAYA-EDU-0023",
+        "MAYA-EDU-0046",
+        "MAYA-EDU-0061",
+        "MAYA-EDU-0077a",
+        "MAYA-EDU-0077b",
+        "MAYA-EDU-0077c",
+        "MAYA-EDU-0167a",
+        "MAYA-EDU-0170",
+        "MAYA-EDU-0176"
       ],
       "id": "EDU-HEALTHY-CHOICES",
       "iri": "http://maya-project.eu/icareonto/education/activity-templates/EDU-HEALTHY-CHOICES",
@@ -84,7 +95,15 @@
         "MAYA-EDU-0019",
         "MAYA-EDU-0020",
         "MAYA-EDU-0021",
-        "MAYA-EDU-0030"
+        "MAYA-EDU-0030",
+        "MAYA-EDU-0046",
+        "MAYA-EDU-0077a",
+        "MAYA-EDU-0077b",
+        "MAYA-EDU-0077c",
+        "MAYA-EDU-0099",
+        "MAYA-EDU-0167a",
+        "MAYA-EDU-0170",
+        "MAYA-EDU-0177"
       ],
       "id": "EDU-AFTER-TREATMENT",
       "iri": "http://maya-project.eu/icareonto/education/activity-templates/EDU-AFTER-TREATMENT",
@@ -915,6 +934,802 @@
         "http://maya-project.eu/icareonto/MentalHealthAndEmotionalWellbeing"
       ],
       "url": "https://www.macmillan.org.uk/cancer-information-and-support/get-help/teenagers-and-young-adults"
+    },
+    {
+      "access_conditions": "Public",
+      "accessibility": [],
+      "applicability_notes": "Draws substantially on breast-cancer and treatment experiences, rather than being a dedicated AYA or post-treatment guide. Review relevance of each intended section; distinguish everyday coping tips from treatment-specific symptom advice. Not every topic in the full guide applies to every survivor.",
+      "audiences": [
+        "http://maya-project.eu/icareonto/AYASurvivorAudience",
+        "http://maya-project.eu/icareonto/CaregiverAudience",
+        "http://maya-project.eu/icareonto/FamilyAudience"
+      ],
+      "completion_status": "Complete",
+      "complexities": [
+        "http://maya-project.eu/icareonto/StandardComplexity"
+      ],
+      "curation_status": "Approved",
+      "delivery_mode": "signpost",
+      "description": "Practical tips on daily life with cancer, including emotional wellbeing, fatigue, sleep, common treatment effects, sexuality, exercise, food and support from family and friends.",
+      "formats": [
+        "http://maya-project.eu/icareonto/WrittenText"
+      ],
+      "id": "MAYA-EDU-0046",
+      "iri": "http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0046",
+      "journey_stages": [
+        "After treatment / survivorship",
+        "During treatment"
+      ],
+      "languages": [
+        "pt"
+      ],
+      "needs": [
+        "http://maya-project.eu/icareonto/InformationApplicationSupportNeed",
+        "http://maya-project.eu/icareonto/InformationComprehensionSupportNeed",
+        "http://maya-project.eu/icareonto/SelfManagementSupportNeed",
+        "http://maya-project.eu/icareonto/SocialSupportNeed"
+      ],
+      "permitted_use": "Link / Signpost Only",
+      "provider": "Laço (publication hosted by iMM–Laço); drawing on contributions from women with breast-cancer experience",
+      "purposes": [
+        "http://maya-project.eu/icareonto/ExplainHealthTopic",
+        "http://maya-project.eu/icareonto/SupportBehaviourChange",
+        "http://maya-project.eu/icareonto/SupportSelfManagement"
+      ],
+      "resource_date_text": "",
+      "resource_role": "Direct Educational Resource",
+      "review_date": "2026-11-18",
+      "reviewer": "INO",
+      "title": "Dicas para quem vive com cancro",
+      "topics": [
+        "http://maya-project.eu/icareonto/FollowUpCare",
+        "http://maya-project.eu/icareonto/MentalHealthAndEmotionalWellbeing",
+        "http://maya-project.eu/icareonto/Nutrition",
+        "http://maya-project.eu/icareonto/PhysicalActivity"
+      ],
+      "url": "https://laco.imm.medicina.ulisboa.pt/wp-content/uploads/sites/11/2021/10/BOOKLET-LACO_Dicas-para-quem-vive-com-cancro.pdf"
+    },
+    {
+      "access_conditions": "Public",
+      "accessibility": [],
+      "applicability_notes": "General oncology guide, not AYA-specific. Includes malnutrition and symptom-management advice for active treatment that should not be applied indiscriminately to well survivors. For post-treatment users, prioritise the relevant section and their current nutritional needs. Dietary supplements and individual dietary treatment require professional advice.",
+      "audiences": [
+        "http://maya-project.eu/icareonto/AYASurvivorAudience",
+        "http://maya-project.eu/icareonto/CaregiverAudience",
+        "http://maya-project.eu/icareonto/FamilyAudience"
+      ],
+      "completion_status": "Complete",
+      "complexities": [
+        "http://maya-project.eu/icareonto/StandardComplexity"
+      ],
+      "curation_status": "Approved",
+      "delivery_mode": "signpost",
+      "description": "Guide explaining nutrition during and after cancer treatment, food-related myths, symptoms affecting intake, when to seek nutritional support and practical dietary adjustments, with a dedicated post-treatment section.",
+      "formats": [
+        "http://maya-project.eu/icareonto/WrittenText"
+      ],
+      "id": "MAYA-EDU-0061",
+      "iri": "http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0061",
+      "journey_stages": [
+        "After treatment / survivorship",
+        "During treatment"
+      ],
+      "languages": [
+        "pt"
+      ],
+      "needs": [
+        "http://maya-project.eu/icareonto/CareTeamCommunicationSupportNeed",
+        "http://maya-project.eu/icareonto/InformationApplicationSupportNeed",
+        "http://maya-project.eu/icareonto/InformationAppraisalSupportNeed",
+        "http://maya-project.eu/icareonto/InformationComprehensionSupportNeed",
+        "http://maya-project.eu/icareonto/SelfManagementSupportNeed"
+      ],
+      "permitted_use": "Link / Signpost Only",
+      "provider": "Associação de Investigação de Cuidados de Suporte em Oncologia (AICSO); Andreia Capela, Luciana Teixeira, Elsa Madureira and Sara Torcato Parreira",
+      "purposes": [
+        "http://maya-project.eu/icareonto/ExplainHealthTopic",
+        "http://maya-project.eu/icareonto/PrepareForConsultation",
+        "http://maya-project.eu/icareonto/SupportBehaviourChange",
+        "http://maya-project.eu/icareonto/SupportSelfManagement"
+      ],
+      "resource_date_text": "",
+      "resource_role": "Direct Educational Resource",
+      "review_date": "2026-11-18",
+      "reviewer": "INO",
+      "title": "Guia de Alimentação na Pessoa com Cancro",
+      "topics": [
+        "http://maya-project.eu/icareonto/Nutrition",
+        "http://maya-project.eu/icareonto/PhysicalActivity"
+      ],
+      "url": "https://aicso.pt/wp-content/uploads/2024/04/Guia-de-Alimentacao-Doente-Cancro_Digital.pdf"
+    },
+    {
+      "access_conditions": "Public",
+      "accessibility": [],
+      "applicability_notes": "Broad adult survivorship guide; not specifically developed for AYA survivors. Because of its length, direct users to relevant sections (e.g., fertility, work reintegration, and emotional wellbeing).",
+      "audiences": [
+        "http://maya-project.eu/icareonto/AYASurvivorAudience",
+        "http://maya-project.eu/icareonto/CaregiverAudience",
+        "http://maya-project.eu/icareonto/FamilyAudience"
+      ],
+      "completion_status": "Complete",
+      "complexities": [
+        "http://maya-project.eu/icareonto/StandardComplexity"
+      ],
+      "curation_status": "Approved",
+      "delivery_mode": "signpost",
+      "description": "Patient guide to life after initial cancer treatment, covering follow-up, late effects including cardiovascular problems, healthy living, emotional adjustment, relationships, support services and personal care records.",
+      "formats": [
+        "http://maya-project.eu/icareonto/WrittenText"
+      ],
+      "id": "MAYA-EDU-0077a",
+      "iri": "http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0077a",
+      "journey_stages": [
+        "After treatment / survivorship"
+      ],
+      "languages": [
+        "de"
+      ],
+      "needs": [
+        "http://maya-project.eu/icareonto/HealthcareNavigationSupportNeed",
+        "http://maya-project.eu/icareonto/InformationApplicationSupportNeed",
+        "http://maya-project.eu/icareonto/InformationComprehensionSupportNeed",
+        "http://maya-project.eu/icareonto/SelfManagementSupportNeed",
+        "http://maya-project.eu/icareonto/SocialSupportNeed"
+      ],
+      "permitted_use": "Link / Signpost Only",
+      "provider": "European Society for Medical Oncology (ESMO); European Cancer Patient Coalition (ECPC); developed in collaboration with the International Psycho-Oncology Society (IPOS)",
+      "purposes": [
+        "http://maya-project.eu/icareonto/ExplainHealthTopic",
+        "http://maya-project.eu/icareonto/PrepareForConsultation",
+        "http://maya-project.eu/icareonto/SupportBehaviourChange",
+        "http://maya-project.eu/icareonto/SupportCareNavigation",
+        "http://maya-project.eu/icareonto/SupportSelfManagement"
+      ],
+      "resource_date_text": "2017",
+      "resource_role": "Direct Educational Resource",
+      "review_date": "2026-11-18",
+      "reviewer": "INO",
+      "title": "Survivorship: ESMO-Patientenratgeber",
+      "topics": [
+        "http://maya-project.eu/icareonto/CardiovascularLateEffects",
+        "http://maya-project.eu/icareonto/FollowUpCare",
+        "http://maya-project.eu/icareonto/MentalHealthAndEmotionalWellbeing",
+        "http://maya-project.eu/icareonto/Nutrition",
+        "http://maya-project.eu/icareonto/PhysicalActivity",
+        "http://maya-project.eu/icareonto/Smoking"
+      ],
+      "url": "https://dam.esmo.org/image/upload/ESMO-Patientenratgeber-Survivorship.pdf"
+    },
+    {
+      "access_conditions": "Public",
+      "accessibility": [],
+      "applicability_notes": "Broad adult survivorship guide; not specifically developed for AYA survivors. Because of its length, direct users to relevant sections (e.g., fertility, work reintegration, and emotional wellbeing).",
+      "audiences": [
+        "http://maya-project.eu/icareonto/AYASurvivorAudience",
+        "http://maya-project.eu/icareonto/CaregiverAudience",
+        "http://maya-project.eu/icareonto/FamilyAudience"
+      ],
+      "completion_status": "Complete",
+      "complexities": [
+        "http://maya-project.eu/icareonto/StandardComplexity"
+      ],
+      "curation_status": "Approved",
+      "delivery_mode": "signpost",
+      "description": "Patient guide to life after initial cancer treatment, covering follow-up, late effects including cardiovascular problems, healthy living, emotional adjustment, relationships, support services and personal care records.",
+      "formats": [
+        "http://maya-project.eu/icareonto/WrittenText"
+      ],
+      "id": "MAYA-EDU-0077b",
+      "iri": "http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0077b",
+      "journey_stages": [
+        "After treatment / survivorship"
+      ],
+      "languages": [
+        "it"
+      ],
+      "needs": [
+        "http://maya-project.eu/icareonto/HealthcareNavigationSupportNeed",
+        "http://maya-project.eu/icareonto/InformationApplicationSupportNeed",
+        "http://maya-project.eu/icareonto/InformationComprehensionSupportNeed",
+        "http://maya-project.eu/icareonto/SelfManagementSupportNeed",
+        "http://maya-project.eu/icareonto/SocialSupportNeed"
+      ],
+      "permitted_use": "Link / Signpost Only",
+      "provider": "European Society for Medical Oncology (ESMO); European Cancer Patient Coalition (ECPC); developed in collaboration with the International Psycho-Oncology Society (IPOS)",
+      "purposes": [
+        "http://maya-project.eu/icareonto/ExplainHealthTopic",
+        "http://maya-project.eu/icareonto/PrepareForConsultation",
+        "http://maya-project.eu/icareonto/SupportBehaviourChange",
+        "http://maya-project.eu/icareonto/SupportCareNavigation",
+        "http://maya-project.eu/icareonto/SupportSelfManagement"
+      ],
+      "resource_date_text": "2017",
+      "resource_role": "Direct Educational Resource",
+      "review_date": "2026-11-18",
+      "reviewer": "INO",
+      "title": "Sopravvivenza: Guida ESMO per il Paziente",
+      "topics": [
+        "http://maya-project.eu/icareonto/CardiovascularLateEffects",
+        "http://maya-project.eu/icareonto/FollowUpCare",
+        "http://maya-project.eu/icareonto/MentalHealthAndEmotionalWellbeing",
+        "http://maya-project.eu/icareonto/Nutrition",
+        "http://maya-project.eu/icareonto/PhysicalActivity",
+        "http://maya-project.eu/icareonto/Smoking"
+      ],
+      "url": "https://dam.esmo.org/image/upload/IT-ESMO-Guida-per-il-Paziente-Sopravvivenza.pdf"
+    },
+    {
+      "access_conditions": "Public",
+      "accessibility": [],
+      "applicability_notes": "Broad adult survivorship guide; not specifically developed for AYA survivors. Because of its length, direct users to relevant sections (e.g., fertility, work reintegration, and emotional wellbeing).",
+      "audiences": [
+        "http://maya-project.eu/icareonto/AYASurvivorAudience",
+        "http://maya-project.eu/icareonto/CaregiverAudience",
+        "http://maya-project.eu/icareonto/FamilyAudience"
+      ],
+      "completion_status": "Complete",
+      "complexities": [
+        "http://maya-project.eu/icareonto/StandardComplexity"
+      ],
+      "curation_status": "Approved",
+      "delivery_mode": "signpost",
+      "description": "Patient guide to life after initial cancer treatment, covering follow-up, late effects including cardiovascular problems, healthy living, emotional adjustment, relationships, support services and personal care records.",
+      "formats": [
+        "http://maya-project.eu/icareonto/WrittenText"
+      ],
+      "id": "MAYA-EDU-0077c",
+      "iri": "http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0077c",
+      "journey_stages": [
+        "After treatment / survivorship"
+      ],
+      "languages": [
+        "pl"
+      ],
+      "needs": [
+        "http://maya-project.eu/icareonto/HealthcareNavigationSupportNeed",
+        "http://maya-project.eu/icareonto/InformationApplicationSupportNeed",
+        "http://maya-project.eu/icareonto/InformationComprehensionSupportNeed",
+        "http://maya-project.eu/icareonto/SelfManagementSupportNeed",
+        "http://maya-project.eu/icareonto/SocialSupportNeed"
+      ],
+      "permitted_use": "Link / Signpost Only",
+      "provider": "European Society for Medical Oncology (ESMO); European Cancer Patient Coalition (ECPC); developed in collaboration with the International Psycho-Oncology Society (IPOS)",
+      "purposes": [
+        "http://maya-project.eu/icareonto/ExplainHealthTopic",
+        "http://maya-project.eu/icareonto/PrepareForConsultation",
+        "http://maya-project.eu/icareonto/SupportBehaviourChange",
+        "http://maya-project.eu/icareonto/SupportCareNavigation",
+        "http://maya-project.eu/icareonto/SupportSelfManagement"
+      ],
+      "resource_date_text": "2017",
+      "resource_role": "Direct Educational Resource",
+      "review_date": "2026-11-18",
+      "reviewer": "INO",
+      "title": "Przebycie choroby nowotworowej: Poradnik dla pacjentów ESMO-ECPC",
+      "topics": [
+        "http://maya-project.eu/icareonto/CardiovascularLateEffects",
+        "http://maya-project.eu/icareonto/FollowUpCare",
+        "http://maya-project.eu/icareonto/MentalHealthAndEmotionalWellbeing",
+        "http://maya-project.eu/icareonto/Nutrition",
+        "http://maya-project.eu/icareonto/PhysicalActivity",
+        "http://maya-project.eu/icareonto/Smoking"
+      ],
+      "url": "https://dam.esmo.org/image/upload/PL-Poradnik-dla-Pacjentow-Przebycie-Choroby-Nowotworowej%E2%80%AF.pdf"
+    },
+    {
+      "access_conditions": "Public",
+      "accessibility": [],
+      "applicability_notes": "General oncology article, not AYA-specific. Suitable as an introduction to sexual wellbeing and communication, rather than a fertility-treatment guide. The existing broad topics describe follow-up and emotional context. Confirm suitability for the participant’s age and clinical context.",
+      "audiences": [
+        "http://maya-project.eu/icareonto/AYASurvivorAudience"
+      ],
+      "completion_status": "Complete",
+      "complexities": [
+        "http://maya-project.eu/icareonto/FoundationalComplexity"
+      ],
+      "curation_status": "Approved",
+      "delivery_mode": "signpost",
+      "description": "Short article on the effects of cancer and treatment on intimacy, body image and sexual wellbeing, including communication about needs, fertility considerations and seeking specialist advice.",
+      "formats": [
+        "http://maya-project.eu/icareonto/WrittenText"
+      ],
+      "id": "MAYA-EDU-0099",
+      "iri": "http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0099",
+      "journey_stages": [
+        "After treatment / survivorship",
+        "Before treatment",
+        "During treatment"
+      ],
+      "languages": [
+        "pl"
+      ],
+      "needs": [
+        "http://maya-project.eu/icareonto/CareTeamCommunicationSupportNeed",
+        "http://maya-project.eu/icareonto/InformationApplicationSupportNeed",
+        "http://maya-project.eu/icareonto/InformationComprehensionSupportNeed"
+      ],
+      "permitted_use": "Link / Signpost Only",
+      "provider": "Narodowy Portal Onkologiczny / Narodowy Instytut Onkologii; content oversight: Dr Maciej Kawecki",
+      "purposes": [
+        "http://maya-project.eu/icareonto/ExplainHealthTopic",
+        "http://maya-project.eu/icareonto/PrepareForConsultation",
+        "http://maya-project.eu/icareonto/SupportSelfManagement"
+      ],
+      "resource_date_text": "2025",
+      "resource_role": "Direct Educational Resource",
+      "review_date": "2026-11-18",
+      "reviewer": "INO",
+      "title": "Jak dbać o seksualność w obliczu raka?",
+      "topics": [
+        "http://maya-project.eu/icareonto/FollowUpCare",
+        "http://maya-project.eu/icareonto/MentalHealthAndEmotionalWellbeing"
+      ],
+      "url": "https://onkologia.pacjent.gov.pl/pl/pacjent/codziennosc-w-trakcie-leczenia/jak-dbac-o-seksualnosc-w-obliczu-raka"
+    },
+    {
+      "access_conditions": "Public",
+      "accessibility": [],
+      "applicability_notes": "Broad survivorship guide rather than an AYA-specific publication. Signpost relevant sections of the 52-page document. Check current clinical and local service applicability before approval. Translation permission stated by this publisher does not establish permission for MAYA to reproduce, adapt or ingest the Polish text.",
+      "audiences": [
+        "http://maya-project.eu/icareonto/AYASurvivorAudience",
+        "http://maya-project.eu/icareonto/CaregiverAudience",
+        "http://maya-project.eu/icareonto/FamilyAudience"
+      ],
+      "completion_status": "Complete",
+      "complexities": [
+        "http://maya-project.eu/icareonto/StandardComplexity"
+      ],
+      "curation_status": "Approved",
+      "delivery_mode": "signpost",
+      "description": "Post-treatment guide addressing follow-up care, persistent symptoms, body image and intimacy, emotional adjustment, family and work relationships, support and relaxation.",
+      "formats": [
+        "http://maya-project.eu/icareonto/WrittenText"
+      ],
+      "id": "MAYA-EDU-0167a",
+      "iri": "http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0167a",
+      "journey_stages": [
+        "After treatment / survivorship"
+      ],
+      "languages": [
+        "pl"
+      ],
+      "needs": [
+        "http://maya-project.eu/icareonto/CareTeamCommunicationSupportNeed",
+        "http://maya-project.eu/icareonto/HealthcareNavigationSupportNeed",
+        "http://maya-project.eu/icareonto/InformationApplicationSupportNeed",
+        "http://maya-project.eu/icareonto/InformationComprehensionSupportNeed",
+        "http://maya-project.eu/icareonto/SelfManagementSupportNeed",
+        "http://maya-project.eu/icareonto/SocialSupportNeed"
+      ],
+      "permitted_use": "Link / Signpost Only",
+      "provider": "PRIMOPRO; Fundacja Tam i z Powrotem / Program Edukacji Onkologicznej; Polish translation and adaptation of a National Cancer Institute guide",
+      "purposes": [
+        "http://maya-project.eu/icareonto/ExplainHealthTopic",
+        "http://maya-project.eu/icareonto/PrepareForConsultation",
+        "http://maya-project.eu/icareonto/SupportCareNavigation",
+        "http://maya-project.eu/icareonto/SupportSelfManagement"
+      ],
+      "resource_date_text": "2021",
+      "resource_role": "Direct Educational Resource",
+      "review_date": "2026-11-18",
+      "reviewer": "INO",
+      "title": "Życie po nowotworze: Poradnik dla osób po przebytej chorobie",
+      "topics": [
+        "http://maya-project.eu/icareonto/FollowUpCare",
+        "http://maya-project.eu/icareonto/MentalHealthAndEmotionalWellbeing",
+        "http://maya-project.eu/icareonto/Nutrition",
+        "http://maya-project.eu/icareonto/PhysicalActivity"
+      ],
+      "url": "https://www.programedukacjionkologicznej.pl/uploads/PEO_RZR_Poradnik13_www.pdf"
+    },
+    {
+      "access_conditions": "Public",
+      "accessibility": [],
+      "applicability_notes": "Written for adult cancer survivors and their families/caregivers rather than specifically for AYA survivors. Assess suitability for adult AYAs (18-39) and use with younger adolescents (15-17) separately. Personal treatment, exercise, medication, and surveillance decisions remain with the clinical care team.",
+      "audiences": [
+        "http://maya-project.eu/icareonto/AYASurvivorAudience",
+        "http://maya-project.eu/icareonto/CaregiverAudience",
+        "http://maya-project.eu/icareonto/FamilyAudience"
+      ],
+      "completion_status": "Complete",
+      "complexities": [
+        "http://maya-project.eu/icareonto/StandardComplexity"
+      ],
+      "curation_status": "Approved",
+      "delivery_mode": "signpost",
+      "description": "Guide for people who have completed cancer treatment, addressing recovery, ongoing symptoms, emotional and social wellbeing, healthy living and continuing health surveillance.",
+      "formats": [
+        "http://maya-project.eu/icareonto/WrittenText"
+      ],
+      "id": "MAYA-EDU-0170",
+      "iri": "http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0170",
+      "journey_stages": [
+        "After treatment / survivorship"
+      ],
+      "languages": [
+        "pt"
+      ],
+      "needs": [
+        "http://maya-project.eu/icareonto/InformationApplicationSupportNeed",
+        "http://maya-project.eu/icareonto/InformationComprehensionSupportNeed",
+        "http://maya-project.eu/icareonto/SelfManagementSupportNeed",
+        "http://maya-project.eu/icareonto/SocialSupportNeed"
+      ],
+      "permitted_use": "Link / Signpost Only",
+      "provider": "Associação Enfermagem Oncológica Portuguesa (AEOP); Ana Cristina Ferreira and colleagues",
+      "purposes": [
+        "http://maya-project.eu/icareonto/ExplainHealthTopic",
+        "http://maya-project.eu/icareonto/SupportBehaviourChange",
+        "http://maya-project.eu/icareonto/SupportSelfManagement"
+      ],
+      "resource_date_text": "2023",
+      "resource_role": "Direct Educational Resource",
+      "review_date": "2026-11-18",
+      "reviewer": "INO",
+      "title": "(Sobre)viver ao cancro: Guia de apoio",
+      "topics": [
+        "http://maya-project.eu/icareonto/FollowUpCare",
+        "http://maya-project.eu/icareonto/MentalHealthAndEmotionalWellbeing",
+        "http://maya-project.eu/icareonto/Nutrition",
+        "http://maya-project.eu/icareonto/PhysicalActivity",
+        "http://maya-project.eu/icareonto/Smoking"
+      ],
+      "url": "https://www.aeop.pt/ficheiros/SobreViverCancro_A5_12Dez.pdf"
+    },
+    {
+      "access_conditions": "Public",
+      "accessibility": [
+        "http://maya-project.eu/icareonto/PlainLanguage"
+      ],
+      "applicability_notes": "Relevant across the cancer journey and to carers. Builds source-appraisal and privacy awareness. Some information about services or legal context is specific to Germany.",
+      "audiences": [
+        "http://maya-project.eu/icareonto/AYASurvivorAudience",
+        "http://maya-project.eu/icareonto/CaregiverAudience",
+        "http://maya-project.eu/icareonto/FamilyAudience"
+      ],
+      "completion_status": "Complete",
+      "complexities": [
+        "http://maya-project.eu/icareonto/FoundationalComplexity"
+      ],
+      "curation_status": "Approved",
+      "delivery_mode": "signpost",
+      "description": "Two-page leaflet explaining how to assess online cancer information, check sources and authorship, interpret social-media and AI-generated content, and limit disclosure of personal information.",
+      "formats": [
+        "http://maya-project.eu/icareonto/WrittenText"
+      ],
+      "id": "MAYA-EDU-0171",
+      "iri": "http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0171",
+      "journey_stages": [
+        "After treatment / survivorship",
+        "Before treatment",
+        "During treatment"
+      ],
+      "languages": [
+        "de"
+      ],
+      "needs": [
+        "http://maya-project.eu/icareonto/InformationAccessSupportNeed",
+        "http://maya-project.eu/icareonto/InformationApplicationSupportNeed",
+        "http://maya-project.eu/icareonto/InformationAppraisalSupportNeed"
+      ],
+      "permitted_use": "Link / Signpost Only",
+      "provider": "Krebsinformationsdienst, Deutsches Krebsforschungszentrum (DKFZ)",
+      "purposes": [
+        "http://maya-project.eu/icareonto/ExplainHealthTopic",
+        "http://maya-project.eu/icareonto/SupportSelfManagement"
+      ],
+      "resource_date_text": "2026",
+      "resource_role": "Direct Educational Resource",
+      "review_date": "2026-11-18",
+      "reviewer": "INO",
+      "title": "Krebs im Internet: So finden Sie gute Informationen",
+      "topics": [
+        "http://maya-project.eu/icareonto/DigitalHealthPrivacyAndTrust"
+      ],
+      "url": "https://www.krebsinformationsdienst.de/fileadmin/pdf-dateien/informationsblaetter/iblatt-sicher-surfen.pdf"
+    },
+    {
+      "access_conditions": "Public",
+      "accessibility": [
+        "http://maya-project.eu/icareonto/PlainLanguage"
+      ],
+      "applicability_notes": "General online health-information appraisal with cancer context; applicable before, during and after treatment.",
+      "audiences": [
+        "http://maya-project.eu/icareonto/AYASurvivorAudience",
+        "http://maya-project.eu/icareonto/CaregiverAudience",
+        "http://maya-project.eu/icareonto/FamilyAudience"
+      ],
+      "completion_status": "Complete",
+      "complexities": [
+        "http://maya-project.eu/icareonto/FoundationalComplexity"
+      ],
+      "curation_status": "Approved",
+      "delivery_mode": "signpost",
+      "description": "Short article explaining how to evaluate online health information by checking the responsible organisation, purpose, funding, expertise, evidence sources and update date.",
+      "formats": [
+        "http://maya-project.eu/icareonto/WrittenText"
+      ],
+      "id": "MAYA-EDU-0172",
+      "iri": "http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0172",
+      "journey_stages": [
+        "After treatment / survivorship",
+        "Before treatment",
+        "During treatment"
+      ],
+      "languages": [
+        "it"
+      ],
+      "needs": [
+        "http://maya-project.eu/icareonto/InformationAccessSupportNeed",
+        "http://maya-project.eu/icareonto/InformationApplicationSupportNeed",
+        "http://maya-project.eu/icareonto/InformationAppraisalSupportNeed"
+      ],
+      "permitted_use": "Link / Signpost Only",
+      "provider": "Fondazione AIRC per la Ricerca sul Cancro",
+      "purposes": [
+        "http://maya-project.eu/icareonto/ExplainHealthTopic",
+        "http://maya-project.eu/icareonto/SupportSelfManagement"
+      ],
+      "resource_date_text": "2023",
+      "resource_role": "Direct Educational Resource",
+      "review_date": "2026-11-18",
+      "reviewer": "INO",
+      "title": "Istruzioni per una navigazione sicura",
+      "topics": [
+        "http://maya-project.eu/icareonto/DigitalHealthPrivacyAndTrust"
+      ],
+      "url": "https://www.airc.it/cancro/informazioni-tumori/corretta-informazione/istruzioni-navigazione-sicura-internet"
+    },
+    {
+      "access_conditions": "Public",
+      "accessibility": [],
+      "applicability_notes": "Relevant to participants who smoke and want cessation support, including after cancer treatment. Not specifically designed for AYA survivors. Medication, prescription-app and treatment choices require appropriate professional advice; check local service applicability.",
+      "audiences": [
+        "http://maya-project.eu/icareonto/AYASurvivorAudience"
+      ],
+      "completion_status": "Complete",
+      "complexities": [
+        "http://maya-project.eu/icareonto/StandardComplexity"
+      ],
+      "curation_status": "Approved",
+      "delivery_mode": "signpost",
+      "description": "Article explaining smoking-cessation approaches, the evidence supporting different methods, practical behaviour-change strategies and sources of professional support.",
+      "formats": [
+        "http://maya-project.eu/icareonto/WrittenText"
+      ],
+      "id": "MAYA-EDU-0173",
+      "iri": "http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0173",
+      "journey_stages": [
+        "After treatment / survivorship",
+        "Before treatment",
+        "During treatment"
+      ],
+      "languages": [
+        "de"
+      ],
+      "needs": [
+        "http://maya-project.eu/icareonto/InformationApplicationSupportNeed",
+        "http://maya-project.eu/icareonto/InformationAppraisalSupportNeed",
+        "http://maya-project.eu/icareonto/InformationComprehensionSupportNeed",
+        "http://maya-project.eu/icareonto/SelfManagementSupportNeed"
+      ],
+      "permitted_use": "Link / Signpost Only",
+      "provider": "Krebsinformationsdienst, Deutsches Krebsforschungszentrum (DKFZ); Vanessa Schöner",
+      "purposes": [
+        "http://maya-project.eu/icareonto/ExplainHealthTopic",
+        "http://maya-project.eu/icareonto/SupportBehaviourChange",
+        "http://maya-project.eu/icareonto/SupportCareNavigation",
+        "http://maya-project.eu/icareonto/SupportSelfManagement"
+      ],
+      "resource_date_text": "2026",
+      "resource_role": "Direct Educational Resource",
+      "review_date": "2026-11-18",
+      "reviewer": "INO",
+      "title": "Schluss mit Rauchen: Welche Methoden funktionieren?",
+      "topics": [
+        "http://maya-project.eu/icareonto/Smoking"
+      ],
+      "url": "https://www.krebsinformationsdienst.de/aktuelles/detail/schluss-mit-rauchen-welche-methoden-funktionieren"
+    },
+    {
+      "access_conditions": "Public",
+      "accessibility": [],
+      "applicability_notes": "Particularly relevant to survivors treated in childhood or adolescence and their families. An introductory overview with onward links; approval of this page does not extend to every linked resource.",
+      "audiences": [
+        "http://maya-project.eu/icareonto/AYASurvivorAudience",
+        "http://maya-project.eu/icareonto/CaregiverAudience",
+        "http://maya-project.eu/icareonto/FamilyAudience"
+      ],
+      "completion_status": "Complete",
+      "complexities": [
+        "http://maya-project.eu/icareonto/FoundationalComplexity"
+      ],
+      "curation_status": "Approved",
+      "delivery_mode": "signpost",
+      "description": "Introduction to follow-up after cancer treatment in childhood or adolescence, explaining its purpose, late effects, rehabilitation and continued support for survivors and families.",
+      "formats": [
+        "http://maya-project.eu/icareonto/WrittenText"
+      ],
+      "id": "MAYA-EDU-0174",
+      "iri": "http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0174",
+      "journey_stages": [
+        "After treatment / survivorship"
+      ],
+      "languages": [
+        "de"
+      ],
+      "needs": [
+        "http://maya-project.eu/icareonto/HealthcareNavigationSupportNeed",
+        "http://maya-project.eu/icareonto/InformationComprehensionSupportNeed"
+      ],
+      "permitted_use": "Link / Signpost Only",
+      "provider": "Kinderkrebsinfo / GPOH; Maria Yiallouros and Dr Gesche Riabowol (née Tallen)",
+      "purposes": [
+        "http://maya-project.eu/icareonto/ExplainHealthTopic",
+        "http://maya-project.eu/icareonto/SupportCareNavigation"
+      ],
+      "resource_date_text": "2025",
+      "resource_role": "Direct Educational Resource",
+      "review_date": "2026-11-18",
+      "reviewer": "INO",
+      "title": "Nachsorge",
+      "topics": [
+        "http://maya-project.eu/icareonto/FollowUpCare"
+      ],
+      "url": "https://www.gpoh.de/kinderkrebsinfo/content/patienten/nachsorge/index_ger.html"
+    },
+    {
+      "access_conditions": "Public",
+      "accessibility": [],
+      "applicability_notes": "Directly developed for adolescents (from age 14–16) and young adults (around age 18) transitioning from paediatric to adult oncology care. Applies specifically to AYA survivors of childhood or adolescent cancers rather than those diagnosed in adult care settings. Clinic listings and care pathways are specific to Germany.",
+      "audiences": [
+        "http://maya-project.eu/icareonto/AYASurvivorAudience",
+        "http://maya-project.eu/icareonto/CaregiverAudience",
+        "http://maya-project.eu/icareonto/FamilyAudience"
+      ],
+      "completion_status": "Complete",
+      "complexities": [
+        "http://maya-project.eu/icareonto/StandardComplexity"
+      ],
+      "curation_status": "Approved",
+      "delivery_mode": "signpost",
+      "description": "Explanation of the transition from paediatric to adult healthcare, including continuity of follow-up, preparation, growing independence, care planning and possible sources of support.",
+      "formats": [
+        "http://maya-project.eu/icareonto/WrittenText"
+      ],
+      "id": "MAYA-EDU-0175",
+      "iri": "http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0175",
+      "journey_stages": [
+        "After treatment / survivorship"
+      ],
+      "languages": [
+        "de"
+      ],
+      "needs": [
+        "http://maya-project.eu/icareonto/CareTeamCommunicationSupportNeed",
+        "http://maya-project.eu/icareonto/HealthcareNavigationSupportNeed",
+        "http://maya-project.eu/icareonto/InformationComprehensionSupportNeed",
+        "http://maya-project.eu/icareonto/SelfManagementSupportNeed"
+      ],
+      "permitted_use": "Link / Signpost Only",
+      "provider": "Kinderkrebsinfo / GPOH; Dr Hannah Schmidt and Dr Ingo Menrath; editor: Maria Yiallouros",
+      "purposes": [
+        "http://maya-project.eu/icareonto/ExplainHealthTopic",
+        "http://maya-project.eu/icareonto/PrepareForConsultation",
+        "http://maya-project.eu/icareonto/SupportCareNavigation",
+        "http://maya-project.eu/icareonto/SupportSelfManagement"
+      ],
+      "resource_date_text": "2025",
+      "resource_role": "Direct Educational Resource",
+      "review_date": "2026-11-18",
+      "reviewer": "INO",
+      "title": "Transition - Der Übergang von der Kinder- und Jugendmedizin in die Erwachsenenmedizin",
+      "topics": [
+        "http://maya-project.eu/icareonto/FollowUpCare"
+      ],
+      "url": "https://www.gpoh.de/kinderkrebsinfo/content/patienten/nachsorge/spaetfolgen___langzeitnachsorge/transition/index_ger.html"
+    },
+    {
+      "access_conditions": "Public",
+      "accessibility": [
+        "http://maya-project.eu/icareonto/PlainLanguage"
+      ],
+      "applicability_notes": "Intended for survivors of childhood, adolescent and young-adult cancer. Lifestyle guidance is general and may require adaptation to treatment-related limitations and the individual care plan.",
+      "audiences": [
+        "http://maya-project.eu/icareonto/AYASurvivorAudience"
+      ],
+      "completion_status": "Complete",
+      "complexities": [
+        "http://maya-project.eu/icareonto/StandardComplexity"
+      ],
+      "curation_status": "Approved",
+      "delivery_mode": "signpost",
+      "description": "Survivor-oriented summary explaining health-promoting behaviours after childhood, adolescent or young-adult cancer, including activity, diet, avoiding smoking and discussing suitable lifestyle changes with professionals.",
+      "formats": [
+        "http://maya-project.eu/icareonto/WrittenText"
+      ],
+      "id": "MAYA-EDU-0176",
+      "iri": "http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0176",
+      "journey_stages": [
+        "After treatment / survivorship"
+      ],
+      "languages": [
+        "it"
+      ],
+      "needs": [
+        "http://maya-project.eu/icareonto/InformationApplicationSupportNeed",
+        "http://maya-project.eu/icareonto/InformationComprehensionSupportNeed",
+        "http://maya-project.eu/icareonto/SelfManagementSupportNeed"
+      ],
+      "permitted_use": "Link / Signpost Only",
+      "provider": "PanCare PLAIN Information Group; Italian PLAIN summary",
+      "purposes": [
+        "http://maya-project.eu/icareonto/ExplainHealthTopic",
+        "http://maya-project.eu/icareonto/SupportBehaviourChange",
+        "http://maya-project.eu/icareonto/SupportSelfManagement"
+      ],
+      "resource_date_text": "2024",
+      "resource_role": "Direct Educational Resource",
+      "review_date": "2026-11-18",
+      "reviewer": "INO",
+      "title": "Promozione della salute",
+      "topics": [
+        "http://maya-project.eu/icareonto/Nutrition",
+        "http://maya-project.eu/icareonto/PhysicalActivity",
+        "http://maya-project.eu/icareonto/Smoking"
+      ],
+      "url": "https://www.pancare.eu/brochures-divulgative-plain/promozione-della-salute/"
+    },
+    {
+      "access_conditions": "Public",
+      "accessibility": [
+        "http://maya-project.eu/icareonto/PlainLanguage"
+      ],
+      "applicability_notes": "Particularly relevant to longer-term survivors treated at younger ages. Educational support rather than diagnosis or psychological treatment. Review local professional-support and urgent-help signposting before delivery; external contacts linked by the page are not validated by this metadata proposal.",
+      "audiences": [
+        "http://maya-project.eu/icareonto/AYASurvivorAudience"
+      ],
+      "completion_status": "Complete",
+      "complexities": [
+        "http://maya-project.eu/icareonto/StandardComplexity"
+      ],
+      "curation_status": "Approved",
+      "delivery_mode": "signpost",
+      "description": "Summary of mental-health concerns after childhood, adolescent or young-adult cancer, explaining possible signs, maintaining wellbeing, follow-up and routes to professional support.",
+      "formats": [
+        "http://maya-project.eu/icareonto/WrittenText"
+      ],
+      "id": "MAYA-EDU-0177",
+      "iri": "http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0177",
+      "journey_stages": [
+        "After treatment / survivorship"
+      ],
+      "languages": [
+        "it"
+      ],
+      "needs": [
+        "http://maya-project.eu/icareonto/HealthcareNavigationSupportNeed",
+        "http://maya-project.eu/icareonto/InformationApplicationSupportNeed",
+        "http://maya-project.eu/icareonto/InformationComprehensionSupportNeed",
+        "http://maya-project.eu/icareonto/SelfManagementSupportNeed"
+      ],
+      "permitted_use": "Link / Signpost Only",
+      "provider": "PanCare PLAIN Information Group; Italian PLAIN summary",
+      "purposes": [
+        "http://maya-project.eu/icareonto/ExplainHealthTopic",
+        "http://maya-project.eu/icareonto/SupportCareNavigation",
+        "http://maya-project.eu/icareonto/SupportSelfManagement"
+      ],
+      "resource_date_text": "2025",
+      "resource_role": "Direct Educational Resource",
+      "review_date": "2026-11-18",
+      "reviewer": "INO",
+      "title": "Problemi di salute mentale",
+      "topics": [
+        "http://maya-project.eu/icareonto/MentalHealthAndEmotionalWellbeing"
+      ],
+      "url": "https://www.pancare.eu/brochures-divulgative-plain/problemi-di-salute-mentale/"
     }
   ]
 }
