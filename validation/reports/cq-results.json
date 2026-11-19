@@ -1,5 +1,5 @@
 {
-  "run_date": "2026-11-06",
+  "run_date": "2026-11-19",
   "ontology_version": "0.1.0-draft",
   "source_register": "icareonto_final_consolidated_competency_questions_v5.xlsx",
   "source_register_sha256": "e46f6ffc5a42bf46d1e1f64ee515f76e2e499665341b883afe98aa6ea3dd42c0",
@@ -16,28 +16,28 @@
   },
   "source_type_and_import_errors": [],
   "inputs_sha256": {
-    "serialisation/alignments/approved.ttl": "e1df4340c83ff879f7ef8d31e4fb80bbc2de9fe84db7c814ff6ea06e90c9abe0",
-    "serialisation/icareonto.ttl": "d017c0038b4884837fb5be6b5bbb77eadf008d610aa8509044fd41f5b59aef29",
-    "serialisation/imports/metadata.ttl": "de327bcaf9a810594ac07810eee4332c44c1b529c9257539a50835c17b7dd4c5",
+    "serialisation/alignments/approved.ttl": "3559c424babee55009ce2efb8acccd9177d326e20722cf53cc52566104a3a8ab",
+    "serialisation/icareonto.ttl": "16f36a7de5ca90452dcd7ddb297ae2560d7030cbfc9d7f46323d630638f19f77",
+    "serialisation/imports/metadata.ttl": "fe6f1b723811a17c812e44ba5221bf1982fa2ce0404a159c2ff8e0fa57613e0c",
     "serialisation/imports/prov-reference.ttl": "22fd91610f91f940a638690f83b6976e8acc3befa2d1b086bbee24e2931bf225",
     "serialisation/imports/skos-reference.ttl": "a0df443bc1e3656d599b8e847bb45c95e475b33585e0d23e04397a683cc8e689",
-    "serialisation/modules/agent.ttl": "24bffaae6c9ed00ab017435cfc8920355c2f3499648c1019d72df7c667afb36b",
-    "serialisation/modules/cancer-history.ttl": "372f714b4a6e1d5fdaa5c0863ec58a2673f8f42c87a9f781099c0bf318a27401",
-    "serialisation/modules/clinical-profile.ttl": "072786bb458f9f2a384c8342b9a4ce812b9409132bc60f99b1c40cb6fb520163",
-    "serialisation/modules/core.ttl": "44bc1d8cc2a82e048240f77afe2e75d15cd8a1d3e8ae74be7e05547ec7919e99",
-    "serialisation/modules/cv-risk.ttl": "b0ef30b31ed7e9bd1094967f43421f64987fb977ee0e963a7b2ba3af34cead8c",
-    "serialisation/modules/dialogue.ttl": "c9a3d1f913eb5713724ac25ad5d1fbd5d181236aa60258e463d940817ccca34f",
-    "serialisation/modules/exercise.ttl": "f4362ac582f8c4f4faabf6ee80882002087ce3e364eacc22ce2e7803aa87ea75",
-    "serialisation/modules/healthhub-service.ttl": "41bde182a7f6fd3e7fa9fc1de84e3fda87b0205be810b00871544c60635a7635",
-    "serialisation/modules/intervention-careplan.ttl": "6eb22ba3a126e8037d730493365b968866fd7c74320a81dfba8ba0cb0a7a4518",
-    "serialisation/modules/knowledge-resource.ttl": "733d3a4e2de9e81cca15e6f8f559a2c89ef22e2ae4ca74adb79e83e35a7aa3dd",
-    "serialisation/modules/lifestyle-behaviour.ttl": "bd8858215a9d8b016014537124dde24b9c25a7c04e1288b3100e13c86f0bd48c",
-    "serialisation/modules/measurement-biomarker.ttl": "7c494e28294a15199b99001c2296f77a53d88d3768cfb8a0fe0b965d93b32f1b",
-    "serialisation/modules/nutrition.ttl": "284e794c623efa690160a5504e5866bf95d093be6d402f1a8278febe9e32ccfe",
-    "serialisation/modules/person-role.ttl": "54c52adc3f0c755797c1d1a0b975609b16f56d050c56c681b6d95d9ac55bc580",
-    "serialisation/modules/pilot.ttl": "134750c7fe0264f75e67022660804111561bbc3864bf6408884c5cf29adf88cc",
-    "serialisation/modules/provenance-governance.ttl": "19fdc227f3b39d11906f5de77b35c6afee1521ef7fce7af01b8dd650284a83f1",
-    "serialisation/modules/social-context.ttl": "c3fe7179038292df64af7cac6f7e7e3100d51c44fec56978ef3c53ed8c7e4061",
+    "serialisation/modules/agent.ttl": "088abfa413d709a219d99f0803e757f694055ff113fbca1e70b10c1882d517bc",
+    "serialisation/modules/cancer-history.ttl": "cb8317ca75562f3db9c4e1a01de92d3af9d5ea5a2df37d25d3cf16791d420fa3",
+    "serialisation/modules/clinical-profile.ttl": "4d28c770a0b97d30e0dca4829d0bbbe4462bb09064efe46b082fa6c9c7fb2df6",
+    "serialisation/modules/core.ttl": "8e421bd8472d7e71e5b7ec96c1948f2426c5a344fce5ce990d1ffafed123c254",
+    "serialisation/modules/cv-risk.ttl": "615b2f992e1595fdaa3fddbffd9e29ad759ea15dadf5e74b5b246a26cbe50bd1",
+    "serialisation/modules/dialogue.ttl": "c737f188d22b83a8cf463e907348aaa6d277b0b9c029b94dad5a9881c9ed7f3b",
+    "serialisation/modules/exercise.ttl": "18f534f85d4298101d3d4112b55043268040dc6eb25439bf8153a2753e2af653",
+    "serialisation/modules/healthhub-service.ttl": "58e9aecb4b86ca09abf051d67f7388e3494acfc907db482ac34ab35f7e2bc0e8",
+    "serialisation/modules/intervention-careplan.ttl": "279077a66564c88e4a8ce2d5b282fb7049d141f24d8b16b3bc9b91f99980ad90",
+    "serialisation/modules/knowledge-resource.ttl": "d7ddc41364462df3e1fdb7b838852c9b22107ef57fd341f1ece3963cb5442d5f",
+    "serialisation/modules/lifestyle-behaviour.ttl": "edda682ff2ec0b0b0e99c9b8aa6508087848e982d33e7bceb3dd1364ec3397a4",
+    "serialisation/modules/measurement-biomarker.ttl": "ca7fcea46cb07b800429bece5f239ecad2c7763054f07d807771c7279cd9318c",
+    "serialisation/modules/nutrition.ttl": "fd83365e2e40fcf8aa4f2aae9f54c56c54ecaecaf52703a2f2f6066e0137f4e6",
+    "serialisation/modules/person-role.ttl": "2ae4bc13f46865670164773e917a1e685afec45948ae552892085391f479bce0",
+    "serialisation/modules/pilot.ttl": "b476a5845573cf935bafbf5617a3a69c35c2a07f1d6731dbfc83e8b61c76ee0f",
+    "serialisation/modules/provenance-governance.ttl": "28a01c32eb94d56bdf63a66e5cda3b114e37f813b4d38657a2e7cb2caeea03ad",
+    "serialisation/modules/social-context.ttl": "8d92b1cdccafe01d8fec86b3955cf4254a9c1d6c4f140dd415b5bb46766f492e",
     "validation/cq-tests/coverage.ttl": "986b472bf9ee4bbcf62a29515d724477b27bf87cc38325deca29b42663f67607",
     "validation/demo_spain_aya.ttl": "6aed52897c61e3d366f431b4d9555459c886cc4cf8f4a830adabe0c1e8e724db"
   },
@@ -78,10 +78,10 @@
       ],
       "actual": [
         {
-          "factor": "test:dietary-factor"
+          "factor": "demo:low-activity-risk-factor"
         },
         {
-          "factor": "demo:low-activity-risk-factor"
+          "factor": "test:dietary-factor"
         }
       ],
       "error": null,
@@ -193,12 +193,12 @@
       ],
       "actual": [
         {
-          "factor": "demo:low-activity-risk-factor",
-          "value": "0.4"
-        },
-        {
           "factor": "test:prior-treatment-factor",
           "value": "0.6"
+        },
+        {
+          "factor": "demo:low-activity-risk-factor",
+          "value": "0.4"
         }
       ],
       "error": null,
@@ -432,10 +432,10 @@
       ],
       "actual": [
         {
-          "recommendation": "demo:recommendation-nutrition"
+          "recommendation": "demo:recommendation-walking"
         },
         {
-          "recommendation": "demo:recommendation-walking"
+          "recommendation": "demo:recommendation-nutrition"
         }
       ],
       "error": null,
@@ -494,10 +494,10 @@
       ],
       "actual": [
         {
-          "type": "icare:HealthLiteracyIntervention"
+          "type": "icare:NutritionIntervention"
         },
         {
-          "type": "icare:NutritionIntervention"
+          "type": "icare:HealthLiteracyIntervention"
         },
         {
           "type": "icare:ExerciseIntervention"
@@ -608,10 +608,10 @@
       ],
       "actual": [
         {
-          "resource": "test:mixed-topic-resource"
+          "resource": "demo:resource-nutrition-es"
         },
         {
-          "resource": "demo:resource-nutrition-es"
+          "resource": "test:mixed-topic-resource"
         }
       ],
       "error": null,
@@ -744,10 +744,10 @@
       ],
       "actual": [
         {
-          "feature": "icare:PlainLanguage"
+          "feature": "icare:Captions"
         },
         {
-          "feature": "icare:Captions"
+          "feature": "icare:PlainLanguage"
         }
       ],
       "error": null,
@@ -923,43 +923,43 @@
           "type": "icare:SocioEconomicFactor"
         },
         {
-          "type": "icare:EducationalAttainment"
+          "type": "icare:FinancialConstraint"
         },
         {
           "type": "icare:EmploymentStatus"
         },
         {
-          "type": "icare:FinancialConstraint"
-        },
-        {
-          "type": "icare:SupportNetwork"
+          "type": "icare:EducationalAttainment"
         },
         {
           "type": "icare:DigitalLiteracy"
         },
         {
+          "type": "icare:HealthLiteracy"
+        },
+        {
           "type": "icare:LivingSituation"
+        },
+        {
+          "type": "icare:SupportNetwork"
         },
         {
           "type": "icare:AccessOrEngagementBarrier"
         },
         {
-          "type": "icare:PrivacyConcern"
+          "type": "icare:TransportationBarrier"
         },
         {
           "type": "icare:LanguageBarrier"
         },
         {
-          "type": "icare:TransportationBarrier"
+          "type": "icare:PrivacyConcern"
         },
         {
           "type": "icare:TrustConcern"
         },
         {
           "type": "icare:CulturalFactor"
-        },
-        {
-          "type": "icare:HealthLiteracy"
         }
       ],
       "error": null,
@@ -990,12 +990,12 @@
       ],
       "actual": [
         {
-          "record": "test:employment-record",
-          "factor": "test:employment"
-        },
-        {
           "record": "test:financial-record",
           "factor": "test:financial-context"
+        },
+        {
+          "record": "test:employment-record",
+          "factor": "test:employment"
         }
       ],
       "error": null,
@@ -1055,10 +1055,10 @@
       ],
       "actual": [
         {
-          "record": "test:cultural-record"
+          "record": "demo:health-literacy-record"
         },
         {
-          "record": "demo:health-literacy-record"
+          "record": "test:cultural-record"
         },
         {
           "record": "test:employment-record"
@@ -1173,16 +1173,10 @@
       ],
       "actual": [
         {
-          "type": "icare:NutritionBehaviour"
+          "type": "icare:AlcoholUseBehaviour"
         },
         {
-          "type": "icare:DietaryPattern"
-        },
-        {
-          "type": "icare:SleepBehaviour"
-        },
-        {
-          "type": "icare:SmokingBehaviour"
+          "type": "icare:SubstanceUseBehaviour"
         },
         {
           "type": "icare:AdherenceBehaviour"
@@ -1197,16 +1191,22 @@
           "type": "icare:CarePlanAdherenceBehaviour"
         },
         {
+          "type": "icare:SmokingBehaviour"
+        },
+        {
           "type": "icare:SedentaryBehaviour"
         },
         {
           "type": "icare:PhysicalActivityBehaviour"
         },
         {
-          "type": "icare:SubstanceUseBehaviour"
+          "type": "icare:SleepBehaviour"
         },
         {
-          "type": "icare:AlcoholUseBehaviour"
+          "type": "icare:NutritionBehaviour"
+        },
+        {
+          "type": "icare:DietaryPattern"
         }
       ],
       "error": null,
@@ -1319,16 +1319,16 @@
       ],
       "actual": [
         {
-          "parameter": "test:body-fat-parameter"
+          "parameter": "demo:weight"
         },
         {
-          "parameter": "demo:height"
+          "parameter": "test:body-fat-parameter"
         },
         {
           "parameter": "demo:bmi"
         },
         {
-          "parameter": "demo:weight"
+          "parameter": "demo:height"
         }
       ],
       "error": null,
@@ -1364,16 +1364,16 @@
       ],
       "actual": [
         {
-          "parameter": "demo:bmi"
+          "parameter": "demo:weight"
         },
         {
           "parameter": "test:body-fat-parameter"
         },
         {
-          "parameter": "demo:height"
+          "parameter": "demo:bmi"
         },
         {
-          "parameter": "demo:weight"
+          "parameter": "demo:height"
         }
       ],
       "error": null,
@@ -1414,22 +1414,22 @@
       ],
       "actual": [
         {
+          "parameter": "demo:diastolic-bp"
+        },
+        {
           "parameter": "demo:systolic-bp"
         },
         {
-          "parameter": "demo:diastolic-bp"
+          "parameter": "demo:weight"
         },
         {
           "parameter": "test:body-fat-parameter"
         },
         {
-          "parameter": "demo:height"
-        },
-        {
           "parameter": "demo:bmi"
         },
         {
-          "parameter": "demo:weight"
+          "parameter": "demo:height"
         }
       ],
       "error": null,
@@ -1590,10 +1590,10 @@
       ],
       "actual": [
         {
-          "observation": "test:body-fat-result"
+          "observation": "demo:baseline-weight-result"
         },
         {
-          "observation": "demo:baseline-weight-result"
+          "observation": "test:body-fat-result"
         }
       ],
       "error": null,
@@ -1674,10 +1674,10 @@
       ],
       "actual": [
         {
-          "parameter": "demo:diastolic-bp"
+          "parameter": "demo:systolic-bp"
         },
         {
-          "parameter": "demo:systolic-bp"
+          "parameter": "demo:diastolic-bp"
         }
       ],
       "error": null,
@@ -1987,19 +1987,19 @@
       ],
       "actual": [
         {
-          "modality": "icare:CombinedTraining"
-        },
-        {
           "modality": "icare:AerobicExercise"
-        },
-        {
-          "modality": "icare:BalanceTraining"
         },
         {
           "modality": "icare:FlexibilityExercise"
         },
         {
           "modality": "icare:ResistanceTraining"
+        },
+        {
+          "modality": "icare:BalanceTraining"
+        },
+        {
+          "modality": "icare:CombinedTraining"
         }
       ],
       "error": null,
@@ -2034,16 +2034,16 @@
       ],
       "actual": [
         {
-          "pattern": "icare:ContinuousTraining"
-        },
-        {
           "pattern": "icare:IntervalTraining"
         },
         {
-          "pattern": "icare:HighIntensityIntervalTraining"
+          "pattern": "icare:CircuitTraining"
         },
         {
-          "pattern": "icare:CircuitTraining"
+          "pattern": "icare:ContinuousTraining"
+        },
+        {
+          "pattern": "icare:HighIntensityIntervalTraining"
         }
       ],
       "error": null,
@@ -2469,10 +2469,10 @@
       ],
       "actual": [
         {
-          "activity": "demo:referral"
+          "activity": "demo:clinical-review"
         },
         {
-          "activity": "demo:clinical-review"
+          "activity": "demo:referral"
         }
       ],
       "error": null,

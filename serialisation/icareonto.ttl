@@ -1,3 +1,4 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix icare: <http://maya-project.eu/icareonto/> .
 @prefix meta: <http://maya-project.eu/icareonto/metadata#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -6,6 +7,10 @@
 <http://maya-project.eu/icareonto> a owl:Ontology ;
     rdfs:label "iCARE Onto v1 (draft)"@en ;
     meta:reviewStatus "Draft" ;
+    dcterms:contributor "MAYA consortium partners" ;
+    dcterms:creator "Robert Gordon University" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (c) 2026 Robert Gordon University and contributing MAYA consortium partners, for their respective contributions. Third-party material retains its applicable terms."@en ;
     rdfs:comment "iCARE Onto provides the semantic foundation for the MAYA iCARE Health Hub, supporting adolescent and young adult cancer survivorship and cardiovascular health. Its modular model represents people and preferences, cancer treatment history, clinical profiles, measurements, cardiovascular risk, personalised care, lifestyle, social context, educational resources, conversational interaction, digital services, pilot settings and knowledge governance. It supports participant- and pilot-specific knowledge graphs, personalised educational support and evidence-grounded dialogue. This pre-release draft is under review toward iCARE Onto v1."@en ;
     owl:imports icare:agent,
         icare:alignments,

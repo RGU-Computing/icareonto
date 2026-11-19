@@ -34,6 +34,8 @@ IC = Namespace("http://maya-project.eu/icareonto/")
 META = Namespace("http://maya-project.eu/icareonto/education/metadata#")
 ONTOLOGY = URIRef("http://maya-project.eu/icareonto")
 DEFAULT_BASE = "http://maya-project.eu/icareonto/education/"
+METADATA_LICENSE = "https://creativecommons.org/licenses/by/4.0/"
+METADATA_RIGHTS = "Copyright (c) 2026 Robert Gordon University and contributing MAYA consortium partners, for their respective contributions. CC BY 4.0 covers original metadata and activity content only; linked publications retain their provider terms."
 DEFAULT_WORKBOOK = REPO / "sources/MAYA_consolidated_educational_resources_v20261101.xlsx"
 STAGES = ["Before treatment", "During treatment", "After treatment / survivorship"]
 # Each entry connects an application field to its worksheet heading, controlled
@@ -278,6 +280,11 @@ def new_graph(iri, label, imports):
         g.bind(prefix, ns)
     g.add((URIRef(iri), RDF.type, OWL.Ontology))
     g.add((URIRef(iri), RDFS.label, Literal(label, lang="en")))
+    # Licence the authored graph, leaving each linked resource's rights intact.
+    g.add((URIRef(iri), DCTERMS.license, URIRef(METADATA_LICENSE)))
+    g.add((URIRef(iri), DCTERMS.creator, Literal("Robert Gordon University")))
+    g.add((URIRef(iri), DCTERMS.contributor, Literal("MAYA consortium partners")))
+    g.add((URIRef(iri), DCTERMS.rights, Literal(METADATA_RIGHTS, lang="en")))
     for imported in imports:
         g.add((URIRef(iri), OWL.imports, URIRef(imported)))
     for prop in APP_PROPERTIES:
@@ -437,7 +444,9 @@ def build_release(workbook=DEFAULT_WORKBOOK, sheet="Release resources", output=R
     cg = catalogue_graph(records, base)
     ag, active_templates = activity_graph(template_data, records, vocabulary, base)
     shape_report = validate_graph(cg + ag, schema)
-    payload = {"profile_version": "1.1", "base_iri": base, "ontology_sha256": schema_hash, "records": records, "activity_templates": active_templates}
+    payload = {"profile_version": "1.1", "base_iri": base, "ontology_sha256": schema_hash,
+               "metadata_license": METADATA_LICENSE, "metadata_rights": METADATA_RIGHTS,
+               "records": records, "activity_templates": active_templates}
     # 3. Derive a release identifier from the inputs and implementation. This also
     # records script changes, including comments, in the next release's provenance.
     profile_hash = digest(canonical({name: digest(path.read_bytes()) for name, path in {

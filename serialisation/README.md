@@ -92,4 +92,6 @@ Reference documentation:
 - Dublin Core Terms: https://www.dublincore.org/specifications/dublin-core/dcmi-terms/
 - Protégé local imports: https://protegewiki.stanford.edu/wiki/Importing_Ontologies_in_P41
 
-The original external downloads retain their copyright and licensing notices. The source-derived subset files retain relevant term documentation and identify their source; they must not be represented as the full W3C ontologies.
+Original iCARE Onto ontology content is licensed under CC BY 4.0; the generator and checking software are MIT-licensed. Generated headers record `dcterms:license`, `dcterms:creator`, `dcterms:contributor` and `dcterms:rights` for the original ontology, modules, metadata vocabulary and alignment assertions. Robert Gordon University is identified as creator, MAYA consortium partners are acknowledged as contributors, and the copyright notice concerns their respective contributions. Rebuilding preserves these annotations. See [licensing and attribution](../LICENSE.md).
+
+The original external downloads retain their copyright and licensing notices. The source-derived subset files retain relevant term documentation and identify their source; they must not be represented as the full W3C ontologies or relicensed as original iCARE Onto material. See [third-party notices](../THIRD_PARTY_NOTICES.md).

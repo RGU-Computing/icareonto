@@ -9,6 +9,7 @@ from pathlib import Path
 
 from rdflib import Graph, RDF, RDFS, OWL, SKOS, Literal, URIRef
 from rdflib.compare import isomorphic
+from rdflib.namespace import DCTERMS
 
 from serialise_ontology import read_xlsx, BASE
 
@@ -90,6 +91,21 @@ for name, g in all_graphs.items():
                   for subject, definition in g.subject_objects(SKOS.definition)),
           "No duplicated definition/comment text: " + name)
     for ontology in g.subjects(RDF.type, OWL.Ontology):
+        licence = URIRef("https://creativecommons.org/licenses/by/4.0/")
+        if name in {"skos-reference.ttl", "prov-reference.ttl"}:
+            check((ontology, DCTERMS.license, licence) not in g,
+                  "External subset not relicensed as original material: " + name)
+        else:
+            check(set(g.objects(ontology, DCTERMS.license)) == {licence},
+                  "Original ontology CC BY 4.0 licence: " + name)
+            check((ontology, DCTERMS.creator, Literal("Robert Gordon University")) in g,
+                  "Original ontology attribution: " + name)
+            check((ontology, DCTERMS.contributor, Literal("MAYA consortium partners")) in g,
+                  "Consortium contributor acknowledgement: " + name)
+            check(any("Third-party material retains" in str(v) for v in g.objects(ontology, DCTERMS.rights)),
+                  "Original ontology rights scope: " + name)
+            check(any("Robert Gordon University and contributing MAYA consortium partners, for their respective contributions." in str(v)
+                      for v in g.objects(ontology, DCTERMS.rights)), "Copyright for respective contributions: " + name)
         check((ontology, OWL.versionInfo, Literal(report["ontology_version"])) in g,
               "Ontology version matches release: " + str(ontology))
         check(any("/releases/" + report["ontology_version"] + "/" in str(v) for v in g.objects(ontology, OWL.versionIRI)),

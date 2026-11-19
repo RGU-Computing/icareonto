@@ -8,10 +8,10 @@
   <uri name="http://maya-project.eu/icareonto/core" uri="../../../serialisation/modules/core.ttl" />
   <uri name="http://maya-project.eu/icareonto/cv-risk" uri="../../../serialisation/modules/cv-risk.ttl" />
   <uri name="http://maya-project.eu/icareonto/dialogue" uri="../../../serialisation/modules/dialogue.ttl" />
-  <uri name="http://maya-project.eu/icareonto/education/dataset" uri="../../data/catalogue/releases/3aad17371b1650d7262664e8/dataset.ttl" />
+  <uri name="http://maya-project.eu/icareonto/education/dataset" uri="../../data/catalogue/releases/7508bbc05b9401585a547578/dataset.ttl" />
   <uri name="http://maya-project.eu/icareonto/education/demo/graph" uri="participant-education.ttl" />
-  <uri name="http://maya-project.eu/icareonto/education/graphs/activities" uri="../../data/catalogue/releases/3aad17371b1650d7262664e8/activity-templates.ttl" />
-  <uri name="http://maya-project.eu/icareonto/education/graphs/resources" uri="../../data/catalogue/releases/3aad17371b1650d7262664e8/catalogue.ttl" />
+  <uri name="http://maya-project.eu/icareonto/education/graphs/activities" uri="../../data/catalogue/releases/7508bbc05b9401585a547578/activity-templates.ttl" />
+  <uri name="http://maya-project.eu/icareonto/education/graphs/resources" uri="../../data/catalogue/releases/7508bbc05b9401585a547578/catalogue.ttl" />
   <uri name="http://maya-project.eu/icareonto/exercise" uri="../../../serialisation/modules/exercise.ttl" />
   <uri name="http://maya-project.eu/icareonto/healthhub-service" uri="../../../serialisation/modules/healthhub-service.ttl" />
   <uri name="http://maya-project.eu/icareonto/imports/prov-reference" uri="../../../serialisation/imports/prov-reference.ttl" />

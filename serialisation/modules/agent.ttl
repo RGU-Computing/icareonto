@@ -1,3 +1,4 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix icare: <http://maya-project.eu/icareonto/> .
 @prefix meta: <http://maya-project.eu/icareonto/metadata#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -314,6 +315,10 @@ icare:AgentCapabilityScheme a owl:NamedIndividual,
 icare:agent a owl:Ontology ;
     rdfs:label "Agent"@en ;
     meta:reviewStatus "Draft" ;
+    dcterms:contributor "MAYA consortium partners" ;
+    dcterms:creator "Robert Gordon University" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (c) 2026 Robert Gordon University and contributing MAYA consortium partners, for their respective contributions. Third-party material retains its applicable terms."@en ;
     rdfs:comment "Represents digital and conversational agents, their authorised capabilities, safety policies and rules, and human oversight and escalation relationships."@en ;
     owl:imports <http://maya-project.eu/icareonto/imports/prov-reference>,
         <http://maya-project.eu/icareonto/imports/skos-reference>,

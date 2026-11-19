@@ -117,8 +117,8 @@
     }
   ],
   "pilot_id": "es-demo-01",
-  "profile_sha256": "71d068be00cd497755ae8a55601ea3fb78855bf796f3929ad2c4b05f19239505",
-  "registry_sha256": "e0a4e7f5e2e1c994965b427efaafa0f475fbe54ef9f01da5801df5c72fea4d1b",
+  "profile_sha256": "9488f469725d157232545df60d9f30dd49a2845e53caf446ca45d0388df29cc7",
+  "registry_sha256": "9ec5d06326fdc29b9d4db939bad79c5998dd72830efd1013ff6870b1505f97f7",
   "review_status": "demonstration_annotation_not_site_approval",
   "reviewer": "Agent-authored fictional mapping decisions; independent pilot/expert review is pending",
   "source_status": "synthetic_demonstration",

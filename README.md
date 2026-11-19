@@ -58,4 +58,8 @@ Formal OWL checking is separate. The ontology and original CQ fixtures have save
 - `validation/`: shared synthetic CQ fixtures, queries, runners and reports.
 - `local/`: ignored working area for operational inputs and outputs.
 
-A project licence and citation metadata have not yet been included in this snapshot.
+## Licensing
+
+Developed by Robert Gordon University, with contributions from MAYA consortium partners. Copyright is held for the respective contributions as described in [LICENSE.md](LICENSE.md).
+
+Original ontology content and catalogue metadata are licensed under **CC BY 4.0**; supporting software is licensed under **MIT**. See [the scope and attribution guidance](LICENSE.md), the [CC BY 4.0 text](LICENSES/CC-BY-4.0.txt) and [MIT text](LICENSES/MIT.txt). [Third-party notices](THIRD_PARTY_NOTICES.md) identify exclusions, including imported vocabularies and linked educational publications. Resource metadata does not grant permission to copy the linked content.

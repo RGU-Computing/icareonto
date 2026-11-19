@@ -71,6 +71,22 @@ class WorkflowChecks(unittest.TestCase):
         self.assertEqual({r["id"] for r in self.records}, EXPECTED)
         self.assertEqual([r["id"] for r in self.excluded], ["MAYA-EDU-0014"])
 
+    def test_metadata_licence_does_not_relicense_linked_publications(self):
+        self.publish()
+        catalogue = e.load_release(self.output)
+        self.assertEqual(catalogue["metadata_license"], "https://creativecommons.org/licenses/by/4.0/")
+        g = Graph().parse(Path(catalogue["release_directory"]) / "catalogue.ttl")
+        header = URIRef(e.DEFAULT_BASE + "graphs/resources")
+        self.assertEqual(set(g.objects(header, DCTERMS.license)), {URIRef(catalogue["metadata_license"])})
+        self.assertIn("linked publications retain", str(next(g.objects(header, DCTERMS.rights))))
+        self.assertIn("for their respective contributions", catalogue["metadata_rights"])
+        self.assertEqual(set(map(str, g.objects(header, DCTERMS.creator))), {"Robert Gordon University"})
+        self.assertEqual(set(map(str, g.objects(header, DCTERMS.contributor))), {"MAYA consortium partners"})
+        for record in self.records:
+            resource = URIRef(record["iri"])
+            self.assertFalse(list(g.objects(resource, DCTERMS.license)))
+            self.assertEqual(set(map(str, g.objects(resource, DCTERMS.rights))), {record["permitted_use"]})
+
     def test_approved_and_complete_are_both_required(self):
         rows = deepcopy(self.raw)
         for i, (status, complete) in enumerate([("Approved", "To complete"), ("On hold", "Complete"), ("Not reviewed", "Complete")], 100):

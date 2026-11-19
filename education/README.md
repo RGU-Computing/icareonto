@@ -2,6 +2,8 @@
 
 This workflow reads the reviewed resource worksheet and publishes ontology-based metadata, resource-selection results and three draft educational activity templates. The current collection has **31 approved, complete resources** across Spanish (9), English (7), German (5), Italian (4), Polish (3) and Portuguese (3). MAYA-EDU-0014 is on hold and excluded. The workbook is the curation input; the generated JSON and RDF can be used without Excel or the source workbook at runtime.
 
+Original catalogue metadata, annotations and learning-activity content are CC BY 4.0; the software is MIT-licensed. RDF graph headers record the metadata licence and attribution; `catalogue.json` provides `metadata_license` and `metadata_rights`. Each resource retains its separate permitted-use annotation. Linked provider content retains its own terms, including any registration or copying restrictions. Catalogue licensing grants no permission to reproduce or ingest the linked publications. See [licence scope](../LICENSE.md) and [third-party notices](../THIRD_PARTY_NOTICES.md).
+
 The [tool overview](../TOOLS.md) describes the selector's role and its relationship to the other components.
 
 The workflow exports **metadata and source links**. All current resources are marked Link / Signpost Only, so it does not download, reproduce or ingest their full text. A resource requiring registration can remain eligible after its content has been reviewed; the interface returns its access conditions. Collection-page annotations describe their reviewed scope and do not certify every linked item.
@@ -120,7 +122,7 @@ python education/scripts/check_workflow.py
 
 Run this command in the Python environment containing the declared dependencies.
 
-These are 40 Python `unittest` tests of workflow behaviour. Examples include automatically publishing a new approved/complete ID, withdrawing a resource while preserving history, retaining its IRI after an update, rejecting duplicate IDs without replacing the active release, returning the independently specified Spanish cardiovascular match, and exposing registration requirements. They also simulate interrupted writes and manually altered release files.
+These are 41 Python `unittest` tests of workflow behaviour. Examples include automatically publishing a new approved/complete ID, withdrawing a resource while preserving history, retaining its IRI after an update, rejecting duplicate IDs without replacing the active release, returning the independently specified Spanish cardiovascular match, and exposing registration requirements. They also simulate interrupted writes and manually altered release files, and check that catalogue licensing preserves each linked publication's permitted-use annotation.
 
 `reports/WORKFLOW_CHECKS.md` lists every test and result; `reports/workflow-checks.json` provides the same results for software. Tests use `tests/fixtures/reviewed-rows.json`, a fixed reviewed-metadata sample, and temporary outputs. Later additions to the live workbook do not change the regression baseline, and tests leave that workbook unchanged. A normal build separately validates all currently eligible rows and their generated graph. Existing ontology and 78-CQ validation remain separate activities. These tests establish technical behaviour, not educational effectiveness.
 

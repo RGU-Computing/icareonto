@@ -1,6 +1,6 @@
 # Educational resource workflow checks
 
-40 checks; 0 failures; 0 errors. Result: **PASS**.
+41 checks; 0 failures; 0 errors. Result: **PASS**.
 
 Tests exercise new approved IDs, status gating, withdrawal, stable IRIs, repeat processing, header and sheet independence, vocabulary validation, dates, permissions, release integrity, participant matching and a synthetic educational activity.
 
@@ -29,6 +29,7 @@ Repeat from the project root: `python education/scripts/check_workflow.py` (with
 | journey stage excludes nonmatching resource | PASS |
 | language and topic filters have no automatic fallback | PASS |
 | language claims need verified values | PASS |
+| metadata licence does not relicense linked publications | PASS |
 | missing column fails | PASS |
 | multiple values split on semicolons not commas | PASS |
 | namespace cannot change in existing deployment | PASS |

@@ -73,7 +73,7 @@ def graph():
     return g
 
 
-def header(g, iri, title, description, version):
+def header(g, iri, title, description, version, own_material=True):
     g.add((iri, RDF.type, OWL.Ontology))
     g.add((iri, RDFS.label, Literal(title, lang="en")))
     g.add((iri, RDFS.comment, Literal(description, lang="en")))
@@ -81,6 +81,12 @@ def header(g, iri, title, description, version):
     g.add((iri, OWL.versionIRI, URIRef(BASE + "releases/" + version + "/" + suffix)))
     g.add((iri, OWL.versionInfo, Literal(version)))
     g.add((iri, META.reviewStatus, Literal("Draft")))
+    # License our ontology contributions without relicensing imported W3C terms.
+    if own_material:
+        g.add((iri, DCTERMS.license, URIRef("https://creativecommons.org/licenses/by/4.0/")))
+        g.add((iri, DCTERMS.creator, Literal("Robert Gordon University")))
+        g.add((iri, DCTERMS.contributor, Literal("MAYA consortium partners")))
+        g.add((iri, DCTERMS.rights, Literal("Copyright (c) 2026 Robert Gordon University and contributing MAYA consortium partners, for their respective contributions. Third-party material retains its applicable terms.", lang="en")))
 
 
 def write_tsv(path, fields, rows):
@@ -114,7 +120,7 @@ def reference_imports(root, version):
     out = {}
     for file, iri, original, terms, title, url in definitions:
         g = graph()
-        header(g, iri, title, "Reference subset of W3C terms used by iCARE Onto. Term IRIs retain their external identity; this ontology provides the selected supporting axioms.", version)
+        header(g, iri, title, "Reference subset of W3C terms used by iCARE Onto. Term IRIs retain their external identity; this ontology provides the selected supporting axioms.", version, own_material=False)
         g.add((iri, RDFS.seeAlso, URIRef(url)))
         g.add((iri, OWL.imports, META_IRI))
         for subject in sorted(terms):

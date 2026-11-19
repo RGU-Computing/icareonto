@@ -16,6 +16,10 @@
 <http://maya-project.eu/icareonto/education/demo/graph> a owl:Ontology ;
     rdfs:label "Fictional participant education example using real resource metadata"@en ;
     edu:isSynthetic true ;
+    dcterms:contributor "MAYA consortium partners" ;
+    dcterms:creator "Robert Gordon University" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (c) 2026 Robert Gordon University and contributing MAYA consortium partners, for their respective contributions. CC BY 4.0 covers original metadata and activity content only; linked publications retain their provider terms."@en ;
     owl:imports <http://maya-project.eu/icareonto/education/dataset> .
 
 edu:accessConditions a owl:AnnotationProperty .

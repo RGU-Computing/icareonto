@@ -9,6 +9,8 @@ import subprocess
 import sys
 import tempfile
 import xml.etree.ElementTree as ET
+from rdflib import Graph, URIRef
+from rdflib.namespace import DCTERMS
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "education/scripts"))
@@ -39,6 +41,19 @@ def check_publication():
         path = (ROOT / "sources" / name).resolve()
         require(path.is_relative_to(ROOT / "sources") and path.is_file(), "Source exists: " + name)
         require(hashlib.sha256(path.read_bytes()).hexdigest() == details["sha256"], "Source hash matches: " + name)
+    for name in ("LICENSE.md", "LICENSES/CC-BY-4.0.txt", "LICENSES/MIT.txt", "THIRD_PARTY_NOTICES.md"):
+        require((ROOT / name).is_file() and (ROOT / name).stat().st_size > 100, "Licence document present: " + name)
+    scope = (ROOT / "LICENSE.md").read_text()
+    require("CC BY 4.0" in scope and "MIT" in scope and "Third-party" in scope, "Split licence scope and exclusions documented")
+    mit = (ROOT / "LICENSES/MIT.txt").read_text()
+    require("Copyright (c) 2026 Robert Gordon University and contributing MAYA consortium partners, for their respective contributions." in mit
+            and "<year>" not in mit and "<copyright holders>" not in mit,
+            "MIT copyright attribution completed")
+    require("Developed by Robert Gordon University, with contributions from MAYA consortium partners." in scope,
+            "Contributor acknowledgement is separate from copyright notice")
+    ontology = Graph().parse(ROOT / "serialisation/icareonto.ttl", format="turtle")
+    require((URIRef("http://maya-project.eu/icareonto"), DCTERMS.license,
+             URIRef("https://creativecommons.org/licenses/by/4.0/")) in ontology, "Ontology licence is machine-readable")
     catalogues = [ROOT / "serialisation/catalog-v001.xml", ROOT / "validation/catalog-v001.xml", ROOT / "validation/cq-tests/catalog-v001.xml", ROOT / "education/examples/demo/catalog-v001.xml"]
     data = ROOT / "education/data/catalogue"
     catalogue = education.load_release(data)
@@ -61,7 +76,7 @@ def check_publication():
     return {"status": "PASS", "checks": len(checks), "catalogue_resources": len(catalogue["records"]),
             "scope": "Release-source hashes, required import paths and packaged catalogue; local ignored runs are excluded.",
             "public_file_audit": "PASS" if paths is not None else "NOT_RUN: Git is unavailable; source and import checks still ran",
-            "licence_status": "Project licence not yet selected" if not (ROOT / "LICENSE").exists() else "File present; choice is maintained by the project"}
+            "licence_status": "CC-BY-4.0 for original ontology/content; MIT for supporting software; third-party terms retained"}
 
 
 if __name__ == "__main__":

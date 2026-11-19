@@ -1,5 +1,16 @@
 ## [Unreleased]
 
+### Added
+
+- CC BY 4.0 licensing for original ontology content and catalogue metadata,
+  MIT licensing for supporting software, full licence texts, attribution
+  guidance and third-party notices.
+- Persistent licence and attribution annotations in generated ontology
+  headers, with checks protecting the external-vocabulary exclusions.
+- Copyright notices identifying Robert Gordon University and contributing
+  MAYA consortium partners for their respective contributions, with a
+  separate development and contributor acknowledgement.
+
 ### Changed
 
 - Expanded the reviewed educational catalogue from 16 to 31 resources,
@@ -7,6 +18,9 @@
   Spanish and English.
 - Refreshed catalogue exports, source integrity metadata, the selected
   educational example and associated validation reports.
+- Refreshed ontology fingerprints and dependent catalogue and demonstration
+  assets after adding licence metadata; the technical version remains
+  `0.1.0-draft`.
 
 ## [0.1.0-draft] – 2026-11-06
 

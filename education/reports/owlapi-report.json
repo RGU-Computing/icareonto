@@ -40,7 +40,7 @@
     },
     {
       "ontology": "OntologyID(OntologyIRI(<http://maya-project.eu/icareonto/education/dataset>) VersionIRI(<null>))",
-      "document": "../../data/catalogue/releases/3aad17371b1650d7262664e8/dataset.ttl",
+      "document": "../../data/catalogue/releases/7508bbc05b9401585a547578/dataset.ttl",
       "axioms": 15
     },
     {
@@ -50,12 +50,12 @@
     },
     {
       "ontology": "OntologyID(OntologyIRI(<http://maya-project.eu/icareonto/education/graphs/activities>) VersionIRI(<null>))",
-      "document": "../../data/catalogue/releases/3aad17371b1650d7262664e8/activity-templates.ttl",
+      "document": "../../data/catalogue/releases/7508bbc05b9401585a547578/activity-templates.ttl",
       "axioms": 107
     },
     {
       "ontology": "OntologyID(OntologyIRI(<http://maya-project.eu/icareonto/education/graphs/resources>) VersionIRI(<null>))",
-      "document": "../../data/catalogue/releases/3aad17371b1650d7262664e8/catalogue.ttl",
+      "document": "../../data/catalogue/releases/7508bbc05b9401585a547578/catalogue.ttl",
       "axioms": 1062
     },
     {

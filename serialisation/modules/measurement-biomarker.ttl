@@ -1,3 +1,4 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix icare: <http://maya-project.eu/icareonto/> .
 @prefix meta: <http://maya-project.eu/icareonto/metadata#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -726,6 +727,10 @@ icare:MeasurableParameter a owl:Class ;
 icare:measurement-biomarker a owl:Ontology ;
     rdfs:label "Measurement and Biomarker"@en ;
     meta:reviewStatus "Draft" ;
+    dcterms:contributor "MAYA consortium partners" ;
+    dcterms:creator "Robert Gordon University" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (c) 2026 Robert Gordon University and contributing MAYA consortium partners, for their respective contributions. Third-party material retains its applicable terms."@en ;
     rdfs:comment "Represents measurement events and results, measurable parameters and biomarkers, instruments, protocols, methods, contexts, sources, specimens, quality, thresholds and reference ranges."@en ;
     owl:imports icare:core,
         <http://maya-project.eu/icareonto/imports/skos-reference>,
