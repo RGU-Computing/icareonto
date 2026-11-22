@@ -324,6 +324,7 @@ def validate_graphs(graphs, schema):
     if errors:
         raise InputError("Graph validation failed:\n" + "\n".join(sorted(set(errors))))
     shapes = Graph().parse(ROOT / "shapes/enrolment.shacl.ttl", format="turtle")
+    shapes += section_records.value_shapes(schema)
     # Supply an explicit union: pySHACL's ont_graph inoculation recursively
     # clones interconnected named resources in this modular ontology.
     # No inferred instance types or OWL rules are materialised here.

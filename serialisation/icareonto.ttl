@@ -5,13 +5,13 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 <http://maya-project.eu/icareonto> a owl:Ontology ;
-    rdfs:label "iCARE Onto v1 (draft)"@en ;
+    rdfs:label "iCARE Onto"@en ;
     meta:reviewStatus "Draft" ;
     dcterms:contributor "MAYA consortium partners" ;
     dcterms:creator "Robert Gordon University" ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
     dcterms:rights "Copyright (c) 2026 Robert Gordon University and contributing MAYA consortium partners, for their respective contributions. Third-party material retains its applicable terms."@en ;
-    rdfs:comment "iCARE Onto provides the semantic foundation for the MAYA iCARE Health Hub, supporting adolescent and young adult cancer survivorship and cardiovascular health. Its modular model represents people and preferences, cancer treatment history, clinical profiles, measurements, cardiovascular risk, personalised care, lifestyle, social context, educational resources, conversational interaction, digital services, pilot settings and knowledge governance. It supports participant- and pilot-specific knowledge graphs, personalised educational support and evidence-grounded dialogue. This pre-release draft is under review toward iCARE Onto v1."@en ;
+    rdfs:comment "iCARE Onto provides the semantic foundation for the MAYA iCARE Health Hub, supporting adolescent and young adult cancer survivorship and cardiovascular health. Its modular model represents people and preferences, cancer treatment history, clinical profiles, measurements, cardiovascular risk, personalised care, lifestyle, social context, educational resources, conversational interaction, digital services, pilot settings and knowledge governance. It supports participant- and pilot-specific knowledge graphs, personalised educational support and evidence-grounded dialogue."@en ;
     owl:imports icare:agent,
         icare:alignments,
         icare:cancer-history,
@@ -31,6 +31,6 @@
         icare:pilot,
         icare:provenance-governance,
         icare:social-context ;
-    owl:versionIRI <http://maya-project.eu/icareonto/releases/0.1.0-draft/icareonto> ;
-    owl:versionInfo "0.1.0-draft" .
+    owl:versionIRI <http://maya-project.eu/icareonto/releases/0.2.0/icareonto> ;
+    owl:versionInfo "0.2.0" .
 

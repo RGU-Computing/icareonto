@@ -361,6 +361,6 @@ icare:pilot a owl:Ontology ;
         icare:measurement-biomarker,
         icare:metadata,
         icare:person-role ;
-    owl:versionIRI <http://maya-project.eu/icareonto/releases/0.1.0-draft/pilot> ;
-    owl:versionInfo "0.1.0-draft" .
+    owl:versionIRI <http://maya-project.eu/icareonto/releases/0.2.0/pilot> ;
+    owl:versionInfo "0.2.0" .
 

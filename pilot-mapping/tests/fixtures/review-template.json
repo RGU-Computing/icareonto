@@ -93,7 +93,7 @@
   ],
   "needs_sha256": "d37d4a62f3355efcebf5ec9d68743eed6aedebbd8a6b4392f8dea7c024970e15",
   "pilot_id": "es-demo-01",
-  "ranking_sha256": "1ed2afecb48d72ee57d8f2f00d6f6845f30703e9d335642122ddb55b5db5a939",
+  "ranking_sha256": "8e5d4ff91286bc1de4f0bf81b12f3e0d0f40f9506bd8895742704b589095206e",
   "review_status": "demonstration_annotation_not_site_approval",
   "reviewer": "REPLACE WITH REVIEWER DESCRIPTION",
   "schema_version": "1.1",

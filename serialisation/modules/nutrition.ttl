@@ -224,6 +224,6 @@ icare:nutrition a owl:Ontology ;
         <http://maya-project.eu/icareonto/imports/skos-reference>,
         icare:intervention-careplan,
         icare:metadata ;
-    owl:versionIRI <http://maya-project.eu/icareonto/releases/0.1.0-draft/nutrition> ;
-    owl:versionInfo "0.1.0-draft" .
+    owl:versionIRI <http://maya-project.eu/icareonto/releases/0.2.0/nutrition> ;
+    owl:versionInfo "0.2.0" .
 

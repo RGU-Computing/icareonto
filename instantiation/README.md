@@ -91,7 +91,7 @@ python serialisation/scripts/validate_with_protege.py --protege-app /path/to/Pro
 
 The workflow check uses temporary outputs and includes independent checks for shared-site linking, distinct participant preferences, optional-field omission, repeated processing, seed correction, rejected inputs and broken graph constraints. Reports are written to `reports/`. The separate OWL validator requires the installed Protégé Java runtime described in `serialisation/README.md`.
 
-The original suite covers 49 workflow checks. The 18 [KG Instantiator checks](reports/INSTANTIATOR_CHECKS.md) test fillable templates, refresh, snapshot omission and pilot dependencies. The [grouped-record checks](reports/SECTION_CHECKS.md) test connected clinical records, prescriptions versus performance, longitudinal additions, invalid ontology content and exact JSON-LD equivalence. All use temporary fictional outputs. Example logical-validation results are in `generated/validation/owlapi-report.json`.
+The original suite covers 49 workflow checks. The 18 [KG Instantiator checks](reports/INSTANTIATOR_CHECKS.md) test fillable templates, refresh, snapshot omission and pilot dependencies. The [grouped-record checks](reports/SECTION_CHECKS.md) test connected clinical records, prescriptions versus performance, longitudinal additions, invalid ontology content, exact JSON-LD equivalence and calendar-date/duration string validation. All use temporary fictional outputs. [Populated clinical and temporal OWL validation](reports/temporal-owlapi-report.json) and [the datatype policy/migration guide](reports/DATATYPE_COMPATIBILITY.md) accompany the package.
 
 ## Scope and future integration
 

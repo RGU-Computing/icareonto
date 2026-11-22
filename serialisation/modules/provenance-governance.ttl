@@ -213,6 +213,6 @@ icare:provenance-governance a owl:Ontology ;
         <http://maya-project.eu/icareonto/imports/skos-reference>,
         icare:metadata,
         icare:person-role ;
-    owl:versionIRI <http://maya-project.eu/icareonto/releases/0.1.0-draft/provenance-governance> ;
-    owl:versionInfo "0.1.0-draft" .
+    owl:versionIRI <http://maya-project.eu/icareonto/releases/0.2.0/provenance-governance> ;
+    owl:versionInfo "0.2.0" .
 

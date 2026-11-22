@@ -16,4 +16,5 @@ if __name__ == "__main__":
     reference["ontology_files_sha256"] = {iri: w.digest(path.read_bytes()) for iri, path in sorted(paths.items())}
     w.atomic_write(args.output / "ontology-input-reference.json", w.canonical(reference))
     w.atomic_write(args.output / "jsonld-context.json", w.canonical({"@context": section_records.jsonld_context(schema)}))
+    w.atomic_write(args.output / "value-formats.shacl.ttl", section_records.value_shapes(schema).serialize(format="turtle").encode())
     print(f"Exported {len(reference['classes'])} classes and {len(reference['properties'])} properties to {args.output}")

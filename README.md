@@ -1,6 +1,6 @@
 # iCARE Onto tools and ontology
 
-This repository contains the shared ontology and four tools supporting knowledge representation in the MAYA iCARE Health Hub. The ontology is **0.1.0-draft**, under review toward iCARE Onto Version 1. Participant and pilot examples are fictional.
+This repository contains the shared ontology and four tools supporting knowledge representation in the MAYA iCARE Health Hub. The ontology is **0.2.0**, under review toward iCARE Onto Version 1. Participant and pilot examples are fictional.
 
 | Tool                        | Purpose                                                                                                              | Documentation                              |
 | --------------------------- | -------------------------------------------------------------------------------------------------------------------- | ------------------------------------------ |
@@ -47,7 +47,7 @@ python scripts/run_checks.py
 
 This runs ontology/source reconciliation, instantiation, grouped-record, educational and saved-ranking workflow tests, and all 78 CQs with four additional controls. [Validation documentation](validation/README.md) explains the datasets and scope. The optional live encoder integration can be run with `--with-encoder` and a configured encoder environment. The public-file audit uses Git's ignore rules when Git is available; source-integrity and import checks also run without Git.
 
-Formal OWL checking is separate. The ontology and original CQ fixtures have saved results. Populating `diagnosisDate` in the fuller participant example exposes an existing `xsd:date` OWL 2 DL profile compatibility issue; HermiT reports consistency. See [the recorded limitation](instantiation/reports/DATATYPE_COMPATIBILITY.md). Do not interpret passing workflow tests as clinical validation or as zero OWL profile violations for every dataset.
+Formal OWL checking is separate. The ontology, CQ fixtures, educational example and populated clinical/date-duration examples have saved OWLAPI/HermiT results. Version 0.2.0 uses validated strings for calendar dates and durations, preserving date-only precision and resolving the earlier populated-date profile finding. See [the datatype policy, evidence and migration guide](instantiation/reports/DATATYPE_COMPATIBILITY.md). Passing workflow or reasoner checks establish the tested technical behaviour, not clinical validity of arbitrary datasets.
 
 ## Repository contents
 

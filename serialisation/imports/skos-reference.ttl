@@ -11,8 +11,8 @@
     rdfs:comment "Reference subset of W3C terms used by iCARE Onto. Term IRIs retain their external identity; this ontology provides the selected supporting axioms."@en ;
     rdfs:seeAlso <https://www.w3.org/2009/08/skos-reference/skos.rdf> ;
     owl:imports icare:metadata ;
-    owl:versionIRI <http://maya-project.eu/icareonto/releases/0.1.0-draft/imports/skos-reference> ;
-    owl:versionInfo "0.1.0-draft" .
+    owl:versionIRI <http://maya-project.eu/icareonto/releases/0.2.0/imports/skos-reference> ;
+    owl:versionInfo "0.2.0" .
 
 skos:altLabel a rdf:Property,
         owl:AnnotationProperty ;

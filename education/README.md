@@ -64,6 +64,12 @@ The distributed release is under `data/catalogue/`. [examples/demo/participant-e
 
 The `education/metadata#` annotations record application metadata such as journey stage, access conditions and review state. They are declared as OWL annotation properties in the generated graphs and do not add domain entities to the core ontology. Topics, needs, purposes and other controlled classifications use the actual iCARE Onto values. Country of contribution is never used as a language or eligibility inference. English and Spanish map to generic `en` and `es`, not unverified regional variants.
 
+## Resource access and need-based selection
+
+A consuming interface can use `catalogue.json` and its resource descriptions, classifications and source links for participant-led browsing and filtering. Browsing does not require a recorded health-literacy need. The participant-facing browsing interface is supplied by the consuming application; it is not bundled in this repository.
+
+For need-based signposting, the selector below accepts an identified need and participant context and returns candidate links with matching explanations. Its request requires a need and its identification method/source. Keep browsing independent of this request contract rather than inventing a need to retrieve resources. Both routes can be used without executing a structured educational activity or an avatar-led lesson.
+
 ## Selection interface
 
 ```bash
@@ -103,6 +109,8 @@ The response contains identifiers, URLs, descriptions, access/rights metadata an
 3. Adjusting to life after treatment.
 
 Each includes a learning objective, identified needs, resource-selection criteria, delivery steps and reflection/understanding-check prompts. They reuse resources through links and do not reproduce their text. These new activity templates need editorial/domain review before being adopted for participant delivery; approval of the source resources is a separate decision.
+
+These templates and the fictional intervention graph illustrate possible future structured educational interaction. The catalogue and resource-selection workflows operate independently of them. They do not establish implemented avatar-led teaching, participant completion or demonstrated learning.
 
 ```bash
 python education/scripts/education_resources.py demo

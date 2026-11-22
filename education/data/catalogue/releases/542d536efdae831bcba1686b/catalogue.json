@@ -136,7 +136,7 @@
   "base_iri": "http://maya-project.eu/icareonto/education/",
   "metadata_license": "https://creativecommons.org/licenses/by/4.0/",
   "metadata_rights": "Copyright (c) 2026 Robert Gordon University and contributing MAYA consortium partners, for their respective contributions. CC BY 4.0 covers original metadata and activity content only; linked publications retain their provider terms.",
-  "ontology_sha256": "704db09ee79cc1c07f6c2929468e2065a5b55ed70266aac6880ba7522aee9ce3",
+  "ontology_sha256": "8d9adda7a9053f1548053d385aade5435edad15a5fb9a522bcd5fdb133cad964",
   "profile_version": "1.1",
   "records": [
     {

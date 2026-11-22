@@ -21,7 +21,15 @@
       "status": "PASS"
     },
     {
+      "name": "test_date_strings_preserve_precision_and_valid_leap_days",
+      "status": "PASS"
+    },
+    {
       "name": "test_duplicate_record_ids_across_groups_are_rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "test_duration_strings_validate_all_three_properties",
       "status": "PASS"
     },
     {
@@ -29,7 +37,19 @@
       "status": "PASS"
     },
     {
+      "name": "test_input_reference_exposes_temporal_constraints",
+      "status": "PASS"
+    },
+    {
+      "name": "test_invalid_calendar_dates_and_added_times_are_rejected",
+      "status": "PASS"
+    },
+    {
       "name": "test_invalid_date_and_numeric_value_are_rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "test_invalid_duration_update_preserves_existing_outputs",
       "status": "PASS"
     },
     {
@@ -93,6 +113,18 @@
       "status": "PASS"
     },
     {
+      "name": "test_shacl_checks_calendar_validity_without_the_input_parser",
+      "status": "PASS"
+    },
+    {
+      "name": "test_shacl_checks_duration_formats_and_legacy_typed_values",
+      "status": "PASS"
+    },
+    {
+      "name": "test_temporal_fixture_is_instantiated_and_round_trips_as_strings",
+      "status": "PASS"
+    },
+    {
       "name": "test_unknown_class_is_rejected",
       "status": "PASS"
     },
@@ -121,10 +153,10 @@
       "status": "PASS"
     }
   ],
-  "checks": 30,
+  "checks": 38,
   "errors": 0,
   "failures": 0,
-  "run_date": "2026-11-19",
+  "run_date": "2026-11-22",
   "scope": "Fictional clinical inputs and temporary outputs. Expected query answers are independently specified. No clinical efficacy or predictive validity is established.",
   "status": "PASS"
 }

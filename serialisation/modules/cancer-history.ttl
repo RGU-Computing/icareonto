@@ -188,10 +188,12 @@ icare:cumulativeDrugDoseUnit a owl:DatatypeProperty ;
 
 icare:diagnosisDate a owl:DatatypeProperty ;
     rdfs:label "diagnosis date"@en ;
+    meta:valueFormat "iso-calendar-date" ;
+    meta:valuePattern "^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$" ;
     rdfs:domain icare:CancerDiagnosis ;
     rdfs:isDefinedBy icare:cancer-history ;
-    rdfs:range xsd:date ;
-    skos:definition "Records the date of cancer diagnosis when known."@en .
+    rdfs:range xsd:string ;
+    skos:definition "Records the calendar date of cancer diagnosis, when known, as a string in YYYY-MM-DD format. No time of day or timezone is implied."@en .
 
 icare:hasCancerDiagnosis a owl:ObjectProperty ;
     rdfs:label "has cancer diagnosis"@en ;
@@ -704,6 +706,6 @@ icare:cancer-history a owl:Ontology ;
         <http://maya-project.eu/icareonto/imports/skos-reference>,
         icare:metadata,
         icare:person-role ;
-    owl:versionIRI <http://maya-project.eu/icareonto/releases/0.1.0-draft/cancer-history> ;
-    owl:versionInfo "0.1.0-draft" .
+    owl:versionIRI <http://maya-project.eu/icareonto/releases/0.2.0/cancer-history> ;
+    owl:versionInfo "0.2.0" .
 

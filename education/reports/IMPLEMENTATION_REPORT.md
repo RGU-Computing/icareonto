@@ -1,12 +1,12 @@
-# Initial MAYA educational resource workflow
+# MAYA educational resource workflow
 
-Initially implemented and checked on 3 November 2026; the packaged catalogue and selected example were refreshed on 18 November 2026. This package connects the reviewed educational-resource catalogue to ontology-based selection and draft learning activities. It is an offline, reusable workflow for subsequent Health Hub and avatar integration.
+Initially implemented on 3 November 2026; the 31-resource packaged catalogue, ontology fingerprints, selected example and validation evidence were refreshed against ontology 0.2.0 on 22 November 2026. This package connects the reviewed educational-resource catalogue to ontology-based selection and draft learning activities. It is an offline, reusable workflow for subsequent Health Hub and avatar integration.
 
 ## Current collection and ontology
 
-The release contains **31 resources** marked both Approved and Complete in the saved Release resources worksheet: nine Spanish, seven English, five German, four Italian, three Polish and three Portuguese. The 18 November update adds 15 resources to the earlier 16-resource catalogue. MAYA-EDU-0014 remains excluded because it is On hold and To complete. Approved resources with verified registration requirements remain eligible, with their access conditions exposed to the delivery component.
+The release contains **31 resources** marked both Approved and Complete in the saved Release resources worksheet: nine Spanish, seven English, five German, four Italian, three Polish and three Portuguese. The 18 November update adds 15 resources to the earlier 16-resource catalogue. The public source sheet contains only the 31 released entries. Approved resources with verified registration requirements remain eligible, with their access conditions exposed to the delivery component.
 
-The ontology was refreshed from `icareonto_review_workbook_v021126.xlsx`, retaining version `0.1.0-draft`. It contains 17 modules, 283 classes, 284 object properties, 137 data properties, **304 controlled values** and 62 schemes. The knowledge-resource module now includes DigitalHealthPrivacyAndTrust and MentalHealthAndEmotionalWellbeing and the revised topic definitions. Comparing module RDF against the previous package found changes only in knowledge-resource.
+The ontology was refreshed from `icareonto_review_workbook_v221126.xlsx` as technical version `0.2.0`. It contains 17 modules, 283 classes, 284 object properties, 137 data properties, **304 controlled values** and 62 schemes. Calendar dates and durations now use validated strings; resource definitions and controlled topic values are preserved. The catalogue was rebuilt against the new ontology fingerprint without adding, removing or revising the 31 resource records.
 
 The importer maps controlled labels to ontology IRIs, preserves Resource IDs, separates semicolon-delimited values, retains review and rights metadata, and publishes metadata and links without retrieving source content. Source workbook names and row provenance are confined to validation sidecars. Application annotations record journey stage, curation state, access conditions and review details; core domain relationships use iCARE Onto.
 
@@ -22,13 +22,13 @@ The fictional post-treatment cardiovascular example selects **MAYA-EDU-0004** fo
 
 ## Validation
 
-Catalogue graph validation, the 40 educational workflow checks and the selected educational example's OWLAPI/HermiT validation were repeated for the 18 November refresh. Ontology reconciliation and CQ results below refer to the existing, unchanged ontology baseline.
+Catalogue graph validation, the 41 educational workflow checks, ontology/source reconciliation, all 78 CQ queries with four controls and the selected educational example's OWLAPI/HermiT checks were repeated against ontology 0.2.0 on 22 November 2026.
 
 | Validation activity | Result |
 |---|---|
-| Source-to-ontology reconciliation | 4,254 checks passed |
+| Source-to-ontology reconciliation | 4,655 checks passed |
 | Ontology OWLAPI/HermiT | 22 imported documents including the entry; OWL 2 DL; consistent; no unsatisfiable named classes |
-| Educational workflow tests | 40 checks passed, with no failures or errors; workbook unchanged during testing |
+| Educational workflow tests | 41 checks passed, with no failures or errors; workbook unchanged during testing |
 | Resource graph validation | Required-field SHACL and explicit ontology type/domain/range checks passed |
 | Educational demonstration OWLAPI/HermiT | 26 documents; zero OWL 2 DL violations; consistent; no unsatisfiable named classes |
 | Existing competency-question regression | All 78 CQs and four controls passed against the refreshed ontology |

@@ -372,6 +372,6 @@ icare:person-role a owl:Ontology ;
     owl:imports icare:core,
         <http://maya-project.eu/icareonto/imports/skos-reference>,
         icare:metadata ;
-    owl:versionIRI <http://maya-project.eu/icareonto/releases/0.1.0-draft/person-role> ;
-    owl:versionInfo "0.1.0-draft" .
+    owl:versionIRI <http://maya-project.eu/icareonto/releases/0.2.0/person-role> ;
+    owl:versionInfo "0.2.0" .
 

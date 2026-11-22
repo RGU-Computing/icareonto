@@ -524,6 +524,6 @@ icare:lifestyle-behaviour a owl:Ontology ;
         icare:metadata,
         icare:person-role,
         icare:social-context ;
-    owl:versionIRI <http://maya-project.eu/icareonto/releases/0.1.0-draft/lifestyle-behaviour> ;
-    owl:versionInfo "0.1.0-draft" .
+    owl:versionIRI <http://maya-project.eu/icareonto/releases/0.2.0/lifestyle-behaviour> ;
+    owl:versionInfo "0.2.0" .
 

@@ -650,6 +650,6 @@ icare:exercise a owl:Ontology ;
         icare:intervention-careplan,
         icare:measurement-biomarker,
         icare:metadata ;
-    owl:versionIRI <http://maya-project.eu/icareonto/releases/0.1.0-draft/exercise> ;
-    owl:versionInfo "0.1.0-draft" .
+    owl:versionIRI <http://maya-project.eu/icareonto/releases/0.2.0/exercise> ;
+    owl:versionInfo "0.2.0" .
 

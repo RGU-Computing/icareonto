@@ -5,7 +5,7 @@
   "fixture": "education/tests/fixtures/reviewed-rows.json",
   "fixture_sha256": "f207174df0724e2c93c9b35e1318b0af6a4fda504e23233c3df04335c254461a",
   "result": "PASS",
-  "run_date": "2026-11-19",
+  "run_date": "2026-11-22",
   "source_workbook_unchanged": true,
   "test_cases": [
     {

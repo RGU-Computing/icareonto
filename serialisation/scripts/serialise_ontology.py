@@ -29,6 +29,16 @@ SKOS_IRI = URIRef(BASE + "imports/skos-reference")
 NS = {"m": "http://schemas.openxmlformats.org/spreadsheetml/2006/main"}
 EXTERNAL = {"owl": OWL, "rdf": RDF, "rdfs": RDFS, "skos": SKOS, "prov": PROV, "xsd": XSD, "dcterms": DCTERMS}
 SKIP = {"Summary", "controlled vocabulary summary", "controlled vocabulary detail"}
+# Format annotations preserve date/duration meaning while the RDF values use
+# OWL-compatible strings. Consumers can validate them without the source file.
+_TIME_DURATION = r"([0-9]+H([0-9]+M)?([0-9]+(\.[0-9]+)?S)?|[0-9]+M([0-9]+(\.[0-9]+)?S)?|[0-9]+(\.[0-9]+)?S)"
+_DATE_DURATION = r"([0-9]+Y([0-9]+M)?([0-9]+D)?|[0-9]+M([0-9]+D)?|[0-9]+D)"
+VALUE_FORMATS = {
+    "diagnosisDate": ("iso-calendar-date", r"[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])"),
+    "intervalDuration": ("iso-duration", "-?P([0-9]+W|" + _DATE_DURATION + "(T" + _TIME_DURATION + ")?|T" + _TIME_DURATION + ")"),
+}
+for _name in ("estimatedCompletionTime", "serviceUseDuration"):
+    VALUE_FORMATS[_name] = VALUE_FORMATS["intervalDuration"]
 
 
 def read_xlsx(path):
@@ -230,10 +240,12 @@ def build(args):
         if e["kind"] == "Class":
             parent = r.get("F", "").strip()
             if parent:
-                # Only unambiguous named parents are accepted; do not split "Access or Engagement Barrier".
-                if ";" in parent or "\n" in parent:
-                    raise ValueError(f"Multiple parents need explicit review: {subject}: {parent}")
-                g.add((subject, RDFS.subClassOf, resolve(parent, name, e["id"] + " parent")))
+                # Semicolons/newlines explicitly list named parents. Do not
+                # split natural-language class names on words such as "or".
+                for item in re.split(r"[;\n]", parent):
+                    if not item.strip():
+                        raise ValueError(f"Empty named parent: {subject}: {parent}")
+                    g.add((subject, RDFS.subClassOf, resolve(item, name, e["id"] + " parent")))
         else:
             for col, pred in (("G", RDFS.domain), ("H", RDFS.range)):
                 text = r.get(col, "").strip()
@@ -247,6 +259,12 @@ def build(args):
                 elif value in entities and entities[value]["kind"] != "Class":
                     raise ValueError(f"Non-class domain/range {subject}: {value}")
                 g.add((subject, pred, value))
+            if e["kind"] == "DatatypeProperty" and e["id"] in VALUE_FORMATS:
+                if set(g.objects(subject, RDFS.range)) != {XSD.string}:
+                    raise ValueError(f"Formatted date/duration property requires xsd:string: {subject}")
+                name, pattern = VALUE_FORMATS[e["id"]]
+                g.add((subject, META.valueFormat, Literal(name)))
+                g.add((subject, META.valuePattern, Literal("^" + pattern + "$")))
 
     vocab = [r for r in wb["controlled vocabulary detail"] if r.get("F", "").startswith(BASE)]
     vocab_ids, schemes = set(), {}
@@ -299,7 +317,8 @@ def build(args):
     # Dublin Core properties support bibliographic/resource metadata, including CQ-025 and CQ-051.
     metadata = graph()
     header(metadata, META_IRI, "iCARE Onto metadata", "Annotation vocabulary for ontology review status and descriptive, bibliographic, language and rights metadata for knowledge resources.", args.version)
-    for prop, label in ((META.reviewStatus, "review status"),):
+    for prop, label in ((META.reviewStatus, "review status"),
+                        (META.valueFormat, "value format"), (META.valuePattern, "value pattern")):
         metadata.add((prop, RDF.type, OWL.AnnotationProperty))
         metadata.add((prop, RDFS.label, Literal(label, lang="en")))
     for local in ("title", "creator", "contributor", "description", "identifier", "language", "publisher", "issued", "modified", "license", "rights", "bibliographicCitation", "source"):
@@ -308,10 +327,6 @@ def build(args):
     metadata.add((META_IRI, RDFS.seeAlso, URIRef("https://www.dublincore.org/specifications/dublin-core/dcmi-terms/")))
     for local in ("prefLabel", "altLabel", "definition"):
         metadata.add((SKOS[local], RDF.type, OWL.AnnotationProperty))
-    # Preserve the source datatypes explicitly, including XSD datatypes outside
-    # OWL 2's mandatory datatype map. Value-level support is reasoner-dependent.
-    for dtype in (XSD.date, XSD.duration):
-        metadata.add((dtype, RDF.type, RDFS.Datatype))
     metadata.serialize(root / "imports" / "metadata.ttl", format="turtle")
     references = reference_imports(root, args.version)
 
@@ -351,11 +366,10 @@ def build(args):
                  str(SKOS_IRI): "imports/skos-reference.ttl", str(PROV_IRI): "imports/prov-reference.ttl",
                  str(align_iri): "alignments/approved.ttl"}
     top = graph()
-    header(top, ROOT_IRI, "iCARE Onto v1 (draft)",
+    header(top, ROOT_IRI, "iCARE Onto",
            "iCARE Onto provides the semantic foundation for the MAYA iCARE Health Hub, supporting adolescent and young adult cancer survivorship and cardiovascular health. "
            "Its modular model represents people and preferences, cancer treatment history, clinical profiles, measurements, cardiovascular risk, personalised care, lifestyle, social context, educational resources, conversational interaction, digital services, pilot settings and knowledge governance. "
-           "It supports participant- and pilot-specific knowledge graphs, personalised educational support and evidence-grounded dialogue. "
-           "This pre-release draft is under review toward iCARE Onto v1.", args.version)
+           "It supports participant- and pilot-specific knowledge graphs, personalised educational support and evidence-grounded dialogue.", args.version)
     top.add((ROOT_IRI, OWL.imports, align_iri))
     top.add((ROOT_IRI, OWL.imports, META_IRI))
     module_counts = []
@@ -438,7 +452,7 @@ def build(args):
               "source_datatypes_preserved": datatypes,
               "limitations": ["CQ paths checked for term presence only; no participant instances or CQ query execution.",
                               "OWL domains/ranges are inference axioms, not required-field validation rules.",
-                              "Workbook xsd:date and xsd:duration datatypes are preserved; check reasoner support.",
+                              "Calendar dates and durations use xsd:string with value-format annotations; input/SHACL checks enforce their lexical and calendar constraints, not OWL reasoning.",
                               "Dublin Core metadata properties are locally declared as OWL annotation properties; dcterms:source can hold an evidence-resource IRI.",
                               "No unapproved cardinalities, disjointness, equivalence, enumeration closure or distinct-value axioms were added."]}
     (root / "validation" / "build-report.json").write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
@@ -448,10 +462,10 @@ def build(args):
 if __name__ == "__main__":
     repo = Path(__file__).resolve().parents[2]
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--ontology", type=Path, default=repo / "sources/icareonto_review_workbook_v021126.xlsx")
+    parser.add_argument("--ontology", type=Path, default=repo / "sources/icareonto_review_workbook_v221126.xlsx")
     parser.add_argument("--alignments", type=Path, default=repo / "sources/icareonto_alignment_mapping_workbook_v301026_4.xlsx")
     parser.add_argument("--cqs", type=Path, default=repo / "sources/icareonto_final_consolidated_competency_questions_v5.xlsx")
     parser.add_argument("--output", type=Path, default=repo / "serialisation")
     parser.add_argument("--release", default=datetime.now(timezone.utc).date().isoformat(), help="Build date recorded in the development report; defaults to the current UTC date")
-    parser.add_argument("--version", default="0.1.0-draft", help="Ontology pre-release version, independent of development-source revisions")
+    parser.add_argument("--version", default="0.2.0", help="Technical ontology version, independent of development-source revisions")
     build(parser.parse_args())

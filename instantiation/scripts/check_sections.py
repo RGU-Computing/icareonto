@@ -10,6 +10,7 @@ import unittest
 
 from rdflib import Dataset, Graph, Literal, RDF, URIRef, XSD
 from rdflib.compare import isomorphic
+from pyshacl import validate as validate_shapes
 import generate_kg as w
 import section_records as s
 
@@ -183,15 +184,87 @@ class SectionChecks(unittest.TestCase):
         samples = {
             XSD.string: "LVEF <50% is a textual example", XSD.decimal: 1.25,
             XSD.nonNegativeInteger: 0, XSD.positiveInteger: 1, XSD.boolean: False,
-            XSD.dateTime: "2026-11-04T10:00:00Z", XSD.date: "2022-03-12",
-            XSD.language: "es-ES", XSD.anyURI: "http://unitsofmeasure.org", XSD.duration: "PT30M"
+            XSD.dateTime: "2026-11-04T10:00:00Z",
+            XSD.language: "es-ES", XSD.anyURI: "http://unitsofmeasure.org"
         }
         actual = {v for p in self.schema.subjects(RDF.type, w.OWL.DatatypeProperty) for v in self.schema.objects(p, w.RDFS.range)}
         self.assertEqual(actual, set(samples))
         for datatype, value in samples.items():
             self.assertEqual(s.literal(value, datatype, w.FORMATS).datatype, datatype)
-        for datatype, value in [(XSD.boolean, "false"), (XSD.positiveInteger, 0), (XSD.nonNegativeInteger, -1), (XSD.decimal, True), (XSD.duration, "P"), (XSD.anyURI, "http://[")]:
+        for datatype, value in [(XSD.boolean, "false"), (XSD.positiveInteger, 0), (XSD.nonNegativeInteger, -1), (XSD.decimal, True), (XSD.anyURI, "http://[")]:
             with self.assertRaises(s.SectionError): s.literal(value, datatype, w.FORMATS)
+
+    def test_date_strings_preserve_precision_and_valid_leap_days(self):
+        name, pattern = s.property_format(self.schema, w.IC.diagnosisDate)
+        for value in ["0001-01-01", "1900-02-28", "2000-02-29", "2024-02-29", "9999-12-31"]:
+            actual = s.literal(value, XSD.string, w.FORMATS, name, pattern)
+            self.assertEqual((str(actual), actual.datatype), (value, XSD.string))
+        self.run_record()
+        actual = next(self.graph().objects(self.node("cancer-diagnosis"), w.IC.diagnosisDate))
+        self.assertEqual((str(actual), actual.datatype), ("2022-03-12", XSD.string))
+        exported = Graph().parse(self.output / "participants/es-demo-aya-full.jsonld", format="json-ld")
+        self.assertIn((self.node("cancer-diagnosis"), w.IC.diagnosisDate, actual), exported)
+
+    def test_invalid_calendar_dates_and_added_times_are_rejected(self):
+        name, pattern = s.property_format(self.schema, w.IC.diagnosisDate)
+        for value in ["0000-01-01", "1900-02-29", "2100-02-29", "2023-02-29", "2024-04-31", "2026-2-01", "2022-03-12Z", "2022-03-12T00:00:00Z", "2022-03-12\n", 20220312]:
+            with self.subTest(value=value), self.assertRaises(s.SectionError):
+                s.literal(value, XSD.string, w.FORMATS, name, pattern)
+
+    def test_duration_strings_validate_all_three_properties(self):
+        for prop in [w.IC.intervalDuration, w.IC.estimatedCompletionTime, w.IC.serviceUseDuration]:
+            name, pattern = s.property_format(self.schema, prop)
+            for value in ["P7D", "PT30M", "PT0S", "P1Y2M3DT4H5M6.25S", "P2W", "-P1D"]:
+                self.assertEqual(str(s.literal(value, XSD.string, w.FORMATS, name, pattern)), value)
+            for value in ["P", "PT", "P1DT", "30 minutes", "P1D2W", "PT2M1H", "PT1.2.3S", "PT30M\n", 30]:
+                with self.subTest(prop=prop, value=value), self.assertRaises(s.SectionError):
+                    s.literal(value, XSD.string, w.FORMATS, name, pattern)
+
+    def test_shacl_checks_calendar_validity_without_the_input_parser(self):
+        shapes = s.value_shapes(self.schema)
+        for value, expected in [("2000-02-29", True), ("2024-02-29", True), ("1900-02-29", False), ("2100-02-29", False), ("2024-04-31", False), ("0000-01-01", False), ("2026-2-01", False), ("2022-03-12\n", False)]:
+            graph = Graph()
+            graph.add((self.node("date-check"), w.IC.diagnosisDate, Literal(value, datatype=XSD.string)))
+            result, _, _ = validate_shapes(graph, shacl_graph=shapes, inference="none")
+            self.assertEqual(result, expected, value)
+
+    def test_shacl_checks_duration_formats_and_legacy_typed_values(self):
+        shapes = s.value_shapes(self.schema)
+        for prop in [w.IC.intervalDuration, w.IC.estimatedCompletionTime, w.IC.serviceUseDuration]:
+            for value, dtype, expected in [("PT15M", XSD.string, True), ("P", XSD.string, False), ("P1DT", XSD.string, False), ("PT15M", XSD.duration, False)]:
+                graph = Graph()
+                graph.add((self.node("duration-check"), prop, Literal(value, datatype=dtype)))
+                result, _, _ = validate_shapes(graph, shacl_graph=shapes, inference="none")
+                self.assertEqual(result, expected, (prop, value, dtype))
+        graph = Graph()
+        graph.add((self.node("date-check"), w.IC.diagnosisDate, Literal("2022-03-12", datatype=XSD.date)))
+        self.assertFalse(validate_shapes(graph, shacl_graph=shapes, inference="none")[0])
+
+    def test_temporal_fixture_is_instantiated_and_round_trips_as_strings(self):
+        record = w.read_json(w.ROOT / "examples/participant-es-temporal.json")
+        w.instantiate("participant", record, self.output)
+        folder = self.output / "participants"
+        actual = Graph().parse(folder / "es-demo-aya-temporal.ttl")
+        exported = Graph().parse(folder / "es-demo-aya-temporal.jsonld", format="json-ld")
+        self.assertTrue(isomorphic(actual, exported))
+        for prop, value in [(w.IC.diagnosisDate, "2024-02-29"), (w.IC.intervalDuration, "P7D"), (w.IC.estimatedCompletionTime, "PT10M"), (w.IC.serviceUseDuration, "PT15M")]:
+            self.assertEqual(set(actual.objects(None, prop)), {Literal(value, datatype=XSD.string)})
+
+    def test_invalid_duration_update_preserves_existing_outputs(self):
+        record = w.read_json(w.ROOT / "examples/participant-es-temporal.json")
+        w.instantiate("participant", record, self.output)
+        before = self.hashes()
+        record["sections"]["digital_services"]["records"][0]["properties"]["serviceUseDuration"] = "P1DT"
+        with self.assertRaisesRegex(w.InputError, "iso-duration"):
+            w.instantiate("participant", record, self.output)
+        self.assertEqual(before, self.hashes())
+
+    def test_input_reference_exposes_temporal_constraints(self):
+        props = {p["name"]: p for p in s.ontology_reference(self.schema)["properties"]}
+        for name, fmt in [("diagnosisDate", "iso-calendar-date"), ("intervalDuration", "iso-duration"), ("estimatedCompletionTime", "iso-duration"), ("serviceUseDuration", "iso-duration")]:
+            self.assertEqual(props[name]["value_format"], fmt)
+            self.assertEqual(props[name]["ranges"], [str(XSD.string)])
+            self.assertTrue(props[name]["pattern"])
 
     def test_unknown_valid_property_value_remains_unasserted(self):
         record = deepcopy(self.person); self.record("prescribed-walking", record)["properties"]["distanceValue"] = None
@@ -260,12 +333,12 @@ class SectionChecks(unittest.TestCase):
     def test_changed_ontology_rebuilds_unchanged_json_in_both_formats(self):
         self.run_record()
         # This hypothetical model change is confined to a temporary package.
-        # The authoritative ontology and its declared date representation stay intact.
+        # Change an annotation, keeping the current precision-preserving range.
         package = Path(self.temp.name) / "ontology-copy"
         shutil.copytree(w.DEFAULT_SCHEMA, package)
         module = package / "modules/cancer-history.ttl"
         graph = Graph().parse(module)
-        graph.set((w.IC.diagnosisDate, w.RDFS.range, XSD.string))
+        graph.set((w.IC.diagnosisDate, w.RDFS.label, Literal("updated diagnosis date label", lang="en")))
         module.write_text(graph.serialize(format="turtle"))
         report = w.instantiate("participant", self.person, self.output, schema_dir=package)
         self.assertEqual(report["status"], "REPLACED_SEED")

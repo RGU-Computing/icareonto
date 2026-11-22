@@ -20,6 +20,12 @@ ontology_source = next(name for name in report["sources_sha256"] if name.startsw
 source = read_xlsx(repo / ontology_source)
 graphs = {p.stem: Graph().parse(p, format="turtle") for p in sorted((root / "modules").glob("*.ttl"))}
 checks = []
+class_lookup = collections.defaultdict(set)
+for module in graphs:
+    for r in source[module]:
+        if r["_row"] >= 8 and r.get("B", "").startswith(BASE) and r.get("A"):
+            for text in (r["A"], r.get("C", r["A"]), r["B"].removeprefix(BASE)):
+                class_lookup[re.sub(r"[^a-z0-9]", "", text.casefold())].add(URIRef(r["B"]))
 
 
 def check(condition, message):
@@ -53,6 +59,33 @@ for module, g in graphs.items():
         if kind in ("ObjectProperty", "DatatypeProperty"):
             check(len(list(g.objects(subject, RDFS.domain))) == 1 and len(list(g.objects(subject, RDFS.range))) == 1,
                   f"Single source domain/range: {module}:{subject}")
+        if kind == "Class" and r.get("F", "").strip():
+            parents = set()
+            for text in re.split(r"[;\n]", r["F"]):
+                text = text.strip()
+                if text.startswith(("http://", "https://")):
+                    parent = URIRef(text)
+                elif ":" in text:
+                    prefix, local = text.split(":", 1)
+                    ns = {"skos": str(SKOS), "prov": "http://www.w3.org/ns/prov#", "owl": str(OWL)}
+                    parent = URIRef(ns.get(prefix, BASE) + local)
+                else:
+                    matches = class_lookup[re.sub(r"[^a-z0-9]", "", text.casefold())]
+                    check(len(matches) == 1, "Unambiguous source parent: " + text)
+                    parent = next(iter(matches))
+                parents.add(parent)
+            check(parents <= set(g.objects(subject, RDFS.subClassOf)), f"All source parent relationships: {subject}")
+
+formats = {
+    "diagnosisDate": ("cancer-history", "iso-calendar-date"),
+    "intervalDuration": ("core", "iso-duration"),
+    "estimatedCompletionTime": ("knowledge-resource", "iso-duration"),
+    "serviceUseDuration": ("healthhub-service", "iso-duration"),
+}
+for name, (module, fmt) in formats.items():
+    prop = URIRef(BASE + name)
+    check((prop, URIRef(BASE + "metadata#valueFormat"), Literal(fmt)) in graphs[module], "Temporal format annotation: " + name)
+    check(len(list(graphs[module].objects(prop, URIRef(BASE + "metadata#valuePattern")))) == 1, "Temporal pattern annotation: " + name)
 
 merged = Graph()
 for g in graphs.values():

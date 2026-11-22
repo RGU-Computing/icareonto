@@ -210,7 +210,7 @@ def md(text):
 
 
 lines = ["# iCARE Onto competency-question validation report", "",
-         f"**Ontology:** 0.1.0-draft, under review toward iCARE Onto v1. **Test date:** {report['run_date']}.", "",
+         f"**Ontology:** {report['ontology_version']}, under review toward iCARE Onto v1. **Test date:** {report['run_date']}.", "",
          f"All **78 consolidated CQs were executed**. **{counts.get('PASS', 0)}** matched their authored expected answers; **{counts.get('NEEDS REVIEW', 0)}** require modelling/scope review. The **{len(controls)} additional controls** " + ("all passed." if all(r['status'] == 'PASS' for r in controls) else "include failures; see the results."), "",
          "CQ-019 follows the corrected question wording and includes mixed-topic resources addressing nutrition. CQ-051 uses the new validation-evidence relation and excludes a general background citation. These changes follow the revised source specifications; expected answers remain separately authored constants.", "",
          "## Method", "",

@@ -18,6 +18,8 @@ python validation/scripts/build_cq_suite.py
 
 The CQ register is the versioned snapshot under `sources/`. The ontology is under `serialisation/`. Neither a private development folder nor an external participant database is needed. Read [the CQ guide](cq-tests/README.md) for the expected-answer methodology and limitations.
 
+See [requirements traceability](requirements-traceability.md) for representative links from stakeholder requirements through source and canonical CQs to ontology relationships and query evidence.
+
 `python scripts/run_checks.py` runs the shared checks and the four tools' core tests. The summary is saved under `reports/check-summary.json`. Model-dependent encoder integration requires separate dependencies and a local pinned model; it is enabled explicitly with `--with-encoder`.
 
 OWLAPI/HermiT checks require a compatible Protégé application bundle containing Java 11 `jjs`. The bundle location is supplied with `--protege-app` or the `ICARE_PROTEGE_APP` environment variable. No installation path is assumed:
@@ -29,4 +31,4 @@ python serialisation/scripts/validate_with_protege.py --protege-app /path/to/Pro
 
 Other Protégé distributions can use the application's own profile/reasoner checks or a compatible external OWLAPI tool; the bundled launcher supports only the documented application-bundle layout.
 
-Saved results and workflow checks must be read with their scope. The fuller grouped-record example has a documented `diagnosisDate`/`xsd:date` OWL 2 DL profile finding even though HermiT reports consistency. See [datatype compatibility](../instantiation/reports/DATATYPE_COMPATIBILITY.md). These technical tests do not establish clinical validity.
+Saved results and workflow checks must be read with their scope. Version 0.2.0 represents calendar dates and durations as validated strings; the full clinical and populated temporal examples now have a successful OWLAPI/HermiT result. See [datatype compatibility and migration](../instantiation/reports/DATATYPE_COMPATIBILITY.md) and [the populated example's OWL report](../instantiation/reports/temporal-owlapi-report.json). These technical tests do not establish clinical validity.

@@ -710,6 +710,6 @@ icare:intervention-careplan a owl:Ontology ;
         icare:metadata,
         icare:person-role,
         icare:social-context ;
-    owl:versionIRI <http://maya-project.eu/icareonto/releases/0.1.0-draft/intervention-careplan> ;
-    owl:versionInfo "0.1.0-draft" .
+    owl:versionIRI <http://maya-project.eu/icareonto/releases/0.2.0/intervention-careplan> ;
+    owl:versionInfo "0.2.0" .
 

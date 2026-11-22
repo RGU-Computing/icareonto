@@ -9,10 +9,12 @@ import json
 import re
 from urllib.parse import urlsplit
 
-from rdflib import Dataset, Literal, RDF, RDFS, OWL, URIRef, XSD
+from rdflib import BNode, Dataset, Graph, Literal, Namespace, RDF, RDFS, OWL, URIRef, XSD
 from rdflib.namespace import DCTERMS, SKOS
 
 IC = "http://maya-project.eu/icareonto/"
+META = Namespace(IC + "metadata#")
+SH = Namespace("http://www.w3.org/ns/shacl#")
 GROUPS = {
     "clinical_profile": "clinical-profile", "cancer_history": "cancer-history",
     "measurements": "measurement-biomarker", "cv_risk": "cv-risk",
@@ -36,7 +38,7 @@ def term(name, schema, category):
     return node
 
 
-def literal(value, datatype, formats):
+def literal(value, datatype, formats, value_format=None, pattern=None):
     """Require values compatible with the ontology's declared XSD datatype."""
     valid = False
     if datatype == XSD.string:
@@ -74,8 +76,21 @@ def literal(value, datatype, formats):
                 pass
     elif datatype == XSD.duration:
         valid = isinstance(value, str) and re.fullmatch(r"-?P(?=\d|T\d)(?:\d+Y)?(?:\d+M)?(?:\d+D)?(?:T(?=\d)(?:\d+H)?(?:\d+M)?(?:\d+(?:\.\d+)?S)?)?", value) is not None
+    # String ranges still carry semantic format constraints in the ontology.
+    # Check real calendar dates, not just the YYYY-MM-DD spelling.
+    if value_format is not None:
+        valid = valid and datatype == XSD.string and isinstance(value, str) and pattern is not None
+        valid = valid and re.fullmatch(pattern, value) is not None
+        if value_format == "iso-calendar-date" and valid:
+            try:
+                date.fromisoformat(value)
+            except ValueError:
+                valid = False
+        elif value_format not in ("iso-calendar-date", "iso-duration"):
+            valid = False
     if not valid:
-        raise SectionError(f"Value {value!r} is incompatible with ontology datatype {datatype}")
+        suffix = f" and required format {value_format}" if value_format else ""
+        raise SectionError(f"Value {value!r} is incompatible with ontology datatype {datatype}{suffix}")
     result = Literal(value, datatype=datatype)
     if result.value is None:
         raise SectionError(f"Invalid datatype value: {value!r} ({datatype})")
@@ -151,7 +166,8 @@ def add_sections(builder, data, schema, kind, formats):
                 ranges = list(schema.objects(node, RDFS.range))
                 if len(ranges) != 1:
                     raise SectionError(f"Expected one declared datatype for {name}")
-                target = literal(supplied, ranges[0], formats)
+                value_format, pattern = property_format(schema, node)
+                target = literal(supplied, ranges[0], formats, value_format, pattern)
             builder.g.add((subject, node, target))
 
     for node, record in records:
@@ -162,6 +178,59 @@ def add_sections(builder, data, schema, kind, formats):
             if link["subject"] not in aliases:
                 raise SectionError(f"Unresolved section subject: {link['subject']}")
             assertion(aliases[link["subject"]], link["property"], link["object"])
+
+
+def property_format(schema, prop):
+    """Read the deployed constraint so input validation follows the ontology."""
+    names, patterns = list(schema.objects(prop, META.valueFormat)), list(schema.objects(prop, META.valuePattern))
+    if not names and not patterns:
+        return None, None
+    if len(names) != 1 or len(patterns) != 1 or str(names[0]) not in ("iso-calendar-date", "iso-duration"):
+        raise SectionError(f"Unsupported or incomplete value-format annotation: {prop}")
+    if set(schema.objects(prop, RDFS.range)) != {XSD.string}:
+        raise SectionError(f"Formatted property must have xsd:string range: {prop}")
+    return str(names[0]), str(patterns[0])
+
+
+def value_shapes(schema):
+    """Build portable SHACL constraints for the ontology's formatted strings.
+
+    Calendar arithmetic is deliberately independent of Python's date parser;
+    direct RDF imports are checked too, including leap-year exceptions.
+    """
+    shapes = Graph()
+    shapes.bind("sh", SH)
+    shapes.bind("xsd", XSD)
+    for prop in sorted(set(schema.subjects(META.valueFormat, None)), key=str):
+        name, pattern = property_format(schema, prop)
+        shape = URIRef(IC + "shapes/" + str(prop).removeprefix(IC) + "Format")
+        for pred, obj in [(RDF.type, SH.PropertyShape), (SH.targetSubjectsOf, prop),
+                          (SH.path, prop), (SH.datatype, XSD.string),
+                          (SH.pattern, Literal(pattern)),
+                          (SH.message, Literal(f"Expected a valid {name} string."))]:
+            shapes.add((shape, pred, obj))
+        # SPARQL regex '$' can match before a final newline. An independent
+        # no-whitespace constraint keeps RDF and Python full-match behaviour aligned.
+        whitespace = BNode()
+        shapes.add((shape, SH["not"], whitespace))
+        shapes.add((whitespace, SH.pattern, Literal(r"\s")))
+        if name == "iso-calendar-date":
+            check = BNode()
+            shapes.add((shape, SH.sparql, check))
+            shapes.add((check, SH.message, Literal("Calendar date must exist in years 0001–9999.")))
+            query = """PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+SELECT $this ?value WHERE {
+  $this <PROPERTY> ?value .
+  BIND(xsd:integer(SUBSTR(STR(?value), 1, 4)) AS ?year)
+  BIND(xsd:integer(SUBSTR(STR(?value), 6, 2)) AS ?month)
+  BIND(xsd:integer(SUBSTR(STR(?value), 9, 2)) AS ?day)
+  BIND((?year / 4 = FLOOR(?year / 4)) &&
+       ((?year / 100 != FLOOR(?year / 100)) || (?year / 400 = FLOOR(?year / 400))) AS ?leap)
+  BIND(IF(?month = 2, IF(?leap, 29, 28), IF(?month IN (4, 6, 9, 11), 30, 31)) AS ?days)
+  FILTER(?year < 1 || ?day > ?days)
+}""".replace("PROPERTY", str(prop))
+            shapes.add((check, SH.select, Literal(query)))
+    return shapes
 
 
 def jsonld_context(schema, predicates=None):
@@ -217,11 +286,16 @@ def ontology_reference(schema):
     for category in (OWL.ObjectProperty, OWL.DatatypeProperty):
         for node in sorted(set(schema.subjects(RDF.type, category)), key=str):
             if str(node).startswith(IC):
-                properties.append({"name": local(node), "iri": str(node), "kind": "object" if category == OWL.ObjectProperty else "data",
+                entry = {"name": local(node), "iri": str(node), "kind": "object" if category == OWL.ObjectProperty else "data",
                                    "label": str(next(schema.objects(node, RDFS.label), "")),
                                    "definition": str(next(schema.objects(node, SKOS.definition), "")),
                                    "domains": [local(v) for v in schema.objects(node, RDFS.domain)],
-                                   "ranges": [local(v) for v in schema.objects(node, RDFS.range)]})
+                                   "ranges": [local(v) for v in schema.objects(node, RDFS.range)]}
+                if category == OWL.DatatypeProperty:
+                    name, pattern = property_format(schema, node)
+                    if name:
+                        entry.update(value_format=name, pattern=pattern)
+                properties.append(entry)
     values = [{"name": local(n), "iri": str(n), "label": str(next(schema.objects(n, RDFS.label), "")),
                "types": [local(t) for t in schema.objects(n, RDF.type) if str(t).startswith(IC)]}
               for n in sorted(set(schema.subjects(RDF.type, OWL.NamedIndividual)), key=str) if str(n).startswith(IC)]

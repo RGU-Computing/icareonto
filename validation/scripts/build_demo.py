@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Build a wholly fictional Spanish AYA survivor knowledge graph for testing."""
+import csv
 import hashlib
 import json
 import xml.etree.ElementTree as ET
@@ -526,5 +527,9 @@ manifest = {
                     "Selected CQ smoke tests exercise a subset of the consolidated CQ set, not all 78 CQs."]
 }
 (ROOT / "validation").mkdir(exist_ok=True)
+with (ROOT / "validation/import-map.tsv").open("w", newline="") as f:
+    writer = csv.writer(f, delimiter="\t")
+    writer.writerow(["iri", "file"])
+    writer.writerows((entry.attrib["name"], entry.attrib["uri"]) for entry in catalogue)
 (ROOT / "validation/demo-manifest.json").write_text(json.dumps(manifest, indent=2) + "\n", encoding="utf-8")
 print(json.dumps({k: manifest[k] for k in ("triples", "named_individuals", "fictional", "participant_count")}, indent=2))

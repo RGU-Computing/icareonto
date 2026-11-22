@@ -1,5 +1,5 @@
 {
-  "ontology_version": "0.1.0-draft",
+  "ontology_version": "0.2.0",
   "source_register": "icareonto_final_consolidated_competency_questions_v5.xlsx",
   "source_sha256": "e46f6ffc5a42bf46d1e1f64ee515f76e2e499665341b883afe98aa6ea3dd42c0",
   "fixture": "coverage.ttl plus imported Spanish survivor graph and ontology",

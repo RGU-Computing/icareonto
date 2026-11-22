@@ -1,7 +1,7 @@
 {
-  "run_date": "2026-11-19",
+  "run_date": "2026-11-22",
   "status": "PASS",
-  "live_encoder_requested": false,
+  "live_encoder_requested": true,
   "checks": [
     {
       "script": "serialisation/scripts/check_outputs.py",
@@ -45,6 +45,11 @@
     },
     {
       "script": "scripts/check_publication.py",
+      "exit_code": 0,
+      "status": "PASS"
+    },
+    {
+      "script": "pilot-mapping/scripts/check_operational_interface.py",
       "exit_code": 0,
       "status": "PASS"
     }

@@ -1,0 +1,113 @@
+{
+  "schema_version": "1.0",
+  "recorded_at": "2026-10-15T10:00:00+02:00",
+  "source": "Fictional participant-confirmed enrolment interview",
+  "participant_id": "es-demo-aya-temporal",
+  "study_id": "maya-demo",
+  "site_id": "es-demo-01",
+  "enrolment": {
+    "id": "enrolment-001",
+    "enrolled_at": "2026-10-15T10:00:00+02:00",
+    "status": "active",
+    "phase_id": "feasibility",
+    "arm_id": "intervention"
+  },
+  "age_years": 27,
+  "survivor_role": "aya_cancer_survivor",
+  "preferences": {
+    "language_tag": "es-ES",
+    "detail_level": "brief",
+    "communication_channel": "smart_mirror",
+    "contact_time": "evening"
+  },
+  "attributes": [
+    {
+      "id": "access",
+      "name": "Information access context",
+      "value": "Fictional participant requests explanations of unfamiliar terms"
+    }
+  ],
+  "consent": {
+    "id": "consent-001",
+    "status": "granted",
+    "valid_from": "2026-10-15T10:00:00+02:00"
+  },
+  "sections": {
+    "cancer_history": {
+      "records": [
+        {
+          "id": "date-example",
+          "type": "CancerDiagnosis",
+          "properties": {
+            "diagnosisDate": "2024-02-29"
+          }
+        }
+      ],
+      "links": [
+        {
+          "subject": "$person",
+          "property": "hasCancerDiagnosis",
+          "object": {
+            "ref": "date-example"
+          }
+        }
+      ]
+    },
+    "common": {
+      "records": [
+        {
+          "id": "interval-example",
+          "type": "TimeInterval",
+          "properties": {
+            "intervalDuration": "P7D",
+            "intervalStartsAt": {
+              "ref": "interval-start"
+            },
+            "intervalEndsAt": {
+              "ref": "interval-end"
+            }
+          }
+        },
+        {
+          "id": "interval-start",
+          "type": "Timepoint",
+          "properties": {
+            "timepointDateTime": "2026-11-01T10:00:00Z"
+          }
+        },
+        {
+          "id": "interval-end",
+          "type": "Timepoint",
+          "properties": {
+            "timepointDateTime": "2026-11-08T10:00:00Z"
+          }
+        }
+      ]
+    },
+    "education": {
+      "records": [
+        {
+          "id": "resource-example",
+          "type": "KnowledgeResource",
+          "properties": {
+            "estimatedCompletionTime": "PT10M"
+          }
+        }
+      ]
+    },
+    "digital_services": {
+      "records": [
+        {
+          "id": "use-example",
+          "type": "ServiceUseEvent",
+          "properties": {
+            "serviceUseDuration": "PT15M",
+            "serviceUseEventHasUser": {
+              "ref": "$person"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

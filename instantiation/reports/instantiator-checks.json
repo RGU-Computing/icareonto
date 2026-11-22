@@ -76,7 +76,7 @@
   "checks": 18,
   "errors": 0,
   "failures": 0,
-  "run_date": "2026-11-19",
+  "run_date": "2026-11-22",
   "scope": "Fictional JSON inputs and temporary outputs; existing delivered graphs and the ontology are unchanged.",
   "status": "PASS"
 }

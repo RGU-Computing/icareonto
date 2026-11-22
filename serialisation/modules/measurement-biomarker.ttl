@@ -81,8 +81,9 @@ icare:LaboratoryProtocol a owl:Class ;
 icare:MeasurementDevice a owl:Class ;
     rdfs:label "Measurement Device"@en ;
     rdfs:isDefinedBy icare:measurement-biomarker ;
-    rdfs:subClassOf icare:MeasurementInstrument ;
-    skos:definition "A device used to collect data, support interaction, or deliver a digital service."@en .
+    rdfs:subClassOf icare:Device,
+        icare:MeasurementInstrument ;
+    skos:definition "A physical measurement instrument used to collect or generate data about a measurable parameter."@en .
 
 icare:PatientReportedOutcome a owl:Class ;
     rdfs:label "Patient Reported Outcome"@en ;
@@ -737,6 +738,6 @@ icare:measurement-biomarker a owl:Ontology ;
         icare:knowledge-resource,
         icare:metadata,
         icare:person-role ;
-    owl:versionIRI <http://maya-project.eu/icareonto/releases/0.1.0-draft/measurement-biomarker> ;
-    owl:versionInfo "0.1.0-draft" .
+    owl:versionIRI <http://maya-project.eu/icareonto/releases/0.2.0/measurement-biomarker> ;
+    owl:versionInfo "0.2.0" .
 

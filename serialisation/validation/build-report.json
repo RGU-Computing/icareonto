@@ -1,11 +1,11 @@
 {
-  "release": "2026-11-19",
-  "ontology_version": "0.1.0-draft",
+  "release": "2026-11-22",
+  "ontology_version": "0.2.0",
   "review_status": "Draft",
   "target_release": "iCARE Onto v1",
   "runtime_provenance_policy": "Development filenames, sheet references and mapping-register identifiers are retained only in validation sidecars, not in the ontology graphs.",
   "sources_sha256": {
-    "icareonto_review_workbook_v021126.xlsx": "2fcbe6cf9b887615c08184d223e6fb8b3ad30a903cbc3cbf5156f25182d3e5cf",
+    "icareonto_review_workbook_v221126.xlsx": "2dc0443affa4f1b29f4e8635e48aa5491fe6a417101d933b2a1ce37c4a23208b",
     "icareonto_alignment_mapping_workbook_v301026_4.xlsx": "615925bdf3a9e44404c06129220a2b6818694081e1fb15e41daa6bb664bbb771",
     "icareonto_final_consolidated_competency_questions_v5.xlsx": "e46f6ffc5a42bf46d1e1f64ee515f76e2e499665341b883afe98aa6ea3dd42c0"
   },
@@ -46,10 +46,8 @@
   "source_datatypes_preserved": [
     "http://www.w3.org/2001/XMLSchema#anyURI",
     "http://www.w3.org/2001/XMLSchema#boolean",
-    "http://www.w3.org/2001/XMLSchema#date",
     "http://www.w3.org/2001/XMLSchema#dateTime",
     "http://www.w3.org/2001/XMLSchema#decimal",
-    "http://www.w3.org/2001/XMLSchema#duration",
     "http://www.w3.org/2001/XMLSchema#language",
     "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "http://www.w3.org/2001/XMLSchema#positiveInteger",
@@ -58,7 +56,7 @@
   "limitations": [
     "CQ paths checked for term presence only; no participant instances or CQ query execution.",
     "OWL domains/ranges are inference axioms, not required-field validation rules.",
-    "Workbook xsd:date and xsd:duration datatypes are preserved; check reasoner support.",
+    "Calendar dates and durations use xsd:string with value-format annotations; input/SHACL checks enforce their lexical and calendar constraints, not OWL reasoning.",
     "Dublin Core metadata properties are locally declared as OWL annotation properties; dcterms:source can hold an evidence-resource IRI.",
     "No unapproved cardinalities, disjointness, equivalence, enumeration closure or distinct-value axioms were added."
   ]

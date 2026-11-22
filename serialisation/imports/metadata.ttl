@@ -4,7 +4,6 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 icare:metadata a owl:Ontology ;
     rdfs:label "iCARE Onto metadata"@en ;
@@ -15,11 +14,17 @@ icare:metadata a owl:Ontology ;
     dcterms:rights "Copyright (c) 2026 Robert Gordon University and contributing MAYA consortium partners, for their respective contributions. Third-party material retains its applicable terms."@en ;
     rdfs:comment "Annotation vocabulary for ontology review status and descriptive, bibliographic, language and rights metadata for knowledge resources."@en ;
     rdfs:seeAlso <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/> ;
-    owl:versionIRI <http://maya-project.eu/icareonto/releases/0.1.0-draft/metadata> ;
-    owl:versionInfo "0.1.0-draft" .
+    owl:versionIRI <http://maya-project.eu/icareonto/releases/0.2.0/metadata> ;
+    owl:versionInfo "0.2.0" .
 
 meta:reviewStatus a owl:AnnotationProperty ;
     rdfs:label "review status"@en .
+
+meta:valueFormat a owl:AnnotationProperty ;
+    rdfs:label "value format"@en .
+
+meta:valuePattern a owl:AnnotationProperty ;
+    rdfs:label "value pattern"@en .
 
 dcterms:bibliographicCitation a owl:AnnotationProperty ;
     rdfs:label "bibliographicCitation"@en .
@@ -59,10 +64,6 @@ dcterms:source a owl:AnnotationProperty ;
 
 dcterms:title a owl:AnnotationProperty ;
     rdfs:label "title"@en .
-
-xsd:date a rdfs:Datatype .
-
-xsd:duration a rdfs:Datatype .
 
 skos:altLabel a owl:AnnotationProperty .
 

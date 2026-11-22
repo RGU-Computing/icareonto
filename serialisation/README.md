@@ -2,7 +2,7 @@
 
 Open **`icareonto.ttl`** in Protégé Desktop using **File → Open**. Keep this folder and its subfolders together. The adjacent `catalog-v001.xml` maps imports to local files, so the package can be loaded offline.
 
-This is **version `0.1.0-draft`**, a pre-release under review toward **iCARE Onto v1**. The ontology provides the semantic foundation for AYA cancer survivorship, cardiovascular health, personalised care, educational support and conversational interaction within the MAYA iCARE Health Hub.
+This is **version `0.2.0`**, a pre-release under review toward **iCARE Onto v1**. The ontology provides the semantic foundation for AYA cancer survivorship, cardiovascular health, personalised care, educational support and conversational interaction within the MAYA iCARE Health Hub.
 
 The ontology files can be used independently of the development materials. They contain no workbook filenames, worksheet/cell references or mapping-register identifiers. Build provenance and requirements traceability are retained separately in `validation/`. The pre-release version and Draft review status are recorded consistently in each ontology header.
 
@@ -24,7 +24,7 @@ If an import appears unresolved, select the **local file** option in Protégé's
 
 ## Coverage and development inputs
 
-- **Ontology source:** `../sources/icareonto_review_workbook_v021126.xlsx`.
+- **Ontology source:** `../sources/icareonto_review_workbook_v221126.xlsx`.
 - **Approved alignments:** `../sources/icareonto_alignment_mapping_workbook_v301026_4.xlsx`, `Alignment Register` sheet.
 - **Competency questions:** `../sources/icareonto_final_consolidated_competency_questions_v5.xlsx`.
 - **Output:** 17 modules, 283 local classes, 284 local object properties, 137 local data properties, 304 controlled values and 62 concept schemes.
@@ -35,8 +35,8 @@ In the ontology source workbook, the controlled vocabulary detail sheet is the s
 ## Modelling decisions (using the ontology source workbook)
 
 1. Existing entity IRIs are preserved. For example, all modules share the existing entity namespace `http://maya-project.eu/icareonto/`; the module worksheet names do not create new entity namespaces.
-2. Stable module ontology and entity IRIs are preserved. Version IRIs identify `0.1.0-draft`, separately from those stable IRIs. The next intended reviewed release is iCARE Onto v1; development-source revision numbers do not define the ontology version.
-3. Named parent relationships become `rdfs:subClassOf`. Object and data properties retain their source domains, ranges and XSD datatypes. No cardinalities, inverse relations, closed enumerations or disjointness axioms are inferred from descriptions.
+2. Stable module ontology and entity IRIs are preserved. Version IRIs identify `0.2.0`, separately from those stable IRIs. The next intended reviewed release is iCARE Onto v1; development-source revision numbers do not define the ontology version.
+3. Named parent relationships become `rdfs:subClassOf`; semicolon-separated parent lists preserve each explicitly named parent. Object and data properties retain their source domains, ranges and XSD datatypes. No cardinalities, inverse relations, closed enumerations or disjointness axioms are inferred from descriptions.
 4. Entity definitions use `skos:definition` once. `rdfs:comment` is reserved for distinct explanatory context, such as ontology descriptions and alignment rationale. Labels and alternative labels are preserved. The `metadata#reviewStatus` annotation records Draft ontology status and the existing review statuses of controlled concepts and semantic alignments. Development provenance is kept outside the ontology: entity source cells in `validation/entity-manifest.tsv`, value source cells in `validation/controlled-value-provenance.tsv`, alignment-register IDs in `validation/alignment-trace.tsv`, and source filenames/hashes in `validation/build-report.json`.
 5. Vocabulary categories remain OWL classes subclassing `skos:Concept`. Their values are named individuals, with labels, definitions, scheme membership, source status and explicit broader relationships. The schemes are not OWL classes. Lists are not treated as exhaustive or pairwise-distinct unless future modelling explicitly requires that.
 6. Only mappings marked **Approved** in the primary Alignment Register are emitted as semantic axioms. The three current mappings connect Agent, ParticipantKnowledgeGraph and ConsentRecord to PROV-O. Proposed mappings, coding recommendations and all FHIR transformations remain in the workbook. The excluded rows are listed in `validation/excluded-alignments.tsv`.
@@ -54,7 +54,7 @@ The iCARE Onto package was checked using RDFLib and the OWLAPI 4.5.29/HermiT 1.4
 - HermiT reports the ontology **consistent**, with **zero unsatisfiable named classes**, using its default datatype settings.
 - Independent source reconciliation checks the saved declarations, labels, definitions, data ranges, vocabulary entries, ownership, catalogue targets and RDF/XML round-trips.
 
-The workbook's `xsd:date` and `xsd:duration` ranges are explicitly declared and preserved. Successful classification of this schema and its controlled values does not test all possible participant literals or guarantee another reasoner's support for those datatype values. Required-field checks and value validation should be added with the subsequent knowledge-graph work. OWL domains and ranges express inference, not form-validation constraints.
+Calendar dates and durations use `xsd:string`, preserving the supplied precision without introducing a time or timezone. `diagnosisDate` requires a real `YYYY-MM-DD` calendar date; `intervalDuration`, `estimatedCompletionTime` and `serviceUseDuration` require ISO duration expressions such as `P7D` or `PT30M`. The `metadata#valueFormat` and `metadata#valuePattern` annotations identify these constraints in the deployed ontology. The KG Instantiator applies input and SHACL validation, including Gregorian leap-year rules, and exports reusable shapes in `instantiation/reference/value-formats.shacl.ttl`. OWL reasoning treats these values as strings; calendar/duration calculations belong in consuming applications. See [the datatype policy and migration guide](../instantiation/reports/DATATYPE_COMPATIBILITY.md). OWL domains and ranges express inference, not form-validation constraints.
 
 ## Regeneration
 

@@ -17,8 +17,8 @@ icare:alignments a owl:Ontology ;
         <http://maya-project.eu/icareonto/imports/prov-reference>,
         icare:metadata,
         icare:provenance-governance ;
-    owl:versionIRI <http://maya-project.eu/icareonto/releases/0.1.0-draft/alignments> ;
-    owl:versionInfo "0.1.0-draft" .
+    owl:versionIRI <http://maya-project.eu/icareonto/releases/0.2.0/alignments> ;
+    owl:versionInfo "0.2.0" .
 
 icare:Agent rdfs:subClassOf prov:Agent .
 

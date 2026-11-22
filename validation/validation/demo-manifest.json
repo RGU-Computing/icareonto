@@ -10,7 +10,7 @@
   "ontology_entry": "../serialisation/icareonto.ttl",
   "triples": 905,
   "named_individuals": 144,
-  "source_ontology_sha256": "16f36a7de5ca90452dcd7ddb297ae2560d7030cbfc9d7f46323d630638f19f77",
+  "source_ontology_sha256": "6084cd55d53af030b023beabe8efa06c208ac16026a85bab440670e86de2272f",
   "limitations": [
     "All clinical history, scores, activities and resources are fictional technical examples.",
     "No official diagnosis or measurement terminology mappings are claimed; parameter codes use a demonstration namespace.",

@@ -371,7 +371,8 @@ for case in cases:
         r = source[case["id"]]
         case.update(question=r["C"], theme=r["B"], expected_answer_type=r["D"], source_path=r["E"], modules=r["F"], primary_basis=r["G"], stakeholder_cq_ids=r.get("H", ""), proposal_cq_ids=r.get("I", ""))
         assert case["expected"], "Canonical tests must have authored nonempty expected answers"
-(OUT / "cases.json").write_text(json.dumps({"ontology_version": "0.1.0-draft", "source_register": source_path.name,
+ontology_version = str(next(Graph().parse(REPO / "serialisation/icareonto.ttl").objects(URIRef(str(IC).rstrip("/")), OWL.versionInfo)))
+(OUT / "cases.json").write_text(json.dumps({"ontology_version": ontology_version, "source_register": source_path.name,
     "source_sha256": hashlib.sha256(source_path.read_bytes()).hexdigest(),
     "fixture": "coverage.ttl plus imported Spanish survivor graph and ontology", "cases": cases}, indent=2) + "\n", encoding="utf-8")
 print(json.dumps({"canonical_cqs": len(by_id), "controls": len(cases) - len(by_id), "supplement_triples": len(g), "expected_answers": "Authored independently of query results"}, indent=2))

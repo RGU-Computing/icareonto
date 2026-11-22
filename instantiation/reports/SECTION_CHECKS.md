@@ -1,6 +1,6 @@
 # Grouped knowledge records and JSON-LD checks
 
-30 checks; 0 failures; 0 errors. Result: **PASS**.
+38 checks; 0 failures; 0 errors. Result: **PASS**.
 
 Fictional clinical inputs and temporary outputs. Expected query answers are independently specified. No clinical efficacy or predictive validity is established.
 
@@ -13,9 +13,14 @@ Repeat: `python instantiation/scripts/check_sections.py`
 | changed ontology rebuilds unchanged json in both formats | PASS |
 | clinical comparison text is not mistaken for a placeholder | PASS |
 | clinical profile is queryable from the participant | PASS |
+| date strings preserve precision and valid leap days | PASS |
 | duplicate record ids across groups are rejected | PASS |
+| duration strings validate all three properties | PASS |
 | forward and cross section references are resolved | PASS |
+| input reference exposes temporal constraints | PASS |
+| invalid calendar dates and added times are rejected | PASS |
 | invalid date and numeric value are rejected | PASS |
+| invalid duration update preserves existing outputs | PASS |
 | jsonld preserves exact named graphs | PASS |
 | jsonld preserves the exact participant graph | PASS |
 | manually altered jsonld is rejected | PASS |
@@ -31,6 +36,9 @@ Repeat: `python instantiation/scripts/check_sections.py`
 | removing a still referenced record is rejected | PASS |
 | repeated processing is stable in turtle and jsonld | PASS |
 | risk input connects to exposure and measurement | PASS |
+| shacl checks calendar validity without the input parser | PASS |
+| shacl checks duration formats and legacy typed values | PASS |
+| temporal fixture is instantiated and round trips as strings | PASS |
 | unknown class is rejected | PASS |
 | unknown controlled value is rejected | PASS |
 | unknown property is rejected even when null | PASS |

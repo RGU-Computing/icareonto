@@ -1506,14 +1506,15 @@
     },
     {
       "alternative_labels": [],
-      "definition": "A device used to collect data, support interaction, or deliver a digital service.",
+      "definition": "A physical measurement instrument used to collect or generate data about a measurable parameter.",
       "iri": "http://maya-project.eu/icareonto/MeasurementDevice",
       "label": "Measurement Device",
       "module": "measurement-biomarker",
       "parents": [
+        "Device",
         "Measurement Instrument"
       ],
-      "text": "Measurement Device. A device used to collect data, support interaction, or deliver a digital service.. Broader concepts: Measurement Instrument"
+      "text": "Measurement Device. A physical measurement instrument used to collect or generate data about a measurable parameter.. Broader concepts: Device, Measurement Instrument"
     },
     {
       "alternative_labels": [],
@@ -2804,13 +2805,13 @@
       "text": "Vital Sign. A routinely monitored physiological parameter such as blood pressure, heart rate, respiratory rate, oxygen saturation, or temperature.. Broader concepts: Measurable Parameter"
     }
   ],
-  "catalogue_sha256": "e89e61824624033033b416b9fd6e444483abc4b202975ebb60381c1fba3c9501",
+  "catalogue_sha256": "9ae1fea062942f352a9e78176df473e97e2320e35edcfc57f83e5b91b583e818",
   "method_version": "1.1",
   "metric": "Cosine similarity of sentence embeddings; labels, alternative labels, definitions and named parent labels",
   "model": {
     "device": "cpu",
     "dimensions": 384,
-    "embedding_cache_key": "47c1fa1e2b5a3414fa1bf0c3c5083b35094f2ae8f4b9c9fb14d4d1e1a48f23ad",
+    "embedding_cache_key": "f4533537c81f25da0fbf3a6eeafd4878822db47d9471954f919ebe21ee394fac",
     "id": "sentence-transformers/all-MiniLM-L6-v2",
     "model_files_sha256": {
       "1_Pooling/config.json": "4be450dde3b0273bb9787637cfbd28fe04a7ba6ab9d36ac48e92b11e350ffc23",
@@ -2837,30 +2838,30 @@
   },
   "needs_sha256": "d37d4a62f3355efcebf5ec9d68743eed6aedebbd8a6b4392f8dea7c024970e15",
   "ontology_files_sha256": {
-    "alignments/approved.ttl": "3559c424babee55009ce2efb8acccd9177d326e20722cf53cc52566104a3a8ab",
-    "icareonto.ttl": "16f36a7de5ca90452dcd7ddb297ae2560d7030cbfc9d7f46323d630638f19f77",
-    "imports/metadata.ttl": "fe6f1b723811a17c812e44ba5221bf1982fa2ce0404a159c2ff8e0fa57613e0c",
-    "imports/prov-reference.ttl": "22fd91610f91f940a638690f83b6976e8acc3befa2d1b086bbee24e2931bf225",
-    "imports/skos-reference.ttl": "a0df443bc1e3656d599b8e847bb45c95e475b33585e0d23e04397a683cc8e689",
-    "modules/agent.ttl": "088abfa413d709a219d99f0803e757f694055ff113fbca1e70b10c1882d517bc",
-    "modules/cancer-history.ttl": "cb8317ca75562f3db9c4e1a01de92d3af9d5ea5a2df37d25d3cf16791d420fa3",
-    "modules/clinical-profile.ttl": "4d28c770a0b97d30e0dca4829d0bbbe4462bb09064efe46b082fa6c9c7fb2df6",
-    "modules/core.ttl": "8e421bd8472d7e71e5b7ec96c1948f2426c5a344fce5ce990d1ffafed123c254",
-    "modules/cv-risk.ttl": "615b2f992e1595fdaa3fddbffd9e29ad759ea15dadf5e74b5b246a26cbe50bd1",
-    "modules/dialogue.ttl": "c737f188d22b83a8cf463e907348aaa6d277b0b9c029b94dad5a9881c9ed7f3b",
-    "modules/exercise.ttl": "18f534f85d4298101d3d4112b55043268040dc6eb25439bf8153a2753e2af653",
-    "modules/healthhub-service.ttl": "58e9aecb4b86ca09abf051d67f7388e3494acfc907db482ac34ab35f7e2bc0e8",
-    "modules/intervention-careplan.ttl": "279077a66564c88e4a8ce2d5b282fb7049d141f24d8b16b3bc9b91f99980ad90",
-    "modules/knowledge-resource.ttl": "d7ddc41364462df3e1fdb7b838852c9b22107ef57fd341f1ece3963cb5442d5f",
-    "modules/lifestyle-behaviour.ttl": "edda682ff2ec0b0b0e99c9b8aa6508087848e982d33e7bceb3dd1364ec3397a4",
-    "modules/measurement-biomarker.ttl": "ca7fcea46cb07b800429bece5f239ecad2c7763054f07d807771c7279cd9318c",
-    "modules/nutrition.ttl": "fd83365e2e40fcf8aa4f2aae9f54c56c54ecaecaf52703a2f2f6066e0137f4e6",
-    "modules/person-role.ttl": "2ae4bc13f46865670164773e917a1e685afec45948ae552892085391f479bce0",
-    "modules/pilot.ttl": "b476a5845573cf935bafbf5617a3a69c35c2a07f1d6731dbfc83e8b61c76ee0f",
-    "modules/provenance-governance.ttl": "28a01c32eb94d56bdf63a66e5cda3b114e37f813b4d38657a2e7cb2caeea03ad",
-    "modules/social-context.ttl": "8d92b1cdccafe01d8fec86b3955cf4254a9c1d6c4f140dd415b5bb46766f492e"
+    "alignments/approved.ttl": "778e3ba432a7e8611f79110b4f328fa2dbd846b846786554cfb7a5fca558204f",
+    "icareonto.ttl": "6084cd55d53af030b023beabe8efa06c208ac16026a85bab440670e86de2272f",
+    "imports/metadata.ttl": "5e2cf7ff3f578a951a460a62afc18a0bcad1d982015267f9910e78d9c380e1fa",
+    "imports/prov-reference.ttl": "239be390d3d0f982711f66ac43b782e88fa802cb544f592aa7ec76137cdfa327",
+    "imports/skos-reference.ttl": "051e756462f44988a5ff71f4d6458a133bfd887888d8e727430c6ffcc116c443",
+    "modules/agent.ttl": "e2f9a8ffbfed25b7806d8dde2768a72c69e7458cb0fac590533b1556cbc253e0",
+    "modules/cancer-history.ttl": "78b6bb42e2daf0421193ec7e8bd40dd2ba93084cb2936765c9d3480eec48cec1",
+    "modules/clinical-profile.ttl": "f8110492db2980751ecb4f94e51ad8f6e0d5a536ef0c31f689433d16e73867fa",
+    "modules/core.ttl": "30e8ae22a2f267b471f6efcbc1759e4d2e69d1a1ea4bda874deb2696aa80ee63",
+    "modules/cv-risk.ttl": "9968f3891ceeda5880d2e4157a895e67fd0f449fcd222de1754d549d43671cdc",
+    "modules/dialogue.ttl": "7d70984150999e3d189852ccf81c45b3f319d3e7bd4766994e6c1e606e47f568",
+    "modules/exercise.ttl": "2af7ccaae7ce198871a2792a2f8d8159506e2d8277c5b54a85438f155ccf77a0",
+    "modules/healthhub-service.ttl": "5540b1449f8e1a32a2bb21e50402fd706353d371c8c943180c5b040eda466351",
+    "modules/intervention-careplan.ttl": "2c18384c679d371e77b49f2ba2a1583ff90f4128f774983d96e807b12a307e23",
+    "modules/knowledge-resource.ttl": "ef948eb863a55dd415ed5f69ec5ef80a8bc05f73b526bacddbe583270bc329fb",
+    "modules/lifestyle-behaviour.ttl": "47d947b3faf44c6079ecbf0a6a0dae75cafbae906976ba324e5d29519f887093",
+    "modules/measurement-biomarker.ttl": "500c8030a07854c409adce0344d5b555ffb8bf42ad6e1fa266383949fc4719e8",
+    "modules/nutrition.ttl": "69a78281fb9d481864a4d0b8b58a66fd0c71c0a82deec83b0c58a629bd901d60",
+    "modules/person-role.ttl": "2c0ce1bff7ff78f0124f62fa771d765e112d3f4ab862b4bddd51bf776757b5e7",
+    "modules/pilot.ttl": "4d8019e90eddcacc816d262f46f8099b25af424fe8d35f58b55bc22d2290d508",
+    "modules/provenance-governance.ttl": "fdf8796bf7c43a9c7a165b5626126f8424bf2fed8964b18a0496c4a189cefc62",
+    "modules/social-context.ttl": "8605d0ade3ae32a50cb3b6aa9c823fd613092466ffa4e576fb6eeb129b1306c2"
   },
-  "ontology_sha256": "704db09ee79cc1c07f6c2929468e2065a5b55ed70266aac6880ba7522aee9ce3",
+  "ontology_sha256": "8d9adda7a9053f1548053d385aade5435edad15a5fb9a522bcd5fdb133cad964",
   "pilot_id": "es-demo-01",
   "requirements": [
     {
@@ -3982,7 +3983,7 @@
           "rank": 186
         },
         {
-          "cosine_similarity": 0.02806957921058028,
+          "cosine_similarity": 0.028069677577519915,
           "iri": "http://maya-project.eu/icareonto/Severity",
           "lexical_jaccard": 0.0,
           "rank": 187
@@ -4144,320 +4145,320 @@
           "rank": 213
         },
         {
-          "cosine_similarity": 0.013076132176824034,
-          "iri": "http://maya-project.eu/icareonto/MeasurementDevice",
-          "lexical_jaccard": 0.0,
-          "rank": 214
-        },
-        {
           "cosine_similarity": 0.012789654186934112,
           "iri": "http://maya-project.eu/icareonto/SmokingStatusValue",
           "lexical_jaccard": 0.03571428571428571,
-          "rank": 215
+          "rank": 214
         },
         {
           "cosine_similarity": 0.012619224639639758,
           "iri": "http://maya-project.eu/icareonto/TreatmentAgent",
           "lexical_jaccard": 0.0,
-          "rank": 216
+          "rank": 215
         },
         {
           "cosine_similarity": 0.01236700990236617,
           "iri": "http://maya-project.eu/icareonto/CarePlanAdherenceBehaviour",
           "lexical_jaccard": 0.0,
-          "rank": 217
+          "rank": 216
         },
         {
           "cosine_similarity": 0.011963837051281005,
           "iri": "http://maya-project.eu/icareonto/Timepoint",
           "lexical_jaccard": 0.0,
-          "rank": 218
+          "rank": 217
         },
         {
           "cosine_similarity": 0.011513366687652,
           "iri": "http://maya-project.eu/icareonto/RecurrencePattern",
           "lexical_jaccard": 0.0,
-          "rank": 219
+          "rank": 218
         },
         {
           "cosine_similarity": 0.009439348557380966,
           "iri": "http://maya-project.eu/icareonto/ExerciseTrainingPattern",
           "lexical_jaccard": 0.0,
-          "rank": 220
+          "rank": 219
         },
         {
           "cosine_similarity": 0.009144426892247485,
           "iri": "http://maya-project.eu/icareonto/LifestyleBehaviour",
           "lexical_jaccard": 0.0,
-          "rank": 221
+          "rank": 220
         },
         {
           "cosine_similarity": 0.008683655764523414,
           "iri": "http://maya-project.eu/icareonto/MeasurementBasedTrigger",
           "lexical_jaccard": 0.0,
-          "rank": 222
+          "rank": 221
         },
         {
           "cosine_similarity": 0.008638021641142538,
           "iri": "http://maya-project.eu/icareonto/MeasurementPanel",
           "lexical_jaccard": 0.0,
-          "rank": 223
+          "rank": 222
         },
         {
           "cosine_similarity": 0.008273716341263938,
           "iri": "http://maya-project.eu/icareonto/ExerciseActivity",
           "lexical_jaccard": 0.0,
-          "rank": 224
+          "rank": 223
         },
         {
           "cosine_similarity": 0.007295369198378498,
           "iri": "http://maya-project.eu/icareonto/ModelOutput",
           "lexical_jaccard": 0.0,
-          "rank": 225
+          "rank": 224
         },
         {
           "cosine_similarity": 0.007030357971052259,
           "iri": "http://maya-project.eu/icareonto/PsychologicalParameter",
           "lexical_jaccard": 0.0,
-          "rank": 226
+          "rank": 225
         },
         {
           "cosine_similarity": 0.0057812846253564995,
           "iri": "http://maya-project.eu/icareonto/NutritionActionType",
           "lexical_jaccard": 0.0,
-          "rank": 227
+          "rank": 226
         },
         {
           "cosine_similarity": 0.005007503151908236,
           "iri": "http://maya-project.eu/icareonto/BehaviourStatus",
           "lexical_jaccard": 0.0,
-          "rank": 228
+          "rank": 227
         },
         {
           "cosine_similarity": 0.004804265899056094,
           "iri": "http://maya-project.eu/icareonto/DigitalServiceType",
           "lexical_jaccard": 0.0,
-          "rank": 229
+          "rank": 228
         },
         {
           "cosine_similarity": 0.00396875757691758,
           "iri": "http://maya-project.eu/icareonto/ClinicalSeverityLevel",
           "lexical_jaccard": 0.0,
-          "rank": 230
+          "rank": 229
         },
         {
           "cosine_similarity": 0.003827060074478227,
           "iri": "http://maya-project.eu/icareonto/BehaviouralParameter",
           "lexical_jaccard": 0.0,
-          "rank": 231
+          "rank": 230
         },
         {
           "cosine_similarity": 0.003802973736425872,
           "iri": "http://maya-project.eu/icareonto/SocioEconomicFactor",
           "lexical_jaccard": 0.0,
-          "rank": 232
+          "rank": 231
         },
         {
           "cosine_similarity": 0.003539241598928576,
           "iri": "http://maya-project.eu/icareonto/SubstanceUseBehaviour",
           "lexical_jaccard": 0.04,
-          "rank": 233
+          "rank": 232
         },
         {
           "cosine_similarity": 0.0034602583643657467,
           "iri": "http://maya-project.eu/icareonto/ClinicalFinding",
           "lexical_jaccard": 0.0,
-          "rank": 234
+          "rank": 233
         },
         {
           "cosine_similarity": 0.0021444976991434935,
           "iri": "http://maya-project.eu/icareonto/MeasurementQuality",
           "lexical_jaccard": 0.0,
-          "rank": 235
+          "rank": 234
         },
         {
           "cosine_similarity": 0.0013156726182410492,
           "iri": "http://maya-project.eu/icareonto/MeasurableParameter",
           "lexical_jaccard": 0.0,
-          "rank": 236
+          "rank": 235
         },
         {
           "cosine_similarity": 0.000685756401012341,
           "iri": "http://maya-project.eu/icareonto/TreatmentRegimen",
           "lexical_jaccard": 0.0,
-          "rank": 237
+          "rank": 236
         },
         {
           "cosine_similarity": 0.0005003997654586863,
           "iri": "http://maya-project.eu/icareonto/ClinicianRole",
           "lexical_jaccard": 0.0,
-          "rank": 238
+          "rank": 237
         },
         {
           "cosine_similarity": -0.0030167555499257923,
           "iri": "http://maya-project.eu/icareonto/MedicationAdherenceBehaviour",
           "lexical_jaccard": 0.05555555555555555,
-          "rank": 239
+          "rank": 238
         },
         {
           "cosine_similarity": -0.0032755881109401376,
           "iri": "http://maya-project.eu/icareonto/PhysiologicalParameter",
           "lexical_jaccard": 0.0,
-          "rank": 240
+          "rank": 239
         },
         {
           "cosine_similarity": -0.0033540521304983697,
           "iri": "http://maya-project.eu/icareonto/MeasurementMethod",
           "lexical_jaccard": 0.0,
-          "rank": 241
+          "rank": 240
         },
         {
           "cosine_similarity": -0.0041112121757938885,
           "iri": "http://maya-project.eu/icareonto/DeviceDataSource",
           "lexical_jaccard": 0.043478260869565216,
-          "rank": 242
+          "rank": 241
         },
         {
           "cosine_similarity": -0.004742522317029275,
           "iri": "http://maya-project.eu/icareonto/SystemicTherapyExposure",
           "lexical_jaccard": 0.0,
-          "rank": 243
+          "rank": 242
         },
         {
           "cosine_similarity": -0.004754163670113429,
           "iri": "http://maya-project.eu/icareonto/ClinicalStatus",
           "lexical_jaccard": 0.0,
-          "rank": 244
+          "rank": 243
         },
         {
           "cosine_similarity": -0.006567692717555782,
           "iri": "http://maya-project.eu/icareonto/ClinicalFindingRecord",
           "lexical_jaccard": 0.0,
-          "rank": 245
+          "rank": 244
         },
         {
-          "cosine_similarity": -0.007879396932254935,
+          "cosine_similarity": -0.00787942524923087,
           "iri": "http://maya-project.eu/icareonto/SlotType",
           "lexical_jaccard": 0.038461538461538464,
-          "rank": 246
+          "rank": 245
         },
         {
           "cosine_similarity": -0.008160899908726106,
           "iri": "http://maya-project.eu/icareonto/EmploymentStatusValue",
           "lexical_jaccard": 0.0,
-          "rank": 247
+          "rank": 246
         },
         {
           "cosine_similarity": -0.008283278991539852,
           "iri": "http://maya-project.eu/icareonto/ExerciseIntervention",
           "lexical_jaccard": 0.0,
-          "rank": 248
+          "rank": 247
         },
         {
           "cosine_similarity": -0.008351372251586393,
           "iri": "http://maya-project.eu/icareonto/AdherenceBehaviour",
           "lexical_jaccard": 0.0,
-          "rank": 249
+          "rank": 248
         },
         {
           "cosine_similarity": -0.008808766362455415,
           "iri": "http://maya-project.eu/icareonto/FinancialConstraint",
           "lexical_jaccard": 0.0,
-          "rank": 250
+          "rank": 249
         },
         {
           "cosine_similarity": -0.008944645040791592,
           "iri": "http://maya-project.eu/icareonto/ModelPerformanceMetric",
           "lexical_jaccard": 0.0,
-          "rank": 251
+          "rank": 250
         },
         {
           "cosine_similarity": -0.010718811959399947,
           "iri": "http://maya-project.eu/icareonto/ExerciseAdherenceResult",
           "lexical_jaccard": 0.0,
-          "rank": 252
+          "rank": 251
         },
         {
           "cosine_similarity": -0.010915786757562534,
           "iri": "http://maya-project.eu/icareonto/ModelExecution",
           "lexical_jaccard": 0.0,
-          "rank": 253
+          "rank": 252
         },
         {
           "cosine_similarity": -0.011857232887821863,
           "iri": "http://maya-project.eu/icareonto/ObservationResult",
           "lexical_jaccard": 0.04,
-          "rank": 254
+          "rank": 253
         },
         {
           "cosine_similarity": -0.01253163864580778,
           "iri": "http://maya-project.eu/icareonto/BehaviourMetricType",
           "lexical_jaccard": 0.0,
-          "rank": 255
+          "rank": 254
         },
         {
           "cosine_similarity": -0.013261274275294133,
           "iri": "http://maya-project.eu/icareonto/CancerTreatmentType",
           "lexical_jaccard": 0.0,
-          "rank": 256
+          "rank": 255
         },
         {
           "cosine_similarity": -0.013484894845241027,
           "iri": "http://maya-project.eu/icareonto/TimeInterval",
           "lexical_jaccard": 0.0,
-          "rank": 257
+          "rank": 256
         },
         {
           "cosine_similarity": -0.013507324028371702,
           "iri": "http://maya-project.eu/icareonto/SedentaryBehaviour",
           "lexical_jaccard": 0.0,
-          "rank": 258
+          "rank": 257
         },
         {
           "cosine_similarity": -0.013930693489536225,
           "iri": "http://maya-project.eu/icareonto/ExerciseActivityType",
           "lexical_jaccard": 0.0,
-          "rank": 259
+          "rank": 258
         },
         {
           "cosine_similarity": -0.014004971907252174,
           "iri": "http://maya-project.eu/icareonto/NutritionBehaviour",
           "lexical_jaccard": 0.0,
-          "rank": 260
+          "rank": 259
         },
         {
           "cosine_similarity": -0.014074284076067997,
           "iri": "http://maya-project.eu/icareonto/PredictionModel",
           "lexical_jaccard": 0.0,
-          "rank": 261
+          "rank": 260
         },
         {
           "cosine_similarity": -0.015604773025221584,
           "iri": "http://maya-project.eu/icareonto/VitalSign",
           "lexical_jaccard": 0.0,
-          "rank": 262
+          "rank": 261
         },
         {
           "cosine_similarity": -0.0193544493705364,
           "iri": "http://maya-project.eu/icareonto/ExerciseIntensityLevel",
           "lexical_jaccard": 0.0,
-          "rank": 263
+          "rank": 262
         },
         {
           "cosine_similarity": -0.022224966856245813,
           "iri": "http://maya-project.eu/icareonto/PhysicalActivityBehaviour",
           "lexical_jaccard": 0.0,
-          "rank": 264
+          "rank": 263
         },
         {
           "cosine_similarity": -0.022591012810489614,
           "iri": "http://maya-project.eu/icareonto/SmokingBehaviour",
           "lexical_jaccard": 0.0,
-          "rank": 265
+          "rank": 264
         },
         {
           "cosine_similarity": -0.02471012843546131,
           "iri": "http://maya-project.eu/icareonto/AnthropometricParameter",
+          "lexical_jaccard": 0.0,
+          "rank": 265
+        },
+        {
+          "cosine_similarity": -0.02607578899448367,
+          "iri": "http://maya-project.eu/icareonto/MeasurementDevice",
           "lexical_jaccard": 0.0,
           "rank": 266
         },
@@ -4498,7 +4499,7 @@
           "rank": 272
         },
         {
-          "cosine_similarity": -0.03904969910013512,
+          "cosine_similarity": -0.03904969530496471,
           "iri": "http://maya-project.eu/icareonto/ExerciseIntensity",
           "lexical_jaccard": 0.0,
           "rank": 273
@@ -5266,7 +5267,7 @@
           "rank": 116
         },
         {
-          "cosine_similarity": 0.18005305075616485,
+          "cosine_similarity": 0.18005310770313437,
           "iri": "http://maya-project.eu/icareonto/SlotType",
           "lexical_jaccard": 0.043478260869565216,
           "rank": 117
@@ -5278,7 +5279,7 @@
           "rank": 118
         },
         {
-          "cosine_similarity": 0.17732189671701581,
+          "cosine_similarity": 0.1773218576085088,
           "iri": "http://maya-project.eu/icareonto/Severity",
           "lexical_jaccard": 0.0,
           "rank": 119
@@ -5740,404 +5741,404 @@
           "rank": 195
         },
         {
-          "cosine_similarity": 0.10688370938904865,
-          "iri": "http://maya-project.eu/icareonto/MeasurementDevice",
-          "lexical_jaccard": 0.047619047619047616,
-          "rank": 196
-        },
-        {
           "cosine_similarity": 0.10671312754679477,
           "iri": "http://maya-project.eu/icareonto/RiskEstimate",
           "lexical_jaccard": 0.0,
-          "rank": 197
+          "rank": 196
         },
         {
           "cosine_similarity": 0.10604804239857041,
           "iri": "http://maya-project.eu/icareonto/CancerStageType",
           "lexical_jaccard": 0.0,
-          "rank": 198
+          "rank": 197
         },
         {
           "cosine_similarity": 0.10547569609808181,
           "iri": "http://maya-project.eu/icareonto/MeasurableParameter",
           "lexical_jaccard": 0.0,
-          "rank": 199
+          "rank": 198
         },
         {
           "cosine_similarity": 0.10432070203063691,
           "iri": "http://maya-project.eu/icareonto/GoalAchievementStatus",
           "lexical_jaccard": 0.0,
-          "rank": 200
+          "rank": 199
         },
         {
           "cosine_similarity": 0.10318475105570168,
           "iri": "http://maya-project.eu/icareonto/TargetedTherapyExposure",
           "lexical_jaccard": 0.0,
-          "rank": 201
+          "rank": 200
         },
         {
           "cosine_similarity": 0.10306464315838745,
           "iri": "http://maya-project.eu/icareonto/ActivityExecution",
           "lexical_jaccard": 0.0,
-          "rank": 202
+          "rank": 201
         },
         {
           "cosine_similarity": 0.10167497041933458,
           "iri": "http://maya-project.eu/icareonto/MeasurementQuality",
           "lexical_jaccard": 0.0,
-          "rank": 203
+          "rank": 202
         },
         {
           "cosine_similarity": 0.10091703373947074,
           "iri": "http://maya-project.eu/icareonto/CardiovascularCondition",
           "lexical_jaccard": 0.0,
-          "rank": 204
+          "rank": 203
         },
         {
           "cosine_similarity": 0.09885988468409009,
           "iri": "http://maya-project.eu/icareonto/CardiotoxicityRisk",
           "lexical_jaccard": 0.0,
-          "rank": 205
+          "rank": 204
         },
         {
           "cosine_similarity": 0.09787427015099935,
           "iri": "http://maya-project.eu/icareonto/DerivedParameter",
           "lexical_jaccard": 0.0,
-          "rank": 206
+          "rank": 205
         },
         {
           "cosine_similarity": 0.0966142981213601,
           "iri": "http://maya-project.eu/icareonto/CommunicationChannelType",
           "lexical_jaccard": 0.037037037037037035,
-          "rank": 207
+          "rank": 206
         },
         {
           "cosine_similarity": 0.09469766063222648,
           "iri": "http://maya-project.eu/icareonto/PersonPreference",
           "lexical_jaccard": 0.25,
-          "rank": 208
+          "rank": 207
         },
         {
           "cosine_similarity": 0.09431135322381486,
           "iri": "http://maya-project.eu/icareonto/PsychologicalParameter",
           "lexical_jaccard": 0.0,
-          "rank": 209
+          "rank": 208
         },
         {
           "cosine_similarity": 0.09419586033830157,
           "iri": "http://maya-project.eu/icareonto/LifestyleBarrier",
           "lexical_jaccard": 0.045454545454545456,
-          "rank": 210
+          "rank": 209
         },
         {
           "cosine_similarity": 0.0939105966575271,
           "iri": "http://maya-project.eu/icareonto/MeasurementMethod",
           "lexical_jaccard": 0.0,
-          "rank": 211
+          "rank": 210
         },
         {
           "cosine_similarity": 0.0938269324797714,
           "iri": "http://maya-project.eu/icareonto/SmokingBehaviour",
           "lexical_jaccard": 0.0,
-          "rank": 212
+          "rank": 211
         },
         {
           "cosine_similarity": 0.09341943943529436,
           "iri": "http://maya-project.eu/icareonto/TreatmentRegimen",
           "lexical_jaccard": 0.0625,
-          "rank": 213
+          "rank": 212
         },
         {
           "cosine_similarity": 0.09248574422567478,
           "iri": "http://maya-project.eu/icareonto/DigitalLiteracy",
           "lexical_jaccard": 0.08333333333333333,
-          "rank": 214
+          "rank": 213
         },
         {
           "cosine_similarity": 0.0909229278925142,
           "iri": "http://maya-project.eu/icareonto/BehaviourMetricType",
           "lexical_jaccard": 0.0,
-          "rank": 215
+          "rank": 214
         },
         {
           "cosine_similarity": 0.0901341556078789,
           "iri": "http://maya-project.eu/icareonto/CommunicationPreference",
           "lexical_jaccard": 0.038461538461538464,
-          "rank": 216
+          "rank": 215
         },
         {
           "cosine_similarity": 0.0877699731311792,
           "iri": "http://maya-project.eu/icareonto/PhysiologicalParameter",
           "lexical_jaccard": 0.0,
-          "rank": 217
+          "rank": 216
         },
         {
           "cosine_similarity": 0.08691067854379748,
           "iri": "http://maya-project.eu/icareonto/MedicationDose",
           "lexical_jaccard": 0.0,
-          "rank": 218
+          "rank": 217
         },
         {
           "cosine_similarity": 0.08609777838468474,
           "iri": "http://maya-project.eu/icareonto/AlcoholUseBehaviour",
           "lexical_jaccard": 0.0,
-          "rank": 219
+          "rank": 218
         },
         {
           "cosine_similarity": 0.0852036913926081,
           "iri": "http://maya-project.eu/icareonto/SleepBehaviour",
           "lexical_jaccard": 0.0,
-          "rank": 220
+          "rank": 219
         },
         {
           "cosine_similarity": 0.08517816045433631,
           "iri": "http://maya-project.eu/icareonto/PilotSite",
           "lexical_jaccard": 0.0,
-          "rank": 221
+          "rank": 220
         },
         {
           "cosine_similarity": 0.08457304949363957,
           "iri": "http://maya-project.eu/icareonto/Locale",
           "lexical_jaccard": 0.0,
-          "rank": 222
+          "rank": 221
         },
         {
           "cosine_similarity": 0.08437466188329842,
           "iri": "http://maya-project.eu/icareonto/ExerciseIntensityLevel",
           "lexical_jaccard": 0.0,
-          "rank": 223
+          "rank": 222
         },
         {
           "cosine_similarity": 0.08175593705156683,
           "iri": "http://maya-project.eu/icareonto/HealthHub",
           "lexical_jaccard": 0.0,
-          "rank": 224
+          "rank": 223
         },
         {
           "cosine_similarity": 0.08138417713488309,
           "iri": "http://maya-project.eu/icareonto/CardiacBiomarker",
           "lexical_jaccard": 0.0,
-          "rank": 225
+          "rank": 224
         },
         {
-          "cosine_similarity": 0.07875053339818629,
+          "cosine_similarity": 0.07875054279808714,
           "iri": "http://maya-project.eu/icareonto/ExerciseIntensity",
           "lexical_jaccard": 0.0,
-          "rank": 226
+          "rank": 225
         },
         {
           "cosine_similarity": 0.07845241407283239,
           "iri": "http://maya-project.eu/icareonto/ExerciseSet",
           "lexical_jaccard": 0.0,
-          "rank": 227
+          "rank": 226
         },
         {
           "cosine_similarity": 0.07703664254832643,
           "iri": "http://maya-project.eu/icareonto/AYACancerSurvivorRole",
           "lexical_jaccard": 0.03333333333333333,
-          "rank": 228
+          "rank": 227
         },
         {
           "cosine_similarity": 0.07686760284003975,
           "iri": "http://maya-project.eu/icareonto/RiskFactorContribution",
           "lexical_jaccard": 0.0,
-          "rank": 229
+          "rank": 228
         },
         {
           "cosine_similarity": 0.07663729550903527,
           "iri": "http://maya-project.eu/icareonto/Timepoint",
           "lexical_jaccard": 0.0,
-          "rank": 230
+          "rank": 229
         },
         {
           "cosine_similarity": 0.0762928151365119,
           "iri": "http://maya-project.eu/icareonto/MeasurementInstrument",
           "lexical_jaccard": 0.0,
-          "rank": 231
+          "rank": 230
         },
         {
           "cosine_similarity": 0.07469492531525518,
           "iri": "http://maya-project.eu/icareonto/ExerciseTrainingPattern",
           "lexical_jaccard": 0.0,
-          "rank": 232
+          "rank": 231
         },
         {
           "cosine_similarity": 0.07452008323037225,
           "iri": "http://maya-project.eu/icareonto/Specimen",
           "lexical_jaccard": 0.0,
-          "rank": 233
+          "rank": 232
         },
         {
           "cosine_similarity": 0.07333999358057075,
           "iri": "http://maya-project.eu/icareonto/TemporalEntity",
           "lexical_jaccard": 0.0,
-          "rank": 234
+          "rank": 233
         },
         {
           "cosine_similarity": 0.07241559383804355,
           "iri": "http://maya-project.eu/icareonto/CancerTreatmentType",
           "lexical_jaccard": 0.0,
-          "rank": 235
+          "rank": 234
         },
         {
           "cosine_similarity": 0.07146077015261812,
           "iri": "http://maya-project.eu/icareonto/CancerStage",
           "lexical_jaccard": 0.0,
-          "rank": 236
+          "rank": 235
         },
         {
           "cosine_similarity": 0.07057932451896334,
           "iri": "http://maya-project.eu/icareonto/AgentCapability",
           "lexical_jaccard": 0.0,
-          "rank": 237
+          "rank": 236
         },
         {
           "cosine_similarity": 0.0704689601292158,
           "iri": "http://maya-project.eu/icareonto/TimeInterval",
           "lexical_jaccard": 0.0,
-          "rank": 238
+          "rank": 237
         },
         {
           "cosine_similarity": 0.06979898220473273,
           "iri": "http://maya-project.eu/icareonto/TransportationBarrier",
           "lexical_jaccard": 0.0,
-          "rank": 239
+          "rank": 238
         },
         {
           "cosine_similarity": 0.06889998315843922,
           "iri": "http://maya-project.eu/icareonto/CulturalFactor",
           "lexical_jaccard": 0.041666666666666664,
-          "rank": 240
+          "rank": 239
         },
         {
           "cosine_similarity": 0.06701555593605608,
           "iri": "http://maya-project.eu/icareonto/RiskCategoryValue",
           "lexical_jaccard": 0.0,
-          "rank": 241
+          "rank": 240
         },
         {
           "cosine_similarity": 0.0663301395734059,
           "iri": "http://maya-project.eu/icareonto/DietaryComponent",
           "lexical_jaccard": 0.0,
-          "rank": 242
+          "rank": 241
         },
         {
           "cosine_similarity": 0.06625580536508965,
           "iri": "http://maya-project.eu/icareonto/PhysicalActivityBehaviour",
           "lexical_jaccard": 0.0,
-          "rank": 243
+          "rank": 242
         },
         {
           "cosine_similarity": 0.06520104523459609,
           "iri": "http://maya-project.eu/icareonto/ThresholdCategory",
           "lexical_jaccard": 0.0,
-          "rank": 244
+          "rank": 243
         },
         {
           "cosine_similarity": 0.06475594357094035,
           "iri": "http://maya-project.eu/icareonto/ExerciseModality",
           "lexical_jaccard": 0.0,
-          "rank": 245
+          "rank": 244
         },
         {
           "cosine_similarity": 0.06372579230014058,
           "iri": "http://maya-project.eu/icareonto/RiskFactor",
           "lexical_jaccard": 0.05263157894736842,
-          "rank": 246
+          "rank": 245
         },
         {
           "cosine_similarity": 0.06302327873995126,
           "iri": "http://maya-project.eu/icareonto/DigitalAgent",
           "lexical_jaccard": 0.0,
-          "rank": 247
+          "rank": 246
         },
         {
           "cosine_similarity": 0.05779864890199188,
           "iri": "http://maya-project.eu/icareonto/CardiotoxicTreatmentExposure",
           "lexical_jaccard": 0.0,
-          "rank": 248
+          "rank": 247
         },
         {
           "cosine_similarity": 0.0577441088385713,
           "iri": "http://maya-project.eu/icareonto/PilotPhaseType",
           "lexical_jaccard": 0.0,
-          "rank": 249
+          "rank": 248
         },
         {
           "cosine_similarity": 0.057181031799700015,
           "iri": "http://maya-project.eu/icareonto/PilotPhase",
           "lexical_jaccard": 0.0,
-          "rank": 250
+          "rank": 249
         },
         {
           "cosine_similarity": 0.05680982781545495,
           "iri": "http://maya-project.eu/icareonto/EmploymentStatus",
           "lexical_jaccard": 0.03571428571428571,
-          "rank": 251
+          "rank": 250
         },
         {
           "cosine_similarity": 0.05551203782585928,
           "iri": "http://maya-project.eu/icareonto/CancerStageComponentType",
           "lexical_jaccard": 0.0,
-          "rank": 252
+          "rank": 251
         },
         {
           "cosine_similarity": 0.05347920729378448,
           "iri": "http://maya-project.eu/icareonto/BehaviourChangeStage",
           "lexical_jaccard": 0.041666666666666664,
-          "rank": 253
+          "rank": 252
         },
         {
           "cosine_similarity": 0.05207467022807535,
           "iri": "http://maya-project.eu/icareonto/ModifiableRiskFactor",
           "lexical_jaccard": 0.0,
-          "rank": 254
+          "rank": 253
         },
         {
           "cosine_similarity": 0.049846524338908085,
           "iri": "http://maya-project.eu/icareonto/MeasurementPanel",
           "lexical_jaccard": 0.0,
-          "rank": 255
+          "rank": 254
         },
         {
           "cosine_similarity": 0.049274812658040096,
           "iri": "http://maya-project.eu/icareonto/ExerciseActivity",
           "lexical_jaccard": 0.0,
-          "rank": 256
+          "rank": 255
         },
         {
           "cosine_similarity": 0.04783290383044064,
           "iri": "http://maya-project.eu/icareonto/GoalLifecycleStatus",
           "lexical_jaccard": 0.0,
-          "rank": 257
+          "rank": 256
         },
         {
           "cosine_similarity": 0.04660361517444872,
           "iri": "http://maya-project.eu/icareonto/Frequency",
           "lexical_jaccard": 0.0,
-          "rank": 258
+          "rank": 257
         },
         {
           "cosine_similarity": 0.045536704059236,
           "iri": "http://maya-project.eu/icareonto/QuantityValue",
           "lexical_jaccard": 0.0,
-          "rank": 259
+          "rank": 258
         },
         {
           "cosine_similarity": 0.04307352622978121,
           "iri": "http://maya-project.eu/icareonto/TreatmentAgent",
           "lexical_jaccard": 0.0,
-          "rank": 260
+          "rank": 259
         },
         {
           "cosine_similarity": 0.04306056841559335,
           "iri": "http://maya-project.eu/icareonto/AnthracyclineExposure",
           "lexical_jaccard": 0.0,
-          "rank": 261
+          "rank": 260
         },
         {
           "cosine_similarity": 0.040796972481890306,
           "iri": "http://maya-project.eu/icareonto/ModelPerformanceMetric",
+          "lexical_jaccard": 0.0,
+          "rank": 261
+        },
+        {
+          "cosine_similarity": 0.0384006502978168,
+          "iri": "http://maya-project.eu/icareonto/MeasurementDevice",
           "lexical_jaccard": 0.0,
           "rank": 262
         },
@@ -6718,44 +6719,44 @@
           "rank": 74
         },
         {
-          "cosine_similarity": 0.2339607076653817,
-          "iri": "http://maya-project.eu/icareonto/MeasurementDevice",
-          "lexical_jaccard": 0.0,
-          "rank": 75
-        },
-        {
           "cosine_similarity": 0.23345700099694972,
           "iri": "http://maya-project.eu/icareonto/HealthLiteracyIntervention",
           "lexical_jaccard": 0.0,
-          "rank": 76
+          "rank": 75
         },
         {
           "cosine_similarity": 0.23321456971110321,
           "iri": "http://maya-project.eu/icareonto/TimeInterval",
           "lexical_jaccard": 0.0,
-          "rank": 77
+          "rank": 76
         },
         {
           "cosine_similarity": 0.23265593449993127,
           "iri": "http://maya-project.eu/icareonto/ClinicianRole",
           "lexical_jaccard": 0.0,
-          "rank": 78
+          "rank": 77
         },
         {
           "cosine_similarity": 0.23192926583602502,
           "iri": "http://maya-project.eu/icareonto/Timepoint",
           "lexical_jaccard": 0.0,
-          "rank": 79
+          "rank": 78
         },
         {
           "cosine_similarity": 0.23188867966670298,
           "iri": "http://maya-project.eu/icareonto/ClinicalConditionRecord",
           "lexical_jaccard": 0.0,
-          "rank": 80
+          "rank": 79
         },
         {
           "cosine_similarity": 0.23116632706567852,
           "iri": "http://maya-project.eu/icareonto/CancerStagingSystem",
+          "lexical_jaccard": 0.0,
+          "rank": 80
+        },
+        {
+          "cosine_similarity": 0.2249254748980416,
+          "iri": "http://maya-project.eu/icareonto/MeasurementDevice",
           "lexical_jaccard": 0.0,
           "rank": 81
         },
@@ -7000,7 +7001,7 @@
           "rank": 121
         },
         {
-          "cosine_similarity": 0.18100428365991542,
+          "cosine_similarity": 0.18100424224998604,
           "iri": "http://maya-project.eu/icareonto/SlotType",
           "lexical_jaccard": 0.0,
           "rank": 122
@@ -7408,7 +7409,7 @@
           "rank": 189
         },
         {
-          "cosine_similarity": 0.12772735851158756,
+          "cosine_similarity": 0.12772734091160948,
           "iri": "http://maya-project.eu/icareonto/ExerciseIntensity",
           "lexical_jaccard": 0.0,
           "rank": 190
@@ -7930,7 +7931,7 @@
           "rank": 276
         },
         {
-          "cosine_similarity": 0.006838916800320269,
+          "cosine_similarity": 0.006838966456052947,
           "iri": "http://maya-project.eu/icareonto/Severity",
           "lexical_jaccard": 0.0,
           "rank": 277
@@ -8398,211 +8399,211 @@
           "rank": 70
         },
         {
-          "cosine_similarity": 0.15411389448772736,
-          "iri": "http://maya-project.eu/icareonto/MeasurementDevice",
-          "lexical_jaccard": 0.0,
-          "rank": 71
-        },
-        {
           "cosine_similarity": 0.15362099484811195,
           "iri": "http://maya-project.eu/icareonto/SedentaryBehaviour",
           "lexical_jaccard": 0.0,
-          "rank": 72
+          "rank": 71
         },
         {
           "cosine_similarity": 0.15278088109505109,
           "iri": "http://maya-project.eu/icareonto/DataSource",
           "lexical_jaccard": 0.0,
-          "rank": 73
+          "rank": 72
         },
         {
           "cosine_similarity": 0.15153012212042968,
           "iri": "http://maya-project.eu/icareonto/ClinicalFinding",
           "lexical_jaccard": 0.0,
-          "rank": 74
+          "rank": 73
         },
         {
           "cosine_similarity": 0.15136213854171282,
           "iri": "http://maya-project.eu/icareonto/CancerStagingSystem",
           "lexical_jaccard": 0.0,
-          "rank": 75
+          "rank": 74
         },
         {
           "cosine_similarity": 0.150959547633726,
           "iri": "http://maya-project.eu/icareonto/MeasurementEvent",
           "lexical_jaccard": 0.0,
-          "rank": 76
+          "rank": 75
         },
         {
           "cosine_similarity": 0.15081086132590354,
           "iri": "http://maya-project.eu/icareonto/Goal",
           "lexical_jaccard": 0.0,
-          "rank": 77
+          "rank": 76
         },
         {
           "cosine_similarity": 0.15006798873237215,
           "iri": "http://maya-project.eu/icareonto/MeasurableParameter",
           "lexical_jaccard": 0.0,
-          "rank": 78
+          "rank": 77
         },
         {
           "cosine_similarity": 0.14995669746447463,
           "iri": "http://maya-project.eu/icareonto/PolicyRecommendation",
           "lexical_jaccard": 0.0,
-          "rank": 79
+          "rank": 78
         },
         {
           "cosine_similarity": 0.14984875754582155,
           "iri": "http://maya-project.eu/icareonto/ClinicalAssessmentActivity",
           "lexical_jaccard": 0.0,
-          "rank": 80
+          "rank": 79
         },
         {
           "cosine_similarity": 0.14940309642010463,
           "iri": "http://maya-project.eu/icareonto/StudyTimepoint",
           "lexical_jaccard": 0.0,
-          "rank": 81
+          "rank": 80
         },
         {
           "cosine_similarity": 0.1490360469268295,
           "iri": "http://maya-project.eu/icareonto/Unit",
           "lexical_jaccard": 0.0,
-          "rank": 82
+          "rank": 81
         },
         {
           "cosine_similarity": 0.14822232473474894,
           "iri": "http://maya-project.eu/icareonto/RiskInterpretation",
           "lexical_jaccard": 0.0,
-          "rank": 83
+          "rank": 82
         },
         {
           "cosine_similarity": 0.1464466944387733,
           "iri": "http://maya-project.eu/icareonto/MeasurementInstrument",
           "lexical_jaccard": 0.0,
-          "rank": 84
+          "rank": 83
         },
         {
           "cosine_similarity": 0.14354368860511257,
           "iri": "http://maya-project.eu/icareonto/Symptom",
           "lexical_jaccard": 0.0,
-          "rank": 85
+          "rank": 84
         },
         {
           "cosine_similarity": 0.1418331995342385,
           "iri": "http://maya-project.eu/icareonto/PersonRole",
           "lexical_jaccard": 0.0,
-          "rank": 86
+          "rank": 85
         },
         {
           "cosine_similarity": 0.14157381677929048,
           "iri": "http://maya-project.eu/icareonto/MonitoringActivity",
           "lexical_jaccard": 0.0,
-          "rank": 87
+          "rank": 86
         },
         {
           "cosine_similarity": 0.14145140907427234,
           "iri": "http://maya-project.eu/icareonto/MeasurementInstruction",
           "lexical_jaccard": 0.0,
-          "rank": 88
+          "rank": 87
         },
         {
           "cosine_similarity": 0.13951989440271287,
           "iri": "http://maya-project.eu/icareonto/SafetyRuleType",
           "lexical_jaccard": 0.0,
-          "rank": 89
+          "rank": 88
         },
         {
           "cosine_similarity": 0.13832058342489384,
           "iri": "http://maya-project.eu/icareonto/ClinicalConditionRecord",
           "lexical_jaccard": 0.0,
-          "rank": 90
+          "rank": 89
         },
         {
           "cosine_similarity": 0.1380946086409284,
           "iri": "http://maya-project.eu/icareonto/RecommendationStrength",
           "lexical_jaccard": 0.0,
-          "rank": 91
+          "rank": 90
         },
         {
           "cosine_similarity": 0.1354057666557287,
           "iri": "http://maya-project.eu/icareonto/ClinicalAssessmentRecord",
           "lexical_jaccard": 0.0,
-          "rank": 92
+          "rank": 91
         },
         {
-          "cosine_similarity": 0.13453153745876445,
+          "cosine_similarity": 0.13453150521844018,
           "iri": "http://maya-project.eu/icareonto/SlotType",
           "lexical_jaccard": 0.0,
-          "rank": 93
+          "rank": 92
         },
         {
           "cosine_similarity": 0.13367262508673594,
           "iri": "http://maya-project.eu/icareonto/RiskBasedTrigger",
           "lexical_jaccard": 0.0,
-          "rank": 94
+          "rank": 93
         },
         {
           "cosine_similarity": 0.13318298625129643,
           "iri": "http://maya-project.eu/icareonto/QuestionnaireDataSource",
           "lexical_jaccard": 0.0,
-          "rank": 95
+          "rank": 94
         },
         {
           "cosine_similarity": 0.13128886970557282,
           "iri": "http://maya-project.eu/icareonto/LivingSituation",
           "lexical_jaccard": 0.0,
-          "rank": 96
+          "rank": 95
         },
         {
           "cosine_similarity": 0.12974431367800185,
           "iri": "http://maya-project.eu/icareonto/PsychologicalParameter",
           "lexical_jaccard": 0.0,
-          "rank": 97
+          "rank": 96
         },
         {
           "cosine_similarity": 0.1281246051190076,
           "iri": "http://maya-project.eu/icareonto/RiskFactor",
           "lexical_jaccard": 0.0,
-          "rank": 98
+          "rank": 97
         },
         {
           "cosine_similarity": 0.12640187376234333,
           "iri": "http://maya-project.eu/icareonto/ScoreValue",
           "lexical_jaccard": 0.0,
-          "rank": 99
+          "rank": 98
         },
         {
           "cosine_similarity": 0.1257351315676563,
           "iri": "http://maya-project.eu/icareonto/ExerciseIntervention",
           "lexical_jaccard": 0.0,
-          "rank": 100
+          "rank": 99
         },
         {
           "cosine_similarity": 0.1255053271255362,
           "iri": "http://maya-project.eu/icareonto/PhysicalPerformanceParameter",
           "lexical_jaccard": 0.0,
-          "rank": 101
+          "rank": 100
         },
         {
           "cosine_similarity": 0.12507138866433903,
           "iri": "http://maya-project.eu/icareonto/VerificationStatusValue",
           "lexical_jaccard": 0.0,
-          "rank": 102
+          "rank": 101
         },
         {
           "cosine_similarity": 0.12338073175004638,
           "iri": "http://maya-project.eu/icareonto/BehaviourMetricType",
           "lexical_jaccard": 0.0,
-          "rank": 103
+          "rank": 102
         },
         {
           "cosine_similarity": 0.12189042545872412,
           "iri": "http://maya-project.eu/icareonto/CancerStageType",
           "lexical_jaccard": 0.0,
+          "rank": 103
+        },
+        {
+          "cosine_similarity": 0.12175747334850436,
+          "iri": "http://maya-project.eu/icareonto/MeasurementDevice",
+          "lexical_jaccard": 0.0,
           "rank": 104
         },
         {
-          "cosine_similarity": 0.12171487597218326,
+          "cosine_similarity": 0.12171484181507243,
           "iri": "http://maya-project.eu/icareonto/ExerciseIntensity",
           "lexical_jaccard": 0.0,
           "rank": 105
@@ -9190,7 +9191,7 @@
           "rank": 202
         },
         {
-          "cosine_similarity": 0.04658445774836604,
+          "cosine_similarity": 0.04658441998151844,
           "iri": "http://maya-project.eu/icareonto/Severity",
           "lexical_jaccard": 0.0,
           "rank": 203
@@ -9724,7 +9725,7 @@
           "rank": 7
         },
         {
-          "cosine_similarity": 0.388656349337061,
+          "cosine_similarity": 0.3875296161031911,
           "iri": "http://maya-project.eu/icareonto/MeasurementDevice",
           "lexical_jaccard": 0.045454545454545456,
           "rank": 8
@@ -10258,7 +10259,7 @@
           "rank": 96
         },
         {
-          "cosine_similarity": 0.2070333066265853,
+          "cosine_similarity": 0.2070333275967409,
           "iri": "http://maya-project.eu/icareonto/SlotType",
           "lexical_jaccard": 0.0,
           "rank": 97
@@ -10318,7 +10319,7 @@
           "rank": 106
         },
         {
-          "cosine_similarity": 0.1968723180785593,
+          "cosine_similarity": 0.1968723568261735,
           "iri": "http://maya-project.eu/icareonto/Severity",
           "lexical_jaccard": 0.0,
           "rank": 107
@@ -10528,7 +10529,7 @@
           "rank": 141
         },
         {
-          "cosine_similarity": 0.16041756907642657,
+          "cosine_similarity": 0.16041759744561537,
           "iri": "http://maya-project.eu/icareonto/ExerciseIntensity",
           "lexical_jaccard": 0.0,
           "rank": 142
@@ -12268,7 +12269,7 @@
           "rank": 147
         },
         {
-          "cosine_similarity": 0.21577276624178268,
+          "cosine_similarity": 0.2157728278993655,
           "iri": "http://maya-project.eu/icareonto/Severity",
           "lexical_jaccard": 0.0,
           "rank": 148
@@ -12652,7 +12653,7 @@
           "rank": 211
         },
         {
-          "cosine_similarity": 0.15533348420315,
+          "cosine_similarity": 0.15533355167450147,
           "iri": "http://maya-project.eu/icareonto/ExerciseIntensity",
           "lexical_jaccard": 0.0,
           "rank": 212
@@ -12766,134 +12767,134 @@
           "rank": 230
         },
         {
-          "cosine_similarity": 0.1365921942608897,
-          "iri": "http://maya-project.eu/icareonto/MeasurementDevice",
-          "lexical_jaccard": 0.047619047619047616,
-          "rank": 231
-        },
-        {
           "cosine_similarity": 0.1362524461391559,
           "iri": "http://maya-project.eu/icareonto/ExerciseActivity",
           "lexical_jaccard": 0.0,
-          "rank": 232
+          "rank": 231
         },
         {
           "cosine_similarity": 0.1340263478516468,
           "iri": "http://maya-project.eu/icareonto/StudyTimepointType",
           "lexical_jaccard": 0.0,
-          "rank": 233
+          "rank": 232
         },
         {
           "cosine_similarity": 0.13351021182918668,
           "iri": "http://maya-project.eu/icareonto/SamplingProcedure",
           "lexical_jaccard": 0.0,
-          "rank": 234
+          "rank": 233
         },
         {
           "cosine_similarity": 0.13186238184375648,
           "iri": "http://maya-project.eu/icareonto/PilotPhaseType",
           "lexical_jaccard": 0.043478260869565216,
-          "rank": 235
+          "rank": 234
         },
         {
           "cosine_similarity": 0.13079542730171964,
           "iri": "http://maya-project.eu/icareonto/PersonPreference",
           "lexical_jaccard": 0.1111111111111111,
-          "rank": 236
+          "rank": 235
         },
         {
           "cosine_similarity": 0.1306621710842102,
           "iri": "http://maya-project.eu/icareonto/Contraindication",
           "lexical_jaccard": 0.0,
-          "rank": 237
+          "rank": 236
         },
         {
           "cosine_similarity": 0.12733490377047854,
           "iri": "http://maya-project.eu/icareonto/BehaviourStatus",
           "lexical_jaccard": 0.0,
-          "rank": 238
+          "rank": 237
         },
         {
           "cosine_similarity": 0.12571391846278673,
           "iri": "http://maya-project.eu/icareonto/DigitalLiteracy",
           "lexical_jaccard": 0.13043478260869565,
-          "rank": 239
+          "rank": 238
         },
         {
           "cosine_similarity": 0.12480960248664255,
           "iri": "http://maya-project.eu/icareonto/Agent",
           "lexical_jaccard": 0.0,
-          "rank": 240
+          "rank": 239
         },
         {
           "cosine_similarity": 0.12178441494948221,
           "iri": "http://maya-project.eu/icareonto/CulturalFactor",
           "lexical_jaccard": 0.0,
-          "rank": 241
+          "rank": 240
         },
         {
           "cosine_similarity": 0.1202934506397742,
           "iri": "http://maya-project.eu/icareonto/GoalAchievementStatus",
           "lexical_jaccard": 0.0,
-          "rank": 242
+          "rank": 241
         },
         {
           "cosine_similarity": 0.11970542825290807,
           "iri": "http://maya-project.eu/icareonto/AgentResponse",
           "lexical_jaccard": 0.0,
-          "rank": 243
+          "rank": 242
         },
         {
           "cosine_similarity": 0.11849944252485521,
           "iri": "http://maya-project.eu/icareonto/ScoreValue",
           "lexical_jaccard": 0.0,
-          "rank": 244
+          "rank": 243
         },
         {
           "cosine_similarity": 0.11834927050380808,
           "iri": "http://maya-project.eu/icareonto/Unit",
           "lexical_jaccard": 0.0,
-          "rank": 245
+          "rank": 244
         },
         {
           "cosine_similarity": 0.11815546339047993,
           "iri": "http://maya-project.eu/icareonto/ExerciseTrainingPattern",
           "lexical_jaccard": 0.0,
-          "rank": 246
+          "rank": 245
         },
         {
           "cosine_similarity": 0.11789470858628508,
           "iri": "http://maya-project.eu/icareonto/BehaviourMetricType",
           "lexical_jaccard": 0.0,
-          "rank": 247
+          "rank": 246
         },
         {
           "cosine_similarity": 0.11487112054454783,
           "iri": "http://maya-project.eu/icareonto/EvidenceGrade",
           "lexical_jaccard": 0.0,
-          "rank": 248
+          "rank": 247
         },
         {
           "cosine_similarity": 0.11319332302217826,
           "iri": "http://maya-project.eu/icareonto/LanguageProficiencyLevelValue",
           "lexical_jaccard": 0.0,
-          "rank": 249
+          "rank": 248
         },
         {
-          "cosine_similarity": 0.10986926047362865,
+          "cosine_similarity": 0.10986926361195905,
           "iri": "http://maya-project.eu/icareonto/SlotType",
           "lexical_jaccard": 0.043478260869565216,
-          "rank": 250
+          "rank": 249
         },
         {
           "cosine_similarity": 0.10926612164256033,
           "iri": "http://maya-project.eu/icareonto/MeasurementInstrument",
           "lexical_jaccard": 0.0,
-          "rank": 251
+          "rank": 250
         },
         {
           "cosine_similarity": 0.10762430628144491,
           "iri": "http://maya-project.eu/icareonto/TemporalEntity",
+          "lexical_jaccard": 0.0,
+          "rank": 251
+        },
+        {
+          "cosine_similarity": 0.10387007397413989,
+          "iri": "http://maya-project.eu/icareonto/MeasurementDevice",
           "lexical_jaccard": 0.0,
           "rank": 252
         },
@@ -13486,7 +13487,7 @@
           "rank": 66
         },
         {
-          "cosine_similarity": 0.16131091014473814,
+          "cosine_similarity": 0.1613108490692955,
           "iri": "http://maya-project.eu/icareonto/SlotType",
           "lexical_jaccard": 0.041666666666666664,
           "rank": 67
@@ -13678,7 +13679,7 @@
           "rank": 98
         },
         {
-          "cosine_similarity": 0.12035251187173257,
+          "cosine_similarity": 0.12035252133837121,
           "iri": "http://maya-project.eu/icareonto/Severity",
           "lexical_jaccard": 0.0,
           "rank": 99
@@ -13780,560 +13781,560 @@
           "rank": 115
         },
         {
-          "cosine_similarity": 0.10834549091522487,
-          "iri": "http://maya-project.eu/icareonto/MeasurementDevice",
-          "lexical_jaccard": 0.0,
-          "rank": 116
-        },
-        {
           "cosine_similarity": 0.10779836773540694,
           "iri": "http://maya-project.eu/icareonto/CarePlanParticipation",
           "lexical_jaccard": 0.047619047619047616,
-          "rank": 117
+          "rank": 116
         },
         {
           "cosine_similarity": 0.10717769543462564,
           "iri": "http://maya-project.eu/icareonto/BodyCompositionProtocol",
           "lexical_jaccard": 0.0,
-          "rank": 118
+          "rank": 117
         },
         {
           "cosine_similarity": 0.1061935955170577,
           "iri": "http://maya-project.eu/icareonto/Goal",
           "lexical_jaccard": 0.0,
-          "rank": 119
+          "rank": 118
         },
         {
           "cosine_similarity": 0.10440734840466553,
           "iri": "http://maya-project.eu/icareonto/LifestyleBarrier",
           "lexical_jaccard": 0.043478260869565216,
-          "rank": 120
+          "rank": 119
         },
         {
           "cosine_similarity": 0.10345357963730535,
           "iri": "http://maya-project.eu/icareonto/ExerciseAdherenceResult",
           "lexical_jaccard": 0.04,
-          "rank": 121
+          "rank": 120
         },
         {
           "cosine_similarity": 0.10188090813404643,
           "iri": "http://maya-project.eu/icareonto/SupportNetwork",
           "lexical_jaccard": 0.0,
-          "rank": 122
+          "rank": 121
         },
         {
           "cosine_similarity": 0.10149851827932777,
           "iri": "http://maya-project.eu/icareonto/RadiotherapyBodySite",
           "lexical_jaccard": 0.0,
-          "rank": 123
+          "rank": 122
         },
         {
           "cosine_similarity": 0.1008880130904495,
           "iri": "http://maya-project.eu/icareonto/ClinicalCondition",
           "lexical_jaccard": 0.0,
-          "rank": 124
+          "rank": 123
         },
         {
           "cosine_similarity": 0.09978105272196736,
           "iri": "http://maya-project.eu/icareonto/ActivityExecution",
           "lexical_jaccard": 0.0,
-          "rank": 125
+          "rank": 124
         },
         {
           "cosine_similarity": 0.09952433049061474,
           "iri": "http://maya-project.eu/icareonto/BehaviourStatus",
           "lexical_jaccard": 0.0,
-          "rank": 126
+          "rank": 125
         },
         {
           "cosine_similarity": 0.09940271423077746,
           "iri": "http://maya-project.eu/icareonto/ResearcherRole",
           "lexical_jaccard": 0.0,
-          "rank": 127
+          "rank": 126
         },
         {
           "cosine_similarity": 0.09930015344309158,
           "iri": "http://maya-project.eu/icareonto/Agent",
           "lexical_jaccard": 0.0,
-          "rank": 128
+          "rank": 127
         },
         {
           "cosine_similarity": 0.09848872623170428,
           "iri": "http://maya-project.eu/icareonto/TreatmentExposure",
           "lexical_jaccard": 0.0,
-          "rank": 129
+          "rank": 128
         },
         {
           "cosine_similarity": 0.09814560499062118,
           "iri": "http://maya-project.eu/icareonto/CardiovascularCondition",
           "lexical_jaccard": 0.0,
-          "rank": 130
+          "rank": 129
         },
         {
           "cosine_similarity": 0.09765125545993243,
           "iri": "http://maya-project.eu/icareonto/RiskAssessmentMethod",
           "lexical_jaccard": 0.043478260869565216,
-          "rank": 131
+          "rank": 130
         },
         {
           "cosine_similarity": 0.09710197145495818,
           "iri": "http://maya-project.eu/icareonto/ChestRadiotherapyExposure",
           "lexical_jaccard": 0.0,
-          "rank": 132
+          "rank": 131
         },
         {
           "cosine_similarity": 0.09699063445085138,
           "iri": "http://maya-project.eu/icareonto/MonitoringActivity",
           "lexical_jaccard": 0.0,
-          "rank": 133
+          "rank": 132
         },
         {
           "cosine_similarity": 0.09622708619957941,
           "iri": "http://maya-project.eu/icareonto/ClinicalProfile",
           "lexical_jaccard": 0.0,
-          "rank": 134
+          "rank": 133
         },
         {
           "cosine_similarity": 0.09592047647582358,
           "iri": "http://maya-project.eu/icareonto/CancerStagingSystem",
           "lexical_jaccard": 0.0,
-          "rank": 135
+          "rank": 134
         },
         {
           "cosine_similarity": 0.09580646814751888,
           "iri": "http://maya-project.eu/icareonto/ThresholdCategory",
           "lexical_jaccard": 0.038461538461538464,
-          "rank": 136
+          "rank": 135
         },
         {
           "cosine_similarity": 0.09526185924084297,
           "iri": "http://maya-project.eu/icareonto/MedicationStatus",
           "lexical_jaccard": 0.041666666666666664,
-          "rank": 137
+          "rank": 136
         },
         {
           "cosine_similarity": 0.09521018832097378,
           "iri": "http://maya-project.eu/icareonto/PerformedExerciseSession",
           "lexical_jaccard": 0.0,
-          "rank": 138
+          "rank": 137
         },
         {
           "cosine_similarity": 0.094010515182671,
           "iri": "http://maya-project.eu/icareonto/MeasurementInterpretation",
           "lexical_jaccard": 0.0,
-          "rank": 139
+          "rank": 138
         },
         {
           "cosine_similarity": 0.09383369922514646,
           "iri": "http://maya-project.eu/icareonto/MedicationDose",
           "lexical_jaccard": 0.0,
-          "rank": 140
+          "rank": 139
         },
         {
           "cosine_similarity": 0.09234552534206104,
           "iri": "http://maya-project.eu/icareonto/ContextInfluenceValue",
           "lexical_jaccard": 0.0,
-          "rank": 141
+          "rank": 140
         },
         {
           "cosine_similarity": 0.09211883519612711,
           "iri": "http://maya-project.eu/icareonto/ClinicalRecord",
           "lexical_jaccard": 0.0,
-          "rank": 142
+          "rank": 141
         },
         {
           "cosine_similarity": 0.0915132186036708,
           "iri": "http://maya-project.eu/icareonto/MedicationRecord",
           "lexical_jaccard": 0.0,
-          "rank": 143
+          "rank": 142
         },
         {
           "cosine_similarity": 0.09139961898102836,
           "iri": "http://maya-project.eu/icareonto/CancerTreatmentIntent",
           "lexical_jaccard": 0.0,
-          "rank": 144
+          "rank": 143
         },
         {
           "cosine_similarity": 0.09087523948102129,
           "iri": "http://maya-project.eu/icareonto/EngagementParameter",
           "lexical_jaccard": 0.0,
-          "rank": 145
+          "rank": 144
         },
         {
           "cosine_similarity": 0.0908519136697411,
           "iri": "http://maya-project.eu/icareonto/ExerciseActivity",
           "lexical_jaccard": 0.041666666666666664,
-          "rank": 146
+          "rank": 145
         },
         {
           "cosine_similarity": 0.09052011057809149,
           "iri": "http://maya-project.eu/icareonto/Person",
           "lexical_jaccard": 0.04,
-          "rank": 147
+          "rank": 146
         },
         {
           "cosine_similarity": 0.09040530427947781,
           "iri": "http://maya-project.eu/icareonto/CommunicationPreference",
           "lexical_jaccard": 0.037037037037037035,
-          "rank": 148
+          "rank": 147
         },
         {
           "cosine_similarity": 0.09036043300516683,
           "iri": "http://maya-project.eu/icareonto/SymptomRecord",
           "lexical_jaccard": 0.0,
-          "rank": 149
+          "rank": 148
         },
         {
           "cosine_similarity": 0.0901373798180618,
           "iri": "http://maya-project.eu/icareonto/PsychosocialCondition",
           "lexical_jaccard": 0.0,
-          "rank": 150
+          "rank": 149
         },
         {
           "cosine_similarity": 0.08950490668599265,
           "iri": "http://maya-project.eu/icareonto/CancerStageComponentType",
           "lexical_jaccard": 0.038461538461538464,
-          "rank": 151
+          "rank": 150
         },
         {
           "cosine_similarity": 0.08943858650800705,
           "iri": "http://maya-project.eu/icareonto/MedicalCheckUpActivity",
           "lexical_jaccard": 0.0,
-          "rank": 152
+          "rank": 151
         },
         {
           "cosine_similarity": 0.089365011052708,
           "iri": "http://maya-project.eu/icareonto/BehaviourMetricType",
           "lexical_jaccard": 0.04,
-          "rank": 153
+          "rank": 152
         },
         {
           "cosine_similarity": 0.08898998406433076,
           "iri": "http://maya-project.eu/icareonto/AYACancerSurvivorRole",
           "lexical_jaccard": 0.0,
-          "rank": 154
+          "rank": 153
         },
         {
           "cosine_similarity": 0.08882724195817122,
           "iri": "http://maya-project.eu/icareonto/ClinicalAssessmentRecord",
           "lexical_jaccard": 0.0,
-          "rank": 155
+          "rank": 154
         },
         {
           "cosine_similarity": 0.08847238835612985,
           "iri": "http://maya-project.eu/icareonto/ModelOutput",
           "lexical_jaccard": 0.0,
-          "rank": 156
+          "rank": 155
         },
         {
           "cosine_similarity": 0.0878587464304664,
           "iri": "http://maya-project.eu/icareonto/EmploymentStatus",
           "lexical_jaccard": 0.034482758620689655,
-          "rank": 157
+          "rank": 156
         },
         {
           "cosine_similarity": 0.08756348095702018,
           "iri": "http://maya-project.eu/icareonto/SafetyRule",
           "lexical_jaccard": 0.05,
-          "rank": 158
+          "rank": 157
         },
         {
           "cosine_similarity": 0.0875451000875014,
           "iri": "http://maya-project.eu/icareonto/MetabolicCondition",
           "lexical_jaccard": 0.041666666666666664,
-          "rank": 159
+          "rank": 158
         },
         {
           "cosine_similarity": 0.08670876208883294,
           "iri": "http://maya-project.eu/icareonto/CulturalFactor",
           "lexical_jaccard": 0.0,
-          "rank": 160
+          "rank": 159
         },
         {
           "cosine_similarity": 0.08656879269903765,
           "iri": "http://maya-project.eu/icareonto/SamplingProcedure",
           "lexical_jaccard": 0.0,
-          "rank": 161
+          "rank": 160
         },
         {
           "cosine_similarity": 0.08581896257559374,
           "iri": "http://maya-project.eu/icareonto/Questionnaire",
           "lexical_jaccard": 0.0,
-          "rank": 162
+          "rank": 161
         },
         {
           "cosine_similarity": 0.08520073144594378,
           "iri": "http://maya-project.eu/icareonto/PersonAttribute",
           "lexical_jaccard": 0.0,
-          "rank": 163
+          "rank": 162
         },
         {
           "cosine_similarity": 0.08368514721349035,
           "iri": "http://maya-project.eu/icareonto/BehaviourRecord",
           "lexical_jaccard": 0.0,
-          "rank": 164
+          "rank": 163
         },
         {
           "cosine_similarity": 0.08317835131038367,
           "iri": "http://maya-project.eu/icareonto/CancerStageValue",
           "lexical_jaccard": 0.0,
-          "rank": 165
+          "rank": 164
         },
         {
           "cosine_similarity": 0.08245741457716925,
           "iri": "http://maya-project.eu/icareonto/SafetyRuleType",
           "lexical_jaccard": 0.0,
-          "rank": 166
+          "rank": 165
         },
         {
           "cosine_similarity": 0.08197573365977653,
           "iri": "http://maya-project.eu/icareonto/CancerTreatmentHistory",
           "lexical_jaccard": 0.0,
-          "rank": 167
+          "rank": 166
         },
         {
           "cosine_similarity": 0.08157168193337012,
           "iri": "http://maya-project.eu/icareonto/CarePlanActivity",
           "lexical_jaccard": 0.0,
-          "rank": 168
+          "rank": 167
         },
         {
           "cosine_similarity": 0.08123023169253817,
           "iri": "http://maya-project.eu/icareonto/ConsentStatusValue",
           "lexical_jaccard": 0.0,
-          "rank": 169
+          "rank": 168
         },
         {
           "cosine_similarity": 0.08092497723498342,
           "iri": "http://maya-project.eu/icareonto/ClinicalFindingRecord",
           "lexical_jaccard": 0.0,
-          "rank": 170
+          "rank": 169
         },
         {
           "cosine_similarity": 0.08092323176754398,
           "iri": "http://maya-project.eu/icareonto/ModifiableRiskFactor",
           "lexical_jaccard": 0.0,
-          "rank": 171
+          "rank": 170
         },
         {
           "cosine_similarity": 0.08056651262624985,
           "iri": "http://maya-project.eu/icareonto/ExerciseActivityType",
           "lexical_jaccard": 0.04,
-          "rank": 172
+          "rank": 171
         },
         {
           "cosine_similarity": 0.07968595310286443,
           "iri": "http://maya-project.eu/icareonto/PolicyRecommendation",
           "lexical_jaccard": 0.0,
-          "rank": 173
+          "rank": 172
         },
         {
           "cosine_similarity": 0.07738055774821359,
           "iri": "http://maya-project.eu/icareonto/ClinicalVisitContext",
           "lexical_jaccard": 0.0,
-          "rank": 174
+          "rank": 173
         },
         {
           "cosine_similarity": 0.07714363632559328,
           "iri": "http://maya-project.eu/icareonto/Schedule",
           "lexical_jaccard": 0.0,
-          "rank": 175
+          "rank": 174
         },
         {
           "cosine_similarity": 0.07697983361465546,
           "iri": "http://maya-project.eu/icareonto/TreatmentAgent",
           "lexical_jaccard": 0.0,
-          "rank": 176
+          "rank": 175
         },
         {
           "cosine_similarity": 0.07652860846132296,
           "iri": "http://maya-project.eu/icareonto/TimeInterval",
           "lexical_jaccard": 0.0,
-          "rank": 177
+          "rank": 176
         },
         {
           "cosine_similarity": 0.07614149635439606,
           "iri": "http://maya-project.eu/icareonto/MeasurementPanel",
           "lexical_jaccard": 0.04,
-          "rank": 178
+          "rank": 177
         },
         {
           "cosine_similarity": 0.07613032773595227,
           "iri": "http://maya-project.eu/icareonto/RiskInterpretation",
           "lexical_jaccard": 0.045454545454545456,
-          "rank": 179
+          "rank": 178
         },
         {
           "cosine_similarity": 0.07592096458657883,
           "iri": "http://maya-project.eu/icareonto/ClinicianRole",
           "lexical_jaccard": 0.0,
-          "rank": 180
+          "rank": 179
         },
         {
           "cosine_similarity": 0.07589757251755294,
           "iri": "http://maya-project.eu/icareonto/AdverseCardiacEvent",
           "lexical_jaccard": 0.038461538461538464,
-          "rank": 181
+          "rank": 180
         },
         {
           "cosine_similarity": 0.07589042928968155,
           "iri": "http://maya-project.eu/icareonto/BehaviourChangeStage",
           "lexical_jaccard": 0.0,
-          "rank": 182
+          "rank": 181
         },
         {
           "cosine_similarity": 0.07563502326685416,
           "iri": "http://maya-project.eu/icareonto/ClinicalSeverityLevel",
           "lexical_jaccard": 0.038461538461538464,
-          "rank": 183
+          "rank": 182
         },
         {
           "cosine_similarity": 0.07546219235806167,
           "iri": "http://maya-project.eu/icareonto/AlcoholUseBehaviour",
           "lexical_jaccard": 0.0,
-          "rank": 184
+          "rank": 183
         },
         {
           "cosine_similarity": 0.07487676040040317,
           "iri": "http://maya-project.eu/icareonto/CarePlanStatus",
           "lexical_jaccard": 0.043478260869565216,
-          "rank": 185
+          "rank": 184
         },
         {
-          "cosine_similarity": 0.07444336157238465,
+          "cosine_similarity": 0.07444339156882523,
           "iri": "http://maya-project.eu/icareonto/ExerciseIntensity",
           "lexical_jaccard": 0.038461538461538464,
-          "rank": 186
+          "rank": 185
         },
         {
           "cosine_similarity": 0.07334199942001328,
           "iri": "http://maya-project.eu/icareonto/MeasurableParameter",
           "lexical_jaccard": 0.0,
-          "rank": 187
+          "rank": 186
         },
         {
           "cosine_similarity": 0.07324372265732465,
           "iri": "http://maya-project.eu/icareonto/CancerTreatmentType",
           "lexical_jaccard": 0.043478260869565216,
-          "rank": 188
+          "rank": 187
         },
         {
           "cosine_similarity": 0.07309522067130356,
           "iri": "http://maya-project.eu/icareonto/ClinicalFinding",
           "lexical_jaccard": 0.0,
-          "rank": 189
+          "rank": 188
         },
         {
           "cosine_similarity": 0.07305666937714299,
           "iri": "http://maya-project.eu/icareonto/MeasurementInstrument",
           "lexical_jaccard": 0.0,
-          "rank": 190
+          "rank": 189
         },
         {
           "cosine_similarity": 0.07257337274025262,
           "iri": "http://maya-project.eu/icareonto/RiskCategoryValue",
           "lexical_jaccard": 0.043478260869565216,
-          "rank": 191
+          "rank": 190
         },
         {
           "cosine_similarity": 0.07256470712194528,
           "iri": "http://maya-project.eu/icareonto/CancerSurvivorRole",
           "lexical_jaccard": 0.0,
-          "rank": 192
+          "rank": 191
         },
         {
           "cosine_similarity": 0.07226787894172108,
           "iri": "http://maya-project.eu/icareonto/ExerciseSet",
           "lexical_jaccard": 0.0,
-          "rank": 193
+          "rank": 192
         },
         {
           "cosine_similarity": 0.07144824867271306,
           "iri": "http://maya-project.eu/icareonto/CardiotoxicTreatmentExposure",
           "lexical_jaccard": 0.037037037037037035,
-          "rank": 194
+          "rank": 193
         },
         {
           "cosine_similarity": 0.07034851161929688,
           "iri": "http://maya-project.eu/icareonto/RiskFactorContribution",
           "lexical_jaccard": 0.0,
-          "rank": 195
+          "rank": 194
         },
         {
           "cosine_similarity": 0.06973612330020312,
           "iri": "http://maya-project.eu/icareonto/FollowUpActivity",
           "lexical_jaccard": 0.0,
-          "rank": 196
+          "rank": 195
         },
         {
           "cosine_similarity": 0.06948106400506072,
           "iri": "http://maya-project.eu/icareonto/CarePlan",
           "lexical_jaccard": 0.0,
-          "rank": 197
+          "rank": 196
         },
         {
           "cosine_similarity": 0.06915536157199448,
           "iri": "http://maya-project.eu/icareonto/HomeMonitoringContext",
           "lexical_jaccard": 0.0,
-          "rank": 198
+          "rank": 197
         },
         {
           "cosine_similarity": 0.06899240102682043,
           "iri": "http://maya-project.eu/icareonto/CancerDiagnosis",
           "lexical_jaccard": 0.0,
-          "rank": 199
+          "rank": 198
         },
         {
           "cosine_similarity": 0.06793814335419805,
           "iri": "http://maya-project.eu/icareonto/FamilyMemberRole",
           "lexical_jaccard": 0.0,
-          "rank": 200
+          "rank": 199
         },
         {
           "cosine_similarity": 0.06633027139731598,
           "iri": "http://maya-project.eu/icareonto/MonitoringAdherenceBehaviour",
           "lexical_jaccard": 0.0,
-          "rank": 201
+          "rank": 200
         },
         {
           "cosine_similarity": 0.06615930450020577,
           "iri": "http://maya-project.eu/icareonto/CancerStage",
           "lexical_jaccard": 0.0,
-          "rank": 202
+          "rank": 201
         },
         {
           "cosine_similarity": 0.06592141571919367,
           "iri": "http://maya-project.eu/icareonto/RadiotherapyExposure",
           "lexical_jaccard": 0.0,
-          "rank": 203
+          "rank": 202
         },
         {
           "cosine_similarity": 0.06589754964944798,
           "iri": "http://maya-project.eu/icareonto/AlertThreshold",
           "lexical_jaccard": 0.0,
-          "rank": 204
+          "rank": 203
         },
         {
           "cosine_similarity": 0.06536821497731328,
           "iri": "http://maya-project.eu/icareonto/DietaryPattern",
           "lexical_jaccard": 0.041666666666666664,
-          "rank": 205
+          "rank": 204
         },
         {
           "cosine_similarity": 0.0648799025937949,
           "iri": "http://maya-project.eu/icareonto/Medication",
           "lexical_jaccard": 0.0,
-          "rank": 206
+          "rank": 205
         },
         {
           "cosine_similarity": 0.06455369757550194,
           "iri": "http://maya-project.eu/icareonto/VerificationStatusValue",
           "lexical_jaccard": 0.0,
-          "rank": 207
+          "rank": 206
         },
         {
           "cosine_similarity": 0.06412555450582356,
           "iri": "http://maya-project.eu/icareonto/Contraindication",
+          "lexical_jaccard": 0.0,
+          "rank": 207
+        },
+        {
+          "cosine_similarity": 0.06361929580298605,
+          "iri": "http://maya-project.eu/icareonto/MeasurementDevice",
           "lexical_jaccard": 0.0,
           "rank": 208
         },
@@ -15004,7 +15005,7 @@
           "rank": 35
         },
         {
-          "cosine_similarity": 0.24852132610886946,
+          "cosine_similarity": 0.24852132674159094,
           "iri": "http://maya-project.eu/icareonto/ExerciseIntensity",
           "lexical_jaccard": 0.038461538461538464,
           "rank": 36
@@ -15532,7 +15533,7 @@
           "rank": 123
         },
         {
-          "cosine_similarity": 0.10829122002387175,
+          "cosine_similarity": 0.11017156176931563,
           "iri": "http://maya-project.eu/icareonto/MeasurementDevice",
           "lexical_jaccard": 0.0,
           "rank": 124
@@ -15646,7 +15647,7 @@
           "rank": 142
         },
         {
-          "cosine_similarity": 0.09355799598299656,
+          "cosine_similarity": 0.09355806666430509,
           "iri": "http://maya-project.eu/icareonto/SlotType",
           "lexical_jaccard": 0.0,
           "rank": 143
@@ -16342,7 +16343,7 @@
           "rank": 258
         },
         {
-          "cosine_similarity": -0.038616865540825406,
+          "cosine_similarity": -0.03861683090794469,
           "iri": "http://maya-project.eu/icareonto/Severity",
           "lexical_jaccard": 0.0,
           "rank": 259
@@ -16534,7 +16535,7 @@
           "rank": 6
         },
         {
-          "cosine_similarity": 0.6177466811467301,
+          "cosine_similarity": 0.6177467155361492,
           "iri": "http://maya-project.eu/icareonto/ExerciseIntensity",
           "lexical_jaccard": 0.08333333333333333,
           "rank": 7
@@ -17248,7 +17249,7 @@
           "rank": 125
         },
         {
-          "cosine_similarity": 0.2717173431706562,
+          "cosine_similarity": 0.2717174151032935,
           "iri": "http://maya-project.eu/icareonto/SlotType",
           "lexical_jaccard": 0.0,
           "rank": 126
@@ -17476,32 +17477,32 @@
           "rank": 163
         },
         {
-          "cosine_similarity": 0.22992604259010735,
-          "iri": "http://maya-project.eu/icareonto/MeasurementDevice",
-          "lexical_jaccard": 0.0,
-          "rank": 164
-        },
-        {
           "cosine_similarity": 0.22983565788677954,
           "iri": "http://maya-project.eu/icareonto/ClinicalRecord",
           "lexical_jaccard": 0.0,
-          "rank": 165
+          "rank": 164
         },
         {
           "cosine_similarity": 0.2295384528310835,
           "iri": "http://maya-project.eu/icareonto/ResourceTopic",
           "lexical_jaccard": 0.0,
-          "rank": 166
+          "rank": 165
         },
         {
           "cosine_similarity": 0.22871897456209142,
           "iri": "http://maya-project.eu/icareonto/LifestyleBarrier",
           "lexical_jaccard": 0.0,
-          "rank": 167
+          "rank": 166
         },
         {
           "cosine_similarity": 0.22858653047044092,
           "iri": "http://maya-project.eu/icareonto/ModelPerformanceMetric",
+          "lexical_jaccard": 0.0,
+          "rank": 167
+        },
+        {
+          "cosine_similarity": 0.22661137916946553,
+          "iri": "http://maya-project.eu/icareonto/MeasurementDevice",
           "lexical_jaccard": 0.0,
           "rank": 168
         },
@@ -17668,7 +17669,7 @@
           "rank": 195
         },
         {
-          "cosine_similarity": 0.2064981961725417,
+          "cosine_similarity": 0.2064982177064047,
           "iri": "http://maya-project.eu/icareonto/Severity",
           "lexical_jaccard": 0.045454545454545456,
           "rank": 196
@@ -18982,7 +18983,7 @@
           "rank": 130
         },
         {
-          "cosine_similarity": 0.14559677554986722,
+          "cosine_similarity": 0.14559684096081504,
           "iri": "http://maya-project.eu/icareonto/Severity",
           "lexical_jaccard": 0.0,
           "rank": 131
@@ -19648,7 +19649,7 @@
           "rank": 241
         },
         {
-          "cosine_similarity": 0.028161149581359173,
+          "cosine_similarity": 0.028161169877811216,
           "iri": "http://maya-project.eu/icareonto/SlotType",
           "lexical_jaccard": 0.0,
           "rank": 242
@@ -19792,32 +19793,32 @@
           "rank": 265
         },
         {
+          "cosine_similarity": 0.00327431869035677,
+          "iri": "http://maya-project.eu/icareonto/MeasurementDevice",
+          "lexical_jaccard": 0.0,
+          "rank": 266
+        },
+        {
           "cosine_similarity": 0.0023664416980189134,
           "iri": "http://maya-project.eu/icareonto/ExerciseIntensityLevel",
           "lexical_jaccard": 0.0,
-          "rank": 266
+          "rank": 267
         },
         {
           "cosine_similarity": 0.0018887108326544038,
           "iri": "http://maya-project.eu/icareonto/FinancialConstraintStatusValue",
           "lexical_jaccard": 0.0,
-          "rank": 267
-        },
-        {
-          "cosine_similarity": 0.0006813088356213272,
-          "iri": "http://maya-project.eu/icareonto/ExerciseIntensity",
-          "lexical_jaccard": 0.0,
           "rank": 268
         },
         {
-          "cosine_similarity": -0.001385087989342719,
-          "iri": "http://maya-project.eu/icareonto/Frequency",
+          "cosine_similarity": 0.0006813262565331639,
+          "iri": "http://maya-project.eu/icareonto/ExerciseIntensity",
           "lexical_jaccard": 0.0,
           "rank": 269
         },
         {
-          "cosine_similarity": -0.005115767325795987,
-          "iri": "http://maya-project.eu/icareonto/MeasurementDevice",
+          "cosine_similarity": -0.001385087989342719,
+          "iri": "http://maya-project.eu/icareonto/Frequency",
           "lexical_jaccard": 0.0,
           "rank": 270
         },
@@ -20512,7 +20513,7 @@
           "rank": 101
         },
         {
-          "cosine_similarity": 0.17088770408447337,
+          "cosine_similarity": 0.1708877200564988,
           "iri": "http://maya-project.eu/icareonto/SlotType",
           "lexical_jaccard": 0.0,
           "rank": 102
@@ -20584,182 +20585,182 @@
           "rank": 113
         },
         {
-          "cosine_similarity": 0.15557454432021264,
-          "iri": "http://maya-project.eu/icareonto/MeasurementDevice",
-          "lexical_jaccard": 0.0,
-          "rank": 114
-        },
-        {
           "cosine_similarity": 0.15462572461857987,
           "iri": "http://maya-project.eu/icareonto/CancerTreatmentSetting",
           "lexical_jaccard": 0.0,
-          "rank": 115
+          "rank": 114
         },
         {
           "cosine_similarity": 0.15367067546127602,
           "iri": "http://maya-project.eu/icareonto/PersonRole",
           "lexical_jaccard": 0.0,
-          "rank": 116
+          "rank": 115
         },
         {
           "cosine_similarity": 0.1532343127284857,
           "iri": "http://maya-project.eu/icareonto/ExerciseIntervention",
           "lexical_jaccard": 0.0,
-          "rank": 117
+          "rank": 116
         },
         {
           "cosine_similarity": 0.15176245503638178,
           "iri": "http://maya-project.eu/icareonto/ClinicianRole",
           "lexical_jaccard": 0.0,
-          "rank": 118
+          "rank": 117
         },
         {
           "cosine_similarity": 0.15050144041322305,
           "iri": "http://maya-project.eu/icareonto/SymptomBasedTrigger",
           "lexical_jaccard": 0.0,
-          "rank": 119
+          "rank": 118
         },
         {
           "cosine_similarity": 0.15020384074836735,
           "iri": "http://maya-project.eu/icareonto/AdverseCardiacEvent",
           "lexical_jaccard": 0.0,
-          "rank": 120
+          "rank": 119
         },
         {
           "cosine_similarity": 0.14966365669054982,
           "iri": "http://maya-project.eu/icareonto/ExerciseSet",
           "lexical_jaccard": 0.0,
-          "rank": 121
+          "rank": 120
         },
         {
           "cosine_similarity": 0.14872713512433527,
           "iri": "http://maya-project.eu/icareonto/HealthLiteracyIntervention",
           "lexical_jaccard": 0.041666666666666664,
-          "rank": 122
+          "rank": 121
         },
         {
           "cosine_similarity": 0.14845238272892072,
           "iri": "http://maya-project.eu/icareonto/ClinicalSeverityLevel",
           "lexical_jaccard": 0.0,
-          "rank": 123
+          "rank": 122
         },
         {
           "cosine_similarity": 0.14766602929041325,
           "iri": "http://maya-project.eu/icareonto/BehaviourChangeStage",
           "lexical_jaccard": 0.038461538461538464,
-          "rank": 124
+          "rank": 123
         },
         {
           "cosine_similarity": 0.14744491326564807,
           "iri": "http://maya-project.eu/icareonto/AdherenceBehaviour",
           "lexical_jaccard": 0.0,
-          "rank": 125
+          "rank": 124
         },
         {
           "cosine_similarity": 0.14736360248911162,
           "iri": "http://maya-project.eu/icareonto/MedicationAdherenceBehaviour",
           "lexical_jaccard": 0.0,
-          "rank": 126
+          "rank": 125
         },
         {
           "cosine_similarity": 0.1462828695025895,
           "iri": "http://maya-project.eu/icareonto/SupportAvailabilityValue",
           "lexical_jaccard": 0.0,
-          "rank": 127
+          "rank": 126
         },
         {
           "cosine_similarity": 0.1462277471543483,
           "iri": "http://maya-project.eu/icareonto/MeasurementInstrument",
           "lexical_jaccard": 0.0,
-          "rank": 128
+          "rank": 127
         },
         {
           "cosine_similarity": 0.1457435247518438,
           "iri": "http://maya-project.eu/icareonto/RiskAssessmentMethod",
           "lexical_jaccard": 0.0,
-          "rank": 129
+          "rank": 128
         },
         {
           "cosine_similarity": 0.14529163856111332,
           "iri": "http://maya-project.eu/icareonto/Device",
           "lexical_jaccard": 0.0,
-          "rank": 130
+          "rank": 129
         },
         {
           "cosine_similarity": 0.14445112648969513,
           "iri": "http://maya-project.eu/icareonto/CancerTreatmentIntent",
           "lexical_jaccard": 0.0,
-          "rank": 131
+          "rank": 130
         },
         {
           "cosine_similarity": 0.14409473002915998,
           "iri": "http://maya-project.eu/icareonto/PilotSite",
           "lexical_jaccard": 0.0,
-          "rank": 132
+          "rank": 131
         },
         {
           "cosine_similarity": 0.14144286201889827,
           "iri": "http://maya-project.eu/icareonto/Recommendation",
           "lexical_jaccard": 0.0,
-          "rank": 133
+          "rank": 132
         },
         {
           "cosine_similarity": 0.14032515608510482,
           "iri": "http://maya-project.eu/icareonto/HealthLiteracyNeedType",
           "lexical_jaccard": 0.0,
-          "rank": 134
+          "rank": 133
         },
         {
           "cosine_similarity": 0.14023119013329702,
           "iri": "http://maya-project.eu/icareonto/MeasurementQuality",
           "lexical_jaccard": 0.0,
-          "rank": 135
+          "rank": 134
         },
         {
           "cosine_similarity": 0.13935483057883444,
           "iri": "http://maya-project.eu/icareonto/UserUtterance",
           "lexical_jaccard": 0.0,
-          "rank": 136
+          "rank": 135
         },
         {
           "cosine_similarity": 0.13920865455579762,
           "iri": "http://maya-project.eu/icareonto/DataSource",
           "lexical_jaccard": 0.041666666666666664,
-          "rank": 137
+          "rank": 136
         },
         {
           "cosine_similarity": 0.1383245340819671,
           "iri": "http://maya-project.eu/icareonto/CarePlanTrigger",
           "lexical_jaccard": 0.0,
-          "rank": 138
+          "rank": 137
         },
         {
           "cosine_similarity": 0.13831894461965252,
           "iri": "http://maya-project.eu/icareonto/SmokingBehaviour",
           "lexical_jaccard": 0.08695652173913043,
-          "rank": 139
+          "rank": 138
         },
         {
           "cosine_similarity": 0.13744289004986188,
           "iri": "http://maya-project.eu/icareonto/AYACancerSurvivorRole",
           "lexical_jaccard": 0.03125,
-          "rank": 140
+          "rank": 139
         },
         {
           "cosine_similarity": 0.137309604826147,
           "iri": "http://maya-project.eu/icareonto/ExerciseTrainingPattern",
           "lexical_jaccard": 0.0,
-          "rank": 141
+          "rank": 140
         },
         {
           "cosine_similarity": 0.13650914210647364,
           "iri": "http://maya-project.eu/icareonto/DialogueStrategy",
           "lexical_jaccard": 0.0,
-          "rank": 142
+          "rank": 141
         },
         {
           "cosine_similarity": 0.13489627455543435,
           "iri": "http://maya-project.eu/icareonto/SubstanceUseBehaviour",
+          "lexical_jaccard": 0.0,
+          "rank": 142
+        },
+        {
+          "cosine_similarity": 0.13354917867745486,
+          "iri": "http://maya-project.eu/icareonto/MeasurementDevice",
           "lexical_jaccard": 0.0,
           "rank": 143
         },
@@ -21052,7 +21053,7 @@
           "rank": 191
         },
         {
-          "cosine_similarity": 0.1000525723692519,
+          "cosine_similarity": 0.10005256532841485,
           "iri": "http://maya-project.eu/icareonto/ExerciseIntensity",
           "lexical_jaccard": 0.0,
           "rank": 192
@@ -21184,7 +21185,7 @@
           "rank": 213
         },
         {
-          "cosine_similarity": 0.08355424047483756,
+          "cosine_similarity": 0.08355423846447993,
           "iri": "http://maya-project.eu/icareonto/Severity",
           "lexical_jaccard": 0.0,
           "rank": 214
@@ -22654,7 +22655,7 @@
           "rank": 174
         },
         {
-          "cosine_similarity": 0.177775395130739,
+          "cosine_similarity": 0.1777753880911527,
           "iri": "http://maya-project.eu/icareonto/Severity",
           "lexical_jaccard": 0.0,
           "rank": 175
@@ -22810,7 +22811,7 @@
           "rank": 200
         },
         {
-          "cosine_similarity": 0.14742475150649767,
+          "cosine_similarity": 0.1474247615775704,
           "iri": "http://maya-project.eu/icareonto/SlotType",
           "lexical_jaccard": 0.045454545454545456,
           "rank": 201
@@ -22846,159 +22847,159 @@
           "rank": 206
         },
         {
-          "cosine_similarity": 0.14521246274114355,
-          "iri": "http://maya-project.eu/icareonto/MeasurementDevice",
-          "lexical_jaccard": 0.0,
-          "rank": 207
-        },
-        {
           "cosine_similarity": 0.14500371378701946,
           "iri": "http://maya-project.eu/icareonto/BehaviourMetric",
           "lexical_jaccard": 0.0,
-          "rank": 208
+          "rank": 207
         },
         {
           "cosine_similarity": 0.13992107910881732,
           "iri": "http://maya-project.eu/icareonto/BehaviourStatus",
           "lexical_jaccard": 0.0,
-          "rank": 209
+          "rank": 208
         },
         {
           "cosine_similarity": 0.138578539023132,
           "iri": "http://maya-project.eu/icareonto/DigitalService",
           "lexical_jaccard": 0.0,
-          "rank": 210
+          "rank": 209
         },
         {
           "cosine_similarity": 0.137042176828439,
           "iri": "http://maya-project.eu/icareonto/RiskTimeHorizon",
           "lexical_jaccard": 0.0,
-          "rank": 211
+          "rank": 210
         },
         {
           "cosine_similarity": 0.13608885662961825,
           "iri": "http://maya-project.eu/icareonto/ExerciseTrainingPattern",
           "lexical_jaccard": 0.0,
-          "rank": 212
+          "rank": 211
         },
         {
           "cosine_similarity": 0.13468927358298116,
           "iri": "http://maya-project.eu/icareonto/AnthropometricParameter",
           "lexical_jaccard": 0.0,
-          "rank": 213
+          "rank": 212
         },
         {
           "cosine_similarity": 0.13452270972743466,
           "iri": "http://maya-project.eu/icareonto/MeasurementQuality",
           "lexical_jaccard": 0.0,
-          "rank": 214
+          "rank": 213
         },
         {
           "cosine_similarity": 0.13452148813037362,
           "iri": "http://maya-project.eu/icareonto/PilotPhase",
           "lexical_jaccard": 0.05555555555555555,
-          "rank": 215
+          "rank": 214
         },
         {
           "cosine_similarity": 0.1337491100611253,
           "iri": "http://maya-project.eu/icareonto/MeasurementInstrument",
           "lexical_jaccard": 0.0,
-          "rank": 216
+          "rank": 215
         },
         {
           "cosine_similarity": 0.13201405470803484,
           "iri": "http://maya-project.eu/icareonto/PilotPhaseType",
           "lexical_jaccard": 0.045454545454545456,
-          "rank": 217
+          "rank": 216
         },
         {
           "cosine_similarity": 0.13059169875572726,
           "iri": "http://maya-project.eu/icareonto/SocioEconomicFactor",
           "lexical_jaccard": 0.038461538461538464,
-          "rank": 218
+          "rank": 217
         },
         {
           "cosine_similarity": 0.13022028828057627,
           "iri": "http://maya-project.eu/icareonto/MeasurementInstruction",
           "lexical_jaccard": 0.0,
-          "rank": 219
+          "rank": 218
         },
         {
           "cosine_similarity": 0.12914632747240593,
           "iri": "http://maya-project.eu/icareonto/DemographicAttribute",
           "lexical_jaccard": 0.0,
-          "rank": 220
+          "rank": 219
         },
         {
           "cosine_similarity": 0.12836778310175634,
           "iri": "http://maya-project.eu/icareonto/EmploymentStatus",
           "lexical_jaccard": 0.0,
-          "rank": 221
+          "rank": 220
         },
         {
           "cosine_similarity": 0.12669864133903522,
           "iri": "http://maya-project.eu/icareonto/PsychologicalParameter",
           "lexical_jaccard": 0.05,
-          "rank": 222
+          "rank": 221
         },
         {
-          "cosine_similarity": 0.12631499693953324,
+          "cosine_similarity": 0.12631502127372185,
           "iri": "http://maya-project.eu/icareonto/ExerciseIntensity",
           "lexical_jaccard": 0.0,
-          "rank": 223
+          "rank": 222
         },
         {
           "cosine_similarity": 0.12510679362994212,
           "iri": "http://maya-project.eu/icareonto/AYACancerSurvivorRole",
           "lexical_jaccard": 0.0,
-          "rank": 224
+          "rank": 223
         },
         {
           "cosine_similarity": 0.124504795712773,
           "iri": "http://maya-project.eu/icareonto/NonModifiableRiskFactor",
           "lexical_jaccard": 0.0,
-          "rank": 225
+          "rank": 224
         },
         {
           "cosine_similarity": 0.12410984448283033,
           "iri": "http://maya-project.eu/icareonto/TemporalEntity",
           "lexical_jaccard": 0.0,
-          "rank": 226
+          "rank": 225
         },
         {
           "cosine_similarity": 0.12318347530127932,
           "iri": "http://maya-project.eu/icareonto/FamilyMemberRole",
           "lexical_jaccard": 0.0,
-          "rank": 227
+          "rank": 226
         },
         {
           "cosine_similarity": 0.1220836982280228,
           "iri": "http://maya-project.eu/icareonto/AlertThreshold",
           "lexical_jaccard": 0.05263157894736842,
-          "rank": 228
+          "rank": 227
         },
         {
           "cosine_similarity": 0.12139995551004376,
           "iri": "http://maya-project.eu/icareonto/CancerStageComponentType",
           "lexical_jaccard": 0.0,
-          "rank": 229
+          "rank": 228
         },
         {
           "cosine_similarity": 0.11889116018744222,
           "iri": "http://maya-project.eu/icareonto/LivingSituationType",
           "lexical_jaccard": 0.0,
-          "rank": 230
+          "rank": 229
         },
         {
           "cosine_similarity": 0.1185970317154503,
           "iri": "http://maya-project.eu/icareonto/DialogueTurn",
           "lexical_jaccard": 0.0,
-          "rank": 231
+          "rank": 230
         },
         {
           "cosine_similarity": 0.11603355651990944,
           "iri": "http://maya-project.eu/icareonto/Person",
           "lexical_jaccard": 0.043478260869565216,
+          "rank": 231
+        },
+        {
+          "cosine_similarity": 0.11339166964744803,
+          "iri": "http://maya-project.eu/icareonto/MeasurementDevice",
+          "lexical_jaccard": 0.0,
           "rank": 232
         },
         {
@@ -23380,7 +23381,7 @@
           "rank": 11
         },
         {
-          "cosine_similarity": 0.311992858814531,
+          "cosine_similarity": 0.32056855632127246,
           "iri": "http://maya-project.eu/icareonto/MeasurementDevice",
           "lexical_jaccard": 0.0,
           "rank": 12
@@ -23434,7 +23435,7 @@
           "rank": 20
         },
         {
-          "cosine_similarity": 0.2780281905178316,
+          "cosine_similarity": 0.2780282030782545,
           "iri": "http://maya-project.eu/icareonto/ExerciseIntensity",
           "lexical_jaccard": 0.037037037037037035,
           "rank": 21
@@ -23512,7 +23513,7 @@
           "rank": 33
         },
         {
-          "cosine_similarity": 0.2512201880526871,
+          "cosine_similarity": 0.2512201943595765,
           "iri": "http://maya-project.eu/icareonto/SlotType",
           "lexical_jaccard": 0.0,
           "rank": 34
@@ -24856,7 +24857,7 @@
           "rank": 257
         },
         {
-          "cosine_similarity": 0.04552910798735739,
+          "cosine_similarity": 0.045529135268043586,
           "iri": "http://maya-project.eu/icareonto/Severity",
           "lexical_jaccard": 0.0,
           "rank": 258
@@ -25702,7 +25703,7 @@
           "rank": 114
         },
         {
-          "cosine_similarity": 0.1193206185062613,
+          "cosine_similarity": 0.11932060131639907,
           "iri": "http://maya-project.eu/icareonto/SlotType",
           "lexical_jaccard": 0.0,
           "rank": 115
@@ -25864,440 +25865,440 @@
           "rank": 141
         },
         {
-          "cosine_similarity": 0.10807404659928135,
-          "iri": "http://maya-project.eu/icareonto/MeasurementDevice",
-          "lexical_jaccard": 0.0,
-          "rank": 142
-        },
-        {
           "cosine_similarity": 0.10549605404697733,
           "iri": "http://maya-project.eu/icareonto/PolicyRecommendation",
           "lexical_jaccard": 0.0,
-          "rank": 143
+          "rank": 142
         },
         {
           "cosine_similarity": 0.10548959617604817,
           "iri": "http://maya-project.eu/icareonto/RiskAssessmentMethod",
           "lexical_jaccard": 0.0,
-          "rank": 144
+          "rank": 143
         },
         {
           "cosine_similarity": 0.10532306548726911,
           "iri": "http://maya-project.eu/icareonto/ActivityExecution",
           "lexical_jaccard": 0.0,
-          "rank": 145
+          "rank": 144
         },
         {
           "cosine_similarity": 0.10496628978141476,
           "iri": "http://maya-project.eu/icareonto/HealthLiteracyNeedType",
           "lexical_jaccard": 0.0,
-          "rank": 146
+          "rank": 145
         },
         {
           "cosine_similarity": 0.10464566951037506,
           "iri": "http://maya-project.eu/icareonto/DialogueSession",
           "lexical_jaccard": 0.0,
-          "rank": 147
+          "rank": 146
         },
         {
           "cosine_similarity": 0.10425207067348767,
           "iri": "http://maya-project.eu/icareonto/ExerciseIntensityLevel",
           "lexical_jaccard": 0.0,
-          "rank": 148
+          "rank": 147
         },
         {
           "cosine_similarity": 0.1037498620300432,
           "iri": "http://maya-project.eu/icareonto/PhysicalActivityBehaviour",
           "lexical_jaccard": 0.0,
-          "rank": 149
+          "rank": 148
         },
         {
           "cosine_similarity": 0.10241851990328725,
           "iri": "http://maya-project.eu/icareonto/CarePlanTrigger",
           "lexical_jaccard": 0.0,
-          "rank": 150
+          "rank": 149
         },
         {
           "cosine_similarity": 0.10193189795870487,
           "iri": "http://maya-project.eu/icareonto/MeasurementMethod",
           "lexical_jaccard": 0.0,
-          "rank": 151
+          "rank": 150
         },
         {
           "cosine_similarity": 0.10011245181076582,
           "iri": "http://maya-project.eu/icareonto/ReferralActivity",
           "lexical_jaccard": 0.0,
-          "rank": 152
+          "rank": 151
         },
         {
           "cosine_similarity": 0.10009954291505278,
           "iri": "http://maya-project.eu/icareonto/RiskInterpretation",
           "lexical_jaccard": 0.0,
-          "rank": 153
+          "rank": 152
         },
         {
           "cosine_similarity": 0.09878839602079509,
           "iri": "http://maya-project.eu/icareonto/SafetyRuleType",
           "lexical_jaccard": 0.0,
-          "rank": 154
+          "rank": 153
         },
         {
           "cosine_similarity": 0.09850760566109902,
           "iri": "http://maya-project.eu/icareonto/TrustConcern",
           "lexical_jaccard": 0.0,
-          "rank": 155
+          "rank": 154
         },
         {
           "cosine_similarity": 0.09797706196763116,
           "iri": "http://maya-project.eu/icareonto/TreatmentRegimen",
           "lexical_jaccard": 0.0,
-          "rank": 156
+          "rank": 155
         },
         {
           "cosine_similarity": 0.09635728327588163,
           "iri": "http://maya-project.eu/icareonto/PilotStudy",
           "lexical_jaccard": 0.0,
-          "rank": 157
+          "rank": 156
         },
         {
           "cosine_similarity": 0.0961741316726468,
           "iri": "http://maya-project.eu/icareonto/AlcoholUseBehaviour",
           "lexical_jaccard": 0.0,
-          "rank": 158
+          "rank": 157
         },
         {
           "cosine_similarity": 0.09556597131082238,
           "iri": "http://maya-project.eu/icareonto/CancerStageComponentType",
           "lexical_jaccard": 0.0,
-          "rank": 159
+          "rank": 158
         },
         {
           "cosine_similarity": 0.09553748032312283,
           "iri": "http://maya-project.eu/icareonto/StudyParticipantRole",
           "lexical_jaccard": 0.0,
-          "rank": 160
+          "rank": 159
         },
         {
           "cosine_similarity": 0.0953542938725735,
           "iri": "http://maya-project.eu/icareonto/BehaviourChangeStage",
           "lexical_jaccard": 0.041666666666666664,
-          "rank": 161
+          "rank": 160
         },
         {
-          "cosine_similarity": 0.0952427715276689,
+          "cosine_similarity": 0.09524278515160164,
           "iri": "http://maya-project.eu/icareonto/ExerciseIntensity",
           "lexical_jaccard": 0.04,
-          "rank": 162
+          "rank": 161
         },
         {
           "cosine_similarity": 0.09520898141177636,
           "iri": "http://maya-project.eu/icareonto/HealthLiteracyIntervention",
           "lexical_jaccard": 0.045454545454545456,
-          "rank": 163
+          "rank": 162
         },
         {
           "cosine_similarity": 0.0947222167874149,
           "iri": "http://maya-project.eu/icareonto/ClinicalAssessment",
           "lexical_jaccard": 0.0,
-          "rank": 164
+          "rank": 163
         },
         {
           "cosine_similarity": 0.09459862715661704,
           "iri": "http://maya-project.eu/icareonto/MonitoringAdherenceBehaviour",
           "lexical_jaccard": 0.0,
-          "rank": 165
+          "rank": 164
         },
         {
           "cosine_similarity": 0.09296454846902433,
           "iri": "http://maya-project.eu/icareonto/AnthropometricParameter",
           "lexical_jaccard": 0.0,
-          "rank": 166
+          "rank": 165
         },
         {
           "cosine_similarity": 0.09230841573392484,
           "iri": "http://maya-project.eu/icareonto/RiskProfile",
           "lexical_jaccard": 0.0,
-          "rank": 167
+          "rank": 166
         },
         {
           "cosine_similarity": 0.09222307115647009,
           "iri": "http://maya-project.eu/icareonto/ClinicalRecordDataSource",
           "lexical_jaccard": 0.0,
-          "rank": 168
+          "rank": 167
         },
         {
           "cosine_similarity": 0.09161631677901452,
           "iri": "http://maya-project.eu/icareonto/ExerciseAdherenceAssessment",
           "lexical_jaccard": 0.0,
-          "rank": 169
+          "rank": 168
         },
         {
           "cosine_similarity": 0.09107731559613497,
           "iri": "http://maya-project.eu/icareonto/CancerStageValue",
           "lexical_jaccard": 0.0,
-          "rank": 170
+          "rank": 169
         },
         {
           "cosine_similarity": 0.09106851588259231,
           "iri": "http://maya-project.eu/icareonto/SymptomBasedTrigger",
           "lexical_jaccard": 0.0,
-          "rank": 171
+          "rank": 170
         },
         {
           "cosine_similarity": 0.09048621561168649,
           "iri": "http://maya-project.eu/icareonto/SeverityLevel",
           "lexical_jaccard": 0.0,
-          "rank": 172
+          "rank": 171
         },
         {
           "cosine_similarity": 0.09045138802947093,
           "iri": "http://maya-project.eu/icareonto/VitalSign",
           "lexical_jaccard": 0.0,
-          "rank": 173
+          "rank": 172
         },
         {
           "cosine_similarity": 0.09034687769576877,
           "iri": "http://maya-project.eu/icareonto/CarePlanParticipation",
           "lexical_jaccard": 0.05,
-          "rank": 174
+          "rank": 173
         },
         {
           "cosine_similarity": 0.0902563065648776,
           "iri": "http://maya-project.eu/icareonto/GoalLifecycleStatus",
           "lexical_jaccard": 0.0,
-          "rank": 175
+          "rank": 174
         },
         {
           "cosine_similarity": 0.09020384926372643,
           "iri": "http://maya-project.eu/icareonto/RecurrencePattern",
           "lexical_jaccard": 0.0,
-          "rank": 176
+          "rank": 175
         },
         {
           "cosine_similarity": 0.08906659454514496,
           "iri": "http://maya-project.eu/icareonto/FollowUpActivity",
           "lexical_jaccard": 0.0,
-          "rank": 177
+          "rank": 176
         },
         {
           "cosine_similarity": 0.08859347048123413,
           "iri": "http://maya-project.eu/icareonto/PhysicalPerformanceParameter",
           "lexical_jaccard": 0.0,
-          "rank": 178
+          "rank": 177
         },
         {
           "cosine_similarity": 0.08851114450845167,
           "iri": "http://maya-project.eu/icareonto/DigitalAgent",
           "lexical_jaccard": 0.0,
-          "rank": 179
+          "rank": 178
         },
         {
           "cosine_similarity": 0.08840520762513511,
           "iri": "http://maya-project.eu/icareonto/BehaviourRecord",
           "lexical_jaccard": 0.0,
-          "rank": 180
+          "rank": 179
         },
         {
           "cosine_similarity": 0.08804106136261695,
           "iri": "http://maya-project.eu/icareonto/MedicationRecord",
           "lexical_jaccard": 0.0,
-          "rank": 181
+          "rank": 180
         },
         {
           "cosine_similarity": 0.08720031174743385,
           "iri": "http://maya-project.eu/icareonto/ActivityOutcome",
           "lexical_jaccard": 0.0,
-          "rank": 182
+          "rank": 181
         },
         {
           "cosine_similarity": 0.08662682429710786,
           "iri": "http://maya-project.eu/icareonto/ClinicalStatus",
           "lexical_jaccard": 0.0,
-          "rank": 183
+          "rank": 182
         },
         {
           "cosine_similarity": 0.08567281354639994,
           "iri": "http://maya-project.eu/icareonto/ConversationAgent",
           "lexical_jaccard": 0.0,
-          "rank": 184
+          "rank": 183
         },
         {
           "cosine_similarity": 0.08566635955827581,
           "iri": "http://maya-project.eu/icareonto/AlertThreshold",
           "lexical_jaccard": 0.0,
-          "rank": 185
+          "rank": 184
         },
         {
           "cosine_similarity": 0.08477065378565296,
           "iri": "http://maya-project.eu/icareonto/GoalAchievementStatus",
           "lexical_jaccard": 0.0,
-          "rank": 186
+          "rank": 185
         },
         {
           "cosine_similarity": 0.0836961044973641,
           "iri": "http://maya-project.eu/icareonto/ClinicalInterpretation",
           "lexical_jaccard": 0.0,
-          "rank": 187
+          "rank": 186
         },
         {
           "cosine_similarity": 0.08322844737812025,
           "iri": "http://maya-project.eu/icareonto/EducationalAttainmentValue",
           "lexical_jaccard": 0.0,
-          "rank": 188
+          "rank": 187
         },
         {
           "cosine_similarity": 0.08210884840841463,
           "iri": "http://maya-project.eu/icareonto/ResearcherRole",
           "lexical_jaccard": 0.0,
-          "rank": 189
+          "rank": 188
         },
         {
           "cosine_similarity": 0.08155060859703035,
           "iri": "http://maya-project.eu/icareonto/CarePlan",
           "lexical_jaccard": 0.0,
-          "rank": 190
+          "rank": 189
         },
         {
-          "cosine_similarity": 0.08080856058672525,
+          "cosine_similarity": 0.08080858499544687,
           "iri": "http://maya-project.eu/icareonto/Severity",
           "lexical_jaccard": 0.0,
-          "rank": 191
+          "rank": 190
         },
         {
           "cosine_similarity": 0.08011673288769312,
           "iri": "http://maya-project.eu/icareonto/ExerciseTrainingPattern",
           "lexical_jaccard": 0.0,
-          "rank": 192
+          "rank": 191
         },
         {
           "cosine_similarity": 0.07959142836878424,
           "iri": "http://maya-project.eu/icareonto/RiskEstimate",
           "lexical_jaccard": 0.0,
-          "rank": 193
+          "rank": 192
         },
         {
           "cosine_similarity": 0.07947304653520035,
           "iri": "http://maya-project.eu/icareonto/EscalationActivity",
           "lexical_jaccard": 0.0,
-          "rank": 194
+          "rank": 193
         },
         {
           "cosine_similarity": 0.07935437358008635,
           "iri": "http://maya-project.eu/icareonto/ClinicalRecord",
           "lexical_jaccard": 0.041666666666666664,
-          "rank": 195
+          "rank": 194
         },
         {
           "cosine_similarity": 0.07905330393897872,
           "iri": "http://maya-project.eu/icareonto/PatientReportedOutcome",
           "lexical_jaccard": 0.0,
-          "rank": 196
+          "rank": 195
         },
         {
           "cosine_similarity": 0.0789895934272472,
           "iri": "http://maya-project.eu/icareonto/StudyArmType",
           "lexical_jaccard": 0.0,
-          "rank": 197
+          "rank": 196
         },
         {
           "cosine_similarity": 0.07749691583032176,
           "iri": "http://maya-project.eu/icareonto/RiskBasedTrigger",
           "lexical_jaccard": 0.0,
-          "rank": 198
+          "rank": 197
         },
         {
           "cosine_similarity": 0.07518984536132473,
           "iri": "http://maya-project.eu/icareonto/MetabolicCondition",
           "lexical_jaccard": 0.0,
-          "rank": 199
+          "rank": 198
         },
         {
           "cosine_similarity": 0.0743567411488472,
           "iri": "http://maya-project.eu/icareonto/ExerciseAdherenceResult",
           "lexical_jaccard": 0.0,
-          "rank": 200
+          "rank": 199
         },
         {
           "cosine_similarity": 0.07434078674043693,
           "iri": "http://maya-project.eu/icareonto/DeviceDataSource",
           "lexical_jaccard": 0.0,
-          "rank": 201
+          "rank": 200
         },
         {
           "cosine_similarity": 0.07369451441062379,
           "iri": "http://maya-project.eu/icareonto/SedentaryBehaviour",
           "lexical_jaccard": 0.045454545454545456,
-          "rank": 202
+          "rank": 201
         },
         {
           "cosine_similarity": 0.07296660989185408,
           "iri": "http://maya-project.eu/icareonto/ReferenceRange",
           "lexical_jaccard": 0.0,
-          "rank": 203
+          "rank": 202
         },
         {
           "cosine_similarity": 0.07261473567622635,
           "iri": "http://maya-project.eu/icareonto/ClinicalConditionRecord",
           "lexical_jaccard": 0.0,
-          "rank": 204
+          "rank": 203
         },
         {
           "cosine_similarity": 0.07253887730154036,
           "iri": "http://maya-project.eu/icareonto/CardiacBiomarker",
           "lexical_jaccard": 0.0,
-          "rank": 205
+          "rank": 204
         },
         {
           "cosine_similarity": 0.07174899127814029,
           "iri": "http://maya-project.eu/icareonto/SafetyRule",
           "lexical_jaccard": 0.0,
-          "rank": 206
+          "rank": 205
         },
         {
           "cosine_similarity": 0.07100929536572571,
           "iri": "http://maya-project.eu/icareonto/RiskCategoryValue",
           "lexical_jaccard": 0.0,
-          "rank": 207
+          "rank": 206
         },
         {
           "cosine_similarity": 0.07068757283048771,
           "iri": "http://maya-project.eu/icareonto/NutritionActionType",
           "lexical_jaccard": 0.0,
-          "rank": 208
+          "rank": 207
         },
         {
           "cosine_similarity": 0.07018515559714934,
           "iri": "http://maya-project.eu/icareonto/ExerciseActivityType",
           "lexical_jaccard": 0.0,
-          "rank": 209
+          "rank": 208
         },
         {
           "cosine_similarity": 0.06972830001260641,
           "iri": "http://maya-project.eu/icareonto/AccessOrEngagementBarrier",
           "lexical_jaccard": 0.0,
-          "rank": 210
+          "rank": 209
         },
         {
           "cosine_similarity": 0.06948260646634587,
           "iri": "http://maya-project.eu/icareonto/RadiotherapyExposure",
           "lexical_jaccard": 0.045454545454545456,
-          "rank": 211
+          "rank": 210
         },
         {
           "cosine_similarity": 0.06903550176733143,
           "iri": "http://maya-project.eu/icareonto/FinancialConstraintStatusValue",
           "lexical_jaccard": 0.0,
-          "rank": 212
+          "rank": 211
         },
         {
           "cosine_similarity": 0.0678725922066533,
           "iri": "http://maya-project.eu/icareonto/MedicationAdherenceBehaviour",
           "lexical_jaccard": 0.0,
-          "rank": 213
+          "rank": 212
         },
         {
           "cosine_similarity": 0.06768602602328828,
           "iri": "http://maya-project.eu/icareonto/Biomarker",
+          "lexical_jaccard": 0.0,
+          "rank": 213
+        },
+        {
+          "cosine_similarity": 0.06688872048814973,
+          "iri": "http://maya-project.eu/icareonto/MeasurementDevice",
           "lexical_jaccard": 0.0,
           "rank": 214
         },
@@ -26848,39 +26849,39 @@
           "rank": 21
         },
         {
-          "cosine_similarity": 0.32699473906887994,
-          "iri": "http://maya-project.eu/icareonto/MeasurementDevice",
-          "lexical_jaccard": 0.045454545454545456,
-          "rank": 22
-        },
-        {
           "cosine_similarity": 0.324596845935378,
           "iri": "http://maya-project.eu/icareonto/MeasurementContext",
           "lexical_jaccard": 0.045454545454545456,
-          "rank": 23
+          "rank": 22
         },
         {
           "cosine_similarity": 0.3244027850597207,
           "iri": "http://maya-project.eu/icareonto/ScoreValue",
           "lexical_jaccard": 0.0,
-          "rank": 24
+          "rank": 23
         },
         {
           "cosine_similarity": 0.3235618539429916,
           "iri": "http://maya-project.eu/icareonto/MeasurementInterpretation",
           "lexical_jaccard": 0.0,
-          "rank": 25
+          "rank": 24
         },
         {
           "cosine_similarity": 0.3206156968894008,
           "iri": "http://maya-project.eu/icareonto/MeasurementEvent",
           "lexical_jaccard": 0.0,
-          "rank": 26
+          "rank": 25
         },
         {
           "cosine_similarity": 0.3205926047090941,
           "iri": "http://maya-project.eu/icareonto/ReferenceRange",
           "lexical_jaccard": 0.0,
+          "rank": 26
+        },
+        {
+          "cosine_similarity": 0.3189514676587582,
+          "iri": "http://maya-project.eu/icareonto/MeasurementDevice",
+          "lexical_jaccard": 0.09523809523809523,
           "rank": 27
         },
         {
@@ -27436,7 +27437,7 @@
           "rank": 119
         },
         {
-          "cosine_similarity": 0.21118701044397542,
+          "cosine_similarity": 0.2111870001600574,
           "iri": "http://maya-project.eu/icareonto/Severity",
           "lexical_jaccard": 0.0,
           "rank": 120
@@ -27508,7 +27509,7 @@
           "rank": 131
         },
         {
-          "cosine_similarity": 0.20542214775968656,
+          "cosine_similarity": 0.20542212987160163,
           "iri": "http://maya-project.eu/icareonto/SlotType",
           "lexical_jaccard": 0.041666666666666664,
           "rank": 132
@@ -27550,7 +27551,7 @@
           "rank": 138
         },
         {
-          "cosine_similarity": 0.2001472674458167,
+          "cosine_similarity": 0.20014724567698894,
           "iri": "http://maya-project.eu/icareonto/ExerciseIntensity",
           "lexical_jaccard": 0.0,
           "rank": 139

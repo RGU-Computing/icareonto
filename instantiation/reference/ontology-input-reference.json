@@ -1270,11 +1270,12 @@
       "parents": []
     },
     {
-      "definition": "A device used to collect data, support interaction, or deliver a digital service.",
+      "definition": "A physical measurement instrument used to collect or generate data about a measurable parameter.",
       "iri": "http://maya-project.eu/icareonto/MeasurementDevice",
       "label": "Measurement Device",
       "name": "MeasurementDevice",
       "parents": [
+        "Device",
         "MeasurementInstrument"
       ]
     },
@@ -2353,50 +2354,50 @@
     }
   ],
   "ontology_files_sha256": {
-    "http://maya-project.eu/icareonto": "d017c0038b4884837fb5be6b5bbb77eadf008d610aa8509044fd41f5b59aef29",
-    "http://maya-project.eu/icareonto/agent": "24bffaae6c9ed00ab017435cfc8920355c2f3499648c1019d72df7c667afb36b",
-    "http://maya-project.eu/icareonto/alignments": "e1df4340c83ff879f7ef8d31e4fb80bbc2de9fe84db7c814ff6ea06e90c9abe0",
-    "http://maya-project.eu/icareonto/cancer-history": "372f714b4a6e1d5fdaa5c0863ec58a2673f8f42c87a9f781099c0bf318a27401",
-    "http://maya-project.eu/icareonto/clinical-profile": "072786bb458f9f2a384c8342b9a4ce812b9409132bc60f99b1c40cb6fb520163",
-    "http://maya-project.eu/icareonto/core": "44bc1d8cc2a82e048240f77afe2e75d15cd8a1d3e8ae74be7e05547ec7919e99",
-    "http://maya-project.eu/icareonto/cv-risk": "b0ef30b31ed7e9bd1094967f43421f64987fb977ee0e963a7b2ba3af34cead8c",
-    "http://maya-project.eu/icareonto/dialogue": "c9a3d1f913eb5713724ac25ad5d1fbd5d181236aa60258e463d940817ccca34f",
-    "http://maya-project.eu/icareonto/exercise": "f4362ac582f8c4f4faabf6ee80882002087ce3e364eacc22ce2e7803aa87ea75",
-    "http://maya-project.eu/icareonto/healthhub-service": "41bde182a7f6fd3e7fa9fc1de84e3fda87b0205be810b00871544c60635a7635",
-    "http://maya-project.eu/icareonto/imports/prov-reference": "22fd91610f91f940a638690f83b6976e8acc3befa2d1b086bbee24e2931bf225",
-    "http://maya-project.eu/icareonto/imports/skos-reference": "a0df443bc1e3656d599b8e847bb45c95e475b33585e0d23e04397a683cc8e689",
-    "http://maya-project.eu/icareonto/intervention-careplan": "6eb22ba3a126e8037d730493365b968866fd7c74320a81dfba8ba0cb0a7a4518",
-    "http://maya-project.eu/icareonto/knowledge-resource": "733d3a4e2de9e81cca15e6f8f559a2c89ef22e2ae4ca74adb79e83e35a7aa3dd",
-    "http://maya-project.eu/icareonto/lifestyle-behaviour": "bd8858215a9d8b016014537124dde24b9c25a7c04e1288b3100e13c86f0bd48c",
-    "http://maya-project.eu/icareonto/measurement-biomarker": "7c494e28294a15199b99001c2296f77a53d88d3768cfb8a0fe0b965d93b32f1b",
-    "http://maya-project.eu/icareonto/metadata": "de327bcaf9a810594ac07810eee4332c44c1b529c9257539a50835c17b7dd4c5",
-    "http://maya-project.eu/icareonto/nutrition": "284e794c623efa690160a5504e5866bf95d093be6d402f1a8278febe9e32ccfe",
-    "http://maya-project.eu/icareonto/person-role": "54c52adc3f0c755797c1d1a0b975609b16f56d050c56c681b6d95d9ac55bc580",
-    "http://maya-project.eu/icareonto/pilot": "134750c7fe0264f75e67022660804111561bbc3864bf6408884c5cf29adf88cc",
-    "http://maya-project.eu/icareonto/provenance-governance": "19fdc227f3b39d11906f5de77b35c6afee1521ef7fce7af01b8dd650284a83f1",
-    "http://maya-project.eu/icareonto/releases/0.1.0-draft/agent": "24bffaae6c9ed00ab017435cfc8920355c2f3499648c1019d72df7c667afb36b",
-    "http://maya-project.eu/icareonto/releases/0.1.0-draft/alignments": "e1df4340c83ff879f7ef8d31e4fb80bbc2de9fe84db7c814ff6ea06e90c9abe0",
-    "http://maya-project.eu/icareonto/releases/0.1.0-draft/cancer-history": "372f714b4a6e1d5fdaa5c0863ec58a2673f8f42c87a9f781099c0bf318a27401",
-    "http://maya-project.eu/icareonto/releases/0.1.0-draft/clinical-profile": "072786bb458f9f2a384c8342b9a4ce812b9409132bc60f99b1c40cb6fb520163",
-    "http://maya-project.eu/icareonto/releases/0.1.0-draft/core": "44bc1d8cc2a82e048240f77afe2e75d15cd8a1d3e8ae74be7e05547ec7919e99",
-    "http://maya-project.eu/icareonto/releases/0.1.0-draft/cv-risk": "b0ef30b31ed7e9bd1094967f43421f64987fb977ee0e963a7b2ba3af34cead8c",
-    "http://maya-project.eu/icareonto/releases/0.1.0-draft/dialogue": "c9a3d1f913eb5713724ac25ad5d1fbd5d181236aa60258e463d940817ccca34f",
-    "http://maya-project.eu/icareonto/releases/0.1.0-draft/exercise": "f4362ac582f8c4f4faabf6ee80882002087ce3e364eacc22ce2e7803aa87ea75",
-    "http://maya-project.eu/icareonto/releases/0.1.0-draft/healthhub-service": "41bde182a7f6fd3e7fa9fc1de84e3fda87b0205be810b00871544c60635a7635",
-    "http://maya-project.eu/icareonto/releases/0.1.0-draft/icareonto": "d017c0038b4884837fb5be6b5bbb77eadf008d610aa8509044fd41f5b59aef29",
-    "http://maya-project.eu/icareonto/releases/0.1.0-draft/imports/prov-reference": "22fd91610f91f940a638690f83b6976e8acc3befa2d1b086bbee24e2931bf225",
-    "http://maya-project.eu/icareonto/releases/0.1.0-draft/imports/skos-reference": "a0df443bc1e3656d599b8e847bb45c95e475b33585e0d23e04397a683cc8e689",
-    "http://maya-project.eu/icareonto/releases/0.1.0-draft/intervention-careplan": "6eb22ba3a126e8037d730493365b968866fd7c74320a81dfba8ba0cb0a7a4518",
-    "http://maya-project.eu/icareonto/releases/0.1.0-draft/knowledge-resource": "733d3a4e2de9e81cca15e6f8f559a2c89ef22e2ae4ca74adb79e83e35a7aa3dd",
-    "http://maya-project.eu/icareonto/releases/0.1.0-draft/lifestyle-behaviour": "bd8858215a9d8b016014537124dde24b9c25a7c04e1288b3100e13c86f0bd48c",
-    "http://maya-project.eu/icareonto/releases/0.1.0-draft/measurement-biomarker": "7c494e28294a15199b99001c2296f77a53d88d3768cfb8a0fe0b965d93b32f1b",
-    "http://maya-project.eu/icareonto/releases/0.1.0-draft/metadata": "de327bcaf9a810594ac07810eee4332c44c1b529c9257539a50835c17b7dd4c5",
-    "http://maya-project.eu/icareonto/releases/0.1.0-draft/nutrition": "284e794c623efa690160a5504e5866bf95d093be6d402f1a8278febe9e32ccfe",
-    "http://maya-project.eu/icareonto/releases/0.1.0-draft/person-role": "54c52adc3f0c755797c1d1a0b975609b16f56d050c56c681b6d95d9ac55bc580",
-    "http://maya-project.eu/icareonto/releases/0.1.0-draft/pilot": "134750c7fe0264f75e67022660804111561bbc3864bf6408884c5cf29adf88cc",
-    "http://maya-project.eu/icareonto/releases/0.1.0-draft/provenance-governance": "19fdc227f3b39d11906f5de77b35c6afee1521ef7fce7af01b8dd650284a83f1",
-    "http://maya-project.eu/icareonto/releases/0.1.0-draft/social-context": "c3fe7179038292df64af7cac6f7e7e3100d51c44fec56978ef3c53ed8c7e4061",
-    "http://maya-project.eu/icareonto/social-context": "c3fe7179038292df64af7cac6f7e7e3100d51c44fec56978ef3c53ed8c7e4061"
+    "http://maya-project.eu/icareonto": "6084cd55d53af030b023beabe8efa06c208ac16026a85bab440670e86de2272f",
+    "http://maya-project.eu/icareonto/agent": "e2f9a8ffbfed25b7806d8dde2768a72c69e7458cb0fac590533b1556cbc253e0",
+    "http://maya-project.eu/icareonto/alignments": "778e3ba432a7e8611f79110b4f328fa2dbd846b846786554cfb7a5fca558204f",
+    "http://maya-project.eu/icareonto/cancer-history": "78b6bb42e2daf0421193ec7e8bd40dd2ba93084cb2936765c9d3480eec48cec1",
+    "http://maya-project.eu/icareonto/clinical-profile": "f8110492db2980751ecb4f94e51ad8f6e0d5a536ef0c31f689433d16e73867fa",
+    "http://maya-project.eu/icareonto/core": "30e8ae22a2f267b471f6efcbc1759e4d2e69d1a1ea4bda874deb2696aa80ee63",
+    "http://maya-project.eu/icareonto/cv-risk": "9968f3891ceeda5880d2e4157a895e67fd0f449fcd222de1754d549d43671cdc",
+    "http://maya-project.eu/icareonto/dialogue": "7d70984150999e3d189852ccf81c45b3f319d3e7bd4766994e6c1e606e47f568",
+    "http://maya-project.eu/icareonto/exercise": "2af7ccaae7ce198871a2792a2f8d8159506e2d8277c5b54a85438f155ccf77a0",
+    "http://maya-project.eu/icareonto/healthhub-service": "5540b1449f8e1a32a2bb21e50402fd706353d371c8c943180c5b040eda466351",
+    "http://maya-project.eu/icareonto/imports/prov-reference": "239be390d3d0f982711f66ac43b782e88fa802cb544f592aa7ec76137cdfa327",
+    "http://maya-project.eu/icareonto/imports/skos-reference": "051e756462f44988a5ff71f4d6458a133bfd887888d8e727430c6ffcc116c443",
+    "http://maya-project.eu/icareonto/intervention-careplan": "2c18384c679d371e77b49f2ba2a1583ff90f4128f774983d96e807b12a307e23",
+    "http://maya-project.eu/icareonto/knowledge-resource": "ef948eb863a55dd415ed5f69ec5ef80a8bc05f73b526bacddbe583270bc329fb",
+    "http://maya-project.eu/icareonto/lifestyle-behaviour": "47d947b3faf44c6079ecbf0a6a0dae75cafbae906976ba324e5d29519f887093",
+    "http://maya-project.eu/icareonto/measurement-biomarker": "500c8030a07854c409adce0344d5b555ffb8bf42ad6e1fa266383949fc4719e8",
+    "http://maya-project.eu/icareonto/metadata": "5e2cf7ff3f578a951a460a62afc18a0bcad1d982015267f9910e78d9c380e1fa",
+    "http://maya-project.eu/icareonto/nutrition": "69a78281fb9d481864a4d0b8b58a66fd0c71c0a82deec83b0c58a629bd901d60",
+    "http://maya-project.eu/icareonto/person-role": "2c0ce1bff7ff78f0124f62fa771d765e112d3f4ab862b4bddd51bf776757b5e7",
+    "http://maya-project.eu/icareonto/pilot": "4d8019e90eddcacc816d262f46f8099b25af424fe8d35f58b55bc22d2290d508",
+    "http://maya-project.eu/icareonto/provenance-governance": "fdf8796bf7c43a9c7a165b5626126f8424bf2fed8964b18a0496c4a189cefc62",
+    "http://maya-project.eu/icareonto/releases/0.2.0/agent": "e2f9a8ffbfed25b7806d8dde2768a72c69e7458cb0fac590533b1556cbc253e0",
+    "http://maya-project.eu/icareonto/releases/0.2.0/alignments": "778e3ba432a7e8611f79110b4f328fa2dbd846b846786554cfb7a5fca558204f",
+    "http://maya-project.eu/icareonto/releases/0.2.0/cancer-history": "78b6bb42e2daf0421193ec7e8bd40dd2ba93084cb2936765c9d3480eec48cec1",
+    "http://maya-project.eu/icareonto/releases/0.2.0/clinical-profile": "f8110492db2980751ecb4f94e51ad8f6e0d5a536ef0c31f689433d16e73867fa",
+    "http://maya-project.eu/icareonto/releases/0.2.0/core": "30e8ae22a2f267b471f6efcbc1759e4d2e69d1a1ea4bda874deb2696aa80ee63",
+    "http://maya-project.eu/icareonto/releases/0.2.0/cv-risk": "9968f3891ceeda5880d2e4157a895e67fd0f449fcd222de1754d549d43671cdc",
+    "http://maya-project.eu/icareonto/releases/0.2.0/dialogue": "7d70984150999e3d189852ccf81c45b3f319d3e7bd4766994e6c1e606e47f568",
+    "http://maya-project.eu/icareonto/releases/0.2.0/exercise": "2af7ccaae7ce198871a2792a2f8d8159506e2d8277c5b54a85438f155ccf77a0",
+    "http://maya-project.eu/icareonto/releases/0.2.0/healthhub-service": "5540b1449f8e1a32a2bb21e50402fd706353d371c8c943180c5b040eda466351",
+    "http://maya-project.eu/icareonto/releases/0.2.0/icareonto": "6084cd55d53af030b023beabe8efa06c208ac16026a85bab440670e86de2272f",
+    "http://maya-project.eu/icareonto/releases/0.2.0/imports/prov-reference": "239be390d3d0f982711f66ac43b782e88fa802cb544f592aa7ec76137cdfa327",
+    "http://maya-project.eu/icareonto/releases/0.2.0/imports/skos-reference": "051e756462f44988a5ff71f4d6458a133bfd887888d8e727430c6ffcc116c443",
+    "http://maya-project.eu/icareonto/releases/0.2.0/intervention-careplan": "2c18384c679d371e77b49f2ba2a1583ff90f4128f774983d96e807b12a307e23",
+    "http://maya-project.eu/icareonto/releases/0.2.0/knowledge-resource": "ef948eb863a55dd415ed5f69ec5ef80a8bc05f73b526bacddbe583270bc329fb",
+    "http://maya-project.eu/icareonto/releases/0.2.0/lifestyle-behaviour": "47d947b3faf44c6079ecbf0a6a0dae75cafbae906976ba324e5d29519f887093",
+    "http://maya-project.eu/icareonto/releases/0.2.0/measurement-biomarker": "500c8030a07854c409adce0344d5b555ffb8bf42ad6e1fa266383949fc4719e8",
+    "http://maya-project.eu/icareonto/releases/0.2.0/metadata": "5e2cf7ff3f578a951a460a62afc18a0bcad1d982015267f9910e78d9c380e1fa",
+    "http://maya-project.eu/icareonto/releases/0.2.0/nutrition": "69a78281fb9d481864a4d0b8b58a66fd0c71c0a82deec83b0c58a629bd901d60",
+    "http://maya-project.eu/icareonto/releases/0.2.0/person-role": "2c0ce1bff7ff78f0124f62fa771d765e112d3f4ab862b4bddd51bf776757b5e7",
+    "http://maya-project.eu/icareonto/releases/0.2.0/pilot": "4d8019e90eddcacc816d262f46f8099b25af424fe8d35f58b55bc22d2290d508",
+    "http://maya-project.eu/icareonto/releases/0.2.0/provenance-governance": "fdf8796bf7c43a9c7a165b5626126f8424bf2fed8964b18a0496c4a189cefc62",
+    "http://maya-project.eu/icareonto/releases/0.2.0/social-context": "8605d0ade3ae32a50cb3b6aa9c823fd613092466ffa4e576fb6eeb129b1306c2",
+    "http://maya-project.eu/icareonto/social-context": "8605d0ade3ae32a50cb3b6aa9c823fd613092466ffa4e576fb6eeb129b1306c2"
   },
   "ontology_values": [
     {
@@ -9353,7 +9354,7 @@
       ]
     },
     {
-      "definition": "Records the date of cancer diagnosis when known.",
+      "definition": "Records the calendar date of cancer diagnosis, when known, as a string in YYYY-MM-DD format. No time of day or timezone is implied.",
       "domains": [
         "CancerDiagnosis"
       ],
@@ -9361,9 +9362,11 @@
       "kind": "data",
       "label": "diagnosis date",
       "name": "diagnosisDate",
+      "pattern": "^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$",
       "ranges": [
-        "http://www.w3.org/2001/XMLSchema#date"
-      ]
+        "http://www.w3.org/2001/XMLSchema#string"
+      ],
+      "value_format": "iso-calendar-date"
     },
     {
       "definition": "Optional confidence (between 0 and 1) assigned to the extracted or inferred slot value.",
@@ -9470,7 +9473,7 @@
       ]
     },
     {
-      "definition": "Estimated duration required to read, watch, or complete the resource.",
+      "definition": "Records the estimated time required to read, watch or complete a knowledge resource as an ISO 8601 duration string, for example PT10M for ten minutes.",
       "domains": [
         "KnowledgeResource"
       ],
@@ -9478,9 +9481,11 @@
       "kind": "data",
       "label": "estimated completion time",
       "name": "estimatedCompletionTime",
+      "pattern": "^-?P([0-9]+W|([0-9]+Y([0-9]+M)?([0-9]+D)?|[0-9]+M([0-9]+D)?|[0-9]+D)(T([0-9]+H([0-9]+M)?([0-9]+(\\.[0-9]+)?S)?|[0-9]+M([0-9]+(\\.[0-9]+)?S)?|[0-9]+(\\.[0-9]+)?S))?|T([0-9]+H([0-9]+M)?([0-9]+(\\.[0-9]+)?S)?|[0-9]+M([0-9]+(\\.[0-9]+)?S)?|[0-9]+(\\.[0-9]+)?S))$",
       "ranges": [
-        "http://www.w3.org/2001/XMLSchema#duration"
-      ]
+        "http://www.w3.org/2001/XMLSchema#string"
+      ],
+      "value_format": "iso-duration"
     },
     {
       "definition": "Human-readable exercise activity name.",
@@ -9639,7 +9644,7 @@
       ]
     },
     {
-      "definition": "Records the duration of a temporal interval when represented directly.",
+      "definition": "Records the duration of a temporal interval as an ISO 8601 duration string, for example P7D for seven days or PT30M for thirty minutes.",
       "domains": [
         "TimeInterval"
       ],
@@ -9647,9 +9652,11 @@
       "kind": "data",
       "label": "interval duration",
       "name": "intervalDuration",
+      "pattern": "^-?P([0-9]+W|([0-9]+Y([0-9]+M)?([0-9]+D)?|[0-9]+M([0-9]+D)?|[0-9]+D)(T([0-9]+H([0-9]+M)?([0-9]+(\\.[0-9]+)?S)?|[0-9]+M([0-9]+(\\.[0-9]+)?S)?|[0-9]+(\\.[0-9]+)?S))?|T([0-9]+H([0-9]+M)?([0-9]+(\\.[0-9]+)?S)?|[0-9]+M([0-9]+(\\.[0-9]+)?S)?|[0-9]+(\\.[0-9]+)?S))$",
       "ranges": [
-        "http://www.w3.org/2001/XMLSchema#duration"
-      ]
+        "http://www.w3.org/2001/XMLSchema#string"
+      ],
+      "value_format": "iso-duration"
     },
     {
       "definition": "Indicates whether exercise is intended to be supervised.",
@@ -10419,7 +10426,7 @@
       ]
     },
     {
-      "definition": "Supports pilot engagement analysis when duration is required.",
+      "definition": "Records the elapsed duration of a service-use event as an ISO 8601 duration string, for example PT15M for fifteen minutes, supporting analysis of service engagement.",
       "domains": [
         "ServiceUseEvent"
       ],
@@ -10427,9 +10434,11 @@
       "kind": "data",
       "label": "service use duration",
       "name": "serviceUseDuration",
+      "pattern": "^-?P([0-9]+W|([0-9]+Y([0-9]+M)?([0-9]+D)?|[0-9]+M([0-9]+D)?|[0-9]+D)(T([0-9]+H([0-9]+M)?([0-9]+(\\.[0-9]+)?S)?|[0-9]+M([0-9]+(\\.[0-9]+)?S)?|[0-9]+(\\.[0-9]+)?S))?|T([0-9]+H([0-9]+M)?([0-9]+(\\.[0-9]+)?S)?|[0-9]+M([0-9]+(\\.[0-9]+)?S)?|[0-9]+(\\.[0-9]+)?S))$",
       "ranges": [
-        "http://www.w3.org/2001/XMLSchema#duration"
-      ]
+        "http://www.w3.org/2001/XMLSchema#string"
+      ],
+      "value_format": "iso-duration"
     },
     {
       "definition": "Free-text report about the performed session.",

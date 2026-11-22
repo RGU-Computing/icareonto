@@ -1,6 +1,6 @@
 # Full competency-question test suite
 
-This suite exercises all 78 canonical questions in `icareonto_final_consolidated_competency_questions_v5.xlsx` against iCARE Onto `0.1.0-draft`. It adds a separate, wholly fictional coverage supplement to the existing Spanish survivor graph. It changes neither the ontology nor the original graph.
+This suite exercises all 78 canonical questions in `icareonto_final_consolidated_competency_questions_v5.xlsx` against iCARE Onto `0.2.0`. It adds a separate, wholly fictional coverage supplement to the existing Spanish survivor graph. It changes neither the ontology nor the original graph.
 
 Read [the validation report](../reports/CQ_VALIDATION_REPORT.md) for per-CQ outcomes and items requiring review. The JSON and TSV versions include complete expected/actual bindings and source CQ identifiers.
 
