@@ -202,7 +202,7 @@ icare:VerificationStatusValueScheme a owl:NamedIndividual,
 
 icare:provenance-governance a owl:Ontology ;
     rdfs:label "Provenance and Governance"@en ;
-    meta:reviewStatus "Draft" ;
+    meta:releaseStatus "Published" ;
     dcterms:contributor "MAYA consortium partners" ;
     dcterms:creator "Robert Gordon University" ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
@@ -213,6 +213,6 @@ icare:provenance-governance a owl:Ontology ;
         <http://maya-project.eu/icareonto/imports/skos-reference>,
         icare:metadata,
         icare:person-role ;
-    owl:versionIRI <http://maya-project.eu/icareonto/releases/0.2.0/provenance-governance> ;
-    owl:versionInfo "0.2.0" .
+    owl:versionIRI <http://maya-project.eu/icareonto/releases/1.0.0/provenance-governance> ;
+    owl:versionInfo "1.0.0" .
 

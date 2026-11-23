@@ -1,32 +1,11 @@
 {
-  "run_date": "2026-11-22",
-  "ontology_version": "0.2.0",
-  "status": "PASS",
-  "graphs_checked": 22,
-  "source_hashes": {
-    "icareonto_review_workbook_v221126.xlsx": "2dc0443affa4f1b29f4e8635e48aa5491fe6a417101d933b2a1ce37c4a23208b",
-    "icareonto_alignment_mapping_workbook_v301026_4.xlsx": "615925bdf3a9e44404c06129220a2b6818694081e1fb15e41daa6bb664bbb771",
-    "icareonto_final_consolidated_competency_questions_v5.xlsx": "e46f6ffc5a42bf46d1e1f64ee515f76e2e499665341b883afe98aa6ea3dd42c0"
-  },
+  "ontology_version": "1.0.0",
+  "run_date": "2026-11-23",
+  "graphs_compared": 22,
+  "result": "PASS",
   "checks": [
     {
       "file": "icareonto.ttl",
-      "isomorphic": true
-    },
-    {
-      "file": "imports/metadata.ttl",
-      "isomorphic": true
-    },
-    {
-      "file": "imports/skos-reference.ttl",
-      "isomorphic": true
-    },
-    {
-      "file": "imports/prov-reference.ttl",
-      "isomorphic": true
-    },
-    {
-      "file": "alignments/approved.ttl",
       "isomorphic": true
     },
     {
@@ -95,6 +74,22 @@
     },
     {
       "file": "modules/social-context.ttl",
+      "isomorphic": true
+    },
+    {
+      "file": "alignments/approved.ttl",
+      "isomorphic": true
+    },
+    {
+      "file": "imports/metadata.ttl",
+      "isomorphic": true
+    },
+    {
+      "file": "imports/skos-reference.ttl",
+      "isomorphic": true
+    },
+    {
+      "file": "imports/prov-reference.ttl",
       "isomorphic": true
     }
   ]

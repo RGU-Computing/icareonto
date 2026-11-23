@@ -1,6 +1,6 @@
-# Calendar-date and duration compatibility in version 0.2.0
+# Calendar-date and duration compatibility in version 1.0.0
 
-The earlier populated diagnosis-date profile finding is resolved in ontology 0.2.0. The authoritative source specifies strings for calendar dates and durations, and the regenerated ontology carries explicit value-format annotations. This preserves the supplied precision without adding an unknown time or timezone. The ontology's review status remains Draft toward the initial iCARE Onto Version 1 project baseline.
+The earlier populated diagnosis-date profile finding was resolved in ontology 0.2.0; version 1.0.0 retains that representation. The authoritative source specifies strings for calendar dates and durations, and the regenerated ontology carries explicit value-format annotations. This preserves the supplied precision without adding an unknown time or timezone. Version 1.0.0 is the initial published baseline; publication does not assert completed clinical domain review.
 
 ## Representation and validation
 
@@ -19,7 +19,7 @@ These are string-valued data properties in OWL. The format annotations are descr
 
 ## Checked evidence
 
-The validation run on 22 November 2026 used the full clinical participant example and [a dedicated temporal input](../examples/participant-es-temporal.json), together with their pilot. The latter populates the calendar date and all three duration properties. Its seven-day interval has explicitly supplied start and end timepoints.
+The validation run on 23 November 2026 used the full clinical participant example and [a dedicated temporal input](../examples/participant-es-temporal.json), together with their pilot. The latter populates the calendar date and all three duration properties. Its seven-day interval has explicitly supplied start and end timepoints.
 
 | Check | Result |
 |---|---|

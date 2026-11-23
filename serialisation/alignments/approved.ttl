@@ -7,7 +7,7 @@
 
 icare:alignments a owl:Ontology ;
     rdfs:label "iCARE Onto external alignments"@en ;
-    meta:reviewStatus "Draft" ;
+    meta:releaseStatus "Published" ;
     dcterms:contributor "MAYA consortium partners" ;
     dcterms:creator "Robert Gordon University" ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
@@ -17,8 +17,8 @@ icare:alignments a owl:Ontology ;
         <http://maya-project.eu/icareonto/imports/prov-reference>,
         icare:metadata,
         icare:provenance-governance ;
-    owl:versionIRI <http://maya-project.eu/icareonto/releases/0.2.0/alignments> ;
-    owl:versionInfo "0.2.0" .
+    owl:versionIRI <http://maya-project.eu/icareonto/releases/1.0.0/alignments> ;
+    owl:versionInfo "1.0.0" .
 
 icare:Agent rdfs:subClassOf prov:Agent .
 

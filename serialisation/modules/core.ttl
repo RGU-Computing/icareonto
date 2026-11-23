@@ -365,7 +365,7 @@ icare:TimeOfDayScheme a owl:NamedIndividual,
 
 icare:core a owl:Ontology ;
     rdfs:label "Core"@en ;
-    meta:reviewStatus "Draft" ;
+    meta:releaseStatus "Published" ;
     dcterms:contributor "MAYA consortium partners" ;
     dcterms:creator "Robert Gordon University" ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
@@ -373,6 +373,6 @@ icare:core a owl:Ontology ;
     rdfs:comment "Defines module-independent concepts for time, schedules, source attribution, devices, locales and recorded activity executions."@en ;
     owl:imports <http://maya-project.eu/icareonto/imports/skos-reference>,
         icare:metadata ;
-    owl:versionIRI <http://maya-project.eu/icareonto/releases/0.2.0/core> ;
-    owl:versionInfo "0.2.0" .
+    owl:versionIRI <http://maya-project.eu/icareonto/releases/1.0.0/core> ;
+    owl:versionInfo "1.0.0" .
 

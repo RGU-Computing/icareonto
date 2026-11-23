@@ -6,7 +6,7 @@
 
 <http://maya-project.eu/icareonto> a owl:Ontology ;
     rdfs:label "iCARE Onto"@en ;
-    meta:reviewStatus "Draft" ;
+    meta:releaseStatus "Published" ;
     dcterms:contributor "MAYA consortium partners" ;
     dcterms:creator "Robert Gordon University" ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
@@ -31,6 +31,6 @@
         icare:pilot,
         icare:provenance-governance,
         icare:social-context ;
-    owl:versionIRI <http://maya-project.eu/icareonto/releases/0.2.0/icareonto> ;
-    owl:versionInfo "0.2.0" .
+    owl:versionIRI <http://maya-project.eu/icareonto/releases/1.0.0/icareonto> ;
+    owl:versionInfo "1.0.0" .
 

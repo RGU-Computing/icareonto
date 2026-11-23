@@ -727,7 +727,7 @@ icare:MeasurableParameter a owl:Class ;
 
 icare:measurement-biomarker a owl:Ontology ;
     rdfs:label "Measurement and Biomarker"@en ;
-    meta:reviewStatus "Draft" ;
+    meta:releaseStatus "Published" ;
     dcterms:contributor "MAYA consortium partners" ;
     dcterms:creator "Robert Gordon University" ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
@@ -738,6 +738,6 @@ icare:measurement-biomarker a owl:Ontology ;
         icare:knowledge-resource,
         icare:metadata,
         icare:person-role ;
-    owl:versionIRI <http://maya-project.eu/icareonto/releases/0.2.0/measurement-biomarker> ;
-    owl:versionInfo "0.2.0" .
+    owl:versionIRI <http://maya-project.eu/icareonto/releases/1.0.0/measurement-biomarker> ;
+    owl:versionInfo "1.0.0" .
 

@@ -184,7 +184,7 @@ icare:DigitalServiceTypeScheme a owl:NamedIndividual,
 
 icare:healthhub-service a owl:Ontology ;
     rdfs:label "Digital Service and iCARE Health Hub"@en ;
-    meta:reviewStatus "Draft" ;
+    meta:releaseStatus "Published" ;
     dcterms:contributor "MAYA consortium partners" ;
     dcterms:creator "Robert Gordon University" ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
@@ -195,6 +195,6 @@ icare:healthhub-service a owl:Ontology ;
         icare:intervention-careplan,
         icare:metadata,
         icare:person-role ;
-    owl:versionIRI <http://maya-project.eu/icareonto/releases/0.2.0/healthhub-service> ;
-    owl:versionInfo "0.2.0" .
+    owl:versionIRI <http://maya-project.eu/icareonto/releases/1.0.0/healthhub-service> ;
+    owl:versionInfo "1.0.0" .
 

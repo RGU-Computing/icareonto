@@ -8,11 +8,11 @@ The release contains **41 resources** marked both Approved and Complete in the s
 
 The 23 November update adds ten records: English and Spanish ESMO survivorship editions, the inventory's English NCI survivorship guide, a Polish Alivia information-appraisal article, English and Spanish NCI information-appraisal pages, German fatigue guidance, Italian symptom guidance, Portuguese misinformation guidance and an English smoking-cessation page. It also adds self-monitoring annotations to the existing Polish and Portuguese survivorship guides and cardiovascular-late-effects coverage to the Portuguese guide. No existing resource was withdrawn. Across the eight ontology topics and six catalogue languages, the remaining zero annotation cell is Spanish self-monitoring; this does not establish absence of relevant content in every resource.
 
-The ontology remains technical version `0.2.0`, generated from `icareonto_review_workbook_v221126.xlsx`, with 17 modules, 283 classes, 284 object properties, 137 data properties, 304 controlled values and 62 schemes. This catalogue refresh uses the same ontology fingerprint; it does not alter the core ontology.
+The ontology is technical version `1.0.0`, the initial published Version 1 baseline generated from `icareonto_review_workbook_v221126.xlsx`, with 17 modules, 283 classes, 284 object properties, 137 data properties, 304 controlled values and 62 schemes. The catalogue was rebuilt against its current fingerprint. Entity IRIs and resource classifications are unchanged by the version update.
 
 The source is now `sources/MAYA_consolidated_educational_resources.xlsx`, using a stable filename and the headings `Curated by`, `Curation date` and `Applicability notes`. The importer maps controlled labels to ontology IRIs, preserves Resource IDs, separates semicolon-delimited values, retains curation and rights metadata, and publishes metadata and links without retrieving source content. Catalogue profile `1.2` exports `curated_by` and `curation_date` in JSON and `edu:curatedBy` and `edu:curatedOn` in RDF; applicability notes remain `applicability_notes` / `edu:applicabilityNotes`. The previous curation headings and export fields are not supported. Application annotations describe catalogue curation, not clinical approval for every participant or site.
 
-The packaged release identifier is `d72ec58cb5da7142a48583bb`. Its build report records all 31 existing records as updated because the curation fields changed; ten further records are additions. Source hashes and row provenance are retained in validation sidecars.
+The packaged catalogue release identifier is `63869b46ff79494c43ed2b74`. This rebuild refreshes the ontology fingerprint and import mappings without changing the 41 resource records. Source hashes and row provenance are retained in validation sidecars. The repository release tag is `v1.0.0`; the catalogue identifier is generated independently from its inputs and build configuration.
 
 Controlled annotations are validated directly against ontology values. Journey stages use the three permitted options; no resource-specific substitutions are applied.
 
@@ -26,7 +26,7 @@ The fictional post-treatment cardiovascular example returns **MAYA-EDU-0004** an
 
 ## Validation
 
-The education-specific checks below were repeated on 23 November 2026 against the refreshed catalogue and unchanged ontology 0.2.0.
+The checks below were repeated on 23 November 2026 against the refreshed catalogue and ontology 1.0.0.
 
 | Validation activity | Result |
 |---|---|
@@ -35,7 +35,7 @@ The education-specific checks below were repeated on 23 November 2026 against th
 | Educational demonstration OWLAPI/HermiT | 26 documents; zero OWL 2 DL violations; consistent; no unsatisfiable named classes |
 | Source integrity | All four input files match their source-manifest byte counts and SHA-256 hashes |
 
-The core ontology and CQ results remain the separately dated 22 November baseline: 4,655 source-reconciliation checks, consistent OWL 2 DL ontology validation, and all 78 CQ queries plus four controls passed. They were not rerun for this catalogue-only refresh.
+The accompanying Version 1 validation also passed 4,700 source-reconciliation checks, consistent OWL 2 DL ontology validation, and all 78 CQ queries plus four controls. A clean rebuild reproduced all 22 distributed ontology graphs. Publication-status checks additionally verify that releasing the baseline does not promote source-controlled term-review statuses.
 
 The workflow checks exercise new resource IDs, status gating, stable identifiers, row/column movement, updates, withdrawal, repeated builds, interrupted publication, integrity failures, matching and a synthetic draft intervention. Two additional tests verify preservation of curation metadata in JSON/RDF and rejection of missing curation details. Tests use a fixed metadata fixture so that later additions to the live collection do not invalidate the regression baseline. Expected selection results are independently specified resource IDs. These are technical checks; they do not establish educational effectiveness or clinical validation.
 

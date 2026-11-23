@@ -639,7 +639,7 @@ icare:ExerciseActivityTypeScheme a owl:NamedIndividual,
 
 icare:exercise a owl:Ontology ;
     rdfs:label "Exercise and Physical Activity"@en ;
-    meta:reviewStatus "Draft" ;
+    meta:releaseStatus "Published" ;
     dcterms:contributor "MAYA consortium partners" ;
     dcterms:creator "Robert Gordon University" ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
@@ -650,6 +650,6 @@ icare:exercise a owl:Ontology ;
         icare:intervention-careplan,
         icare:measurement-biomarker,
         icare:metadata ;
-    owl:versionIRI <http://maya-project.eu/icareonto/releases/0.2.0/exercise> ;
-    owl:versionInfo "0.2.0" .
+    owl:versionIRI <http://maya-project.eu/icareonto/releases/1.0.0/exercise> ;
+    owl:versionInfo "1.0.0" .
 

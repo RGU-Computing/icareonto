@@ -20,7 +20,7 @@ Developed by Robert Gordon University, with contributions from MAYA consortium p
 
 Suggested attribution for the ontology and original catalogue metadata:
 
-> Robert Gordon University, with contributions from MAYA consortium partners. iCARE Onto, technical version 0.2.0. https://github.com/maya-rgu/icareonto. Licensed under CC BY 4.0: https://creativecommons.org/licenses/by/4.0/.
+> Robert Gordon University, with contributions from MAYA consortium partners. iCARE Onto, technical version 1.0.0. https://github.com/maya-rgu/icareonto. Licensed under CC BY 4.0: https://creativecommons.org/licenses/by/4.0/.
 
 When redistributing an updated or adapted version, identify the version used and indicate changes as required by CC BY 4.0. Retain the MIT copyright and permission notice when redistributing the software. Attribution does not imply endorsement by the contributors or resource providers.
 

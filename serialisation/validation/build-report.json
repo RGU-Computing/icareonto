@@ -1,8 +1,8 @@
 {
-  "release": "2026-11-22",
-  "ontology_version": "0.2.0",
-  "review_status": "Draft",
-  "target_release": "iCARE Onto v1",
+  "release": "2026-11-23",
+  "ontology_version": "1.0.0",
+  "release_status": "Published",
+  "project_baseline": "iCARE Onto Version 1",
   "runtime_provenance_policy": "Development filenames, sheet references and mapping-register identifiers are retained only in validation sidecars, not in the ontology graphs.",
   "sources_sha256": {
     "icareonto_review_workbook_v221126.xlsx": "2dc0443affa4f1b29f4e8635e48aa5491fe6a417101d933b2a1ce37c4a23208b",

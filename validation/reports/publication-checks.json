@@ -1,7 +1,7 @@
 {
   "status": "PASS",
   "checks": 661,
-  "catalogue_resources": 31,
+  "catalogue_resources": 41,
   "scope": "Release-source hashes, required import paths and packaged catalogue; local ignored runs are excluded.",
   "public_file_audit": "PASS",
   "licence_status": "CC-BY-4.0 for original ontology/content; MIT for supporting software; third-party terms retained"

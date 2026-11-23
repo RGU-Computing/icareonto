@@ -162,9 +162,9 @@
     "provenance-governance"
   ],
   "needs_sha256": "d37d4a62f3355efcebf5ec9d68743eed6aedebbd8a6b4392f8dea7c024970e15",
-  "ontology_sha256": "8d9adda7a9053f1548053d385aade5435edad15a5fb9a522bcd5fdb133cad964",
+  "ontology_sha256": "cf7c4860aa45dbd2c22a57811a3ed23c4178347811d6f22d43f7db52c4a7bd9c",
   "pilot_id": "es-demo-01",
-  "ranking_sha256": "8e5d4ff91286bc1de4f0bf81b12f3e0d0f40f9506bd8895742704b589095206e",
+  "ranking_sha256": "50780349e7b9871b237a22e9cccceadb61db2d0f956c03e986bb4e9bfdee4f28",
   "relevant_modules": [
     "cancer-history",
     "core",

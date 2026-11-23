@@ -90,7 +90,7 @@ def header(g, iri, title, description, version, own_material=True):
     suffix = str(iri).removeprefix(BASE).replace("#", "") if str(iri) != str(ROOT_IRI) else "icareonto"
     g.add((iri, OWL.versionIRI, URIRef(BASE + "releases/" + version + "/" + suffix)))
     g.add((iri, OWL.versionInfo, Literal(version)))
-    g.add((iri, META.reviewStatus, Literal("Draft")))
+    g.add((iri, META.releaseStatus, Literal("Published" if "-" not in version else "Pre-release")))
     # License our ontology contributions without relicensing imported W3C terms.
     if own_material:
         g.add((iri, DCTERMS.license, URIRef("https://creativecommons.org/licenses/by/4.0/")))
@@ -316,8 +316,8 @@ def build(args):
 
     # Dublin Core properties support bibliographic/resource metadata, including CQ-025 and CQ-051.
     metadata = graph()
-    header(metadata, META_IRI, "iCARE Onto metadata", "Annotation vocabulary for ontology review status and descriptive, bibliographic, language and rights metadata for knowledge resources.", args.version)
-    for prop, label in ((META.reviewStatus, "review status"),
+    header(metadata, META_IRI, "iCARE Onto metadata", "Annotation vocabulary for ontology publication and term review status, and descriptive, bibliographic, language and rights metadata for knowledge resources.", args.version)
+    for prop, label in ((META.releaseStatus, "release status"), (META.reviewStatus, "review status"),
                         (META.valueFormat, "value format"), (META.valuePattern, "value pattern")):
         metadata.add((prop, RDF.type, OWL.AnnotationProperty))
         metadata.add((prop, RDFS.label, Literal(label, lang="en")))
@@ -441,7 +441,8 @@ def build(args):
                         for file, url in (("imports/skos.rdf", "https://www.w3.org/2009/08/skos-reference/skos.rdf"),
                                           ("imports/prov-o.ttl", "https://www.w3.org/ns/prov-o.ttl"))]
     datatypes = sorted({str(o) for g in all_graphs.values() for s, p, o in g.triples((None, RDFS.range, None)) if str(o).startswith(str(XSD))})
-    report = {"release": args.release, "ontology_version": args.version, "review_status": "Draft", "target_release": "iCARE Onto v1",
+    report = {"release": args.release, "ontology_version": args.version,
+              "release_status": "Published" if "-" not in args.version else "Pre-release", "project_baseline": "iCARE Onto Version 1",
               "runtime_provenance_policy": "Development filenames, sheet references and mapping-register identifiers are retained only in validation sidecars, not in the ontology graphs.",
               "sources_sha256": sources, "external_sources": external_sources, "module_count": len(modules),
               "schema_counts": dict(collections.Counter(e["kind"] for e in entities.values())), "controlled_values": len(vocab),
@@ -467,5 +468,5 @@ if __name__ == "__main__":
     parser.add_argument("--cqs", type=Path, default=repo / "sources/icareonto_final_consolidated_competency_questions_v5.xlsx")
     parser.add_argument("--output", type=Path, default=repo / "serialisation")
     parser.add_argument("--release", default=datetime.now(timezone.utc).date().isoformat(), help="Build date recorded in the development report; defaults to the current UTC date")
-    parser.add_argument("--version", default="0.2.0", help="Technical ontology version, independent of development-source revisions")
+    parser.add_argument("--version", default="1.0.0", help="Technical ontology version, independent of development-source revisions")
     build(parser.parse_args())

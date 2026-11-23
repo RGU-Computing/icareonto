@@ -7,15 +7,18 @@
 
 icare:metadata a owl:Ontology ;
     rdfs:label "iCARE Onto metadata"@en ;
-    meta:reviewStatus "Draft" ;
+    meta:releaseStatus "Published" ;
     dcterms:contributor "MAYA consortium partners" ;
     dcterms:creator "Robert Gordon University" ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
     dcterms:rights "Copyright (c) 2026 Robert Gordon University and contributing MAYA consortium partners, for their respective contributions. Third-party material retains its applicable terms."@en ;
-    rdfs:comment "Annotation vocabulary for ontology review status and descriptive, bibliographic, language and rights metadata for knowledge resources."@en ;
+    rdfs:comment "Annotation vocabulary for ontology publication and term review status, and descriptive, bibliographic, language and rights metadata for knowledge resources."@en ;
     rdfs:seeAlso <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/> ;
-    owl:versionIRI <http://maya-project.eu/icareonto/releases/0.2.0/metadata> ;
-    owl:versionInfo "0.2.0" .
+    owl:versionIRI <http://maya-project.eu/icareonto/releases/1.0.0/metadata> ;
+    owl:versionInfo "1.0.0" .
+
+meta:releaseStatus a owl:AnnotationProperty ;
+    rdfs:label "release status"@en .
 
 meta:reviewStatus a owl:AnnotationProperty ;
     rdfs:label "review status"@en .

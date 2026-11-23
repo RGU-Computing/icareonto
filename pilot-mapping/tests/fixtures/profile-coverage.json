@@ -103,22 +103,22 @@
     {
       "file": "pilots/es-demo-01.ttl",
       "shacl_conforms": true,
-      "status": "REPLACED_SEED"
+      "status": "CREATED"
     },
     {
       "file": "participants/es-demo-aya-001.ttl",
       "shacl_conforms": true,
-      "status": "REPLACED_SEED"
+      "status": "CREATED"
     },
     {
       "file": "participants/es-demo-aya-002.ttl",
       "shacl_conforms": true,
-      "status": "REPLACED_SEED"
+      "status": "CREATED"
     }
   ],
   "pilot_id": "es-demo-01",
-  "profile_sha256": "11fa81677ef9535bc244bec890798b5541d485b4c25f4cc4f7983c708d97338e",
-  "registry_sha256": "8e9d16093b90ddf7219e12a56e61e1dca70e6b082db1dd761cc870c6876d9519",
+  "profile_sha256": "99582f1f383725ddb0c6d461585ce7dc4ead37cdeb800e17ef104ef958c0f8c1",
+  "registry_sha256": "5afe671a22a1668af1e42c6faa16cecaec04b364d6b0ee5f9d758559410a8a92",
   "review_status": "demonstration_annotation_not_site_approval",
   "reviewer": "Agent-authored fictional mapping decisions; independent pilot/expert review is pending",
   "source_status": "synthetic_demonstration",

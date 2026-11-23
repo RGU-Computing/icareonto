@@ -363,7 +363,7 @@ icare:CommunicationChannelTypeScheme a owl:NamedIndividual,
 
 icare:person-role a owl:Ontology ;
     rdfs:label "Person and Role"@en ;
-    meta:reviewStatus "Draft" ;
+    meta:releaseStatus "Published" ;
     dcterms:contributor "MAYA consortium partners" ;
     dcterms:creator "Robert Gordon University" ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
@@ -372,6 +372,6 @@ icare:person-role a owl:Ontology ;
     owl:imports icare:core,
         <http://maya-project.eu/icareonto/imports/skos-reference>,
         icare:metadata ;
-    owl:versionIRI <http://maya-project.eu/icareonto/releases/0.2.0/person-role> ;
-    owl:versionInfo "0.2.0" .
+    owl:versionIRI <http://maya-project.eu/icareonto/releases/1.0.0/person-role> ;
+    owl:versionInfo "1.0.0" .
 

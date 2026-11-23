@@ -350,7 +350,7 @@ icare:EnrolmentStatusValueScheme a owl:NamedIndividual,
 
 icare:pilot a owl:Ontology ;
     rdfs:label "Pilot Structure and Operational Study Context"@en ;
-    meta:reviewStatus "Draft" ;
+    meta:releaseStatus "Published" ;
     dcterms:contributor "MAYA consortium partners" ;
     dcterms:creator "Robert Gordon University" ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
@@ -361,6 +361,6 @@ icare:pilot a owl:Ontology ;
         icare:measurement-biomarker,
         icare:metadata,
         icare:person-role ;
-    owl:versionIRI <http://maya-project.eu/icareonto/releases/0.2.0/pilot> ;
-    owl:versionInfo "0.2.0" .
+    owl:versionIRI <http://maya-project.eu/icareonto/releases/1.0.0/pilot> ;
+    owl:versionInfo "1.0.0" .
 

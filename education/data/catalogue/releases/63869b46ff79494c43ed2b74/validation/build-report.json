@@ -1,0 +1,16 @@
+{
+  "activity_template_status": "Draft",
+  "added": [],
+  "excluded": [],
+  "full_text_downloaded": false,
+  "included_count": 41,
+  "ontology_sha256": "cf7c4860aa45dbd2c22a57811a3ed23c4178347811d6f22d43f7db52c4a7bd9c",
+  "profile_sha256": "42ae9f986ae8eef52ce7ac7430242ae62e5f19690cf882fd3562652267b25224",
+  "release_id": "63869b46ff79494c43ed2b74",
+  "removed": [],
+  "source_sha256": "4f199c8483a60067bc7eb04695d4ab39b32a2a9b738bd2505258b88e5cac5c7e",
+  "source_sheet": "Release resources",
+  "source_workbook": "MAYA_consolidated_educational_resources.xlsx",
+  "updated": [],
+  "validation": "PASS"
+}

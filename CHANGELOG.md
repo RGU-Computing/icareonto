@@ -1,7 +1,15 @@
 ## [Unreleased]
 
+## [1.0.0] – 2026-11-23
+
 ### Changed
 
+- Published the initial iCARE Onto Version 1 baseline as technical version
+  1.0.0, preserving existing entity and module IRIs while updating version IRIs.
+- Separated ontology publication status from the unchanged source term-review
+  statuses; clinical domain review remains part of preparation for pilot use.
+- Regenerated ontology-dependent graphs, catalogue imports, input references,
+  pilot-mapping profiles and validation evidence for the Version 1 baseline.
 - Expanded the curated educational catalogue from 31 to 41 resources across
   six languages, including information appraisal, symptom self-monitoring,
   smoking cessation and further survivorship language editions.

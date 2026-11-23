@@ -278,7 +278,7 @@
     "decision_matches": 1,
     "interpretation": "Checks of supplied demonstration decisions, not automatic no-match detection by the scorer"
   },
-  "ranking_sha256": "8e5d4ff91286bc1de4f0bf81b12f3e0d0f40f9506bd8895742704b589095206e",
+  "ranking_sha256": "50780349e7b9871b237a22e9cccceadb61db2d0f956c03e986bb4e9bfdee4f28",
   "reference_sha256": "da934c516d2d1326c9aa2a2b6fa22b94ea1e4627893134e007b8ae7a168330ce",
   "reference_status": "demonstration_reference_not_expert_gold_standard",
   "semantic_cosine": {

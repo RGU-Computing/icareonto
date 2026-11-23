@@ -402,7 +402,7 @@ icare:RiskCategoryValueScheme a owl:NamedIndividual,
 
 icare:cv-risk a owl:Ontology ;
     rdfs:label "Cardiovascular Risk and Prediction"@en ;
-    meta:reviewStatus "Draft" ;
+    meta:releaseStatus "Published" ;
     dcterms:contributor "MAYA consortium partners" ;
     dcterms:creator "Robert Gordon University" ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
@@ -415,6 +415,6 @@ icare:cv-risk a owl:Ontology ;
         icare:measurement-biomarker,
         icare:metadata,
         icare:person-role ;
-    owl:versionIRI <http://maya-project.eu/icareonto/releases/0.2.0/cv-risk> ;
-    owl:versionInfo "0.2.0" .
+    owl:versionIRI <http://maya-project.eu/icareonto/releases/1.0.0/cv-risk> ;
+    owl:versionInfo "1.0.0" .
 

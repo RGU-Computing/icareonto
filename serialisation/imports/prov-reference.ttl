@@ -7,12 +7,12 @@
 
 <http://maya-project.eu/icareonto/imports/prov-reference> a owl:Ontology ;
     rdfs:label "PROV-O reference subset"@en ;
-    meta:reviewStatus "Draft" ;
+    meta:releaseStatus "Published" ;
     rdfs:comment "Reference subset of W3C terms used by iCARE Onto. Term IRIs retain their external identity; this ontology provides the selected supporting axioms."@en ;
     rdfs:seeAlso <https://www.w3.org/ns/prov-o.ttl> ;
     owl:imports icare:metadata ;
-    owl:versionIRI <http://maya-project.eu/icareonto/releases/0.2.0/imports/prov-reference> ;
-    owl:versionInfo "0.2.0" .
+    owl:versionIRI <http://maya-project.eu/icareonto/releases/1.0.0/imports/prov-reference> ;
+    owl:versionInfo "1.0.0" .
 
 skos:altLabel a owl:AnnotationProperty .
 

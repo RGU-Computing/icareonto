@@ -22,26 +22,26 @@
   <uri name="http://maya-project.eu/icareonto/pilot" uri="modules/pilot.ttl" />
   <uri name="http://maya-project.eu/icareonto/provenance-governance" uri="modules/provenance-governance.ttl" />
   <uri name="http://maya-project.eu/icareonto/social-context" uri="modules/social-context.ttl" />
-  <uri name="http://maya-project.eu/icareonto/releases/0.2.0/icareonto" uri="icareonto.ttl" />
-  <uri name="http://maya-project.eu/icareonto/releases/0.2.0/metadata" uri="imports/metadata.ttl" />
-  <uri name="http://maya-project.eu/icareonto/releases/0.2.0/alignments" uri="alignments/approved.ttl" />
-  <uri name="http://maya-project.eu/icareonto/releases/0.2.0/core" uri="modules/core.ttl" />
-  <uri name="http://maya-project.eu/icareonto/releases/0.2.0/person-role" uri="modules/person-role.ttl" />
-  <uri name="http://maya-project.eu/icareonto/releases/0.2.0/cancer-history" uri="modules/cancer-history.ttl" />
-  <uri name="http://maya-project.eu/icareonto/releases/0.2.0/clinical-profile" uri="modules/clinical-profile.ttl" />
-  <uri name="http://maya-project.eu/icareonto/releases/0.2.0/measurement-biomarker" uri="modules/measurement-biomarker.ttl" />
-  <uri name="http://maya-project.eu/icareonto/releases/0.2.0/cv-risk" uri="modules/cv-risk.ttl" />
-  <uri name="http://maya-project.eu/icareonto/releases/0.2.0/intervention-careplan" uri="modules/intervention-careplan.ttl" />
-  <uri name="http://maya-project.eu/icareonto/releases/0.2.0/lifestyle-behaviour" uri="modules/lifestyle-behaviour.ttl" />
-  <uri name="http://maya-project.eu/icareonto/releases/0.2.0/exercise" uri="modules/exercise.ttl" />
-  <uri name="http://maya-project.eu/icareonto/releases/0.2.0/nutrition" uri="modules/nutrition.ttl" />
-  <uri name="http://maya-project.eu/icareonto/releases/0.2.0/social-context" uri="modules/social-context.ttl" />
-  <uri name="http://maya-project.eu/icareonto/releases/0.2.0/knowledge-resource" uri="modules/knowledge-resource.ttl" />
-  <uri name="http://maya-project.eu/icareonto/releases/0.2.0/dialogue" uri="modules/dialogue.ttl" />
-  <uri name="http://maya-project.eu/icareonto/releases/0.2.0/agent" uri="modules/agent.ttl" />
-  <uri name="http://maya-project.eu/icareonto/releases/0.2.0/healthhub-service" uri="modules/healthhub-service.ttl" />
-  <uri name="http://maya-project.eu/icareonto/releases/0.2.0/pilot" uri="modules/pilot.ttl" />
-  <uri name="http://maya-project.eu/icareonto/releases/0.2.0/provenance-governance" uri="modules/provenance-governance.ttl" />
-  <uri name="http://maya-project.eu/icareonto/releases/0.2.0/imports/skos-reference" uri="imports/skos-reference.ttl" />
-  <uri name="http://maya-project.eu/icareonto/releases/0.2.0/imports/prov-reference" uri="imports/prov-reference.ttl" />
+  <uri name="http://maya-project.eu/icareonto/releases/1.0.0/icareonto" uri="icareonto.ttl" />
+  <uri name="http://maya-project.eu/icareonto/releases/1.0.0/metadata" uri="imports/metadata.ttl" />
+  <uri name="http://maya-project.eu/icareonto/releases/1.0.0/alignments" uri="alignments/approved.ttl" />
+  <uri name="http://maya-project.eu/icareonto/releases/1.0.0/core" uri="modules/core.ttl" />
+  <uri name="http://maya-project.eu/icareonto/releases/1.0.0/person-role" uri="modules/person-role.ttl" />
+  <uri name="http://maya-project.eu/icareonto/releases/1.0.0/cancer-history" uri="modules/cancer-history.ttl" />
+  <uri name="http://maya-project.eu/icareonto/releases/1.0.0/clinical-profile" uri="modules/clinical-profile.ttl" />
+  <uri name="http://maya-project.eu/icareonto/releases/1.0.0/measurement-biomarker" uri="modules/measurement-biomarker.ttl" />
+  <uri name="http://maya-project.eu/icareonto/releases/1.0.0/cv-risk" uri="modules/cv-risk.ttl" />
+  <uri name="http://maya-project.eu/icareonto/releases/1.0.0/intervention-careplan" uri="modules/intervention-careplan.ttl" />
+  <uri name="http://maya-project.eu/icareonto/releases/1.0.0/lifestyle-behaviour" uri="modules/lifestyle-behaviour.ttl" />
+  <uri name="http://maya-project.eu/icareonto/releases/1.0.0/exercise" uri="modules/exercise.ttl" />
+  <uri name="http://maya-project.eu/icareonto/releases/1.0.0/nutrition" uri="modules/nutrition.ttl" />
+  <uri name="http://maya-project.eu/icareonto/releases/1.0.0/social-context" uri="modules/social-context.ttl" />
+  <uri name="http://maya-project.eu/icareonto/releases/1.0.0/knowledge-resource" uri="modules/knowledge-resource.ttl" />
+  <uri name="http://maya-project.eu/icareonto/releases/1.0.0/dialogue" uri="modules/dialogue.ttl" />
+  <uri name="http://maya-project.eu/icareonto/releases/1.0.0/agent" uri="modules/agent.ttl" />
+  <uri name="http://maya-project.eu/icareonto/releases/1.0.0/healthhub-service" uri="modules/healthhub-service.ttl" />
+  <uri name="http://maya-project.eu/icareonto/releases/1.0.0/pilot" uri="modules/pilot.ttl" />
+  <uri name="http://maya-project.eu/icareonto/releases/1.0.0/provenance-governance" uri="modules/provenance-governance.ttl" />
+  <uri name="http://maya-project.eu/icareonto/releases/1.0.0/imports/skos-reference" uri="imports/skos-reference.ttl" />
+  <uri name="http://maya-project.eu/icareonto/releases/1.0.0/imports/prov-reference" uri="imports/prov-reference.ttl" />
 </catalog>

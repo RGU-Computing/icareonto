@@ -11,7 +11,7 @@ from rdflib import Graph, RDF, RDFS, OWL, SKOS, Literal, URIRef
 from rdflib.compare import isomorphic
 from rdflib.namespace import DCTERMS
 
-from serialise_ontology import read_xlsx, BASE
+from serialise_ontology import read_xlsx, BASE, META
 
 root = Path(__file__).resolve().parents[1]
 repo = root.parent / "sources"
@@ -105,6 +105,9 @@ for r in values:
     check((subject, SKOS.inScheme, URIRef(r["H"])) in g, "Controlled scheme: " + r["C"])
     if r.get("G"):
         check((subject, SKOS.broader, URIRef(BASE + r["G"])) in g, "Controlled hierarchy: " + r["C"])
+check(all((URIRef(r["F"]), META.reviewStatus, Literal(r["I"])) in graphs[r["J"]]
+          for r in values if r.get("I", "").strip()),
+      "Publishing a baseline preserves source-controlled term review statuses")
 
 catalogue = {e.attrib["name"]: e.attrib["uri"] for e in ET.parse(root / "catalog-v001.xml").getroot()}
 for iri, relative in catalogue.items():
@@ -141,6 +144,10 @@ for name, g in all_graphs.items():
                       for v in g.objects(ontology, DCTERMS.rights)), "Copyright for respective contributions: " + name)
         check((ontology, OWL.versionInfo, Literal(report["ontology_version"])) in g,
               "Ontology version matches release: " + str(ontology))
+        check((ontology, META.releaseStatus, Literal(report["release_status"])) in g,
+              "Publication status matches release: " + str(ontology))
+        check(not list(g.objects(ontology, META.reviewStatus)),
+              "Publication status is separate from term review status: " + str(ontology))
         check(any("/releases/" + report["ontology_version"] + "/" in str(v) for v in g.objects(ontology, OWL.versionIRI)),
               "Version IRI matches release: " + str(ontology))
 
