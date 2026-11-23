@@ -40,23 +40,23 @@
     },
     {
       "ontology": "OntologyID(OntologyIRI(<http://maya-project.eu/icareonto/education/dataset>) VersionIRI(<null>))",
-      "document": "../../data/catalogue/releases/60281701045b7014fd092afd/dataset.ttl",
+      "document": "../../data/catalogue/releases/d72ec58cb5da7142a48583bb/dataset.ttl",
       "axioms": 15
     },
     {
       "ontology": "OntologyID(OntologyIRI(<http://maya-project.eu/icareonto/education/demo/graph>) VersionIRI(<null>))",
       "document": "participant-education.ttl",
-      "axioms": 54
+      "axioms": 55
     },
     {
       "ontology": "OntologyID(OntologyIRI(<http://maya-project.eu/icareonto/education/graphs/activities>) VersionIRI(<null>))",
-      "document": "../../data/catalogue/releases/60281701045b7014fd092afd/activity-templates.ttl",
-      "axioms": 107
+      "document": "../../data/catalogue/releases/d72ec58cb5da7142a48583bb/activity-templates.ttl",
+      "axioms": 120
     },
     {
       "ontology": "OntologyID(OntologyIRI(<http://maya-project.eu/icareonto/education/graphs/resources>) VersionIRI(<null>))",
-      "document": "../../data/catalogue/releases/60281701045b7014fd092afd/catalogue.ttl",
-      "axioms": 1062
+      "document": "../../data/catalogue/releases/d72ec58cb5da7142a48583bb/catalogue.ttl",
+      "axioms": 1422
     },
     {
       "ontology": "OntologyID(OntologyIRI(<http://maya-project.eu/icareonto/exercise>) VersionIRI(<http://maya-project.eu/icareonto/releases/0.2.0/exercise>))",
@@ -138,7 +138,7 @@
     "classes": 283,
     "object_properties": 284,
     "data_properties": 137,
-    "individuals": 410
+    "individuals": 420
   },
   "owl2_dl_profile": {
     "in_profile": true,
@@ -149,5 +149,5 @@
     "consistent": true,
     "unsatisfiable_named_classes": []
   },
-  "total_named_individuals": 410
+  "total_named_individuals": 420
 }

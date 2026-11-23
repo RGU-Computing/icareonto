@@ -1,6 +1,6 @@
 # Educational resource workflow checks
 
-41 checks; 0 failures; 0 errors. Result: **PASS**.
+43 checks; 0 failures; 0 errors. Result: **PASS**.
 
 Tests exercise new approved IDs, status gating, withdrawal, stable IRIs, repeat processing, header and sheet independence, vocabulary validation, dates, permissions, release integrity, participant matching and a synthetic educational activity.
 
@@ -15,6 +15,8 @@ Repeat from the project root: `python education/scripts/check_workflow.py` (with
 | audience excludes caregiver only resources | PASS |
 | columns are located by header | PASS |
 | configurable sheet and shifted header row | PASS |
+| curation dates preserve excel epochs | PASS |
+| curation metadata survives publication | PASS |
 | custom namespace is preserved | PASS |
 | demo does not publish real participant data | PASS |
 | demo links real resource to synthetic draft intervention | PASS |
@@ -31,6 +33,7 @@ Repeat from the project root: `python education/scripts/check_workflow.py` (with
 | language claims need verified values | PASS |
 | metadata licence does not relicense linked publications | PASS |
 | missing column fails | PASS |
+| missing curation metadata is rejected | PASS |
 | multiple values split on semicolons not commas | PASS |
 | namespace cannot change in existing deployment | PASS |
 | new approved id is automatically published | PASS |
@@ -39,7 +42,6 @@ Repeat from the project root: `python education/scripts/check_workflow.py` (with
 | reordering keeps resource identities | PASS |
 | repeated build is unchanged | PASS |
 | required accessibility is not inferred | PASS |
-| review dates preserve excel epochs | PASS |
 | shacl rejects missing resource url | PASS |
 | spanish cardiovascular expected match | PASS |
 | sparql returns independent expected answer | PASS |

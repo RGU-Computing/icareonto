@@ -1,6 +1,6 @@
 {
   "delivery_mode": "signpost",
-  "match_count": 1,
+  "match_count": 2,
   "matches": [
     {
       "access_conditions": "Public",
@@ -15,6 +15,8 @@
       "complexities": [
         "http://maya-project.eu/icareonto/StandardComplexity"
       ],
+      "curated_by": "INO",
+      "curation_date": "2026-11-03",
       "curation_status": "Approved",
       "delivery_mode": "signpost",
       "description": "Two-page illustrated patient information sheet explaining cardiovascular complications of cancer treatment, assessment and monitoring before, during and after treatment, and practical measures to support cardiovascular health.",
@@ -57,8 +59,6 @@
       "requires_registration_or_access_check": false,
       "resource_date_text": "2024",
       "resource_role": "Direct Educational Resource",
-      "review_date": "2026-11-03",
-      "reviewer": "INO",
       "selection_explanation": "Matches recorded need, topic, audience, journey stage and language; any required accessibility features are annotated.",
       "title": "Ficha del paciente: Cardio-oncología",
       "topics": [
@@ -66,9 +66,80 @@
         "http://maya-project.eu/icareonto/FollowUpCare"
       ],
       "url": "https://fundaciondelcorazon.com/phocadownload/recursos-didacticos/fichas/FICHA%20CARDIO-ONCOLOGIA.pdf"
+    },
+    {
+      "access_conditions": "Public",
+      "accessibility": [],
+      "applicability_notes": "Broad adult survivorship guide. Direct participants to relevant sections. Clinical review should confirm the continuing applicability of recommendations in this 2017 edition, particularly lifestyle and treatment advice.",
+      "audiences": [
+        "http://maya-project.eu/icareonto/AYASurvivorAudience",
+        "http://maya-project.eu/icareonto/CaregiverAudience",
+        "http://maya-project.eu/icareonto/FamilyAudience"
+      ],
+      "completion_status": "Complete",
+      "complexities": [
+        "http://maya-project.eu/icareonto/StandardComplexity"
+      ],
+      "curated_by": "INO",
+      "curation_date": "2026-11-23",
+      "curation_status": "Approved",
+      "delivery_mode": "signpost",
+      "description": "Patient guide to life after initial cancer treatment, covering follow-up, cardiovascular and other late effects, physical activity, nutrition, smoking cessation, emotional wellbeing, relationships, support services and personal care records.",
+      "formats": [
+        "http://maya-project.eu/icareonto/WrittenText"
+      ],
+      "id": "MAYA-EDU-0077e",
+      "iri": "http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0077e",
+      "journey_stages": [
+        "After treatment / survivorship"
+      ],
+      "languages": [
+        "es"
+      ],
+      "matched_needs": [
+        "http://maya-project.eu/icareonto/InformationComprehensionSupportNeed"
+      ],
+      "matched_topics": [
+        "http://maya-project.eu/icareonto/CardiovascularLateEffects"
+      ],
+      "needs": [
+        "http://maya-project.eu/icareonto/CareTeamCommunicationSupportNeed",
+        "http://maya-project.eu/icareonto/HealthcareNavigationSupportNeed",
+        "http://maya-project.eu/icareonto/InformationApplicationSupportNeed",
+        "http://maya-project.eu/icareonto/InformationComprehensionSupportNeed",
+        "http://maya-project.eu/icareonto/SelfManagementSupportNeed",
+        "http://maya-project.eu/icareonto/SocialSupportNeed"
+      ],
+      "permitted_use": "Link / Signpost Only",
+      "preference_matches": {
+        "complexities": false,
+        "formats": true
+      },
+      "provider": "European Society for Medical Oncology (ESMO); European Cancer Patient Coalition (ECPC); developed in collaboration with the International Psycho-Oncology Society (IPOS)",
+      "purposes": [
+        "http://maya-project.eu/icareonto/ExplainHealthTopic",
+        "http://maya-project.eu/icareonto/PrepareForConsultation",
+        "http://maya-project.eu/icareonto/SupportBehaviourChange",
+        "http://maya-project.eu/icareonto/SupportCareNavigation",
+        "http://maya-project.eu/icareonto/SupportSelfManagement"
+      ],
+      "requires_registration_or_access_check": false,
+      "resource_date_text": "2017",
+      "resource_role": "Direct Educational Resource",
+      "selection_explanation": "Matches recorded need, topic, audience, journey stage and language; any required accessibility features are annotated.",
+      "title": "La sobrevivencia: Una guía ESMO-ECPC para pacientes",
+      "topics": [
+        "http://maya-project.eu/icareonto/CardiovascularLateEffects",
+        "http://maya-project.eu/icareonto/FollowUpCare",
+        "http://maya-project.eu/icareonto/MentalHealthAndEmotionalWellbeing",
+        "http://maya-project.eu/icareonto/Nutrition",
+        "http://maya-project.eu/icareonto/PhysicalActivity",
+        "http://maya-project.eu/icareonto/Smoking"
+      ],
+      "url": "https://dam.esmo.org/image/upload/ESMO-Guia-para-Pacientes-Sobrevivencia.pdf"
     }
   ],
-  "release_id": "542d536efdae831bcba1686b",
+  "release_id": "d72ec58cb5da7142a48583bb",
   "status": "MATCHES_FOUND",
   "unmatched_needs": []
 }

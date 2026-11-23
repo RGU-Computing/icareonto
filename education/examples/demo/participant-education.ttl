@@ -28,6 +28,10 @@ edu:applicabilityNotes a owl:AnnotationProperty .
 
 edu:completionStatus a owl:AnnotationProperty .
 
+edu:curatedBy a owl:AnnotationProperty .
+
+edu:curatedOn a owl:AnnotationProperty .
+
 edu:curationStatus a owl:AnnotationProperty .
 
 edu:identificationMethod a owl:AnnotationProperty .
@@ -46,10 +50,6 @@ edu:resourceDateText a owl:AnnotationProperty .
 
 edu:resourceRole a owl:AnnotationProperty .
 
-edu:reviewedBy a owl:AnnotationProperty .
-
-edu:reviewedOn a owl:AnnotationProperty .
-
 edu:templateStatus a owl:AnnotationProperty .
 
 <http://maya-project.eu/icareonto/education/demo/intervention> a icare:EducationActivity,
@@ -59,7 +59,8 @@ edu:templateStatus a owl:AnnotationProperty .
     icare:activityContributesToGoal <http://maya-project.eu/icareonto/education/demo/goal> ;
     edu:templateStatus "Draft" ;
     icare:healthLiteracyInterventionAddressesNeed icare:InformationComprehensionSupportNeed ;
-    icare:healthLiteracyInterventionUsesResource <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0004> ;
+    icare:healthLiteracyInterventionUsesResource <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0004>,
+        <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0077e> ;
     dcterms:source <http://maya-project.eu/icareonto/education/activity-templates/EDU-CV-FOLLOWUP> .
 
 <http://maya-project.eu/icareonto/education/demo/language> a icare:LanguagePreference,

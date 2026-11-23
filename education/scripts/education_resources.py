@@ -36,7 +36,7 @@ ONTOLOGY = URIRef("http://maya-project.eu/icareonto")
 DEFAULT_BASE = "http://maya-project.eu/icareonto/education/"
 METADATA_LICENSE = "https://creativecommons.org/licenses/by/4.0/"
 METADATA_RIGHTS = "Copyright (c) 2026 Robert Gordon University and contributing MAYA consortium partners, for their respective contributions. CC BY 4.0 covers original metadata and activity content only; linked publications retain their provider terms."
-DEFAULT_WORKBOOK = REPO / "sources/MAYA_consolidated_educational_resources_v20261101.xlsx"
+DEFAULT_WORKBOOK = REPO / "sources/MAYA_consolidated_educational_resources.xlsx"
 STAGES = ["Before treatment", "During treatment", "After treatment / survivorship"]
 # Each entry connects an application field to its worksheet heading, controlled
 # vocabulary class and RDF relationship. Keep all three mappings together.
@@ -51,11 +51,11 @@ FIELDS = {
 }
 REQUIRED = ["Resource ID", "Resource title", "Curation status", "Completion status", "Resource URL", "Language(s)",
             "Cancer journey stage(s)", "Provider / author", "Description excerpt", "Access conditions", "Permitted MAYA use",
-            "Reviewer", "Review date"] + [v[0] for v in FIELDS.values() if v[0] != "Accessibility features"]
+            "Curated by", "Curation date"] + [v[0] for v in FIELDS.values() if v[0] != "Accessibility features"]
 ALIASES = {"targetaudience": "MAYA Target audience", "resourcepurpose": "Resource purpose(s)"}
 LANGUAGES = {"english": "en", "spanish": "es", "german": "de", "french": "fr", "italian": "it", "portuguese": "pt",
              "romanian": "ro", "polish": "pl", "finnish": "fi", "greek": "el", "catalan": "ca"}
-APP_PROPERTIES = ["journeyStage", "resourceRole", "accessConditions", "reviewedBy", "reviewedOn", "resourceDateText",
+APP_PROPERTIES = ["journeyStage", "resourceRole", "accessConditions", "curatedBy", "curatedOn", "resourceDateText",
                   "applicabilityNotes", "learningObjective", "learningStep", "reflectionPrompt",
                   "templateStatus", "identificationMethod", "isSynthetic", "curationStatus", "completionStatus"]
 
@@ -166,7 +166,7 @@ def worksheet_records(path, sheet):
     if len(header_rows) != 1:
         raise InputError("Expected one Resource ID header row")
     header = header_rows[0]
-    known = {norm(h): h for h in REQUIRED + ["Accessibility features", "Resource role", "Publication / last updated", "Applicability review notes", "Source record ID", "Source reference"]}
+    known = {norm(h): h for h in REQUIRED + ["Accessibility features", "Resource role", "Publication / last updated", "Applicability notes", "Source record ID", "Source reference"]}
     cols = {}
     for col, text in header.items():
         if col == "_row":
@@ -194,7 +194,7 @@ def worksheet_records(path, sheet):
 
 # Convert an ISO date or Excel serial without inventing a publication date.
 # Excel's fictitious 29 February 1900 (serial 60) is deliberately rejected.
-def review_date(value, epoch_1904=False):
+def curation_date(value, epoch_1904=False):
     try:
         return date.fromisoformat(value).isoformat()
     except ValueError:
@@ -208,7 +208,7 @@ def review_date(value, epoch_1904=False):
             base = date(1899, 12, 31)
         return (base + timedelta(days=int(serial))).isoformat()
     except (ValueError, InvalidOperation, OverflowError):
-        raise InputError(f"Invalid review date: {value!r}") from None
+        raise InputError(f"Invalid curation date: {value!r}") from None
 
 
 def language_tag(value):
@@ -254,8 +254,8 @@ def prepare_records(raw, vocabulary, base, epoch_1904=False):
              "description": row["Description excerpt"], "provider": row["Provider / author"], "languages": sorted({language_tag(v) for v in split_values(row["Language(s)"])}),
              "journey_stages": sorted(set(stages)), "resource_role": row.get("Resource role", ""),
              "access_conditions": row["Access conditions"], "permitted_use": row["Permitted MAYA use"], "delivery_mode": "signpost",
-             "reviewer": row["Reviewer"], "review_date": review_date(row["Review date"], epoch_1904),
-             "resource_date_text": row.get("Publication / last updated", ""), "applicability_notes": row.get("Applicability review notes", ""),
+             "curated_by": row["Curated by"], "curation_date": curation_date(row["Curation date"], epoch_1904),
+             "resource_date_text": row.get("Publication / last updated", ""), "applicability_notes": row.get("Applicability notes", ""),
              "curation_status": "Approved", "completion_status": "Complete"}
         if r["access_conditions"] not in ("Public", "Restricted"):
             raise InputError(f"{rid}: access conditions must be reviewed as Public or Restricted")
@@ -310,13 +310,13 @@ def catalogue_graph(records, base):
             g.add((n, RDF.type, IC.EducationalResource))
         for predicate, value in [(DCTERMS.identifier, r["id"]), (DCTERMS.title, r["title"]), (DCTERMS.description, r["description"]),
                                  (DCTERMS.publisher, r["provider"]), (DCTERMS.rights, r["permitted_use"]), (META.accessConditions, r["access_conditions"]),
-                                 (META.resourceRole, r["resource_role"]), (META.reviewedBy, r["reviewer"]), (META.applicabilityNotes, r["applicability_notes"]),
+                                 (META.resourceRole, r["resource_role"]), (META.curatedBy, r["curated_by"]), (META.applicabilityNotes, r["applicability_notes"]),
                                  (META.resourceDateText, r["resource_date_text"]), (META.curationStatus, "Approved"),
                                  (META.completionStatus, "Complete")]:
             if value:
                 g.add((n, predicate, Literal(value)))
         g.add((n, DCTERMS.source, URIRef(r["url"])))
-        g.add((n, META.reviewedOn, Literal(r["review_date"], datatype=XSD.date)))
+        g.add((n, META.curatedOn, Literal(r["curation_date"], datatype=XSD.date)))
         for language in r["languages"]:
             g.add((n, DCTERMS.language, Literal(language, datatype=XSD.language)))
         for stage in r["journey_stages"]:
@@ -444,7 +444,7 @@ def build_release(workbook=DEFAULT_WORKBOOK, sheet="Release resources", output=R
     cg = catalogue_graph(records, base)
     ag, active_templates = activity_graph(template_data, records, vocabulary, base)
     shape_report = validate_graph(cg + ag, schema)
-    payload = {"profile_version": "1.1", "base_iri": base, "ontology_sha256": schema_hash,
+    payload = {"profile_version": "1.2", "base_iri": base, "ontology_sha256": schema_hash,
                "metadata_license": METADATA_LICENSE, "metadata_rights": METADATA_RIGHTS,
                "records": records, "activity_templates": active_templates}
     # 3. Derive a release identifier from the inputs and implementation. This also

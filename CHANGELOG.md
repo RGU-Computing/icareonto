@@ -1,5 +1,18 @@
 ## [Unreleased]
 
+### Changed
+
+- Expanded the curated educational catalogue from 31 to 41 resources across
+  six languages, including information appraisal, symptom self-monitoring,
+  smoking cessation and further survivorship language editions.
+- Updated the topic annotations of the existing Portuguese and Polish
+  survivorship resources and refreshed catalogue exports and examples.
+- Adopted the stable source filename `MAYA_consolidated_educational_resources.xlsx`
+  and the worksheet headings `Curated by`, `Curation date` and `Applicability notes`.
+- Updated catalogue profile 1.2 to use `curated_by` and `curation_date` in JSON
+  and `curatedBy` and `curatedOn` in RDF, with corresponding validation shapes
+  and tests. The previous curation headings and export fields are not supported.
+
 ## [0.2.0] – 2026-11-22
 
 ### Added

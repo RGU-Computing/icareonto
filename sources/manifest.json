@@ -1,5 +1,5 @@
 {
-  "snapshot_date": "2026-11-22",
+  "snapshot_date": "2026-11-23",
   "files": {
     "icareonto_review_workbook_v221126.xlsx": {
       "sha256": "2dc0443affa4f1b29f4e8635e48aa5491fe6a417101d933b2a1ce37c4a23208b",
@@ -13,9 +13,9 @@
       "sha256": "e46f6ffc5a42bf46d1e1f64ee515f76e2e499665341b883afe98aa6ea3dd42c0",
       "bytes": 23942
     },
-    "MAYA_consolidated_educational_resources_v20261101.xlsx": {
-      "sha256": "4b5fe34df562146c5658e47b02e83e7cfbe1020657ca0f8a8c366df2a72ce8bb",
-      "bytes": 43819
+    "MAYA_consolidated_educational_resources.xlsx": {
+      "sha256": "4f199c8483a60067bc7eb04695d4ab39b32a2a9b738bd2505258b88e5cac5c7e",
+      "bytes": 51773
     }
   }
 }

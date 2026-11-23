@@ -33,10 +33,14 @@
         <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0077a>,
         <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0077b>,
         <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0077c>,
+        <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0077d>,
+        <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0077e>,
         <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0099>,
+        <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0167>,
         <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0167a>,
         <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0170>,
-        <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0177> .
+        <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0177>,
+        <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0180> .
 
 <http://maya-project.eu/icareonto/education/activity-templates/EDU-CV-FOLLOWUP> a icare:EducationActivity,
         icare:HealthLiteracyIntervention,
@@ -58,7 +62,11 @@
         <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0018>,
         <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0077a>,
         <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0077b>,
-        <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0077c> .
+        <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0077c>,
+        <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0077d>,
+        <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0077e>,
+        <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0170>,
+        <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0183> .
 
 <http://maya-project.eu/icareonto/education/activity-templates/EDU-HEALTHY-CHOICES> a icare:EducationActivity,
         icare:HealthLiteracyIntervention,
@@ -84,9 +92,14 @@
         <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0077a>,
         <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0077b>,
         <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0077c>,
+        <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0077d>,
+        <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0077e>,
+        <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0167>,
         <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0167a>,
         <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0170>,
-        <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0176> .
+        <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0176>,
+        <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0180>,
+        <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0181> .
 
 <http://maya-project.eu/icareonto/education/graphs/activities> a owl:Ontology ;
     rdfs:label "MAYA draft educational activity templates"@en ;
@@ -101,6 +114,10 @@ edu:accessConditions a owl:AnnotationProperty .
 edu:applicabilityNotes a owl:AnnotationProperty .
 
 edu:completionStatus a owl:AnnotationProperty .
+
+edu:curatedBy a owl:AnnotationProperty .
+
+edu:curatedOn a owl:AnnotationProperty .
 
 edu:curationStatus a owl:AnnotationProperty .
 
@@ -119,10 +136,6 @@ edu:reflectionPrompt a owl:AnnotationProperty .
 edu:resourceDateText a owl:AnnotationProperty .
 
 edu:resourceRole a owl:AnnotationProperty .
-
-edu:reviewedBy a owl:AnnotationProperty .
-
-edu:reviewedOn a owl:AnnotationProperty .
 
 edu:templateStatus a owl:AnnotationProperty .
 

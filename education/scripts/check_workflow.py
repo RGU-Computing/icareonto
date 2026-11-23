@@ -203,11 +203,34 @@ class WorkflowChecks(unittest.TestCase):
         self.assertEqual(e.split_values("Digital health, privacy and trust; Nutrition"), ["Digital health, privacy and trust", "Nutrition"])
         self.assertEqual(self.vocab.resolve("Digital health, privacy and trust", "ResourceTopic"), str(e.IC.DigitalHealthPrivacyAndTrust))
 
-    def test_review_dates_preserve_excel_epochs(self):
-        self.assertEqual(e.review_date("46329"), "2026-11-03")
-        self.assertEqual(e.review_date("1", True), "1904-01-02")
-        self.assertEqual(e.review_date("2026-11-03"), "2026-11-03")
-        with self.assertRaises(e.InputError): e.review_date("60")
+    def test_curation_dates_preserve_excel_epochs(self):
+        self.assertEqual(e.curation_date("46329"), "2026-11-03")
+        self.assertEqual(e.curation_date("1", True), "1904-01-02")
+        self.assertEqual(e.curation_date("2026-11-03"), "2026-11-03")
+        with self.assertRaises(e.InputError): e.curation_date("60")
+
+    def test_curation_metadata_survives_publication(self):
+        rows = deepcopy(self.raw)
+        rows[0].update({"Curated by": "Test curator", "Curation date": "2026-11-23",
+                        "Applicability notes": "Check local service eligibility."})
+        self.publish(rows)
+        catalogue = e.load_release(self.output)
+        record = next(r for r in catalogue["records"] if r["id"] == rows[0]["Resource ID"])
+        self.assertEqual(record["curated_by"], "Test curator")
+        self.assertEqual(record["curation_date"], "2026-11-23")
+        self.assertEqual(record["applicability_notes"], "Check local service eligibility.")
+        graph = Graph().parse(Path(catalogue["release_directory"]) / "catalogue.ttl")
+        resource = URIRef(record["iri"])
+        self.assertEqual(set(map(str, graph.objects(resource, e.META.curatedBy))), {"Test curator"})
+        self.assertEqual(set(map(str, graph.objects(resource, e.META.curatedOn))), {"2026-11-23"})
+        self.assertEqual(set(map(str, graph.objects(resource, e.META.applicabilityNotes))),
+                         {"Check local service eligibility."})
+
+    def test_missing_curation_metadata_is_rejected(self):
+        for field in ["Curated by", "Curation date"]:
+            with self.subTest(field=field):
+                rows = deepcopy(self.raw); rows[0][field] = ""
+                with self.assertRaises(e.InputError): self.prepare(rows)
 
     def test_unresolved_permission_is_not_released(self):
         rows = deepcopy(self.raw); rows[0]["Permitted MAYA use"] = "Permission Required Before Use"

@@ -18,6 +18,10 @@ edu:applicabilityNotes a owl:AnnotationProperty .
 
 edu:completionStatus a owl:AnnotationProperty .
 
+edu:curatedBy a owl:AnnotationProperty .
+
+edu:curatedOn a owl:AnnotationProperty .
+
 edu:curationStatus a owl:AnnotationProperty .
 
 edu:identificationMethod a owl:AnnotationProperty .
@@ -35,10 +39,6 @@ edu:reflectionPrompt a owl:AnnotationProperty .
 edu:resourceDateText a owl:AnnotationProperty .
 
 edu:resourceRole a owl:AnnotationProperty .
-
-edu:reviewedBy a owl:AnnotationProperty .
-
-edu:reviewedOn a owl:AnnotationProperty .
 
 edu:templateStatus a owl:AnnotationProperty .
 

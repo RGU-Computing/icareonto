@@ -1,6 +1,6 @@
 # Education Resource Selector
 
-This workflow reads the reviewed resource worksheet and publishes ontology-based metadata, resource-selection results and three draft educational activity templates. The current collection has **31 approved, complete resources** across Spanish (9), English (7), German (5), Italian (4), Polish (3) and Portuguese (3). The public source worksheet contains only these reviewed entries. The workbook is the curation input; the generated JSON and RDF can be used without Excel or the source workbook at runtime.
+This workflow reads the curated resource worksheet and publishes ontology-based metadata, resource-selection results and three draft educational activity templates. The current collection has **41 approved, complete resources** across Spanish (11), English (11), German (6), Italian (5), Polish (4) and Portuguese (4). The public source worksheet contains only these curated and annotated entries. The workbook is the curation input; the generated JSON and RDF can be used without Excel or the source workbook at runtime.
 
 Original catalogue metadata, annotations and learning-activity content are CC BY 4.0; the software is MIT-licensed. RDF graph headers record the metadata licence and attribution; `catalogue.json` provides `metadata_license` and `metadata_rights`. Each resource retains its separate permitted-use annotation. Linked provider content retains its own terms, including any registration or copying restrictions. Catalogue licensing grants no permission to reproduce or ingest the linked publications. See [licence scope](../LICENSE.md) and [third-party notices](../THIRD_PARTY_NOTICES.md).
 
@@ -16,7 +16,7 @@ Use Python 3.10+ with the dependencies in `requirements.txt`. From the project r
 python education/scripts/education_resources.py build
 ```
 
-The defaults are the consolidated resource workbook in `sources/` and the **Release resources** worksheet. For a different file or worksheet:
+The defaults are `sources/MAYA_consolidated_educational_resources.xlsx` and the **Release resources** worksheet. The filename stays stable; Git history, source hashes and catalogue releases identify revisions. For a different file or worksheet:
 
 ```bash
 python education/scripts/education_resources.py build \
@@ -29,9 +29,11 @@ python education/scripts/education_resources.py build \
 
 Save Excel before running the build. It reads the saved file rather than an open Excel session. Header names locate fields, so changing column order or moving the header row does not break the import. `MAYA Target audience` and `Target audience` are accepted header variants. The obsolete Suggested support needs column is ignored. Publication / last updated is preserved verbatim because entries may contain a year, an update date or a provider-review date; a new publication date is never inferred.
 
-To add resources, add rows with unused Resource IDs, complete the annotations, record reviewer/date, and set **Curation status = Approved** and **Completion status = Complete**. Rerun the same command. No list of permitted resource IDs is hard-coded. Applicable activity templates also acquire newly eligible resources automatically through their topic, need, audience and journey-stage criteria.
+The curation columns are **Curated by**, **Curation date** and **Applicability notes**. The importer uses these names directly. JSON records expose `curated_by`, `curation_date` and `applicability_notes`; RDF uses `edu:curatedBy`, `edu:curatedOn` and `edu:applicabilityNotes`. The catalogue profile is version `1.2`. These fields document catalogue curation, not clinical approval for use at a particular site.
 
-The importer requires the reviewed title, URL, language, audience, journey stage, topic, need, purpose, format, complexity, provider, description, access conditions, permitted use and review details. Unknown vocabulary values, duplicate IDs or incomplete approved entries stop publication and leave the current release intact. Other statuses are excluded. `--allow-empty` explicitly permits withdrawing all resources.
+To add resources, add rows with unused Resource IDs, complete the annotations, record curator/date, and set **Curation status = Approved** and **Completion status = Complete**. Rerun the same command. No list of permitted resource IDs is hard-coded. Applicable activity templates also acquire newly eligible resources automatically through their topic, need, audience and journey-stage criteria.
+
+The importer requires the curated title, URL, language, audience, journey stage, topic, need, purpose, format, complexity, provider, description, access conditions, permitted use and curation details. Unknown vocabulary values, duplicate IDs or incomplete approved entries stop publication and leave the current release intact. Other statuses are excluded. `--allow-empty` explicitly permits withdrawing all resources.
 
 Changing an existing row updates that resource while retaining its IRI. Putting it on hold, removing it, or changing it away from approved/complete withdraws it from the next active release. Repeated processing of unchanged inputs returns `UNCHANGED`. Resource identity comes from the Resource ID, not its row number, title or URL. Keep the deployment namespace stable; use a separate output directory for another namespace.
 
@@ -62,7 +64,7 @@ Open the current release's `dataset.ttl` in Protégé and keep the relative dire
 
 The distributed release is under `data/catalogue/`. [examples/demo/participant-education.ttl](examples/demo/participant-education.ttl) is a compact fictional participant example importing that release through its adjacent catalogue. Ordinary generated runs are excluded; this selected example is retained for inspection.
 
-The `education/metadata#` annotations record application metadata such as journey stage, access conditions and review state. They are declared as OWL annotation properties in the generated graphs and do not add domain entities to the core ontology. Topics, needs, purposes and other controlled classifications use the actual iCARE Onto values. Country of contribution is never used as a language or eligibility inference. English and Spanish map to generic `en` and `es`, not unverified regional variants.
+The `education/metadata#` annotations record application metadata such as journey stage, access conditions and curation state. They are declared as OWL annotation properties in the generated graphs and do not add domain entities to the core ontology. Topics, needs, purposes and other controlled classifications use the actual iCARE Onto values. Country of contribution is never used as a language or eligibility inference. English and Spanish map to generic `en` and `es`, not unverified regional variants.
 
 ## Resource access and need-based selection
 
@@ -116,9 +118,9 @@ These templates and the fictional intervention graph illustrate possible future 
 python education/scripts/education_resources.py demo
 ```
 
-The default fictional profile requests cardiovascular information after treatment, prefers Spanish and has an explicitly identified comprehension need. It selects **MAYA-EDU-0004**, links the real resource metadata to a fictional `HealthLiteracyIntervention`, and connects that intervention to the fictional person's draft care plan and goal. The graph records the discussion method and need, rather than inferring a need from a clinical record. `generated/demo/learning-activity.json` shows the objective, steps and prompts; `participant-education.ttl` can be opened in Protégé using its adjacent catalogue. No delivery, completion or literacy improvement is asserted.
+The default fictional profile requests cardiovascular information after treatment, prefers Spanish and has an explicitly identified comprehension need. The current catalogue returns **MAYA-EDU-0004** and **MAYA-EDU-0077e** as candidates, with the former ranked first because it also matches the preferred foundational complexity. The example links their real resource metadata to a fictional `HealthLiteracyIntervention` and connects that intervention to the fictional person's draft care plan and goal. The graph records the discussion method and need, rather than inferring a need from a clinical record. `generated/demo/learning-activity.json` shows the objective, steps and prompts; `participant-education.ttl` can be opened in Protégé using its adjacent catalogue. No delivery, completion or literacy improvement is asserted.
 
-`examples/english-nutrition.json` demonstrates selection of **MAYA-EDU-0023**, with its registration requirement exposed. The `queries/` folder contains a catalogue query and an independent Spanish cardiovascular query.
+`examples/english-nutrition.json` selects **MAYA-EDU-0023** for an information-appraisal need, with its registration requirement exposed. The `queries/` folder contains a catalogue query and an independent Spanish cardiovascular query. The fixed regression fixture keeps its independently specified expected matches even as the packaged catalogue grows.
 
 ## Verification
 
@@ -130,7 +132,7 @@ python education/scripts/check_workflow.py
 
 Run this command in the Python environment containing the declared dependencies.
 
-These are 41 Python `unittest` tests of workflow behaviour. Examples include automatically publishing a new approved/complete ID, withdrawing a resource while preserving history, retaining its IRI after an update, rejecting duplicate IDs without replacing the active release, returning the independently specified Spanish cardiovascular match, and exposing registration requirements. They also simulate interrupted writes and manually altered release files, and check that catalogue licensing preserves each linked publication's permitted-use annotation.
+These are 43 Python `unittest` tests of workflow behaviour. Examples include automatically publishing a new approved/complete ID, withdrawing a resource while preserving history, retaining its IRI after an update, rejecting duplicate IDs without replacing the active release, returning the independently specified Spanish cardiovascular match, and exposing registration requirements. They also simulate interrupted writes and manually altered release files, check that catalogue licensing preserves each linked publication's permitted-use annotation, and verify that curation metadata survives JSON/RDF publication and that missing curation details are rejected.
 
 `reports/WORKFLOW_CHECKS.md` lists every test and result; `reports/workflow-checks.json` provides the same results for software. Tests use `tests/fixtures/reviewed-rows.json`, a fixed reviewed-metadata sample, and temporary outputs. Later additions to the live workbook do not change the regression baseline, and tests leave that workbook unchanged. A normal build separately validates all currently eligible rows and their generated graph. Existing ontology and 78-CQ validation remain separate activities. These tests establish technical behaviour, not educational effectiveness.
 

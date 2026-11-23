@@ -1,6 +1,8 @@
-# Reviewed catalogue snapshot
+# Curated catalogue snapshot
 
-`catalogue/current.json` identifies the single complete catalogue release distributed with this package. It contains metadata for 16 approved and complete resources; MAYA-EDU-0014 remains on hold. The catalogue contains source links and annotations, not copies of provider materials.
+`catalogue/current.json` identifies the single complete catalogue release distributed with this package. It contains metadata for **41 approved and complete resources** across Spanish (11), English (11), German (6), Italian (5), Polish (4) and Portuguese (4). The catalogue contains source links and annotations, not copies of provider materials. Its input is `sources/MAYA_consolidated_educational_resources.xlsx`.
+
+Catalogue profile `1.2` records curation using `curated_by`, `curation_date` and `applicability_notes` in JSON and the corresponding `curatedBy`, `curatedOn` and `applicabilityNotes` RDF annotations. Catalogue approval does not establish clinical suitability for every participant or site.
 
 Use it directly without the source workbook:
 

@@ -6,10 +6,11 @@
     "In your own words, what is the main reason for the follow-up described in this resource?",
     "What would you like your care team to explain about your own follow-up?"
   ],
-  "release_id": "542d536efdae831bcba1686b",
+  "release_id": "d72ec58cb5da7142a48583bb",
   "scope": "Technical demonstration; no intervention delivery, completed learning or improved literacy is asserted.",
   "selected_resource_ids": [
-    "MAYA-EDU-0004"
+    "MAYA-EDU-0004",
+    "MAYA-EDU-0077e"
   ],
   "steps": [
     "Introduce the topic using the participant's stated question and identified support need.",

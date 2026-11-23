@@ -19,6 +19,10 @@ edu:applicabilityNotes a owl:AnnotationProperty .
 
 edu:completionStatus a owl:AnnotationProperty .
 
+edu:curatedBy a owl:AnnotationProperty .
+
+edu:curatedOn a owl:AnnotationProperty .
+
 edu:curationStatus a owl:AnnotationProperty .
 
 edu:identificationMethod a owl:AnnotationProperty .
@@ -37,10 +41,6 @@ edu:resourceDateText a owl:AnnotationProperty .
 
 edu:resourceRole a owl:AnnotationProperty .
 
-edu:reviewedBy a owl:AnnotationProperty .
-
-edu:reviewedOn a owl:AnnotationProperty .
-
 edu:templateStatus a owl:AnnotationProperty .
 
 <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0004> a icare:EducationalResource,
@@ -50,14 +50,14 @@ edu:templateStatus a owl:AnnotationProperty .
     edu:accessConditions "Public" ;
     edu:applicabilityNotes "General oncology patient information, updated 2024; not specifically developed for AYA survivors. Covers cardiovascular risks, monitoring and prevention before, during and after treatment. Suitable as background education, with exercise, medication and surveillance advice interpreted in the participant’s clinical context." ;
     edu:completionStatus "Complete" ;
+    edu:curatedBy "INO" ;
+    edu:curatedOn "2026-11-03"^^xsd:date ;
     edu:curationStatus "Approved" ;
     edu:journeyStage "After treatment / survivorship",
         "Before treatment",
         "During treatment" ;
     edu:resourceDateText "2024" ;
     edu:resourceRole "Direct Educational Resource" ;
-    edu:reviewedBy "INO" ;
-    edu:reviewedOn "2026-11-03"^^xsd:date ;
     icare:healthLiteracyResourceAddressesNeed icare:InformationApplicationSupportNeed,
         icare:InformationComprehensionSupportNeed,
         icare:SelfManagementSupportNeed ;
@@ -86,14 +86,14 @@ edu:templateStatus a owl:AnnotationProperty .
     edu:accessConditions "Public" ;
     edu:applicabilityNotes "General oncology patient resource, not AYA-specific. Introduces exercise benefits and directs readers towards clinical assessment and suitable programmes. Does not provide an individual exercise prescription." ;
     edu:completionStatus "Complete" ;
+    edu:curatedBy "INO" ;
+    edu:curatedOn "2026-11-03"^^xsd:date ;
     edu:curationStatus "Approved" ;
     edu:journeyStage "After treatment / survivorship",
         "Before treatment",
         "During treatment" ;
     edu:resourceDateText "2024" ;
     edu:resourceRole "Direct Educational Resource" ;
-    edu:reviewedBy "INO" ;
-    edu:reviewedOn "2026-11-03"^^xsd:date ;
     icare:healthLiteracyResourceAddressesNeed icare:HealthcareNavigationSupportNeed,
         icare:InformationApplicationSupportNeed,
         icare:InformationComprehensionSupportNeed ;
@@ -120,12 +120,12 @@ edu:templateStatus a owl:AnnotationProperty .
     edu:accessConditions "Public" ;
     edu:applicabilityNotes "General oncology resource, not AYA-specific. Relevant to exercise during treatment and survivorship. Includes situations requiring clinical assessment and adaptation of activity." ;
     edu:completionStatus "Complete" ;
+    edu:curatedBy "INO" ;
+    edu:curatedOn "2026-11-03"^^xsd:date ;
     edu:curationStatus "Approved" ;
     edu:journeyStage "After treatment / survivorship",
         "During treatment" ;
     edu:resourceRole "Direct Educational Resource" ;
-    edu:reviewedBy "INO" ;
-    edu:reviewedOn "2026-11-03"^^xsd:date ;
     icare:healthLiteracyResourceAddressesNeed icare:InformationApplicationSupportNeed,
         icare:InformationComprehensionSupportNeed,
         icare:SelfManagementSupportNeed ;
@@ -151,12 +151,12 @@ edu:templateStatus a owl:AnnotationProperty .
     edu:accessConditions "Public" ;
     edu:applicabilityNotes "General oncology information, not AYA-specific. Includes general dietary targets and advice concerning supplements and reduced immunity; suitability depends on individual nutritional and treatment needs." ;
     edu:completionStatus "Complete" ;
+    edu:curatedBy "INO" ;
+    edu:curatedOn "2026-11-03"^^xsd:date ;
     edu:curationStatus "Approved" ;
     edu:journeyStage "After treatment / survivorship",
         "During treatment" ;
     edu:resourceRole "Direct Educational Resource" ;
-    edu:reviewedBy "INO" ;
-    edu:reviewedOn "2026-11-03"^^xsd:date ;
     icare:healthLiteracyResourceAddressesNeed icare:InformationApplicationSupportNeed,
         icare:InformationAppraisalSupportNeed,
         icare:InformationComprehensionSupportNeed,
@@ -183,11 +183,11 @@ edu:templateStatus a owl:AnnotationProperty .
     edu:accessConditions "Public" ;
     edu:applicabilityNotes "General survivorship resource, not AYA-specific. Educational content can support adjustment after treatment. References to Kālida courses and services require separate confirmation of availability and eligibility." ;
     edu:completionStatus "Complete" ;
+    edu:curatedBy "INO" ;
+    edu:curatedOn "2026-11-03"^^xsd:date ;
     edu:curationStatus "Approved" ;
     edu:journeyStage "After treatment / survivorship" ;
     edu:resourceRole "Direct Educational Resource" ;
-    edu:reviewedBy "INO" ;
-    edu:reviewedOn "2026-11-03"^^xsd:date ;
     icare:healthLiteracyResourceAddressesNeed icare:InformationApplicationSupportNeed,
         icare:InformationComprehensionSupportNeed,
         icare:SelfManagementSupportNeed,
@@ -215,14 +215,14 @@ edu:templateStatus a owl:AnnotationProperty .
     edu:accessConditions "Public" ;
     edu:applicabilityNotes "General oncology resource, not AYA-specific. Provides educational coping guidance rather than a psychological treatment programme. Confirm access separately before signposting to the advertised courses." ;
     edu:completionStatus "Complete" ;
+    edu:curatedBy "INO" ;
+    edu:curatedOn "2026-11-03"^^xsd:date ;
     edu:curationStatus "Approved" ;
     edu:journeyStage "After treatment / survivorship",
         "Before treatment",
         "During treatment" ;
     edu:resourceDateText "2021" ;
     edu:resourceRole "Direct Educational Resource" ;
-    edu:reviewedBy "INO" ;
-    edu:reviewedOn "2026-11-03"^^xsd:date ;
     icare:healthLiteracyResourceAddressesNeed icare:InformationApplicationSupportNeed,
         icare:InformationComprehensionSupportNeed,
         icare:SelfManagementSupportNeed,
@@ -249,13 +249,13 @@ edu:templateStatus a owl:AnnotationProperty .
     edu:accessConditions "Public" ;
     edu:applicabilityNotes "General oncology overview, not AYA-specific. Provides introductory information and signposting; detailed relationship guidance is contained in separate linked pages." ;
     edu:completionStatus "Complete" ;
+    edu:curatedBy "INO" ;
+    edu:curatedOn "2026-11-03"^^xsd:date ;
     edu:curationStatus "Approved" ;
     edu:journeyStage "After treatment / survivorship",
         "Before treatment",
         "During treatment" ;
     edu:resourceRole "Direct Educational Resource" ;
-    edu:reviewedBy "INO" ;
-    edu:reviewedOn "2026-11-03"^^xsd:date ;
     icare:healthLiteracyResourceAddressesNeed icare:InformationComprehensionSupportNeed,
         icare:SocialSupportNeed ;
     icare:knowledgeResourceHasAudience icare:AYASurvivorAudience ;
@@ -279,13 +279,13 @@ edu:templateStatus a owl:AnnotationProperty .
     edu:accessConditions "Public" ;
     edu:applicabilityNotes "Primarily a caregiver-support overview and signposting page. Not specific to caregivers of AYA survivors. Confirm eligibility and availability before recommending provider services." ;
     edu:completionStatus "Complete" ;
+    edu:curatedBy "INO" ;
+    edu:curatedOn "2026-11-03"^^xsd:date ;
     edu:curationStatus "Approved" ;
     edu:journeyStage "After treatment / survivorship",
         "Before treatment",
         "During treatment" ;
     edu:resourceRole "Direct Educational Resource" ;
-    edu:reviewedBy "INO" ;
-    edu:reviewedOn "2026-11-03"^^xsd:date ;
     icare:healthLiteracyResourceAddressesNeed icare:HealthcareNavigationSupportNeed,
         icare:InformationComprehensionSupportNeed,
         icare:SocialSupportNeed ;
@@ -311,14 +311,14 @@ edu:templateStatus a owl:AnnotationProperty .
     edu:accessConditions "Public" ;
     edu:applicabilityNotes "General oncology article, not AYA-specific. Relevant to identity transitions and adjustment; reflective educational support rather than a structured psychological intervention." ;
     edu:completionStatus "Complete" ;
+    edu:curatedBy "INO" ;
+    edu:curatedOn "2026-11-03"^^xsd:date ;
     edu:curationStatus "Approved" ;
     edu:journeyStage "After treatment / survivorship",
         "Before treatment",
         "During treatment" ;
     edu:resourceDateText "2026" ;
     edu:resourceRole "Direct Educational Resource" ;
-    edu:reviewedBy "INO" ;
-    edu:reviewedOn "2026-11-03"^^xsd:date ;
     icare:healthLiteracyResourceAddressesNeed icare:InformationApplicationSupportNeed,
         icare:InformationComprehensionSupportNeed,
         icare:SelfManagementSupportNeed ;
@@ -344,14 +344,14 @@ edu:templateStatus a owl:AnnotationProperty .
     edu:accessConditions "Public" ;
     edu:applicabilityNotes "General oncology information, with some childhood-treatment context. Includes emergency and service information that requires local interpretation when used across pilots." ;
     edu:completionStatus "Complete" ;
+    edu:curatedBy "INO" ;
+    edu:curatedOn "2026-11-03"^^xsd:date ;
     edu:curationStatus "Approved" ;
     edu:journeyStage "After treatment / survivorship",
         "Before treatment",
         "During treatment" ;
     edu:resourceDateText "2024" ;
     edu:resourceRole "Direct Educational Resource" ;
-    edu:reviewedBy "INO" ;
-    edu:reviewedOn "2026-11-03"^^xsd:date ;
     icare:healthLiteracyResourceAddressesNeed icare:CareTeamCommunicationSupportNeed,
         icare:InformationApplicationSupportNeed,
         icare:InformationComprehensionSupportNeed,
@@ -381,13 +381,13 @@ edu:templateStatus a owl:AnnotationProperty .
     edu:accessConditions "Public" ;
     edu:applicabilityNotes "Particularly relevant to survivors treated as children, teenagers or young adults. Primarily concerns late effects and follow-up. Treatment-specific monitoring and exercise advice require individual clinical interpretation." ;
     edu:completionStatus "Complete" ;
+    edu:curatedBy "INO" ;
+    edu:curatedOn "2026-11-03"^^xsd:date ;
     edu:curationStatus "Approved" ;
     edu:journeyStage "After treatment / survivorship",
         "Before treatment",
         "During treatment" ;
     edu:resourceRole "Direct Educational Resource" ;
-    edu:reviewedBy "INO" ;
-    edu:reviewedOn "2026-11-03"^^xsd:date ;
     icare:healthLiteracyResourceAddressesNeed icare:CareTeamCommunicationSupportNeed,
         icare:InformationApplicationSupportNeed,
         icare:InformationComprehensionSupportNeed,
@@ -415,13 +415,13 @@ edu:templateStatus a owl:AnnotationProperty .
     edu:accessConditions "Public" ;
     edu:applicabilityNotes "Youth-focused collection including post-treatment mental health, coping techniques, professional support and family support. Annotations describe the collection’s advertised coverage; individual resources require separate review when selected for use." ;
     edu:completionStatus "Complete" ;
+    edu:curatedBy "INO" ;
+    edu:curatedOn "2026-11-03"^^xsd:date ;
     edu:curationStatus "Approved" ;
     edu:journeyStage "After treatment / survivorship",
         "Before treatment",
         "During treatment" ;
     edu:resourceRole "Direct Educational Resource" ;
-    edu:reviewedBy "INO" ;
-    edu:reviewedOn "2026-11-03"^^xsd:date ;
     icare:healthLiteracyResourceAddressesNeed icare:HealthcareNavigationSupportNeed,
         icare:InformationComprehensionSupportNeed,
         icare:SelfManagementSupportNeed,
@@ -449,11 +449,11 @@ edu:templateStatus a owl:AnnotationProperty .
     edu:accessConditions "Public" ;
     edu:applicabilityNotes "Youth-focused survivorship guidance. Includes UK-specific employment, education and support references whose applicability varies between pilots. Content can be viewed in 134 different languages." ;
     edu:completionStatus "Complete" ;
+    edu:curatedBy "INO" ;
+    edu:curatedOn "2026-11-03"^^xsd:date ;
     edu:curationStatus "Approved" ;
     edu:journeyStage "After treatment / survivorship" ;
     edu:resourceRole "Direct Educational Resource" ;
-    edu:reviewedBy "INO" ;
-    edu:reviewedOn "2026-11-03"^^xsd:date ;
     icare:healthLiteracyResourceAddressesNeed icare:InformationApplicationSupportNeed,
         icare:InformationComprehensionSupportNeed,
         icare:SelfManagementSupportNeed,
@@ -481,11 +481,11 @@ edu:templateStatus a owl:AnnotationProperty .
     edu:accessConditions "Public" ;
     edu:applicabilityNotes "Youth-focused survivorship guidance addressing relationship adjustment and communication. Includes discussing treatment-related fertility effects with a partner, rather than detailed fertility guidance." ;
     edu:completionStatus "Complete" ;
+    edu:curatedBy "INO" ;
+    edu:curatedOn "2026-11-03"^^xsd:date ;
     edu:curationStatus "Approved" ;
     edu:journeyStage "After treatment / survivorship" ;
     edu:resourceRole "Direct Educational Resource" ;
-    edu:reviewedBy "INO" ;
-    edu:reviewedOn "2026-11-03"^^xsd:date ;
     icare:healthLiteracyResourceAddressesNeed icare:InformationApplicationSupportNeed,
         icare:InformationComprehensionSupportNeed,
         icare:SocialSupportNeed ;
@@ -512,12 +512,12 @@ edu:templateStatus a owl:AnnotationProperty .
     edu:accessConditions "Restricted" ;
     edu:applicabilityNotes "Designed for people in their 20s, 30s and 40s during and after treatment, including people living with cancer long-term. Uses short sections, reduced text and imagery to accommodate fatigue and reading difficulties. Full-guide access requires name and email registration." ;
     edu:completionStatus "Complete" ;
+    edu:curatedBy "INO" ;
+    edu:curatedOn "2026-11-03"^^xsd:date ;
     edu:curationStatus "Approved" ;
     edu:journeyStage "After treatment / survivorship",
         "During treatment" ;
     edu:resourceRole "Direct Educational Resource" ;
-    edu:reviewedBy "INO" ;
-    edu:reviewedOn "2026-11-03"^^xsd:date ;
     icare:healthLiteracyResourceAddressesNeed icare:InformationApplicationSupportNeed,
         icare:InformationAppraisalSupportNeed,
         icare:InformationComprehensionSupportNeed,
@@ -545,14 +545,14 @@ edu:templateStatus a owl:AnnotationProperty .
     edu:accessConditions "Public" ;
     edu:applicabilityNotes "Primarily signposting rather than detailed educational guidance. Includes UK-specific services, rights and eligibility criteria. Young carers are a separate audience from young people diagnosed with cancer." ;
     edu:completionStatus "Complete" ;
+    edu:curatedBy "INO" ;
+    edu:curatedOn "2026-11-03"^^xsd:date ;
     edu:curationStatus "Approved" ;
     edu:journeyStage "After treatment / survivorship",
         "Before treatment",
         "During treatment" ;
     edu:resourceDateText "2026" ;
     edu:resourceRole "Direct Educational Resource" ;
-    edu:reviewedBy "INO" ;
-    edu:reviewedOn "2026-11-03"^^xsd:date ;
     icare:healthLiteracyResourceAddressesNeed icare:HealthcareNavigationSupportNeed,
         icare:InformationAccessSupportNeed,
         icare:SocialSupportNeed ;
@@ -578,12 +578,12 @@ edu:templateStatus a owl:AnnotationProperty .
     edu:accessConditions "Public" ;
     edu:applicabilityNotes "Draws substantially on breast-cancer and treatment experiences, rather than being a dedicated AYA or post-treatment guide. Review relevance of each intended section; distinguish everyday coping tips from treatment-specific symptom advice. Not every topic in the full guide applies to every survivor." ;
     edu:completionStatus "Complete" ;
+    edu:curatedBy "INO" ;
+    edu:curatedOn "2026-11-18"^^xsd:date ;
     edu:curationStatus "Approved" ;
     edu:journeyStage "After treatment / survivorship",
         "During treatment" ;
     edu:resourceRole "Direct Educational Resource" ;
-    edu:reviewedBy "INO" ;
-    edu:reviewedOn "2026-11-18"^^xsd:date ;
     icare:healthLiteracyResourceAddressesNeed icare:InformationApplicationSupportNeed,
         icare:InformationComprehensionSupportNeed,
         icare:SelfManagementSupportNeed,
@@ -615,12 +615,12 @@ edu:templateStatus a owl:AnnotationProperty .
     edu:accessConditions "Public" ;
     edu:applicabilityNotes "General oncology guide, not AYA-specific. Includes malnutrition and symptom-management advice for active treatment that should not be applied indiscriminately to well survivors. For post-treatment users, prioritise the relevant section and their current nutritional needs. Dietary supplements and individual dietary treatment require professional advice." ;
     edu:completionStatus "Complete" ;
+    edu:curatedBy "INO" ;
+    edu:curatedOn "2026-11-18"^^xsd:date ;
     edu:curationStatus "Approved" ;
     edu:journeyStage "After treatment / survivorship",
         "During treatment" ;
     edu:resourceRole "Direct Educational Resource" ;
-    edu:reviewedBy "INO" ;
-    edu:reviewedOn "2026-11-18"^^xsd:date ;
     icare:healthLiteracyResourceAddressesNeed icare:CareTeamCommunicationSupportNeed,
         icare:InformationApplicationSupportNeed,
         icare:InformationAppraisalSupportNeed,
@@ -652,12 +652,12 @@ edu:templateStatus a owl:AnnotationProperty .
     edu:accessConditions "Public" ;
     edu:applicabilityNotes "Broad adult survivorship guide; not specifically developed for AYA survivors. Because of its length, direct users to relevant sections (e.g., fertility, work reintegration, and emotional wellbeing)." ;
     edu:completionStatus "Complete" ;
+    edu:curatedBy "INO" ;
+    edu:curatedOn "2026-11-18"^^xsd:date ;
     edu:curationStatus "Approved" ;
     edu:journeyStage "After treatment / survivorship" ;
     edu:resourceDateText "2017" ;
     edu:resourceRole "Direct Educational Resource" ;
-    edu:reviewedBy "INO" ;
-    edu:reviewedOn "2026-11-18"^^xsd:date ;
     icare:healthLiteracyResourceAddressesNeed icare:HealthcareNavigationSupportNeed,
         icare:InformationApplicationSupportNeed,
         icare:InformationComprehensionSupportNeed,
@@ -694,12 +694,12 @@ edu:templateStatus a owl:AnnotationProperty .
     edu:accessConditions "Public" ;
     edu:applicabilityNotes "Broad adult survivorship guide; not specifically developed for AYA survivors. Because of its length, direct users to relevant sections (e.g., fertility, work reintegration, and emotional wellbeing)." ;
     edu:completionStatus "Complete" ;
+    edu:curatedBy "INO" ;
+    edu:curatedOn "2026-11-18"^^xsd:date ;
     edu:curationStatus "Approved" ;
     edu:journeyStage "After treatment / survivorship" ;
     edu:resourceDateText "2017" ;
     edu:resourceRole "Direct Educational Resource" ;
-    edu:reviewedBy "INO" ;
-    edu:reviewedOn "2026-11-18"^^xsd:date ;
     icare:healthLiteracyResourceAddressesNeed icare:HealthcareNavigationSupportNeed,
         icare:InformationApplicationSupportNeed,
         icare:InformationComprehensionSupportNeed,
@@ -736,12 +736,12 @@ edu:templateStatus a owl:AnnotationProperty .
     edu:accessConditions "Public" ;
     edu:applicabilityNotes "Broad adult survivorship guide; not specifically developed for AYA survivors. Because of its length, direct users to relevant sections (e.g., fertility, work reintegration, and emotional wellbeing)." ;
     edu:completionStatus "Complete" ;
+    edu:curatedBy "INO" ;
+    edu:curatedOn "2026-11-18"^^xsd:date ;
     edu:curationStatus "Approved" ;
     edu:journeyStage "After treatment / survivorship" ;
     edu:resourceDateText "2017" ;
     edu:resourceRole "Direct Educational Resource" ;
-    edu:reviewedBy "INO" ;
-    edu:reviewedOn "2026-11-18"^^xsd:date ;
     icare:healthLiteracyResourceAddressesNeed icare:HealthcareNavigationSupportNeed,
         icare:InformationApplicationSupportNeed,
         icare:InformationComprehensionSupportNeed,
@@ -771,6 +771,92 @@ edu:templateStatus a owl:AnnotationProperty .
     dcterms:source <https://dam.esmo.org/image/upload/PL-Poradnik-dla-Pacjentow-Przebycie-Choroby-Nowotworowej%E2%80%AF.pdf> ;
     dcterms:title "Przebycie choroby nowotworowej: Poradnik dla pacjentów ESMO-ECPC" .
 
+<http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0077d> a icare:EducationalResource,
+        icare:HealthLiteracyResource,
+        owl:NamedIndividual ;
+    rdfs:label "Survivorship: An ESMO-ECPC Guide for Patients" ;
+    edu:accessConditions "Public" ;
+    edu:applicabilityNotes "Broad adult survivorship guide. Direct participants to relevant sections. Clinical review should confirm the continuing applicability of recommendations in this 2017 edition, particularly lifestyle and treatment advice." ;
+    edu:completionStatus "Complete" ;
+    edu:curatedBy "INO" ;
+    edu:curatedOn "2026-11-23"^^xsd:date ;
+    edu:curationStatus "Approved" ;
+    edu:journeyStage "After treatment / survivorship" ;
+    edu:resourceDateText "2017" ;
+    edu:resourceRole "Direct Educational Resource" ;
+    icare:healthLiteracyResourceAddressesNeed icare:CareTeamCommunicationSupportNeed,
+        icare:HealthcareNavigationSupportNeed,
+        icare:InformationApplicationSupportNeed,
+        icare:InformationComprehensionSupportNeed,
+        icare:SelfManagementSupportNeed,
+        icare:SocialSupportNeed ;
+    icare:knowledgeResourceHasAudience icare:AYASurvivorAudience,
+        icare:CaregiverAudience,
+        icare:FamilyAudience ;
+    icare:knowledgeResourceHasComplexityLevel icare:StandardComplexity ;
+    icare:knowledgeResourceHasFormat icare:WrittenText ;
+    icare:knowledgeResourceHasPurpose icare:ExplainHealthTopic,
+        icare:PrepareForConsultation,
+        icare:SupportBehaviourChange,
+        icare:SupportCareNavigation,
+        icare:SupportSelfManagement ;
+    icare:knowledgeResourceHasTopic icare:CardiovascularLateEffects,
+        icare:FollowUpCare,
+        icare:MentalHealthAndEmotionalWellbeing,
+        icare:Nutrition,
+        icare:PhysicalActivity,
+        icare:Smoking ;
+    dcterms:description "Patient guide to life after initial cancer treatment, covering follow-up, cardiovascular and other late effects, physical activity, nutrition, smoking cessation, emotional wellbeing, relationships, support services and personal care records." ;
+    dcterms:identifier "MAYA-EDU-0077d" ;
+    dcterms:language "en"^^xsd:language ;
+    dcterms:publisher "European Society for Medical Oncology (ESMO); European Cancer Patient Coalition (ECPC); developed in collaboration with the International Psycho-Oncology Society (IPOS)" ;
+    dcterms:rights "Link / Signpost Only" ;
+    dcterms:source <https://dam.esmo.org/image/upload/v1671553955/For%20patients/Patient%20Guides/Survivorship/EN-ESMO-Patient-Guide-Survivorship.pdf> ;
+    dcterms:title "Survivorship: An ESMO-ECPC Guide for Patients" .
+
+<http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0077e> a icare:EducationalResource,
+        icare:HealthLiteracyResource,
+        owl:NamedIndividual ;
+    rdfs:label "La sobrevivencia: Una guía ESMO-ECPC para pacientes" ;
+    edu:accessConditions "Public" ;
+    edu:applicabilityNotes "Broad adult survivorship guide. Direct participants to relevant sections. Clinical review should confirm the continuing applicability of recommendations in this 2017 edition, particularly lifestyle and treatment advice." ;
+    edu:completionStatus "Complete" ;
+    edu:curatedBy "INO" ;
+    edu:curatedOn "2026-11-23"^^xsd:date ;
+    edu:curationStatus "Approved" ;
+    edu:journeyStage "After treatment / survivorship" ;
+    edu:resourceDateText "2017" ;
+    edu:resourceRole "Direct Educational Resource" ;
+    icare:healthLiteracyResourceAddressesNeed icare:CareTeamCommunicationSupportNeed,
+        icare:HealthcareNavigationSupportNeed,
+        icare:InformationApplicationSupportNeed,
+        icare:InformationComprehensionSupportNeed,
+        icare:SelfManagementSupportNeed,
+        icare:SocialSupportNeed ;
+    icare:knowledgeResourceHasAudience icare:AYASurvivorAudience,
+        icare:CaregiverAudience,
+        icare:FamilyAudience ;
+    icare:knowledgeResourceHasComplexityLevel icare:StandardComplexity ;
+    icare:knowledgeResourceHasFormat icare:WrittenText ;
+    icare:knowledgeResourceHasPurpose icare:ExplainHealthTopic,
+        icare:PrepareForConsultation,
+        icare:SupportBehaviourChange,
+        icare:SupportCareNavigation,
+        icare:SupportSelfManagement ;
+    icare:knowledgeResourceHasTopic icare:CardiovascularLateEffects,
+        icare:FollowUpCare,
+        icare:MentalHealthAndEmotionalWellbeing,
+        icare:Nutrition,
+        icare:PhysicalActivity,
+        icare:Smoking ;
+    dcterms:description "Patient guide to life after initial cancer treatment, covering follow-up, cardiovascular and other late effects, physical activity, nutrition, smoking cessation, emotional wellbeing, relationships, support services and personal care records." ;
+    dcterms:identifier "MAYA-EDU-0077e" ;
+    dcterms:language "es"^^xsd:language ;
+    dcterms:publisher "European Society for Medical Oncology (ESMO); European Cancer Patient Coalition (ECPC); developed in collaboration with the International Psycho-Oncology Society (IPOS)" ;
+    dcterms:rights "Link / Signpost Only" ;
+    dcterms:source <https://dam.esmo.org/image/upload/ESMO-Guia-para-Pacientes-Sobrevivencia.pdf> ;
+    dcterms:title "La sobrevivencia: Una guía ESMO-ECPC para pacientes" .
+
 <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0099> a icare:EducationalResource,
         icare:HealthLiteracyResource,
         owl:NamedIndividual ;
@@ -778,14 +864,14 @@ edu:templateStatus a owl:AnnotationProperty .
     edu:accessConditions "Public" ;
     edu:applicabilityNotes "General oncology article, not AYA-specific. Suitable as an introduction to sexual wellbeing and communication, rather than a fertility-treatment guide. The existing broad topics describe follow-up and emotional context. Confirm suitability for the participant’s age and clinical context." ;
     edu:completionStatus "Complete" ;
+    edu:curatedBy "INO" ;
+    edu:curatedOn "2026-11-18"^^xsd:date ;
     edu:curationStatus "Approved" ;
     edu:journeyStage "After treatment / survivorship",
         "Before treatment",
         "During treatment" ;
     edu:resourceDateText "2025" ;
     edu:resourceRole "Direct Educational Resource" ;
-    edu:reviewedBy "INO" ;
-    edu:reviewedOn "2026-11-18"^^xsd:date ;
     icare:healthLiteracyResourceAddressesNeed icare:CareTeamCommunicationSupportNeed,
         icare:InformationApplicationSupportNeed,
         icare:InformationComprehensionSupportNeed ;
@@ -805,6 +891,80 @@ edu:templateStatus a owl:AnnotationProperty .
     dcterms:source <https://onkologia.pacjent.gov.pl/pl/pacjent/codziennosc-w-trakcie-leczenia/jak-dbac-o-seksualnosc-w-obliczu-raka> ;
     dcterms:title "Jak dbać o seksualność w obliczu raka?" .
 
+<http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0108a> a icare:EducationalResource,
+        icare:HealthLiteracyResource,
+        owl:NamedIndividual ;
+    rdfs:label "Onkologia w Internecie: jak rozpoznać rzetelne źródła informacji?" ;
+    edu:accessConditions "Public" ;
+    edu:applicabilityNotes "Relevant throughout the cancer journey, including survivorship. Covers information credibility rather than comprehensive privacy or data-protection guidance. General patient information rather than an AYA-specific resource." ;
+    edu:completionStatus "Complete" ;
+    edu:curatedBy "INO" ;
+    edu:curatedOn "2026-11-23"^^xsd:date ;
+    edu:curationStatus "Approved" ;
+    edu:journeyStage "After treatment / survivorship",
+        "Before treatment",
+        "During treatment" ;
+    edu:resourceDateText "2025" ;
+    edu:resourceRole "Direct Educational Resource" ;
+    icare:healthLiteracyResourceAddressesNeed icare:InformationAccessSupportNeed,
+        icare:InformationAppraisalSupportNeed ;
+    icare:knowledgeResourceHasAudience icare:AYASurvivorAudience,
+        icare:CaregiverAudience,
+        icare:FamilyAudience ;
+    icare:knowledgeResourceHasComplexityLevel icare:StandardComplexity ;
+    icare:knowledgeResourceHasFormat icare:WrittenText ;
+    icare:knowledgeResourceHasPurpose icare:ExplainHealthTopic ;
+    icare:knowledgeResourceHasTopic icare:DigitalHealthPrivacyAndTrust ;
+    dcterms:description "Practical advice on finding and evaluating online cancer information, including checking source authority, publication dates, author credentials, supporting evidence and sensational claims. Identifies types of information sources patients and families can consult." ;
+    dcterms:identifier "MAYA-EDU-0108a" ;
+    dcterms:language "pl"^^xsd:language ;
+    dcterms:publisher "Alivia Onkofundacja; Jarosław Gośliński" ;
+    dcterms:rights "Link / Signpost Only" ;
+    dcterms:source <https://alivia.org.pl/wiedza-o-raku/onkologia-w-internecie-jak-rozpoznac-rzetelne-zrodla-informacji/> ;
+    dcterms:title "Onkologia w Internecie: jak rozpoznać rzetelne źródła informacji?" .
+
+<http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0167> a icare:EducationalResource,
+        icare:HealthLiteracyResource,
+        owl:NamedIndividual ;
+    rdfs:label "Facing Forward: Life After Cancer Treatment" ;
+    edu:accessConditions "Public" ;
+    edu:applicabilityNotes "Broad adult survivorship guide. Check suitability for younger AYAs and current recommendations. US-specific insurance, service and contact information may not apply locally. Direct participants to relevant sections." ;
+    edu:completionStatus "Complete" ;
+    edu:curatedBy "INO" ;
+    edu:curatedOn "2026-11-23"^^xsd:date ;
+    edu:curationStatus "Approved" ;
+    edu:journeyStage "After treatment / survivorship" ;
+    edu:resourceDateText "2018" ;
+    edu:resourceRole "Direct Educational Resource" ;
+    icare:healthLiteracyResourceAddressesNeed icare:CareTeamCommunicationSupportNeed,
+        icare:HealthcareNavigationSupportNeed,
+        icare:InformationApplicationSupportNeed,
+        icare:InformationComprehensionSupportNeed,
+        icare:SelfManagementSupportNeed,
+        icare:SocialSupportNeed ;
+    icare:knowledgeResourceHasAudience icare:AYASurvivorAudience,
+        icare:CaregiverAudience,
+        icare:FamilyAudience ;
+    icare:knowledgeResourceHasComplexityLevel icare:StandardComplexity ;
+    icare:knowledgeResourceHasFormat icare:WrittenText ;
+    icare:knowledgeResourceHasPurpose icare:ExplainHealthTopic,
+        icare:PrepareForConsultation,
+        icare:SupportBehaviourChange,
+        icare:SupportCareNavigation,
+        icare:SupportSelfManagement ;
+    icare:knowledgeResourceHasTopic icare:FollowUpCare,
+        icare:MentalHealthAndEmotionalWellbeing,
+        icare:Nutrition,
+        icare:PhysicalActivity,
+        icare:SelfMonitoring ;
+    dcterms:description "Guide to life after cancer treatment, covering follow-up care, healthy living, persistent symptoms, emotional adjustment, relationships and work. Includes consultation guidance and a pain diary for recording symptoms and responses to treatment." ;
+    dcterms:identifier "MAYA-EDU-0167" ;
+    dcterms:language "en"^^xsd:language ;
+    dcterms:publisher "National Cancer Institute (NCI), National Institutes of Health" ;
+    dcterms:rights "Link / Signpost Only" ;
+    dcterms:source <https://www.cancer.gov/publications/patient-education/facing-forward> ;
+    dcterms:title "Facing Forward: Life After Cancer Treatment" .
+
 <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0167a> a icare:EducationalResource,
         icare:HealthLiteracyResource,
         owl:NamedIndividual ;
@@ -812,12 +972,12 @@ edu:templateStatus a owl:AnnotationProperty .
     edu:accessConditions "Public" ;
     edu:applicabilityNotes "Broad survivorship guide rather than an AYA-specific publication. Signpost relevant sections of the 52-page document. Check current clinical and local service applicability before approval. Translation permission stated by this publisher does not establish permission for MAYA to reproduce, adapt or ingest the Polish text." ;
     edu:completionStatus "Complete" ;
+    edu:curatedBy "INO" ;
+    edu:curatedOn "2026-11-18"^^xsd:date ;
     edu:curationStatus "Approved" ;
     edu:journeyStage "After treatment / survivorship" ;
     edu:resourceDateText "2021" ;
     edu:resourceRole "Direct Educational Resource" ;
-    edu:reviewedBy "INO" ;
-    edu:reviewedOn "2026-11-18"^^xsd:date ;
     icare:healthLiteracyResourceAddressesNeed icare:CareTeamCommunicationSupportNeed,
         icare:HealthcareNavigationSupportNeed,
         icare:InformationApplicationSupportNeed,
@@ -836,7 +996,8 @@ edu:templateStatus a owl:AnnotationProperty .
     icare:knowledgeResourceHasTopic icare:FollowUpCare,
         icare:MentalHealthAndEmotionalWellbeing,
         icare:Nutrition,
-        icare:PhysicalActivity ;
+        icare:PhysicalActivity,
+        icare:SelfMonitoring ;
     dcterms:description "Post-treatment guide addressing follow-up care, persistent symptoms, body image and intimacy, emotional adjustment, family and work relationships, support and relaxation." ;
     dcterms:identifier "MAYA-EDU-0167a" ;
     dcterms:language "pl"^^xsd:language ;
@@ -852,12 +1013,12 @@ edu:templateStatus a owl:AnnotationProperty .
     edu:accessConditions "Public" ;
     edu:applicabilityNotes "Written for adult cancer survivors and their families/caregivers rather than specifically for AYA survivors. Assess suitability for adult AYAs (18-39) and use with younger adolescents (15-17) separately. Personal treatment, exercise, medication, and surveillance decisions remain with the clinical care team." ;
     edu:completionStatus "Complete" ;
+    edu:curatedBy "INO" ;
+    edu:curatedOn "2026-11-18"^^xsd:date ;
     edu:curationStatus "Approved" ;
     edu:journeyStage "After treatment / survivorship" ;
     edu:resourceDateText "2023" ;
     edu:resourceRole "Direct Educational Resource" ;
-    edu:reviewedBy "INO" ;
-    edu:reviewedOn "2026-11-18"^^xsd:date ;
     icare:healthLiteracyResourceAddressesNeed icare:InformationApplicationSupportNeed,
         icare:InformationComprehensionSupportNeed,
         icare:SelfManagementSupportNeed,
@@ -870,10 +1031,12 @@ edu:templateStatus a owl:AnnotationProperty .
     icare:knowledgeResourceHasPurpose icare:ExplainHealthTopic,
         icare:SupportBehaviourChange,
         icare:SupportSelfManagement ;
-    icare:knowledgeResourceHasTopic icare:FollowUpCare,
+    icare:knowledgeResourceHasTopic icare:CardiovascularLateEffects,
+        icare:FollowUpCare,
         icare:MentalHealthAndEmotionalWellbeing,
         icare:Nutrition,
         icare:PhysicalActivity,
+        icare:SelfMonitoring,
         icare:Smoking ;
     dcterms:description "Guide for people who have completed cancer treatment, addressing recovery, ongoing symptoms, emotional and social wellbeing, healthy living and continuing health surveillance." ;
     dcterms:identifier "MAYA-EDU-0170" ;
@@ -890,14 +1053,14 @@ edu:templateStatus a owl:AnnotationProperty .
     edu:accessConditions "Public" ;
     edu:applicabilityNotes "Relevant across the cancer journey and to carers. Builds source-appraisal and privacy awareness. Some information about services or legal context is specific to Germany." ;
     edu:completionStatus "Complete" ;
+    edu:curatedBy "INO" ;
+    edu:curatedOn "2026-11-18"^^xsd:date ;
     edu:curationStatus "Approved" ;
     edu:journeyStage "After treatment / survivorship",
         "Before treatment",
         "During treatment" ;
     edu:resourceDateText "2026" ;
     edu:resourceRole "Direct Educational Resource" ;
-    edu:reviewedBy "INO" ;
-    edu:reviewedOn "2026-11-18"^^xsd:date ;
     icare:healthLiteracyResourceAddressesNeed icare:InformationAccessSupportNeed,
         icare:InformationApplicationSupportNeed,
         icare:InformationAppraisalSupportNeed ;
@@ -925,14 +1088,14 @@ edu:templateStatus a owl:AnnotationProperty .
     edu:accessConditions "Public" ;
     edu:applicabilityNotes "General online health-information appraisal with cancer context; applicable before, during and after treatment." ;
     edu:completionStatus "Complete" ;
+    edu:curatedBy "INO" ;
+    edu:curatedOn "2026-11-18"^^xsd:date ;
     edu:curationStatus "Approved" ;
     edu:journeyStage "After treatment / survivorship",
         "Before treatment",
         "During treatment" ;
     edu:resourceDateText "2023" ;
     edu:resourceRole "Direct Educational Resource" ;
-    edu:reviewedBy "INO" ;
-    edu:reviewedOn "2026-11-18"^^xsd:date ;
     icare:healthLiteracyResourceAddressesNeed icare:InformationAccessSupportNeed,
         icare:InformationApplicationSupportNeed,
         icare:InformationAppraisalSupportNeed ;
@@ -960,14 +1123,14 @@ edu:templateStatus a owl:AnnotationProperty .
     edu:accessConditions "Public" ;
     edu:applicabilityNotes "Relevant to participants who smoke and want cessation support, including after cancer treatment. Not specifically designed for AYA survivors. Medication, prescription-app and treatment choices require appropriate professional advice; check local service applicability." ;
     edu:completionStatus "Complete" ;
+    edu:curatedBy "INO" ;
+    edu:curatedOn "2026-11-18"^^xsd:date ;
     edu:curationStatus "Approved" ;
     edu:journeyStage "After treatment / survivorship",
         "Before treatment",
         "During treatment" ;
     edu:resourceDateText "2026" ;
     edu:resourceRole "Direct Educational Resource" ;
-    edu:reviewedBy "INO" ;
-    edu:reviewedOn "2026-11-18"^^xsd:date ;
     icare:healthLiteracyResourceAddressesNeed icare:InformationApplicationSupportNeed,
         icare:InformationAppraisalSupportNeed,
         icare:InformationComprehensionSupportNeed,
@@ -995,12 +1158,12 @@ edu:templateStatus a owl:AnnotationProperty .
     edu:accessConditions "Public" ;
     edu:applicabilityNotes "Particularly relevant to survivors treated in childhood or adolescence and their families. An introductory overview with onward links; approval of this page does not extend to every linked resource." ;
     edu:completionStatus "Complete" ;
+    edu:curatedBy "INO" ;
+    edu:curatedOn "2026-11-18"^^xsd:date ;
     edu:curationStatus "Approved" ;
     edu:journeyStage "After treatment / survivorship" ;
     edu:resourceDateText "2025" ;
     edu:resourceRole "Direct Educational Resource" ;
-    edu:reviewedBy "INO" ;
-    edu:reviewedOn "2026-11-18"^^xsd:date ;
     icare:healthLiteracyResourceAddressesNeed icare:HealthcareNavigationSupportNeed,
         icare:InformationComprehensionSupportNeed ;
     icare:knowledgeResourceHasAudience icare:AYASurvivorAudience,
@@ -1026,12 +1189,12 @@ edu:templateStatus a owl:AnnotationProperty .
     edu:accessConditions "Public" ;
     edu:applicabilityNotes "Directly developed for adolescents (from age 14–16) and young adults (around age 18) transitioning from paediatric to adult oncology care. Applies specifically to AYA survivors of childhood or adolescent cancers rather than those diagnosed in adult care settings. Clinic listings and care pathways are specific to Germany." ;
     edu:completionStatus "Complete" ;
+    edu:curatedBy "INO" ;
+    edu:curatedOn "2026-11-18"^^xsd:date ;
     edu:curationStatus "Approved" ;
     edu:journeyStage "After treatment / survivorship" ;
     edu:resourceDateText "2025" ;
     edu:resourceRole "Direct Educational Resource" ;
-    edu:reviewedBy "INO" ;
-    edu:reviewedOn "2026-11-18"^^xsd:date ;
     icare:healthLiteracyResourceAddressesNeed icare:CareTeamCommunicationSupportNeed,
         icare:HealthcareNavigationSupportNeed,
         icare:InformationComprehensionSupportNeed,
@@ -1061,12 +1224,12 @@ edu:templateStatus a owl:AnnotationProperty .
     edu:accessConditions "Public" ;
     edu:applicabilityNotes "Intended for survivors of childhood, adolescent and young-adult cancer. Lifestyle guidance is general and may require adaptation to treatment-related limitations and the individual care plan." ;
     edu:completionStatus "Complete" ;
+    edu:curatedBy "INO" ;
+    edu:curatedOn "2026-11-18"^^xsd:date ;
     edu:curationStatus "Approved" ;
     edu:journeyStage "After treatment / survivorship" ;
     edu:resourceDateText "2024" ;
     edu:resourceRole "Direct Educational Resource" ;
-    edu:reviewedBy "INO" ;
-    edu:reviewedOn "2026-11-18"^^xsd:date ;
     icare:healthLiteracyResourceAddressesNeed icare:InformationApplicationSupportNeed,
         icare:InformationComprehensionSupportNeed,
         icare:SelfManagementSupportNeed ;
@@ -1095,12 +1258,12 @@ edu:templateStatus a owl:AnnotationProperty .
     edu:accessConditions "Public" ;
     edu:applicabilityNotes "Particularly relevant to longer-term survivors treated at younger ages. Educational support rather than diagnosis or psychological treatment. Review local professional-support and urgent-help signposting before delivery; external contacts linked by the page are not validated by this metadata proposal." ;
     edu:completionStatus "Complete" ;
+    edu:curatedBy "INO" ;
+    edu:curatedOn "2026-11-18"^^xsd:date ;
     edu:curationStatus "Approved" ;
     edu:journeyStage "After treatment / survivorship" ;
     edu:resourceDateText "2025" ;
     edu:resourceRole "Direct Educational Resource" ;
-    edu:reviewedBy "INO" ;
-    edu:reviewedOn "2026-11-18"^^xsd:date ;
     icare:healthLiteracyResourceAddressesNeed icare:HealthcareNavigationSupportNeed,
         icare:InformationApplicationSupportNeed,
         icare:InformationComprehensionSupportNeed,
@@ -1120,4 +1283,211 @@ edu:templateStatus a owl:AnnotationProperty .
     dcterms:rights "Link / Signpost Only" ;
     dcterms:source <https://www.pancare.eu/brochures-divulgative-plain/problemi-di-salute-mentale/> ;
     dcterms:title "Problemi di salute mentale" .
+
+<http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0178> a icare:EducationalResource,
+        icare:HealthLiteracyResource,
+        owl:NamedIndividual ;
+    rdfs:label "How to Find Cancer Resources You Can Trust" ;
+    edu:accessConditions "Public" ;
+    edu:applicabilityNotes "Applicable throughout the cancer journey. Some website-domain examples and linked organisations reflect the US context. Review linked resources separately before recommending them." ;
+    edu:completionStatus "Complete" ;
+    edu:curatedBy "INO" ;
+    edu:curatedOn "2026-11-23"^^xsd:date ;
+    edu:curationStatus "Approved" ;
+    edu:journeyStage "After treatment / survivorship",
+        "Before treatment",
+        "During treatment" ;
+    edu:resourceDateText "2025" ;
+    edu:resourceRole "Direct Educational Resource" ;
+    icare:healthLiteracyResourceAddressesNeed icare:InformationAccessSupportNeed,
+        icare:InformationAppraisalSupportNeed ;
+    icare:knowledgeResourceHasAudience icare:AYASurvivorAudience,
+        icare:CaregiverAudience,
+        icare:FamilyAudience ;
+    icare:knowledgeResourceHasComplexityLevel icare:StandardComplexity ;
+    icare:knowledgeResourceHasFormat icare:WrittenText ;
+    icare:knowledgeResourceHasPurpose icare:ExplainHealthTopic ;
+    icare:knowledgeResourceHasTopic icare:DigitalHealthPrivacyAndTrust ;
+    dcterms:description "Practical guidance for finding and evaluating cancer information, checking authorship, evidence, sponsorship and currency, protecting personal information, and using websites, social media and email safely." ;
+    dcterms:identifier "MAYA-EDU-0178" ;
+    dcterms:language "en"^^xsd:language ;
+    dcterms:publisher "National Cancer Institute (NCI), National Institutes of Health" ;
+    dcterms:rights "Link / Signpost Only" ;
+    dcterms:source <https://www.cancer.gov/about-cancer/managing-care/using-trusted-resources> ;
+    dcterms:title "How to Find Cancer Resources You Can Trust" .
+
+<http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0179> a icare:EducationalResource,
+        icare:HealthLiteracyResource,
+        owl:NamedIndividual ;
+    rdfs:label "Cómo encontrar recursos confiables sobre el cáncer" ;
+    edu:accessConditions "Public" ;
+    edu:applicabilityNotes "Applicable throughout the cancer journey. Some linked resources are in English, and website-domain examples reflect the US context. Assess onward links separately." ;
+    edu:completionStatus "Complete" ;
+    edu:curatedBy "INO" ;
+    edu:curatedOn "2026-11-23"^^xsd:date ;
+    edu:curationStatus "Approved" ;
+    edu:journeyStage "After treatment / survivorship",
+        "Before treatment",
+        "During treatment" ;
+    edu:resourceDateText "2024" ;
+    edu:resourceRole "Direct Educational Resource" ;
+    icare:healthLiteracyResourceAddressesNeed icare:InformationAccessSupportNeed,
+        icare:InformationAppraisalSupportNeed ;
+    icare:knowledgeResourceHasAudience icare:AYASurvivorAudience,
+        icare:CaregiverAudience,
+        icare:FamilyAudience ;
+    icare:knowledgeResourceHasComplexityLevel icare:StandardComplexity ;
+    icare:knowledgeResourceHasFormat icare:WrittenText ;
+    icare:knowledgeResourceHasPurpose icare:ExplainHealthTopic ;
+    icare:knowledgeResourceHasTopic icare:DigitalHealthPrivacyAndTrust ;
+    dcterms:description "Guidance for finding trustworthy cancer information and assessing authorship, evidence, commercial interests and currency. Includes personal-data precautions and advice on using social media, applications and email safely." ;
+    dcterms:identifier "MAYA-EDU-0179" ;
+    dcterms:language "es"^^xsd:language ;
+    dcterms:publisher "Instituto Nacional del Cáncer (NCI), National Institutes of Health" ;
+    dcterms:rights "Link / Signpost Only" ;
+    dcterms:source <https://www.cancer.gov/espanol/cancer/manejo-del-cancer/encontrar-recursos-confiables> ;
+    dcterms:title "Cómo encontrar recursos confiables sobre el cáncer" .
+
+<http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0180> a icare:EducationalResource,
+        icare:HealthLiteracyResource,
+        owl:NamedIndividual ;
+    rdfs:label "Fatigue bei Krebs: Was tun bei Müdigkeit und Erschöpfung?" ;
+    edu:accessConditions "Public" ;
+    edu:applicabilityNotes "Relevant during and after treatment. General cancer information rather than AYA-specific guidance. German service and employment information may require local interpretation." ;
+    edu:completionStatus "Complete" ;
+    edu:curatedBy "INO" ;
+    edu:curatedOn "2026-11-23"^^xsd:date ;
+    edu:curationStatus "Approved" ;
+    edu:journeyStage "After treatment / survivorship",
+        "During treatment" ;
+    edu:resourceDateText "2026" ;
+    edu:resourceRole "Direct Educational Resource" ;
+    icare:healthLiteracyResourceAddressesNeed icare:CareTeamCommunicationSupportNeed,
+        icare:InformationApplicationSupportNeed,
+        icare:InformationComprehensionSupportNeed,
+        icare:SelfManagementSupportNeed,
+        icare:SocialSupportNeed ;
+    icare:knowledgeResourceHasAudience icare:AYASurvivorAudience,
+        icare:CaregiverAudience,
+        icare:FamilyAudience ;
+    icare:knowledgeResourceHasComplexityLevel icare:StandardComplexity ;
+    icare:knowledgeResourceHasFormat icare:WrittenText ;
+    icare:knowledgeResourceHasPurpose icare:ExplainHealthTopic,
+        icare:PrepareForConsultation,
+        icare:SupportSelfManagement ;
+    icare:knowledgeResourceHasTopic icare:FollowUpCare,
+        icare:MentalHealthAndEmotionalWellbeing,
+        icare:PhysicalActivity,
+        icare:SelfMonitoring ;
+    dcterms:description "Explains cancer-related fatigue, assessment and management, including physical activity, psychosocial support and pacing. Describes a fatigue diary for recording activity, timing and energy demands and discussing observations with healthcare professionals." ;
+    dcterms:identifier "MAYA-EDU-0180" ;
+    dcterms:language "de"^^xsd:language ;
+    dcterms:publisher "Krebsinformationsdienst, Deutsches Krebsforschungszentrum (DKFZ); Teresa Glauner" ;
+    dcterms:rights "Link / Signpost Only" ;
+    dcterms:source <https://www.krebsinformationsdienst.de/nebenwirkungen-bei-krebs/fatigue> ;
+    dcterms:title "Fatigue bei Krebs: Was tun bei Müdigkeit und Erschöpfung?" .
+
+<http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0181> a icare:EducationalResource,
+        icare:HealthLiteracyResource,
+        owl:NamedIndividual ;
+    rdfs:label "Come affrontare i sintomi più comuni della malattia e gli effetti collaterali delle terapie" ;
+    edu:accessConditions "Public" ;
+    edu:applicabilityNotes "Primarily treatment-related information, with relevant material on persistent symptoms. For survivorship, signpost applicable sections rather than assuming all treatment advice applies. Broad cancer audience." ;
+    edu:completionStatus "Complete" ;
+    edu:curatedBy "INO" ;
+    edu:curatedOn "2026-11-23"^^xsd:date ;
+    edu:curationStatus "Approved" ;
+    edu:journeyStage "After treatment / survivorship",
+        "During treatment" ;
+    edu:resourceDateText "2023" ;
+    edu:resourceRole "Direct Educational Resource" ;
+    icare:healthLiteracyResourceAddressesNeed icare:CareTeamCommunicationSupportNeed,
+        icare:InformationApplicationSupportNeed,
+        icare:InformationComprehensionSupportNeed,
+        icare:SelfManagementSupportNeed ;
+    icare:knowledgeResourceHasAudience icare:AYASurvivorAudience,
+        icare:CaregiverAudience,
+        icare:FamilyAudience ;
+    icare:knowledgeResourceHasComplexityLevel icare:StandardComplexity ;
+    icare:knowledgeResourceHasFormat icare:WrittenText ;
+    icare:knowledgeResourceHasPurpose icare:ExplainHealthTopic,
+        icare:PrepareForConsultation,
+        icare:SupportSelfManagement ;
+    icare:knowledgeResourceHasTopic icare:FollowUpCare,
+        icare:Nutrition,
+        icare:SelfMonitoring ;
+    dcterms:description "Explains common cancer symptoms and treatment effects, including fatigue, eating difficulties, neuropathy, sleep problems and pain. Includes sleep-diary guidance to support discussion of sleep difficulties with a clinician." ;
+    dcterms:identifier "MAYA-EDU-0181" ;
+    dcterms:language "it"^^xsd:language ;
+    dcterms:publisher "Antonino Michienzi / Fondazione AIRC per la Ricerca sul Cancro" ;
+    dcterms:rights "Link / Signpost Only" ;
+    dcterms:source <https://www.airc.it/cancro/affronta-la-malattia/la-fase-delle-terapie/come-affrontare-i-sintomi-piu-comuni-della-malattia-e-gli-effetti-collaterali-delle-terapie> ;
+    dcterms:title "Come affrontare i sintomi più comuni della malattia e gli effetti collaterali delle terapie" .
+
+<http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0182> a icare:EducationalResource,
+        icare:HealthLiteracyResource,
+        owl:NamedIndividual ;
+    rdfs:label "Campanha DGS de 1 de abril - \"Mito ou verdade: o que prefere partilhar?\"" ;
+    edu:accessConditions "Public" ;
+    edu:applicabilityNotes "General health-information appraisal guidance applicable to online searches during survivorship. Not cancer-specific and does not provide comprehensive privacy guidance. Social-media reporting instructions may change." ;
+    edu:completionStatus "Complete" ;
+    edu:curatedBy "INO" ;
+    edu:curatedOn "2026-11-23"^^xsd:date ;
+    edu:curationStatus "Approved" ;
+    edu:journeyStage "After treatment / survivorship",
+        "Before treatment",
+        "During treatment" ;
+    edu:resourceRole "Direct Educational Resource" ;
+    icare:healthLiteracyResourceAddressesNeed icare:InformationAppraisalSupportNeed ;
+    icare:knowledgeResourceHasAudience icare:AYASurvivorAudience,
+        icare:CaregiverAudience,
+        icare:FamilyAudience ;
+    icare:knowledgeResourceHasComplexityLevel icare:FoundationalComplexity ;
+    icare:knowledgeResourceHasFormat icare:WrittenText ;
+    icare:knowledgeResourceHasPurpose icare:ExplainHealthTopic ;
+    icare:knowledgeResourceHasTopic icare:DigitalHealthPrivacyAndTrust ;
+    dcterms:description "Brief guidance on recognising health misinformation by checking who produced a claim, what its content and evidence show, and when it was published. Encourages verification before sharing health information." ;
+    dcterms:identifier "MAYA-EDU-0182" ;
+    dcterms:language "pt"^^xsd:language ;
+    dcterms:publisher "Direção-Geral da Saúde (DGS)" ;
+    dcterms:rights "Link / Signpost Only" ;
+    dcterms:source <https://www.dgs.pt/em-destaque/campanha-dgs-de-1-de-abril-mito-ou-verdade-o-que-prefere-partilhar.aspx> ;
+    dcterms:title "Campanha DGS de 1 de abril - \"Mito ou verdade: o que prefere partilhar?\"" .
+
+<http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0183> a icare:EducationalResource,
+        icare:HealthLiteracyResource,
+        owl:NamedIndividual ;
+    rdfs:label "Giving up smoking" ;
+    edu:accessConditions "Public" ;
+    edu:applicabilityNotes "General cancer information, including survivorship. Service links are UK-specific; participants elsewhere require local services. Recheck when the provider publishes its update." ;
+    edu:completionStatus "Complete" ;
+    edu:curatedBy "INO" ;
+    edu:curatedOn "2026-11-23"^^xsd:date ;
+    edu:curationStatus "Approved" ;
+    edu:journeyStage "After treatment / survivorship",
+        "During treatment" ;
+    edu:resourceDateText "2022" ;
+    edu:resourceRole "Direct Educational Resource" ;
+    icare:healthLiteracyResourceAddressesNeed icare:HealthcareNavigationSupportNeed,
+        icare:InformationApplicationSupportNeed,
+        icare:InformationComprehensionSupportNeed,
+        icare:SelfManagementSupportNeed ;
+    icare:knowledgeResourceHasAudience icare:AYASurvivorAudience,
+        icare:CaregiverAudience,
+        icare:FamilyAudience ;
+    icare:knowledgeResourceHasComplexityLevel icare:StandardComplexity ;
+    icare:knowledgeResourceHasFormat icare:WrittenText ;
+    icare:knowledgeResourceHasPurpose icare:ExplainHealthTopic,
+        icare:SupportBehaviourChange,
+        icare:SupportCareNavigation,
+        icare:SupportSelfManagement ;
+    icare:knowledgeResourceHasTopic icare:CardiovascularLateEffects,
+        icare:Smoking ;
+    dcterms:description "Explains the benefits of stopping smoking during and after cancer treatment, including reducing heart and lung risks. Describes preparing to quit, seeking professional support and accessing smoking-cessation services." ;
+    dcterms:identifier "MAYA-EDU-0183" ;
+    dcterms:language "en"^^xsd:language ;
+    dcterms:publisher "Macmillan Cancer Support, Cancer Information Development team" ;
+    dcterms:rights "Link / Signpost Only" ;
+    dcterms:source <https://www.macmillan.org.uk/cancer-information-and-support/treatment/coping-with-treatment/giving-up-smoking> ;
+    dcterms:title "Giving up smoking" .
 

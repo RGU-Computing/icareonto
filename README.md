@@ -7,7 +7,7 @@ This repository contains the shared ontology and four tools supporting knowledge
 | Ontology Serialiser         | Build the modular OWL ontology from the release source snapshots                                                     | [serialisation](serialisation/README.md)    |
 | KG Instantiator             | Create and refresh pilot/participant knowledge graphs, including grouped clinical records; export Turtle and JSON-LD | [instantiation](instantiation/README.md)    |
 | Pilot Mapper                | Rank ontology concepts against pilot knowledge needs and record reviewed mapping decisions                           | [pilot-mapping](pilot-mapping/INTERFACE.md) |
-| Education Resource Selector | Publish reviewed resource metadata and select candidate educational signposts                                        | [education](education/README.md)            |
+| Education Resource Selector | Publish curated resource metadata and select candidate educational signposts                                         | [education](education/README.md)            |
 
 ## Install and inspect
 
@@ -35,7 +35,7 @@ python education/scripts/education_resources.py select --output education/data/c
 
 The pilot must exist before its participants. Instantiation inputs are current-record snapshots; retain earlier records when adding information. See [the section guide](instantiation/SECTIONS_GUIDE.md).
 
-The educational catalogue contains metadata and links to reviewed resources, not copied provider content. Rebuild a local catalogue from the supplied workbook using `python education/scripts/education_resources.py build`; local results go under `education/generated/`. Use `--output education/generated` when selecting from that local build.
+The educational catalogue contains metadata and links to 41 curated and annotated resources in six languages, not copied provider content. Rebuild a local catalogue from `sources/MAYA_consolidated_educational_resources.xlsx` using `python education/scripts/education_resources.py build`; local results go under `education/generated/`. Use `--output education/generated` when selecting from that local build.
 
 The Pilot Mapper's saved-ranking checks run without model weights. Live semantic ranking additionally needs the encoder dependencies in `pilot-mapping/requirements.txt` and the pinned local model described in its guide. Downloaded weights and embedding caches are not distributed here.
 

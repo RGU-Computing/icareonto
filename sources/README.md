@@ -9,4 +9,10 @@ Original specifications, competency-question records and curation annotations ar
 | `icareonto_review_workbook_v221126.xlsx`                    | Ontology Serialiser and source reconciliation                      |
 | `icareonto_alignment_mapping_workbook_v301026_4.xlsx`       | Approved semantic alignment generation                             |
 | `icareonto_final_consolidated_competency_questions_v5.xlsx` | Ontology term coverage and canonical CQ register                   |
-| `MAYA_consolidated_educational_resources_v20261101.xlsx`    | Educational catalogue publication from the Release resources sheet |
+| `MAYA_consolidated_educational_resources.xlsx`             | Educational catalogue publication from the Release resources sheet |
+
+The educational workbook uses a stable filename as curation continues. Its
+SHA-256 hash, Git history and catalogue release identifier identify the exact
+input snapshot. The public workbook contains only the curated, annotated,
+approved and complete release entries and their field guide; the full discovery
+inventory is not a runtime dependency.
