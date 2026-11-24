@@ -1,0 +1,44 @@
+{
+  "run_date": "2026-11-24",
+  "status": "PASS",
+  "scope": "Local publication implementation and Apache redirects; GitHub Pages and the production w3id service have not been deployed.",
+  "ontology_version": "1.0.0",
+  "catalogue_resources": 41,
+  "publication_test_cases": 16,
+  "github_actions_lint": {
+    "tool": "actionlint",
+    "version": "1.7.12",
+    "result": "PASS"
+  },
+  "apache_redirect_cases": 1242,
+  "resolved_import_references": 238,
+  "future_path_cases": 3,
+  "git_publication_cycles": {
+    "first_branch_creation": "PASS",
+    "existing_branch_update": "PASS",
+    "earlier_release_bytes_preserved": "PASS"
+  },
+  "complete_ontology": {
+    "imports_closure_size": 1,
+    "signature": {
+      "classes": 283,
+      "object_properties": 284,
+      "data_properties": 137,
+      "individuals": 366
+    },
+    "owl2_dl_profile": {
+      "in_profile": true,
+      "violations": []
+    },
+    "reasoner": {
+      "datatype_mode": "strict",
+      "consistent": true,
+      "unsatisfiable_named_classes": []
+    }
+  },
+  "reproduce": [
+    "python -m unittest discover -s scripts/tests -v",
+    "python scripts/build_publication.py --output build/site"
+  ],
+  "post_deployment_check": "python scripts/check_publication_site.py"
+}

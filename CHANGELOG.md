@@ -1,5 +1,16 @@
 ## [Unreleased]
 
+### Added
+
+- Automated GitHub Pages publication of current ontology documents and educational
+  metadata, with preserved, integrity-checked release snapshots on `gh-pages`.
+- Complete Turtle and RDF/XML ontology exports for term resolution, version-pinned
+  imports for archived documents, and general w3id path rules that do not name
+  individual ontology or catalogue releases.
+- Publication tests covering repeat deployment, preserved snapshots, pinned imports,
+  invalid updates and RDF/XML equivalence. Publishing an altered existing release
+  identity is rejected.
+
 ## [1.0.0] – 2026-11-23
 
 ### Namespace finalisation – 2026-11-24

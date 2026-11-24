@@ -4,6 +4,8 @@ This repository contains iCARE Onto **1.0.0**, the initial published Version 1 b
 
 The ontology IRI and entity namespace are **`https://w3id.org/icareonto/`**. These identifiers are independent of the repository's hosting address. Bundled import catalogues provide offline resolution; online resolution requires the corresponding w3id redirect configuration. The namespace was finalised on 24 November 2026, with the ontology sources and all dependent package assets regenerated together. This package uses the w3id identifiers directly, without aliases for the earlier namespace.
 
+The [publication workflow](publication/README.md) builds complete Turtle and RDF/XML documents, module files and educational metadata for GitHub Pages. It refreshes the current distribution while preserving versioned snapshots on the `gh-pages` branch. General w3id redirect rules avoid a redirect update for each routine release.
+
 | Tool                        | Purpose                                                                                                              | Documentation                              |
 | --------------------------- | -------------------------------------------------------------------------------------------------------------------- | ------------------------------------------ |
 | Ontology Serialiser         | Build the modular OWL ontology from the release source snapshots                                                     | [serialisation](serialisation/README.md)    |
@@ -58,6 +60,7 @@ Formal OWL checking is separate. The ontology, CQ fixtures, educational example 
 - `instantiation/`, `pilot-mapping/`, `education/`: implementation, templates, schemas, examples and tests.
 - `education/data/catalogue/`: one complete published catalogue snapshot, including its loader metadata.
 - `validation/`: shared synthetic CQ fixtures, queries, runners and reports.
+- `publication/`: publishing instructions and the w3id identifier configuration; generated website files are excluded from the default branch.
 - `local/`: ignored working area for operational inputs and outputs.
 
 ## Licensing
