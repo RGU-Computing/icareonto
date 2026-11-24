@@ -1,0 +1,31 @@
+{
+  "files": {
+    "agent.ttl": "e7abf6ecf58e2c6300daf00d6f6b773036b6c675f92a8d97b82c2c02bb2cea21",
+    "alignments.ttl": "a9d0cc96e157c429bda96050aaccc45750f821d16a7173f494998133706b8c9c",
+    "cancer-history.ttl": "2ec87524f017205df56eaca17587edd5b0d06e749ede897e6a97453b9402ba95",
+    "clinical-profile.ttl": "cc0ba019bc4802f188e361fb945b9aae38ad2562559ee5cd38d07ab4c326ef3d",
+    "core.ttl": "ffa3bf58de6bcb2bfaaddb108705390c9205d6c6b1145274c0ff05a06096bef7",
+    "cv-risk.ttl": "9dd59d37b716328550a7a20ea508ab0193bb4a4869562f43455aea5d91b50eea",
+    "dialogue.ttl": "67b465db4ee315603eb140d3b5e04cb27b2d09fbbc466982687b09cf7967a1f8",
+    "exercise.ttl": "e11fa006bab9ef35d985d3b30569cc37f012b1bc5aea3e799d2235dcb75b4a78",
+    "healthhub-service.ttl": "7368ac2e23cb07b024ca310e422ff35a546f8f7724b0dc571138356fa313c9bc",
+    "icareonto.ttl": "40de40031615ab36ee49c5a1e50963c289ade6aa5791879d30524e9713bb9173",
+    "imports/prov-reference.ttl": "71d17af35ad10e8dfc0232eca36a249a9b729fb9a4f3d139297603073eedccb8",
+    "imports/skos-reference.ttl": "2ed2b572c329de254b45c8065cdb767c4fe4949403dde686cad2beb453788dc3",
+    "intervention-careplan.ttl": "6c4753a6b91700ef72e3f6b4f818fba76eb0f11f21a10c33a9ef70909361ae0b",
+    "knowledge-resource.ttl": "025be1f3cf592b0c4e2caf80c1ea6da737cb51f54f30511199000c3b46ba245f",
+    "lifestyle-behaviour.ttl": "35223315764b7a68cbfb7e74311eee6a122777b8ad8ae5df93aebad3cd653e99",
+    "measurement-biomarker.ttl": "932c5ffe5c945422aa348c9ba8487b597d048a7ea850d1d3bd5ec4acd63ab8da",
+    "metadata.ttl": "f9074cca0d3867c6467d7105de52bfef3bf5003d55b17a56b5bf34cdc51ca869",
+    "nutrition.ttl": "ef45faf981af54764726401ef3a9cab724fbaa8306dddefc23edd180bdb5abb9",
+    "ontology.rdf": "794f16e83d1462f7c24adc71cfbcb423e492cd7d913de858d839f0ad7356b382",
+    "ontology.ttl": "13d4ee44633f0ce56c358d1f709b05b365ccf862ab39eb34c6668f3aa288a657",
+    "person-role.ttl": "31b7599c92a27692c72edd8e9d5342826c6515d4291b3fb08c0accdd307067cb",
+    "pilot.ttl": "246117e604fc189d4beab0b80823bfe44b4aac802a166fea2e906f1c5ebffca6",
+    "provenance-governance.ttl": "f8f8c1c7d601458312be299e5867d00761c039719d0fac756d027314d7143655",
+    "social-context.ttl": "c3db579962e91aa90ff0eac495026c0501379fef9c3d46a6e4ebfedcd93155fc"
+  },
+  "kind": "ontology",
+  "source_commit": "146a7a907dc87f48ed7ce4634e944274953f6c80",
+  "version": "1.0.0"
+}

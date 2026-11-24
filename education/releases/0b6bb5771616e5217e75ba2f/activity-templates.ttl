@@ -1,0 +1,157 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix edu: <https://w3id.org/icareonto/education/metadata#> .
+@prefix icare: <https://w3id.org/icareonto/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/icareonto/education/activity-templates/EDU-AFTER-TREATMENT> a owl:NamedIndividual,
+        icare:EducationActivity,
+        icare:HealthLiteracyIntervention ;
+    rdfs:label "Adjusting to life after treatment" ;
+    icare:activityContributesToGoal <https://w3id.org/icareonto/education/activity-templates/EDU-AFTER-TREATMENT/goal> ;
+    edu:learningObjective "Recognise an information or support need concerning life after treatment and identify a suitable source of support." ;
+    edu:learningStep "1. Ask which aspect of adjustment the participant wishes to discuss, without inferring a literacy need from emotional distress alone.",
+        "2. Offer a reviewed resource matching the recorded need, topic and language.",
+        "3. Invite reflection on what feels relevant and what remains unclear.",
+        "4. Identify a person or service the participant may choose to approach; follow the avatar's operational support and escalation arrangements." ;
+    edu:reflectionPrompt "1. Which part of this information feels relevant to your situation?",
+        "2. Who could you talk to, or what further information would help?" ;
+    edu:templateStatus "Draft" ;
+    icare:healthLiteracyInterventionAddressesNeed icare:InformationComprehensionSupportNeed,
+        icare:SelfManagementSupportNeed,
+        icare:SocialSupportNeed ;
+    icare:healthLiteracyInterventionUsesResource <https://w3id.org/icareonto/education/resources/MAYA-EDU-0009>,
+        <https://w3id.org/icareonto/education/resources/MAYA-EDU-0010>,
+        <https://w3id.org/icareonto/education/resources/MAYA-EDU-0011>,
+        <https://w3id.org/icareonto/education/resources/MAYA-EDU-0013>,
+        <https://w3id.org/icareonto/education/resources/MAYA-EDU-0019>,
+        <https://w3id.org/icareonto/education/resources/MAYA-EDU-0020>,
+        <https://w3id.org/icareonto/education/resources/MAYA-EDU-0021>,
+        <https://w3id.org/icareonto/education/resources/MAYA-EDU-0030>,
+        <https://w3id.org/icareonto/education/resources/MAYA-EDU-0046>,
+        <https://w3id.org/icareonto/education/resources/MAYA-EDU-0077a>,
+        <https://w3id.org/icareonto/education/resources/MAYA-EDU-0077b>,
+        <https://w3id.org/icareonto/education/resources/MAYA-EDU-0077c>,
+        <https://w3id.org/icareonto/education/resources/MAYA-EDU-0077d>,
+        <https://w3id.org/icareonto/education/resources/MAYA-EDU-0077e>,
+        <https://w3id.org/icareonto/education/resources/MAYA-EDU-0099>,
+        <https://w3id.org/icareonto/education/resources/MAYA-EDU-0167>,
+        <https://w3id.org/icareonto/education/resources/MAYA-EDU-0167a>,
+        <https://w3id.org/icareonto/education/resources/MAYA-EDU-0170>,
+        <https://w3id.org/icareonto/education/resources/MAYA-EDU-0177>,
+        <https://w3id.org/icareonto/education/resources/MAYA-EDU-0180> .
+
+<https://w3id.org/icareonto/education/activity-templates/EDU-CV-FOLLOWUP> a owl:NamedIndividual,
+        icare:EducationActivity,
+        icare:HealthLiteracyIntervention ;
+    rdfs:label "Understanding cardiovascular follow-up" ;
+    icare:activityContributesToGoal <https://w3id.org/icareonto/education/activity-templates/EDU-CV-FOLLOWUP/goal> ;
+    edu:learningObjective "Identify the purpose of cardiovascular follow-up and formulate a question for the care team about the participant's own follow-up." ;
+    edu:learningStep "1. Introduce the topic using the participant's stated question and identified support need.",
+        "2. Offer a suitable reviewed resource in the participant's language and explain its access conditions.",
+        "3. Invite the participant to explain the main message in their own words and identify any unclear information.",
+        "4. Help the participant prepare a question for their care team; personal monitoring decisions remain with the care team." ;
+    edu:reflectionPrompt "1. In your own words, what is the main reason for the follow-up described in this resource?",
+        "2. What would you like your care team to explain about your own follow-up?" ;
+    edu:templateStatus "Draft" ;
+    icare:healthLiteracyInterventionAddressesNeed icare:CareTeamCommunicationSupportNeed,
+        icare:InformationComprehensionSupportNeed ;
+    icare:healthLiteracyInterventionUsesResource <https://w3id.org/icareonto/education/resources/MAYA-EDU-0004>,
+        <https://w3id.org/icareonto/education/resources/MAYA-EDU-0017>,
+        <https://w3id.org/icareonto/education/resources/MAYA-EDU-0018>,
+        <https://w3id.org/icareonto/education/resources/MAYA-EDU-0077a>,
+        <https://w3id.org/icareonto/education/resources/MAYA-EDU-0077b>,
+        <https://w3id.org/icareonto/education/resources/MAYA-EDU-0077c>,
+        <https://w3id.org/icareonto/education/resources/MAYA-EDU-0077d>,
+        <https://w3id.org/icareonto/education/resources/MAYA-EDU-0077e>,
+        <https://w3id.org/icareonto/education/resources/MAYA-EDU-0170>,
+        <https://w3id.org/icareonto/education/resources/MAYA-EDU-0183> .
+
+<https://w3id.org/icareonto/education/activity-templates/EDU-HEALTHY-CHOICES> a owl:NamedIndividual,
+        icare:EducationActivity,
+        icare:HealthLiteracyIntervention ;
+    rdfs:label "Making manageable everyday health choices" ;
+    icare:activityContributesToGoal <https://w3id.org/icareonto/education/activity-templates/EDU-HEALTHY-CHOICES/goal> ;
+    edu:learningObjective "Identify one practical nutrition or activity question or action relevant to the participant's interests and circumstances." ;
+    edu:learningStep "1. Ask whether the participant wants information about food choices or physical activity.",
+        "2. Select a resource matching that topic, the identified support need and the participant's preferences.",
+        "3. Invite the participant to identify one manageable idea and any barriers or questions.",
+        "4. Distinguish general educational information from an individual dietary or exercise prescription." ;
+    edu:reflectionPrompt "1. Which idea from the resource would you like to explore?",
+        "2. What support or advice would you need before trying it?" ;
+    edu:templateStatus "Draft" ;
+    icare:healthLiteracyInterventionAddressesNeed icare:InformationApplicationSupportNeed,
+        icare:SelfManagementSupportNeed ;
+    icare:healthLiteracyInterventionUsesResource <https://w3id.org/icareonto/education/resources/MAYA-EDU-0005>,
+        <https://w3id.org/icareonto/education/resources/MAYA-EDU-0007>,
+        <https://w3id.org/icareonto/education/resources/MAYA-EDU-0008>,
+        <https://w3id.org/icareonto/education/resources/MAYA-EDU-0023>,
+        <https://w3id.org/icareonto/education/resources/MAYA-EDU-0046>,
+        <https://w3id.org/icareonto/education/resources/MAYA-EDU-0061>,
+        <https://w3id.org/icareonto/education/resources/MAYA-EDU-0077a>,
+        <https://w3id.org/icareonto/education/resources/MAYA-EDU-0077b>,
+        <https://w3id.org/icareonto/education/resources/MAYA-EDU-0077c>,
+        <https://w3id.org/icareonto/education/resources/MAYA-EDU-0077d>,
+        <https://w3id.org/icareonto/education/resources/MAYA-EDU-0077e>,
+        <https://w3id.org/icareonto/education/resources/MAYA-EDU-0167>,
+        <https://w3id.org/icareonto/education/resources/MAYA-EDU-0167a>,
+        <https://w3id.org/icareonto/education/resources/MAYA-EDU-0170>,
+        <https://w3id.org/icareonto/education/resources/MAYA-EDU-0176>,
+        <https://w3id.org/icareonto/education/resources/MAYA-EDU-0180>,
+        <https://w3id.org/icareonto/education/resources/MAYA-EDU-0181> .
+
+<https://w3id.org/icareonto/education/graphs/activities> a owl:Ontology ;
+    rdfs:label "MAYA draft educational activity templates"@en ;
+    dcterms:contributor "MAYA consortium partners" ;
+    dcterms:creator "Robert Gordon University" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (c) 2026 Robert Gordon University and contributing MAYA consortium partners, for their respective contributions. CC BY 4.0 covers original metadata and activity content only; linked publications retain their provider terms."@en ;
+    owl:imports <https://w3id.org/icareonto/education/releases/0b6bb5771616e5217e75ba2f/catalogue.ttl> ;
+    owl:versionIRI <https://w3id.org/icareonto/education/releases/0b6bb5771616e5217e75ba2f/activity-templates.ttl> .
+
+edu:accessConditions a owl:AnnotationProperty .
+
+edu:applicabilityNotes a owl:AnnotationProperty .
+
+edu:completionStatus a owl:AnnotationProperty .
+
+edu:curatedBy a owl:AnnotationProperty .
+
+edu:curatedOn a owl:AnnotationProperty .
+
+edu:curationStatus a owl:AnnotationProperty .
+
+edu:identificationMethod a owl:AnnotationProperty .
+
+edu:isSynthetic a owl:AnnotationProperty .
+
+edu:journeyStage a owl:AnnotationProperty .
+
+edu:learningObjective a owl:AnnotationProperty .
+
+edu:learningStep a owl:AnnotationProperty .
+
+edu:reflectionPrompt a owl:AnnotationProperty .
+
+edu:resourceDateText a owl:AnnotationProperty .
+
+edu:resourceRole a owl:AnnotationProperty .
+
+edu:templateStatus a owl:AnnotationProperty .
+
+<https://w3id.org/icareonto/education/activity-templates/EDU-AFTER-TREATMENT/goal> a owl:NamedIndividual,
+        icare:Goal ;
+    rdfs:label "Recognise an information or support need concerning life after treatment and identify a suitable source of support." ;
+    icare:goalDescriptionText "Recognise an information or support need concerning life after treatment and identify a suitable source of support."^^xsd:string .
+
+<https://w3id.org/icareonto/education/activity-templates/EDU-CV-FOLLOWUP/goal> a owl:NamedIndividual,
+        icare:Goal ;
+    rdfs:label "Identify the purpose of cardiovascular follow-up and formulate a question for the care team about the participant's own follow-up." ;
+    icare:goalDescriptionText "Identify the purpose of cardiovascular follow-up and formulate a question for the care team about the participant's own follow-up."^^xsd:string .
+
+<https://w3id.org/icareonto/education/activity-templates/EDU-HEALTHY-CHOICES/goal> a owl:NamedIndividual,
+        icare:Goal ;
+    rdfs:label "Identify one practical nutrition or activity question or action relevant to the participant's interests and circumstances." ;
+    icare:goalDescriptionText "Identify one practical nutrition or activity question or action relevant to the participant's interests and circumstances."^^xsd:string .
+

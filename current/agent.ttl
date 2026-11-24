@@ -1,0 +1,329 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix icare: <https://w3id.org/icareonto/> .
+@prefix meta: <https://w3id.org/icareonto/metadata#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+icare:ConversationAgent a owl:Class ;
+    rdfs:label "Conversation Agent"@en ;
+    rdfs:isDefinedBy icare:agent ;
+    rdfs:subClassOf icare:DigitalAgent ;
+    skos:altLabel "AI-powered conversational agent"@en,
+        "virtual assistant"@en ;
+    skos:definition "A digital agent that provides non-diagnostic education, coaching, self-monitoring support, resource navigation and appropriate escalation under defined safety policies and human oversight."@en .
+
+icare:agentGovernedBySafetyPolicy a owl:ObjectProperty ;
+    rdfs:label "governed by"@en ;
+    rdfs:domain icare:Agent ;
+    rdfs:isDefinedBy icare:agent ;
+    rdfs:range icare:SafetyPolicy ;
+    skos:definition "Identifies a safety policy governing the agent’s behaviour."@en .
+
+icare:agentHasCapability a owl:ObjectProperty ;
+    rdfs:label "has capability"@en ;
+    rdfs:domain icare:Agent ;
+    rdfs:isDefinedBy icare:agent ;
+    rdfs:range icare:AgentCapability ;
+    skos:definition "Identifies a function the agent is designed and authorised to perform."@en .
+
+icare:agentVersion a owl:DatatypeProperty ;
+    rdfs:label "agent version"@en ;
+    rdfs:domain icare:DigitalAgent ;
+    rdfs:isDefinedBy icare:agent ;
+    rdfs:range xsd:string ;
+    skos:definition "Identifies the deployed version of the agent."@en .
+
+icare:conversationAgentEscalatesTo a owl:ObjectProperty ;
+    rdfs:label "escalates to"@en ;
+    rdfs:domain icare:DigitalAgent ;
+    rdfs:isDefinedBy icare:agent ;
+    rdfs:range icare:Person ;
+    skos:definition "Identifies a person to whom relevant cases or concerns may be escalated."@en .
+
+icare:conversationAgentOverseenBy a owl:ObjectProperty ;
+    rdfs:label "overseen by"@en ;
+    rdfs:domain icare:DigitalAgent ;
+    rdfs:isDefinedBy icare:agent ;
+    rdfs:range icare:Person ;
+    skos:definition "Identifies a person responsible for oversight of the digital agent."@en .
+
+icare:safetyPolicyHasRule a owl:ObjectProperty ;
+    rdfs:label "has rule"@en ;
+    rdfs:domain icare:SafetyPolicy ;
+    rdfs:isDefinedBy icare:agent ;
+    rdfs:range icare:SafetyRule ;
+    skos:definition "Associates a safety policy with one of its operational rules."@en .
+
+icare:safetyPolicyVersion a owl:DatatypeProperty ;
+    rdfs:label "safety policy version"@en ;
+    rdfs:domain icare:SafetyPolicy ;
+    rdfs:isDefinedBy icare:agent ;
+    rdfs:range xsd:string ;
+    skos:definition "Version identifier for the applicable safety policy."@en .
+
+icare:safetyRuleHasType a owl:ObjectProperty ;
+    rdfs:label "has type"@en ;
+    rdfs:domain icare:SafetyRule ;
+    rdfs:isDefinedBy icare:agent ;
+    rdfs:range icare:SafetyRuleType ;
+    skos:definition "Classifies the purpose of a safety rule."@en .
+
+icare:safetyRuleText a owl:DatatypeProperty ;
+    rdfs:label "safety rule text"@en ;
+    rdfs:domain icare:SafetyRule ;
+    rdfs:isDefinedBy icare:agent ;
+    rdfs:range xsd:string ;
+    skos:definition "Human-readable statement of the safety constraint or required action."@en .
+
+icare:CarePlanSupportCapability a owl:NamedIndividual,
+        skos:Concept,
+        icare:AgentCapability ;
+    rdfs:label "Care plan support capability"@en ;
+    rdfs:isDefinedBy icare:agent ;
+    skos:definition "An agent capability to provide care plan support."@en ;
+    skos:inScheme icare:AgentCapabilityScheme ;
+    skos:prefLabel "Care plan support capability"@en ;
+    skos:topConceptOf icare:AgentCapabilityScheme ;
+    meta:reviewStatus "Proposed" .
+
+icare:ClarificationCapability a owl:NamedIndividual,
+        skos:Concept,
+        icare:AgentCapability ;
+    rdfs:label "Clarification capability"@en ;
+    rdfs:isDefinedBy icare:agent ;
+    skos:definition "An agent capability to provide clarification."@en ;
+    skos:inScheme icare:AgentCapabilityScheme ;
+    skos:prefLabel "Clarification capability"@en ;
+    skos:topConceptOf icare:AgentCapabilityScheme ;
+    meta:reviewStatus "Proposed" .
+
+icare:ClarificationRule a owl:NamedIndividual,
+        skos:Concept,
+        icare:SafetyRuleType ;
+    rdfs:label "Clarification rule"@en ;
+    rdfs:isDefinedBy icare:agent ;
+    skos:definition "A safety-rule type requiring clarification when information is missing, ambiguous or insufficient for the intended action."@en ;
+    skos:inScheme icare:SafetyRuleTypeScheme ;
+    skos:prefLabel "Clarification rule"@en ;
+    skos:topConceptOf icare:SafetyRuleTypeScheme ;
+    meta:reviewStatus "Proposed" .
+
+icare:ConversationalInteractionCapability a owl:NamedIndividual,
+        skos:Concept,
+        icare:AgentCapability ;
+    rdfs:label "Conversational interaction capability"@en ;
+    rdfs:isDefinedBy icare:agent ;
+    skos:definition "An agent capability to provide conversational interaction."@en ;
+    skos:inScheme icare:AgentCapabilityScheme ;
+    skos:prefLabel "Conversational interaction capability"@en ;
+    skos:topConceptOf icare:AgentCapabilityScheme ;
+    meta:reviewStatus "Proposed" .
+
+icare:DiagnosticBoundaryRule a owl:NamedIndividual,
+        skos:Concept,
+        icare:SafetyRuleType ;
+    rdfs:label "Diagnostic boundary rule"@en ;
+    rdfs:isDefinedBy icare:agent ;
+    skos:definition "A safety-rule type that prevents the agent from presenting an unsupported diagnosis or acting outside its diagnostic authority."@en ;
+    skos:inScheme icare:SafetyRuleTypeScheme ;
+    skos:prefLabel "Diagnostic boundary rule"@en ;
+    skos:topConceptOf icare:SafetyRuleTypeScheme ;
+    meta:reviewStatus "Proposed" .
+
+icare:EmergencyEscalationRule a owl:NamedIndividual,
+        skos:Concept,
+        icare:SafetyRuleType ;
+    rdfs:label "Emergency escalation rule"@en ;
+    rdfs:isDefinedBy icare:agent ;
+    skos:definition "A safety-rule type requiring escalation when information indicates a possible emergency or urgent safety concern."@en ;
+    skos:inScheme icare:SafetyRuleTypeScheme ;
+    skos:prefLabel "Emergency escalation rule"@en ;
+    skos:topConceptOf icare:SafetyRuleTypeScheme ;
+    meta:reviewStatus "Proposed" .
+
+icare:EvidenceGroundingRule a owl:NamedIndividual,
+        skos:Concept,
+        icare:SafetyRuleType ;
+    rdfs:label "Evidence grounding rule"@en ;
+    rdfs:isDefinedBy icare:agent ;
+    skos:definition "A safety-rule type requiring health information or recommendations to be grounded in approved evidence or resources."@en ;
+    skos:inScheme icare:SafetyRuleTypeScheme ;
+    skos:prefLabel "Evidence grounding rule"@en ;
+    skos:topConceptOf icare:SafetyRuleTypeScheme ;
+    meta:reviewStatus "Proposed" .
+
+icare:HealthEducationCapability a owl:NamedIndividual,
+        skos:Concept,
+        icare:AgentCapability ;
+    rdfs:label "Health education capability"@en ;
+    rdfs:isDefinedBy icare:agent ;
+    skos:definition "An agent capability to provide health education."@en ;
+    skos:inScheme icare:AgentCapabilityScheme ;
+    skos:prefLabel "Health education capability"@en ;
+    skos:topConceptOf icare:AgentCapabilityScheme ;
+    meta:reviewStatus "Proposed" .
+
+icare:HealthLiteracySupportCapability a owl:NamedIndividual,
+        skos:Concept,
+        icare:AgentCapability ;
+    rdfs:label "Health literacy support capability"@en ;
+    rdfs:isDefinedBy icare:agent ;
+    skos:definition "An agent capability to provide health literacy support."@en ;
+    skos:inScheme icare:AgentCapabilityScheme ;
+    skos:prefLabel "Health literacy support capability"@en ;
+    skos:topConceptOf icare:AgentCapabilityScheme ;
+    meta:reviewStatus "Proposed" .
+
+icare:HumanOversightRule a owl:NamedIndividual,
+        skos:Concept,
+        icare:SafetyRuleType ;
+    rdfs:label "Human oversight rule"@en ;
+    rdfs:isDefinedBy icare:agent ;
+    skos:definition "A safety-rule type requiring specified decisions or outputs to be reviewed or handled by an authorised person."@en ;
+    skos:inScheme icare:SafetyRuleTypeScheme ;
+    skos:prefLabel "Human oversight rule"@en ;
+    skos:topConceptOf icare:SafetyRuleTypeScheme ;
+    meta:reviewStatus "Proposed" .
+
+icare:LifestyleCoachingCapability a owl:NamedIndividual,
+        skos:Concept,
+        icare:AgentCapability ;
+    rdfs:label "Lifestyle coaching capability"@en ;
+    rdfs:isDefinedBy icare:agent ;
+    skos:definition "An agent capability to provide lifestyle coaching."@en ;
+    skos:inScheme icare:AgentCapabilityScheme ;
+    skos:prefLabel "Lifestyle coaching capability"@en ;
+    skos:topConceptOf icare:AgentCapabilityScheme ;
+    meta:reviewStatus "Proposed" .
+
+icare:PrivacyProtectionRule a owl:NamedIndividual,
+        skos:Concept,
+        icare:SafetyRuleType ;
+    rdfs:label "Privacy protection rule"@en ;
+    rdfs:isDefinedBy icare:agent ;
+    skos:definition "A safety-rule type requiring protection of personal information and observance of applicable privacy constraints."@en ;
+    skos:inScheme icare:SafetyRuleTypeScheme ;
+    skos:prefLabel "Privacy protection rule"@en ;
+    skos:topConceptOf icare:SafetyRuleTypeScheme ;
+    meta:reviewStatus "Proposed" .
+
+icare:ResourceRecommendationCapability a owl:NamedIndividual,
+        skos:Concept,
+        icare:AgentCapability ;
+    rdfs:label "Resource recommendation capability"@en ;
+    rdfs:isDefinedBy icare:agent ;
+    skos:definition "An agent capability to provide resource recommendation."@en ;
+    skos:inScheme icare:AgentCapabilityScheme ;
+    skos:prefLabel "Resource recommendation capability"@en ;
+    skos:topConceptOf icare:AgentCapabilityScheme ;
+    meta:reviewStatus "Proposed" .
+
+icare:SafetyEscalationCapability a owl:NamedIndividual,
+        skos:Concept,
+        icare:AgentCapability ;
+    rdfs:label "Safety escalation capability"@en ;
+    rdfs:isDefinedBy icare:agent ;
+    skos:definition "An agent capability to provide safety escalation."@en ;
+    skos:inScheme icare:AgentCapabilityScheme ;
+    skos:prefLabel "Safety escalation capability"@en ;
+    skos:topConceptOf icare:AgentCapabilityScheme ;
+    meta:reviewStatus "Proposed" .
+
+icare:SelfMonitoringSupportCapability a owl:NamedIndividual,
+        skos:Concept,
+        icare:AgentCapability ;
+    rdfs:label "Self monitoring support capability"@en ;
+    rdfs:isDefinedBy icare:agent ;
+    skos:definition "An agent capability to provide self monitoring support."@en ;
+    skos:inScheme icare:AgentCapabilityScheme ;
+    skos:prefLabel "Self monitoring support capability"@en ;
+    skos:topConceptOf icare:AgentCapabilityScheme ;
+    meta:reviewStatus "Proposed" .
+
+icare:TreatmentBoundaryRule a owl:NamedIndividual,
+        skos:Concept,
+        icare:SafetyRuleType ;
+    rdfs:label "Treatment boundary rule"@en ;
+    rdfs:isDefinedBy icare:agent ;
+    skos:definition "A safety-rule type that prevents the agent from initiating or changing treatment outside its authorised role."@en ;
+    skos:inScheme icare:SafetyRuleTypeScheme ;
+    skos:prefLabel "Treatment boundary rule"@en ;
+    skos:topConceptOf icare:SafetyRuleTypeScheme ;
+    meta:reviewStatus "Proposed" .
+
+icare:Agent a owl:Class ;
+    rdfs:label "Agent"@en ;
+    rdfs:isDefinedBy icare:agent ;
+    rdfs:subClassOf prov:Agent ;
+    skos:definition "An entity capable of performing actions or generating outputs for which responsibility or provenance may be recorded."@en .
+
+icare:SafetyPolicy a owl:Class ;
+    rdfs:label "Safety Policy"@en ;
+    rdfs:isDefinedBy icare:agent ;
+    skos:definition "A versioned set of rules and constraints governing the safe behaviour of an agent."@en .
+
+icare:SafetyRule a owl:Class ;
+    rdfs:label "Safety Rule"@en ;
+    rdfs:isDefinedBy icare:agent ;
+    skos:definition "An actionable constraint or instruction contained in a safety policy, such as requiring clarification or escalation."@en .
+
+icare:DigitalAgent a owl:Class ;
+    rdfs:label "Digital Agent"@en ;
+    rdfs:isDefinedBy icare:agent ;
+    rdfs:subClassOf icare:Agent ;
+    skos:definition "A software-based agent that performs actions or generates outputs within a defined capability and safety scope."@en .
+
+icare:SafetyRuleType a owl:Class ;
+    rdfs:label "Safety Rule Type"@en ;
+    rdfs:isDefinedBy icare:agent ;
+    rdfs:subClassOf skos:Concept ;
+    skos:definition "A controlled concept categorising the purpose of a safety rule."@en .
+
+icare:AgentCapability a owl:Class ;
+    rdfs:label "Agent Capability"@en ;
+    rdfs:isDefinedBy icare:agent ;
+    rdfs:subClassOf skos:Concept ;
+    skos:definition "A controlled concept representing a function an agent is designed and authorised to perform."@en .
+
+icare:SafetyRuleTypeScheme a owl:NamedIndividual,
+        skos:ConceptScheme ;
+    rdfs:label "Safety Rule Type scheme"@en ;
+    skos:hasTopConcept icare:ClarificationRule,
+        icare:DiagnosticBoundaryRule,
+        icare:EmergencyEscalationRule,
+        icare:EvidenceGroundingRule,
+        icare:HumanOversightRule,
+        icare:PrivacyProtectionRule,
+        icare:TreatmentBoundaryRule .
+
+icare:AgentCapabilityScheme a owl:NamedIndividual,
+        skos:ConceptScheme ;
+    rdfs:label "Agent Capability scheme"@en ;
+    skos:hasTopConcept icare:CarePlanSupportCapability,
+        icare:ClarificationCapability,
+        icare:ConversationalInteractionCapability,
+        icare:HealthEducationCapability,
+        icare:HealthLiteracySupportCapability,
+        icare:LifestyleCoachingCapability,
+        icare:ResourceRecommendationCapability,
+        icare:SafetyEscalationCapability,
+        icare:SelfMonitoringSupportCapability .
+
+icare:agent a owl:Ontology ;
+    rdfs:label "Agent"@en ;
+    dcterms:contributor "MAYA consortium partners" ;
+    dcterms:creator "Robert Gordon University" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (c) 2026 Robert Gordon University and contributing MAYA consortium partners, for their respective contributions. Third-party material retains its applicable terms."@en ;
+    rdfs:comment "Represents digital and conversational agents, their authorised capabilities, safety policies and rules, and human oversight and escalation relationships."@en ;
+    owl:imports <https://w3id.org/icareonto/imports/prov-reference>,
+        <https://w3id.org/icareonto/imports/skos-reference>,
+        icare:metadata,
+        icare:person-role ;
+    owl:versionIRI <https://w3id.org/icareonto/releases/1.0.0/agent> ;
+    owl:versionInfo "1.0.0" ;
+    meta:releaseStatus "Published" .
+

@@ -1,0 +1,1554 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:edu="https://w3id.org/icareonto/education/metadata#"
+   xmlns:icare="https://w3id.org/icareonto/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="https://w3id.org/icareonto/education/resources/MAYA-EDU-0173">
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/SupportSelfManagement"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/SupportBehaviourChange"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/SupportCareNavigation"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/ExplainHealthTopic"/>
+    <edu:curatedOn rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-18</edu:curatedOn>
+    <rdfs:label>Schluss mit Rauchen: Welche Methoden funktionieren?</rdfs:label>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/InformationAppraisalSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/InformationApplicationSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/SelfManagementSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/InformationComprehensionSupportNeed"/>
+    <edu:curatedBy>INO</edu:curatedBy>
+    <edu:completionStatus>Complete</edu:completionStatus>
+    <dcterms:title>Schluss mit Rauchen: Welche Methoden funktionieren?</dcterms:title>
+    <dcterms:rights>Link / Signpost Only</dcterms:rights>
+    <edu:journeyStage>Before treatment</edu:journeyStage>
+    <edu:journeyStage>During treatment</edu:journeyStage>
+    <edu:journeyStage>After treatment / survivorship</edu:journeyStage>
+    <rdf:type rdf:resource="https://w3id.org/icareonto/HealthLiteracyResource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/icareonto/EducationalResource"/>
+    <dcterms:description>Article explaining smoking-cessation approaches, the evidence supporting different methods, practical behaviour-change strategies and sources of professional support.</dcterms:description>
+    <dcterms:identifier>MAYA-EDU-0173</dcterms:identifier>
+    <icare:knowledgeResourceHasComplexityLevel rdf:resource="https://w3id.org/icareonto/StandardComplexity"/>
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/Smoking"/>
+    <icare:knowledgeResourceHasFormat rdf:resource="https://w3id.org/icareonto/WrittenText"/>
+    <edu:accessConditions>Public</edu:accessConditions>
+    <dcterms:source rdf:resource="https://www.krebsinformationsdienst.de/aktuelles/detail/schluss-mit-rauchen-welche-methoden-funktionieren"/>
+    <edu:resourceRole>Direct Educational Resource</edu:resourceRole>
+    <edu:applicabilityNotes>Relevant to participants who smoke and want cessation support, including after cancer treatment. Not specifically designed for AYA survivors. Medication, prescription-app and treatment choices require appropriate professional advice; check local service applicability.</edu:applicabilityNotes>
+    <icare:knowledgeResourceHasAudience rdf:resource="https://w3id.org/icareonto/AYASurvivorAudience"/>
+    <edu:curationStatus>Approved</edu:curationStatus>
+    <dcterms:language rdf:datatype="http://www.w3.org/2001/XMLSchema#language">de</dcterms:language>
+    <edu:resourceDateText>2026</edu:resourceDateText>
+    <dcterms:publisher>Krebsinformationsdienst, Deutsches Krebsforschungszentrum (DKFZ); Vanessa Schöner</dcterms:publisher>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icareonto/education/resources/MAYA-EDU-0176">
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/PhysicalActivity"/>
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/Nutrition"/>
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/Smoking"/>
+    <rdf:type rdf:resource="https://w3id.org/icareonto/EducationalResource"/>
+    <rdf:type rdf:resource="https://w3id.org/icareonto/HealthLiteracyResource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <edu:resourceRole>Direct Educational Resource</edu:resourceRole>
+    <icare:knowledgeResourceHasAudience rdf:resource="https://w3id.org/icareonto/AYASurvivorAudience"/>
+    <edu:applicabilityNotes>Intended for survivors of childhood, adolescent and young-adult cancer. Lifestyle guidance is general and may require adaptation to treatment-related limitations and the individual care plan.</edu:applicabilityNotes>
+    <edu:journeyStage>After treatment / survivorship</edu:journeyStage>
+    <icare:knowledgeResourceHasComplexityLevel rdf:resource="https://w3id.org/icareonto/StandardComplexity"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/SupportSelfManagement"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/ExplainHealthTopic"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/SupportBehaviourChange"/>
+    <dcterms:publisher>PanCare PLAIN Information Group; Italian PLAIN summary</dcterms:publisher>
+    <edu:curatedOn rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-18</edu:curatedOn>
+    <dcterms:language rdf:datatype="http://www.w3.org/2001/XMLSchema#language">it</dcterms:language>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/InformationComprehensionSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/SelfManagementSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/InformationApplicationSupportNeed"/>
+    <edu:curatedBy>INO</edu:curatedBy>
+    <icare:knowledgeResourceHasAccessibilityFeature rdf:resource="https://w3id.org/icareonto/PlainLanguage"/>
+    <dcterms:source rdf:resource="https://www.pancare.eu/brochures-divulgative-plain/promozione-della-salute/"/>
+    <edu:curationStatus>Approved</edu:curationStatus>
+    <dcterms:rights>Link / Signpost Only</dcterms:rights>
+    <dcterms:title>Promozione della salute</dcterms:title>
+    <dcterms:description>Survivor-oriented summary explaining health-promoting behaviours after childhood, adolescent or young-adult cancer, including activity, diet, avoiding smoking and discussing suitable lifestyle changes with professionals.</dcterms:description>
+    <rdfs:label>Promozione della salute</rdfs:label>
+    <edu:resourceDateText>2024</edu:resourceDateText>
+    <dcterms:identifier>MAYA-EDU-0176</dcterms:identifier>
+    <icare:knowledgeResourceHasFormat rdf:resource="https://w3id.org/icareonto/WrittenText"/>
+    <edu:accessConditions>Public</edu:accessConditions>
+    <edu:completionStatus>Complete</edu:completionStatus>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icareonto/education/resources/MAYA-EDU-0108a">
+    <edu:resourceRole>Direct Educational Resource</edu:resourceRole>
+    <icare:knowledgeResourceHasAudience rdf:resource="https://w3id.org/icareonto/FamilyAudience"/>
+    <icare:knowledgeResourceHasAudience rdf:resource="https://w3id.org/icareonto/AYASurvivorAudience"/>
+    <icare:knowledgeResourceHasAudience rdf:resource="https://w3id.org/icareonto/CaregiverAudience"/>
+    <edu:journeyStage>After treatment / survivorship</edu:journeyStage>
+    <edu:journeyStage>During treatment</edu:journeyStage>
+    <edu:journeyStage>Before treatment</edu:journeyStage>
+    <edu:curatedOn rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-23</edu:curatedOn>
+    <dcterms:source rdf:resource="https://alivia.org.pl/wiedza-o-raku/onkologia-w-internecie-jak-rozpoznac-rzetelne-zrodla-informacji/"/>
+    <icare:knowledgeResourceHasComplexityLevel rdf:resource="https://w3id.org/icareonto/StandardComplexity"/>
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/DigitalHealthPrivacyAndTrust"/>
+    <edu:applicabilityNotes>Relevant throughout the cancer journey, including survivorship. Covers information credibility rather than comprehensive privacy or data-protection guidance. General patient information rather than an AYA-specific resource.</edu:applicabilityNotes>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/ExplainHealthTopic"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/InformationAppraisalSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/InformationAccessSupportNeed"/>
+    <dcterms:language rdf:datatype="http://www.w3.org/2001/XMLSchema#language">pl</dcterms:language>
+    <rdfs:label>Onkologia w Internecie: jak rozpoznać rzetelne źródła informacji?</rdfs:label>
+    <edu:curatedBy>INO</edu:curatedBy>
+    <dcterms:publisher>Alivia Onkofundacja; Jarosław Gośliński</dcterms:publisher>
+    <edu:resourceDateText>2025</edu:resourceDateText>
+    <edu:curationStatus>Approved</edu:curationStatus>
+    <dcterms:rights>Link / Signpost Only</dcterms:rights>
+    <dcterms:title>Onkologia w Internecie: jak rozpoznać rzetelne źródła informacji?</dcterms:title>
+    <rdf:type rdf:resource="https://w3id.org/icareonto/HealthLiteracyResource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/icareonto/EducationalResource"/>
+    <dcterms:description>Practical advice on finding and evaluating online cancer information, including checking source authority, publication dates, author credentials, supporting evidence and sensational claims. Identifies types of information sources patients and families can consult.</dcterms:description>
+    <icare:knowledgeResourceHasFormat rdf:resource="https://w3id.org/icareonto/WrittenText"/>
+    <edu:accessConditions>Public</edu:accessConditions>
+    <edu:completionStatus>Complete</edu:completionStatus>
+    <dcterms:identifier>MAYA-EDU-0108a</dcterms:identifier>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icareonto/education/resources/MAYA-EDU-0167a">
+    <dcterms:publisher>PRIMOPRO; Fundacja Tam i z Powrotem / Program Edukacji Onkologicznej; Polish translation and adaptation of a National Cancer Institute guide</dcterms:publisher>
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/FollowUpCare"/>
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/Nutrition"/>
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/MentalHealthAndEmotionalWellbeing"/>
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/PhysicalActivity"/>
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/SelfMonitoring"/>
+    <edu:applicabilityNotes>Broad survivorship guide rather than an AYA-specific publication. Signpost relevant sections of the 52-page document. Check current clinical and local service applicability before approval. Translation permission stated by this publisher does not establish permission for MAYA to reproduce, adapt or ingest the Polish text.</edu:applicabilityNotes>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/PrepareForConsultation"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/SupportCareNavigation"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/SupportSelfManagement"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/ExplainHealthTopic"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/SocialSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/CareTeamCommunicationSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/InformationApplicationSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/SelfManagementSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/InformationComprehensionSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/HealthcareNavigationSupportNeed"/>
+    <edu:curatedBy>INO</edu:curatedBy>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/icareonto/EducationalResource"/>
+    <rdf:type rdf:resource="https://w3id.org/icareonto/HealthLiteracyResource"/>
+    <icare:knowledgeResourceHasFormat rdf:resource="https://w3id.org/icareonto/WrittenText"/>
+    <dcterms:identifier>MAYA-EDU-0167a</dcterms:identifier>
+    <edu:completionStatus>Complete</edu:completionStatus>
+    <icare:knowledgeResourceHasAudience rdf:resource="https://w3id.org/icareonto/FamilyAudience"/>
+    <icare:knowledgeResourceHasAudience rdf:resource="https://w3id.org/icareonto/AYASurvivorAudience"/>
+    <icare:knowledgeResourceHasAudience rdf:resource="https://w3id.org/icareonto/CaregiverAudience"/>
+    <dcterms:rights>Link / Signpost Only</dcterms:rights>
+    <icare:knowledgeResourceHasComplexityLevel rdf:resource="https://w3id.org/icareonto/StandardComplexity"/>
+    <edu:curatedOn rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-18</edu:curatedOn>
+    <dcterms:language rdf:datatype="http://www.w3.org/2001/XMLSchema#language">pl</dcterms:language>
+    <rdfs:label>Życie po nowotworze: Poradnik dla osób po przebytej chorobie</rdfs:label>
+    <edu:accessConditions>Public</edu:accessConditions>
+    <edu:curationStatus>Approved</edu:curationStatus>
+    <edu:resourceDateText>2021</edu:resourceDateText>
+    <edu:resourceRole>Direct Educational Resource</edu:resourceRole>
+    <dcterms:title>Życie po nowotworze: Poradnik dla osób po przebytej chorobie</dcterms:title>
+    <edu:journeyStage>After treatment / survivorship</edu:journeyStage>
+    <dcterms:description>Post-treatment guide addressing follow-up care, persistent symptoms, body image and intimacy, emotional adjustment, family and work relationships, support and relaxation.</dcterms:description>
+    <dcterms:source rdf:resource="https://www.programedukacjionkologicznej.pl/uploads/PEO_RZR_Poradnik13_www.pdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icareonto/education/resources/MAYA-EDU-0179">
+    <edu:resourceRole>Direct Educational Resource</edu:resourceRole>
+    <icare:knowledgeResourceHasAudience rdf:resource="https://w3id.org/icareonto/FamilyAudience"/>
+    <icare:knowledgeResourceHasAudience rdf:resource="https://w3id.org/icareonto/AYASurvivorAudience"/>
+    <icare:knowledgeResourceHasAudience rdf:resource="https://w3id.org/icareonto/CaregiverAudience"/>
+    <dcterms:description>Guidance for finding trustworthy cancer information and assessing authorship, evidence, commercial interests and currency. Includes personal-data precautions and advice on using social media, applications and email safely.</dcterms:description>
+    <dcterms:title>Cómo encontrar recursos confiables sobre el cáncer</dcterms:title>
+    <edu:journeyStage>After treatment / survivorship</edu:journeyStage>
+    <edu:journeyStage>During treatment</edu:journeyStage>
+    <edu:journeyStage>Before treatment</edu:journeyStage>
+    <edu:curationStatus>Approved</edu:curationStatus>
+    <dcterms:language rdf:datatype="http://www.w3.org/2001/XMLSchema#language">es</dcterms:language>
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/DigitalHealthPrivacyAndTrust"/>
+    <edu:resourceDateText>2024</edu:resourceDateText>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/InformationAppraisalSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/InformationAccessSupportNeed"/>
+    <edu:curatedBy>INO</edu:curatedBy>
+    <edu:completionStatus>Complete</edu:completionStatus>
+    <dcterms:rights>Link / Signpost Only</dcterms:rights>
+    <dcterms:publisher>Instituto Nacional del Cáncer (NCI), National Institutes of Health</dcterms:publisher>
+    <rdf:type rdf:resource="https://w3id.org/icareonto/HealthLiteracyResource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/icareonto/EducationalResource"/>
+    <icare:knowledgeResourceHasComplexityLevel rdf:resource="https://w3id.org/icareonto/StandardComplexity"/>
+    <edu:curatedOn rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-23</edu:curatedOn>
+    <dcterms:source rdf:resource="https://www.cancer.gov/espanol/cancer/manejo-del-cancer/encontrar-recursos-confiables"/>
+    <edu:applicabilityNotes>Applicable throughout the cancer journey. Some linked resources are in English, and website-domain examples reflect the US context. Assess onward links separately.</edu:applicabilityNotes>
+    <rdfs:label>Cómo encontrar recursos confiables sobre el cáncer</rdfs:label>
+    <icare:knowledgeResourceHasFormat rdf:resource="https://w3id.org/icareonto/WrittenText"/>
+    <dcterms:identifier>MAYA-EDU-0179</dcterms:identifier>
+    <edu:accessConditions>Public</edu:accessConditions>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/ExplainHealthTopic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icareonto/education/resources/MAYA-EDU-0175">
+    <icare:knowledgeResourceHasAudience rdf:resource="https://w3id.org/icareonto/CaregiverAudience"/>
+    <icare:knowledgeResourceHasAudience rdf:resource="https://w3id.org/icareonto/FamilyAudience"/>
+    <icare:knowledgeResourceHasAudience rdf:resource="https://w3id.org/icareonto/AYASurvivorAudience"/>
+    <rdfs:label>Transition - Der Übergang von der Kinder- und Jugendmedizin in die Erwachsenenmedizin</rdfs:label>
+    <rdf:type rdf:resource="https://w3id.org/icareonto/EducationalResource"/>
+    <rdf:type rdf:resource="https://w3id.org/icareonto/HealthLiteracyResource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <edu:curatedBy>INO</edu:curatedBy>
+    <edu:resourceRole>Direct Educational Resource</edu:resourceRole>
+    <edu:completionStatus>Complete</edu:completionStatus>
+    <dcterms:publisher>Kinderkrebsinfo / GPOH; Dr Hannah Schmidt and Dr Ingo Menrath; editor: Maria Yiallouros</dcterms:publisher>
+    <edu:journeyStage>After treatment / survivorship</edu:journeyStage>
+    <edu:resourceDateText>2025</edu:resourceDateText>
+    <edu:curationStatus>Approved</edu:curationStatus>
+    <dcterms:language rdf:datatype="http://www.w3.org/2001/XMLSchema#language">de</dcterms:language>
+    <dcterms:rights>Link / Signpost Only</dcterms:rights>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/SupportSelfManagement"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/PrepareForConsultation"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/SupportCareNavigation"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/ExplainHealthTopic"/>
+    <dcterms:identifier>MAYA-EDU-0175</dcterms:identifier>
+    <edu:applicabilityNotes>Directly developed for adolescents (from age 14–16) and young adults (around age 18) transitioning from paediatric to adult oncology care. Applies specifically to AYA survivors of childhood or adolescent cancers rather than those diagnosed in adult care settings. Clinic listings and care pathways are specific to Germany.</edu:applicabilityNotes>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/CareTeamCommunicationSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/SelfManagementSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/HealthcareNavigationSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/InformationComprehensionSupportNeed"/>
+    <dcterms:source rdf:resource="https://www.gpoh.de/kinderkrebsinfo/content/patienten/nachsorge/spaetfolgen___langzeitnachsorge/transition/index_ger.html"/>
+    <edu:accessConditions>Public</edu:accessConditions>
+    <dcterms:title>Transition - Der Übergang von der Kinder- und Jugendmedizin in die Erwachsenenmedizin</dcterms:title>
+    <icare:knowledgeResourceHasComplexityLevel rdf:resource="https://w3id.org/icareonto/StandardComplexity"/>
+    <dcterms:description>Explanation of the transition from paediatric to adult healthcare, including continuity of follow-up, preparation, growing independence, care planning and possible sources of support.</dcterms:description>
+    <edu:curatedOn rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-18</edu:curatedOn>
+    <icare:knowledgeResourceHasFormat rdf:resource="https://w3id.org/icareonto/WrittenText"/>
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/FollowUpCare"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icareonto/education/metadata#resourceRole">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icareonto/education/resources/MAYA-EDU-0077e">
+    <dcterms:rights>Link / Signpost Only</dcterms:rights>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/SupportSelfManagement"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/SupportBehaviourChange"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/PrepareForConsultation"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/SupportCareNavigation"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/ExplainHealthTopic"/>
+    <icare:knowledgeResourceHasComplexityLevel rdf:resource="https://w3id.org/icareonto/StandardComplexity"/>
+    <edu:curatedOn rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-23</edu:curatedOn>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/SelfManagementSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/InformationApplicationSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/HealthcareNavigationSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/InformationComprehensionSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/SocialSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/CareTeamCommunicationSupportNeed"/>
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/Nutrition"/>
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/Smoking"/>
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/PhysicalActivity"/>
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/CardiovascularLateEffects"/>
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/MentalHealthAndEmotionalWellbeing"/>
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/FollowUpCare"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/icareonto/EducationalResource"/>
+    <rdf:type rdf:resource="https://w3id.org/icareonto/HealthLiteracyResource"/>
+    <icare:knowledgeResourceHasFormat rdf:resource="https://w3id.org/icareonto/WrittenText"/>
+    <edu:completionStatus>Complete</edu:completionStatus>
+    <dcterms:title>La sobrevivencia: Una guía ESMO-ECPC para pacientes</dcterms:title>
+    <edu:accessConditions>Public</edu:accessConditions>
+    <edu:resourceRole>Direct Educational Resource</edu:resourceRole>
+    <dcterms:identifier>MAYA-EDU-0077e</dcterms:identifier>
+    <rdfs:label>La sobrevivencia: Una guía ESMO-ECPC para pacientes</rdfs:label>
+    <icare:knowledgeResourceHasAudience rdf:resource="https://w3id.org/icareonto/FamilyAudience"/>
+    <icare:knowledgeResourceHasAudience rdf:resource="https://w3id.org/icareonto/CaregiverAudience"/>
+    <icare:knowledgeResourceHasAudience rdf:resource="https://w3id.org/icareonto/AYASurvivorAudience"/>
+    <dcterms:description>Patient guide to life after initial cancer treatment, covering follow-up, cardiovascular and other late effects, physical activity, nutrition, smoking cessation, emotional wellbeing, relationships, support services and personal care records.</dcterms:description>
+    <edu:applicabilityNotes>Broad adult survivorship guide. Direct participants to relevant sections. Clinical review should confirm the continuing applicability of recommendations in this 2017 edition, particularly lifestyle and treatment advice.</edu:applicabilityNotes>
+    <dcterms:source rdf:resource="https://dam.esmo.org/image/upload/ESMO-Guia-para-Pacientes-Sobrevivencia.pdf"/>
+    <dcterms:publisher>European Society for Medical Oncology (ESMO); European Cancer Patient Coalition (ECPC); developed in collaboration with the International Psycho-Oncology Society (IPOS)</dcterms:publisher>
+    <edu:curatedBy>INO</edu:curatedBy>
+    <edu:journeyStage>After treatment / survivorship</edu:journeyStage>
+    <edu:curationStatus>Approved</edu:curationStatus>
+    <dcterms:language rdf:datatype="http://www.w3.org/2001/XMLSchema#language">es</dcterms:language>
+    <edu:resourceDateText>2017</edu:resourceDateText>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icareonto/education/resources/MAYA-EDU-0077b">
+    <dcterms:source rdf:resource="https://dam.esmo.org/image/upload/IT-ESMO-Guida-per-il-Paziente-Sopravvivenza.pdf"/>
+    <icare:knowledgeResourceHasAudience rdf:resource="https://w3id.org/icareonto/CaregiverAudience"/>
+    <icare:knowledgeResourceHasAudience rdf:resource="https://w3id.org/icareonto/FamilyAudience"/>
+    <icare:knowledgeResourceHasAudience rdf:resource="https://w3id.org/icareonto/AYASurvivorAudience"/>
+    <edu:curatedBy>INO</edu:curatedBy>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/icareonto/EducationalResource"/>
+    <rdf:type rdf:resource="https://w3id.org/icareonto/HealthLiteracyResource"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/SupportBehaviourChange"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/PrepareForConsultation"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/SupportCareNavigation"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/ExplainHealthTopic"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/SupportSelfManagement"/>
+    <edu:completionStatus>Complete</edu:completionStatus>
+    <dcterms:rights>Link / Signpost Only</dcterms:rights>
+    <edu:applicabilityNotes>Broad adult survivorship guide; not specifically developed for AYA survivors. Because of its length, direct users to relevant sections (e.g., fertility, work reintegration, and emotional wellbeing).</edu:applicabilityNotes>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/InformationApplicationSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/SelfManagementSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/HealthcareNavigationSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/InformationComprehensionSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/SocialSupportNeed"/>
+    <icare:knowledgeResourceHasComplexityLevel rdf:resource="https://w3id.org/icareonto/StandardComplexity"/>
+    <dcterms:identifier>MAYA-EDU-0077b</dcterms:identifier>
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/CardiovascularLateEffects"/>
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/MentalHealthAndEmotionalWellbeing"/>
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/Smoking"/>
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/PhysicalActivity"/>
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/FollowUpCare"/>
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/Nutrition"/>
+    <edu:curatedOn rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-18</edu:curatedOn>
+    <dcterms:description>Patient guide to life after initial cancer treatment, covering follow-up, late effects including cardiovascular problems, healthy living, emotional adjustment, relationships, support services and personal care records.</dcterms:description>
+    <icare:knowledgeResourceHasFormat rdf:resource="https://w3id.org/icareonto/WrittenText"/>
+    <edu:accessConditions>Public</edu:accessConditions>
+    <dcterms:publisher>European Society for Medical Oncology (ESMO); European Cancer Patient Coalition (ECPC); developed in collaboration with the International Psycho-Oncology Society (IPOS)</dcterms:publisher>
+    <edu:resourceRole>Direct Educational Resource</edu:resourceRole>
+    <edu:journeyStage>After treatment / survivorship</edu:journeyStage>
+    <edu:resourceDateText>2017</edu:resourceDateText>
+    <edu:curationStatus>Approved</edu:curationStatus>
+    <dcterms:title>Sopravvivenza: Guida ESMO per il Paziente</dcterms:title>
+    <dcterms:language rdf:datatype="http://www.w3.org/2001/XMLSchema#language">it</dcterms:language>
+    <rdfs:label>Sopravvivenza: Guida ESMO per il Paziente</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icareonto/education/resources/MAYA-EDU-0077c">
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/PhysicalActivity"/>
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/Nutrition"/>
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/CardiovascularLateEffects"/>
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/MentalHealthAndEmotionalWellbeing"/>
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/Smoking"/>
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/FollowUpCare"/>
+    <dcterms:publisher>European Society for Medical Oncology (ESMO); European Cancer Patient Coalition (ECPC); developed in collaboration with the International Psycho-Oncology Society (IPOS)</dcterms:publisher>
+    <edu:resourceRole>Direct Educational Resource</edu:resourceRole>
+    <rdf:type rdf:resource="https://w3id.org/icareonto/HealthLiteracyResource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/icareonto/EducationalResource"/>
+    <edu:journeyStage>After treatment / survivorship</edu:journeyStage>
+    <edu:resourceDateText>2017</edu:resourceDateText>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/SupportCareNavigation"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/ExplainHealthTopic"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/SupportSelfManagement"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/SupportBehaviourChange"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/PrepareForConsultation"/>
+    <edu:applicabilityNotes>Broad adult survivorship guide; not specifically developed for AYA survivors. Because of its length, direct users to relevant sections (e.g., fertility, work reintegration, and emotional wellbeing).</edu:applicabilityNotes>
+    <dcterms:identifier>MAYA-EDU-0077c</dcterms:identifier>
+    <icare:knowledgeResourceHasComplexityLevel rdf:resource="https://w3id.org/icareonto/StandardComplexity"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/SocialSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/InformationApplicationSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/SelfManagementSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/HealthcareNavigationSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/InformationComprehensionSupportNeed"/>
+    <edu:curatedBy>INO</edu:curatedBy>
+    <icare:knowledgeResourceHasFormat rdf:resource="https://w3id.org/icareonto/WrittenText"/>
+    <edu:completionStatus>Complete</edu:completionStatus>
+    <rdfs:label>Przebycie choroby nowotworowej: Poradnik dla pacjentów ESMO-ECPC</rdfs:label>
+    <icare:knowledgeResourceHasAudience rdf:resource="https://w3id.org/icareonto/FamilyAudience"/>
+    <icare:knowledgeResourceHasAudience rdf:resource="https://w3id.org/icareonto/AYASurvivorAudience"/>
+    <icare:knowledgeResourceHasAudience rdf:resource="https://w3id.org/icareonto/CaregiverAudience"/>
+    <dcterms:rights>Link / Signpost Only</dcterms:rights>
+    <edu:curationStatus>Approved</edu:curationStatus>
+    <dcterms:title>Przebycie choroby nowotworowej: Poradnik dla pacjentów ESMO-ECPC</dcterms:title>
+    <edu:curatedOn rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-18</edu:curatedOn>
+    <dcterms:source rdf:resource="https://dam.esmo.org/image/upload/PL-Poradnik-dla-Pacjentow-Przebycie-Choroby-Nowotworowej%E2%80%AF.pdf"/>
+    <dcterms:language rdf:datatype="http://www.w3.org/2001/XMLSchema#language">pl</dcterms:language>
+    <dcterms:description>Patient guide to life after initial cancer treatment, covering follow-up, late effects including cardiovascular problems, healthy living, emotional adjustment, relationships, support services and personal care records.</dcterms:description>
+    <edu:accessConditions>Public</edu:accessConditions>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icareonto/education/metadata#templateStatus">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icareonto/education/resources/MAYA-EDU-0005">
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/SupportBehaviourChange"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/SupportCareNavigation"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/ExplainHealthTopic"/>
+    <edu:completionStatus>Complete</edu:completionStatus>
+    <icare:knowledgeResourceHasAccessibilityFeature rdf:resource="https://w3id.org/icareonto/VisualSummary"/>
+    <edu:curatedOn rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-03</edu:curatedOn>
+    <dcterms:publisher>Sociedad Española de Oncología Médica (SEOM)</dcterms:publisher>
+    <edu:journeyStage>Before treatment</edu:journeyStage>
+    <edu:journeyStage>After treatment / survivorship</edu:journeyStage>
+    <edu:journeyStage>During treatment</edu:journeyStage>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/InformationApplicationSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/HealthcareNavigationSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/InformationComprehensionSupportNeed"/>
+    <dcterms:description>Patient infographic introducing exercise in cancer care and encouraging discussion with the oncology team about individually appropriate activity and access to exercise programmes.</dcterms:description>
+    <rdf:type rdf:resource="https://w3id.org/icareonto/HealthLiteracyResource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/icareonto/EducationalResource"/>
+    <icare:knowledgeResourceHasComplexityLevel rdf:resource="https://w3id.org/icareonto/FoundationalComplexity"/>
+    <edu:applicabilityNotes>General oncology patient resource, not AYA-specific. Introduces exercise benefits and directs readers towards clinical assessment and suitable programmes. Does not provide an individual exercise prescription.</edu:applicabilityNotes>
+    <edu:accessConditions>Public</edu:accessConditions>
+    <icare:knowledgeResourceHasFormat rdf:resource="https://w3id.org/icareonto/Infographic"/>
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/PhysicalActivity"/>
+    <edu:resourceRole>Direct Educational Resource</edu:resourceRole>
+    <icare:knowledgeResourceHasAudience rdf:resource="https://w3id.org/icareonto/AYASurvivorAudience"/>
+    <dcterms:title>Infografía para pacientes: ejercicio físico y cáncer</dcterms:title>
+    <dcterms:source rdf:resource="https://seom.org/150025-seom/210349-infografias-dia-mundial-2024"/>
+    <edu:curationStatus>Approved</edu:curationStatus>
+    <dcterms:language rdf:datatype="http://www.w3.org/2001/XMLSchema#language">es</dcterms:language>
+    <dcterms:rights>Link / Signpost Only</dcterms:rights>
+    <dcterms:identifier>MAYA-EDU-0005</dcterms:identifier>
+    <edu:resourceDateText>2024</edu:resourceDateText>
+    <edu:curatedBy>INO</edu:curatedBy>
+    <rdfs:label>Infografía para pacientes: ejercicio físico y cáncer</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icareonto/education/resources/MAYA-EDU-0182">
+    <edu:journeyStage>After treatment / survivorship</edu:journeyStage>
+    <edu:journeyStage>During treatment</edu:journeyStage>
+    <edu:journeyStage>Before treatment</edu:journeyStage>
+    <dcterms:identifier>MAYA-EDU-0182</dcterms:identifier>
+    <dcterms:title>Campanha DGS de 1 de abril - "Mito ou verdade: o que prefere partilhar?"</dcterms:title>
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/DigitalHealthPrivacyAndTrust"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/ExplainHealthTopic"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/InformationAppraisalSupportNeed"/>
+    <icare:knowledgeResourceHasAudience rdf:resource="https://w3id.org/icareonto/CaregiverAudience"/>
+    <icare:knowledgeResourceHasAudience rdf:resource="https://w3id.org/icareonto/FamilyAudience"/>
+    <icare:knowledgeResourceHasAudience rdf:resource="https://w3id.org/icareonto/AYASurvivorAudience"/>
+    <edu:curatedBy>INO</edu:curatedBy>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/icareonto/EducationalResource"/>
+    <rdf:type rdf:resource="https://w3id.org/icareonto/HealthLiteracyResource"/>
+    <edu:completionStatus>Complete</edu:completionStatus>
+    <dcterms:language rdf:datatype="http://www.w3.org/2001/XMLSchema#language">pt</dcterms:language>
+    <edu:applicabilityNotes>General health-information appraisal guidance applicable to online searches during survivorship. Not cancer-specific and does not provide comprehensive privacy guidance. Social-media reporting instructions may change.</edu:applicabilityNotes>
+    <icare:knowledgeResourceHasComplexityLevel rdf:resource="https://w3id.org/icareonto/FoundationalComplexity"/>
+    <edu:curationStatus>Approved</edu:curationStatus>
+    <dcterms:rights>Link / Signpost Only</dcterms:rights>
+    <edu:curatedOn rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-23</edu:curatedOn>
+    <icare:knowledgeResourceHasFormat rdf:resource="https://w3id.org/icareonto/WrittenText"/>
+    <dcterms:source rdf:resource="https://www.dgs.pt/em-destaque/campanha-dgs-de-1-de-abril-mito-ou-verdade-o-que-prefere-partilhar.aspx"/>
+    <edu:accessConditions>Public</edu:accessConditions>
+    <rdfs:label>Campanha DGS de 1 de abril - "Mito ou verdade: o que prefere partilhar?"</rdfs:label>
+    <dcterms:publisher>Direção-Geral da Saúde (DGS)</dcterms:publisher>
+    <dcterms:description>Brief guidance on recognising health misinformation by checking who produced a claim, what its content and evidence show, and when it was published. Encourages verification before sharing health information.</dcterms:description>
+    <edu:resourceRole>Direct Educational Resource</edu:resourceRole>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icareonto/education/resources/MAYA-EDU-0013">
+    <icare:knowledgeResourceHasAudience rdf:resource="https://w3id.org/icareonto/AYASurvivorAudience"/>
+    <edu:applicabilityNotes>General oncology article, not AYA-specific. Relevant to identity transitions and adjustment; reflective educational support rather than a structured psychological intervention.</edu:applicabilityNotes>
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/MentalHealthAndEmotionalWellbeing"/>
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/FollowUpCare"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/SelfManagementSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/InformationApplicationSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/InformationComprehensionSupportNeed"/>
+    <dcterms:publisher>Fundación Kālida</dcterms:publisher>
+    <rdfs:label>Identidad y cáncer: cómo la enfermedad puede cambiar la percepción de quién eres</rdfs:label>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/ExplainHealthTopic"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/SupportSelfManagement"/>
+    <rdf:type rdf:resource="https://w3id.org/icareonto/EducationalResource"/>
+    <rdf:type rdf:resource="https://w3id.org/icareonto/HealthLiteracyResource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <dcterms:description>Explores changes in identity, self-image, roles and priorities associated with cancer, with practical reflection prompts for understanding and adapting to these changes.</dcterms:description>
+    <edu:journeyStage>After treatment / survivorship</edu:journeyStage>
+    <edu:journeyStage>During treatment</edu:journeyStage>
+    <edu:journeyStage>Before treatment</edu:journeyStage>
+    <edu:curationStatus>Approved</edu:curationStatus>
+    <edu:accessConditions>Public</edu:accessConditions>
+    <dcterms:language rdf:datatype="http://www.w3.org/2001/XMLSchema#language">es</dcterms:language>
+    <dcterms:title>Identidad y cáncer: cómo la enfermedad puede cambiar la percepción de quién eres</dcterms:title>
+    <dcterms:source rdf:resource="https://www.fundaciokalida.org/es/identitat-i-cancer-percepcio-de-qui-ets/"/>
+    <edu:resourceRole>Direct Educational Resource</edu:resourceRole>
+    <edu:curatedOn rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-03</edu:curatedOn>
+    <edu:curatedBy>INO</edu:curatedBy>
+    <icare:knowledgeResourceHasFormat rdf:resource="https://w3id.org/icareonto/WrittenText"/>
+    <edu:completionStatus>Complete</edu:completionStatus>
+    <dcterms:identifier>MAYA-EDU-0013</dcterms:identifier>
+    <icare:knowledgeResourceHasComplexityLevel rdf:resource="https://w3id.org/icareonto/FoundationalComplexity"/>
+    <edu:resourceDateText>2026</edu:resourceDateText>
+    <dcterms:rights>Link / Signpost Only</dcterms:rights>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icareonto/education/resources/MAYA-EDU-0180">
+    <edu:curationStatus>Approved</edu:curationStatus>
+    <dcterms:language rdf:datatype="http://www.w3.org/2001/XMLSchema#language">de</dcterms:language>
+    <edu:applicabilityNotes>Relevant during and after treatment. General cancer information rather than AYA-specific guidance. German service and employment information may require local interpretation.</edu:applicabilityNotes>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/SupportSelfManagement"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/PrepareForConsultation"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/ExplainHealthTopic"/>
+    <rdf:type rdf:resource="https://w3id.org/icareonto/HealthLiteracyResource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/icareonto/EducationalResource"/>
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/FollowUpCare"/>
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/MentalHealthAndEmotionalWellbeing"/>
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/PhysicalActivity"/>
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/SelfMonitoring"/>
+    <dcterms:identifier>MAYA-EDU-0180</dcterms:identifier>
+    <dcterms:publisher>Krebsinformationsdienst, Deutsches Krebsforschungszentrum (DKFZ); Teresa Glauner</dcterms:publisher>
+    <dcterms:description>Explains cancer-related fatigue, assessment and management, including physical activity, psychosocial support and pacing. Describes a fatigue diary for recording activity, timing and energy demands and discussing observations with healthcare professionals.</dcterms:description>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/InformationComprehensionSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/SocialSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/CareTeamCommunicationSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/SelfManagementSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/InformationApplicationSupportNeed"/>
+    <edu:curatedBy>INO</edu:curatedBy>
+    <edu:resourceRole>Direct Educational Resource</edu:resourceRole>
+    <edu:completionStatus>Complete</edu:completionStatus>
+    <edu:journeyStage>After treatment / survivorship</edu:journeyStage>
+    <edu:journeyStage>During treatment</edu:journeyStage>
+    <edu:resourceDateText>2026</edu:resourceDateText>
+    <icare:knowledgeResourceHasAudience rdf:resource="https://w3id.org/icareonto/FamilyAudience"/>
+    <icare:knowledgeResourceHasAudience rdf:resource="https://w3id.org/icareonto/CaregiverAudience"/>
+    <icare:knowledgeResourceHasAudience rdf:resource="https://w3id.org/icareonto/AYASurvivorAudience"/>
+    <dcterms:rights>Link / Signpost Only</dcterms:rights>
+    <edu:curatedOn rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-23</edu:curatedOn>
+    <icare:knowledgeResourceHasComplexityLevel rdf:resource="https://w3id.org/icareonto/StandardComplexity"/>
+    <icare:knowledgeResourceHasFormat rdf:resource="https://w3id.org/icareonto/WrittenText"/>
+    <rdfs:label>Fatigue bei Krebs: Was tun bei Müdigkeit und Erschöpfung?</rdfs:label>
+    <dcterms:source rdf:resource="https://www.krebsinformationsdienst.de/nebenwirkungen-bei-krebs/fatigue"/>
+    <dcterms:title>Fatigue bei Krebs: Was tun bei Müdigkeit und Erschöpfung?</dcterms:title>
+    <edu:accessConditions>Public</edu:accessConditions>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icareonto/education/resources/MAYA-EDU-0077d">
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/CardiovascularLateEffects"/>
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/MentalHealthAndEmotionalWellbeing"/>
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/Smoking"/>
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/PhysicalActivity"/>
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/FollowUpCare"/>
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/Nutrition"/>
+    <edu:resourceDateText>2017</edu:resourceDateText>
+    <rdfs:label>Survivorship: An ESMO-ECPC Guide for Patients</rdfs:label>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/SupportCareNavigation"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/ExplainHealthTopic"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/SupportSelfManagement"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/SupportBehaviourChange"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/PrepareForConsultation"/>
+    <dcterms:rights>Link / Signpost Only</dcterms:rights>
+    <edu:curatedOn rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-23</edu:curatedOn>
+    <icare:knowledgeResourceHasComplexityLevel rdf:resource="https://w3id.org/icareonto/StandardComplexity"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/icareonto/EducationalResource"/>
+    <rdf:type rdf:resource="https://w3id.org/icareonto/HealthLiteracyResource"/>
+    <dcterms:title>Survivorship: An ESMO-ECPC Guide for Patients</dcterms:title>
+    <icare:knowledgeResourceHasFormat rdf:resource="https://w3id.org/icareonto/WrittenText"/>
+    <edu:completionStatus>Complete</edu:completionStatus>
+    <dcterms:language rdf:datatype="http://www.w3.org/2001/XMLSchema#language">en</dcterms:language>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/CareTeamCommunicationSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/InformationApplicationSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/SelfManagementSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/HealthcareNavigationSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/InformationComprehensionSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/SocialSupportNeed"/>
+    <icare:knowledgeResourceHasAudience rdf:resource="https://w3id.org/icareonto/FamilyAudience"/>
+    <icare:knowledgeResourceHasAudience rdf:resource="https://w3id.org/icareonto/AYASurvivorAudience"/>
+    <icare:knowledgeResourceHasAudience rdf:resource="https://w3id.org/icareonto/CaregiverAudience"/>
+    <dcterms:identifier>MAYA-EDU-0077d</dcterms:identifier>
+    <edu:journeyStage>After treatment / survivorship</edu:journeyStage>
+    <edu:accessConditions>Public</edu:accessConditions>
+    <edu:curationStatus>Approved</edu:curationStatus>
+    <dcterms:source rdf:resource="https://dam.esmo.org/image/upload/v1671553955/For%20patients/Patient%20Guides/Survivorship/EN-ESMO-Patient-Guide-Survivorship.pdf"/>
+    <dcterms:description>Patient guide to life after initial cancer treatment, covering follow-up, cardiovascular and other late effects, physical activity, nutrition, smoking cessation, emotional wellbeing, relationships, support services and personal care records.</dcterms:description>
+    <edu:applicabilityNotes>Broad adult survivorship guide. Direct participants to relevant sections. Clinical review should confirm the continuing applicability of recommendations in this 2017 edition, particularly lifestyle and treatment advice.</edu:applicabilityNotes>
+    <dcterms:publisher>European Society for Medical Oncology (ESMO); European Cancer Patient Coalition (ECPC); developed in collaboration with the International Psycho-Oncology Society (IPOS)</dcterms:publisher>
+    <edu:curatedBy>INO</edu:curatedBy>
+    <edu:resourceRole>Direct Educational Resource</edu:resourceRole>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icareonto/education/resources/MAYA-EDU-0046">
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/SupportSelfManagement"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/ExplainHealthTopic"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/SupportBehaviourChange"/>
+    <edu:curatedOn rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-18</edu:curatedOn>
+    <dcterms:source rdf:resource="https://laco.imm.medicina.ulisboa.pt/wp-content/uploads/sites/11/2021/10/BOOKLET-LACO_Dicas-para-quem-vive-com-cancro.pdf"/>
+    <dcterms:identifier>MAYA-EDU-0046</dcterms:identifier>
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/FollowUpCare"/>
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/Nutrition"/>
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/PhysicalActivity"/>
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/MentalHealthAndEmotionalWellbeing"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/InformationComprehensionSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/SocialSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/SelfManagementSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/InformationApplicationSupportNeed"/>
+    <icare:knowledgeResourceHasAudience rdf:resource="https://w3id.org/icareonto/CaregiverAudience"/>
+    <icare:knowledgeResourceHasAudience rdf:resource="https://w3id.org/icareonto/FamilyAudience"/>
+    <icare:knowledgeResourceHasAudience rdf:resource="https://w3id.org/icareonto/AYASurvivorAudience"/>
+    <dcterms:title>Dicas para quem vive com cancro</dcterms:title>
+    <rdf:type rdf:resource="https://w3id.org/icareonto/EducationalResource"/>
+    <rdf:type rdf:resource="https://w3id.org/icareonto/HealthLiteracyResource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <edu:curatedBy>INO</edu:curatedBy>
+    <edu:completionStatus>Complete</edu:completionStatus>
+    <edu:curationStatus>Approved</edu:curationStatus>
+    <dcterms:rights>Link / Signpost Only</dcterms:rights>
+    <edu:journeyStage>During treatment</edu:journeyStage>
+    <edu:journeyStage>After treatment / survivorship</edu:journeyStage>
+    <dcterms:language rdf:datatype="http://www.w3.org/2001/XMLSchema#language">pt</dcterms:language>
+    <dcterms:publisher>Laço (publication hosted by iMM–Laço); drawing on contributions from women with breast-cancer experience</dcterms:publisher>
+    <dcterms:description>Practical tips on daily life with cancer, including emotional wellbeing, fatigue, sleep, common treatment effects, sexuality, exercise, food and support from family and friends.</dcterms:description>
+    <icare:knowledgeResourceHasFormat rdf:resource="https://w3id.org/icareonto/WrittenText"/>
+    <edu:accessConditions>Public</edu:accessConditions>
+    <edu:resourceRole>Direct Educational Resource</edu:resourceRole>
+    <edu:applicabilityNotes>Draws substantially on breast-cancer and treatment experiences, rather than being a dedicated AYA or post-treatment guide. Review relevance of each intended section; distinguish everyday coping tips from treatment-specific symptom advice. Not every topic in the full guide applies to every survivor.</edu:applicabilityNotes>
+    <rdfs:label>Dicas para quem vive com cancro</rdfs:label>
+    <icare:knowledgeResourceHasComplexityLevel rdf:resource="https://w3id.org/icareonto/StandardComplexity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icareonto/education/resources/MAYA-EDU-0172">
+    <dcterms:source rdf:resource="https://www.airc.it/cancro/informazioni-tumori/corretta-informazione/istruzioni-navigazione-sicura-internet"/>
+    <edu:journeyStage>During treatment</edu:journeyStage>
+    <edu:journeyStage>Before treatment</edu:journeyStage>
+    <edu:journeyStage>After treatment / survivorship</edu:journeyStage>
+    <edu:applicabilityNotes>General online health-information appraisal with cancer context; applicable before, during and after treatment.</edu:applicabilityNotes>
+    <dcterms:identifier>MAYA-EDU-0172</dcterms:identifier>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/InformationApplicationSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/InformationAccessSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/InformationAppraisalSupportNeed"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/icareonto/EducationalResource"/>
+    <rdf:type rdf:resource="https://w3id.org/icareonto/HealthLiteracyResource"/>
+    <edu:accessConditions>Public</edu:accessConditions>
+    <edu:completionStatus>Complete</edu:completionStatus>
+    <icare:knowledgeResourceHasComplexityLevel rdf:resource="https://w3id.org/icareonto/FoundationalComplexity"/>
+    <rdfs:label>Istruzioni per una navigazione sicura</rdfs:label>
+    <edu:resourceRole>Direct Educational Resource</edu:resourceRole>
+    <icare:knowledgeResourceHasAudience rdf:resource="https://w3id.org/icareonto/FamilyAudience"/>
+    <icare:knowledgeResourceHasAudience rdf:resource="https://w3id.org/icareonto/AYASurvivorAudience"/>
+    <icare:knowledgeResourceHasAudience rdf:resource="https://w3id.org/icareonto/CaregiverAudience"/>
+    <dcterms:publisher>Fondazione AIRC per la Ricerca sul Cancro</dcterms:publisher>
+    <dcterms:title>Istruzioni per una navigazione sicura</dcterms:title>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/SupportSelfManagement"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/ExplainHealthTopic"/>
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/DigitalHealthPrivacyAndTrust"/>
+    <edu:curatedOn rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-18</edu:curatedOn>
+    <icare:knowledgeResourceHasFormat rdf:resource="https://w3id.org/icareonto/WrittenText"/>
+    <edu:resourceDateText>2023</edu:resourceDateText>
+    <icare:knowledgeResourceHasAccessibilityFeature rdf:resource="https://w3id.org/icareonto/PlainLanguage"/>
+    <edu:curatedBy>INO</edu:curatedBy>
+    <dcterms:description>Short article explaining how to evaluate online health information by checking the responsible organisation, purpose, funding, expertise, evidence sources and update date.</dcterms:description>
+    <edu:curationStatus>Approved</edu:curationStatus>
+    <dcterms:rights>Link / Signpost Only</dcterms:rights>
+    <dcterms:language rdf:datatype="http://www.w3.org/2001/XMLSchema#language">it</dcterms:language>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icareonto/education/resources/MAYA-EDU-0018">
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/SupportSelfManagement"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/ExplainHealthTopic"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/PrepareForConsultation"/>
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/FollowUpCare"/>
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/CardiovascularLateEffects"/>
+    <rdf:type rdf:resource="https://w3id.org/icareonto/EducationalResource"/>
+    <rdf:type rdf:resource="https://w3id.org/icareonto/HealthLiteracyResource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <dcterms:source rdf:resource="https://www.cclg.org.uk/about-cancer/living-beyond-cancer/late-effect-factsheets/heart-problems"/>
+    <dcterms:publisher>Children's Cancer and Leukaemia Group (CCLG)</dcterms:publisher>
+    <dcterms:identifier>MAYA-EDU-0018</dcterms:identifier>
+    <edu:journeyStage>After treatment / survivorship</edu:journeyStage>
+    <edu:journeyStage>During treatment</edu:journeyStage>
+    <edu:journeyStage>Before treatment</edu:journeyStage>
+    <edu:accessConditions>Public</edu:accessConditions>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/InformationComprehensionSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/CareTeamCommunicationSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/InformationApplicationSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/SelfManagementSupportNeed"/>
+    <edu:curationStatus>Approved</edu:curationStatus>
+    <rdfs:label>Late Effects: Heart Problems</rdfs:label>
+    <edu:resourceRole>Direct Educational Resource</edu:resourceRole>
+    <dcterms:title>Late Effects: Heart Problems</dcterms:title>
+    <edu:curatedOn rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-03</edu:curatedOn>
+    <edu:curatedBy>INO</edu:curatedBy>
+    <icare:knowledgeResourceHasFormat rdf:resource="https://w3id.org/icareonto/WrittenText"/>
+    <edu:completionStatus>Complete</edu:completionStatus>
+    <dcterms:language rdf:datatype="http://www.w3.org/2001/XMLSchema#language">en</dcterms:language>
+    <dcterms:rights>Link / Signpost Only</dcterms:rights>
+    <icare:knowledgeResourceHasAudience rdf:resource="https://w3id.org/icareonto/AYASurvivorAudience"/>
+    <edu:applicabilityNotes>Particularly relevant to survivors treated as children, teenagers or young adults. Primarily concerns late effects and follow-up. Treatment-specific monitoring and exercise advice require individual clinical interpretation.</edu:applicabilityNotes>
+    <icare:knowledgeResourceHasComplexityLevel rdf:resource="https://w3id.org/icareonto/StandardComplexity"/>
+    <dcterms:description>Explains potential heart problems following cancer treatment in young people, including relevant treatment exposures, symptoms to report, follow-up tests and measures to support heart health.</dcterms:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icareonto/education/resources/MAYA-EDU-0021">
+    <icare:knowledgeResourceHasAudience rdf:resource="https://w3id.org/icareonto/AYASurvivorAudience"/>
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/MentalHealthAndEmotionalWellbeing"/>
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/FollowUpCare"/>
+    <edu:applicabilityNotes>Youth-focused survivorship guidance addressing relationship adjustment and communication. Includes discussing treatment-related fertility effects with a partner, rather than detailed fertility guidance.</edu:applicabilityNotes>
+    <rdfs:label>Relationships after cancer treatment</rdfs:label>
+    <dcterms:description>Guidance for young people navigating relationships after cancer treatment, including family dynamics, friendships, romantic relationships, independence and communicating personal needs and concerns.</dcterms:description>
+    <dcterms:publisher>Teenage Cancer Trust</dcterms:publisher>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/InformationComprehensionSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/SocialSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/InformationApplicationSupportNeed"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/ExplainHealthTopic"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/SupportSelfManagement"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/SupportDisclosure"/>
+    <rdf:type rdf:resource="https://w3id.org/icareonto/EducationalResource"/>
+    <rdf:type rdf:resource="https://w3id.org/icareonto/HealthLiteracyResource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <edu:curatedBy>INO</edu:curatedBy>
+    <dcterms:identifier>MAYA-EDU-0021</dcterms:identifier>
+    <edu:completionStatus>Complete</edu:completionStatus>
+    <dcterms:source rdf:resource="https://www.teenagecancertrust.org/information-about-cancer/relationships-after-cancer-treatment"/>
+    <edu:journeyStage>After treatment / survivorship</edu:journeyStage>
+    <edu:curationStatus>Approved</edu:curationStatus>
+    <dcterms:rights>Link / Signpost Only</dcterms:rights>
+    <edu:curatedOn rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-03</edu:curatedOn>
+    <dcterms:title>Relationships after cancer treatment</dcterms:title>
+    <icare:knowledgeResourceHasFormat rdf:resource="https://w3id.org/icareonto/WrittenText"/>
+    <edu:accessConditions>Public</edu:accessConditions>
+    <icare:knowledgeResourceHasComplexityLevel rdf:resource="https://w3id.org/icareonto/FoundationalComplexity"/>
+    <dcterms:language rdf:datatype="http://www.w3.org/2001/XMLSchema#language">en</dcterms:language>
+    <edu:resourceRole>Direct Educational Resource</edu:resourceRole>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icareonto/education/resources/MAYA-EDU-0178">
+    <edu:journeyStage>During treatment</edu:journeyStage>
+    <edu:journeyStage>Before treatment</edu:journeyStage>
+    <edu:journeyStage>After treatment / survivorship</edu:journeyStage>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/InformationAccessSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/InformationAppraisalSupportNeed"/>
+    <edu:curatedBy>INO</edu:curatedBy>
+    <rdfs:label>How to Find Cancer Resources You Can Trust</rdfs:label>
+    <edu:applicabilityNotes>Applicable throughout the cancer journey. Some website-domain examples and linked organisations reflect the US context. Review linked resources separately before recommending them.</edu:applicabilityNotes>
+    <rdf:type rdf:resource="https://w3id.org/icareonto/HealthLiteracyResource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/icareonto/EducationalResource"/>
+    <edu:completionStatus>Complete</edu:completionStatus>
+    <dcterms:identifier>MAYA-EDU-0178</dcterms:identifier>
+    <edu:resourceDateText>2025</edu:resourceDateText>
+    <dcterms:description>Practical guidance for finding and evaluating cancer information, checking authorship, evidence, sponsorship and currency, protecting personal information, and using websites, social media and email safely.</dcterms:description>
+    <dcterms:title>How to Find Cancer Resources You Can Trust</dcterms:title>
+    <icare:knowledgeResourceHasComplexityLevel rdf:resource="https://w3id.org/icareonto/StandardComplexity"/>
+    <edu:curatedOn rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-23</edu:curatedOn>
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/DigitalHealthPrivacyAndTrust"/>
+    <icare:knowledgeResourceHasFormat rdf:resource="https://w3id.org/icareonto/WrittenText"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/ExplainHealthTopic"/>
+    <edu:accessConditions>Public</edu:accessConditions>
+    <dcterms:language rdf:datatype="http://www.w3.org/2001/XMLSchema#language">en</dcterms:language>
+    <icare:knowledgeResourceHasAudience rdf:resource="https://w3id.org/icareonto/CaregiverAudience"/>
+    <icare:knowledgeResourceHasAudience rdf:resource="https://w3id.org/icareonto/FamilyAudience"/>
+    <icare:knowledgeResourceHasAudience rdf:resource="https://w3id.org/icareonto/AYASurvivorAudience"/>
+    <dcterms:source rdf:resource="https://www.cancer.gov/about-cancer/managing-care/using-trusted-resources"/>
+    <dcterms:publisher>National Cancer Institute (NCI), National Institutes of Health</dcterms:publisher>
+    <edu:curationStatus>Approved</edu:curationStatus>
+    <dcterms:rights>Link / Signpost Only</dcterms:rights>
+    <edu:resourceRole>Direct Educational Resource</edu:resourceRole>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icareonto/education/resources/MAYA-EDU-0020">
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/FollowUpCare"/>
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/MentalHealthAndEmotionalWellbeing"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/InformationComprehensionSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/SocialSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/SelfManagementSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/InformationApplicationSupportNeed"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/ExplainHealthTopic"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/SupportDisclosure"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/SupportSelfManagement"/>
+    <rdf:type rdf:resource="https://w3id.org/icareonto/EducationalResource"/>
+    <rdf:type rdf:resource="https://w3id.org/icareonto/HealthLiteracyResource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <dcterms:publisher>Young Lives vs Cancer</dcterms:publisher>
+    <edu:curatedBy>INO</edu:curatedBy>
+    <edu:completionStatus>Complete</edu:completionStatus>
+    <edu:applicabilityNotes>Youth-focused survivorship guidance. Includes UK-specific employment, education and support references whose applicability varies between pilots. Content can be viewed in 134 different languages.</edu:applicabilityNotes>
+    <edu:journeyStage>After treatment / survivorship</edu:journeyStage>
+    <edu:curationStatus>Approved</edu:curationStatus>
+    <dcterms:rights>Link / Signpost Only</dcterms:rights>
+    <dcterms:identifier>MAYA-EDU-0020</dcterms:identifier>
+    <icare:knowledgeResourceHasComplexityLevel rdf:resource="https://w3id.org/icareonto/FoundationalComplexity"/>
+    <dcterms:description>Practical guidance for young people adjusting to life after cancer treatment, covering relationships, identity, work or education, ongoing effects, emotional recovery and fear of relapse.</dcterms:description>
+    <rdfs:label>Getting Back to Normal After Treatment Ends</rdfs:label>
+    <edu:curatedOn rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-03</edu:curatedOn>
+    <icare:knowledgeResourceHasFormat rdf:resource="https://w3id.org/icareonto/WrittenText"/>
+    <dcterms:title>Getting Back to Normal After Treatment Ends</dcterms:title>
+    <edu:accessConditions>Public</edu:accessConditions>
+    <dcterms:language rdf:datatype="http://www.w3.org/2001/XMLSchema#language">en</dcterms:language>
+    <dcterms:source rdf:resource="https://www.younglivesvscancer.org.uk/cancer-info-support/body-and-health/getting-back-to-normal-after-treatment-ends/"/>
+    <edu:resourceRole>Direct Educational Resource</edu:resourceRole>
+    <icare:knowledgeResourceHasAudience rdf:resource="https://w3id.org/icareonto/AYASurvivorAudience"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icareonto/education/resources/MAYA-EDU-0030">
+    <dcterms:language rdf:datatype="http://www.w3.org/2001/XMLSchema#language">en</dcterms:language>
+    <icare:knowledgeResourceHasAudience rdf:resource="https://w3id.org/icareonto/CaregiverAudience"/>
+    <icare:knowledgeResourceHasAudience rdf:resource="https://w3id.org/icareonto/AYASurvivorAudience"/>
+    <rdf:type rdf:resource="https://w3id.org/icareonto/EducationalResource"/>
+    <rdf:type rdf:resource="https://w3id.org/icareonto/HealthLiteracyResource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <edu:resourceRole>Direct Educational Resource</edu:resourceRole>
+    <dcterms:description>Information and signposting to age-appropriate cancer support for teenagers, young adults and young carers, including practical, emotional, financial and peer-support services.</dcterms:description>
+    <edu:journeyStage>After treatment / survivorship</edu:journeyStage>
+    <edu:journeyStage>During treatment</edu:journeyStage>
+    <edu:journeyStage>Before treatment</edu:journeyStage>
+    <rdfs:label>Teenagers and young adults affected by cancer</rdfs:label>
+    <edu:resourceDateText>2026</edu:resourceDateText>
+    <edu:curationStatus>Approved</edu:curationStatus>
+    <dcterms:rights>Link / Signpost Only</dcterms:rights>
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/FollowUpCare"/>
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/MentalHealthAndEmotionalWellbeing"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/SocialSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/HealthcareNavigationSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/InformationAccessSupportNeed"/>
+    <edu:applicabilityNotes>Primarily signposting rather than detailed educational guidance. Includes UK-specific services, rights and eligibility criteria. Young carers are a separate audience from young people diagnosed with cancer.</edu:applicabilityNotes>
+    <dcterms:title>Teenagers and young adults affected by cancer</dcterms:title>
+    <edu:curatedBy>INO</edu:curatedBy>
+    <edu:completionStatus>Complete</edu:completionStatus>
+    <edu:curatedOn rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-03</edu:curatedOn>
+    <dcterms:source rdf:resource="https://www.macmillan.org.uk/cancer-information-and-support/get-help/teenagers-and-young-adults"/>
+    <dcterms:publisher>Macmillan Cancer Support</dcterms:publisher>
+    <icare:knowledgeResourceHasComplexityLevel rdf:resource="https://w3id.org/icareonto/FoundationalComplexity"/>
+    <dcterms:identifier>MAYA-EDU-0030</dcterms:identifier>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/SupportCareNavigation"/>
+    <icare:knowledgeResourceHasFormat rdf:resource="https://w3id.org/icareonto/WrittenText"/>
+    <edu:accessConditions>Public</edu:accessConditions>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icareonto/education/resources/MAYA-EDU-0012">
+    <edu:curatedOn rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-03</edu:curatedOn>
+    <edu:accessConditions>Public</edu:accessConditions>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/InformationComprehensionSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/SocialSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/HealthcareNavigationSupportNeed"/>
+    <dcterms:source rdf:resource="https://www.fundaciokalida.org/es/como-te-ayudamos/apoyo-a-los-cuidadores/"/>
+    <edu:resourceRole>Direct Educational Resource</edu:resourceRole>
+    <rdf:type rdf:resource="https://w3id.org/icareonto/HealthLiteracyResource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/icareonto/EducationalResource"/>
+    <icare:knowledgeResourceHasComplexityLevel rdf:resource="https://w3id.org/icareonto/FoundationalComplexity"/>
+    <edu:journeyStage>After treatment / survivorship</edu:journeyStage>
+    <edu:journeyStage>During treatment</edu:journeyStage>
+    <edu:journeyStage>Before treatment</edu:journeyStage>
+    <edu:curationStatus>Approved</edu:curationStatus>
+    <dcterms:rights>Link / Signpost Only</dcterms:rights>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/SupportCareNavigation"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/ExplainHealthTopic"/>
+    <edu:applicabilityNotes>Primarily a caregiver-support overview and signposting page. Not specific to caregivers of AYA survivors. Confirm eligibility and availability before recommending provider services.</edu:applicabilityNotes>
+    <dcterms:publisher>Fundación Kālida</dcterms:publisher>
+    <edu:curatedBy>INO</edu:curatedBy>
+    <icare:knowledgeResourceHasFormat rdf:resource="https://w3id.org/icareonto/WrittenText"/>
+    <dcterms:identifier>MAYA-EDU-0012</dcterms:identifier>
+    <edu:completionStatus>Complete</edu:completionStatus>
+    <dcterms:description>Introduces caregivers’ emotional and practical support needs, with links to guidance for adult and young carers and people experiencing bereavement.</dcterms:description>
+    <rdfs:label>Apoyo a los cuidadores</rdfs:label>
+    <icare:knowledgeResourceHasAudience rdf:resource="https://w3id.org/icareonto/FamilyAudience"/>
+    <icare:knowledgeResourceHasAudience rdf:resource="https://w3id.org/icareonto/CaregiverAudience"/>
+    <dcterms:language rdf:datatype="http://www.w3.org/2001/XMLSchema#language">es</dcterms:language>
+    <dcterms:title>Apoyo a los cuidadores</dcterms:title>
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/MentalHealthAndEmotionalWellbeing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icareonto/education/resources/MAYA-EDU-0167">
+    <edu:applicabilityNotes>Broad adult survivorship guide. Check suitability for younger AYAs and current recommendations. US-specific insurance, service and contact information may not apply locally. Direct participants to relevant sections.</edu:applicabilityNotes>
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/FollowUpCare"/>
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/PhysicalActivity"/>
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/SelfMonitoring"/>
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/Nutrition"/>
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/MentalHealthAndEmotionalWellbeing"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/icareonto/EducationalResource"/>
+    <rdf:type rdf:resource="https://w3id.org/icareonto/HealthLiteracyResource"/>
+    <icare:knowledgeResourceHasFormat rdf:resource="https://w3id.org/icareonto/WrittenText"/>
+    <edu:accessConditions>Public</edu:accessConditions>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/InformationComprehensionSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/SocialSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/CareTeamCommunicationSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/InformationApplicationSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/SelfManagementSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/HealthcareNavigationSupportNeed"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/ExplainHealthTopic"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/SupportSelfManagement"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/SupportBehaviourChange"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/PrepareForConsultation"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/SupportCareNavigation"/>
+    <dcterms:language rdf:datatype="http://www.w3.org/2001/XMLSchema#language">en</dcterms:language>
+    <edu:resourceDateText>2018</edu:resourceDateText>
+    <edu:resourceRole>Direct Educational Resource</edu:resourceRole>
+    <icare:knowledgeResourceHasAudience rdf:resource="https://w3id.org/icareonto/FamilyAudience"/>
+    <icare:knowledgeResourceHasAudience rdf:resource="https://w3id.org/icareonto/AYASurvivorAudience"/>
+    <icare:knowledgeResourceHasAudience rdf:resource="https://w3id.org/icareonto/CaregiverAudience"/>
+    <dcterms:title>Facing Forward: Life After Cancer Treatment</dcterms:title>
+    <edu:journeyStage>After treatment / survivorship</edu:journeyStage>
+    <dcterms:publisher>National Cancer Institute (NCI), National Institutes of Health</dcterms:publisher>
+    <edu:curationStatus>Approved</edu:curationStatus>
+    <dcterms:identifier>MAYA-EDU-0167</dcterms:identifier>
+    <edu:curatedBy>INO</edu:curatedBy>
+    <edu:completionStatus>Complete</edu:completionStatus>
+    <dcterms:description>Guide to life after cancer treatment, covering follow-up care, healthy living, persistent symptoms, emotional adjustment, relationships and work. Includes consultation guidance and a pain diary for recording symptoms and responses to treatment.</dcterms:description>
+    <dcterms:rights>Link / Signpost Only</dcterms:rights>
+    <rdfs:label>Facing Forward: Life After Cancer Treatment</rdfs:label>
+    <edu:curatedOn rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-23</edu:curatedOn>
+    <dcterms:source rdf:resource="https://www.cancer.gov/publications/patient-education/facing-forward"/>
+    <icare:knowledgeResourceHasComplexityLevel rdf:resource="https://w3id.org/icareonto/StandardComplexity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icareonto/education/resources/MAYA-EDU-0183">
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/SupportSelfManagement"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/SupportBehaviourChange"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/SupportCareNavigation"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/ExplainHealthTopic"/>
+    <icare:knowledgeResourceHasComplexityLevel rdf:resource="https://w3id.org/icareonto/StandardComplexity"/>
+    <dcterms:source rdf:resource="https://www.macmillan.org.uk/cancer-information-and-support/treatment/coping-with-treatment/giving-up-smoking"/>
+    <edu:journeyStage>During treatment</edu:journeyStage>
+    <edu:journeyStage>After treatment / survivorship</edu:journeyStage>
+    <edu:curatedBy>INO</edu:curatedBy>
+    <dcterms:identifier>MAYA-EDU-0183</dcterms:identifier>
+    <edu:completionStatus>Complete</edu:completionStatus>
+    <rdfs:label>Giving up smoking</rdfs:label>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/InformationApplicationSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/SelfManagementSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/HealthcareNavigationSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/InformationComprehensionSupportNeed"/>
+    <rdf:type rdf:resource="https://w3id.org/icareonto/HealthLiteracyResource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/icareonto/EducationalResource"/>
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/CardiovascularLateEffects"/>
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/Smoking"/>
+    <edu:applicabilityNotes>General cancer information, including survivorship. Service links are UK-specific; participants elsewhere require local services. Recheck when the provider publishes its update.</edu:applicabilityNotes>
+    <dcterms:title>Giving up smoking</dcterms:title>
+    <edu:resourceDateText>2022</edu:resourceDateText>
+    <edu:curatedOn rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-23</edu:curatedOn>
+    <dcterms:publisher>Macmillan Cancer Support, Cancer Information Development team</dcterms:publisher>
+    <icare:knowledgeResourceHasFormat rdf:resource="https://w3id.org/icareonto/WrittenText"/>
+    <edu:accessConditions>Public</edu:accessConditions>
+    <dcterms:language rdf:datatype="http://www.w3.org/2001/XMLSchema#language">en</dcterms:language>
+    <icare:knowledgeResourceHasAudience rdf:resource="https://w3id.org/icareonto/CaregiverAudience"/>
+    <icare:knowledgeResourceHasAudience rdf:resource="https://w3id.org/icareonto/FamilyAudience"/>
+    <icare:knowledgeResourceHasAudience rdf:resource="https://w3id.org/icareonto/AYASurvivorAudience"/>
+    <edu:resourceRole>Direct Educational Resource</edu:resourceRole>
+    <dcterms:description>Explains the benefits of stopping smoking during and after cancer treatment, including reducing heart and lung risks. Describes preparing to quit, seeking professional support and accessing smoking-cessation services.</dcterms:description>
+    <edu:curationStatus>Approved</edu:curationStatus>
+    <dcterms:rights>Link / Signpost Only</dcterms:rights>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icareonto/education/resources/MAYA-EDU-0011">
+    <rdf:type rdf:resource="https://w3id.org/icareonto/EducationalResource"/>
+    <rdf:type rdf:resource="https://w3id.org/icareonto/HealthLiteracyResource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Cáncer y relaciones sociales</rdfs:label>
+    <icare:knowledgeResourceHasAudience rdf:resource="https://w3id.org/icareonto/AYASurvivorAudience"/>
+    <edu:journeyStage>Before treatment</edu:journeyStage>
+    <edu:journeyStage>After treatment / survivorship</edu:journeyStage>
+    <edu:journeyStage>During treatment</edu:journeyStage>
+    <edu:accessConditions>Public</edu:accessConditions>
+    <dcterms:source rdf:resource="https://www.fundaciokalida.org/es/como-te-ayudamos/cancer-y-relaciones-sociales/"/>
+    <edu:curationStatus>Approved</edu:curationStatus>
+    <dcterms:language rdf:datatype="http://www.w3.org/2001/XMLSchema#language">es</dcterms:language>
+    <dcterms:identifier>MAYA-EDU-0011</dcterms:identifier>
+    <edu:resourceRole>Direct Educational Resource</edu:resourceRole>
+    <dcterms:title>Cáncer y relaciones sociales</dcterms:title>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/SupportDisclosure"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/ExplainHealthTopic"/>
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/MentalHealthAndEmotionalWellbeing"/>
+    <edu:curatedOn rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-03</edu:curatedOn>
+    <edu:applicabilityNotes>General oncology overview, not AYA-specific. Provides introductory information and signposting; detailed relationship guidance is contained in separate linked pages.</edu:applicabilityNotes>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/InformationComprehensionSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/SocialSupportNeed"/>
+    <edu:curatedBy>INO</edu:curatedBy>
+    <edu:completionStatus>Complete</edu:completionStatus>
+    <icare:knowledgeResourceHasComplexityLevel rdf:resource="https://w3id.org/icareonto/FoundationalComplexity"/>
+    <dcterms:description>Introduces the effects of cancer on relationships and communication, with links to guidance on partners, children, friends and living alone.</dcterms:description>
+    <dcterms:rights>Link / Signpost Only</dcterms:rights>
+    <dcterms:publisher>Fundación Kālida</dcterms:publisher>
+    <icare:knowledgeResourceHasFormat rdf:resource="https://w3id.org/icareonto/WrittenText"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icareonto/education/resources/MAYA-EDU-0174">
+    <icare:knowledgeResourceHasAudience rdf:resource="https://w3id.org/icareonto/FamilyAudience"/>
+    <icare:knowledgeResourceHasAudience rdf:resource="https://w3id.org/icareonto/AYASurvivorAudience"/>
+    <icare:knowledgeResourceHasAudience rdf:resource="https://w3id.org/icareonto/CaregiverAudience"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/SupportCareNavigation"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/ExplainHealthTopic"/>
+    <dcterms:rights>Link / Signpost Only</dcterms:rights>
+    <edu:journeyStage>After treatment / survivorship</edu:journeyStage>
+    <dcterms:source rdf:resource="https://www.gpoh.de/kinderkrebsinfo/content/patienten/nachsorge/index_ger.html"/>
+    <edu:applicabilityNotes>Particularly relevant to survivors treated in childhood or adolescence and their families. An introductory overview with onward links; approval of this page does not extend to every linked resource.</edu:applicabilityNotes>
+    <edu:curatedOn rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-18</edu:curatedOn>
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/FollowUpCare"/>
+    <rdfs:label>Nachsorge</rdfs:label>
+    <edu:accessConditions>Public</edu:accessConditions>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/InformationComprehensionSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/HealthcareNavigationSupportNeed"/>
+    <edu:curationStatus>Approved</edu:curationStatus>
+    <dcterms:language rdf:datatype="http://www.w3.org/2001/XMLSchema#language">de</dcterms:language>
+    <edu:resourceRole>Direct Educational Resource</edu:resourceRole>
+    <dcterms:publisher>Kinderkrebsinfo / GPOH; Maria Yiallouros and Dr Gesche Riabowol (née Tallen)</dcterms:publisher>
+    <rdf:type rdf:resource="https://w3id.org/icareonto/HealthLiteracyResource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/icareonto/EducationalResource"/>
+    <dcterms:title>Nachsorge</dcterms:title>
+    <dcterms:identifier>MAYA-EDU-0174</dcterms:identifier>
+    <edu:curatedBy>INO</edu:curatedBy>
+    <icare:knowledgeResourceHasFormat rdf:resource="https://w3id.org/icareonto/WrittenText"/>
+    <edu:completionStatus>Complete</edu:completionStatus>
+    <icare:knowledgeResourceHasComplexityLevel rdf:resource="https://w3id.org/icareonto/FoundationalComplexity"/>
+    <edu:resourceDateText>2025</edu:resourceDateText>
+    <dcterms:description>Introduction to follow-up after cancer treatment in childhood or adolescence, explaining its purpose, late effects, rehabilitation and continued support for survivors and families.</dcterms:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icareonto/education/resources/MAYA-EDU-0004">
+    <rdf:type rdf:resource="https://w3id.org/icareonto/HealthLiteracyResource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/icareonto/EducationalResource"/>
+    <dcterms:title>Ficha del paciente: Cardio-oncología</dcterms:title>
+    <icare:knowledgeResourceHasFormat rdf:resource="https://w3id.org/icareonto/Infographic"/>
+    <icare:knowledgeResourceHasFormat rdf:resource="https://w3id.org/icareonto/WrittenText"/>
+    <edu:journeyStage>During treatment</edu:journeyStage>
+    <edu:journeyStage>Before treatment</edu:journeyStage>
+    <edu:journeyStage>After treatment / survivorship</edu:journeyStage>
+    <dcterms:publisher>Fundación Española del Corazón</dcterms:publisher>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/SupportBehaviourChange"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/ExplainHealthTopic"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/SupportSelfManagement"/>
+    <icare:knowledgeResourceHasAccessibilityFeature rdf:resource="https://w3id.org/icareonto/VisualSummary"/>
+    <edu:completionStatus>Complete</edu:completionStatus>
+    <edu:curatedOn rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-03</edu:curatedOn>
+    <dcterms:rights>Link / Signpost Only</dcterms:rights>
+    <rdfs:label>Ficha del paciente: Cardio-oncología</rdfs:label>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/InformationApplicationSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/SelfManagementSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/InformationComprehensionSupportNeed"/>
+    <edu:accessConditions>Public</edu:accessConditions>
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/CardiovascularLateEffects"/>
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/FollowUpCare"/>
+    <dcterms:source rdf:resource="https://fundaciondelcorazon.com/phocadownload/recursos-didacticos/fichas/FICHA%20CARDIO-ONCOLOGIA.pdf"/>
+    <edu:applicabilityNotes>General oncology patient information, updated 2024; not specifically developed for AYA survivors. Covers cardiovascular risks, monitoring and prevention before, during and after treatment. Suitable as background education, with exercise, medication and surveillance advice interpreted in the participant’s clinical context.</edu:applicabilityNotes>
+    <icare:knowledgeResourceHasAudience rdf:resource="https://w3id.org/icareonto/AYASurvivorAudience"/>
+    <icare:knowledgeResourceHasComplexityLevel rdf:resource="https://w3id.org/icareonto/StandardComplexity"/>
+    <dcterms:identifier>MAYA-EDU-0004</dcterms:identifier>
+    <edu:resourceDateText>2024</edu:resourceDateText>
+    <dcterms:description>Two-page illustrated patient information sheet explaining cardiovascular complications of cancer treatment, assessment and monitoring before, during and after treatment, and practical measures to support cardiovascular health.</dcterms:description>
+    <edu:curatedBy>INO</edu:curatedBy>
+    <edu:resourceRole>Direct Educational Resource</edu:resourceRole>
+    <edu:curationStatus>Approved</edu:curationStatus>
+    <dcterms:language rdf:datatype="http://www.w3.org/2001/XMLSchema#language">es</dcterms:language>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icareonto/education/resources/MAYA-EDU-0181">
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/SupportSelfManagement"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/PrepareForConsultation"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/ExplainHealthTopic"/>
+    <rdfs:label>Come affrontare i sintomi più comuni della malattia e gli effetti collaterali delle terapie</rdfs:label>
+    <dcterms:language rdf:datatype="http://www.w3.org/2001/XMLSchema#language">it</dcterms:language>
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/FollowUpCare"/>
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/Nutrition"/>
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/SelfMonitoring"/>
+    <edu:applicabilityNotes>Primarily treatment-related information, with relevant material on persistent symptoms. For survivorship, signpost applicable sections rather than assuming all treatment advice applies. Broad cancer audience.</edu:applicabilityNotes>
+    <icare:knowledgeResourceHasAudience rdf:resource="https://w3id.org/icareonto/CaregiverAudience"/>
+    <icare:knowledgeResourceHasAudience rdf:resource="https://w3id.org/icareonto/FamilyAudience"/>
+    <icare:knowledgeResourceHasAudience rdf:resource="https://w3id.org/icareonto/AYASurvivorAudience"/>
+    <edu:curatedBy>INO</edu:curatedBy>
+    <dcterms:publisher>Antonino Michienzi / Fondazione AIRC per la Ricerca sul Cancro</dcterms:publisher>
+    <dcterms:title>Come affrontare i sintomi più comuni della malattia e gli effetti collaterali delle terapie</dcterms:title>
+    <dcterms:source rdf:resource="https://www.airc.it/cancro/affronta-la-malattia/la-fase-delle-terapie/come-affrontare-i-sintomi-piu-comuni-della-malattia-e-gli-effetti-collaterali-delle-terapie"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/InformationComprehensionSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/CareTeamCommunicationSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/InformationApplicationSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/SelfManagementSupportNeed"/>
+    <edu:accessConditions>Public</edu:accessConditions>
+    <dcterms:description>Explains common cancer symptoms and treatment effects, including fatigue, eating difficulties, neuropathy, sleep problems and pain. Includes sleep-diary guidance to support discussion of sleep difficulties with a clinician.</dcterms:description>
+    <edu:resourceRole>Direct Educational Resource</edu:resourceRole>
+    <rdf:type rdf:resource="https://w3id.org/icareonto/HealthLiteracyResource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/icareonto/EducationalResource"/>
+    <edu:journeyStage>During treatment</edu:journeyStage>
+    <edu:journeyStage>After treatment / survivorship</edu:journeyStage>
+    <dcterms:rights>Link / Signpost Only</dcterms:rights>
+    <icare:knowledgeResourceHasComplexityLevel rdf:resource="https://w3id.org/icareonto/StandardComplexity"/>
+    <icare:knowledgeResourceHasFormat rdf:resource="https://w3id.org/icareonto/WrittenText"/>
+    <edu:completionStatus>Complete</edu:completionStatus>
+    <edu:resourceDateText>2023</edu:resourceDateText>
+    <dcterms:identifier>MAYA-EDU-0181</dcterms:identifier>
+    <edu:curatedOn rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-23</edu:curatedOn>
+    <edu:curationStatus>Approved</edu:curationStatus>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icareonto/education/resources/MAYA-EDU-0171">
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/DigitalHealthPrivacyAndTrust"/>
+    <edu:journeyStage>During treatment</edu:journeyStage>
+    <edu:journeyStage>Before treatment</edu:journeyStage>
+    <edu:journeyStage>After treatment / survivorship</edu:journeyStage>
+    <dcterms:source rdf:resource="https://www.krebsinformationsdienst.de/fileadmin/pdf-dateien/informationsblaetter/iblatt-sicher-surfen.pdf"/>
+    <edu:curatedBy>INO</edu:curatedBy>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/InformationAccessSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/InformationAppraisalSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/InformationApplicationSupportNeed"/>
+    <dcterms:identifier>MAYA-EDU-0171</dcterms:identifier>
+    <icare:knowledgeResourceHasAccessibilityFeature rdf:resource="https://w3id.org/icareonto/PlainLanguage"/>
+    <rdf:type rdf:resource="https://w3id.org/icareonto/HealthLiteracyResource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/icareonto/EducationalResource"/>
+    <edu:completionStatus>Complete</edu:completionStatus>
+    <icare:knowledgeResourceHasComplexityLevel rdf:resource="https://w3id.org/icareonto/FoundationalComplexity"/>
+    <dcterms:description>Two-page leaflet explaining how to assess online cancer information, check sources and authorship, interpret social-media and AI-generated content, and limit disclosure of personal information.</dcterms:description>
+    <edu:resourceDateText>2026</edu:resourceDateText>
+    <dcterms:rights>Link / Signpost Only</dcterms:rights>
+    <rdfs:label>Krebs im Internet: So finden Sie gute Informationen</rdfs:label>
+    <edu:applicabilityNotes>Relevant across the cancer journey and to carers. Builds source-appraisal and privacy awareness. Some information about services or legal context is specific to Germany.</edu:applicabilityNotes>
+    <edu:curatedOn rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-18</edu:curatedOn>
+    <icare:knowledgeResourceHasFormat rdf:resource="https://w3id.org/icareonto/WrittenText"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/ExplainHealthTopic"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/SupportSelfManagement"/>
+    <dcterms:title>Krebs im Internet: So finden Sie gute Informationen</dcterms:title>
+    <icare:knowledgeResourceHasAudience rdf:resource="https://w3id.org/icareonto/CaregiverAudience"/>
+    <icare:knowledgeResourceHasAudience rdf:resource="https://w3id.org/icareonto/FamilyAudience"/>
+    <icare:knowledgeResourceHasAudience rdf:resource="https://w3id.org/icareonto/AYASurvivorAudience"/>
+    <dcterms:publisher>Krebsinformationsdienst, Deutsches Krebsforschungszentrum (DKFZ)</dcterms:publisher>
+    <edu:curationStatus>Approved</edu:curationStatus>
+    <edu:accessConditions>Public</edu:accessConditions>
+    <dcterms:language rdf:datatype="http://www.w3.org/2001/XMLSchema#language">de</dcterms:language>
+    <edu:resourceRole>Direct Educational Resource</edu:resourceRole>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icareonto/education/resources/MAYA-EDU-0019">
+    <dcterms:identifier>MAYA-EDU-0019</dcterms:identifier>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/icareonto/EducationalResource"/>
+    <rdf:type rdf:resource="https://w3id.org/icareonto/HealthLiteracyResource"/>
+    <edu:journeyStage>Before treatment</edu:journeyStage>
+    <edu:journeyStage>After treatment / survivorship</edu:journeyStage>
+    <edu:journeyStage>During treatment</edu:journeyStage>
+    <edu:accessConditions>Public</edu:accessConditions>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/SelfManagementSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/HealthcareNavigationSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/InformationComprehensionSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/SocialSupportNeed"/>
+    <icare:knowledgeResourceHasComplexityLevel rdf:resource="https://w3id.org/icareonto/FoundationalComplexity"/>
+    <rdfs:label>Cancer and mental health information</rdfs:label>
+    <icare:knowledgeResourceHasAudience rdf:resource="https://w3id.org/icareonto/FamilyAudience"/>
+    <icare:knowledgeResourceHasAudience rdf:resource="https://w3id.org/icareonto/AYASurvivorAudience"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/SupportCareNavigation"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/ExplainHealthTopic"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/SupportSelfManagement"/>
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/MentalHealthAndEmotionalWellbeing"/>
+    <dcterms:source rdf:resource="https://www.teenagecancertrust.org/information-about-cancer/cancer-and-mental-health-information"/>
+    <dcterms:title>Cancer and mental health information</dcterms:title>
+    <icare:knowledgeResourceHasFormat rdf:resource="https://w3id.org/icareonto/WrittenText"/>
+    <dcterms:language rdf:datatype="http://www.w3.org/2001/XMLSchema#language">en</dcterms:language>
+    <edu:curatedBy>INO</edu:curatedBy>
+    <edu:resourceRole>Direct Educational Resource</edu:resourceRole>
+    <edu:curationStatus>Approved</edu:curationStatus>
+    <dcterms:rights>Link / Signpost Only</dcterms:rights>
+    <dcterms:description>Collection of mental-health information for young people affected by cancer, covering anxiety, coping strategies, psychological support, asking for help and support from family and friends, alongside personal experiences.</dcterms:description>
+    <edu:applicabilityNotes>Youth-focused collection including post-treatment mental health, coping techniques, professional support and family support. Annotations describe the collection’s advertised coverage; individual resources require separate review when selected for use.</edu:applicabilityNotes>
+    <dcterms:publisher>Teenage Cancer Trust</dcterms:publisher>
+    <edu:completionStatus>Complete</edu:completionStatus>
+    <edu:curatedOn rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-03</edu:curatedOn>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icareonto/education/resources/MAYA-EDU-0023">
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/SupportBehaviourChange"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/SupportSelfManagement"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/ExplainHealthTopic"/>
+    <edu:curatedOn rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-03</edu:curatedOn>
+    <rdfs:label>Overwhelmed by diet and cancer advice? You’re not alone</rdfs:label>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/InformationComprehensionSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/InformationAppraisalSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/SelfManagementSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/InformationApplicationSupportNeed"/>
+    <edu:curatedBy>INO</edu:curatedBy>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/icareonto/EducationalResource"/>
+    <rdf:type rdf:resource="https://w3id.org/icareonto/HealthLiteracyResource"/>
+    <icare:knowledgeResourceHasAccessibilityFeature rdf:resource="https://w3id.org/icareonto/PlainLanguage"/>
+    <dcterms:identifier>MAYA-EDU-0023</dcterms:identifier>
+    <edu:accessConditions>Restricted</edu:accessConditions>
+    <edu:completionStatus>Complete</edu:completionStatus>
+    <icare:knowledgeResourceHasComplexityLevel rdf:resource="https://w3id.org/icareonto/FoundationalComplexity"/>
+    <dcterms:title>Overwhelmed by diet and cancer advice? You’re not alone</dcterms:title>
+    <icare:knowledgeResourceHasAudience rdf:resource="https://w3id.org/icareonto/AYASurvivorAudience"/>
+    <dcterms:rights>Link / Signpost Only</dcterms:rights>
+    <edu:journeyStage>After treatment / survivorship</edu:journeyStage>
+    <edu:journeyStage>During treatment</edu:journeyStage>
+    <edu:applicabilityNotes>Designed for people in their 20s, 30s and 40s during and after treatment, including people living with cancer long-term. Uses short sections, reduced text and imagery to accommodate fatigue and reading difficulties. Full-guide access requires name and email registration.</edu:applicabilityNotes>
+    <dcterms:description>Illustrated nutrition guide for people living with and beyond cancer, supporting informed food choices, understanding conflicting dietary advice and managing eating difficulties through practical guidance and recipes.</dcterms:description>
+    <icare:knowledgeResourceHasFormat rdf:resource="https://w3id.org/icareonto/WrittenText"/>
+    <dcterms:source rdf:resource="https://www.trekstock.com/get-support/nutrition-guide"/>
+    <dcterms:language rdf:datatype="http://www.w3.org/2001/XMLSchema#language">en</dcterms:language>
+    <edu:curationStatus>Approved</edu:curationStatus>
+    <dcterms:publisher>Trekstock</dcterms:publisher>
+    <edu:resourceRole>Direct Educational Resource</edu:resourceRole>
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/Nutrition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icareonto/education/resources/MAYA-EDU-0077a">
+    <dcterms:description>Patient guide to life after initial cancer treatment, covering follow-up, late effects including cardiovascular problems, healthy living, emotional adjustment, relationships, support services and personal care records.</dcterms:description>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/PrepareForConsultation"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/SupportCareNavigation"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/SupportSelfManagement"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/ExplainHealthTopic"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/SupportBehaviourChange"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/SocialSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/InformationApplicationSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/SelfManagementSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/InformationComprehensionSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/HealthcareNavigationSupportNeed"/>
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/Smoking"/>
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/PhysicalActivity"/>
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/CardiovascularLateEffects"/>
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/MentalHealthAndEmotionalWellbeing"/>
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/FollowUpCare"/>
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/Nutrition"/>
+    <edu:curatedBy>INO</edu:curatedBy>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/icareonto/EducationalResource"/>
+    <rdf:type rdf:resource="https://w3id.org/icareonto/HealthLiteracyResource"/>
+    <icare:knowledgeResourceHasFormat rdf:resource="https://w3id.org/icareonto/WrittenText"/>
+    <dcterms:identifier>MAYA-EDU-0077a</dcterms:identifier>
+    <edu:completionStatus>Complete</edu:completionStatus>
+    <icare:knowledgeResourceHasAudience rdf:resource="https://w3id.org/icareonto/FamilyAudience"/>
+    <icare:knowledgeResourceHasAudience rdf:resource="https://w3id.org/icareonto/AYASurvivorAudience"/>
+    <icare:knowledgeResourceHasAudience rdf:resource="https://w3id.org/icareonto/CaregiverAudience"/>
+    <dcterms:rights>Link / Signpost Only</dcterms:rights>
+    <edu:applicabilityNotes>Broad adult survivorship guide; not specifically developed for AYA survivors. Because of its length, direct users to relevant sections (e.g., fertility, work reintegration, and emotional wellbeing).</edu:applicabilityNotes>
+    <edu:journeyStage>After treatment / survivorship</edu:journeyStage>
+    <icare:knowledgeResourceHasComplexityLevel rdf:resource="https://w3id.org/icareonto/StandardComplexity"/>
+    <dcterms:source rdf:resource="https://dam.esmo.org/image/upload/ESMO-Patientenratgeber-Survivorship.pdf"/>
+    <edu:curatedOn rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-18</edu:curatedOn>
+    <edu:curationStatus>Approved</edu:curationStatus>
+    <edu:accessConditions>Public</edu:accessConditions>
+    <dcterms:language rdf:datatype="http://www.w3.org/2001/XMLSchema#language">de</dcterms:language>
+    <dcterms:title>Survivorship: ESMO-Patientenratgeber</dcterms:title>
+    <dcterms:publisher>European Society for Medical Oncology (ESMO); European Cancer Patient Coalition (ECPC); developed in collaboration with the International Psycho-Oncology Society (IPOS)</dcterms:publisher>
+    <edu:resourceRole>Direct Educational Resource</edu:resourceRole>
+    <rdfs:label>Survivorship: ESMO-Patientenratgeber</rdfs:label>
+    <edu:resourceDateText>2017</edu:resourceDateText>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icareonto/education/resources/MAYA-EDU-0010">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/icareonto/EducationalResource"/>
+    <rdf:type rdf:resource="https://w3id.org/icareonto/HealthLiteracyResource"/>
+    <dcterms:publisher>Fundación Kālida</dcterms:publisher>
+    <edu:journeyStage>Before treatment</edu:journeyStage>
+    <edu:journeyStage>After treatment / survivorship</edu:journeyStage>
+    <edu:journeyStage>During treatment</edu:journeyStage>
+    <icare:knowledgeResourceHasFormat rdf:resource="https://w3id.org/icareonto/WrittenText"/>
+    <edu:completionStatus>Complete</edu:completionStatus>
+    <dcterms:identifier>MAYA-EDU-0010</dcterms:identifier>
+    <dcterms:rights>Link / Signpost Only</dcterms:rights>
+    <edu:applicabilityNotes>General oncology resource, not AYA-specific. Provides educational coping guidance rather than a psychological treatment programme. Confirm access separately before signposting to the advertised courses.</edu:applicabilityNotes>
+    <icare:knowledgeResourceHasAudience rdf:resource="https://w3id.org/icareonto/AYASurvivorAudience"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/InformationApplicationSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/SelfManagementSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/InformationComprehensionSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/SocialSupportNeed"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/SupportSelfManagement"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/ExplainHealthTopic"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/SupportBehaviourChange"/>
+    <rdfs:label>8 consejos para gestionar el estrés cuando convives con el cáncer</rdfs:label>
+    <edu:curatedBy>INO</edu:curatedBy>
+    <edu:curatedOn rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-03</edu:curatedOn>
+    <edu:accessConditions>Public</edu:accessConditions>
+    <edu:curationStatus>Approved</edu:curationStatus>
+    <dcterms:language rdf:datatype="http://www.w3.org/2001/XMLSchema#language">es</dcterms:language>
+    <edu:resourceDateText>2021</edu:resourceDateText>
+    <dcterms:title>8 consejos para gestionar el estrés cuando convives con el cáncer</dcterms:title>
+    <edu:resourceRole>Direct Educational Resource</edu:resourceRole>
+    <icare:knowledgeResourceHasComplexityLevel rdf:resource="https://w3id.org/icareonto/FoundationalComplexity"/>
+    <dcterms:source rdf:resource="https://www.fundaciokalida.org/es/8-consejos-para-gestionar-el-estres-cuando-convives-con-el-cancer/"/>
+    <dcterms:description>Explains stress associated with cancer and presents eight practical strategies for managing daily demands, supporting emotional wellbeing and seeking help from others.</dcterms:description>
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/MentalHealthAndEmotionalWellbeing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icareonto/education/resources/MAYA-EDU-0170">
+    <dcterms:language rdf:datatype="http://www.w3.org/2001/XMLSchema#language">pt</dcterms:language>
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/MentalHealthAndEmotionalWellbeing"/>
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/Smoking"/>
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/PhysicalActivity"/>
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/CardiovascularLateEffects"/>
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/SelfMonitoring"/>
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/FollowUpCare"/>
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/Nutrition"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/SocialSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/InformationApplicationSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/SelfManagementSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/InformationComprehensionSupportNeed"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/icareonto/EducationalResource"/>
+    <rdf:type rdf:resource="https://w3id.org/icareonto/HealthLiteracyResource"/>
+    <icare:knowledgeResourceHasFormat rdf:resource="https://w3id.org/icareonto/WrittenText"/>
+    <edu:accessConditions>Public</edu:accessConditions>
+    <edu:completionStatus>Complete</edu:completionStatus>
+    <edu:resourceDateText>2023</edu:resourceDateText>
+    <icare:knowledgeResourceHasAudience rdf:resource="https://w3id.org/icareonto/FamilyAudience"/>
+    <icare:knowledgeResourceHasAudience rdf:resource="https://w3id.org/icareonto/AYASurvivorAudience"/>
+    <icare:knowledgeResourceHasAudience rdf:resource="https://w3id.org/icareonto/CaregiverAudience"/>
+    <edu:journeyStage>After treatment / survivorship</edu:journeyStage>
+    <icare:knowledgeResourceHasComplexityLevel rdf:resource="https://w3id.org/icareonto/StandardComplexity"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/SupportSelfManagement"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/ExplainHealthTopic"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/SupportBehaviourChange"/>
+    <edu:applicabilityNotes>Written for adult cancer survivors and their families/caregivers rather than specifically for AYA survivors. Assess suitability for adult AYAs (18-39) and use with younger adolescents (15-17) separately. Personal treatment, exercise, medication, and surveillance decisions remain with the clinical care team.</edu:applicabilityNotes>
+    <edu:curatedOn rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-18</edu:curatedOn>
+    <dcterms:identifier>MAYA-EDU-0170</dcterms:identifier>
+    <edu:curatedBy>INO</edu:curatedBy>
+    <dcterms:description>Guide for people who have completed cancer treatment, addressing recovery, ongoing symptoms, emotional and social wellbeing, healthy living and continuing health surveillance.</dcterms:description>
+    <rdfs:label>(Sobre)viver ao cancro: Guia de apoio</rdfs:label>
+    <edu:curationStatus>Approved</edu:curationStatus>
+    <dcterms:rights>Link / Signpost Only</dcterms:rights>
+    <dcterms:source rdf:resource="https://www.aeop.pt/ficheiros/SobreViverCancro_A5_12Dez.pdf"/>
+    <dcterms:publisher>Associação Enfermagem Oncológica Portuguesa (AEOP); Ana Cristina Ferreira and colleagues</dcterms:publisher>
+    <edu:resourceRole>Direct Educational Resource</edu:resourceRole>
+    <dcterms:title>(Sobre)viver ao cancro: Guia de apoio</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icareonto/education/resources/MAYA-EDU-0177">
+    <dcterms:description>Summary of mental-health concerns after childhood, adolescent or young-adult cancer, explaining possible signs, maintaining wellbeing, follow-up and routes to professional support.</dcterms:description>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/InformationApplicationSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/HealthcareNavigationSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/InformationComprehensionSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/SelfManagementSupportNeed"/>
+    <edu:accessConditions>Public</edu:accessConditions>
+    <dcterms:identifier>MAYA-EDU-0177</dcterms:identifier>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/SupportSelfManagement"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/SupportCareNavigation"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/ExplainHealthTopic"/>
+    <edu:resourceRole>Direct Educational Resource</edu:resourceRole>
+    <dcterms:language rdf:datatype="http://www.w3.org/2001/XMLSchema#language">it</dcterms:language>
+    <rdf:type rdf:resource="https://w3id.org/icareonto/HealthLiteracyResource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/icareonto/EducationalResource"/>
+    <rdfs:label>Problemi di salute mentale</rdfs:label>
+    <edu:journeyStage>After treatment / survivorship</edu:journeyStage>
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/MentalHealthAndEmotionalWellbeing"/>
+    <dcterms:title>Problemi di salute mentale</dcterms:title>
+    <edu:curatedBy>INO</edu:curatedBy>
+    <icare:knowledgeResourceHasFormat rdf:resource="https://w3id.org/icareonto/WrittenText"/>
+    <icare:knowledgeResourceHasAccessibilityFeature rdf:resource="https://w3id.org/icareonto/PlainLanguage"/>
+    <edu:applicabilityNotes>Particularly relevant to longer-term survivors treated at younger ages. Educational support rather than diagnosis or psychological treatment. Review local professional-support and urgent-help signposting before delivery; external contacts linked by the page are not validated by this metadata proposal.</edu:applicabilityNotes>
+    <edu:completionStatus>Complete</edu:completionStatus>
+    <edu:resourceDateText>2025</edu:resourceDateText>
+    <edu:curationStatus>Approved</edu:curationStatus>
+    <dcterms:source rdf:resource="https://www.pancare.eu/brochures-divulgative-plain/problemi-di-salute-mentale/"/>
+    <dcterms:rights>Link / Signpost Only</dcterms:rights>
+    <icare:knowledgeResourceHasAudience rdf:resource="https://w3id.org/icareonto/AYASurvivorAudience"/>
+    <icare:knowledgeResourceHasComplexityLevel rdf:resource="https://w3id.org/icareonto/StandardComplexity"/>
+    <dcterms:publisher>PanCare PLAIN Information Group; Italian PLAIN summary</dcterms:publisher>
+    <edu:curatedOn rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-18</edu:curatedOn>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icareonto/education/resources/MAYA-EDU-0061">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/icareonto/EducationalResource"/>
+    <rdf:type rdf:resource="https://w3id.org/icareonto/HealthLiteracyResource"/>
+    <icare:knowledgeResourceHasFormat rdf:resource="https://w3id.org/icareonto/WrittenText"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/InformationApplicationSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/InformationComprehensionSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/InformationAppraisalSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/CareTeamCommunicationSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/SelfManagementSupportNeed"/>
+    <edu:accessConditions>Public</edu:accessConditions>
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/PhysicalActivity"/>
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/Nutrition"/>
+    <edu:resourceRole>Direct Educational Resource</edu:resourceRole>
+    <icare:knowledgeResourceHasAudience rdf:resource="https://w3id.org/icareonto/FamilyAudience"/>
+    <icare:knowledgeResourceHasAudience rdf:resource="https://w3id.org/icareonto/AYASurvivorAudience"/>
+    <icare:knowledgeResourceHasAudience rdf:resource="https://w3id.org/icareonto/CaregiverAudience"/>
+    <edu:applicabilityNotes>General oncology guide, not AYA-specific. Includes malnutrition and symptom-management advice for active treatment that should not be applied indiscriminately to well survivors. For post-treatment users, prioritise the relevant section and their current nutritional needs. Dietary supplements and individual dietary treatment require professional advice.</edu:applicabilityNotes>
+    <edu:journeyStage>After treatment / survivorship</edu:journeyStage>
+    <edu:journeyStage>During treatment</edu:journeyStage>
+    <dcterms:identifier>MAYA-EDU-0061</dcterms:identifier>
+    <icare:knowledgeResourceHasComplexityLevel rdf:resource="https://w3id.org/icareonto/StandardComplexity"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/SupportSelfManagement"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/ExplainHealthTopic"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/SupportBehaviourChange"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/PrepareForConsultation"/>
+    <edu:curatedOn rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-18</edu:curatedOn>
+    <edu:curatedBy>INO</edu:curatedBy>
+    <edu:completionStatus>Complete</edu:completionStatus>
+    <dcterms:publisher>Associação de Investigação de Cuidados de Suporte em Oncologia (AICSO); Andreia Capela, Luciana Teixeira, Elsa Madureira and Sara Torcato Parreira</dcterms:publisher>
+    <edu:curationStatus>Approved</edu:curationStatus>
+    <dcterms:rights>Link / Signpost Only</dcterms:rights>
+    <dcterms:title>Guia de Alimentação na Pessoa com Cancro</dcterms:title>
+    <dcterms:source rdf:resource="https://aicso.pt/wp-content/uploads/2024/04/Guia-de-Alimentacao-Doente-Cancro_Digital.pdf"/>
+    <dcterms:language rdf:datatype="http://www.w3.org/2001/XMLSchema#language">pt</dcterms:language>
+    <rdfs:label>Guia de Alimentação na Pessoa com Cancro</rdfs:label>
+    <dcterms:description>Guide explaining nutrition during and after cancer treatment, food-related myths, symptoms affecting intake, when to seek nutritional support and practical dietary adjustments, with a dedicated post-treatment section.</dcterms:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icareonto/education/resources/MAYA-EDU-0099">
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/InformationComprehensionSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/CareTeamCommunicationSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/InformationApplicationSupportNeed"/>
+    <dcterms:rights>Link / Signpost Only</dcterms:rights>
+    <edu:resourceRole>Direct Educational Resource</edu:resourceRole>
+    <rdf:type rdf:resource="https://w3id.org/icareonto/HealthLiteracyResource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/icareonto/EducationalResource"/>
+    <icare:knowledgeResourceHasComplexityLevel rdf:resource="https://w3id.org/icareonto/FoundationalComplexity"/>
+    <dcterms:identifier>MAYA-EDU-0099</dcterms:identifier>
+    <edu:journeyStage>During treatment</edu:journeyStage>
+    <edu:journeyStage>Before treatment</edu:journeyStage>
+    <edu:journeyStage>After treatment / survivorship</edu:journeyStage>
+    <rdfs:label>Jak dbać o seksualność w obliczu raka?</rdfs:label>
+    <dcterms:source rdf:resource="https://onkologia.pacjent.gov.pl/pl/pacjent/codziennosc-w-trakcie-leczenia/jak-dbac-o-seksualnosc-w-obliczu-raka"/>
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/MentalHealthAndEmotionalWellbeing"/>
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/FollowUpCare"/>
+    <dcterms:publisher>Narodowy Portal Onkologiczny / Narodowy Instytut Onkologii; content oversight: Dr Maciej Kawecki</dcterms:publisher>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/PrepareForConsultation"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/SupportSelfManagement"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/ExplainHealthTopic"/>
+    <dcterms:title>Jak dbać o seksualność w obliczu raka?</dcterms:title>
+    <icare:knowledgeResourceHasFormat rdf:resource="https://w3id.org/icareonto/WrittenText"/>
+    <edu:accessConditions>Public</edu:accessConditions>
+    <edu:completionStatus>Complete</edu:completionStatus>
+    <dcterms:description>Short article on the effects of cancer and treatment on intimacy, body image and sexual wellbeing, including communication about needs, fertility considerations and seeking specialist advice.</dcterms:description>
+    <edu:resourceDateText>2025</edu:resourceDateText>
+    <icare:knowledgeResourceHasAudience rdf:resource="https://w3id.org/icareonto/AYASurvivorAudience"/>
+    <edu:curationStatus>Approved</edu:curationStatus>
+    <edu:curatedOn rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-18</edu:curatedOn>
+    <edu:applicabilityNotes>General oncology article, not AYA-specific. Suitable as an introduction to sexual wellbeing and communication, rather than a fertility-treatment guide. The existing broad topics describe follow-up and emotional context. Confirm suitability for the participant’s age and clinical context.</edu:applicabilityNotes>
+    <dcterms:language rdf:datatype="http://www.w3.org/2001/XMLSchema#language">pl</dcterms:language>
+    <edu:curatedBy>INO</edu:curatedBy>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icareonto/education/metadata#learningStep">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icareonto/education/resources/MAYA-EDU-0007">
+    <dcterms:publisher>Fundación Jiménez Díaz – Comprehensive Cancer Center</dcterms:publisher>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/SupportBehaviourChange"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/ExplainHealthTopic"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/SupportSelfManagement"/>
+    <dcterms:source rdf:resource="https://www.fjd.es/comprehensivecancer/es/area-paciente/cancer/prevenir/estilo-vida-saludable/mantenerse-activo"/>
+    <edu:curatedOn rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-03</edu:curatedOn>
+    <dcterms:description>Practical guidance on staying active during and after cancer treatment, covering exercise benefits, activity types, gradual progression, safety considerations and everyday strategies for reducing sedentary time.</dcterms:description>
+    <edu:accessConditions>Public</edu:accessConditions>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/InformationComprehensionSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/InformationApplicationSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/SelfManagementSupportNeed"/>
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/PhysicalActivity"/>
+    <edu:resourceRole>Direct Educational Resource</edu:resourceRole>
+    <rdf:type rdf:resource="https://w3id.org/icareonto/HealthLiteracyResource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/icareonto/EducationalResource"/>
+    <edu:journeyStage>After treatment / survivorship</edu:journeyStage>
+    <edu:journeyStage>During treatment</edu:journeyStage>
+    <edu:curationStatus>Approved</edu:curationStatus>
+    <icare:knowledgeResourceHasComplexityLevel rdf:resource="https://w3id.org/icareonto/StandardComplexity"/>
+    <rdfs:label>Mantenerse activo</rdfs:label>
+    <edu:curatedBy>INO</edu:curatedBy>
+    <icare:knowledgeResourceHasFormat rdf:resource="https://w3id.org/icareonto/WrittenText"/>
+    <edu:applicabilityNotes>General oncology resource, not AYA-specific. Relevant to exercise during treatment and survivorship. Includes situations requiring clinical assessment and adaptation of activity.</edu:applicabilityNotes>
+    <edu:completionStatus>Complete</edu:completionStatus>
+    <dcterms:rights>Link / Signpost Only</dcterms:rights>
+    <dcterms:title>Mantenerse activo</dcterms:title>
+    <icare:knowledgeResourceHasAudience rdf:resource="https://w3id.org/icareonto/AYASurvivorAudience"/>
+    <dcterms:language rdf:datatype="http://www.w3.org/2001/XMLSchema#language">es</dcterms:language>
+    <dcterms:identifier>MAYA-EDU-0007</dcterms:identifier>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icareonto/education/resources/MAYA-EDU-0008">
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/InformationApplicationSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/InformationComprehensionSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/InformationAppraisalSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/SelfManagementSupportNeed"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/icareonto/EducationalResource"/>
+    <rdf:type rdf:resource="https://w3id.org/icareonto/HealthLiteracyResource"/>
+    <edu:accessConditions>Public</edu:accessConditions>
+    <edu:resourceRole>Direct Educational Resource</edu:resourceRole>
+    <icare:knowledgeResourceHasAudience rdf:resource="https://w3id.org/icareonto/AYASurvivorAudience"/>
+    <icare:knowledgeResourceHasComplexityLevel rdf:resource="https://w3id.org/icareonto/StandardComplexity"/>
+    <dcterms:title>Alimentación saludable</dcterms:title>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/SupportSelfManagement"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/ExplainHealthTopic"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/SupportBehaviourChange"/>
+    <icare:knowledgeResourceHasFormat rdf:resource="https://w3id.org/icareonto/WrittenText"/>
+    <dcterms:source rdf:resource="https://www.fjd.es/comprehensivecancer/es/area-paciente/cancer/prevenir/estilo-vida-saludable/alimentacion-saludable"/>
+    <edu:curatedBy>INO</edu:curatedBy>
+    <edu:applicabilityNotes>General oncology information, not AYA-specific. Includes general dietary targets and advice concerning supplements and reduced immunity; suitability depends on individual nutritional and treatment needs.</edu:applicabilityNotes>
+    <rdfs:label>Alimentación saludable</rdfs:label>
+    <edu:completionStatus>Complete</edu:completionStatus>
+    <edu:journeyStage>After treatment / survivorship</edu:journeyStage>
+    <edu:journeyStage>During treatment</edu:journeyStage>
+    <edu:curationStatus>Approved</edu:curationStatus>
+    <dcterms:language rdf:datatype="http://www.w3.org/2001/XMLSchema#language">es</dcterms:language>
+    <dcterms:rights>Link / Signpost Only</dcterms:rights>
+    <dcterms:identifier>MAYA-EDU-0008</dcterms:identifier>
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/Nutrition"/>
+    <dcterms:publisher>Fundación Jiménez Díaz – Comprehensive Cancer Center</dcterms:publisher>
+    <dcterms:description>Guidance on balanced eating after a cancer diagnosis, including gradual dietary changes, weight management, food safety, supplements and common nutrition misconceptions.</dcterms:description>
+    <edu:curatedOn rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-03</edu:curatedOn>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icareonto/education/resources/MAYA-EDU-0017">
+    <rdfs:label>Heart health and cancer</rdfs:label>
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/FollowUpCare"/>
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/CardiovascularLateEffects"/>
+    <icare:knowledgeResourceHasFormat rdf:resource="https://w3id.org/icareonto/WrittenText"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/InformationComprehensionSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/CareTeamCommunicationSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/InformationApplicationSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/SelfManagementSupportNeed"/>
+    <edu:resourceDateText>2024</edu:resourceDateText>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/ExplainHealthTopic"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/SupportSelfManagement"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/SupportBehaviourChange"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/PrepareForConsultation"/>
+    <dcterms:language rdf:datatype="http://www.w3.org/2001/XMLSchema#language">en</dcterms:language>
+    <rdf:type rdf:resource="https://w3id.org/icareonto/EducationalResource"/>
+    <rdf:type rdf:resource="https://w3id.org/icareonto/HealthLiteracyResource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <edu:resourceRole>Direct Educational Resource</edu:resourceRole>
+    <icare:knowledgeResourceHasAccessibilityFeature rdf:resource="https://w3id.org/icareonto/PlainLanguage"/>
+    <dcterms:title>Heart health and cancer</dcterms:title>
+    <icare:knowledgeResourceHasAudience rdf:resource="https://w3id.org/icareonto/AYASurvivorAudience"/>
+    <edu:journeyStage>After treatment / survivorship</edu:journeyStage>
+    <edu:journeyStage>During treatment</edu:journeyStage>
+    <edu:journeyStage>Before treatment</edu:journeyStage>
+    <edu:curationStatus>Approved</edu:curationStatus>
+    <edu:applicabilityNotes>General oncology information, with some childhood-treatment context. Includes emergency and service information that requires local interpretation when used across pilots.</edu:applicabilityNotes>
+    <dcterms:source rdf:resource="https://www.macmillan.org.uk/cancer-information-and-support/impacts-of-cancer/heart-health"/>
+    <dcterms:rights>Link / Signpost Only</dcterms:rights>
+    <icare:knowledgeResourceHasComplexityLevel rdf:resource="https://w3id.org/icareonto/StandardComplexity"/>
+    <edu:curatedBy>INO</edu:curatedBy>
+    <edu:completionStatus>Complete</edu:completionStatus>
+    <edu:curatedOn rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-03</edu:curatedOn>
+    <edu:accessConditions>Public</edu:accessConditions>
+    <dcterms:description>Explains how cancer treatments can affect heart health, including symptoms, cardiovascular assessments, long-term monitoring and practical measures to support cardiovascular wellbeing.</dcterms:description>
+    <dcterms:publisher>Macmillan Cancer Support</dcterms:publisher>
+    <dcterms:identifier>MAYA-EDU-0017</dcterms:identifier>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icareonto/education/metadata#applicabilityNotes">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icareonto/education/metadata#learningObjective">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icareonto/education/resources/MAYA-EDU-0009">
+    <edu:curatedOn rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-03</edu:curatedOn>
+    <dcterms:publisher>Fundación Kālida</dcterms:publisher>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/icareonto/EducationalResource"/>
+    <rdf:type rdf:resource="https://w3id.org/icareonto/HealthLiteracyResource"/>
+    <icare:knowledgeResourceHasFormat rdf:resource="https://w3id.org/icareonto/WrittenText"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/InformationApplicationSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/InformationComprehensionSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/SocialSupportNeed"/>
+    <icare:healthLiteracyResourceAddressesNeed rdf:resource="https://w3id.org/icareonto/SelfManagementSupportNeed"/>
+    <dcterms:description>Information on emotional adjustment after cancer treatment, including uncertainty, confidence, changing identity, everyday coping strategies and when to seek additional support.</dcterms:description>
+    <edu:accessConditions>Public</edu:accessConditions>
+    <dcterms:title>¿Y después del cáncer, qué?</dcterms:title>
+    <edu:resourceRole>Direct Educational Resource</edu:resourceRole>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/SupportCareNavigation"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/SupportSelfManagement"/>
+    <icare:knowledgeResourceHasPurpose rdf:resource="https://w3id.org/icareonto/ExplainHealthTopic"/>
+    <icare:knowledgeResourceHasAudience rdf:resource="https://w3id.org/icareonto/AYASurvivorAudience"/>
+    <edu:journeyStage>After treatment / survivorship</edu:journeyStage>
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/MentalHealthAndEmotionalWellbeing"/>
+    <icare:knowledgeResourceHasTopic rdf:resource="https://w3id.org/icareonto/FollowUpCare"/>
+    <dcterms:source rdf:resource="https://www.fundaciokalida.org/es/como-te-ayudamos/cuidado-de-tu-bienestar-emocional/y-despues-del-cancer-que/"/>
+    <edu:applicabilityNotes>General survivorship resource, not AYA-specific. Educational content can support adjustment after treatment. References to Kālida courses and services require separate confirmation of availability and eligibility.</edu:applicabilityNotes>
+    <rdfs:label>¿Y después del cáncer, qué?</rdfs:label>
+    <edu:curatedBy>INO</edu:curatedBy>
+    <edu:completionStatus>Complete</edu:completionStatus>
+    <edu:curationStatus>Approved</edu:curationStatus>
+    <dcterms:identifier>MAYA-EDU-0009</dcterms:identifier>
+    <dcterms:language rdf:datatype="http://www.w3.org/2001/XMLSchema#language">es</dcterms:language>
+    <dcterms:rights>Link / Signpost Only</dcterms:rights>
+    <icare:knowledgeResourceHasComplexityLevel rdf:resource="https://w3id.org/icareonto/FoundationalComplexity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icareonto/education/graphs/resources">
+    <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <dcterms:rights xml:lang="en">Copyright (c) 2026 Robert Gordon University and contributing MAYA consortium partners, for their respective contributions. CC BY 4.0 covers original metadata and activity content only; linked publications retain their provider terms.</dcterms:rights>
+    <dcterms:creator>Robert Gordon University</dcterms:creator>
+    <rdfs:label xml:lang="en">MAYA reviewed educational resource catalogue</rdfs:label>
+    <dcterms:contributor>MAYA consortium partners</dcterms:contributor>
+    <owl:imports rdf:resource="https://w3id.org/icareonto/releases/1.0.0/icareonto"/>
+    <owl:versionIRI rdf:resource="https://w3id.org/icareonto/education/releases/0b6bb5771616e5217e75ba2f/catalogue.ttl"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icareonto/education/metadata#identificationMethod">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icareonto/education/metadata#curationStatus">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icareonto/education/metadata#isSynthetic">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icareonto/education/metadata#curatedBy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icareonto/education/metadata#completionStatus">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icareonto/education/metadata#curatedOn">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icareonto/education/metadata#resourceDateText">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icareonto/education/metadata#reflectionPrompt">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icareonto/education/metadata#accessConditions">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icareonto/education/metadata#journeyStage">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+</rdf:RDF>

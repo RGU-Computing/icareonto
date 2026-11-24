@@ -1,0 +1,16 @@
+{
+  "files": {
+    "activity-templates.rdf": "af587aa006cba7c6d665759821b84924f98d6270b5cab5668cd8f7474cae8ce8",
+    "activity-templates.ttl": "ca429e0da18d04e3cf5708362d524b9eb8038925ac939679009049621d4daf0a",
+    "catalogue.json": "4bd55f996f426899e88a6537157832f2e81ae8a62c94f2892c9ed5ab1ea85398",
+    "catalogue.rdf": "f8fb969edb3d08ae3376be4d036dac3fa39a3038cd1a48b0ceb772bc4f1113f8",
+    "catalogue.ttl": "3820fbf7368f1c91c805d49c1dfe606acf3eeadea435d42cd93fd4a6d15b907a",
+    "dataset.rdf": "025280b01c92ed77a98f32d892e0da159b8dc2efcf4d52f9071065d977fcc368",
+    "dataset.trig": "219c1a15afec698557fcfd3ca75d84700aaa51300baf275b601931b17b5ccc4f",
+    "dataset.ttl": "bb27e2df7b99e91103a23022be97867d35a60a6c7236b9515626fd6db8296619"
+  },
+  "kind": "education",
+  "ontology_version": "1.0.0",
+  "release_id": "0b6bb5771616e5217e75ba2f",
+  "source_commit": "146a7a907dc87f48ed7ce4634e944274953f6c80"
+}

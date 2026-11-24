@@ -1,0 +1,14 @@
+{
+  "catalogue_release": "0b6bb5771616e5217e75ba2f",
+  "catalogue_snapshot": "added",
+  "ontology_snapshot": "added",
+  "ontology_version": "1.0.0",
+  "preserved_catalogue_releases": [
+    "0b6bb5771616e5217e75ba2f"
+  ],
+  "preserved_ontology_releases": [
+    "1.0.0"
+  ],
+  "source_commit": "146a7a907dc87f48ed7ce4634e944274953f6c80",
+  "status": "PASS"
+}

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:edu="https://w3id.org/icareonto/education/metadata#"
+   xmlns:icare="https://w3id.org/icareonto/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="https://w3id.org/icareonto/education/activity-templates/EDU-AFTER-TREATMENT">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/icareonto/EducationActivity"/>
+    <rdf:type rdf:resource="https://w3id.org/icareonto/HealthLiteracyIntervention"/>
+    <rdfs:label>Adjusting to life after treatment</rdfs:label>
+    <icare:activityContributesToGoal rdf:resource="https://w3id.org/icareonto/education/activity-templates/EDU-AFTER-TREATMENT/goal"/>
+    <edu:learningObjective>Recognise an information or support need concerning life after treatment and identify a suitable source of support.</edu:learningObjective>
+    <edu:learningStep>1. Ask which aspect of adjustment the participant wishes to discuss, without inferring a literacy need from emotional distress alone.</edu:learningStep>
+    <edu:learningStep>2. Offer a reviewed resource matching the recorded need, topic and language.</edu:learningStep>
+    <edu:learningStep>3. Invite reflection on what feels relevant and what remains unclear.</edu:learningStep>
+    <edu:learningStep>4. Identify a person or service the participant may choose to approach; follow the avatar's operational support and escalation arrangements.</edu:learningStep>
+    <edu:reflectionPrompt>1. Which part of this information feels relevant to your situation?</edu:reflectionPrompt>
+    <edu:reflectionPrompt>2. Who could you talk to, or what further information would help?</edu:reflectionPrompt>
+    <edu:templateStatus>Draft</edu:templateStatus>
+    <icare:healthLiteracyInterventionAddressesNeed rdf:resource="https://w3id.org/icareonto/InformationComprehensionSupportNeed"/>
+    <icare:healthLiteracyInterventionAddressesNeed rdf:resource="https://w3id.org/icareonto/SelfManagementSupportNeed"/>
+    <icare:healthLiteracyInterventionAddressesNeed rdf:resource="https://w3id.org/icareonto/SocialSupportNeed"/>
+    <icare:healthLiteracyInterventionUsesResource rdf:resource="https://w3id.org/icareonto/education/resources/MAYA-EDU-0009"/>
+    <icare:healthLiteracyInterventionUsesResource rdf:resource="https://w3id.org/icareonto/education/resources/MAYA-EDU-0010"/>
+    <icare:healthLiteracyInterventionUsesResource rdf:resource="https://w3id.org/icareonto/education/resources/MAYA-EDU-0011"/>
+    <icare:healthLiteracyInterventionUsesResource rdf:resource="https://w3id.org/icareonto/education/resources/MAYA-EDU-0013"/>
+    <icare:healthLiteracyInterventionUsesResource rdf:resource="https://w3id.org/icareonto/education/resources/MAYA-EDU-0019"/>
+    <icare:healthLiteracyInterventionUsesResource rdf:resource="https://w3id.org/icareonto/education/resources/MAYA-EDU-0020"/>
+    <icare:healthLiteracyInterventionUsesResource rdf:resource="https://w3id.org/icareonto/education/resources/MAYA-EDU-0021"/>
+    <icare:healthLiteracyInterventionUsesResource rdf:resource="https://w3id.org/icareonto/education/resources/MAYA-EDU-0030"/>
+    <icare:healthLiteracyInterventionUsesResource rdf:resource="https://w3id.org/icareonto/education/resources/MAYA-EDU-0046"/>
+    <icare:healthLiteracyInterventionUsesResource rdf:resource="https://w3id.org/icareonto/education/resources/MAYA-EDU-0077a"/>
+    <icare:healthLiteracyInterventionUsesResource rdf:resource="https://w3id.org/icareonto/education/resources/MAYA-EDU-0077b"/>
+    <icare:healthLiteracyInterventionUsesResource rdf:resource="https://w3id.org/icareonto/education/resources/MAYA-EDU-0077c"/>
+    <icare:healthLiteracyInterventionUsesResource rdf:resource="https://w3id.org/icareonto/education/resources/MAYA-EDU-0077d"/>
+    <icare:healthLiteracyInterventionUsesResource rdf:resource="https://w3id.org/icareonto/education/resources/MAYA-EDU-0077e"/>
+    <icare:healthLiteracyInterventionUsesResource rdf:resource="https://w3id.org/icareonto/education/resources/MAYA-EDU-0099"/>
+    <icare:healthLiteracyInterventionUsesResource rdf:resource="https://w3id.org/icareonto/education/resources/MAYA-EDU-0167"/>
+    <icare:healthLiteracyInterventionUsesResource rdf:resource="https://w3id.org/icareonto/education/resources/MAYA-EDU-0167a"/>
+    <icare:healthLiteracyInterventionUsesResource rdf:resource="https://w3id.org/icareonto/education/resources/MAYA-EDU-0170"/>
+    <icare:healthLiteracyInterventionUsesResource rdf:resource="https://w3id.org/icareonto/education/resources/MAYA-EDU-0177"/>
+    <icare:healthLiteracyInterventionUsesResource rdf:resource="https://w3id.org/icareonto/education/resources/MAYA-EDU-0180"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icareonto/education/activity-templates/EDU-CV-FOLLOWUP">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/icareonto/EducationActivity"/>
+    <rdf:type rdf:resource="https://w3id.org/icareonto/HealthLiteracyIntervention"/>
+    <rdfs:label>Understanding cardiovascular follow-up</rdfs:label>
+    <icare:activityContributesToGoal rdf:resource="https://w3id.org/icareonto/education/activity-templates/EDU-CV-FOLLOWUP/goal"/>
+    <edu:learningObjective>Identify the purpose of cardiovascular follow-up and formulate a question for the care team about the participant's own follow-up.</edu:learningObjective>
+    <edu:learningStep>1. Introduce the topic using the participant's stated question and identified support need.</edu:learningStep>
+    <edu:learningStep>2. Offer a suitable reviewed resource in the participant's language and explain its access conditions.</edu:learningStep>
+    <edu:learningStep>3. Invite the participant to explain the main message in their own words and identify any unclear information.</edu:learningStep>
+    <edu:learningStep>4. Help the participant prepare a question for their care team; personal monitoring decisions remain with the care team.</edu:learningStep>
+    <edu:reflectionPrompt>1. In your own words, what is the main reason for the follow-up described in this resource?</edu:reflectionPrompt>
+    <edu:reflectionPrompt>2. What would you like your care team to explain about your own follow-up?</edu:reflectionPrompt>
+    <edu:templateStatus>Draft</edu:templateStatus>
+    <icare:healthLiteracyInterventionAddressesNeed rdf:resource="https://w3id.org/icareonto/CareTeamCommunicationSupportNeed"/>
+    <icare:healthLiteracyInterventionAddressesNeed rdf:resource="https://w3id.org/icareonto/InformationComprehensionSupportNeed"/>
+    <icare:healthLiteracyInterventionUsesResource rdf:resource="https://w3id.org/icareonto/education/resources/MAYA-EDU-0004"/>
+    <icare:healthLiteracyInterventionUsesResource rdf:resource="https://w3id.org/icareonto/education/resources/MAYA-EDU-0017"/>
+    <icare:healthLiteracyInterventionUsesResource rdf:resource="https://w3id.org/icareonto/education/resources/MAYA-EDU-0018"/>
+    <icare:healthLiteracyInterventionUsesResource rdf:resource="https://w3id.org/icareonto/education/resources/MAYA-EDU-0077a"/>
+    <icare:healthLiteracyInterventionUsesResource rdf:resource="https://w3id.org/icareonto/education/resources/MAYA-EDU-0077b"/>
+    <icare:healthLiteracyInterventionUsesResource rdf:resource="https://w3id.org/icareonto/education/resources/MAYA-EDU-0077c"/>
+    <icare:healthLiteracyInterventionUsesResource rdf:resource="https://w3id.org/icareonto/education/resources/MAYA-EDU-0077d"/>
+    <icare:healthLiteracyInterventionUsesResource rdf:resource="https://w3id.org/icareonto/education/resources/MAYA-EDU-0077e"/>
+    <icare:healthLiteracyInterventionUsesResource rdf:resource="https://w3id.org/icareonto/education/resources/MAYA-EDU-0170"/>
+    <icare:healthLiteracyInterventionUsesResource rdf:resource="https://w3id.org/icareonto/education/resources/MAYA-EDU-0183"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icareonto/education/activity-templates/EDU-HEALTHY-CHOICES">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/icareonto/EducationActivity"/>
+    <rdf:type rdf:resource="https://w3id.org/icareonto/HealthLiteracyIntervention"/>
+    <rdfs:label>Making manageable everyday health choices</rdfs:label>
+    <icare:activityContributesToGoal rdf:resource="https://w3id.org/icareonto/education/activity-templates/EDU-HEALTHY-CHOICES/goal"/>
+    <edu:learningObjective>Identify one practical nutrition or activity question or action relevant to the participant's interests and circumstances.</edu:learningObjective>
+    <edu:learningStep>1. Ask whether the participant wants information about food choices or physical activity.</edu:learningStep>
+    <edu:learningStep>2. Select a resource matching that topic, the identified support need and the participant's preferences.</edu:learningStep>
+    <edu:learningStep>3. Invite the participant to identify one manageable idea and any barriers or questions.</edu:learningStep>
+    <edu:learningStep>4. Distinguish general educational information from an individual dietary or exercise prescription.</edu:learningStep>
+    <edu:reflectionPrompt>1. Which idea from the resource would you like to explore?</edu:reflectionPrompt>
+    <edu:reflectionPrompt>2. What support or advice would you need before trying it?</edu:reflectionPrompt>
+    <edu:templateStatus>Draft</edu:templateStatus>
+    <icare:healthLiteracyInterventionAddressesNeed rdf:resource="https://w3id.org/icareonto/InformationApplicationSupportNeed"/>
+    <icare:healthLiteracyInterventionAddressesNeed rdf:resource="https://w3id.org/icareonto/SelfManagementSupportNeed"/>
+    <icare:healthLiteracyInterventionUsesResource rdf:resource="https://w3id.org/icareonto/education/resources/MAYA-EDU-0005"/>
+    <icare:healthLiteracyInterventionUsesResource rdf:resource="https://w3id.org/icareonto/education/resources/MAYA-EDU-0007"/>
+    <icare:healthLiteracyInterventionUsesResource rdf:resource="https://w3id.org/icareonto/education/resources/MAYA-EDU-0008"/>
+    <icare:healthLiteracyInterventionUsesResource rdf:resource="https://w3id.org/icareonto/education/resources/MAYA-EDU-0023"/>
+    <icare:healthLiteracyInterventionUsesResource rdf:resource="https://w3id.org/icareonto/education/resources/MAYA-EDU-0046"/>
+    <icare:healthLiteracyInterventionUsesResource rdf:resource="https://w3id.org/icareonto/education/resources/MAYA-EDU-0061"/>
+    <icare:healthLiteracyInterventionUsesResource rdf:resource="https://w3id.org/icareonto/education/resources/MAYA-EDU-0077a"/>
+    <icare:healthLiteracyInterventionUsesResource rdf:resource="https://w3id.org/icareonto/education/resources/MAYA-EDU-0077b"/>
+    <icare:healthLiteracyInterventionUsesResource rdf:resource="https://w3id.org/icareonto/education/resources/MAYA-EDU-0077c"/>
+    <icare:healthLiteracyInterventionUsesResource rdf:resource="https://w3id.org/icareonto/education/resources/MAYA-EDU-0077d"/>
+    <icare:healthLiteracyInterventionUsesResource rdf:resource="https://w3id.org/icareonto/education/resources/MAYA-EDU-0077e"/>
+    <icare:healthLiteracyInterventionUsesResource rdf:resource="https://w3id.org/icareonto/education/resources/MAYA-EDU-0167"/>
+    <icare:healthLiteracyInterventionUsesResource rdf:resource="https://w3id.org/icareonto/education/resources/MAYA-EDU-0167a"/>
+    <icare:healthLiteracyInterventionUsesResource rdf:resource="https://w3id.org/icareonto/education/resources/MAYA-EDU-0170"/>
+    <icare:healthLiteracyInterventionUsesResource rdf:resource="https://w3id.org/icareonto/education/resources/MAYA-EDU-0176"/>
+    <icare:healthLiteracyInterventionUsesResource rdf:resource="https://w3id.org/icareonto/education/resources/MAYA-EDU-0180"/>
+    <icare:healthLiteracyInterventionUsesResource rdf:resource="https://w3id.org/icareonto/education/resources/MAYA-EDU-0181"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icareonto/education/metadata#journeyStage">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icareonto/education/metadata#curationStatus">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icareonto/education/graphs/activities">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <rdfs:label xml:lang="en">MAYA draft educational activity templates</rdfs:label>
+    <dcterms:contributor>MAYA consortium partners</dcterms:contributor>
+    <dcterms:creator>Robert Gordon University</dcterms:creator>
+    <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+    <dcterms:rights xml:lang="en">Copyright (c) 2026 Robert Gordon University and contributing MAYA consortium partners, for their respective contributions. CC BY 4.0 covers original metadata and activity content only; linked publications retain their provider terms.</dcterms:rights>
+    <owl:imports rdf:resource="https://w3id.org/icareonto/education/graphs/resources"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icareonto/education/metadata#learningObjective">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icareonto/education/metadata#resourceRole">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icareonto/education/metadata#accessConditions">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icareonto/education/activity-templates/EDU-AFTER-TREATMENT/goal">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/icareonto/Goal"/>
+    <rdfs:label>Recognise an information or support need concerning life after treatment and identify a suitable source of support.</rdfs:label>
+    <icare:goalDescriptionText rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Recognise an information or support need concerning life after treatment and identify a suitable source of support.</icare:goalDescriptionText>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icareonto/education/metadata#templateStatus">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icareonto/education/metadata#completionStatus">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icareonto/education/metadata#learningStep">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icareonto/education/activity-templates/EDU-CV-FOLLOWUP/goal">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/icareonto/Goal"/>
+    <rdfs:label>Identify the purpose of cardiovascular follow-up and formulate a question for the care team about the participant's own follow-up.</rdfs:label>
+    <icare:goalDescriptionText rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Identify the purpose of cardiovascular follow-up and formulate a question for the care team about the participant's own follow-up.</icare:goalDescriptionText>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icareonto/education/metadata#isSynthetic">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icareonto/education/activity-templates/EDU-HEALTHY-CHOICES/goal">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/icareonto/Goal"/>
+    <rdfs:label>Identify one practical nutrition or activity question or action relevant to the participant's interests and circumstances.</rdfs:label>
+    <icare:goalDescriptionText rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Identify one practical nutrition or activity question or action relevant to the participant's interests and circumstances.</icare:goalDescriptionText>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icareonto/education/metadata#curatedBy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icareonto/education/metadata#resourceDateText">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icareonto/education/metadata#identificationMethod">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icareonto/education/metadata#applicabilityNotes">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icareonto/education/metadata#reflectionPrompt">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icareonto/education/metadata#curatedOn">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+</rdf:RDF>
