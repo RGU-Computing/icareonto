@@ -1,12 +1,11 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix icare: <http://maya-project.eu/icareonto/> .
-@prefix meta: <http://maya-project.eu/icareonto/metadata#> .
+@prefix icare: <https://w3id.org/icareonto/> .
+@prefix meta: <https://w3id.org/icareonto/metadata#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://maya-project.eu/icareonto> a owl:Ontology ;
+icare: a owl:Ontology ;
     rdfs:label "iCARE Onto"@en ;
-    meta:releaseStatus "Published" ;
     dcterms:contributor "MAYA consortium partners" ;
     dcterms:creator "Robert Gordon University" ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
@@ -31,6 +30,7 @@
         icare:pilot,
         icare:provenance-governance,
         icare:social-context ;
-    owl:versionIRI <http://maya-project.eu/icareonto/releases/1.0.0/icareonto> ;
-    owl:versionInfo "1.0.0" .
+    owl:versionIRI <https://w3id.org/icareonto/releases/1.0.0/icareonto> ;
+    owl:versionInfo "1.0.0" ;
+    meta:releaseStatus "Published" .
 

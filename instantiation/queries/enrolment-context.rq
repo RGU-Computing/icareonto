@@ -1,4 +1,4 @@
-PREFIX icare: <http://maya-project.eu/icareonto/>
+PREFIX icare: <https://w3id.org/icareonto/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 # Run over the union of the instance graphs. Preferred language is optional

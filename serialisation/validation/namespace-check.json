@@ -1,0 +1,103 @@
+{
+  "run_date": "2026-11-24",
+  "ontology_version": "1.0.0",
+  "ontology_iri": "https://w3id.org/icareonto/",
+  "entity_namespace": "https://w3id.org/icareonto/",
+  "result": "PASS",
+  "ontology_graphs_compared": 22,
+  "source_workbooks_checked": 4,
+  "earlier_namespace_references": 0,
+  "catalogue_entries_preserved_except_namespace": 41,
+  "ranked_requirements_preserved_except_namespace": 15,
+  "compatibility_aliases_added": false,
+  "checks": [
+    {
+      "file": "alignments/approved.ttl",
+      "only_namespace_changed": true
+    },
+    {
+      "file": "icareonto.ttl",
+      "only_namespace_changed": true
+    },
+    {
+      "file": "imports/metadata.ttl",
+      "only_namespace_changed": true
+    },
+    {
+      "file": "imports/prov-reference.ttl",
+      "only_namespace_changed": true
+    },
+    {
+      "file": "imports/skos-reference.ttl",
+      "only_namespace_changed": true
+    },
+    {
+      "file": "modules/agent.ttl",
+      "only_namespace_changed": true
+    },
+    {
+      "file": "modules/cancer-history.ttl",
+      "only_namespace_changed": true
+    },
+    {
+      "file": "modules/clinical-profile.ttl",
+      "only_namespace_changed": true
+    },
+    {
+      "file": "modules/core.ttl",
+      "only_namespace_changed": true
+    },
+    {
+      "file": "modules/cv-risk.ttl",
+      "only_namespace_changed": true
+    },
+    {
+      "file": "modules/dialogue.ttl",
+      "only_namespace_changed": true
+    },
+    {
+      "file": "modules/exercise.ttl",
+      "only_namespace_changed": true
+    },
+    {
+      "file": "modules/healthhub-service.ttl",
+      "only_namespace_changed": true
+    },
+    {
+      "file": "modules/intervention-careplan.ttl",
+      "only_namespace_changed": true
+    },
+    {
+      "file": "modules/knowledge-resource.ttl",
+      "only_namespace_changed": true
+    },
+    {
+      "file": "modules/lifestyle-behaviour.ttl",
+      "only_namespace_changed": true
+    },
+    {
+      "file": "modules/measurement-biomarker.ttl",
+      "only_namespace_changed": true
+    },
+    {
+      "file": "modules/nutrition.ttl",
+      "only_namespace_changed": true
+    },
+    {
+      "file": "modules/person-role.ttl",
+      "only_namespace_changed": true
+    },
+    {
+      "file": "modules/pilot.ttl",
+      "only_namespace_changed": true
+    },
+    {
+      "file": "modules/provenance-governance.ttl",
+      "only_namespace_changed": true
+    },
+    {
+      "file": "modules/social-context.ttl",
+      "only_namespace_changed": true
+    }
+  ]
+}

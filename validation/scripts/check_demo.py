@@ -9,7 +9,7 @@ from pathlib import Path
 from rdflib import Graph, Literal, RDF, RDFS, OWL, URIRef
 
 ROOT = Path(__file__).resolve().parents[1]
-BASE = "http://maya-project.eu/icareonto/"
+BASE = "https://w3id.org/icareonto/"
 DEMO = "https://example.org/maya/demo/es/"
 g = Graph().parse(ROOT / "demo_spain_aya.ttl", format="turtle")
 schema = Graph()

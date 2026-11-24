@@ -1,26 +1,26 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix edu: <http://maya-project.eu/icareonto/education/metadata#> .
-@prefix icare: <http://maya-project.eu/icareonto/> .
+@prefix edu: <https://w3id.org/icareonto/education/metadata#> .
+@prefix icare: <https://w3id.org/icareonto/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://maya-project.eu/icareonto/education/demo/care-plan> a icare:CarePlan,
-        owl:NamedIndividual ;
+<https://w3id.org/icareonto/education/demo/care-plan> a owl:NamedIndividual,
+        icare:CarePlan ;
     rdfs:label "Draft demonstration education plan" ;
-    icare:carePlanHasGoal <http://maya-project.eu/icareonto/education/demo/goal> ;
+    icare:carePlanHasGoal <https://w3id.org/icareonto/education/demo/goal> ;
     icare:carePlanHasStatus icare:DraftCarePlan ;
-    icare:carePlanIncludesActivity <http://maya-project.eu/icareonto/education/demo/intervention> ;
-    icare:carePlanIntendedFor <http://maya-project.eu/icareonto/education/demo/participant> .
+    icare:carePlanIncludesActivity <https://w3id.org/icareonto/education/demo/intervention> ;
+    icare:carePlanIntendedFor <https://w3id.org/icareonto/education/demo/participant> .
 
-<http://maya-project.eu/icareonto/education/demo/graph> a owl:Ontology ;
+<https://w3id.org/icareonto/education/demo/graph> a owl:Ontology ;
     rdfs:label "Fictional participant education example using real resource metadata"@en ;
-    edu:isSynthetic true ;
     dcterms:contributor "MAYA consortium partners" ;
     dcterms:creator "Robert Gordon University" ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
     dcterms:rights "Copyright (c) 2026 Robert Gordon University and contributing MAYA consortium partners, for their respective contributions. CC BY 4.0 covers original metadata and activity content only; linked publications retain their provider terms."@en ;
-    owl:imports <http://maya-project.eu/icareonto/education/dataset> .
+    owl:imports <https://w3id.org/icareonto/education/dataset> ;
+    edu:isSynthetic true .
 
 edu:accessConditions a owl:AnnotationProperty .
 
@@ -52,42 +52,42 @@ edu:resourceRole a owl:AnnotationProperty .
 
 edu:templateStatus a owl:AnnotationProperty .
 
-<http://maya-project.eu/icareonto/education/demo/intervention> a icare:EducationActivity,
-        icare:HealthLiteracyIntervention,
-        owl:NamedIndividual ;
+<https://w3id.org/icareonto/education/demo/intervention> a owl:NamedIndividual,
+        icare:EducationActivity,
+        icare:HealthLiteracyIntervention ;
     rdfs:label "Understanding cardiovascular follow-up" ;
-    icare:activityContributesToGoal <http://maya-project.eu/icareonto/education/demo/goal> ;
+    dcterms:source <https://w3id.org/icareonto/education/activity-templates/EDU-CV-FOLLOWUP> ;
+    icare:activityContributesToGoal <https://w3id.org/icareonto/education/demo/goal> ;
     edu:templateStatus "Draft" ;
     icare:healthLiteracyInterventionAddressesNeed icare:InformationComprehensionSupportNeed ;
-    icare:healthLiteracyInterventionUsesResource <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0004>,
-        <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0077e> ;
-    dcterms:source <http://maya-project.eu/icareonto/education/activity-templates/EDU-CV-FOLLOWUP> .
+    icare:healthLiteracyInterventionUsesResource <https://w3id.org/icareonto/education/resources/MAYA-EDU-0004>,
+        <https://w3id.org/icareonto/education/resources/MAYA-EDU-0077e> .
 
-<http://maya-project.eu/icareonto/education/demo/language> a icare:LanguagePreference,
-        owl:NamedIndividual ;
+<https://w3id.org/icareonto/education/demo/language> a owl:NamedIndividual,
+        icare:LanguagePreference ;
     rdfs:label "Supplied demonstration language preference" ;
     icare:preferredLanguageTag "es-es"^^xsd:language .
 
-<http://maya-project.eu/icareonto/education/demo/needs-identification> a icare:MeasurementEvent,
-        owl:NamedIndividual ;
+<https://w3id.org/icareonto/education/demo/needs-identification> a owl:NamedIndividual,
+        icare:MeasurementEvent ;
     rdfs:label "Fictional support-needs identification" ;
     edu:identificationMethod "Discussion" ;
-    icare:measurementEventHasOutput <http://maya-project.eu/icareonto/education/demo/needs-result> .
+    icare:measurementEventHasOutput <https://w3id.org/icareonto/education/demo/needs-result> .
 
-<http://maya-project.eu/icareonto/education/demo/needs-result> a icare:ObservationResult,
-        owl:NamedIndividual ;
+<https://w3id.org/icareonto/education/demo/needs-result> a owl:NamedIndividual,
+        icare:ObservationResult ;
     rdfs:label "Fictional identified support needs" ;
-    icare:healthLiteracyResultIdentifiesNeed icare:InformationComprehensionSupportNeed ;
-    dcterms:description "Fictional participant requests help understanding cardiovascular follow-up information. No licensed questionnaire or measured outcome is claimed." .
+    dcterms:description "Fictional participant requests help understanding cardiovascular follow-up information. No licensed questionnaire or measured outcome is claimed." ;
+    icare:healthLiteracyResultIdentifiesNeed icare:InformationComprehensionSupportNeed .
 
-<http://maya-project.eu/icareonto/education/demo/participant> a icare:Person,
-        owl:NamedIndividual ;
+<https://w3id.org/icareonto/education/demo/participant> a owl:NamedIndividual,
+        icare:Person ;
     rdfs:label "Fictional AYA survivor" ;
-    icare:personHasPreference <http://maya-project.eu/icareonto/education/demo/language> ;
-    icare:personParticipatesInMeasurement <http://maya-project.eu/icareonto/education/demo/needs-identification> .
+    icare:personHasPreference <https://w3id.org/icareonto/education/demo/language> ;
+    icare:personParticipatesInMeasurement <https://w3id.org/icareonto/education/demo/needs-identification> .
 
-<http://maya-project.eu/icareonto/education/demo/goal> a icare:Goal,
-        owl:NamedIndividual ;
+<https://w3id.org/icareonto/education/demo/goal> a owl:NamedIndividual,
+        icare:Goal ;
     rdfs:label "Identify the purpose of cardiovascular follow-up and formulate a question for the care team about the participant's own follow-up." ;
     icare:goalDescriptionText "Identify the purpose of cardiovascular follow-up and formulate a question for the care team about the participant's own follow-up."^^xsd:string .
 

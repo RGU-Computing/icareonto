@@ -1,17 +1,17 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix edu: <http://maya-project.eu/icareonto/education/metadata#> .
-@prefix icare: <http://maya-project.eu/icareonto/> .
+@prefix edu: <https://w3id.org/icareonto/education/metadata#> .
+@prefix icare: <https://w3id.org/icareonto/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://maya-project.eu/icareonto/education/graphs/resources> a owl:Ontology ;
+<https://w3id.org/icareonto/education/graphs/resources> a owl:Ontology ;
     rdfs:label "MAYA reviewed educational resource catalogue"@en ;
     dcterms:contributor "MAYA consortium partners" ;
     dcterms:creator "Robert Gordon University" ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
     dcterms:rights "Copyright (c) 2026 Robert Gordon University and contributing MAYA consortium partners, for their respective contributions. CC BY 4.0 covers original metadata and activity content only; linked publications retain their provider terms."@en ;
-    owl:imports <http://maya-project.eu/icareonto> .
+    owl:imports icare: .
 
 edu:accessConditions a owl:AnnotationProperty .
 
@@ -43,10 +43,17 @@ edu:resourceRole a owl:AnnotationProperty .
 
 edu:templateStatus a owl:AnnotationProperty .
 
-<http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0004> a icare:EducationalResource,
-        icare:HealthLiteracyResource,
-        owl:NamedIndividual ;
+<https://w3id.org/icareonto/education/resources/MAYA-EDU-0004> a owl:NamedIndividual,
+        icare:EducationalResource,
+        icare:HealthLiteracyResource ;
     rdfs:label "Ficha del paciente: Cardio-oncología" ;
+    dcterms:description "Two-page illustrated patient information sheet explaining cardiovascular complications of cancer treatment, assessment and monitoring before, during and after treatment, and practical measures to support cardiovascular health." ;
+    dcterms:identifier "MAYA-EDU-0004" ;
+    dcterms:language "es"^^xsd:language ;
+    dcterms:publisher "Fundación Española del Corazón" ;
+    dcterms:rights "Link / Signpost Only" ;
+    dcterms:source <https://fundaciondelcorazon.com/phocadownload/recursos-didacticos/fichas/FICHA%20CARDIO-ONCOLOGIA.pdf> ;
+    dcterms:title "Ficha del paciente: Cardio-oncología" ;
     edu:accessConditions "Public" ;
     edu:applicabilityNotes "General oncology patient information, updated 2024; not specifically developed for AYA survivors. Covers cardiovascular risks, monitoring and prevention before, during and after treatment. Suitable as background education, with exercise, medication and surveillance advice interpreted in the participant’s clinical context." ;
     edu:completionStatus "Complete" ;
@@ -70,19 +77,19 @@ edu:templateStatus a owl:AnnotationProperty .
         icare:SupportBehaviourChange,
         icare:SupportSelfManagement ;
     icare:knowledgeResourceHasTopic icare:CardiovascularLateEffects,
-        icare:FollowUpCare ;
-    dcterms:description "Two-page illustrated patient information sheet explaining cardiovascular complications of cancer treatment, assessment and monitoring before, during and after treatment, and practical measures to support cardiovascular health." ;
-    dcterms:identifier "MAYA-EDU-0004" ;
-    dcterms:language "es"^^xsd:language ;
-    dcterms:publisher "Fundación Española del Corazón" ;
-    dcterms:rights "Link / Signpost Only" ;
-    dcterms:source <https://fundaciondelcorazon.com/phocadownload/recursos-didacticos/fichas/FICHA%20CARDIO-ONCOLOGIA.pdf> ;
-    dcterms:title "Ficha del paciente: Cardio-oncología" .
+        icare:FollowUpCare .
 
-<http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0005> a icare:EducationalResource,
-        icare:HealthLiteracyResource,
-        owl:NamedIndividual ;
+<https://w3id.org/icareonto/education/resources/MAYA-EDU-0005> a owl:NamedIndividual,
+        icare:EducationalResource,
+        icare:HealthLiteracyResource ;
     rdfs:label "Infografía para pacientes: ejercicio físico y cáncer" ;
+    dcterms:description "Patient infographic introducing exercise in cancer care and encouraging discussion with the oncology team about individually appropriate activity and access to exercise programmes." ;
+    dcterms:identifier "MAYA-EDU-0005" ;
+    dcterms:language "es"^^xsd:language ;
+    dcterms:publisher "Sociedad Española de Oncología Médica (SEOM)" ;
+    dcterms:rights "Link / Signpost Only" ;
+    dcterms:source <https://seom.org/150025-seom/210349-infografias-dia-mundial-2024> ;
+    dcterms:title "Infografía para pacientes: ejercicio físico y cáncer" ;
     edu:accessConditions "Public" ;
     edu:applicabilityNotes "General oncology patient resource, not AYA-specific. Introduces exercise benefits and directs readers towards clinical assessment and suitable programmes. Does not provide an individual exercise prescription." ;
     edu:completionStatus "Complete" ;
@@ -104,19 +111,19 @@ edu:templateStatus a owl:AnnotationProperty .
     icare:knowledgeResourceHasPurpose icare:ExplainHealthTopic,
         icare:SupportBehaviourChange,
         icare:SupportCareNavigation ;
-    icare:knowledgeResourceHasTopic icare:PhysicalActivity ;
-    dcterms:description "Patient infographic introducing exercise in cancer care and encouraging discussion with the oncology team about individually appropriate activity and access to exercise programmes." ;
-    dcterms:identifier "MAYA-EDU-0005" ;
-    dcterms:language "es"^^xsd:language ;
-    dcterms:publisher "Sociedad Española de Oncología Médica (SEOM)" ;
-    dcterms:rights "Link / Signpost Only" ;
-    dcterms:source <https://seom.org/150025-seom/210349-infografias-dia-mundial-2024> ;
-    dcterms:title "Infografía para pacientes: ejercicio físico y cáncer" .
+    icare:knowledgeResourceHasTopic icare:PhysicalActivity .
 
-<http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0007> a icare:EducationalResource,
-        icare:HealthLiteracyResource,
-        owl:NamedIndividual ;
+<https://w3id.org/icareonto/education/resources/MAYA-EDU-0007> a owl:NamedIndividual,
+        icare:EducationalResource,
+        icare:HealthLiteracyResource ;
     rdfs:label "Mantenerse activo" ;
+    dcterms:description "Practical guidance on staying active during and after cancer treatment, covering exercise benefits, activity types, gradual progression, safety considerations and everyday strategies for reducing sedentary time." ;
+    dcterms:identifier "MAYA-EDU-0007" ;
+    dcterms:language "es"^^xsd:language ;
+    dcterms:publisher "Fundación Jiménez Díaz – Comprehensive Cancer Center" ;
+    dcterms:rights "Link / Signpost Only" ;
+    dcterms:source <https://www.fjd.es/comprehensivecancer/es/area-paciente/cancer/prevenir/estilo-vida-saludable/mantenerse-activo> ;
+    dcterms:title "Mantenerse activo" ;
     edu:accessConditions "Public" ;
     edu:applicabilityNotes "General oncology resource, not AYA-specific. Relevant to exercise during treatment and survivorship. Includes situations requiring clinical assessment and adaptation of activity." ;
     edu:completionStatus "Complete" ;
@@ -135,19 +142,19 @@ edu:templateStatus a owl:AnnotationProperty .
     icare:knowledgeResourceHasPurpose icare:ExplainHealthTopic,
         icare:SupportBehaviourChange,
         icare:SupportSelfManagement ;
-    icare:knowledgeResourceHasTopic icare:PhysicalActivity ;
-    dcterms:description "Practical guidance on staying active during and after cancer treatment, covering exercise benefits, activity types, gradual progression, safety considerations and everyday strategies for reducing sedentary time." ;
-    dcterms:identifier "MAYA-EDU-0007" ;
+    icare:knowledgeResourceHasTopic icare:PhysicalActivity .
+
+<https://w3id.org/icareonto/education/resources/MAYA-EDU-0008> a owl:NamedIndividual,
+        icare:EducationalResource,
+        icare:HealthLiteracyResource ;
+    rdfs:label "Alimentación saludable" ;
+    dcterms:description "Guidance on balanced eating after a cancer diagnosis, including gradual dietary changes, weight management, food safety, supplements and common nutrition misconceptions." ;
+    dcterms:identifier "MAYA-EDU-0008" ;
     dcterms:language "es"^^xsd:language ;
     dcterms:publisher "Fundación Jiménez Díaz – Comprehensive Cancer Center" ;
     dcterms:rights "Link / Signpost Only" ;
-    dcterms:source <https://www.fjd.es/comprehensivecancer/es/area-paciente/cancer/prevenir/estilo-vida-saludable/mantenerse-activo> ;
-    dcterms:title "Mantenerse activo" .
-
-<http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0008> a icare:EducationalResource,
-        icare:HealthLiteracyResource,
-        owl:NamedIndividual ;
-    rdfs:label "Alimentación saludable" ;
+    dcterms:source <https://www.fjd.es/comprehensivecancer/es/area-paciente/cancer/prevenir/estilo-vida-saludable/alimentacion-saludable> ;
+    dcterms:title "Alimentación saludable" ;
     edu:accessConditions "Public" ;
     edu:applicabilityNotes "General oncology information, not AYA-specific. Includes general dietary targets and advice concerning supplements and reduced immunity; suitability depends on individual nutritional and treatment needs." ;
     edu:completionStatus "Complete" ;
@@ -167,19 +174,19 @@ edu:templateStatus a owl:AnnotationProperty .
     icare:knowledgeResourceHasPurpose icare:ExplainHealthTopic,
         icare:SupportBehaviourChange,
         icare:SupportSelfManagement ;
-    icare:knowledgeResourceHasTopic icare:Nutrition ;
-    dcterms:description "Guidance on balanced eating after a cancer diagnosis, including gradual dietary changes, weight management, food safety, supplements and common nutrition misconceptions." ;
-    dcterms:identifier "MAYA-EDU-0008" ;
-    dcterms:language "es"^^xsd:language ;
-    dcterms:publisher "Fundación Jiménez Díaz – Comprehensive Cancer Center" ;
-    dcterms:rights "Link / Signpost Only" ;
-    dcterms:source <https://www.fjd.es/comprehensivecancer/es/area-paciente/cancer/prevenir/estilo-vida-saludable/alimentacion-saludable> ;
-    dcterms:title "Alimentación saludable" .
+    icare:knowledgeResourceHasTopic icare:Nutrition .
 
-<http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0009> a icare:EducationalResource,
-        icare:HealthLiteracyResource,
-        owl:NamedIndividual ;
+<https://w3id.org/icareonto/education/resources/MAYA-EDU-0009> a owl:NamedIndividual,
+        icare:EducationalResource,
+        icare:HealthLiteracyResource ;
     rdfs:label "¿Y después del cáncer, qué?" ;
+    dcterms:description "Information on emotional adjustment after cancer treatment, including uncertainty, confidence, changing identity, everyday coping strategies and when to seek additional support." ;
+    dcterms:identifier "MAYA-EDU-0009" ;
+    dcterms:language "es"^^xsd:language ;
+    dcterms:publisher "Fundación Kālida" ;
+    dcterms:rights "Link / Signpost Only" ;
+    dcterms:source <https://www.fundaciokalida.org/es/como-te-ayudamos/cuidado-de-tu-bienestar-emocional/y-despues-del-cancer-que/> ;
+    dcterms:title "¿Y después del cáncer, qué?" ;
     edu:accessConditions "Public" ;
     edu:applicabilityNotes "General survivorship resource, not AYA-specific. Educational content can support adjustment after treatment. References to Kālida courses and services require separate confirmation of availability and eligibility." ;
     edu:completionStatus "Complete" ;
@@ -199,19 +206,19 @@ edu:templateStatus a owl:AnnotationProperty .
         icare:SupportCareNavigation,
         icare:SupportSelfManagement ;
     icare:knowledgeResourceHasTopic icare:FollowUpCare,
-        icare:MentalHealthAndEmotionalWellbeing ;
-    dcterms:description "Information on emotional adjustment after cancer treatment, including uncertainty, confidence, changing identity, everyday coping strategies and when to seek additional support." ;
-    dcterms:identifier "MAYA-EDU-0009" ;
+        icare:MentalHealthAndEmotionalWellbeing .
+
+<https://w3id.org/icareonto/education/resources/MAYA-EDU-0010> a owl:NamedIndividual,
+        icare:EducationalResource,
+        icare:HealthLiteracyResource ;
+    rdfs:label "8 consejos para gestionar el estrés cuando convives con el cáncer" ;
+    dcterms:description "Explains stress associated with cancer and presents eight practical strategies for managing daily demands, supporting emotional wellbeing and seeking help from others." ;
+    dcterms:identifier "MAYA-EDU-0010" ;
     dcterms:language "es"^^xsd:language ;
     dcterms:publisher "Fundación Kālida" ;
     dcterms:rights "Link / Signpost Only" ;
-    dcterms:source <https://www.fundaciokalida.org/es/como-te-ayudamos/cuidado-de-tu-bienestar-emocional/y-despues-del-cancer-que/> ;
-    dcterms:title "¿Y después del cáncer, qué?" .
-
-<http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0010> a icare:EducationalResource,
-        icare:HealthLiteracyResource,
-        owl:NamedIndividual ;
-    rdfs:label "8 consejos para gestionar el estrés cuando convives con el cáncer" ;
+    dcterms:source <https://www.fundaciokalida.org/es/8-consejos-para-gestionar-el-estres-cuando-convives-con-el-cancer/> ;
+    dcterms:title "8 consejos para gestionar el estrés cuando convives con el cáncer" ;
     edu:accessConditions "Public" ;
     edu:applicabilityNotes "General oncology resource, not AYA-specific. Provides educational coping guidance rather than a psychological treatment programme. Confirm access separately before signposting to the advertised courses." ;
     edu:completionStatus "Complete" ;
@@ -233,19 +240,19 @@ edu:templateStatus a owl:AnnotationProperty .
     icare:knowledgeResourceHasPurpose icare:ExplainHealthTopic,
         icare:SupportBehaviourChange,
         icare:SupportSelfManagement ;
-    icare:knowledgeResourceHasTopic icare:MentalHealthAndEmotionalWellbeing ;
-    dcterms:description "Explains stress associated with cancer and presents eight practical strategies for managing daily demands, supporting emotional wellbeing and seeking help from others." ;
-    dcterms:identifier "MAYA-EDU-0010" ;
+    icare:knowledgeResourceHasTopic icare:MentalHealthAndEmotionalWellbeing .
+
+<https://w3id.org/icareonto/education/resources/MAYA-EDU-0011> a owl:NamedIndividual,
+        icare:EducationalResource,
+        icare:HealthLiteracyResource ;
+    rdfs:label "Cáncer y relaciones sociales" ;
+    dcterms:description "Introduces the effects of cancer on relationships and communication, with links to guidance on partners, children, friends and living alone." ;
+    dcterms:identifier "MAYA-EDU-0011" ;
     dcterms:language "es"^^xsd:language ;
     dcterms:publisher "Fundación Kālida" ;
     dcterms:rights "Link / Signpost Only" ;
-    dcterms:source <https://www.fundaciokalida.org/es/8-consejos-para-gestionar-el-estres-cuando-convives-con-el-cancer/> ;
-    dcterms:title "8 consejos para gestionar el estrés cuando convives con el cáncer" .
-
-<http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0011> a icare:EducationalResource,
-        icare:HealthLiteracyResource,
-        owl:NamedIndividual ;
-    rdfs:label "Cáncer y relaciones sociales" ;
+    dcterms:source <https://www.fundaciokalida.org/es/como-te-ayudamos/cancer-y-relaciones-sociales/> ;
+    dcterms:title "Cáncer y relaciones sociales" ;
     edu:accessConditions "Public" ;
     edu:applicabilityNotes "General oncology overview, not AYA-specific. Provides introductory information and signposting; detailed relationship guidance is contained in separate linked pages." ;
     edu:completionStatus "Complete" ;
@@ -263,19 +270,19 @@ edu:templateStatus a owl:AnnotationProperty .
     icare:knowledgeResourceHasFormat icare:WrittenText ;
     icare:knowledgeResourceHasPurpose icare:ExplainHealthTopic,
         icare:SupportDisclosure ;
-    icare:knowledgeResourceHasTopic icare:MentalHealthAndEmotionalWellbeing ;
-    dcterms:description "Introduces the effects of cancer on relationships and communication, with links to guidance on partners, children, friends and living alone." ;
-    dcterms:identifier "MAYA-EDU-0011" ;
+    icare:knowledgeResourceHasTopic icare:MentalHealthAndEmotionalWellbeing .
+
+<https://w3id.org/icareonto/education/resources/MAYA-EDU-0012> a owl:NamedIndividual,
+        icare:EducationalResource,
+        icare:HealthLiteracyResource ;
+    rdfs:label "Apoyo a los cuidadores" ;
+    dcterms:description "Introduces caregivers’ emotional and practical support needs, with links to guidance for adult and young carers and people experiencing bereavement." ;
+    dcterms:identifier "MAYA-EDU-0012" ;
     dcterms:language "es"^^xsd:language ;
     dcterms:publisher "Fundación Kālida" ;
     dcterms:rights "Link / Signpost Only" ;
-    dcterms:source <https://www.fundaciokalida.org/es/como-te-ayudamos/cancer-y-relaciones-sociales/> ;
-    dcterms:title "Cáncer y relaciones sociales" .
-
-<http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0012> a icare:EducationalResource,
-        icare:HealthLiteracyResource,
-        owl:NamedIndividual ;
-    rdfs:label "Apoyo a los cuidadores" ;
+    dcterms:source <https://www.fundaciokalida.org/es/como-te-ayudamos/apoyo-a-los-cuidadores/> ;
+    dcterms:title "Apoyo a los cuidadores" ;
     edu:accessConditions "Public" ;
     edu:applicabilityNotes "Primarily a caregiver-support overview and signposting page. Not specific to caregivers of AYA survivors. Confirm eligibility and availability before recommending provider services." ;
     edu:completionStatus "Complete" ;
@@ -295,19 +302,19 @@ edu:templateStatus a owl:AnnotationProperty .
     icare:knowledgeResourceHasFormat icare:WrittenText ;
     icare:knowledgeResourceHasPurpose icare:ExplainHealthTopic,
         icare:SupportCareNavigation ;
-    icare:knowledgeResourceHasTopic icare:MentalHealthAndEmotionalWellbeing ;
-    dcterms:description "Introduces caregivers’ emotional and practical support needs, with links to guidance for adult and young carers and people experiencing bereavement." ;
-    dcterms:identifier "MAYA-EDU-0012" ;
+    icare:knowledgeResourceHasTopic icare:MentalHealthAndEmotionalWellbeing .
+
+<https://w3id.org/icareonto/education/resources/MAYA-EDU-0013> a owl:NamedIndividual,
+        icare:EducationalResource,
+        icare:HealthLiteracyResource ;
+    rdfs:label "Identidad y cáncer: cómo la enfermedad puede cambiar la percepción de quién eres" ;
+    dcterms:description "Explores changes in identity, self-image, roles and priorities associated with cancer, with practical reflection prompts for understanding and adapting to these changes." ;
+    dcterms:identifier "MAYA-EDU-0013" ;
     dcterms:language "es"^^xsd:language ;
     dcterms:publisher "Fundación Kālida" ;
     dcterms:rights "Link / Signpost Only" ;
-    dcterms:source <https://www.fundaciokalida.org/es/como-te-ayudamos/apoyo-a-los-cuidadores/> ;
-    dcterms:title "Apoyo a los cuidadores" .
-
-<http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0013> a icare:EducationalResource,
-        icare:HealthLiteracyResource,
-        owl:NamedIndividual ;
-    rdfs:label "Identidad y cáncer: cómo la enfermedad puede cambiar la percepción de quién eres" ;
+    dcterms:source <https://www.fundaciokalida.org/es/identitat-i-cancer-percepcio-de-qui-ets/> ;
+    dcterms:title "Identidad y cáncer: cómo la enfermedad puede cambiar la percepción de quién eres" ;
     edu:accessConditions "Public" ;
     edu:applicabilityNotes "General oncology article, not AYA-specific. Relevant to identity transitions and adjustment; reflective educational support rather than a structured psychological intervention." ;
     edu:completionStatus "Complete" ;
@@ -328,19 +335,19 @@ edu:templateStatus a owl:AnnotationProperty .
     icare:knowledgeResourceHasPurpose icare:ExplainHealthTopic,
         icare:SupportSelfManagement ;
     icare:knowledgeResourceHasTopic icare:FollowUpCare,
-        icare:MentalHealthAndEmotionalWellbeing ;
-    dcterms:description "Explores changes in identity, self-image, roles and priorities associated with cancer, with practical reflection prompts for understanding and adapting to these changes." ;
-    dcterms:identifier "MAYA-EDU-0013" ;
-    dcterms:language "es"^^xsd:language ;
-    dcterms:publisher "Fundación Kālida" ;
-    dcterms:rights "Link / Signpost Only" ;
-    dcterms:source <https://www.fundaciokalida.org/es/identitat-i-cancer-percepcio-de-qui-ets/> ;
-    dcterms:title "Identidad y cáncer: cómo la enfermedad puede cambiar la percepción de quién eres" .
+        icare:MentalHealthAndEmotionalWellbeing .
 
-<http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0017> a icare:EducationalResource,
-        icare:HealthLiteracyResource,
-        owl:NamedIndividual ;
+<https://w3id.org/icareonto/education/resources/MAYA-EDU-0017> a owl:NamedIndividual,
+        icare:EducationalResource,
+        icare:HealthLiteracyResource ;
     rdfs:label "Heart health and cancer" ;
+    dcterms:description "Explains how cancer treatments can affect heart health, including symptoms, cardiovascular assessments, long-term monitoring and practical measures to support cardiovascular wellbeing." ;
+    dcterms:identifier "MAYA-EDU-0017" ;
+    dcterms:language "en"^^xsd:language ;
+    dcterms:publisher "Macmillan Cancer Support" ;
+    dcterms:rights "Link / Signpost Only" ;
+    dcterms:source <https://www.macmillan.org.uk/cancer-information-and-support/impacts-of-cancer/heart-health> ;
+    dcterms:title "Heart health and cancer" ;
     edu:accessConditions "Public" ;
     edu:applicabilityNotes "General oncology information, with some childhood-treatment context. Includes emergency and service information that requires local interpretation when used across pilots." ;
     edu:completionStatus "Complete" ;
@@ -365,19 +372,19 @@ edu:templateStatus a owl:AnnotationProperty .
         icare:SupportBehaviourChange,
         icare:SupportSelfManagement ;
     icare:knowledgeResourceHasTopic icare:CardiovascularLateEffects,
-        icare:FollowUpCare ;
-    dcterms:description "Explains how cancer treatments can affect heart health, including symptoms, cardiovascular assessments, long-term monitoring and practical measures to support cardiovascular wellbeing." ;
-    dcterms:identifier "MAYA-EDU-0017" ;
-    dcterms:language "en"^^xsd:language ;
-    dcterms:publisher "Macmillan Cancer Support" ;
-    dcterms:rights "Link / Signpost Only" ;
-    dcterms:source <https://www.macmillan.org.uk/cancer-information-and-support/impacts-of-cancer/heart-health> ;
-    dcterms:title "Heart health and cancer" .
+        icare:FollowUpCare .
 
-<http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0018> a icare:EducationalResource,
-        icare:HealthLiteracyResource,
-        owl:NamedIndividual ;
+<https://w3id.org/icareonto/education/resources/MAYA-EDU-0018> a owl:NamedIndividual,
+        icare:EducationalResource,
+        icare:HealthLiteracyResource ;
     rdfs:label "Late Effects: Heart Problems" ;
+    dcterms:description "Explains potential heart problems following cancer treatment in young people, including relevant treatment exposures, symptoms to report, follow-up tests and measures to support heart health." ;
+    dcterms:identifier "MAYA-EDU-0018" ;
+    dcterms:language "en"^^xsd:language ;
+    dcterms:publisher "Children's Cancer and Leukaemia Group (CCLG)" ;
+    dcterms:rights "Link / Signpost Only" ;
+    dcterms:source <https://www.cclg.org.uk/about-cancer/living-beyond-cancer/late-effect-factsheets/heart-problems> ;
+    dcterms:title "Late Effects: Heart Problems" ;
     edu:accessConditions "Public" ;
     edu:applicabilityNotes "Particularly relevant to survivors treated as children, teenagers or young adults. Primarily concerns late effects and follow-up. Treatment-specific monitoring and exercise advice require individual clinical interpretation." ;
     edu:completionStatus "Complete" ;
@@ -399,19 +406,19 @@ edu:templateStatus a owl:AnnotationProperty .
         icare:PrepareForConsultation,
         icare:SupportSelfManagement ;
     icare:knowledgeResourceHasTopic icare:CardiovascularLateEffects,
-        icare:FollowUpCare ;
-    dcterms:description "Explains potential heart problems following cancer treatment in young people, including relevant treatment exposures, symptoms to report, follow-up tests and measures to support heart health." ;
-    dcterms:identifier "MAYA-EDU-0018" ;
-    dcterms:language "en"^^xsd:language ;
-    dcterms:publisher "Children's Cancer and Leukaemia Group (CCLG)" ;
-    dcterms:rights "Link / Signpost Only" ;
-    dcterms:source <https://www.cclg.org.uk/about-cancer/living-beyond-cancer/late-effect-factsheets/heart-problems> ;
-    dcterms:title "Late Effects: Heart Problems" .
+        icare:FollowUpCare .
 
-<http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0019> a icare:EducationalResource,
-        icare:HealthLiteracyResource,
-        owl:NamedIndividual ;
+<https://w3id.org/icareonto/education/resources/MAYA-EDU-0019> a owl:NamedIndividual,
+        icare:EducationalResource,
+        icare:HealthLiteracyResource ;
     rdfs:label "Cancer and mental health information" ;
+    dcterms:description "Collection of mental-health information for young people affected by cancer, covering anxiety, coping strategies, psychological support, asking for help and support from family and friends, alongside personal experiences." ;
+    dcterms:identifier "MAYA-EDU-0019" ;
+    dcterms:language "en"^^xsd:language ;
+    dcterms:publisher "Teenage Cancer Trust" ;
+    dcterms:rights "Link / Signpost Only" ;
+    dcterms:source <https://www.teenagecancertrust.org/information-about-cancer/cancer-and-mental-health-information> ;
+    dcterms:title "Cancer and mental health information" ;
     edu:accessConditions "Public" ;
     edu:applicabilityNotes "Youth-focused collection including post-treatment mental health, coping techniques, professional support and family support. Annotations describe the collection’s advertised coverage; individual resources require separate review when selected for use." ;
     edu:completionStatus "Complete" ;
@@ -433,19 +440,19 @@ edu:templateStatus a owl:AnnotationProperty .
     icare:knowledgeResourceHasPurpose icare:ExplainHealthTopic,
         icare:SupportCareNavigation,
         icare:SupportSelfManagement ;
-    icare:knowledgeResourceHasTopic icare:MentalHealthAndEmotionalWellbeing ;
-    dcterms:description "Collection of mental-health information for young people affected by cancer, covering anxiety, coping strategies, psychological support, asking for help and support from family and friends, alongside personal experiences." ;
-    dcterms:identifier "MAYA-EDU-0019" ;
-    dcterms:language "en"^^xsd:language ;
-    dcterms:publisher "Teenage Cancer Trust" ;
-    dcterms:rights "Link / Signpost Only" ;
-    dcterms:source <https://www.teenagecancertrust.org/information-about-cancer/cancer-and-mental-health-information> ;
-    dcterms:title "Cancer and mental health information" .
+    icare:knowledgeResourceHasTopic icare:MentalHealthAndEmotionalWellbeing .
 
-<http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0020> a icare:EducationalResource,
-        icare:HealthLiteracyResource,
-        owl:NamedIndividual ;
+<https://w3id.org/icareonto/education/resources/MAYA-EDU-0020> a owl:NamedIndividual,
+        icare:EducationalResource,
+        icare:HealthLiteracyResource ;
     rdfs:label "Getting Back to Normal After Treatment Ends" ;
+    dcterms:description "Practical guidance for young people adjusting to life after cancer treatment, covering relationships, identity, work or education, ongoing effects, emotional recovery and fear of relapse." ;
+    dcterms:identifier "MAYA-EDU-0020" ;
+    dcterms:language "en"^^xsd:language ;
+    dcterms:publisher "Young Lives vs Cancer" ;
+    dcterms:rights "Link / Signpost Only" ;
+    dcterms:source <https://www.younglivesvscancer.org.uk/cancer-info-support/body-and-health/getting-back-to-normal-after-treatment-ends/> ;
+    dcterms:title "Getting Back to Normal After Treatment Ends" ;
     edu:accessConditions "Public" ;
     edu:applicabilityNotes "Youth-focused survivorship guidance. Includes UK-specific employment, education and support references whose applicability varies between pilots. Content can be viewed in 134 different languages." ;
     edu:completionStatus "Complete" ;
@@ -465,19 +472,19 @@ edu:templateStatus a owl:AnnotationProperty .
         icare:SupportDisclosure,
         icare:SupportSelfManagement ;
     icare:knowledgeResourceHasTopic icare:FollowUpCare,
-        icare:MentalHealthAndEmotionalWellbeing ;
-    dcterms:description "Practical guidance for young people adjusting to life after cancer treatment, covering relationships, identity, work or education, ongoing effects, emotional recovery and fear of relapse." ;
-    dcterms:identifier "MAYA-EDU-0020" ;
-    dcterms:language "en"^^xsd:language ;
-    dcterms:publisher "Young Lives vs Cancer" ;
-    dcterms:rights "Link / Signpost Only" ;
-    dcterms:source <https://www.younglivesvscancer.org.uk/cancer-info-support/body-and-health/getting-back-to-normal-after-treatment-ends/> ;
-    dcterms:title "Getting Back to Normal After Treatment Ends" .
+        icare:MentalHealthAndEmotionalWellbeing .
 
-<http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0021> a icare:EducationalResource,
-        icare:HealthLiteracyResource,
-        owl:NamedIndividual ;
+<https://w3id.org/icareonto/education/resources/MAYA-EDU-0021> a owl:NamedIndividual,
+        icare:EducationalResource,
+        icare:HealthLiteracyResource ;
     rdfs:label "Relationships after cancer treatment" ;
+    dcterms:description "Guidance for young people navigating relationships after cancer treatment, including family dynamics, friendships, romantic relationships, independence and communicating personal needs and concerns." ;
+    dcterms:identifier "MAYA-EDU-0021" ;
+    dcterms:language "en"^^xsd:language ;
+    dcterms:publisher "Teenage Cancer Trust" ;
+    dcterms:rights "Link / Signpost Only" ;
+    dcterms:source <https://www.teenagecancertrust.org/information-about-cancer/relationships-after-cancer-treatment> ;
+    dcterms:title "Relationships after cancer treatment" ;
     edu:accessConditions "Public" ;
     edu:applicabilityNotes "Youth-focused survivorship guidance addressing relationship adjustment and communication. Includes discussing treatment-related fertility effects with a partner, rather than detailed fertility guidance." ;
     edu:completionStatus "Complete" ;
@@ -496,19 +503,19 @@ edu:templateStatus a owl:AnnotationProperty .
         icare:SupportDisclosure,
         icare:SupportSelfManagement ;
     icare:knowledgeResourceHasTopic icare:FollowUpCare,
-        icare:MentalHealthAndEmotionalWellbeing ;
-    dcterms:description "Guidance for young people navigating relationships after cancer treatment, including family dynamics, friendships, romantic relationships, independence and communicating personal needs and concerns." ;
-    dcterms:identifier "MAYA-EDU-0021" ;
-    dcterms:language "en"^^xsd:language ;
-    dcterms:publisher "Teenage Cancer Trust" ;
-    dcterms:rights "Link / Signpost Only" ;
-    dcterms:source <https://www.teenagecancertrust.org/information-about-cancer/relationships-after-cancer-treatment> ;
-    dcterms:title "Relationships after cancer treatment" .
+        icare:MentalHealthAndEmotionalWellbeing .
 
-<http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0023> a icare:EducationalResource,
-        icare:HealthLiteracyResource,
-        owl:NamedIndividual ;
+<https://w3id.org/icareonto/education/resources/MAYA-EDU-0023> a owl:NamedIndividual,
+        icare:EducationalResource,
+        icare:HealthLiteracyResource ;
     rdfs:label "Overwhelmed by diet and cancer advice? You’re not alone" ;
+    dcterms:description "Illustrated nutrition guide for people living with and beyond cancer, supporting informed food choices, understanding conflicting dietary advice and managing eating difficulties through practical guidance and recipes." ;
+    dcterms:identifier "MAYA-EDU-0023" ;
+    dcterms:language "en"^^xsd:language ;
+    dcterms:publisher "Trekstock" ;
+    dcterms:rights "Link / Signpost Only" ;
+    dcterms:source <https://www.trekstock.com/get-support/nutrition-guide> ;
+    dcterms:title "Overwhelmed by diet and cancer advice? You’re not alone" ;
     edu:accessConditions "Restricted" ;
     edu:applicabilityNotes "Designed for people in their 20s, 30s and 40s during and after treatment, including people living with cancer long-term. Uses short sections, reduced text and imagery to accommodate fatigue and reading difficulties. Full-guide access requires name and email registration." ;
     edu:completionStatus "Complete" ;
@@ -529,19 +536,19 @@ edu:templateStatus a owl:AnnotationProperty .
     icare:knowledgeResourceHasPurpose icare:ExplainHealthTopic,
         icare:SupportBehaviourChange,
         icare:SupportSelfManagement ;
-    icare:knowledgeResourceHasTopic icare:Nutrition ;
-    dcterms:description "Illustrated nutrition guide for people living with and beyond cancer, supporting informed food choices, understanding conflicting dietary advice and managing eating difficulties through practical guidance and recipes." ;
-    dcterms:identifier "MAYA-EDU-0023" ;
-    dcterms:language "en"^^xsd:language ;
-    dcterms:publisher "Trekstock" ;
-    dcterms:rights "Link / Signpost Only" ;
-    dcterms:source <https://www.trekstock.com/get-support/nutrition-guide> ;
-    dcterms:title "Overwhelmed by diet and cancer advice? You’re not alone" .
+    icare:knowledgeResourceHasTopic icare:Nutrition .
 
-<http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0030> a icare:EducationalResource,
-        icare:HealthLiteracyResource,
-        owl:NamedIndividual ;
+<https://w3id.org/icareonto/education/resources/MAYA-EDU-0030> a owl:NamedIndividual,
+        icare:EducationalResource,
+        icare:HealthLiteracyResource ;
     rdfs:label "Teenagers and young adults affected by cancer" ;
+    dcterms:description "Information and signposting to age-appropriate cancer support for teenagers, young adults and young carers, including practical, emotional, financial and peer-support services." ;
+    dcterms:identifier "MAYA-EDU-0030" ;
+    dcterms:language "en"^^xsd:language ;
+    dcterms:publisher "Macmillan Cancer Support" ;
+    dcterms:rights "Link / Signpost Only" ;
+    dcterms:source <https://www.macmillan.org.uk/cancer-information-and-support/get-help/teenagers-and-young-adults> ;
+    dcterms:title "Teenagers and young adults affected by cancer" ;
     edu:accessConditions "Public" ;
     edu:applicabilityNotes "Primarily signposting rather than detailed educational guidance. Includes UK-specific services, rights and eligibility criteria. Young carers are a separate audience from young people diagnosed with cancer." ;
     edu:completionStatus "Complete" ;
@@ -562,19 +569,19 @@ edu:templateStatus a owl:AnnotationProperty .
     icare:knowledgeResourceHasFormat icare:WrittenText ;
     icare:knowledgeResourceHasPurpose icare:SupportCareNavigation ;
     icare:knowledgeResourceHasTopic icare:FollowUpCare,
-        icare:MentalHealthAndEmotionalWellbeing ;
-    dcterms:description "Information and signposting to age-appropriate cancer support for teenagers, young adults and young carers, including practical, emotional, financial and peer-support services." ;
-    dcterms:identifier "MAYA-EDU-0030" ;
-    dcterms:language "en"^^xsd:language ;
-    dcterms:publisher "Macmillan Cancer Support" ;
-    dcterms:rights "Link / Signpost Only" ;
-    dcterms:source <https://www.macmillan.org.uk/cancer-information-and-support/get-help/teenagers-and-young-adults> ;
-    dcterms:title "Teenagers and young adults affected by cancer" .
+        icare:MentalHealthAndEmotionalWellbeing .
 
-<http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0046> a icare:EducationalResource,
-        icare:HealthLiteracyResource,
-        owl:NamedIndividual ;
+<https://w3id.org/icareonto/education/resources/MAYA-EDU-0046> a owl:NamedIndividual,
+        icare:EducationalResource,
+        icare:HealthLiteracyResource ;
     rdfs:label "Dicas para quem vive com cancro" ;
+    dcterms:description "Practical tips on daily life with cancer, including emotional wellbeing, fatigue, sleep, common treatment effects, sexuality, exercise, food and support from family and friends." ;
+    dcterms:identifier "MAYA-EDU-0046" ;
+    dcterms:language "pt"^^xsd:language ;
+    dcterms:publisher "Laço (publication hosted by iMM–Laço); drawing on contributions from women with breast-cancer experience" ;
+    dcterms:rights "Link / Signpost Only" ;
+    dcterms:source <https://laco.imm.medicina.ulisboa.pt/wp-content/uploads/sites/11/2021/10/BOOKLET-LACO_Dicas-para-quem-vive-com-cancro.pdf> ;
+    dcterms:title "Dicas para quem vive com cancro" ;
     edu:accessConditions "Public" ;
     edu:applicabilityNotes "Draws substantially on breast-cancer and treatment experiences, rather than being a dedicated AYA or post-treatment guide. Review relevance of each intended section; distinguish everyday coping tips from treatment-specific symptom advice. Not every topic in the full guide applies to every survivor." ;
     edu:completionStatus "Complete" ;
@@ -599,19 +606,19 @@ edu:templateStatus a owl:AnnotationProperty .
     icare:knowledgeResourceHasTopic icare:FollowUpCare,
         icare:MentalHealthAndEmotionalWellbeing,
         icare:Nutrition,
-        icare:PhysicalActivity ;
-    dcterms:description "Practical tips on daily life with cancer, including emotional wellbeing, fatigue, sleep, common treatment effects, sexuality, exercise, food and support from family and friends." ;
-    dcterms:identifier "MAYA-EDU-0046" ;
-    dcterms:language "pt"^^xsd:language ;
-    dcterms:publisher "Laço (publication hosted by iMM–Laço); drawing on contributions from women with breast-cancer experience" ;
-    dcterms:rights "Link / Signpost Only" ;
-    dcterms:source <https://laco.imm.medicina.ulisboa.pt/wp-content/uploads/sites/11/2021/10/BOOKLET-LACO_Dicas-para-quem-vive-com-cancro.pdf> ;
-    dcterms:title "Dicas para quem vive com cancro" .
+        icare:PhysicalActivity .
 
-<http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0061> a icare:EducationalResource,
-        icare:HealthLiteracyResource,
-        owl:NamedIndividual ;
+<https://w3id.org/icareonto/education/resources/MAYA-EDU-0061> a owl:NamedIndividual,
+        icare:EducationalResource,
+        icare:HealthLiteracyResource ;
     rdfs:label "Guia de Alimentação na Pessoa com Cancro" ;
+    dcterms:description "Guide explaining nutrition during and after cancer treatment, food-related myths, symptoms affecting intake, when to seek nutritional support and practical dietary adjustments, with a dedicated post-treatment section." ;
+    dcterms:identifier "MAYA-EDU-0061" ;
+    dcterms:language "pt"^^xsd:language ;
+    dcterms:publisher "Associação de Investigação de Cuidados de Suporte em Oncologia (AICSO); Andreia Capela, Luciana Teixeira, Elsa Madureira and Sara Torcato Parreira" ;
+    dcterms:rights "Link / Signpost Only" ;
+    dcterms:source <https://aicso.pt/wp-content/uploads/2024/04/Guia-de-Alimentacao-Doente-Cancro_Digital.pdf> ;
+    dcterms:title "Guia de Alimentação na Pessoa com Cancro" ;
     edu:accessConditions "Public" ;
     edu:applicabilityNotes "General oncology guide, not AYA-specific. Includes malnutrition and symptom-management advice for active treatment that should not be applied indiscriminately to well survivors. For post-treatment users, prioritise the relevant section and their current nutritional needs. Dietary supplements and individual dietary treatment require professional advice." ;
     edu:completionStatus "Complete" ;
@@ -636,61 +643,19 @@ edu:templateStatus a owl:AnnotationProperty .
         icare:SupportBehaviourChange,
         icare:SupportSelfManagement ;
     icare:knowledgeResourceHasTopic icare:Nutrition,
-        icare:PhysicalActivity ;
-    dcterms:description "Guide explaining nutrition during and after cancer treatment, food-related myths, symptoms affecting intake, when to seek nutritional support and practical dietary adjustments, with a dedicated post-treatment section." ;
-    dcterms:identifier "MAYA-EDU-0061" ;
-    dcterms:language "pt"^^xsd:language ;
-    dcterms:publisher "Associação de Investigação de Cuidados de Suporte em Oncologia (AICSO); Andreia Capela, Luciana Teixeira, Elsa Madureira and Sara Torcato Parreira" ;
-    dcterms:rights "Link / Signpost Only" ;
-    dcterms:source <https://aicso.pt/wp-content/uploads/2024/04/Guia-de-Alimentacao-Doente-Cancro_Digital.pdf> ;
-    dcterms:title "Guia de Alimentação na Pessoa com Cancro" .
+        icare:PhysicalActivity .
 
-<http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0077a> a icare:EducationalResource,
-        icare:HealthLiteracyResource,
-        owl:NamedIndividual ;
+<https://w3id.org/icareonto/education/resources/MAYA-EDU-0077a> a owl:NamedIndividual,
+        icare:EducationalResource,
+        icare:HealthLiteracyResource ;
     rdfs:label "Survivorship: ESMO-Patientenratgeber" ;
-    edu:accessConditions "Public" ;
-    edu:applicabilityNotes "Broad adult survivorship guide; not specifically developed for AYA survivors. Because of its length, direct users to relevant sections (e.g., fertility, work reintegration, and emotional wellbeing)." ;
-    edu:completionStatus "Complete" ;
-    edu:curatedBy "INO" ;
-    edu:curatedOn "2026-11-18"^^xsd:date ;
-    edu:curationStatus "Approved" ;
-    edu:journeyStage "After treatment / survivorship" ;
-    edu:resourceDateText "2017" ;
-    edu:resourceRole "Direct Educational Resource" ;
-    icare:healthLiteracyResourceAddressesNeed icare:HealthcareNavigationSupportNeed,
-        icare:InformationApplicationSupportNeed,
-        icare:InformationComprehensionSupportNeed,
-        icare:SelfManagementSupportNeed,
-        icare:SocialSupportNeed ;
-    icare:knowledgeResourceHasAudience icare:AYASurvivorAudience,
-        icare:CaregiverAudience,
-        icare:FamilyAudience ;
-    icare:knowledgeResourceHasComplexityLevel icare:StandardComplexity ;
-    icare:knowledgeResourceHasFormat icare:WrittenText ;
-    icare:knowledgeResourceHasPurpose icare:ExplainHealthTopic,
-        icare:PrepareForConsultation,
-        icare:SupportBehaviourChange,
-        icare:SupportCareNavigation,
-        icare:SupportSelfManagement ;
-    icare:knowledgeResourceHasTopic icare:CardiovascularLateEffects,
-        icare:FollowUpCare,
-        icare:MentalHealthAndEmotionalWellbeing,
-        icare:Nutrition,
-        icare:PhysicalActivity,
-        icare:Smoking ;
     dcterms:description "Patient guide to life after initial cancer treatment, covering follow-up, late effects including cardiovascular problems, healthy living, emotional adjustment, relationships, support services and personal care records." ;
     dcterms:identifier "MAYA-EDU-0077a" ;
     dcterms:language "de"^^xsd:language ;
     dcterms:publisher "European Society for Medical Oncology (ESMO); European Cancer Patient Coalition (ECPC); developed in collaboration with the International Psycho-Oncology Society (IPOS)" ;
     dcterms:rights "Link / Signpost Only" ;
     dcterms:source <https://dam.esmo.org/image/upload/ESMO-Patientenratgeber-Survivorship.pdf> ;
-    dcterms:title "Survivorship: ESMO-Patientenratgeber" .
-
-<http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0077b> a icare:EducationalResource,
-        icare:HealthLiteracyResource,
-        owl:NamedIndividual ;
-    rdfs:label "Sopravvivenza: Guida ESMO per il Paziente" ;
+    dcterms:title "Survivorship: ESMO-Patientenratgeber" ;
     edu:accessConditions "Public" ;
     edu:applicabilityNotes "Broad adult survivorship guide; not specifically developed for AYA survivors. Because of its length, direct users to relevant sections (e.g., fertility, work reintegration, and emotional wellbeing)." ;
     edu:completionStatus "Complete" ;
@@ -720,19 +685,19 @@ edu:templateStatus a owl:AnnotationProperty .
         icare:MentalHealthAndEmotionalWellbeing,
         icare:Nutrition,
         icare:PhysicalActivity,
-        icare:Smoking ;
+        icare:Smoking .
+
+<https://w3id.org/icareonto/education/resources/MAYA-EDU-0077b> a owl:NamedIndividual,
+        icare:EducationalResource,
+        icare:HealthLiteracyResource ;
+    rdfs:label "Sopravvivenza: Guida ESMO per il Paziente" ;
     dcterms:description "Patient guide to life after initial cancer treatment, covering follow-up, late effects including cardiovascular problems, healthy living, emotional adjustment, relationships, support services and personal care records." ;
     dcterms:identifier "MAYA-EDU-0077b" ;
     dcterms:language "it"^^xsd:language ;
     dcterms:publisher "European Society for Medical Oncology (ESMO); European Cancer Patient Coalition (ECPC); developed in collaboration with the International Psycho-Oncology Society (IPOS)" ;
     dcterms:rights "Link / Signpost Only" ;
     dcterms:source <https://dam.esmo.org/image/upload/IT-ESMO-Guida-per-il-Paziente-Sopravvivenza.pdf> ;
-    dcterms:title "Sopravvivenza: Guida ESMO per il Paziente" .
-
-<http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0077c> a icare:EducationalResource,
-        icare:HealthLiteracyResource,
-        owl:NamedIndividual ;
-    rdfs:label "Przebycie choroby nowotworowej: Poradnik dla pacjentów ESMO-ECPC" ;
+    dcterms:title "Sopravvivenza: Guida ESMO per il Paziente" ;
     edu:accessConditions "Public" ;
     edu:applicabilityNotes "Broad adult survivorship guide; not specifically developed for AYA survivors. Because of its length, direct users to relevant sections (e.g., fertility, work reintegration, and emotional wellbeing)." ;
     edu:completionStatus "Complete" ;
@@ -762,30 +727,29 @@ edu:templateStatus a owl:AnnotationProperty .
         icare:MentalHealthAndEmotionalWellbeing,
         icare:Nutrition,
         icare:PhysicalActivity,
-        icare:Smoking ;
+        icare:Smoking .
+
+<https://w3id.org/icareonto/education/resources/MAYA-EDU-0077c> a owl:NamedIndividual,
+        icare:EducationalResource,
+        icare:HealthLiteracyResource ;
+    rdfs:label "Przebycie choroby nowotworowej: Poradnik dla pacjentów ESMO-ECPC" ;
     dcterms:description "Patient guide to life after initial cancer treatment, covering follow-up, late effects including cardiovascular problems, healthy living, emotional adjustment, relationships, support services and personal care records." ;
     dcterms:identifier "MAYA-EDU-0077c" ;
     dcterms:language "pl"^^xsd:language ;
     dcterms:publisher "European Society for Medical Oncology (ESMO); European Cancer Patient Coalition (ECPC); developed in collaboration with the International Psycho-Oncology Society (IPOS)" ;
     dcterms:rights "Link / Signpost Only" ;
     dcterms:source <https://dam.esmo.org/image/upload/PL-Poradnik-dla-Pacjentow-Przebycie-Choroby-Nowotworowej%E2%80%AF.pdf> ;
-    dcterms:title "Przebycie choroby nowotworowej: Poradnik dla pacjentów ESMO-ECPC" .
-
-<http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0077d> a icare:EducationalResource,
-        icare:HealthLiteracyResource,
-        owl:NamedIndividual ;
-    rdfs:label "Survivorship: An ESMO-ECPC Guide for Patients" ;
+    dcterms:title "Przebycie choroby nowotworowej: Poradnik dla pacjentów ESMO-ECPC" ;
     edu:accessConditions "Public" ;
-    edu:applicabilityNotes "Broad adult survivorship guide. Direct participants to relevant sections. Clinical review should confirm the continuing applicability of recommendations in this 2017 edition, particularly lifestyle and treatment advice." ;
+    edu:applicabilityNotes "Broad adult survivorship guide; not specifically developed for AYA survivors. Because of its length, direct users to relevant sections (e.g., fertility, work reintegration, and emotional wellbeing)." ;
     edu:completionStatus "Complete" ;
     edu:curatedBy "INO" ;
-    edu:curatedOn "2026-11-23"^^xsd:date ;
+    edu:curatedOn "2026-11-18"^^xsd:date ;
     edu:curationStatus "Approved" ;
     edu:journeyStage "After treatment / survivorship" ;
     edu:resourceDateText "2017" ;
     edu:resourceRole "Direct Educational Resource" ;
-    icare:healthLiteracyResourceAddressesNeed icare:CareTeamCommunicationSupportNeed,
-        icare:HealthcareNavigationSupportNeed,
+    icare:healthLiteracyResourceAddressesNeed icare:HealthcareNavigationSupportNeed,
         icare:InformationApplicationSupportNeed,
         icare:InformationComprehensionSupportNeed,
         icare:SelfManagementSupportNeed,
@@ -805,19 +769,19 @@ edu:templateStatus a owl:AnnotationProperty .
         icare:MentalHealthAndEmotionalWellbeing,
         icare:Nutrition,
         icare:PhysicalActivity,
-        icare:Smoking ;
+        icare:Smoking .
+
+<https://w3id.org/icareonto/education/resources/MAYA-EDU-0077d> a owl:NamedIndividual,
+        icare:EducationalResource,
+        icare:HealthLiteracyResource ;
+    rdfs:label "Survivorship: An ESMO-ECPC Guide for Patients" ;
     dcterms:description "Patient guide to life after initial cancer treatment, covering follow-up, cardiovascular and other late effects, physical activity, nutrition, smoking cessation, emotional wellbeing, relationships, support services and personal care records." ;
     dcterms:identifier "MAYA-EDU-0077d" ;
     dcterms:language "en"^^xsd:language ;
     dcterms:publisher "European Society for Medical Oncology (ESMO); European Cancer Patient Coalition (ECPC); developed in collaboration with the International Psycho-Oncology Society (IPOS)" ;
     dcterms:rights "Link / Signpost Only" ;
     dcterms:source <https://dam.esmo.org/image/upload/v1671553955/For%20patients/Patient%20Guides/Survivorship/EN-ESMO-Patient-Guide-Survivorship.pdf> ;
-    dcterms:title "Survivorship: An ESMO-ECPC Guide for Patients" .
-
-<http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0077e> a icare:EducationalResource,
-        icare:HealthLiteracyResource,
-        owl:NamedIndividual ;
-    rdfs:label "La sobrevivencia: Una guía ESMO-ECPC para pacientes" ;
+    dcterms:title "Survivorship: An ESMO-ECPC Guide for Patients" ;
     edu:accessConditions "Public" ;
     edu:applicabilityNotes "Broad adult survivorship guide. Direct participants to relevant sections. Clinical review should confirm the continuing applicability of recommendations in this 2017 edition, particularly lifestyle and treatment advice." ;
     edu:completionStatus "Complete" ;
@@ -848,19 +812,62 @@ edu:templateStatus a owl:AnnotationProperty .
         icare:MentalHealthAndEmotionalWellbeing,
         icare:Nutrition,
         icare:PhysicalActivity,
-        icare:Smoking ;
+        icare:Smoking .
+
+<https://w3id.org/icareonto/education/resources/MAYA-EDU-0077e> a owl:NamedIndividual,
+        icare:EducationalResource,
+        icare:HealthLiteracyResource ;
+    rdfs:label "La sobrevivencia: Una guía ESMO-ECPC para pacientes" ;
     dcterms:description "Patient guide to life after initial cancer treatment, covering follow-up, cardiovascular and other late effects, physical activity, nutrition, smoking cessation, emotional wellbeing, relationships, support services and personal care records." ;
     dcterms:identifier "MAYA-EDU-0077e" ;
     dcterms:language "es"^^xsd:language ;
     dcterms:publisher "European Society for Medical Oncology (ESMO); European Cancer Patient Coalition (ECPC); developed in collaboration with the International Psycho-Oncology Society (IPOS)" ;
     dcterms:rights "Link / Signpost Only" ;
     dcterms:source <https://dam.esmo.org/image/upload/ESMO-Guia-para-Pacientes-Sobrevivencia.pdf> ;
-    dcterms:title "La sobrevivencia: Una guía ESMO-ECPC para pacientes" .
+    dcterms:title "La sobrevivencia: Una guía ESMO-ECPC para pacientes" ;
+    edu:accessConditions "Public" ;
+    edu:applicabilityNotes "Broad adult survivorship guide. Direct participants to relevant sections. Clinical review should confirm the continuing applicability of recommendations in this 2017 edition, particularly lifestyle and treatment advice." ;
+    edu:completionStatus "Complete" ;
+    edu:curatedBy "INO" ;
+    edu:curatedOn "2026-11-23"^^xsd:date ;
+    edu:curationStatus "Approved" ;
+    edu:journeyStage "After treatment / survivorship" ;
+    edu:resourceDateText "2017" ;
+    edu:resourceRole "Direct Educational Resource" ;
+    icare:healthLiteracyResourceAddressesNeed icare:CareTeamCommunicationSupportNeed,
+        icare:HealthcareNavigationSupportNeed,
+        icare:InformationApplicationSupportNeed,
+        icare:InformationComprehensionSupportNeed,
+        icare:SelfManagementSupportNeed,
+        icare:SocialSupportNeed ;
+    icare:knowledgeResourceHasAudience icare:AYASurvivorAudience,
+        icare:CaregiverAudience,
+        icare:FamilyAudience ;
+    icare:knowledgeResourceHasComplexityLevel icare:StandardComplexity ;
+    icare:knowledgeResourceHasFormat icare:WrittenText ;
+    icare:knowledgeResourceHasPurpose icare:ExplainHealthTopic,
+        icare:PrepareForConsultation,
+        icare:SupportBehaviourChange,
+        icare:SupportCareNavigation,
+        icare:SupportSelfManagement ;
+    icare:knowledgeResourceHasTopic icare:CardiovascularLateEffects,
+        icare:FollowUpCare,
+        icare:MentalHealthAndEmotionalWellbeing,
+        icare:Nutrition,
+        icare:PhysicalActivity,
+        icare:Smoking .
 
-<http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0099> a icare:EducationalResource,
-        icare:HealthLiteracyResource,
-        owl:NamedIndividual ;
+<https://w3id.org/icareonto/education/resources/MAYA-EDU-0099> a owl:NamedIndividual,
+        icare:EducationalResource,
+        icare:HealthLiteracyResource ;
     rdfs:label "Jak dbać o seksualność w obliczu raka?" ;
+    dcterms:description "Short article on the effects of cancer and treatment on intimacy, body image and sexual wellbeing, including communication about needs, fertility considerations and seeking specialist advice." ;
+    dcterms:identifier "MAYA-EDU-0099" ;
+    dcterms:language "pl"^^xsd:language ;
+    dcterms:publisher "Narodowy Portal Onkologiczny / Narodowy Instytut Onkologii; content oversight: Dr Maciej Kawecki" ;
+    dcterms:rights "Link / Signpost Only" ;
+    dcterms:source <https://onkologia.pacjent.gov.pl/pl/pacjent/codziennosc-w-trakcie-leczenia/jak-dbac-o-seksualnosc-w-obliczu-raka> ;
+    dcterms:title "Jak dbać o seksualność w obliczu raka?" ;
     edu:accessConditions "Public" ;
     edu:applicabilityNotes "General oncology article, not AYA-specific. Suitable as an introduction to sexual wellbeing and communication, rather than a fertility-treatment guide. The existing broad topics describe follow-up and emotional context. Confirm suitability for the participant’s age and clinical context." ;
     edu:completionStatus "Complete" ;
@@ -882,19 +889,19 @@ edu:templateStatus a owl:AnnotationProperty .
         icare:PrepareForConsultation,
         icare:SupportSelfManagement ;
     icare:knowledgeResourceHasTopic icare:FollowUpCare,
-        icare:MentalHealthAndEmotionalWellbeing ;
-    dcterms:description "Short article on the effects of cancer and treatment on intimacy, body image and sexual wellbeing, including communication about needs, fertility considerations and seeking specialist advice." ;
-    dcterms:identifier "MAYA-EDU-0099" ;
-    dcterms:language "pl"^^xsd:language ;
-    dcterms:publisher "Narodowy Portal Onkologiczny / Narodowy Instytut Onkologii; content oversight: Dr Maciej Kawecki" ;
-    dcterms:rights "Link / Signpost Only" ;
-    dcterms:source <https://onkologia.pacjent.gov.pl/pl/pacjent/codziennosc-w-trakcie-leczenia/jak-dbac-o-seksualnosc-w-obliczu-raka> ;
-    dcterms:title "Jak dbać o seksualność w obliczu raka?" .
+        icare:MentalHealthAndEmotionalWellbeing .
 
-<http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0108a> a icare:EducationalResource,
-        icare:HealthLiteracyResource,
-        owl:NamedIndividual ;
+<https://w3id.org/icareonto/education/resources/MAYA-EDU-0108a> a owl:NamedIndividual,
+        icare:EducationalResource,
+        icare:HealthLiteracyResource ;
     rdfs:label "Onkologia w Internecie: jak rozpoznać rzetelne źródła informacji?" ;
+    dcterms:description "Practical advice on finding and evaluating online cancer information, including checking source authority, publication dates, author credentials, supporting evidence and sensational claims. Identifies types of information sources patients and families can consult." ;
+    dcterms:identifier "MAYA-EDU-0108a" ;
+    dcterms:language "pl"^^xsd:language ;
+    dcterms:publisher "Alivia Onkofundacja; Jarosław Gośliński" ;
+    dcterms:rights "Link / Signpost Only" ;
+    dcterms:source <https://alivia.org.pl/wiedza-o-raku/onkologia-w-internecie-jak-rozpoznac-rzetelne-zrodla-informacji/> ;
+    dcterms:title "Onkologia w Internecie: jak rozpoznać rzetelne źródła informacji?" ;
     edu:accessConditions "Public" ;
     edu:applicabilityNotes "Relevant throughout the cancer journey, including survivorship. Covers information credibility rather than comprehensive privacy or data-protection guidance. General patient information rather than an AYA-specific resource." ;
     edu:completionStatus "Complete" ;
@@ -914,19 +921,19 @@ edu:templateStatus a owl:AnnotationProperty .
     icare:knowledgeResourceHasComplexityLevel icare:StandardComplexity ;
     icare:knowledgeResourceHasFormat icare:WrittenText ;
     icare:knowledgeResourceHasPurpose icare:ExplainHealthTopic ;
-    icare:knowledgeResourceHasTopic icare:DigitalHealthPrivacyAndTrust ;
-    dcterms:description "Practical advice on finding and evaluating online cancer information, including checking source authority, publication dates, author credentials, supporting evidence and sensational claims. Identifies types of information sources patients and families can consult." ;
-    dcterms:identifier "MAYA-EDU-0108a" ;
-    dcterms:language "pl"^^xsd:language ;
-    dcterms:publisher "Alivia Onkofundacja; Jarosław Gośliński" ;
-    dcterms:rights "Link / Signpost Only" ;
-    dcterms:source <https://alivia.org.pl/wiedza-o-raku/onkologia-w-internecie-jak-rozpoznac-rzetelne-zrodla-informacji/> ;
-    dcterms:title "Onkologia w Internecie: jak rozpoznać rzetelne źródła informacji?" .
+    icare:knowledgeResourceHasTopic icare:DigitalHealthPrivacyAndTrust .
 
-<http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0167> a icare:EducationalResource,
-        icare:HealthLiteracyResource,
-        owl:NamedIndividual ;
+<https://w3id.org/icareonto/education/resources/MAYA-EDU-0167> a owl:NamedIndividual,
+        icare:EducationalResource,
+        icare:HealthLiteracyResource ;
     rdfs:label "Facing Forward: Life After Cancer Treatment" ;
+    dcterms:description "Guide to life after cancer treatment, covering follow-up care, healthy living, persistent symptoms, emotional adjustment, relationships and work. Includes consultation guidance and a pain diary for recording symptoms and responses to treatment." ;
+    dcterms:identifier "MAYA-EDU-0167" ;
+    dcterms:language "en"^^xsd:language ;
+    dcterms:publisher "National Cancer Institute (NCI), National Institutes of Health" ;
+    dcterms:rights "Link / Signpost Only" ;
+    dcterms:source <https://www.cancer.gov/publications/patient-education/facing-forward> ;
+    dcterms:title "Facing Forward: Life After Cancer Treatment" ;
     edu:accessConditions "Public" ;
     edu:applicabilityNotes "Broad adult survivorship guide. Check suitability for younger AYAs and current recommendations. US-specific insurance, service and contact information may not apply locally. Direct participants to relevant sections." ;
     edu:completionStatus "Complete" ;
@@ -956,19 +963,19 @@ edu:templateStatus a owl:AnnotationProperty .
         icare:MentalHealthAndEmotionalWellbeing,
         icare:Nutrition,
         icare:PhysicalActivity,
-        icare:SelfMonitoring ;
-    dcterms:description "Guide to life after cancer treatment, covering follow-up care, healthy living, persistent symptoms, emotional adjustment, relationships and work. Includes consultation guidance and a pain diary for recording symptoms and responses to treatment." ;
-    dcterms:identifier "MAYA-EDU-0167" ;
-    dcterms:language "en"^^xsd:language ;
-    dcterms:publisher "National Cancer Institute (NCI), National Institutes of Health" ;
-    dcterms:rights "Link / Signpost Only" ;
-    dcterms:source <https://www.cancer.gov/publications/patient-education/facing-forward> ;
-    dcterms:title "Facing Forward: Life After Cancer Treatment" .
+        icare:SelfMonitoring .
 
-<http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0167a> a icare:EducationalResource,
-        icare:HealthLiteracyResource,
-        owl:NamedIndividual ;
+<https://w3id.org/icareonto/education/resources/MAYA-EDU-0167a> a owl:NamedIndividual,
+        icare:EducationalResource,
+        icare:HealthLiteracyResource ;
     rdfs:label "Życie po nowotworze: Poradnik dla osób po przebytej chorobie" ;
+    dcterms:description "Post-treatment guide addressing follow-up care, persistent symptoms, body image and intimacy, emotional adjustment, family and work relationships, support and relaxation." ;
+    dcterms:identifier "MAYA-EDU-0167a" ;
+    dcterms:language "pl"^^xsd:language ;
+    dcterms:publisher "PRIMOPRO; Fundacja Tam i z Powrotem / Program Edukacji Onkologicznej; Polish translation and adaptation of a National Cancer Institute guide" ;
+    dcterms:rights "Link / Signpost Only" ;
+    dcterms:source <https://www.programedukacjionkologicznej.pl/uploads/PEO_RZR_Poradnik13_www.pdf> ;
+    dcterms:title "Życie po nowotworze: Poradnik dla osób po przebytej chorobie" ;
     edu:accessConditions "Public" ;
     edu:applicabilityNotes "Broad survivorship guide rather than an AYA-specific publication. Signpost relevant sections of the 52-page document. Check current clinical and local service applicability before approval. Translation permission stated by this publisher does not establish permission for MAYA to reproduce, adapt or ingest the Polish text." ;
     edu:completionStatus "Complete" ;
@@ -997,19 +1004,19 @@ edu:templateStatus a owl:AnnotationProperty .
         icare:MentalHealthAndEmotionalWellbeing,
         icare:Nutrition,
         icare:PhysicalActivity,
-        icare:SelfMonitoring ;
-    dcterms:description "Post-treatment guide addressing follow-up care, persistent symptoms, body image and intimacy, emotional adjustment, family and work relationships, support and relaxation." ;
-    dcterms:identifier "MAYA-EDU-0167a" ;
-    dcterms:language "pl"^^xsd:language ;
-    dcterms:publisher "PRIMOPRO; Fundacja Tam i z Powrotem / Program Edukacji Onkologicznej; Polish translation and adaptation of a National Cancer Institute guide" ;
-    dcterms:rights "Link / Signpost Only" ;
-    dcterms:source <https://www.programedukacjionkologicznej.pl/uploads/PEO_RZR_Poradnik13_www.pdf> ;
-    dcterms:title "Życie po nowotworze: Poradnik dla osób po przebytej chorobie" .
+        icare:SelfMonitoring .
 
-<http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0170> a icare:EducationalResource,
-        icare:HealthLiteracyResource,
-        owl:NamedIndividual ;
+<https://w3id.org/icareonto/education/resources/MAYA-EDU-0170> a owl:NamedIndividual,
+        icare:EducationalResource,
+        icare:HealthLiteracyResource ;
     rdfs:label "(Sobre)viver ao cancro: Guia de apoio" ;
+    dcterms:description "Guide for people who have completed cancer treatment, addressing recovery, ongoing symptoms, emotional and social wellbeing, healthy living and continuing health surveillance." ;
+    dcterms:identifier "MAYA-EDU-0170" ;
+    dcterms:language "pt"^^xsd:language ;
+    dcterms:publisher "Associação Enfermagem Oncológica Portuguesa (AEOP); Ana Cristina Ferreira and colleagues" ;
+    dcterms:rights "Link / Signpost Only" ;
+    dcterms:source <https://www.aeop.pt/ficheiros/SobreViverCancro_A5_12Dez.pdf> ;
+    dcterms:title "(Sobre)viver ao cancro: Guia de apoio" ;
     edu:accessConditions "Public" ;
     edu:applicabilityNotes "Written for adult cancer survivors and their families/caregivers rather than specifically for AYA survivors. Assess suitability for adult AYAs (18-39) and use with younger adolescents (15-17) separately. Personal treatment, exercise, medication, and surveillance decisions remain with the clinical care team." ;
     edu:completionStatus "Complete" ;
@@ -1037,19 +1044,19 @@ edu:templateStatus a owl:AnnotationProperty .
         icare:Nutrition,
         icare:PhysicalActivity,
         icare:SelfMonitoring,
-        icare:Smoking ;
-    dcterms:description "Guide for people who have completed cancer treatment, addressing recovery, ongoing symptoms, emotional and social wellbeing, healthy living and continuing health surveillance." ;
-    dcterms:identifier "MAYA-EDU-0170" ;
-    dcterms:language "pt"^^xsd:language ;
-    dcterms:publisher "Associação Enfermagem Oncológica Portuguesa (AEOP); Ana Cristina Ferreira and colleagues" ;
-    dcterms:rights "Link / Signpost Only" ;
-    dcterms:source <https://www.aeop.pt/ficheiros/SobreViverCancro_A5_12Dez.pdf> ;
-    dcterms:title "(Sobre)viver ao cancro: Guia de apoio" .
+        icare:Smoking .
 
-<http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0171> a icare:EducationalResource,
-        icare:HealthLiteracyResource,
-        owl:NamedIndividual ;
+<https://w3id.org/icareonto/education/resources/MAYA-EDU-0171> a owl:NamedIndividual,
+        icare:EducationalResource,
+        icare:HealthLiteracyResource ;
     rdfs:label "Krebs im Internet: So finden Sie gute Informationen" ;
+    dcterms:description "Two-page leaflet explaining how to assess online cancer information, check sources and authorship, interpret social-media and AI-generated content, and limit disclosure of personal information." ;
+    dcterms:identifier "MAYA-EDU-0171" ;
+    dcterms:language "de"^^xsd:language ;
+    dcterms:publisher "Krebsinformationsdienst, Deutsches Krebsforschungszentrum (DKFZ)" ;
+    dcterms:rights "Link / Signpost Only" ;
+    dcterms:source <https://www.krebsinformationsdienst.de/fileadmin/pdf-dateien/informationsblaetter/iblatt-sicher-surfen.pdf> ;
+    dcterms:title "Krebs im Internet: So finden Sie gute Informationen" ;
     edu:accessConditions "Public" ;
     edu:applicabilityNotes "Relevant across the cancer journey and to carers. Builds source-appraisal and privacy awareness. Some information about services or legal context is specific to Germany." ;
     edu:completionStatus "Complete" ;
@@ -1072,19 +1079,19 @@ edu:templateStatus a owl:AnnotationProperty .
     icare:knowledgeResourceHasFormat icare:WrittenText ;
     icare:knowledgeResourceHasPurpose icare:ExplainHealthTopic,
         icare:SupportSelfManagement ;
-    icare:knowledgeResourceHasTopic icare:DigitalHealthPrivacyAndTrust ;
-    dcterms:description "Two-page leaflet explaining how to assess online cancer information, check sources and authorship, interpret social-media and AI-generated content, and limit disclosure of personal information." ;
-    dcterms:identifier "MAYA-EDU-0171" ;
-    dcterms:language "de"^^xsd:language ;
-    dcterms:publisher "Krebsinformationsdienst, Deutsches Krebsforschungszentrum (DKFZ)" ;
-    dcterms:rights "Link / Signpost Only" ;
-    dcterms:source <https://www.krebsinformationsdienst.de/fileadmin/pdf-dateien/informationsblaetter/iblatt-sicher-surfen.pdf> ;
-    dcterms:title "Krebs im Internet: So finden Sie gute Informationen" .
+    icare:knowledgeResourceHasTopic icare:DigitalHealthPrivacyAndTrust .
 
-<http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0172> a icare:EducationalResource,
-        icare:HealthLiteracyResource,
-        owl:NamedIndividual ;
+<https://w3id.org/icareonto/education/resources/MAYA-EDU-0172> a owl:NamedIndividual,
+        icare:EducationalResource,
+        icare:HealthLiteracyResource ;
     rdfs:label "Istruzioni per una navigazione sicura" ;
+    dcterms:description "Short article explaining how to evaluate online health information by checking the responsible organisation, purpose, funding, expertise, evidence sources and update date." ;
+    dcterms:identifier "MAYA-EDU-0172" ;
+    dcterms:language "it"^^xsd:language ;
+    dcterms:publisher "Fondazione AIRC per la Ricerca sul Cancro" ;
+    dcterms:rights "Link / Signpost Only" ;
+    dcterms:source <https://www.airc.it/cancro/informazioni-tumori/corretta-informazione/istruzioni-navigazione-sicura-internet> ;
+    dcterms:title "Istruzioni per una navigazione sicura" ;
     edu:accessConditions "Public" ;
     edu:applicabilityNotes "General online health-information appraisal with cancer context; applicable before, during and after treatment." ;
     edu:completionStatus "Complete" ;
@@ -1107,19 +1114,19 @@ edu:templateStatus a owl:AnnotationProperty .
     icare:knowledgeResourceHasFormat icare:WrittenText ;
     icare:knowledgeResourceHasPurpose icare:ExplainHealthTopic,
         icare:SupportSelfManagement ;
-    icare:knowledgeResourceHasTopic icare:DigitalHealthPrivacyAndTrust ;
-    dcterms:description "Short article explaining how to evaluate online health information by checking the responsible organisation, purpose, funding, expertise, evidence sources and update date." ;
-    dcterms:identifier "MAYA-EDU-0172" ;
-    dcterms:language "it"^^xsd:language ;
-    dcterms:publisher "Fondazione AIRC per la Ricerca sul Cancro" ;
-    dcterms:rights "Link / Signpost Only" ;
-    dcterms:source <https://www.airc.it/cancro/informazioni-tumori/corretta-informazione/istruzioni-navigazione-sicura-internet> ;
-    dcterms:title "Istruzioni per una navigazione sicura" .
+    icare:knowledgeResourceHasTopic icare:DigitalHealthPrivacyAndTrust .
 
-<http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0173> a icare:EducationalResource,
-        icare:HealthLiteracyResource,
-        owl:NamedIndividual ;
+<https://w3id.org/icareonto/education/resources/MAYA-EDU-0173> a owl:NamedIndividual,
+        icare:EducationalResource,
+        icare:HealthLiteracyResource ;
     rdfs:label "Schluss mit Rauchen: Welche Methoden funktionieren?" ;
+    dcterms:description "Article explaining smoking-cessation approaches, the evidence supporting different methods, practical behaviour-change strategies and sources of professional support." ;
+    dcterms:identifier "MAYA-EDU-0173" ;
+    dcterms:language "de"^^xsd:language ;
+    dcterms:publisher "Krebsinformationsdienst, Deutsches Krebsforschungszentrum (DKFZ); Vanessa Schöner" ;
+    dcterms:rights "Link / Signpost Only" ;
+    dcterms:source <https://www.krebsinformationsdienst.de/aktuelles/detail/schluss-mit-rauchen-welche-methoden-funktionieren> ;
+    dcterms:title "Schluss mit Rauchen: Welche Methoden funktionieren?" ;
     edu:accessConditions "Public" ;
     edu:applicabilityNotes "Relevant to participants who smoke and want cessation support, including after cancer treatment. Not specifically designed for AYA survivors. Medication, prescription-app and treatment choices require appropriate professional advice; check local service applicability." ;
     edu:completionStatus "Complete" ;
@@ -1142,19 +1149,19 @@ edu:templateStatus a owl:AnnotationProperty .
         icare:SupportBehaviourChange,
         icare:SupportCareNavigation,
         icare:SupportSelfManagement ;
-    icare:knowledgeResourceHasTopic icare:Smoking ;
-    dcterms:description "Article explaining smoking-cessation approaches, the evidence supporting different methods, practical behaviour-change strategies and sources of professional support." ;
-    dcterms:identifier "MAYA-EDU-0173" ;
-    dcterms:language "de"^^xsd:language ;
-    dcterms:publisher "Krebsinformationsdienst, Deutsches Krebsforschungszentrum (DKFZ); Vanessa Schöner" ;
-    dcterms:rights "Link / Signpost Only" ;
-    dcterms:source <https://www.krebsinformationsdienst.de/aktuelles/detail/schluss-mit-rauchen-welche-methoden-funktionieren> ;
-    dcterms:title "Schluss mit Rauchen: Welche Methoden funktionieren?" .
+    icare:knowledgeResourceHasTopic icare:Smoking .
 
-<http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0174> a icare:EducationalResource,
-        icare:HealthLiteracyResource,
-        owl:NamedIndividual ;
+<https://w3id.org/icareonto/education/resources/MAYA-EDU-0174> a owl:NamedIndividual,
+        icare:EducationalResource,
+        icare:HealthLiteracyResource ;
     rdfs:label "Nachsorge" ;
+    dcterms:description "Introduction to follow-up after cancer treatment in childhood or adolescence, explaining its purpose, late effects, rehabilitation and continued support for survivors and families." ;
+    dcterms:identifier "MAYA-EDU-0174" ;
+    dcterms:language "de"^^xsd:language ;
+    dcterms:publisher "Kinderkrebsinfo / GPOH; Maria Yiallouros and Dr Gesche Riabowol (née Tallen)" ;
+    dcterms:rights "Link / Signpost Only" ;
+    dcterms:source <https://www.gpoh.de/kinderkrebsinfo/content/patienten/nachsorge/index_ger.html> ;
+    dcterms:title "Nachsorge" ;
     edu:accessConditions "Public" ;
     edu:applicabilityNotes "Particularly relevant to survivors treated in childhood or adolescence and their families. An introductory overview with onward links; approval of this page does not extend to every linked resource." ;
     edu:completionStatus "Complete" ;
@@ -1173,19 +1180,19 @@ edu:templateStatus a owl:AnnotationProperty .
     icare:knowledgeResourceHasFormat icare:WrittenText ;
     icare:knowledgeResourceHasPurpose icare:ExplainHealthTopic,
         icare:SupportCareNavigation ;
-    icare:knowledgeResourceHasTopic icare:FollowUpCare ;
-    dcterms:description "Introduction to follow-up after cancer treatment in childhood or adolescence, explaining its purpose, late effects, rehabilitation and continued support for survivors and families." ;
-    dcterms:identifier "MAYA-EDU-0174" ;
-    dcterms:language "de"^^xsd:language ;
-    dcterms:publisher "Kinderkrebsinfo / GPOH; Maria Yiallouros and Dr Gesche Riabowol (née Tallen)" ;
-    dcterms:rights "Link / Signpost Only" ;
-    dcterms:source <https://www.gpoh.de/kinderkrebsinfo/content/patienten/nachsorge/index_ger.html> ;
-    dcterms:title "Nachsorge" .
+    icare:knowledgeResourceHasTopic icare:FollowUpCare .
 
-<http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0175> a icare:EducationalResource,
-        icare:HealthLiteracyResource,
-        owl:NamedIndividual ;
+<https://w3id.org/icareonto/education/resources/MAYA-EDU-0175> a owl:NamedIndividual,
+        icare:EducationalResource,
+        icare:HealthLiteracyResource ;
     rdfs:label "Transition - Der Übergang von der Kinder- und Jugendmedizin in die Erwachsenenmedizin" ;
+    dcterms:description "Explanation of the transition from paediatric to adult healthcare, including continuity of follow-up, preparation, growing independence, care planning and possible sources of support." ;
+    dcterms:identifier "MAYA-EDU-0175" ;
+    dcterms:language "de"^^xsd:language ;
+    dcterms:publisher "Kinderkrebsinfo / GPOH; Dr Hannah Schmidt and Dr Ingo Menrath; editor: Maria Yiallouros" ;
+    dcterms:rights "Link / Signpost Only" ;
+    dcterms:source <https://www.gpoh.de/kinderkrebsinfo/content/patienten/nachsorge/spaetfolgen___langzeitnachsorge/transition/index_ger.html> ;
+    dcterms:title "Transition - Der Übergang von der Kinder- und Jugendmedizin in die Erwachsenenmedizin" ;
     edu:accessConditions "Public" ;
     edu:applicabilityNotes "Directly developed for adolescents (from age 14–16) and young adults (around age 18) transitioning from paediatric to adult oncology care. Applies specifically to AYA survivors of childhood or adolescent cancers rather than those diagnosed in adult care settings. Clinic listings and care pathways are specific to Germany." ;
     edu:completionStatus "Complete" ;
@@ -1208,19 +1215,19 @@ edu:templateStatus a owl:AnnotationProperty .
         icare:PrepareForConsultation,
         icare:SupportCareNavigation,
         icare:SupportSelfManagement ;
-    icare:knowledgeResourceHasTopic icare:FollowUpCare ;
-    dcterms:description "Explanation of the transition from paediatric to adult healthcare, including continuity of follow-up, preparation, growing independence, care planning and possible sources of support." ;
-    dcterms:identifier "MAYA-EDU-0175" ;
-    dcterms:language "de"^^xsd:language ;
-    dcterms:publisher "Kinderkrebsinfo / GPOH; Dr Hannah Schmidt and Dr Ingo Menrath; editor: Maria Yiallouros" ;
-    dcterms:rights "Link / Signpost Only" ;
-    dcterms:source <https://www.gpoh.de/kinderkrebsinfo/content/patienten/nachsorge/spaetfolgen___langzeitnachsorge/transition/index_ger.html> ;
-    dcterms:title "Transition - Der Übergang von der Kinder- und Jugendmedizin in die Erwachsenenmedizin" .
+    icare:knowledgeResourceHasTopic icare:FollowUpCare .
 
-<http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0176> a icare:EducationalResource,
-        icare:HealthLiteracyResource,
-        owl:NamedIndividual ;
+<https://w3id.org/icareonto/education/resources/MAYA-EDU-0176> a owl:NamedIndividual,
+        icare:EducationalResource,
+        icare:HealthLiteracyResource ;
     rdfs:label "Promozione della salute" ;
+    dcterms:description "Survivor-oriented summary explaining health-promoting behaviours after childhood, adolescent or young-adult cancer, including activity, diet, avoiding smoking and discussing suitable lifestyle changes with professionals." ;
+    dcterms:identifier "MAYA-EDU-0176" ;
+    dcterms:language "it"^^xsd:language ;
+    dcterms:publisher "PanCare PLAIN Information Group; Italian PLAIN summary" ;
+    dcterms:rights "Link / Signpost Only" ;
+    dcterms:source <https://www.pancare.eu/brochures-divulgative-plain/promozione-della-salute/> ;
+    dcterms:title "Promozione della salute" ;
     edu:accessConditions "Public" ;
     edu:applicabilityNotes "Intended for survivors of childhood, adolescent and young-adult cancer. Lifestyle guidance is general and may require adaptation to treatment-related limitations and the individual care plan." ;
     edu:completionStatus "Complete" ;
@@ -1242,19 +1249,19 @@ edu:templateStatus a owl:AnnotationProperty .
         icare:SupportSelfManagement ;
     icare:knowledgeResourceHasTopic icare:Nutrition,
         icare:PhysicalActivity,
-        icare:Smoking ;
-    dcterms:description "Survivor-oriented summary explaining health-promoting behaviours after childhood, adolescent or young-adult cancer, including activity, diet, avoiding smoking and discussing suitable lifestyle changes with professionals." ;
-    dcterms:identifier "MAYA-EDU-0176" ;
+        icare:Smoking .
+
+<https://w3id.org/icareonto/education/resources/MAYA-EDU-0177> a owl:NamedIndividual,
+        icare:EducationalResource,
+        icare:HealthLiteracyResource ;
+    rdfs:label "Problemi di salute mentale" ;
+    dcterms:description "Summary of mental-health concerns after childhood, adolescent or young-adult cancer, explaining possible signs, maintaining wellbeing, follow-up and routes to professional support." ;
+    dcterms:identifier "MAYA-EDU-0177" ;
     dcterms:language "it"^^xsd:language ;
     dcterms:publisher "PanCare PLAIN Information Group; Italian PLAIN summary" ;
     dcterms:rights "Link / Signpost Only" ;
-    dcterms:source <https://www.pancare.eu/brochures-divulgative-plain/promozione-della-salute/> ;
-    dcterms:title "Promozione della salute" .
-
-<http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0177> a icare:EducationalResource,
-        icare:HealthLiteracyResource,
-        owl:NamedIndividual ;
-    rdfs:label "Problemi di salute mentale" ;
+    dcterms:source <https://www.pancare.eu/brochures-divulgative-plain/problemi-di-salute-mentale/> ;
+    dcterms:title "Problemi di salute mentale" ;
     edu:accessConditions "Public" ;
     edu:applicabilityNotes "Particularly relevant to longer-term survivors treated at younger ages. Educational support rather than diagnosis or psychological treatment. Review local professional-support and urgent-help signposting before delivery; external contacts linked by the page are not validated by this metadata proposal." ;
     edu:completionStatus "Complete" ;
@@ -1275,19 +1282,19 @@ edu:templateStatus a owl:AnnotationProperty .
     icare:knowledgeResourceHasPurpose icare:ExplainHealthTopic,
         icare:SupportCareNavigation,
         icare:SupportSelfManagement ;
-    icare:knowledgeResourceHasTopic icare:MentalHealthAndEmotionalWellbeing ;
-    dcterms:description "Summary of mental-health concerns after childhood, adolescent or young-adult cancer, explaining possible signs, maintaining wellbeing, follow-up and routes to professional support." ;
-    dcterms:identifier "MAYA-EDU-0177" ;
-    dcterms:language "it"^^xsd:language ;
-    dcterms:publisher "PanCare PLAIN Information Group; Italian PLAIN summary" ;
-    dcterms:rights "Link / Signpost Only" ;
-    dcterms:source <https://www.pancare.eu/brochures-divulgative-plain/problemi-di-salute-mentale/> ;
-    dcterms:title "Problemi di salute mentale" .
+    icare:knowledgeResourceHasTopic icare:MentalHealthAndEmotionalWellbeing .
 
-<http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0178> a icare:EducationalResource,
-        icare:HealthLiteracyResource,
-        owl:NamedIndividual ;
+<https://w3id.org/icareonto/education/resources/MAYA-EDU-0178> a owl:NamedIndividual,
+        icare:EducationalResource,
+        icare:HealthLiteracyResource ;
     rdfs:label "How to Find Cancer Resources You Can Trust" ;
+    dcterms:description "Practical guidance for finding and evaluating cancer information, checking authorship, evidence, sponsorship and currency, protecting personal information, and using websites, social media and email safely." ;
+    dcterms:identifier "MAYA-EDU-0178" ;
+    dcterms:language "en"^^xsd:language ;
+    dcterms:publisher "National Cancer Institute (NCI), National Institutes of Health" ;
+    dcterms:rights "Link / Signpost Only" ;
+    dcterms:source <https://www.cancer.gov/about-cancer/managing-care/using-trusted-resources> ;
+    dcterms:title "How to Find Cancer Resources You Can Trust" ;
     edu:accessConditions "Public" ;
     edu:applicabilityNotes "Applicable throughout the cancer journey. Some website-domain examples and linked organisations reflect the US context. Review linked resources separately before recommending them." ;
     edu:completionStatus "Complete" ;
@@ -1307,19 +1314,19 @@ edu:templateStatus a owl:AnnotationProperty .
     icare:knowledgeResourceHasComplexityLevel icare:StandardComplexity ;
     icare:knowledgeResourceHasFormat icare:WrittenText ;
     icare:knowledgeResourceHasPurpose icare:ExplainHealthTopic ;
-    icare:knowledgeResourceHasTopic icare:DigitalHealthPrivacyAndTrust ;
-    dcterms:description "Practical guidance for finding and evaluating cancer information, checking authorship, evidence, sponsorship and currency, protecting personal information, and using websites, social media and email safely." ;
-    dcterms:identifier "MAYA-EDU-0178" ;
-    dcterms:language "en"^^xsd:language ;
-    dcterms:publisher "National Cancer Institute (NCI), National Institutes of Health" ;
-    dcterms:rights "Link / Signpost Only" ;
-    dcterms:source <https://www.cancer.gov/about-cancer/managing-care/using-trusted-resources> ;
-    dcterms:title "How to Find Cancer Resources You Can Trust" .
+    icare:knowledgeResourceHasTopic icare:DigitalHealthPrivacyAndTrust .
 
-<http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0179> a icare:EducationalResource,
-        icare:HealthLiteracyResource,
-        owl:NamedIndividual ;
+<https://w3id.org/icareonto/education/resources/MAYA-EDU-0179> a owl:NamedIndividual,
+        icare:EducationalResource,
+        icare:HealthLiteracyResource ;
     rdfs:label "Cómo encontrar recursos confiables sobre el cáncer" ;
+    dcterms:description "Guidance for finding trustworthy cancer information and assessing authorship, evidence, commercial interests and currency. Includes personal-data precautions and advice on using social media, applications and email safely." ;
+    dcterms:identifier "MAYA-EDU-0179" ;
+    dcterms:language "es"^^xsd:language ;
+    dcterms:publisher "Instituto Nacional del Cáncer (NCI), National Institutes of Health" ;
+    dcterms:rights "Link / Signpost Only" ;
+    dcterms:source <https://www.cancer.gov/espanol/cancer/manejo-del-cancer/encontrar-recursos-confiables> ;
+    dcterms:title "Cómo encontrar recursos confiables sobre el cáncer" ;
     edu:accessConditions "Public" ;
     edu:applicabilityNotes "Applicable throughout the cancer journey. Some linked resources are in English, and website-domain examples reflect the US context. Assess onward links separately." ;
     edu:completionStatus "Complete" ;
@@ -1339,19 +1346,19 @@ edu:templateStatus a owl:AnnotationProperty .
     icare:knowledgeResourceHasComplexityLevel icare:StandardComplexity ;
     icare:knowledgeResourceHasFormat icare:WrittenText ;
     icare:knowledgeResourceHasPurpose icare:ExplainHealthTopic ;
-    icare:knowledgeResourceHasTopic icare:DigitalHealthPrivacyAndTrust ;
-    dcterms:description "Guidance for finding trustworthy cancer information and assessing authorship, evidence, commercial interests and currency. Includes personal-data precautions and advice on using social media, applications and email safely." ;
-    dcterms:identifier "MAYA-EDU-0179" ;
-    dcterms:language "es"^^xsd:language ;
-    dcterms:publisher "Instituto Nacional del Cáncer (NCI), National Institutes of Health" ;
-    dcterms:rights "Link / Signpost Only" ;
-    dcterms:source <https://www.cancer.gov/espanol/cancer/manejo-del-cancer/encontrar-recursos-confiables> ;
-    dcterms:title "Cómo encontrar recursos confiables sobre el cáncer" .
+    icare:knowledgeResourceHasTopic icare:DigitalHealthPrivacyAndTrust .
 
-<http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0180> a icare:EducationalResource,
-        icare:HealthLiteracyResource,
-        owl:NamedIndividual ;
+<https://w3id.org/icareonto/education/resources/MAYA-EDU-0180> a owl:NamedIndividual,
+        icare:EducationalResource,
+        icare:HealthLiteracyResource ;
     rdfs:label "Fatigue bei Krebs: Was tun bei Müdigkeit und Erschöpfung?" ;
+    dcterms:description "Explains cancer-related fatigue, assessment and management, including physical activity, psychosocial support and pacing. Describes a fatigue diary for recording activity, timing and energy demands and discussing observations with healthcare professionals." ;
+    dcterms:identifier "MAYA-EDU-0180" ;
+    dcterms:language "de"^^xsd:language ;
+    dcterms:publisher "Krebsinformationsdienst, Deutsches Krebsforschungszentrum (DKFZ); Teresa Glauner" ;
+    dcterms:rights "Link / Signpost Only" ;
+    dcterms:source <https://www.krebsinformationsdienst.de/nebenwirkungen-bei-krebs/fatigue> ;
+    dcterms:title "Fatigue bei Krebs: Was tun bei Müdigkeit und Erschöpfung?" ;
     edu:accessConditions "Public" ;
     edu:applicabilityNotes "Relevant during and after treatment. General cancer information rather than AYA-specific guidance. German service and employment information may require local interpretation." ;
     edu:completionStatus "Complete" ;
@@ -1378,19 +1385,19 @@ edu:templateStatus a owl:AnnotationProperty .
     icare:knowledgeResourceHasTopic icare:FollowUpCare,
         icare:MentalHealthAndEmotionalWellbeing,
         icare:PhysicalActivity,
-        icare:SelfMonitoring ;
-    dcterms:description "Explains cancer-related fatigue, assessment and management, including physical activity, psychosocial support and pacing. Describes a fatigue diary for recording activity, timing and energy demands and discussing observations with healthcare professionals." ;
-    dcterms:identifier "MAYA-EDU-0180" ;
-    dcterms:language "de"^^xsd:language ;
-    dcterms:publisher "Krebsinformationsdienst, Deutsches Krebsforschungszentrum (DKFZ); Teresa Glauner" ;
-    dcterms:rights "Link / Signpost Only" ;
-    dcterms:source <https://www.krebsinformationsdienst.de/nebenwirkungen-bei-krebs/fatigue> ;
-    dcterms:title "Fatigue bei Krebs: Was tun bei Müdigkeit und Erschöpfung?" .
+        icare:SelfMonitoring .
 
-<http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0181> a icare:EducationalResource,
-        icare:HealthLiteracyResource,
-        owl:NamedIndividual ;
+<https://w3id.org/icareonto/education/resources/MAYA-EDU-0181> a owl:NamedIndividual,
+        icare:EducationalResource,
+        icare:HealthLiteracyResource ;
     rdfs:label "Come affrontare i sintomi più comuni della malattia e gli effetti collaterali delle terapie" ;
+    dcterms:description "Explains common cancer symptoms and treatment effects, including fatigue, eating difficulties, neuropathy, sleep problems and pain. Includes sleep-diary guidance to support discussion of sleep difficulties with a clinician." ;
+    dcterms:identifier "MAYA-EDU-0181" ;
+    dcterms:language "it"^^xsd:language ;
+    dcterms:publisher "Antonino Michienzi / Fondazione AIRC per la Ricerca sul Cancro" ;
+    dcterms:rights "Link / Signpost Only" ;
+    dcterms:source <https://www.airc.it/cancro/affronta-la-malattia/la-fase-delle-terapie/come-affrontare-i-sintomi-piu-comuni-della-malattia-e-gli-effetti-collaterali-delle-terapie> ;
+    dcterms:title "Come affrontare i sintomi più comuni della malattia e gli effetti collaterali delle terapie" ;
     edu:accessConditions "Public" ;
     edu:applicabilityNotes "Primarily treatment-related information, with relevant material on persistent symptoms. For survivorship, signpost applicable sections rather than assuming all treatment advice applies. Broad cancer audience." ;
     edu:completionStatus "Complete" ;
@@ -1415,19 +1422,19 @@ edu:templateStatus a owl:AnnotationProperty .
         icare:SupportSelfManagement ;
     icare:knowledgeResourceHasTopic icare:FollowUpCare,
         icare:Nutrition,
-        icare:SelfMonitoring ;
-    dcterms:description "Explains common cancer symptoms and treatment effects, including fatigue, eating difficulties, neuropathy, sleep problems and pain. Includes sleep-diary guidance to support discussion of sleep difficulties with a clinician." ;
-    dcterms:identifier "MAYA-EDU-0181" ;
-    dcterms:language "it"^^xsd:language ;
-    dcterms:publisher "Antonino Michienzi / Fondazione AIRC per la Ricerca sul Cancro" ;
-    dcterms:rights "Link / Signpost Only" ;
-    dcterms:source <https://www.airc.it/cancro/affronta-la-malattia/la-fase-delle-terapie/come-affrontare-i-sintomi-piu-comuni-della-malattia-e-gli-effetti-collaterali-delle-terapie> ;
-    dcterms:title "Come affrontare i sintomi più comuni della malattia e gli effetti collaterali delle terapie" .
+        icare:SelfMonitoring .
 
-<http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0182> a icare:EducationalResource,
-        icare:HealthLiteracyResource,
-        owl:NamedIndividual ;
+<https://w3id.org/icareonto/education/resources/MAYA-EDU-0182> a owl:NamedIndividual,
+        icare:EducationalResource,
+        icare:HealthLiteracyResource ;
     rdfs:label "Campanha DGS de 1 de abril - \"Mito ou verdade: o que prefere partilhar?\"" ;
+    dcterms:description "Brief guidance on recognising health misinformation by checking who produced a claim, what its content and evidence show, and when it was published. Encourages verification before sharing health information." ;
+    dcterms:identifier "MAYA-EDU-0182" ;
+    dcterms:language "pt"^^xsd:language ;
+    dcterms:publisher "Direção-Geral da Saúde (DGS)" ;
+    dcterms:rights "Link / Signpost Only" ;
+    dcterms:source <https://www.dgs.pt/em-destaque/campanha-dgs-de-1-de-abril-mito-ou-verdade-o-que-prefere-partilhar.aspx> ;
+    dcterms:title "Campanha DGS de 1 de abril - \"Mito ou verdade: o que prefere partilhar?\"" ;
     edu:accessConditions "Public" ;
     edu:applicabilityNotes "General health-information appraisal guidance applicable to online searches during survivorship. Not cancer-specific and does not provide comprehensive privacy guidance. Social-media reporting instructions may change." ;
     edu:completionStatus "Complete" ;
@@ -1445,19 +1452,19 @@ edu:templateStatus a owl:AnnotationProperty .
     icare:knowledgeResourceHasComplexityLevel icare:FoundationalComplexity ;
     icare:knowledgeResourceHasFormat icare:WrittenText ;
     icare:knowledgeResourceHasPurpose icare:ExplainHealthTopic ;
-    icare:knowledgeResourceHasTopic icare:DigitalHealthPrivacyAndTrust ;
-    dcterms:description "Brief guidance on recognising health misinformation by checking who produced a claim, what its content and evidence show, and when it was published. Encourages verification before sharing health information." ;
-    dcterms:identifier "MAYA-EDU-0182" ;
-    dcterms:language "pt"^^xsd:language ;
-    dcterms:publisher "Direção-Geral da Saúde (DGS)" ;
-    dcterms:rights "Link / Signpost Only" ;
-    dcterms:source <https://www.dgs.pt/em-destaque/campanha-dgs-de-1-de-abril-mito-ou-verdade-o-que-prefere-partilhar.aspx> ;
-    dcterms:title "Campanha DGS de 1 de abril - \"Mito ou verdade: o que prefere partilhar?\"" .
+    icare:knowledgeResourceHasTopic icare:DigitalHealthPrivacyAndTrust .
 
-<http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0183> a icare:EducationalResource,
-        icare:HealthLiteracyResource,
-        owl:NamedIndividual ;
+<https://w3id.org/icareonto/education/resources/MAYA-EDU-0183> a owl:NamedIndividual,
+        icare:EducationalResource,
+        icare:HealthLiteracyResource ;
     rdfs:label "Giving up smoking" ;
+    dcterms:description "Explains the benefits of stopping smoking during and after cancer treatment, including reducing heart and lung risks. Describes preparing to quit, seeking professional support and accessing smoking-cessation services." ;
+    dcterms:identifier "MAYA-EDU-0183" ;
+    dcterms:language "en"^^xsd:language ;
+    dcterms:publisher "Macmillan Cancer Support, Cancer Information Development team" ;
+    dcterms:rights "Link / Signpost Only" ;
+    dcterms:source <https://www.macmillan.org.uk/cancer-information-and-support/treatment/coping-with-treatment/giving-up-smoking> ;
+    dcterms:title "Giving up smoking" ;
     edu:accessConditions "Public" ;
     edu:applicabilityNotes "General cancer information, including survivorship. Service links are UK-specific; participants elsewhere require local services. Recheck when the provider publishes its update." ;
     edu:completionStatus "Complete" ;
@@ -1482,12 +1489,5 @@ edu:templateStatus a owl:AnnotationProperty .
         icare:SupportCareNavigation,
         icare:SupportSelfManagement ;
     icare:knowledgeResourceHasTopic icare:CardiovascularLateEffects,
-        icare:Smoking ;
-    dcterms:description "Explains the benefits of stopping smoking during and after cancer treatment, including reducing heart and lung risks. Describes preparing to quit, seeking professional support and accessing smoking-cessation services." ;
-    dcterms:identifier "MAYA-EDU-0183" ;
-    dcterms:language "en"^^xsd:language ;
-    dcterms:publisher "Macmillan Cancer Support, Cancer Information Development team" ;
-    dcterms:rights "Link / Signpost Only" ;
-    dcterms:source <https://www.macmillan.org.uk/cancer-information-and-support/treatment/coping-with-treatment/giving-up-smoking> ;
-    dcterms:title "Giving up smoking" .
+        icare:Smoking .
 

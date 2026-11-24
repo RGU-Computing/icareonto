@@ -4,116 +4,6 @@
   "imports_closure_size": 24,
   "loaded_documents": [
     {
-      "ontology": "OntologyID(OntologyIRI(<http://maya-project.eu/icareonto/agent>) VersionIRI(<http://maya-project.eu/icareonto/releases/1.0.0/agent>))",
-      "document": "../../serialisation/modules/agent.ttl",
-      "axioms": 271
-    },
-    {
-      "ontology": "OntologyID(OntologyIRI(<http://maya-project.eu/icareonto/alignments>) VersionIRI(<http://maya-project.eu/icareonto/releases/1.0.0/alignments>))",
-      "document": "../../serialisation/alignments/approved.ttl",
-      "axioms": 3
-    },
-    {
-      "ontology": "OntologyID(OntologyIRI(<http://maya-project.eu/icareonto/cancer-history>) VersionIRI(<http://maya-project.eu/icareonto/releases/1.0.0/cancer-history>))",
-      "document": "../../serialisation/modules/cancer-history.ttl",
-      "axioms": 597
-    },
-    {
-      "ontology": "OntologyID(OntologyIRI(<http://maya-project.eu/icareonto/clinical-profile>) VersionIRI(<http://maya-project.eu/icareonto/releases/1.0.0/clinical-profile>))",
-      "document": "../../serialisation/modules/clinical-profile.ttl",
-      "axioms": 521
-    },
-    {
-      "ontology": "OntologyID(OntologyIRI(<http://maya-project.eu/icareonto/core>) VersionIRI(<http://maya-project.eu/icareonto/releases/1.0.0/core>))",
-      "document": "../../serialisation/modules/core.ttl",
-      "axioms": 310
-    },
-    {
-      "ontology": "OntologyID(OntologyIRI(<http://maya-project.eu/icareonto/cv-risk>) VersionIRI(<http://maya-project.eu/icareonto/releases/1.0.0/cv-risk>))",
-      "document": "../../serialisation/modules/cv-risk.ttl",
-      "axioms": 337
-    },
-    {
-      "ontology": "OntologyID(OntologyIRI(<http://maya-project.eu/icareonto/dialogue>) VersionIRI(<http://maya-project.eu/icareonto/releases/1.0.0/dialogue>))",
-      "document": "../../serialisation/modules/dialogue.ttl",
-      "axioms": 528
-    },
-    {
-      "ontology": "OntologyID(OntologyIRI(<http://maya-project.eu/icareonto/exercise>) VersionIRI(<http://maya-project.eu/icareonto/releases/1.0.0/exercise>))",
-      "document": "../../serialisation/modules/exercise.ttl",
-      "axioms": 551
-    },
-    {
-      "ontology": "OntologyID(OntologyIRI(<http://maya-project.eu/icareonto/healthhub-service>) VersionIRI(<http://maya-project.eu/icareonto/releases/1.0.0/healthhub-service>))",
-      "document": "../../serialisation/modules/healthhub-service.ttl",
-      "axioms": 154
-    },
-    {
-      "ontology": "OntologyID(OntologyIRI(<http://maya-project.eu/icareonto/imports/prov-reference>) VersionIRI(<http://maya-project.eu/icareonto/releases/1.0.0/imports/prov-reference>))",
-      "document": "../../serialisation/imports/prov-reference.ttl",
-      "axioms": 21
-    },
-    {
-      "ontology": "OntologyID(OntologyIRI(<http://maya-project.eu/icareonto/imports/skos-reference>) VersionIRI(<http://maya-project.eu/icareonto/releases/1.0.0/imports/skos-reference>))",
-      "document": "../../serialisation/imports/skos-reference.ttl",
-      "axioms": 176
-    },
-    {
-      "ontology": "OntologyID(OntologyIRI(<http://maya-project.eu/icareonto/intervention-careplan>) VersionIRI(<http://maya-project.eu/icareonto/releases/1.0.0/intervention-careplan>))",
-      "document": "../../serialisation/modules/intervention-careplan.ttl",
-      "axioms": 601
-    },
-    {
-      "ontology": "OntologyID(OntologyIRI(<http://maya-project.eu/icareonto/knowledge-resource>) VersionIRI(<http://maya-project.eu/icareonto/releases/1.0.0/knowledge-resource>))",
-      "document": "../../serialisation/modules/knowledge-resource.ttl",
-      "axioms": 706
-    },
-    {
-      "ontology": "OntologyID(OntologyIRI(<http://maya-project.eu/icareonto/lifestyle-behaviour>) VersionIRI(<http://maya-project.eu/icareonto/releases/1.0.0/lifestyle-behaviour>))",
-      "document": "../../serialisation/modules/lifestyle-behaviour.ttl",
-      "axioms": 437
-    },
-    {
-      "ontology": "OntologyID(OntologyIRI(<http://maya-project.eu/icareonto/measurement-biomarker>) VersionIRI(<http://maya-project.eu/icareonto/releases/1.0.0/measurement-biomarker>))",
-      "document": "../../serialisation/modules/measurement-biomarker.ttl",
-      "axioms": 614
-    },
-    {
-      "ontology": "OntologyID(OntologyIRI(<http://maya-project.eu/icareonto/metadata>) VersionIRI(<http://maya-project.eu/icareonto/releases/1.0.0/metadata>))",
-      "document": "../../serialisation/imports/metadata.ttl",
-      "axioms": 37
-    },
-    {
-      "ontology": "OntologyID(OntologyIRI(<http://maya-project.eu/icareonto/nutrition>) VersionIRI(<http://maya-project.eu/icareonto/releases/1.0.0/nutrition>))",
-      "document": "../../serialisation/modules/nutrition.ttl",
-      "axioms": 183
-    },
-    {
-      "ontology": "OntologyID(OntologyIRI(<http://maya-project.eu/icareonto/person-role>) VersionIRI(<http://maya-project.eu/icareonto/releases/1.0.0/person-role>))",
-      "document": "../../serialisation/modules/person-role.ttl",
-      "axioms": 307
-    },
-    {
-      "ontology": "OntologyID(OntologyIRI(<http://maya-project.eu/icareonto/pilot>) VersionIRI(<http://maya-project.eu/icareonto/releases/1.0.0/pilot>))",
-      "document": "../../serialisation/modules/pilot.ttl",
-      "axioms": 300
-    },
-    {
-      "ontology": "OntologyID(OntologyIRI(<http://maya-project.eu/icareonto/provenance-governance>) VersionIRI(<http://maya-project.eu/icareonto/releases/1.0.0/provenance-governance>))",
-      "document": "../../serialisation/modules/provenance-governance.ttl",
-      "axioms": 172
-    },
-    {
-      "ontology": "OntologyID(OntologyIRI(<http://maya-project.eu/icareonto/social-context>) VersionIRI(<http://maya-project.eu/icareonto/releases/1.0.0/social-context>))",
-      "document": "../../serialisation/modules/social-context.ttl",
-      "axioms": 797
-    },
-    {
-      "ontology": "OntologyID(OntologyIRI(<http://maya-project.eu/icareonto>) VersionIRI(<http://maya-project.eu/icareonto/releases/1.0.0/icareonto>))",
-      "document": "../../serialisation/icareonto.ttl",
-      "axioms": 0
-    },
-    {
       "ontology": "OntologyID(OntologyIRI(<https://example.org/maya/demo/cq-tests>) VersionIRI(<null>))",
       "document": "coverage.ttl",
       "axioms": 275
@@ -122,6 +12,116 @@
       "ontology": "OntologyID(OntologyIRI(<https://example.org/maya/demo/es>) VersionIRI(<null>))",
       "document": "../demo_spain_aya.ttl",
       "axioms": 900
+    },
+    {
+      "ontology": "OntologyID(OntologyIRI(<https://w3id.org/icareonto/>) VersionIRI(<https://w3id.org/icareonto/releases/1.0.0/icareonto>))",
+      "document": "../../serialisation/icareonto.ttl",
+      "axioms": 0
+    },
+    {
+      "ontology": "OntologyID(OntologyIRI(<https://w3id.org/icareonto/agent>) VersionIRI(<https://w3id.org/icareonto/releases/1.0.0/agent>))",
+      "document": "../../serialisation/modules/agent.ttl",
+      "axioms": 271
+    },
+    {
+      "ontology": "OntologyID(OntologyIRI(<https://w3id.org/icareonto/alignments>) VersionIRI(<https://w3id.org/icareonto/releases/1.0.0/alignments>))",
+      "document": "../../serialisation/alignments/approved.ttl",
+      "axioms": 3
+    },
+    {
+      "ontology": "OntologyID(OntologyIRI(<https://w3id.org/icareonto/cancer-history>) VersionIRI(<https://w3id.org/icareonto/releases/1.0.0/cancer-history>))",
+      "document": "../../serialisation/modules/cancer-history.ttl",
+      "axioms": 597
+    },
+    {
+      "ontology": "OntologyID(OntologyIRI(<https://w3id.org/icareonto/clinical-profile>) VersionIRI(<https://w3id.org/icareonto/releases/1.0.0/clinical-profile>))",
+      "document": "../../serialisation/modules/clinical-profile.ttl",
+      "axioms": 521
+    },
+    {
+      "ontology": "OntologyID(OntologyIRI(<https://w3id.org/icareonto/core>) VersionIRI(<https://w3id.org/icareonto/releases/1.0.0/core>))",
+      "document": "../../serialisation/modules/core.ttl",
+      "axioms": 310
+    },
+    {
+      "ontology": "OntologyID(OntologyIRI(<https://w3id.org/icareonto/cv-risk>) VersionIRI(<https://w3id.org/icareonto/releases/1.0.0/cv-risk>))",
+      "document": "../../serialisation/modules/cv-risk.ttl",
+      "axioms": 337
+    },
+    {
+      "ontology": "OntologyID(OntologyIRI(<https://w3id.org/icareonto/dialogue>) VersionIRI(<https://w3id.org/icareonto/releases/1.0.0/dialogue>))",
+      "document": "../../serialisation/modules/dialogue.ttl",
+      "axioms": 528
+    },
+    {
+      "ontology": "OntologyID(OntologyIRI(<https://w3id.org/icareonto/exercise>) VersionIRI(<https://w3id.org/icareonto/releases/1.0.0/exercise>))",
+      "document": "../../serialisation/modules/exercise.ttl",
+      "axioms": 551
+    },
+    {
+      "ontology": "OntologyID(OntologyIRI(<https://w3id.org/icareonto/healthhub-service>) VersionIRI(<https://w3id.org/icareonto/releases/1.0.0/healthhub-service>))",
+      "document": "../../serialisation/modules/healthhub-service.ttl",
+      "axioms": 154
+    },
+    {
+      "ontology": "OntologyID(OntologyIRI(<https://w3id.org/icareonto/imports/prov-reference>) VersionIRI(<https://w3id.org/icareonto/releases/1.0.0/imports/prov-reference>))",
+      "document": "../../serialisation/imports/prov-reference.ttl",
+      "axioms": 21
+    },
+    {
+      "ontology": "OntologyID(OntologyIRI(<https://w3id.org/icareonto/imports/skos-reference>) VersionIRI(<https://w3id.org/icareonto/releases/1.0.0/imports/skos-reference>))",
+      "document": "../../serialisation/imports/skos-reference.ttl",
+      "axioms": 176
+    },
+    {
+      "ontology": "OntologyID(OntologyIRI(<https://w3id.org/icareonto/intervention-careplan>) VersionIRI(<https://w3id.org/icareonto/releases/1.0.0/intervention-careplan>))",
+      "document": "../../serialisation/modules/intervention-careplan.ttl",
+      "axioms": 601
+    },
+    {
+      "ontology": "OntologyID(OntologyIRI(<https://w3id.org/icareonto/knowledge-resource>) VersionIRI(<https://w3id.org/icareonto/releases/1.0.0/knowledge-resource>))",
+      "document": "../../serialisation/modules/knowledge-resource.ttl",
+      "axioms": 706
+    },
+    {
+      "ontology": "OntologyID(OntologyIRI(<https://w3id.org/icareonto/lifestyle-behaviour>) VersionIRI(<https://w3id.org/icareonto/releases/1.0.0/lifestyle-behaviour>))",
+      "document": "../../serialisation/modules/lifestyle-behaviour.ttl",
+      "axioms": 437
+    },
+    {
+      "ontology": "OntologyID(OntologyIRI(<https://w3id.org/icareonto/measurement-biomarker>) VersionIRI(<https://w3id.org/icareonto/releases/1.0.0/measurement-biomarker>))",
+      "document": "../../serialisation/modules/measurement-biomarker.ttl",
+      "axioms": 614
+    },
+    {
+      "ontology": "OntologyID(OntologyIRI(<https://w3id.org/icareonto/metadata>) VersionIRI(<https://w3id.org/icareonto/releases/1.0.0/metadata>))",
+      "document": "../../serialisation/imports/metadata.ttl",
+      "axioms": 37
+    },
+    {
+      "ontology": "OntologyID(OntologyIRI(<https://w3id.org/icareonto/nutrition>) VersionIRI(<https://w3id.org/icareonto/releases/1.0.0/nutrition>))",
+      "document": "../../serialisation/modules/nutrition.ttl",
+      "axioms": 183
+    },
+    {
+      "ontology": "OntologyID(OntologyIRI(<https://w3id.org/icareonto/person-role>) VersionIRI(<https://w3id.org/icareonto/releases/1.0.0/person-role>))",
+      "document": "../../serialisation/modules/person-role.ttl",
+      "axioms": 307
+    },
+    {
+      "ontology": "OntologyID(OntologyIRI(<https://w3id.org/icareonto/pilot>) VersionIRI(<https://w3id.org/icareonto/releases/1.0.0/pilot>))",
+      "document": "../../serialisation/modules/pilot.ttl",
+      "axioms": 300
+    },
+    {
+      "ontology": "OntologyID(OntologyIRI(<https://w3id.org/icareonto/provenance-governance>) VersionIRI(<https://w3id.org/icareonto/releases/1.0.0/provenance-governance>))",
+      "document": "../../serialisation/modules/provenance-governance.ttl",
+      "axioms": 172
+    },
+    {
+      "ontology": "OntologyID(OntologyIRI(<https://w3id.org/icareonto/social-context>) VersionIRI(<https://w3id.org/icareonto/releases/1.0.0/social-context>))",
+      "document": "../../serialisation/modules/social-context.ttl",
+      "axioms": 797
     }
   ],
   "local_signature_counts": {

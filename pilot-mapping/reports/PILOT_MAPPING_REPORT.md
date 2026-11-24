@@ -8,7 +8,7 @@ All **15 fictional needs** were scored against **283 local ontology classes**. T
 
 Each class is described by its preferred label, alternative labels, definition and available named-parent labels. A locally cached `sentence-transformers/all-MiniLM-L6-v2` encoder produces sentence vectors. Cosine similarity ranks classes separately for each requirement. Scores are not confidence probabilities. No threshold automatically accepts a mapping.
 
-The model snapshot directory is `1110a243fdf4706b3f48f1d95db1a4f5529b4d41`; file hashes, runtime versions, CPU execution, vector dimensions and truncation checks are recorded in `outputs/rankings.json`. This report evaluates those saved rankings; it does not itself execute the encoder. All descriptions are English. No text was sent to an external inference service. No descriptions were truncated.
+The model snapshot directory is `1110a243fdf4706b3f48f1d95db1a4f5529b4d41`; file hashes, runtime versions, CPU execution, vector dimensions and truncation checks are recorded in `tests/fixtures/rankings.json`. This report evaluates those saved rankings; it does not itself execute the encoder. All descriptions are English. No text was sent to an external inference service. No descriptions were truncated.
 
 The comparison baseline is unweighted token-set Jaccard overlap using the same texts. It measures lexical overlap, not semantic similarity. The separate reference file specifies expected classes before scoring and is never read by the ranker. It is a small agent-authored demonstration reference, not an expert gold standard or held-out real-pilot evaluation.
 

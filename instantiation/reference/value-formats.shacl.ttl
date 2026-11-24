@@ -1,16 +1,16 @@
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://maya-project.eu/icareonto/shapes/diagnosisDateFormat> a sh:PropertyShape ;
+<https://w3id.org/icareonto/shapes/diagnosisDateFormat> a sh:PropertyShape ;
     sh:datatype xsd:string ;
     sh:message "Expected a valid iso-calendar-date string." ;
     sh:not [ sh:pattern "\\s" ] ;
-    sh:path <http://maya-project.eu/icareonto/diagnosisDate> ;
+    sh:path <https://w3id.org/icareonto/diagnosisDate> ;
     sh:pattern "^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$" ;
     sh:sparql [ sh:message "Calendar date must exist in years 0001–9999." ;
             sh:select """PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 SELECT $this ?value WHERE {
-  $this <http://maya-project.eu/icareonto/diagnosisDate> ?value .
+  $this <https://w3id.org/icareonto/diagnosisDate> ?value .
   BIND(xsd:integer(SUBSTR(STR(?value), 1, 4)) AS ?year)
   BIND(xsd:integer(SUBSTR(STR(?value), 6, 2)) AS ?month)
   BIND(xsd:integer(SUBSTR(STR(?value), 9, 2)) AS ?day)
@@ -19,29 +19,29 @@ SELECT $this ?value WHERE {
   BIND(IF(?month = 2, IF(?leap, 29, 28), IF(?month IN (4, 6, 9, 11), 30, 31)) AS ?days)
   FILTER(?year < 1 || ?day > ?days)
 }""" ] ;
-    sh:targetSubjectsOf <http://maya-project.eu/icareonto/diagnosisDate> .
+    sh:targetSubjectsOf <https://w3id.org/icareonto/diagnosisDate> .
 
-<http://maya-project.eu/icareonto/shapes/estimatedCompletionTimeFormat> a sh:PropertyShape ;
+<https://w3id.org/icareonto/shapes/estimatedCompletionTimeFormat> a sh:PropertyShape ;
     sh:datatype xsd:string ;
     sh:message "Expected a valid iso-duration string." ;
     sh:not [ sh:pattern "\\s" ] ;
-    sh:path <http://maya-project.eu/icareonto/estimatedCompletionTime> ;
+    sh:path <https://w3id.org/icareonto/estimatedCompletionTime> ;
     sh:pattern "^-?P([0-9]+W|([0-9]+Y([0-9]+M)?([0-9]+D)?|[0-9]+M([0-9]+D)?|[0-9]+D)(T([0-9]+H([0-9]+M)?([0-9]+(\\.[0-9]+)?S)?|[0-9]+M([0-9]+(\\.[0-9]+)?S)?|[0-9]+(\\.[0-9]+)?S))?|T([0-9]+H([0-9]+M)?([0-9]+(\\.[0-9]+)?S)?|[0-9]+M([0-9]+(\\.[0-9]+)?S)?|[0-9]+(\\.[0-9]+)?S))$" ;
-    sh:targetSubjectsOf <http://maya-project.eu/icareonto/estimatedCompletionTime> .
+    sh:targetSubjectsOf <https://w3id.org/icareonto/estimatedCompletionTime> .
 
-<http://maya-project.eu/icareonto/shapes/intervalDurationFormat> a sh:PropertyShape ;
+<https://w3id.org/icareonto/shapes/intervalDurationFormat> a sh:PropertyShape ;
     sh:datatype xsd:string ;
     sh:message "Expected a valid iso-duration string." ;
     sh:not [ sh:pattern "\\s" ] ;
-    sh:path <http://maya-project.eu/icareonto/intervalDuration> ;
+    sh:path <https://w3id.org/icareonto/intervalDuration> ;
     sh:pattern "^-?P([0-9]+W|([0-9]+Y([0-9]+M)?([0-9]+D)?|[0-9]+M([0-9]+D)?|[0-9]+D)(T([0-9]+H([0-9]+M)?([0-9]+(\\.[0-9]+)?S)?|[0-9]+M([0-9]+(\\.[0-9]+)?S)?|[0-9]+(\\.[0-9]+)?S))?|T([0-9]+H([0-9]+M)?([0-9]+(\\.[0-9]+)?S)?|[0-9]+M([0-9]+(\\.[0-9]+)?S)?|[0-9]+(\\.[0-9]+)?S))$" ;
-    sh:targetSubjectsOf <http://maya-project.eu/icareonto/intervalDuration> .
+    sh:targetSubjectsOf <https://w3id.org/icareonto/intervalDuration> .
 
-<http://maya-project.eu/icareonto/shapes/serviceUseDurationFormat> a sh:PropertyShape ;
+<https://w3id.org/icareonto/shapes/serviceUseDurationFormat> a sh:PropertyShape ;
     sh:datatype xsd:string ;
     sh:message "Expected a valid iso-duration string." ;
     sh:not [ sh:pattern "\\s" ] ;
-    sh:path <http://maya-project.eu/icareonto/serviceUseDuration> ;
+    sh:path <https://w3id.org/icareonto/serviceUseDuration> ;
     sh:pattern "^-?P([0-9]+W|([0-9]+Y([0-9]+M)?([0-9]+D)?|[0-9]+M([0-9]+D)?|[0-9]+D)(T([0-9]+H([0-9]+M)?([0-9]+(\\.[0-9]+)?S)?|[0-9]+M([0-9]+(\\.[0-9]+)?S)?|[0-9]+(\\.[0-9]+)?S))?|T([0-9]+H([0-9]+M)?([0-9]+(\\.[0-9]+)?S)?|[0-9]+M([0-9]+(\\.[0-9]+)?S)?|[0-9]+(\\.[0-9]+)?S))$" ;
-    sh:targetSubjectsOf <http://maya-project.eu/icareonto/serviceUseDuration> .
+    sh:targetSubjectsOf <https://w3id.org/icareonto/serviceUseDuration> .
 

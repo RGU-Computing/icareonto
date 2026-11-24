@@ -16,7 +16,7 @@ from serialise_ontology import read_xlsx, BASE, META
 root = Path(__file__).resolve().parents[1]
 repo = root.parent / "sources"
 report = json.loads((root / "validation/build-report.json").read_text())
-ontology_source = next(name for name in report["sources_sha256"] if name.startswith("icareonto_review_workbook_"))
+ontology_source = next(name for name in report["sources_sha256"] if name == "icareonto_review_workbook.xlsx")
 source = read_xlsx(repo / ontology_source)
 graphs = {p.stem: Graph().parse(p, format="turtle") for p in sorted((root / "modules").glob("*.ttl"))}
 checks = []

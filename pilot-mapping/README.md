@@ -62,7 +62,7 @@ Copy the generated review template to a separate working file before recording d
 
 ## Reproducing this example
 
-Run from the project root. The existing ontology environment provides RDFLib, JSON Schema and SHACL validation. The existing `nlp` environment provides the embedding libraries. No installation or model download was required for this run.
+Run from the project root using environments with the dependencies described below. `--encoder-python` selects the interpreter containing the embedding libraries; the example assumes they are installed in the activated environment. Prepare the pinned local model snapshot before ranking.
 
 ```bash
 python pilot-mapping/scripts/pilot_mapping.py rank --encoder-python python
@@ -71,12 +71,14 @@ python pilot-mapping/scripts/pilot_mapping.py profile --decisions pilot-mapping/
 
 python pilot-mapping/scripts/pilot_mapping.py generate --decisions pilot-mapping/examples/demo-review-decisions.json --pilot instantiation/examples/pilot-es-demo.json --participant instantiation/examples/participant-es-001.json --participant instantiation/examples/participant-es-002.json
 
-python pilot-mapping/scripts/evaluate_mapping.py
+python pilot-mapping/scripts/evaluate_mapping.py --output pilot-mapping/outputs
 
 python pilot-mapping/scripts/check_mapping.py
 ```
 
 These demonstration commands write to `pilot-mapping/outputs/generated/`, preserving the earlier example package under `instantiation/generated/`. Operational commands select a working output folder and explicitly provide `--base-iri`. Repeating unchanged inputs retains seed identities. The wrapper supports intentional corrections through `--replace-seed` and archives old seeds; it does not silently overwrite changed seeds.
+
+Without `--output`, the evaluation script reads the published fixtures under `tests/fixtures/`. Ignored local runs do not change the default evaluation baseline.
 
 The optional OWLAPI/HermiT check uses the installed Protégé runtime:
 

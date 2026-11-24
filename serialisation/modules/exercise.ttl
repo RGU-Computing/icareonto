@@ -1,6 +1,6 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix icare: <http://maya-project.eu/icareonto/> .
-@prefix meta: <http://maya-project.eu/icareonto/metadata#> .
+@prefix icare: <https://w3id.org/icareonto/> .
+@prefix meta: <https://w3id.org/icareonto/metadata#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
@@ -314,225 +314,225 @@ icare:setCount a owl:DatatypeProperty ;
     rdfs:range xsd:positiveInteger ;
     skos:definition "Number of equivalent sets prescribed or performed."@en .
 
-icare:AerobicExercise a icare:ExerciseModality,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:AerobicExercise a owl:NamedIndividual,
+        skos:Concept,
+        icare:ExerciseModality ;
     rdfs:label "Aerobic exercise"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:exercise ;
     skos:definition "An exercise modality primarily involving sustained activity that increases cardiorespiratory demand."@en ;
     skos:inScheme icare:ExerciseModalityScheme ;
     skos:prefLabel "Aerobic exercise"@en ;
-    skos:topConceptOf icare:ExerciseModalityScheme .
+    skos:topConceptOf icare:ExerciseModalityScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:BalanceTraining a icare:ExerciseModality,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:BalanceTraining a owl:NamedIndividual,
+        skos:Concept,
+        icare:ExerciseModality ;
     rdfs:label "Balance training"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:exercise ;
     skos:definition "An exercise modality intended to maintain or improve balance and postural control."@en ;
     skos:inScheme icare:ExerciseModalityScheme ;
     skos:prefLabel "Balance training"@en ;
-    skos:topConceptOf icare:ExerciseModalityScheme .
+    skos:topConceptOf icare:ExerciseModalityScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:CircuitTraining a icare:ExerciseTrainingPattern,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:CircuitTraining a owl:NamedIndividual,
+        skos:Concept,
+        icare:ExerciseTrainingPattern ;
     rdfs:label "Circuit training"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:exercise ;
     skos:definition "An exercise-training pattern involving a sequence of different exercises or stations."@en ;
     skos:inScheme icare:ExerciseTrainingPatternScheme ;
     skos:prefLabel "Circuit training"@en ;
-    skos:topConceptOf icare:ExerciseTrainingPatternScheme .
+    skos:topConceptOf icare:ExerciseTrainingPatternScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:CombinedTraining a icare:ExerciseModality,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:CombinedTraining a owl:NamedIndividual,
+        skos:Concept,
+        icare:ExerciseModality ;
     rdfs:label "Combined training"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:exercise ;
     skos:definition "An exercise modality combining two or more distinct exercise modalities within a programme or session."@en ;
     skos:inScheme icare:ExerciseModalityScheme ;
     skos:prefLabel "Combined training"@en ;
-    skos:topConceptOf icare:ExerciseModalityScheme .
+    skos:topConceptOf icare:ExerciseModalityScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:ContinuousTraining a icare:ExerciseTrainingPattern,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:ContinuousTraining a owl:NamedIndividual,
+        skos:Concept,
+        icare:ExerciseTrainingPattern ;
     rdfs:label "Continuous training"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:exercise ;
     skos:definition "An exercise-training pattern involving sustained activity without planned recovery intervals."@en ;
     skos:inScheme icare:ExerciseTrainingPatternScheme ;
     skos:prefLabel "Continuous training"@en ;
-    skos:topConceptOf icare:ExerciseTrainingPatternScheme .
+    skos:topConceptOf icare:ExerciseTrainingPatternScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:Cycling a icare:ExerciseActivityType,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:Cycling a owl:NamedIndividual,
+        skos:Concept,
+        icare:ExerciseActivityType ;
     rdfs:label "Cycling"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:exercise ;
     skos:definition "An exercise-activity type involving cycling on a bicycle or stationary cycle."@en ;
     skos:inScheme icare:ExerciseActivityTypeScheme ;
     skos:prefLabel "Cycling"@en ;
-    skos:topConceptOf icare:ExerciseActivityTypeScheme .
+    skos:topConceptOf icare:ExerciseActivityTypeScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:FlexibilityExercise a icare:ExerciseModality,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:FlexibilityExercise a owl:NamedIndividual,
+        skos:Concept,
+        icare:ExerciseModality ;
     rdfs:label "Flexibility exercise"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:exercise ;
     skos:definition "An exercise modality intended to maintain or improve range of motion and flexibility."@en ;
     skos:inScheme icare:ExerciseModalityScheme ;
     skos:prefLabel "Flexibility exercise"@en ;
-    skos:topConceptOf icare:ExerciseModalityScheme .
+    skos:topConceptOf icare:ExerciseModalityScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:HighIntensityIntervalTraining a icare:ExerciseTrainingPattern,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:HighIntensityIntervalTraining a owl:NamedIndividual,
+        skos:Concept,
+        icare:ExerciseTrainingPattern ;
     rdfs:label "High-intensity interval training"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:exercise ;
     skos:definition "An interval-training pattern using repeated high-intensity work periods separated by recovery periods."@en ;
     skos:inScheme icare:ExerciseTrainingPatternScheme ;
     skos:prefLabel "High-intensity interval training"@en ;
-    skos:topConceptOf icare:ExerciseTrainingPatternScheme .
+    skos:topConceptOf icare:ExerciseTrainingPatternScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:IntervalTraining a icare:ExerciseTrainingPattern,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:IntervalTraining a owl:NamedIndividual,
+        skos:Concept,
+        icare:ExerciseTrainingPattern ;
     rdfs:label "Interval training"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:exercise ;
     skos:definition "An exercise-training pattern alternating work periods with recovery or lower-intensity periods."@en ;
     skos:inScheme icare:ExerciseTrainingPatternScheme ;
     skos:prefLabel "Interval training"@en ;
-    skos:topConceptOf icare:ExerciseTrainingPatternScheme .
+    skos:topConceptOf icare:ExerciseTrainingPatternScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:LightIntensity a icare:ExerciseIntensityLevel,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:LightIntensity a owl:NamedIndividual,
+        skos:Concept,
+        icare:ExerciseIntensityLevel ;
     rdfs:label "Light intensity"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:exercise ;
     skos:definition "An exercise-intensity level representing light physical effort."@en ;
     skos:inScheme icare:ExerciseIntensityLevelScheme ;
     skos:prefLabel "Light intensity"@en ;
-    skos:topConceptOf icare:ExerciseIntensityLevelScheme .
+    skos:topConceptOf icare:ExerciseIntensityLevelScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:MaximalIntensity a icare:ExerciseIntensityLevel,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:MaximalIntensity a owl:NamedIndividual,
+        skos:Concept,
+        icare:ExerciseIntensityLevel ;
     rdfs:label "Maximal intensity"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:exercise ;
     skos:definition "An exercise-intensity level representing effort at or near a person's maximum capacity."@en ;
     skos:inScheme icare:ExerciseIntensityLevelScheme ;
     skos:prefLabel "Maximal intensity"@en ;
-    skos:topConceptOf icare:ExerciseIntensityLevelScheme .
+    skos:topConceptOf icare:ExerciseIntensityLevelScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:ModerateIntensity a icare:ExerciseIntensityLevel,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:ModerateIntensity a owl:NamedIndividual,
+        skos:Concept,
+        icare:ExerciseIntensityLevel ;
     rdfs:label "Moderate intensity"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:exercise ;
     skos:definition "An exercise-intensity level representing moderate physical effort."@en ;
     skos:inScheme icare:ExerciseIntensityLevelScheme ;
     skos:prefLabel "Moderate intensity"@en ;
-    skos:topConceptOf icare:ExerciseIntensityLevelScheme .
+    skos:topConceptOf icare:ExerciseIntensityLevelScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:PressUp a icare:ExerciseActivityType,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:PressUp a owl:NamedIndividual,
+        skos:Concept,
+        icare:ExerciseActivityType ;
     rdfs:label "Press-up"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:exercise ;
     skos:definition "An exercise-activity type involving performance of a press-up movement."@en ;
     skos:inScheme icare:ExerciseActivityTypeScheme ;
     skos:prefLabel "Press-up"@en ;
-    skos:topConceptOf icare:ExerciseActivityTypeScheme .
+    skos:topConceptOf icare:ExerciseActivityTypeScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:ResistanceBandRow a icare:ExerciseActivityType,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:ResistanceBandRow a owl:NamedIndividual,
+        skos:Concept,
+        icare:ExerciseActivityType ;
     rdfs:label "Resistance band row"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:exercise ;
     skos:definition "An exercise-activity type involving a rowing movement performed with a resistance band."@en ;
     skos:inScheme icare:ExerciseActivityTypeScheme ;
     skos:prefLabel "Resistance band row"@en ;
-    skos:topConceptOf icare:ExerciseActivityTypeScheme .
+    skos:topConceptOf icare:ExerciseActivityTypeScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:ResistanceTraining a icare:ExerciseModality,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:ResistanceTraining a owl:NamedIndividual,
+        skos:Concept,
+        icare:ExerciseModality ;
     rdfs:label "Resistance training"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:exercise ;
     skos:definition "An exercise modality using resistance to improve muscular strength, endurance or function."@en ;
     skos:inScheme icare:ExerciseModalityScheme ;
     skos:prefLabel "Resistance training"@en ;
-    skos:topConceptOf icare:ExerciseModalityScheme .
+    skos:topConceptOf icare:ExerciseModalityScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:Running a icare:ExerciseActivityType,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:Running a owl:NamedIndividual,
+        skos:Concept,
+        icare:ExerciseActivityType ;
     rdfs:label "Running"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:exercise ;
     skos:definition "An exercise-activity type involving running on a suitable surface or route."@en ;
     skos:inScheme icare:ExerciseActivityTypeScheme ;
     skos:prefLabel "Running"@en ;
-    skos:topConceptOf icare:ExerciseActivityTypeScheme .
+    skos:topConceptOf icare:ExerciseActivityTypeScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:Squat a icare:ExerciseActivityType,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:Squat a owl:NamedIndividual,
+        skos:Concept,
+        icare:ExerciseActivityType ;
     rdfs:label "Squat"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:exercise ;
     skos:definition "An exercise-activity type involving performance of a squat movement."@en ;
     skos:inScheme icare:ExerciseActivityTypeScheme ;
     skos:prefLabel "Squat"@en ;
-    skos:topConceptOf icare:ExerciseActivityTypeScheme .
+    skos:topConceptOf icare:ExerciseActivityTypeScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:TreadmillWalking a icare:ExerciseActivityType,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:TreadmillWalking a owl:NamedIndividual,
+        skos:Concept,
+        icare:ExerciseActivityType ;
     rdfs:label "Treadmill walking"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:exercise ;
     skos:definition "An exercise-activity type involving walking on a treadmill."@en ;
     skos:inScheme icare:ExerciseActivityTypeScheme ;
     skos:prefLabel "Treadmill walking"@en ;
-    skos:topConceptOf icare:ExerciseActivityTypeScheme .
+    skos:topConceptOf icare:ExerciseActivityTypeScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:VigorousIntensity a icare:ExerciseIntensityLevel,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:VigorousIntensity a owl:NamedIndividual,
+        skos:Concept,
+        icare:ExerciseIntensityLevel ;
     rdfs:label "Vigorous intensity"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:exercise ;
     skos:definition "An exercise-intensity level representing vigorous physical effort."@en ;
     skos:inScheme icare:ExerciseIntensityLevelScheme ;
     skos:prefLabel "Vigorous intensity"@en ;
-    skos:topConceptOf icare:ExerciseIntensityLevelScheme .
+    skos:topConceptOf icare:ExerciseIntensityLevelScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:Walking a icare:ExerciseActivityType,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:Walking a owl:NamedIndividual,
+        skos:Concept,
+        icare:ExerciseActivityType ;
     rdfs:label "Walking"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:exercise ;
     skos:definition "An exercise-activity type involving walking on a suitable surface or route."@en ;
     skos:inScheme icare:ExerciseActivityTypeScheme ;
     skos:prefLabel "Walking"@en ;
-    skos:topConceptOf icare:ExerciseActivityTypeScheme .
+    skos:topConceptOf icare:ExerciseActivityTypeScheme ;
+    meta:reviewStatus "Proposed" .
 
 icare:ExerciseAdherenceResult a owl:Class ;
     rdfs:label "Exercise Adherence Result"@en ;
@@ -639,17 +639,17 @@ icare:ExerciseActivityTypeScheme a owl:NamedIndividual,
 
 icare:exercise a owl:Ontology ;
     rdfs:label "Exercise and Physical Activity"@en ;
-    meta:releaseStatus "Published" ;
     dcterms:contributor "MAYA consortium partners" ;
     dcterms:creator "Robert Gordon University" ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
     dcterms:rights "Copyright (c) 2026 Robert Gordon University and contributing MAYA consortium partners, for their respective contributions. Third-party material retains its applicable terms."@en ;
     rdfs:comment "Represents exercise prescriptions, planned and performed sessions, activities, sets, activity types, modalities, training patterns, intensity and adherence assessment."@en ;
     owl:imports icare:core,
-        <http://maya-project.eu/icareonto/imports/skos-reference>,
+        <https://w3id.org/icareonto/imports/skos-reference>,
         icare:intervention-careplan,
         icare:measurement-biomarker,
         icare:metadata ;
-    owl:versionIRI <http://maya-project.eu/icareonto/releases/1.0.0/exercise> ;
-    owl:versionInfo "1.0.0" .
+    owl:versionIRI <https://w3id.org/icareonto/releases/1.0.0/exercise> ;
+    owl:versionInfo "1.0.0" ;
+    meta:releaseStatus "Published" .
 

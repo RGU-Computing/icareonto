@@ -1,18 +1,9 @@
-@prefix icare: <http://maya-project.eu/icareonto/> .
-@prefix meta: <http://maya-project.eu/icareonto/metadata#> .
+@prefix icare: <https://w3id.org/icareonto/> .
+@prefix meta: <https://w3id.org/icareonto/metadata#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-
-<http://maya-project.eu/icareonto/imports/skos-reference> a owl:Ontology ;
-    rdfs:label "SKOS reference subset"@en ;
-    meta:releaseStatus "Published" ;
-    rdfs:comment "Reference subset of W3C terms used by iCARE Onto. Term IRIs retain their external identity; this ontology provides the selected supporting axioms."@en ;
-    rdfs:seeAlso <https://www.w3.org/2009/08/skos-reference/skos.rdf> ;
-    owl:imports icare:metadata ;
-    owl:versionIRI <http://maya-project.eu/icareonto/releases/1.0.0/imports/skos-reference> ;
-    owl:versionInfo "1.0.0" .
 
 skos:altLabel a rdf:Property,
         owl:AnnotationProperty ;
@@ -110,6 +101,15 @@ skos:scopeNote a rdf:Property,
     rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core> ;
     rdfs:subPropertyOf skos:note ;
     skos:definition "A note that helps to clarify the meaning and/or the use of a concept."@en .
+
+<https://w3id.org/icareonto/imports/skos-reference> a owl:Ontology ;
+    rdfs:label "SKOS reference subset"@en ;
+    rdfs:comment "Reference subset of W3C terms used by iCARE Onto. Term IRIs retain their external identity; this ontology provides the selected supporting axioms."@en ;
+    rdfs:seeAlso <https://www.w3.org/2009/08/skos-reference/skos.rdf> ;
+    owl:imports icare:metadata ;
+    owl:versionIRI <https://w3id.org/icareonto/releases/1.0.0/imports/skos-reference> ;
+    owl:versionInfo "1.0.0" ;
+    meta:releaseStatus "Published" .
 
 skos:broadMatch a rdf:Property,
         owl:ObjectProperty ;

@@ -2,6 +2,8 @@
 
 This repository contains iCARE Onto **1.0.0**, the initial published Version 1 baseline, and four tools supporting knowledge representation in the MAYA iCARE Health Hub. Participant and pilot examples are fictional.
 
+The ontology IRI and entity namespace are **`https://w3id.org/icareonto/`**. These identifiers are independent of the repository's hosting address. Bundled import catalogues provide offline resolution; online resolution requires the corresponding w3id redirect configuration. The namespace was finalised on 24 November 2026, with the ontology sources and all dependent package assets regenerated together. This package uses the w3id identifiers directly, without aliases for the earlier namespace.
+
 | Tool                        | Purpose                                                                                                              | Documentation                              |
 | --------------------------- | -------------------------------------------------------------------------------------------------------------------- | ------------------------------------------ |
 | Ontology Serialiser         | Build the modular OWL ontology from the release source snapshots                                                     | [serialisation](serialisation/README.md)    |

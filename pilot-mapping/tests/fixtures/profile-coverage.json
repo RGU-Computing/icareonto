@@ -2,7 +2,7 @@
   "base_iri": "https://example.org/maya/instantiation/",
   "coverage": [
     {
-      "class_iri": "http://maya-project.eu/icareonto/LanguagePreference",
+      "class_iri": "https://w3id.org/icareonto/LanguagePreference",
       "instances": [
         "https://example.org/maya/instantiation/people/es-demo-aya-001/preferences/language_tag",
         "https://example.org/maya/instantiation/people/es-demo-aya-002/preferences/language_tag"
@@ -11,7 +11,7 @@
       "status": "REPRESENTED_IN_GENERATED_SEEDS"
     },
     {
-      "class_iri": "http://maya-project.eu/icareonto/InformationPreference",
+      "class_iri": "https://w3id.org/icareonto/InformationPreference",
       "instances": [
         "https://example.org/maya/instantiation/people/es-demo-aya-001/preferences/detail_level",
         "https://example.org/maya/instantiation/people/es-demo-aya-002/preferences/detail_level"
@@ -20,7 +20,7 @@
       "status": "REPRESENTED_IN_GENERATED_SEEDS"
     },
     {
-      "class_iri": "http://maya-project.eu/icareonto/ParticipantEnrolment",
+      "class_iri": "https://w3id.org/icareonto/ParticipantEnrolment",
       "instances": [
         "https://example.org/maya/instantiation/people/es-demo-aya-001/enrolments/enrolment-001",
         "https://example.org/maya/instantiation/people/es-demo-aya-002/enrolments/enrolment-002"
@@ -29,49 +29,49 @@
       "status": "REPRESENTED_IN_GENERATED_SEEDS"
     },
     {
-      "class_iri": "http://maya-project.eu/icareonto/BloodPressureMeasurementProtocol",
+      "class_iri": "https://w3id.org/icareonto/BloodPressureMeasurementProtocol",
       "instances": [],
       "requirement_id": "DEMO-KR04",
       "status": "ADDITIONAL_INPUT_PROFILE_OR_DATA_REQUIRED"
     },
     {
-      "class_iri": "http://maya-project.eu/icareonto/Questionnaire",
+      "class_iri": "https://w3id.org/icareonto/Questionnaire",
       "instances": [],
       "requirement_id": "DEMO-KR05",
       "status": "ADDITIONAL_INPUT_PROFILE_OR_DATA_REQUIRED"
     },
     {
-      "class_iri": "http://maya-project.eu/icareonto/HealthLiteracyNeedType",
+      "class_iri": "https://w3id.org/icareonto/HealthLiteracyNeedType",
       "instances": [],
       "requirement_id": "DEMO-KR06",
       "status": "ADDITIONAL_INPUT_PROFILE_OR_DATA_REQUIRED"
     },
     {
-      "class_iri": "http://maya-project.eu/icareonto/AccessibilityFeature",
+      "class_iri": "https://w3id.org/icareonto/AccessibilityFeature",
       "instances": [],
       "requirement_id": "DEMO-KR07",
       "status": "ADDITIONAL_INPUT_PROFILE_OR_DATA_REQUIRED"
     },
     {
-      "class_iri": "http://maya-project.eu/icareonto/PerformedExerciseSession",
+      "class_iri": "https://w3id.org/icareonto/PerformedExerciseSession",
       "instances": [],
       "requirement_id": "DEMO-KR08",
       "status": "ADDITIONAL_INPUT_PROFILE_OR_DATA_REQUIRED"
     },
     {
-      "class_iri": "http://maya-project.eu/icareonto/ExercisePrescription",
+      "class_iri": "https://w3id.org/icareonto/ExercisePrescription",
       "instances": [],
       "requirement_id": "DEMO-KR09",
       "status": "ADDITIONAL_INPUT_PROFILE_OR_DATA_REQUIRED"
     },
     {
-      "class_iri": "http://maya-project.eu/icareonto/CancerTreatmentHistory",
+      "class_iri": "https://w3id.org/icareonto/CancerTreatmentHistory",
       "instances": [],
       "requirement_id": "DEMO-KR10",
       "status": "ADDITIONAL_INPUT_PROFILE_OR_DATA_REQUIRED"
     },
     {
-      "class_iri": "http://maya-project.eu/icareonto/ConsentRecord",
+      "class_iri": "https://w3id.org/icareonto/ConsentRecord",
       "instances": [
         "https://example.org/maya/instantiation/people/es-demo-aya-001/consents/consent-001"
       ],
@@ -79,19 +79,19 @@
       "status": "REPRESENTED_IN_GENERATED_SEEDS"
     },
     {
-      "class_iri": "http://maya-project.eu/icareonto/EvidenceSource",
+      "class_iri": "https://w3id.org/icareonto/EvidenceSource",
       "instances": [],
       "requirement_id": "DEMO-KR12",
       "status": "ADDITIONAL_INPUT_PROFILE_OR_DATA_REQUIRED"
     },
     {
-      "class_iri": "http://maya-project.eu/icareonto/NutritionInstruction",
+      "class_iri": "https://w3id.org/icareonto/NutritionInstruction",
       "instances": [],
       "requirement_id": "DEMO-KR13",
       "status": "ADDITIONAL_INPUT_PROFILE_OR_DATA_REQUIRED"
     },
     {
-      "class_iri": "http://maya-project.eu/icareonto/Locale",
+      "class_iri": "https://w3id.org/icareonto/Locale",
       "instances": [
         "https://example.org/maya/instantiation/sites/es-demo-01/locale"
       ],
@@ -117,8 +117,8 @@
     }
   ],
   "pilot_id": "es-demo-01",
-  "profile_sha256": "99582f1f383725ddb0c6d461585ce7dc4ead37cdeb800e17ef104ef958c0f8c1",
-  "registry_sha256": "5afe671a22a1668af1e42c6faa16cecaec04b364d6b0ee5f9d758559410a8a92",
+  "profile_sha256": "531efc3999607a9619c1054f166336a6087695f40e81efe5a0adb3f2e7ea6263",
+  "registry_sha256": "456057afdb88b92d9a286bf4931688893985c014cdb9cd70436e14916fa06058",
   "review_status": "demonstration_annotation_not_site_approval",
   "reviewer": "Agent-authored fictional mapping decisions; independent pilot/expert review is pending",
   "source_status": "synthetic_demonstration",

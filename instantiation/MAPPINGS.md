@@ -1,6 +1,6 @@
 # Input to ontology mapping
 
-All domain terms below use `http://maya-project.eu/icareonto/`. Domain classes and properties are reused from the current serialisation without modification. Infrastructure metadata uses existing RDF, RDFS, OWL and Dublin Core terms. The generator records the loaded ontology version and file hashes.
+All domain terms below use `https://w3id.org/icareonto/`. Domain classes and properties are reused from the current serialisation without modification. Infrastructure metadata uses existing RDF, RDFS, OWL and Dublin Core terms. The generator records the loaded ontology version and file hashes.
 
 | Input or generated structure | RDF representation |
 |---|---|

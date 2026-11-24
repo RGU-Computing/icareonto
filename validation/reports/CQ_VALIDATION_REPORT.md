@@ -1,6 +1,6 @@
 # iCARE Onto competency-question validation report
 
-**Ontology:** 1.0.0. **Test date:** 2026-11-23.
+**Ontology:** 1.0.0. **Test date:** 2026-11-24.
 
 All **78 consolidated CQs were executed**. **78** matched their authored expected answers; **0** require modelling/scope review. The **4 additional controls** all passed.
 

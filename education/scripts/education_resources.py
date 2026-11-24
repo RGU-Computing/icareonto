@@ -30,10 +30,10 @@ REPO = ROOT.parent
 sys.path.insert(0, str(REPO / "serialisation/scripts"))
 from serialise_ontology import read_xlsx
 
-IC = Namespace("http://maya-project.eu/icareonto/")
-META = Namespace("http://maya-project.eu/icareonto/education/metadata#")
-ONTOLOGY = URIRef("http://maya-project.eu/icareonto")
-DEFAULT_BASE = "http://maya-project.eu/icareonto/education/"
+IC = Namespace("https://w3id.org/icareonto/")
+META = Namespace("https://w3id.org/icareonto/education/metadata#")
+ONTOLOGY = URIRef("https://w3id.org/icareonto/")
+DEFAULT_BASE = "https://w3id.org/icareonto/education/"
 METADATA_LICENSE = "https://creativecommons.org/licenses/by/4.0/"
 METADATA_RIGHTS = "Copyright (c) 2026 Robert Gordon University and contributing MAYA consortium partners, for their respective contributions. CC BY 4.0 covers original metadata and activity content only; linked publications retain their provider terms."
 DEFAULT_WORKBOOK = REPO / "sources/MAYA_consolidated_educational_resources.xlsx"

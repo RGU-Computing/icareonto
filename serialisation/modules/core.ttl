@@ -1,6 +1,6 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix icare: <http://maya-project.eu/icareonto/> .
-@prefix meta: <http://maya-project.eu/icareonto/metadata#> .
+@prefix icare: <https://w3id.org/icareonto/> .
+@prefix meta: <https://w3id.org/icareonto/metadata#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
@@ -78,12 +78,12 @@ icare:frequencyValue a owl:DatatypeProperty ;
 
 icare:intervalDuration a owl:DatatypeProperty ;
     rdfs:label "interval duration"@en ;
-    meta:valueFormat "iso-duration" ;
-    meta:valuePattern "^-?P([0-9]+W|([0-9]+Y([0-9]+M)?([0-9]+D)?|[0-9]+M([0-9]+D)?|[0-9]+D)(T([0-9]+H([0-9]+M)?([0-9]+(\\.[0-9]+)?S)?|[0-9]+M([0-9]+(\\.[0-9]+)?S)?|[0-9]+(\\.[0-9]+)?S))?|T([0-9]+H([0-9]+M)?([0-9]+(\\.[0-9]+)?S)?|[0-9]+M([0-9]+(\\.[0-9]+)?S)?|[0-9]+(\\.[0-9]+)?S))$" ;
     rdfs:domain icare:TimeInterval ;
     rdfs:isDefinedBy icare:core ;
     rdfs:range xsd:string ;
-    skos:definition "Records the duration of a temporal interval as an ISO 8601 duration string, for example P7D for seven days or PT30M for thirty minutes."@en .
+    skos:definition "Records the duration of a temporal interval as an ISO 8601 duration string, for example P7D for seven days or PT30M for thirty minutes."@en ;
+    meta:valueFormat "iso-duration" ;
+    meta:valuePattern "^-?P([0-9]+W|([0-9]+Y([0-9]+M)?([0-9]+D)?|[0-9]+M([0-9]+D)?|[0-9]+D)(T([0-9]+H([0-9]+M)?([0-9]+(\\.[0-9]+)?S)?|[0-9]+M([0-9]+(\\.[0-9]+)?S)?|[0-9]+(\\.[0-9]+)?S))?|T([0-9]+H([0-9]+M)?([0-9]+(\\.[0-9]+)?S)?|[0-9]+M([0-9]+(\\.[0-9]+)?S)?|[0-9]+(\\.[0-9]+)?S))$" .
 
 icare:intervalEndsAt a owl:ObjectProperty ;
     rdfs:label "interval ends at"@en ;
@@ -176,120 +176,120 @@ icare:timepointLabel a owl:DatatypeProperty ;
     rdfs:range xsd:string ;
     skos:definition "Records a human-readable label for a timepoint, such as baseline, morning check-in, or follow-up."@en .
 
-icare:AfternoonTimeOfDay a icare:TimeOfDay,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:AfternoonTimeOfDay a owl:NamedIndividual,
+        skos:Concept,
+        icare:TimeOfDay ;
     rdfs:label "Afternoon time of day"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:core ;
     skos:definition "A time-of-day value representing the afternoon period."@en ;
     skos:inScheme icare:TimeOfDayScheme ;
     skos:prefLabel "Afternoon time of day"@en ;
-    skos:topConceptOf icare:TimeOfDayScheme .
+    skos:topConceptOf icare:TimeOfDayScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:AnyTimeOfDay a icare:TimeOfDay,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:AnyTimeOfDay a owl:NamedIndividual,
+        skos:Concept,
+        icare:TimeOfDay ;
     rdfs:label "Any time of day"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:core ;
     skos:definition "A time-of-day value indicating that no particular period of the day is required or preferred."@en ;
     skos:inScheme icare:TimeOfDayScheme ;
     skos:prefLabel "Any time of day"@en ;
-    skos:topConceptOf icare:TimeOfDayScheme .
+    skos:topConceptOf icare:TimeOfDayScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:AsNeededRecurrence a icare:RecurrencePattern,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:AsNeededRecurrence a owl:NamedIndividual,
+        skos:Concept,
+        icare:RecurrencePattern ;
     rdfs:label "As needed recurrence"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:core ;
     skos:definition "A recurrence pattern in which an activity occurs when needed rather than at fixed recurring intervals."@en ;
     skos:inScheme icare:RecurrencePatternScheme ;
     skos:prefLabel "As needed recurrence"@en ;
-    skos:topConceptOf icare:RecurrencePatternScheme .
+    skos:topConceptOf icare:RecurrencePatternScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:CustomRecurrence a icare:RecurrencePattern,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:CustomRecurrence a owl:NamedIndividual,
+        skos:Concept,
+        icare:RecurrencePattern ;
     rdfs:label "Custom recurrence"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:core ;
     skos:definition "A recurrence pattern defined by a schedule that does not correspond to the standard daily, weekly or monthly patterns."@en ;
     skos:inScheme icare:RecurrencePatternScheme ;
     skos:prefLabel "Custom recurrence"@en ;
-    skos:topConceptOf icare:RecurrencePatternScheme .
+    skos:topConceptOf icare:RecurrencePatternScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:DailyRecurrence a icare:RecurrencePattern,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:DailyRecurrence a owl:NamedIndividual,
+        skos:Concept,
+        icare:RecurrencePattern ;
     rdfs:label "Daily recurrence"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:core ;
     skos:definition "A recurrence pattern in which an activity is expected to recur each day."@en ;
     skos:inScheme icare:RecurrencePatternScheme ;
     skos:prefLabel "Daily recurrence"@en ;
-    skos:topConceptOf icare:RecurrencePatternScheme .
+    skos:topConceptOf icare:RecurrencePatternScheme ;
+    meta:reviewStatus "Proposed" .
 
 icare:Device a owl:Class ;
     rdfs:label "Device"@en ;
     rdfs:isDefinedBy icare:core ;
     skos:definition "A physical device used to support interaction, collect data or provide access to a digital service."@en .
 
-icare:EveningTimeOfDay a icare:TimeOfDay,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:EveningTimeOfDay a owl:NamedIndividual,
+        skos:Concept,
+        icare:TimeOfDay ;
     rdfs:label "Evening time of day"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:core ;
     skos:definition "A time-of-day value representing the evening period."@en ;
     skos:inScheme icare:TimeOfDayScheme ;
     skos:prefLabel "Evening time of day"@en ;
-    skos:topConceptOf icare:TimeOfDayScheme .
+    skos:topConceptOf icare:TimeOfDayScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:MonthlyRecurrence a icare:RecurrencePattern,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:MonthlyRecurrence a owl:NamedIndividual,
+        skos:Concept,
+        icare:RecurrencePattern ;
     rdfs:label "Monthly recurrence"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:core ;
     skos:definition "A recurrence pattern in which an activity is expected to recur each month."@en ;
     skos:inScheme icare:RecurrencePatternScheme ;
     skos:prefLabel "Monthly recurrence"@en ;
-    skos:topConceptOf icare:RecurrencePatternScheme .
+    skos:topConceptOf icare:RecurrencePatternScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:MorningTimeOfDay a icare:TimeOfDay,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:MorningTimeOfDay a owl:NamedIndividual,
+        skos:Concept,
+        icare:TimeOfDay ;
     rdfs:label "Morning time of day"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:core ;
     skos:definition "A time-of-day value representing the morning period."@en ;
     skos:inScheme icare:TimeOfDayScheme ;
     skos:prefLabel "Morning time of day"@en ;
-    skos:topConceptOf icare:TimeOfDayScheme .
+    skos:topConceptOf icare:TimeOfDayScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:NightTimeOfDay a icare:TimeOfDay,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:NightTimeOfDay a owl:NamedIndividual,
+        skos:Concept,
+        icare:TimeOfDay ;
     rdfs:label "Night time of day"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:core ;
     skos:definition "A time-of-day value representing the night period."@en ;
     skos:inScheme icare:TimeOfDayScheme ;
     skos:prefLabel "Night time of day"@en ;
-    skos:topConceptOf icare:TimeOfDayScheme .
+    skos:topConceptOf icare:TimeOfDayScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:WeeklyRecurrence a icare:RecurrencePattern,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:WeeklyRecurrence a owl:NamedIndividual,
+        skos:Concept,
+        icare:RecurrencePattern ;
     rdfs:label "Weekly recurrence"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:core ;
     skos:definition "A recurrence pattern in which an activity is expected to recur each week."@en ;
     skos:inScheme icare:RecurrencePatternScheme ;
     skos:prefLabel "Weekly recurrence"@en ;
-    skos:topConceptOf icare:RecurrencePatternScheme .
+    skos:topConceptOf icare:RecurrencePatternScheme ;
+    meta:reviewStatus "Proposed" .
 
 icare:Frequency a owl:Class ;
     rdfs:label "Frequency"@en ;
@@ -365,14 +365,14 @@ icare:TimeOfDayScheme a owl:NamedIndividual,
 
 icare:core a owl:Ontology ;
     rdfs:label "Core"@en ;
-    meta:releaseStatus "Published" ;
     dcterms:contributor "MAYA consortium partners" ;
     dcterms:creator "Robert Gordon University" ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
     dcterms:rights "Copyright (c) 2026 Robert Gordon University and contributing MAYA consortium partners, for their respective contributions. Third-party material retains its applicable terms."@en ;
     rdfs:comment "Defines module-independent concepts for time, schedules, source attribution, devices, locales and recorded activity executions."@en ;
-    owl:imports <http://maya-project.eu/icareonto/imports/skos-reference>,
+    owl:imports <https://w3id.org/icareonto/imports/skos-reference>,
         icare:metadata ;
-    owl:versionIRI <http://maya-project.eu/icareonto/releases/1.0.0/core> ;
-    owl:versionInfo "1.0.0" .
+    owl:versionIRI <https://w3id.org/icareonto/releases/1.0.0/core> ;
+    owl:versionInfo "1.0.0" ;
+    meta:releaseStatus "Published" .
 

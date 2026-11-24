@@ -13,7 +13,7 @@ from rdflib.namespace import DCTERMS
 
 ROOT = Path(__file__).resolve().parents[1]
 SCHEMA = ROOT.parent / "serialisation"
-IC = Namespace("http://maya-project.eu/icareonto/")
+IC = Namespace("https://w3id.org/icareonto/")
 DEMO = Namespace("https://example.org/maya/demo/es/")
 ONTOLOGY = URIRef(str(DEMO).rstrip("/"))
 TZ = ZoneInfo("Europe/Madrid")
@@ -51,7 +51,7 @@ def time(identifier, local_datetime, label):
 
 g.add((ONTOLOGY, RDF.type, OWL.Ontology))
 g.add((ONTOLOGY, RDFS.label, Literal("Fictional Spanish AYA survivor — technical test graph", lang="en")))
-g.add((ONTOLOGY, OWL.imports, URIRef("http://maya-project.eu/icareonto")))
+g.add((ONTOLOGY, OWL.imports, URIRef("https://w3id.org/icareonto/")))
 g.add((ONTOLOGY, OWL.versionInfo, Literal("Synthetic fixture 0.1; 2026-10-30")))
 g.add((ONTOLOGY, DCTERMS.description, Literal(
     "All people, pilot sites, clinical records, assessments, recommendations, educational resources and dialogue are fictional technical fixtures. "

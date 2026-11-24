@@ -12,7 +12,7 @@ from urllib.parse import urlsplit
 from rdflib import BNode, Dataset, Graph, Literal, Namespace, RDF, RDFS, OWL, URIRef, XSD
 from rdflib.namespace import DCTERMS, SKOS
 
-IC = "http://maya-project.eu/icareonto/"
+IC = "https://w3id.org/icareonto/"
 META = Namespace(IC + "metadata#")
 SH = Namespace("http://www.w3.org/ns/shacl#")
 GROUPS = {

@@ -1,6 +1,6 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix icare: <http://maya-project.eu/icareonto/> .
-@prefix meta: <http://maya-project.eu/icareonto/metadata#> .
+@prefix icare: <https://w3id.org/icareonto/> .
+@prefix meta: <https://w3id.org/icareonto/metadata#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
@@ -181,324 +181,324 @@ icare:userUtteranceExpressesIntent a owl:ObjectProperty ;
     rdfs:range icare:UserIntent ;
     skos:definition "Identifies an intent inferred from the utterance."@en .
 
-icare:ActivityTypeSlot a icare:SlotType,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:ActivityTypeSlot a owl:NamedIndividual,
+        skos:Concept,
+        icare:SlotType ;
     rdfs:label "Activity type slot"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:dialogue ;
     skos:definition "A dialogue-slot type used to capture activity type."@en ;
     skos:inScheme icare:SlotTypeScheme ;
     skos:prefLabel "Activity type slot"@en ;
-    skos:topConceptOf icare:SlotTypeScheme .
+    skos:topConceptOf icare:SlotTypeScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:AmbiguousSlot a icare:SlotStatusValue,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:AmbiguousSlot a owl:NamedIndividual,
+        skos:Concept,
+        icare:SlotStatusValue ;
     rdfs:label "Ambiguous slot"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:dialogue ;
     skos:definition "A dialogue-slot status indicating that the available value has more than one plausible interpretation."@en ;
     skos:inScheme icare:SlotStatusValueScheme ;
     skos:prefLabel "Ambiguous slot"@en ;
-    skos:topConceptOf icare:SlotStatusValueScheme .
+    skos:topConceptOf icare:SlotStatusValueScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:ClarificationStrategy a icare:DialogueStrategy,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:ClarificationStrategy a owl:NamedIndividual,
+        skos:Concept,
+        icare:DialogueStrategy ;
     rdfs:label "Clarification strategy"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:dialogue ;
     skos:definition "A dialogue strategy based on clarification to support the interaction."@en ;
     skos:inScheme icare:DialogueStrategyScheme ;
     skos:prefLabel "Clarification strategy"@en ;
-    skos:topConceptOf icare:DialogueStrategyScheme .
+    skos:topConceptOf icare:DialogueStrategyScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:ConfirmInformation a icare:UserIntent,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:ConfirmInformation a owl:NamedIndividual,
+        skos:Concept,
+        icare:UserIntent ;
     rdfs:label "Confirm information"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:dialogue ;
     skos:definition "A user-intent concept indicating that the user intends to confirm information."@en ;
     skos:inScheme icare:UserIntentScheme ;
     skos:prefLabel "Confirm information"@en ;
-    skos:topConceptOf icare:UserIntentScheme .
+    skos:topConceptOf icare:UserIntentScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:EmpathicCommunicationStrategy a icare:DialogueStrategy,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:EmpathicCommunicationStrategy a owl:NamedIndividual,
+        skos:Concept,
+        icare:DialogueStrategy ;
     rdfs:label "Empathic communication strategy"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:dialogue ;
     skos:definition "A dialogue strategy based on empathic communication to support the interaction."@en ;
     skos:inScheme icare:DialogueStrategyScheme ;
     skos:prefLabel "Empathic communication strategy"@en ;
-    skos:topConceptOf icare:DialogueStrategyScheme .
+    skos:topConceptOf icare:DialogueStrategyScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:FilledSlot a icare:SlotStatusValue,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:FilledSlot a owl:NamedIndividual,
+        skos:Concept,
+        icare:SlotStatusValue ;
     rdfs:label "Filled slot"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:dialogue ;
     skos:definition "A dialogue-slot status indicating that a value has been supplied for the slot."@en ;
     skos:inScheme icare:SlotStatusValueScheme ;
     skos:prefLabel "Filled slot"@en ;
-    skos:topConceptOf icare:SlotStatusValueScheme .
+    skos:topConceptOf icare:SlotStatusValueScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:GoalSlot a icare:SlotType,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:GoalSlot a owl:NamedIndividual,
+        skos:Concept,
+        icare:SlotType ;
     rdfs:label "Goal slot"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:dialogue ;
     skos:definition "A dialogue-slot type used to capture goal."@en ;
     skos:inScheme icare:SlotTypeScheme ;
     skos:prefLabel "Goal slot"@en ;
-    skos:topConceptOf icare:SlotTypeScheme .
+    skos:topConceptOf icare:SlotTypeScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:MeasurementTimeSlot a icare:SlotType,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:MeasurementTimeSlot a owl:NamedIndividual,
+        skos:Concept,
+        icare:SlotType ;
     rdfs:label "Measurement time slot"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:dialogue ;
     skos:definition "A dialogue-slot type used to capture measurement time."@en ;
     skos:inScheme icare:SlotTypeScheme ;
     skos:prefLabel "Measurement time slot"@en ;
-    skos:topConceptOf icare:SlotTypeScheme .
+    skos:topConceptOf icare:SlotTypeScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:MeasurementTypeSlot a icare:SlotType,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:MeasurementTypeSlot a owl:NamedIndividual,
+        skos:Concept,
+        icare:SlotType ;
     rdfs:label "Measurement type slot"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:dialogue ;
     skos:definition "A dialogue-slot type used to capture measurement type."@en ;
     skos:inScheme icare:SlotTypeScheme ;
     skos:prefLabel "Measurement type slot"@en ;
-    skos:topConceptOf icare:SlotTypeScheme .
+    skos:topConceptOf icare:SlotTypeScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:MeasurementUnitSlot a icare:SlotType,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:MeasurementUnitSlot a owl:NamedIndividual,
+        skos:Concept,
+        icare:SlotType ;
     rdfs:label "Measurement unit slot"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:dialogue ;
     skos:definition "A dialogue-slot type used to capture measurement unit."@en ;
     skos:inScheme icare:SlotTypeScheme ;
     skos:prefLabel "Measurement unit slot"@en ;
-    skos:topConceptOf icare:SlotTypeScheme .
+    skos:topConceptOf icare:SlotTypeScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:MeasurementValueSlot a icare:SlotType,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:MeasurementValueSlot a owl:NamedIndividual,
+        skos:Concept,
+        icare:SlotType ;
     rdfs:label "Measurement value slot"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:dialogue ;
     skos:definition "A dialogue-slot type used to capture measurement value."@en ;
     skos:inScheme icare:SlotTypeScheme ;
     skos:prefLabel "Measurement value slot"@en ;
-    skos:topConceptOf icare:SlotTypeScheme .
+    skos:topConceptOf icare:SlotTypeScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:MissingSlot a icare:SlotStatusValue,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:MissingSlot a owl:NamedIndividual,
+        skos:Concept,
+        icare:SlotStatusValue ;
     rdfs:label "Missing slot"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:dialogue ;
     skos:definition "A dialogue-slot status indicating that a required or expected value has not been supplied."@en ;
     skos:inScheme icare:SlotStatusValueScheme ;
     skos:prefLabel "Missing slot"@en ;
-    skos:topConceptOf icare:SlotStatusValueScheme .
+    skos:topConceptOf icare:SlotStatusValueScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:MotivationalInterviewingStrategy a icare:DialogueStrategy,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:MotivationalInterviewingStrategy a owl:NamedIndividual,
+        skos:Concept,
+        icare:DialogueStrategy ;
     rdfs:label "Motivational interviewing strategy"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:dialogue ;
     skos:definition "A dialogue strategy based on motivational interviewing to support the interaction."@en ;
     skos:inScheme icare:DialogueStrategyScheme ;
     skos:prefLabel "Motivational interviewing strategy"@en ;
-    skos:topConceptOf icare:DialogueStrategyScheme .
+    skos:topConceptOf icare:DialogueStrategyScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:NotApplicableSlot a icare:SlotStatusValue,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:NotApplicableSlot a owl:NamedIndividual,
+        skos:Concept,
+        icare:SlotStatusValue ;
     rdfs:label "Not applicable slot"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:dialogue ;
     skos:definition "A dialogue-slot status indicating that the slot does not apply in the current context."@en ;
     skos:inScheme icare:SlotStatusValueScheme ;
     skos:prefLabel "Not applicable slot"@en ;
-    skos:topConceptOf icare:SlotStatusValueScheme .
+    skos:topConceptOf icare:SlotStatusValueScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:PlainLanguageStrategy a icare:DialogueStrategy,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:PlainLanguageStrategy a owl:NamedIndividual,
+        skos:Concept,
+        icare:DialogueStrategy ;
     rdfs:label "Plain-language strategy"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:dialogue ;
     skos:definition "A dialogue strategy based on plain-language to support the interaction."@en ;
     skos:inScheme icare:DialogueStrategyScheme ;
     skos:prefLabel "Plain-language strategy"@en ;
-    skos:topConceptOf icare:DialogueStrategyScheme .
+    skos:topConceptOf icare:DialogueStrategyScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:RejectInformation a icare:UserIntent,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:RejectInformation a owl:NamedIndividual,
+        skos:Concept,
+        icare:UserIntent ;
     rdfs:label "Reject information"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:dialogue ;
     skos:definition "A user-intent concept indicating that the user intends to reject information."@en ;
     skos:inScheme icare:UserIntentScheme ;
     skos:prefLabel "Reject information"@en ;
-    skos:topConceptOf icare:UserIntentScheme .
+    skos:topConceptOf icare:UserIntentScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:ReportActivity a icare:UserIntent,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:ReportActivity a owl:NamedIndividual,
+        skos:Concept,
+        icare:UserIntent ;
     rdfs:label "Report activity"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:dialogue ;
     skos:definition "A user-intent concept indicating that the user intends to report activity."@en ;
     skos:inScheme icare:UserIntentScheme ;
     skos:prefLabel "Report activity"@en ;
-    skos:topConceptOf icare:UserIntentScheme .
+    skos:topConceptOf icare:UserIntentScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:ReportMeasurement a icare:UserIntent,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:ReportMeasurement a owl:NamedIndividual,
+        skos:Concept,
+        icare:UserIntent ;
     rdfs:label "Report measurement"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:dialogue ;
     skos:definition "A user-intent concept indicating that the user intends to report measurement."@en ;
     skos:inScheme icare:UserIntentScheme ;
     skos:prefLabel "Report measurement"@en ;
-    skos:topConceptOf icare:UserIntentScheme .
+    skos:topConceptOf icare:UserIntentScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:ReportSymptom a icare:UserIntent,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:ReportSymptom a owl:NamedIndividual,
+        skos:Concept,
+        icare:UserIntent ;
     rdfs:label "Report symptom"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:dialogue ;
     skos:definition "A user-intent concept indicating that the user intends to report symptom."@en ;
     skos:inScheme icare:UserIntentScheme ;
     skos:prefLabel "Report symptom"@en ;
-    skos:topConceptOf icare:UserIntentScheme .
+    skos:topConceptOf icare:UserIntentScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:RequestExplanation a icare:UserIntent,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:RequestExplanation a owl:NamedIndividual,
+        skos:Concept,
+        icare:UserIntent ;
     rdfs:label "Request explanation"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:dialogue ;
     skos:definition "A user-intent concept indicating that the user intends to request explanation."@en ;
     skos:inScheme icare:UserIntentScheme ;
     skos:prefLabel "Request explanation"@en ;
-    skos:topConceptOf icare:UserIntentScheme .
+    skos:topConceptOf icare:UserIntentScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:RequestInformation a icare:UserIntent,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:RequestInformation a owl:NamedIndividual,
+        skos:Concept,
+        icare:UserIntent ;
     rdfs:label "Request information"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:dialogue ;
     skos:definition "A user-intent concept indicating that the user intends to request information."@en ;
     skos:inScheme icare:UserIntentScheme ;
     skos:prefLabel "Request information"@en ;
-    skos:topConceptOf icare:UserIntentScheme .
+    skos:topConceptOf icare:UserIntentScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:RequestPlanChange a icare:UserIntent,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:RequestPlanChange a owl:NamedIndividual,
+        skos:Concept,
+        icare:UserIntent ;
     rdfs:label "Request plan change"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:dialogue ;
     skos:definition "A user-intent concept indicating that the user intends to request plan change."@en ;
     skos:inScheme icare:UserIntentScheme ;
     skos:prefLabel "Request plan change"@en ;
-    skos:topConceptOf icare:UserIntentScheme .
+    skos:topConceptOf icare:UserIntentScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:RequestRecommendation a icare:UserIntent,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:RequestRecommendation a owl:NamedIndividual,
+        skos:Concept,
+        icare:UserIntent ;
     rdfs:label "Request recommendation"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:dialogue ;
     skos:definition "A user-intent concept indicating that the user intends to request recommendation."@en ;
     skos:inScheme icare:UserIntentScheme ;
     skos:prefLabel "Request recommendation"@en ;
-    skos:topConceptOf icare:UserIntentScheme .
+    skos:topConceptOf icare:UserIntentScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:ResourceTopicSlot a icare:SlotType,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:ResourceTopicSlot a owl:NamedIndividual,
+        skos:Concept,
+        icare:SlotType ;
     rdfs:label "Resource topic slot"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:dialogue ;
     skos:definition "A dialogue-slot type used to capture resource topic."@en ;
     skos:inScheme icare:SlotTypeScheme ;
     skos:prefLabel "Resource topic slot"@en ;
-    skos:topConceptOf icare:SlotTypeScheme .
+    skos:topConceptOf icare:SlotTypeScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:SymptomOnsetSlot a icare:SlotType,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:SymptomOnsetSlot a owl:NamedIndividual,
+        skos:Concept,
+        icare:SlotType ;
     rdfs:label "Symptom onset slot"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:dialogue ;
     skos:definition "A dialogue-slot type used to capture symptom onset."@en ;
     skos:inScheme icare:SlotTypeScheme ;
     skos:prefLabel "Symptom onset slot"@en ;
-    skos:topConceptOf icare:SlotTypeScheme .
+    skos:topConceptOf icare:SlotTypeScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:SymptomSeveritySlot a icare:SlotType,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:SymptomSeveritySlot a owl:NamedIndividual,
+        skos:Concept,
+        icare:SlotType ;
     rdfs:label "Symptom severity slot"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:dialogue ;
     skos:definition "A dialogue-slot type used to capture symptom severity."@en ;
     skos:inScheme icare:SlotTypeScheme ;
     skos:prefLabel "Symptom severity slot"@en ;
-    skos:topConceptOf icare:SlotTypeScheme .
+    skos:topConceptOf icare:SlotTypeScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:SymptomTypeSlot a icare:SlotType,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:SymptomTypeSlot a owl:NamedIndividual,
+        skos:Concept,
+        icare:SlotType ;
     rdfs:label "Symptom type slot"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:dialogue ;
     skos:definition "A dialogue-slot type used to capture symptom type."@en ;
     skos:inScheme icare:SlotTypeScheme ;
     skos:prefLabel "Symptom type slot"@en ;
-    skos:topConceptOf icare:SlotTypeScheme .
+    skos:topConceptOf icare:SlotTypeScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:TeachBackStrategy a icare:DialogueStrategy,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:TeachBackStrategy a owl:NamedIndividual,
+        skos:Concept,
+        icare:DialogueStrategy ;
     rdfs:label "Teach-back strategy"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:dialogue ;
     skos:definition "A dialogue strategy based on teach-back to support the interaction."@en ;
     skos:inScheme icare:DialogueStrategyScheme ;
     skos:prefLabel "Teach-back strategy"@en ;
-    skos:topConceptOf icare:DialogueStrategyScheme .
+    skos:topConceptOf icare:DialogueStrategyScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:UnconfirmedSlot a icare:SlotStatusValue,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:UnconfirmedSlot a owl:NamedIndividual,
+        skos:Concept,
+        icare:SlotStatusValue ;
     rdfs:label "Unconfirmed slot"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:dialogue ;
     skos:definition "A dialogue-slot status indicating that the available value has not yet been confirmed."@en ;
     skos:inScheme icare:SlotStatusValueScheme ;
     skos:prefLabel "Unconfirmed slot"@en ;
-    skos:topConceptOf icare:SlotStatusValueScheme .
+    skos:topConceptOf icare:SlotStatusValueScheme ;
+    meta:reviewStatus "Proposed" .
 
 icare:UserUtterance a owl:Class ;
     rdfs:label "User Utterance"@en ;
@@ -604,7 +604,6 @@ icare:SlotTypeScheme a owl:NamedIndividual,
 
 icare:dialogue a owl:Ontology ;
     rdfs:label "Dialogue and Conversational Context"@en ;
-    meta:releaseStatus "Published" ;
     dcterms:contributor "MAYA consortium partners" ;
     dcterms:creator "Robert Gordon University" ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
@@ -613,11 +612,12 @@ icare:dialogue a owl:Ontology ;
     owl:imports icare:agent,
         icare:core,
         icare:healthhub-service,
-        <http://maya-project.eu/icareonto/imports/skos-reference>,
+        <https://w3id.org/icareonto/imports/skos-reference>,
         icare:knowledge-resource,
         icare:metadata,
         icare:person-role,
         icare:social-context ;
-    owl:versionIRI <http://maya-project.eu/icareonto/releases/1.0.0/dialogue> ;
-    owl:versionInfo "1.0.0" .
+    owl:versionIRI <https://w3id.org/icareonto/releases/1.0.0/dialogue> ;
+    owl:versionInfo "1.0.0" ;
+    meta:releaseStatus "Published" .
 

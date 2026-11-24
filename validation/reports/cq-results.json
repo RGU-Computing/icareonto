@@ -1,5 +1,5 @@
 {
-  "run_date": "2026-11-23",
+  "run_date": "2026-11-24",
   "ontology_version": "1.0.0",
   "source_register": "icareonto_final_consolidated_competency_questions_v5.xlsx",
   "source_register_sha256": "e46f6ffc5a42bf46d1e1f64ee515f76e2e499665341b883afe98aa6ea3dd42c0",
@@ -16,30 +16,30 @@
   },
   "source_type_and_import_errors": [],
   "inputs_sha256": {
-    "serialisation/alignments/approved.ttl": "0007606d132dec457e8d5f8e7a5c178a0b1df1141d56ab993603bf10b29f0fbd",
-    "serialisation/icareonto.ttl": "a4bb79c1fdfa39061349f17501ba0a1367e5c219bb058343ad3dabb9601536d5",
-    "serialisation/imports/metadata.ttl": "e5f6d3a24c776902e179260354f982491e4d41ab379328539548e85ec5c53cc5",
-    "serialisation/imports/prov-reference.ttl": "7b51641c42528bd9bded456daf56a509f38e2950146ac4625f3ed1f4798e79fe",
-    "serialisation/imports/skos-reference.ttl": "63c45138ba1d29f9fa4c43e54f9b3686d050546280df93feac2b0d374a97746c",
-    "serialisation/modules/agent.ttl": "28158a8edb551f69430cf0eabd5179fbb5ece24c95cba7a6c7a425d0ba86f4df",
-    "serialisation/modules/cancer-history.ttl": "94264a2cb477b7a6c4e774665263388de5f506558e59fa07925157193519e14d",
-    "serialisation/modules/clinical-profile.ttl": "06091dbbc0b6cf40cf8bd2622974872b1b8508d91735724c473aa442ddcd3200",
-    "serialisation/modules/core.ttl": "292028d6c6b17a42ded6e86145a460947cca8727a909979f4953336586e4909f",
-    "serialisation/modules/cv-risk.ttl": "3943f4d2ec8f9fa8a8d3024b93f062eb7f1f59c13e9f134a85e1c457f627d7a8",
-    "serialisation/modules/dialogue.ttl": "cdcce3e7e23b5b7c949d5ed969c48505463d9f063b245341cd63100e6170ae5e",
-    "serialisation/modules/exercise.ttl": "f3cf545539e26040c3d3c8891b3bf794b92c99307e146b9e169dbce4769e85e3",
-    "serialisation/modules/healthhub-service.ttl": "9fa11444598ca1e5f27cb236ab5ceae2ba00822c8789e1c836e497910b355ba0",
-    "serialisation/modules/intervention-careplan.ttl": "f63cce4edd6ba4146923ccda0bb0230de6619c2b196e7ab12a3d85bb9c46fa38",
-    "serialisation/modules/knowledge-resource.ttl": "a43fe3fcc31dbf086fb89ff4b3b1079dc8f4001eb799f24394a882a6f901ea84",
-    "serialisation/modules/lifestyle-behaviour.ttl": "d87746fc7a97b1d2bafc37708d337845b0649f059ac82f1978aae8a7e4b40aaa",
-    "serialisation/modules/measurement-biomarker.ttl": "08d886988c86f6e941e74b2e8b30223048d84075558ae27f9153d1ff23040caf",
-    "serialisation/modules/nutrition.ttl": "8ed8024f055d8f96a44744146a2f25361a7afc1bc0cd9454b856830214016d35",
-    "serialisation/modules/person-role.ttl": "a1ec9637469fdbd90262c20d28093228b83022926ae22b29801b8ae789d44bb2",
-    "serialisation/modules/pilot.ttl": "d54a38586cfdaa870bafff4cdc9bd65ef0c23be102521c9f0578932519dd86e3",
-    "serialisation/modules/provenance-governance.ttl": "e98d9900bbb8a94f0d3418981b194225c4beba618a19aec4f3ddc8443802810b",
-    "serialisation/modules/social-context.ttl": "407122e7d6b969c08b7b1098c6c0be834e9897d3a3ea3abb54a1cca4e0cb51b2",
-    "validation/cq-tests/coverage.ttl": "986b472bf9ee4bbcf62a29515d724477b27bf87cc38325deca29b42663f67607",
-    "validation/demo_spain_aya.ttl": "6aed52897c61e3d366f431b4d9555459c886cc4cf8f4a830adabe0c1e8e724db"
+    "serialisation/alignments/approved.ttl": "a9d0cc96e157c429bda96050aaccc45750f821d16a7173f494998133706b8c9c",
+    "serialisation/icareonto.ttl": "40de40031615ab36ee49c5a1e50963c289ade6aa5791879d30524e9713bb9173",
+    "serialisation/imports/metadata.ttl": "f9074cca0d3867c6467d7105de52bfef3bf5003d55b17a56b5bf34cdc51ca869",
+    "serialisation/imports/prov-reference.ttl": "71d17af35ad10e8dfc0232eca36a249a9b729fb9a4f3d139297603073eedccb8",
+    "serialisation/imports/skos-reference.ttl": "2ed2b572c329de254b45c8065cdb767c4fe4949403dde686cad2beb453788dc3",
+    "serialisation/modules/agent.ttl": "e7abf6ecf58e2c6300daf00d6f6b773036b6c675f92a8d97b82c2c02bb2cea21",
+    "serialisation/modules/cancer-history.ttl": "2ec87524f017205df56eaca17587edd5b0d06e749ede897e6a97453b9402ba95",
+    "serialisation/modules/clinical-profile.ttl": "cc0ba019bc4802f188e361fb945b9aae38ad2562559ee5cd38d07ab4c326ef3d",
+    "serialisation/modules/core.ttl": "ffa3bf58de6bcb2bfaaddb108705390c9205d6c6b1145274c0ff05a06096bef7",
+    "serialisation/modules/cv-risk.ttl": "9dd59d37b716328550a7a20ea508ab0193bb4a4869562f43455aea5d91b50eea",
+    "serialisation/modules/dialogue.ttl": "67b465db4ee315603eb140d3b5e04cb27b2d09fbbc466982687b09cf7967a1f8",
+    "serialisation/modules/exercise.ttl": "e11fa006bab9ef35d985d3b30569cc37f012b1bc5aea3e799d2235dcb75b4a78",
+    "serialisation/modules/healthhub-service.ttl": "7368ac2e23cb07b024ca310e422ff35a546f8f7724b0dc571138356fa313c9bc",
+    "serialisation/modules/intervention-careplan.ttl": "6c4753a6b91700ef72e3f6b4f818fba76eb0f11f21a10c33a9ef70909361ae0b",
+    "serialisation/modules/knowledge-resource.ttl": "025be1f3cf592b0c4e2caf80c1ea6da737cb51f54f30511199000c3b46ba245f",
+    "serialisation/modules/lifestyle-behaviour.ttl": "35223315764b7a68cbfb7e74311eee6a122777b8ad8ae5df93aebad3cd653e99",
+    "serialisation/modules/measurement-biomarker.ttl": "932c5ffe5c945422aa348c9ba8487b597d048a7ea850d1d3bd5ec4acd63ab8da",
+    "serialisation/modules/nutrition.ttl": "ef45faf981af54764726401ef3a9cab724fbaa8306dddefc23edd180bdb5abb9",
+    "serialisation/modules/person-role.ttl": "31b7599c92a27692c72edd8e9d5342826c6515d4291b3fb08c0accdd307067cb",
+    "serialisation/modules/pilot.ttl": "246117e604fc189d4beab0b80823bfe44b4aac802a166fea2e906f1c5ebffca6",
+    "serialisation/modules/provenance-governance.ttl": "f8f8c1c7d601458312be299e5867d00761c039719d0fac756d027314d7143655",
+    "serialisation/modules/social-context.ttl": "c3db579962e91aa90ff0eac495026c0501379fef9c3d46a6e4ebfedcd93155fc",
+    "validation/cq-tests/coverage.ttl": "410c7ad3bdc75142225258dba78437f87070fbead091881971d314acbdc3748d",
+    "validation/demo_spain_aya.ttl": "da9e6a087f60c40803b071fdf9fbb3b35aa7b998464c1733aa7aab66d4785ef3"
   },
   "suite_spec_sha256": "7a5266a1c36377d77d3ae3f42eb236a6638da893d8bec4a77815de10a89184d4",
   "owl_validation": {
@@ -78,14 +78,14 @@
       ],
       "actual": [
         {
-          "factor": "test:dietary-factor"
+          "factor": "demo:low-activity-risk-factor"
         },
         {
-          "factor": "demo:low-activity-risk-factor"
+          "factor": "test:dietary-factor"
         }
       ],
       "error": null,
-      "query_sha256": "dc674e758e66d6b459667a7e5e73196c95134b44c73204c0e8d5b6f9abced914"
+      "query_sha256": "5b3b438e1d99277125afd65932de6c6eb80e87859f45f967f746b10eadfd6e9d"
     },
     {
       "id": "CQ-002",
@@ -111,7 +111,7 @@
         }
       ],
       "error": null,
-      "query_sha256": "0350f41597403dc2a103464dc8f591d335f62adc39e89fe31811f6168a559d2f"
+      "query_sha256": "1ee68b0b5513e7b4259642db4bd9d42e9fe2e8c22c9b1e350acd10b448266064"
     },
     {
       "id": "CQ-003",
@@ -137,7 +137,7 @@
         }
       ],
       "error": null,
-      "query_sha256": "a1182c199a1cb9db40b0767fed0efc936c830810473817bbb3a1768dddb545b1"
+      "query_sha256": "3b2d500f57ba3f0fdad50174a11b7d9f4e99620240b1ef19c55a5e35903b528d"
     },
     {
       "id": "CQ-004",
@@ -163,7 +163,7 @@
         }
       ],
       "error": null,
-      "query_sha256": "5c43b639d49696e5d4cf268da7d1282646ccbd31a6e0dd44c87f8eab570c6e5b"
+      "query_sha256": "25b1779483378b6772faadebd93ea46a5f6280072a504f38f09096cb8c969d76"
     },
     {
       "id": "CQ-005",
@@ -193,16 +193,16 @@
       ],
       "actual": [
         {
-          "factor": "demo:low-activity-risk-factor",
-          "value": "0.4"
-        },
-        {
           "factor": "test:prior-treatment-factor",
           "value": "0.6"
+        },
+        {
+          "factor": "demo:low-activity-risk-factor",
+          "value": "0.4"
         }
       ],
       "error": null,
-      "query_sha256": "5cfab6a01328216a646b4974f6b9048b3fae0b434a0d55f69a0e7bca03242ea7"
+      "query_sha256": "e71ffd68ae043cccf48298d85a01d6d8cad255cd976e3e930853bb442e17e565"
     },
     {
       "id": "CQ-006",
@@ -228,7 +228,7 @@
         }
       ],
       "error": null,
-      "query_sha256": "b4e393de93988e8c2cd6ab9b6c3bb1de39c1db943358044f44e9d9b9ca196c6a"
+      "query_sha256": "e664b827e5a5b353159a45d05b751d7b41aa020ad65947e0ad52ea0c57005d33"
     },
     {
       "id": "CQ-007",
@@ -254,7 +254,7 @@
         }
       ],
       "error": null,
-      "query_sha256": "d9b75a9ef581b5de1c75e7f54cea9b40119490528b5e06d42475a7f9d0f77a7f"
+      "query_sha256": "f0e5017f30b43c559e38caf61b7efffee5c7a56fcf93bc7aa84da25037d5fd3a"
     },
     {
       "id": "CQ-008",
@@ -282,7 +282,7 @@
         }
       ],
       "error": null,
-      "query_sha256": "7a8b36d9e9964156a0a1122ef9965b09b0b30d9adedc635f16f3db544ff37a96"
+      "query_sha256": "9a62f90a5e3cefa40fae54cec2b301aada5f60c1f81b72e4761abe21c830bbc4"
     },
     {
       "id": "CQ-009",
@@ -308,7 +308,7 @@
         }
       ],
       "error": null,
-      "query_sha256": "903076d843716279be8be4067633c670f0426fb14ae563698776f3636d6d60ef"
+      "query_sha256": "88941fa830781da9bb3a6e462557bcf5af8e2adb0cf7432c6ba7659177ba31fe"
     },
     {
       "id": "CQ-010",
@@ -336,7 +336,7 @@
         }
       ],
       "error": null,
-      "query_sha256": "944758a39c8922a3c3f3c3787f3ee391f599d23f5b0e2fe7a1eeb6db2144fca8"
+      "query_sha256": "271f5300a7b16cf241eda0570a27e4c43a44e7a31e2eb5ec1c209c9e4341ca4e"
     },
     {
       "id": "CQ-011",
@@ -368,20 +368,20 @@
       ],
       "actual": [
         {
-          "record": "demo:symptom-record",
-          "type": "icare:SymptomRecord"
-        },
-        {
           "record": "test:late-effect-record",
           "type": "icare:ClinicalConditionRecord"
         },
         {
           "record": "test:unrelated-condition-record",
           "type": "icare:ClinicalConditionRecord"
+        },
+        {
+          "record": "demo:symptom-record",
+          "type": "icare:SymptomRecord"
         }
       ],
       "error": null,
-      "query_sha256": "bd28ab6a9a69ff36f6046eee045a1e52ad864008faf0ba2b34caa8263023245d"
+      "query_sha256": "05622b6295289dcecd8bf91e8e17d7f3b3abf465c8a48b7dbd3101f4afcb6d14"
     },
     {
       "id": "CQ-012",
@@ -407,7 +407,7 @@
         }
       ],
       "error": null,
-      "query_sha256": "c5f9084ab23b95a17840e8683f389f1c9fd73d454636b957c0d1a6c1ab277fd6"
+      "query_sha256": "0b9777e9c2ec94cff684296c8c32ad49f7301df8869628b93ace876dca38b5b7"
     },
     {
       "id": "CQ-013",
@@ -432,14 +432,14 @@
       ],
       "actual": [
         {
-          "recommendation": "demo:recommendation-nutrition"
+          "recommendation": "demo:recommendation-walking"
         },
         {
-          "recommendation": "demo:recommendation-walking"
+          "recommendation": "demo:recommendation-nutrition"
         }
       ],
       "error": null,
-      "query_sha256": "38ad87f3acba4f3a8c2a42727954a21296bdd015d24db38692db5052ce8b2803"
+      "query_sha256": "e68c65f1a09098b66314d83856fbc4b379535e14688eb01d3d4106754824ccd1"
     },
     {
       "id": "CQ-014",
@@ -465,7 +465,7 @@
         }
       ],
       "error": null,
-      "query_sha256": "e68fbc2142f0e60a1088cc5f462632d27ada494b11bcf0ef015cffa345c12821"
+      "query_sha256": "31a6e1e8c0a0dfd5898fd1e08e3bccff6acffa9104470c69c0ea1482be07947b"
     },
     {
       "id": "CQ-015",
@@ -494,17 +494,17 @@
       ],
       "actual": [
         {
-          "type": "icare:ExerciseIntervention"
+          "type": "icare:NutritionIntervention"
         },
         {
-          "type": "icare:NutritionIntervention"
+          "type": "icare:ExerciseIntervention"
         },
         {
           "type": "icare:HealthLiteracyIntervention"
         }
       ],
       "error": null,
-      "query_sha256": "4ed8d70adf09b69383f02488503321994eb20572407b38bf1366806d6cc8c154"
+      "query_sha256": "74d63fd3f39c386bde0b4e92e3fac89c07c6b623db8538068e8d8e7af640f42c"
     },
     {
       "id": "CQ-016",
@@ -530,7 +530,7 @@
         }
       ],
       "error": null,
-      "query_sha256": "4956bd394373eae8710bc4ef7e35f1433a8a95a744de8e398a6c462bc1042a06"
+      "query_sha256": "1717c73b9c6068347ba258663dcd06f8bdd77be8b049b8be88461cd57a0f784d"
     },
     {
       "id": "CQ-017",
@@ -556,7 +556,7 @@
         }
       ],
       "error": null,
-      "query_sha256": "8386dec93954d00408a61567470a4ebe91117f928eafcb71f97505ffceba5d29"
+      "query_sha256": "8ae6ab751831d2379af0babe15b89949bf88422b2c49c9ddcd32d10e1cd1d3c6"
     },
     {
       "id": "CQ-018",
@@ -582,7 +582,7 @@
         }
       ],
       "error": null,
-      "query_sha256": "d8694698518a5dbc4c746121a0acf49c65ef12b79ef515f7f4fc76479d969247"
+      "query_sha256": "fd1ffb0f37acddc1120c645fd5386e9e37d80f0e543ef8df60dcb86ea4f28647"
     },
     {
       "id": "CQ-019",
@@ -608,14 +608,14 @@
       ],
       "actual": [
         {
-          "resource": "test:mixed-topic-resource"
+          "resource": "demo:resource-nutrition-es"
         },
         {
-          "resource": "demo:resource-nutrition-es"
+          "resource": "test:mixed-topic-resource"
         }
       ],
       "error": null,
-      "query_sha256": "a41107db04a2920028ca556d6bfe57fd29655f0d1b616fd9768e20d80206660f"
+      "query_sha256": "44dca545e1cb23a9db6ac1664c6535c3a79329e6999f14d68a81f51203ab1937"
     },
     {
       "id": "CQ-020",
@@ -641,7 +641,7 @@
         }
       ],
       "error": null,
-      "query_sha256": "12bdec7e87be3f75c577ebf782fbe34dcfff4a6c83241eb0a979df144b66623f"
+      "query_sha256": "db88b3a52d665c84e02d0f1c16881a2a0fd49a8445b0dec8c1b9d7e1ca4a2ec5"
     },
     {
       "id": "CQ-021",
@@ -667,7 +667,7 @@
         }
       ],
       "error": null,
-      "query_sha256": "d8f73567243ca468c3cbbd27eb8fe7cba4d27fd1bf8289ac60a7d867d089991a"
+      "query_sha256": "32e27f5152fd5fe0b203bfd1fd61321fbc23910420f895e4d750ff6c4f0bddb6"
     },
     {
       "id": "CQ-022",
@@ -693,7 +693,7 @@
         }
       ],
       "error": null,
-      "query_sha256": "36933bbce5251ff7de96c03d3a38198a0051a3c261805ea18b31235d926a99c5"
+      "query_sha256": "5eba52817a6c5bb71c580fbfa33f835b0ae5fe37867ca7c4e38722653ccf61f6"
     },
     {
       "id": "CQ-023",
@@ -719,7 +719,7 @@
         }
       ],
       "error": null,
-      "query_sha256": "3b9dae3638d6553afd0367d2409e660ea67efd35eb399c9bb7ea6bfd90d41488"
+      "query_sha256": "71ea5b338689497260fd754c78cfef52a1dbb4b7c3934cb3a94161485e07b615"
     },
     {
       "id": "CQ-024",
@@ -751,7 +751,7 @@
         }
       ],
       "error": null,
-      "query_sha256": "8cbe5ccd293241a9f0ba47e4d70d9d7edd44161fdc44104143541be5b9037cff"
+      "query_sha256": "73036d5c9fe158290e5cc6ea72ec8f3345934b522bf2cc621107435fa44d0143"
     },
     {
       "id": "CQ-025",
@@ -780,7 +780,7 @@
         }
       ],
       "error": null,
-      "query_sha256": "6810199b34196a23bc993059d64138cdeca280eabfdf79782365cb935d7e5fa1"
+      "query_sha256": "704e6d84bb06fb1e1fb2094e5af7266ab781268eacad897363fad6c3ace1a17e"
     },
     {
       "id": "CQ-026",
@@ -806,7 +806,7 @@
         }
       ],
       "error": null,
-      "query_sha256": "9ebc089423835efd111ee1a58930b77c8082c178d2318a0f80fad18f05f63d1e"
+      "query_sha256": "53590886b348fb77b689c8eec16a9fd4970dd3df4bb5184e7f49f2f8b80b68c5"
     },
     {
       "id": "CQ-027",
@@ -832,7 +832,7 @@
         }
       ],
       "error": null,
-      "query_sha256": "b3f788dddef18cceb392b7ea5bf6efe1e3012c61bef0c630f4a22a344ff98391"
+      "query_sha256": "5c276e3de541a1958d3a2f847987e597ee4d5fdffcef6a4374ec837ef273ac79"
     },
     {
       "id": "CQ-028",
@@ -858,7 +858,7 @@
         }
       ],
       "error": null,
-      "query_sha256": "a565f0a6c3bf3e8e204d85c11600e232b5cc0945d090a6f090b93ff4683f85fe"
+      "query_sha256": "3e774627db4a09039ed774e9253bb05284ff6ad4698c437c264698a5e1a03c52"
     },
     {
       "id": "CQ-029",
@@ -920,10 +920,16 @@
       ],
       "actual": [
         {
-          "type": "icare:CulturalFactor"
+          "type": "icare:DigitalLiteracy"
         },
         {
-          "type": "icare:DigitalLiteracy"
+          "type": "icare:HealthLiteracy"
+        },
+        {
+          "type": "icare:SupportNetwork"
+        },
+        {
+          "type": "icare:LivingSituation"
         },
         {
           "type": "icare:AccessOrEngagementBarrier"
@@ -932,22 +938,16 @@
           "type": "icare:TrustConcern"
         },
         {
-          "type": "icare:LanguageBarrier"
+          "type": "icare:TransportationBarrier"
         },
         {
-          "type": "icare:TransportationBarrier"
+          "type": "icare:LanguageBarrier"
         },
         {
           "type": "icare:PrivacyConcern"
         },
         {
-          "type": "icare:HealthLiteracy"
-        },
-        {
-          "type": "icare:LivingSituation"
-        },
-        {
-          "type": "icare:SupportNetwork"
+          "type": "icare:CulturalFactor"
         },
         {
           "type": "icare:SocioEconomicFactor"
@@ -956,14 +956,14 @@
           "type": "icare:EmploymentStatus"
         },
         {
-          "type": "icare:EducationalAttainment"
+          "type": "icare:FinancialConstraint"
         },
         {
-          "type": "icare:FinancialConstraint"
+          "type": "icare:EducationalAttainment"
         }
       ],
       "error": null,
-      "query_sha256": "80026ea5be1232bf3c8d8f24c21f057ffb1dd0eabae5aa287b957dd8e5a99001"
+      "query_sha256": "6ef90523a9a03aebd4aee6d58cadba0d4d6a26ac317daee3eafc2fe0e38b7fd4"
     },
     {
       "id": "CQ-030",
@@ -999,7 +999,7 @@
         }
       ],
       "error": null,
-      "query_sha256": "848142880112c41d3b16516e1dccde6eb021178d6393e5956b2e947a36050b3d"
+      "query_sha256": "129629be0d43082f87b69de56aa0e4d70c755a9098990e3bec15bce81ea40239"
     },
     {
       "id": "CQ-031",
@@ -1027,7 +1027,7 @@
         }
       ],
       "error": null,
-      "query_sha256": "2bcd629927eb6dde8f8ea70b0a5423bc55bc5f9911d6a6dec91eefe00154f5ec"
+      "query_sha256": "01462d5b36f8fc38e7dd1e34a93e738aece20a77d334dac8955191a0bc1eab49"
     },
     {
       "id": "CQ-032",
@@ -1055,17 +1055,17 @@
       ],
       "actual": [
         {
-          "record": "test:cultural-record"
+          "record": "test:employment-record"
         },
         {
           "record": "demo:health-literacy-record"
         },
         {
-          "record": "test:employment-record"
+          "record": "test:cultural-record"
         }
       ],
       "error": null,
-      "query_sha256": "cd05db7ecec4bb9b71c011be75940c6b2fac36f239d2481b12863d8eb686195b"
+      "query_sha256": "e95fa441deef3167ff104073fc5b25cd714ae0e19fddafb6e455bec00191c14f"
     },
     {
       "id": "CQ-033",
@@ -1091,7 +1091,7 @@
         }
       ],
       "error": null,
-      "query_sha256": "e624dd46aeec62f500a218dc383040f3f94b643f7e79b903e01985e7d443c415"
+      "query_sha256": "91b504aa7a773757a470abb89bee5355593d5f86991b4690f8e4db1c63e7ea57"
     },
     {
       "id": "CQ-034",
@@ -1117,7 +1117,7 @@
         }
       ],
       "error": null,
-      "query_sha256": "9ae568523f49ad2e07ab24ebe1984e0f70a4f00603ed6924c0a9564f09030eaa"
+      "query_sha256": "6a67c4827dee2cef7b8866aa7d4992442717d0bca79f2a2a0c9d59907a418c8f"
     },
     {
       "id": "CQ-035",
@@ -1173,16 +1173,10 @@
       ],
       "actual": [
         {
-          "type": "icare:AlcoholUseBehaviour"
-        },
-        {
           "type": "icare:NutritionBehaviour"
         },
         {
           "type": "icare:DietaryPattern"
-        },
-        {
-          "type": "icare:SleepBehaviour"
         },
         {
           "type": "icare:AdherenceBehaviour"
@@ -1191,26 +1185,32 @@
           "type": "icare:MonitoringAdherenceBehaviour"
         },
         {
-          "type": "icare:CarePlanAdherenceBehaviour"
+          "type": "icare:MedicationAdherenceBehaviour"
         },
         {
-          "type": "icare:MedicationAdherenceBehaviour"
+          "type": "icare:CarePlanAdherenceBehaviour"
         },
         {
           "type": "icare:SedentaryBehaviour"
         },
         {
-          "type": "icare:PhysicalActivityBehaviour"
+          "type": "icare:AlcoholUseBehaviour"
         },
         {
           "type": "icare:SubstanceUseBehaviour"
+        },
+        {
+          "type": "icare:SleepBehaviour"
+        },
+        {
+          "type": "icare:PhysicalActivityBehaviour"
         },
         {
           "type": "icare:SmokingBehaviour"
         }
       ],
       "error": null,
-      "query_sha256": "7637f388c4bb24250f36b0626dbc7e6903086bebb3d3e45da444df96d1b11564"
+      "query_sha256": "75cc45787c1273b6971c29eb8118ada47d71a7b37260ea7949587ed03728f522"
     },
     {
       "id": "CQ-036",
@@ -1236,7 +1236,7 @@
         }
       ],
       "error": null,
-      "query_sha256": "8b6da24e8068a7678823d2cd6790068e563b68b0a29f8e1c20e117bceb7dd509"
+      "query_sha256": "9b5f09e71d73cac0321560264c746c8dd1b9b3abb7ddd4d1028ddb1d5920c66b"
     },
     {
       "id": "CQ-037",
@@ -1262,7 +1262,7 @@
         }
       ],
       "error": null,
-      "query_sha256": "1a204cb716e70dfbb90e307c4313e672426ebe1516c41223cb7a6816f6096cea"
+      "query_sha256": "d537baf9f769dc43036ab4ae744b1f5ca7fdc884a43528b212de92ab8bf78e60"
     },
     {
       "id": "CQ-038",
@@ -1288,7 +1288,7 @@
         }
       ],
       "error": null,
-      "query_sha256": "69bd8114d58e94fe3b48f4553fb37023041df04a5ca75bc5c1cbd38a93cd986c"
+      "query_sha256": "2ec0b6c353a3d1b43f3165d26a11adda84a1a6766e8213544e914eb05de790e1"
     },
     {
       "id": "CQ-039",
@@ -1319,20 +1319,20 @@
       ],
       "actual": [
         {
+          "parameter": "test:body-fat-parameter"
+        },
+        {
           "parameter": "demo:bmi"
         },
         {
           "parameter": "demo:weight"
         },
         {
-          "parameter": "test:body-fat-parameter"
-        },
-        {
           "parameter": "demo:height"
         }
       ],
       "error": null,
-      "query_sha256": "b47ac3cbe1cc2cf4649077283a8c9f18308c8dde4bb5b3f0e760b6deb98dbd5b"
+      "query_sha256": "f0f391025fd4a84e031a90ba69a2a8d23a8d80318c445f11a330fa6ce8b03235"
     },
     {
       "id": "CQ-040",
@@ -1364,20 +1364,20 @@
       ],
       "actual": [
         {
+          "parameter": "test:body-fat-parameter"
+        },
+        {
           "parameter": "demo:bmi"
         },
         {
           "parameter": "demo:weight"
         },
         {
-          "parameter": "test:body-fat-parameter"
-        },
-        {
           "parameter": "demo:height"
         }
       ],
       "error": null,
-      "query_sha256": "ff4f97d3dc499462582977a053c4f387fce6f19702fd39a409f16660529e4939"
+      "query_sha256": "f8590e2abf6e2b8cc893593dc433d057df091ad5f552fc8726cb77cc76410fbe"
     },
     {
       "id": "CQ-041",
@@ -1414,10 +1414,13 @@
       ],
       "actual": [
         {
+          "parameter": "demo:systolic-bp"
+        },
+        {
           "parameter": "demo:diastolic-bp"
         },
         {
-          "parameter": "demo:systolic-bp"
+          "parameter": "test:body-fat-parameter"
         },
         {
           "parameter": "demo:bmi"
@@ -1426,14 +1429,11 @@
           "parameter": "demo:weight"
         },
         {
-          "parameter": "test:body-fat-parameter"
-        },
-        {
           "parameter": "demo:height"
         }
       ],
       "error": null,
-      "query_sha256": "af39ab4c6b4e002f2559107f5c8d11ac2634fff55bd11eff2d9e4eb103610b48"
+      "query_sha256": "ad74ab914e1f47afe72fe26371f2512aef17c825cc5867cb755b37f9f72dc1db"
     },
     {
       "id": "CQ-042",
@@ -1464,7 +1464,7 @@
         }
       ],
       "error": null,
-      "query_sha256": "753e6573689b38df4426602cca756242b7cad7d186bbd128c93678ee8e06e913"
+      "query_sha256": "5447bcab5a0f8a2a285998b76753951014394f6868a4b8f59bceb8cfd30e4395"
     },
     {
       "id": "CQ-043",
@@ -1513,7 +1513,7 @@
         }
       ],
       "error": null,
-      "query_sha256": "1867ee68de996b5838f5e3d2be10027603381b34c7f69b6a34325e4682b2c7f4"
+      "query_sha256": "9f88245c0f9b003b611c16e11759a49ed75d25648034e086a0248e9521507f58"
     },
     {
       "id": "CQ-044",
@@ -1539,7 +1539,7 @@
         }
       ],
       "error": null,
-      "query_sha256": "ea34febb9f14122ce0fc26033af9b9559599bc8bc54bc475d2fcf40ace3b8d9c"
+      "query_sha256": "d2d785514267c625c192d3dafa45aa24ff37fd9c3eb2d373b2889f623b559d37"
     },
     {
       "id": "CQ-045",
@@ -1565,7 +1565,7 @@
         }
       ],
       "error": null,
-      "query_sha256": "62db43ea7e1383b149ab71e1674a691e3839f4ecb1a4dbb9d59dc667f96d3744"
+      "query_sha256": "6772b4e995052390c7ecd0dc0973b38321ab484dc2dccea312cf1a9d8999a77b"
     },
     {
       "id": "CQ-046",
@@ -1597,7 +1597,7 @@
         }
       ],
       "error": null,
-      "query_sha256": "5281e78c06f1c245f259e28b24eeedf8ef12abcfcbb3924565e2f515a2024d13"
+      "query_sha256": "d5fa2b6c28e661a6ca76bdb99efdee2ac850063d3c25396549b14df77300138a"
     },
     {
       "id": "CQ-047",
@@ -1623,7 +1623,7 @@
         }
       ],
       "error": null,
-      "query_sha256": "1c9dbadb01a0d01b6bfa7133f80f50248773d9b03111d4cf1c618d8f6a357291"
+      "query_sha256": "1924f335a3768197602a441a167525fd028c6ce225e25de7ca4e970d91f78c10"
     },
     {
       "id": "CQ-048",
@@ -1649,7 +1649,7 @@
         }
       ],
       "error": null,
-      "query_sha256": "bdf68bcc654c1f12c8b3cdd2a0fbb7071794550ba0489772b1d24d2ae84f65c3"
+      "query_sha256": "c3f7c30a465f7c3f48f8211feafa2f38cf033598f04dd3e4156b8a2b8cfd3005"
     },
     {
       "id": "CQ-049",
@@ -1674,14 +1674,14 @@
       ],
       "actual": [
         {
-          "parameter": "demo:diastolic-bp"
+          "parameter": "demo:systolic-bp"
         },
         {
-          "parameter": "demo:systolic-bp"
+          "parameter": "demo:diastolic-bp"
         }
       ],
       "error": null,
-      "query_sha256": "e90c6449b170fa4559123bd1630be040c81277a3ac330f6822cc8c2e3886ce2d"
+      "query_sha256": "d0e94d5aedba09c9259b67a34f2beebbd395bc3499e9b2777f99383f60df981a"
     },
     {
       "id": "CQ-050",
@@ -1707,7 +1707,7 @@
         }
       ],
       "error": null,
-      "query_sha256": "d40115f325f8b8cba2cca2924aa05c5a28e352b7975a540328674431586b2d82"
+      "query_sha256": "fb02b1bfd9a37557c968df9d212a5baaf52f0a922b8fed127504086ce38b7789"
     },
     {
       "id": "CQ-051",
@@ -1734,7 +1734,7 @@
         }
       ],
       "error": null,
-      "query_sha256": "7f6fc90c6074d84310a3d04ad666a17981cbb71be5cc5d2365a6128657c3e36e"
+      "query_sha256": "6d591662101d685786998e3475d0e3b68bdf416405debae6ec5b2afe49c368d3"
     },
     {
       "id": "CQ-052",
@@ -1760,7 +1760,7 @@
         }
       ],
       "error": null,
-      "query_sha256": "0bc52093f8a540f6731ccb1fb41bc7ec32982c1308fa73b996d65048b8f28d0e"
+      "query_sha256": "d1892fca36e084cb812dc4fe98cb59467d04bb07efc576451d484d0bfbc23c8e"
     },
     {
       "id": "CQ-053",
@@ -1786,7 +1786,7 @@
         }
       ],
       "error": null,
-      "query_sha256": "6c7ac9a40b1903194ae67a7d6c40b25778d7faaf57d18cc8f5894bc58df1e7db"
+      "query_sha256": "78e9e66f7451763b8b4a4005a8282b48fc5dcee262ab5fa0726f4a009e73daf0"
     },
     {
       "id": "CQ-054",
@@ -1812,7 +1812,7 @@
         }
       ],
       "error": null,
-      "query_sha256": "1438b7dd541c428f5e23511c1548e884e54705a32eb262da29e62b0a4cbcab31"
+      "query_sha256": "9df277501a703c2f43927d6a0f024d56287264fa5f409dc5c0b013599ec4daa0"
     },
     {
       "id": "CQ-055",
@@ -1843,7 +1843,7 @@
         }
       ],
       "error": null,
-      "query_sha256": "b72b053565318307c0eabb72bd060248d88e722d9c4f2044b51a65be43e915d8"
+      "query_sha256": "133f265f552c8377b947063fc96f3093c61cb5f0cebdcfce04c0fdd959f351c5"
     },
     {
       "id": "CQ-056",
@@ -1869,7 +1869,7 @@
         }
       ],
       "error": null,
-      "query_sha256": "844b9eb626bca52f366c2d4b125a7f38853777c578975f48d973e382bdbaa07e"
+      "query_sha256": "ecbeba830dc8d0aec781c97bb10fd585168ceea71dd883dfd68c77719e8cb2bb"
     },
     {
       "id": "CQ-057",
@@ -1901,7 +1901,7 @@
         }
       ],
       "error": null,
-      "query_sha256": "c491f5cd1aefcaee95e2f7f5ffb3bc74dbf9d0aa472fb97dc8417ce0caf3cb31"
+      "query_sha256": "9d78c331a048348dc081cc0db95622a7a0346a4beebc5eef072d2fb33a185352"
     },
     {
       "id": "CQ-058",
@@ -1927,7 +1927,7 @@
         }
       ],
       "error": null,
-      "query_sha256": "12d74b69be838e9bdd34b066c497e3aaa0d1fab65207eafabea6f2da405a0a5f"
+      "query_sha256": "7f35433716f1848023d40ac95a53f7f35cb262f60899b6092ffd6285a9aa17fd"
     },
     {
       "id": "CQ-059",
@@ -1953,7 +1953,7 @@
         }
       ],
       "error": null,
-      "query_sha256": "dcfd37d5c80222e778fc31aa627df3a5200af431945226a69c99363d3c093f4d"
+      "query_sha256": "ba7a89dcd3d556454853d281947c1c8d2152955ea5070fca594cec41ede25c18"
     },
     {
       "id": "CQ-060",
@@ -1987,23 +1987,23 @@
       ],
       "actual": [
         {
-          "modality": "icare:FlexibilityExercise"
+          "modality": "icare:AerobicExercise"
         },
         {
-          "modality": "icare:AerobicExercise"
+          "modality": "icare:BalanceTraining"
         },
         {
           "modality": "icare:CombinedTraining"
         },
         {
-          "modality": "icare:BalanceTraining"
+          "modality": "icare:FlexibilityExercise"
         },
         {
           "modality": "icare:ResistanceTraining"
         }
       ],
       "error": null,
-      "query_sha256": "be5056bb343ee02358f4d3842bccf941089a6044938fb3907e63b09fa823c634"
+      "query_sha256": "95900b612f07d5fac4c6fb1d6b0a05c31fd2f15ec6e83d5d54da2f6bacfede5b"
     },
     {
       "id": "CQ-061",
@@ -2034,20 +2034,20 @@
       ],
       "actual": [
         {
-          "pattern": "icare:HighIntensityIntervalTraining"
-        },
-        {
-          "pattern": "icare:CircuitTraining"
-        },
-        {
           "pattern": "icare:ContinuousTraining"
         },
         {
+          "pattern": "icare:HighIntensityIntervalTraining"
+        },
+        {
           "pattern": "icare:IntervalTraining"
+        },
+        {
+          "pattern": "icare:CircuitTraining"
         }
       ],
       "error": null,
-      "query_sha256": "337907485dd93a1925ee5eefe3fcf7bf5e68d0cbaeba1287e60f80a852336996"
+      "query_sha256": "5da0eded5fa8553eac778f5fdd92c546b4b5fe8da108c6428e11f4b269f15a81"
     },
     {
       "id": "CQ-062",
@@ -2073,7 +2073,7 @@
         }
       ],
       "error": null,
-      "query_sha256": "19b94a4ee08f880d47088830f519c4d3bb385db588b0b44601458de08f7c5f34"
+      "query_sha256": "85d3ae86656c62ca6ef05af89146f2aee9e6ff9963a7dccdafe068db9dfcf266"
     },
     {
       "id": "CQ-063",
@@ -2102,7 +2102,7 @@
         }
       ],
       "error": null,
-      "query_sha256": "8a6983487b0830d9e38d5d984a494b9756b8842d363de3b9b51a75fe82b4ec98"
+      "query_sha256": "6c16f6b52f9702a56fa6e5a83bb1d0d36eeb630ed35e095650b49884e1f3efcc"
     },
     {
       "id": "CQ-064",
@@ -2131,7 +2131,7 @@
         }
       ],
       "error": null,
-      "query_sha256": "74cb5d62fcc0b7b01388774ff35a24aa5bf5f4099ba58c65187a0a7e703ae6dc"
+      "query_sha256": "e98a44444857b582f29f484fc5b40ff8e3698862d6ff30b7c4239177d524eda1"
     },
     {
       "id": "CQ-065",
@@ -2157,7 +2157,7 @@
         }
       ],
       "error": null,
-      "query_sha256": "a886d86a2edc7bfb6a0fbf80dd8abb4b45e888548ae43f4a4b099b5ef178a4ac"
+      "query_sha256": "a5e050ad3c6138521141a734885423c34c1866df9ec6fd7781d23b59f4dd27ba"
     },
     {
       "id": "CQ-066",
@@ -2183,7 +2183,7 @@
         }
       ],
       "error": null,
-      "query_sha256": "24abd770ae9f4f2d36599bd6f492d0e3c6545ff297194555ccb54ad6a69bdab1"
+      "query_sha256": "2c253e7732685aef835f38df602eac275491628ed72d8718562a64b6b6378cf9"
     },
     {
       "id": "CQ-067",
@@ -2209,7 +2209,7 @@
         }
       ],
       "error": null,
-      "query_sha256": "67e7eb15979bd9f36a027fec10954cdab08a6ed7c100073bd2aee481a1dc93a2"
+      "query_sha256": "d9f8a90d19e706b1c3a155d85272347d178a7b2b0924b88a00c8e2cb776b54b3"
     },
     {
       "id": "CQ-068",
@@ -2235,7 +2235,7 @@
         }
       ],
       "error": null,
-      "query_sha256": "cdbb3c539fa6d061aea1bf644ee8c90c19df2cd40020d8a7f4ae9a0f9853cd5f"
+      "query_sha256": "3c0921fd794986035b800fed0be1704b14201db9792abaf923f1784f9b732555"
     },
     {
       "id": "CQ-069",
@@ -2261,7 +2261,7 @@
         }
       ],
       "error": null,
-      "query_sha256": "b4974fc20e034c0d84652331d1fdf0f50d88b1cc96626dc5139c3579b04fc26c"
+      "query_sha256": "ed4bd6dd09eef7f03566bf07d0285fbc62185854103a441aca8d7ebcd3dec037"
     },
     {
       "id": "CQ-070",
@@ -2287,7 +2287,7 @@
         }
       ],
       "error": null,
-      "query_sha256": "2fa293ea3f32f236e235adb68775ce5aa7e250845f04f27b5abe83aa436c9b18"
+      "query_sha256": "7f5c104e8c3906cfb5abe347cfa5a5a147fc6d8a7a530978c65fefdafb2f2477"
     },
     {
       "id": "CQ-071",
@@ -2313,7 +2313,7 @@
         }
       ],
       "error": null,
-      "query_sha256": "2a40b431d68cb690d3357ba0cd018672ff1811d5efb6d69cda681b03f13783aa"
+      "query_sha256": "fa17ac511fc094aac65e8477122a2ee6f7f6f3a63a6628f6e079246a1cb3356d"
     },
     {
       "id": "CQ-072",
@@ -2339,7 +2339,7 @@
         }
       ],
       "error": null,
-      "query_sha256": "823e7753e6489bca44c9593d407ae857313029034785bb5bf7285c7b80101b02"
+      "query_sha256": "87f610afe922fa0b416f9797c6accce7e6183db945f26e9750ba1476aa05cc40"
     },
     {
       "id": "CQ-073",
@@ -2365,7 +2365,7 @@
         }
       ],
       "error": null,
-      "query_sha256": "6563a33b9f4e751cd05763fc09a1ba8c683a6fe3d00dc1eb378cbf5b3f827970"
+      "query_sha256": "7bdf9fa8786410d0fe6dd87927999efbf62132ae2bd227b5356f1a1f8759488c"
     },
     {
       "id": "CQ-074",
@@ -2391,7 +2391,7 @@
         }
       ],
       "error": null,
-      "query_sha256": "70d6e5c8dea7e8cb5376a26d3aaa0969ba8edb15e787f27017c3daf0569d4c82"
+      "query_sha256": "7e0b44bb3cb55541f73758af0c2aca394daa6dc55092824e14a152c95da2d8b7"
     },
     {
       "id": "CQ-075",
@@ -2417,7 +2417,7 @@
         }
       ],
       "error": null,
-      "query_sha256": "b5849b263fb2418e52c4f7ceddbb92a7c02bd7615a8d6817493432ac42ae0248"
+      "query_sha256": "de88541022c8bad101a306ba532dcff89540b0172edde87b6c06f797b2ba3ef5"
     },
     {
       "id": "CQ-076",
@@ -2443,7 +2443,7 @@
         }
       ],
       "error": null,
-      "query_sha256": "409df2bdb540b19bb867914452f95c42e0c0833671c31d6c19793b6f661fdce6"
+      "query_sha256": "63237359b4492c4a55967d12825008021de6c79a477a618d7307c8030ea7b4a4"
     },
     {
       "id": "CQ-077",
@@ -2476,7 +2476,7 @@
         }
       ],
       "error": null,
-      "query_sha256": "95c13ff72d2fad2fa64cff8406f7ffa67f7c1258c71a1731c4138b614e3cf752"
+      "query_sha256": "babd627cc05dc9d098d904a76e44010b6fc61a31511dd8526292f2f31a235501"
     },
     {
       "id": "CQ-078",
@@ -2503,7 +2503,7 @@
         }
       ],
       "error": null,
-      "query_sha256": "236cbd2069f2efa6daa42e116422dc41cfdedc94c4b4aaa074c3d3fc280b0bae"
+      "query_sha256": "251fafeac2e639be677b59851f68bff5521941f502fbe03cd4e507807ecc0bc7"
     },
     {
       "id": "CTRL-OTHER-PERSON",
@@ -2522,7 +2522,7 @@
         }
       ],
       "error": null,
-      "query_sha256": "8ee82f21397e5ae0b0c43823f70e1bbcd1b59ad11dac83c56357b548d709e60f"
+      "query_sha256": "9c9c46be381e116956105a1e4387c613be8f86936416da09e425f55f6c2b1dc0"
     },
     {
       "id": "CTRL-UNKNOWN-PERSON",
@@ -2533,7 +2533,7 @@
       "expected": [],
       "actual": [],
       "error": null,
-      "query_sha256": "8bbdb047f52eecf1dd8e77ca01c4075131c9aa86e7efe5c51d3aa879e474bdbe"
+      "query_sha256": "ba4295b48ce110ae25f01148f8d1b6f5be716ba3c483f70ff23ea3340e763680"
     },
     {
       "id": "CTRL-BROKEN-PATH",
@@ -2551,7 +2551,7 @@
       "expected": [],
       "actual": [],
       "error": null,
-      "query_sha256": "2fa293ea3f32f236e235adb68775ce5aa7e250845f04f27b5abe83aa436c9b18"
+      "query_sha256": "7f5c104e8c3906cfb5abe347cfa5a5a147fc6d8a7a530978c65fefdafb2f2477"
     },
     {
       "id": "CTRL-PERFORMED-NOT-PLANNED",
@@ -2573,7 +2573,7 @@
         }
       ],
       "error": null,
-      "query_sha256": "74cb5d62fcc0b7b01388774ff35a24aa5bf5f4099ba58c65187a0a7e703ae6dc"
+      "query_sha256": "e98a44444857b582f29f484fc5b40ff8e3698862d6ff30b7c4239177d524eda1"
     }
   ],
   "limitations": [

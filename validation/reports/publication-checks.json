@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "checks": 661,
+  "checks": 663,
   "catalogue_resources": 41,
   "scope": "Release-source hashes, required import paths and packaged catalogue; local ignored runs are excluded.",
   "public_file_audit": "PASS",

@@ -1,4 +1,4 @@
-PREFIX i: <http://maya-project.eu/icareonto/>
+PREFIX i: <https://w3id.org/icareonto/>
 SELECT ?score ?category ?input ?exposure ?observation WHERE {
   VALUES ?requestedId { "es-demo-aya-full" }
   ?person i:personIdentifier ?identifier ; i:personHasRiskProfile ?profile .

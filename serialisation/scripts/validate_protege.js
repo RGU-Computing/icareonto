@@ -47,7 +47,7 @@ function localCount(collection) {
     var i = collection.iterator(), n = 0;
     while (i.hasNext()) {
         var e = i.next();
-        if (String(e.getIRI()).indexOf('http://maya-project.eu/icareonto/') === 0) n++;
+        if (String(e.getIRI()).indexOf('https://w3id.org/icareonto/') === 0) n++;
     }
     return n;
 }

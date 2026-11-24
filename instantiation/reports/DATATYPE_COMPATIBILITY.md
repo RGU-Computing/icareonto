@@ -19,7 +19,7 @@ These are string-valued data properties in OWL. The format annotations are descr
 
 ## Checked evidence
 
-The validation run on 23 November 2026 used the full clinical participant example and [a dedicated temporal input](../examples/participant-es-temporal.json), together with their pilot. The latter populates the calendar date and all three duration properties. Its seven-day interval has explicitly supplied start and end timepoints.
+The validation run on 24 November 2026 used the full clinical participant example and [a dedicated temporal input](../examples/participant-es-temporal.json), together with their pilot, against the w3id-based ontology. The latter populates the calendar date and all three duration properties. Its seven-day interval has explicitly supplied start and end timepoints.
 
 | Check | Result |
 |---|---|

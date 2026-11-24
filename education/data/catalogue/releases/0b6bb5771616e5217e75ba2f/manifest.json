@@ -1,0 +1,15 @@
+{
+  "files": {
+    "activity-templates.ttl": "ca429e0da18d04e3cf5708362d524b9eb8038925ac939679009049621d4daf0a",
+    "catalog-v001.xml": "9d842bf6bf624cdc6b9be7b5558972297e4898e56b3f009f5827235b6c2b9b30",
+    "catalogue.json": "4bd55f996f426899e88a6537157832f2e81ae8a62c94f2892c9ed5ab1ea85398",
+    "catalogue.ttl": "3820fbf7368f1c91c805d49c1dfe606acf3eeadea435d42cd93fd4a6d15b907a",
+    "dataset.trig": "56b2c700cb06aea968f20f1c38a5ff25f37737a5b60c4dee2b56e6b834820b82",
+    "dataset.ttl": "bb27e2df7b99e91103a23022be97867d35a60a6c7236b9515626fd6db8296619",
+    "validation/build-report.json": "80aee769125f5da12d9416b127f601b8d906e4876646eddae4d6a8e894940803",
+    "validation/import-map.tsv": "ffc8599b646341a652063c3b766382c119045a1bb0ea61b74a403d4fb7ad7e20",
+    "validation/shacl-report.ttl": "4a53a3befd9bcdb7273ef3d6e47a83be519927771faee49ef0d2a44ee23be2be",
+    "validation/source-records.json": "6bd81fb6c96074c3971eed4d31f53244ac5be0fa1e764d1e45aef95d171863ae"
+  },
+  "release_id": "0b6bb5771616e5217e75ba2f"
+}

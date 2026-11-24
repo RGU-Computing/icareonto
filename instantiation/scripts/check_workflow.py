@@ -50,7 +50,7 @@ def main():
         g2 = Graph().parse(output / "participants/es-demo-aya-002.ttl")
         union = pilot_graph + g1 + g2
         query = """
-          PREFIX i: <http://maya-project.eu/icareonto/>
+          PREFIX i: <https://w3id.org/icareonto/>
           SELECT ?person ?language WHERE {
             ?e i:participantEnrolmentForPerson ?person ; i:participantEnrolmentAtSite ?site .
             ?site i:pilotSiteHasLocale ?locale .

@@ -1,15 +1,15 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix edu: <http://maya-project.eu/icareonto/education/metadata#> .
-@prefix icare: <http://maya-project.eu/icareonto/> .
+@prefix edu: <https://w3id.org/icareonto/education/metadata#> .
+@prefix icare: <https://w3id.org/icareonto/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://maya-project.eu/icareonto/education/activity-templates/EDU-AFTER-TREATMENT> a icare:EducationActivity,
-        icare:HealthLiteracyIntervention,
-        owl:NamedIndividual ;
+<https://w3id.org/icareonto/education/activity-templates/EDU-AFTER-TREATMENT> a owl:NamedIndividual,
+        icare:EducationActivity,
+        icare:HealthLiteracyIntervention ;
     rdfs:label "Adjusting to life after treatment" ;
-    icare:activityContributesToGoal <http://maya-project.eu/icareonto/education/activity-templates/EDU-AFTER-TREATMENT/goal> ;
+    icare:activityContributesToGoal <https://w3id.org/icareonto/education/activity-templates/EDU-AFTER-TREATMENT/goal> ;
     edu:learningObjective "Recognise an information or support need concerning life after treatment and identify a suitable source of support." ;
     edu:learningStep "1. Ask which aspect of adjustment the participant wishes to discuss, without inferring a literacy need from emotional distress alone.",
         "2. Offer a reviewed resource matching the recorded need, topic and language.",
@@ -21,32 +21,32 @@
     icare:healthLiteracyInterventionAddressesNeed icare:InformationComprehensionSupportNeed,
         icare:SelfManagementSupportNeed,
         icare:SocialSupportNeed ;
-    icare:healthLiteracyInterventionUsesResource <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0009>,
-        <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0010>,
-        <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0011>,
-        <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0013>,
-        <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0019>,
-        <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0020>,
-        <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0021>,
-        <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0030>,
-        <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0046>,
-        <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0077a>,
-        <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0077b>,
-        <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0077c>,
-        <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0077d>,
-        <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0077e>,
-        <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0099>,
-        <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0167>,
-        <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0167a>,
-        <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0170>,
-        <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0177>,
-        <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0180> .
+    icare:healthLiteracyInterventionUsesResource <https://w3id.org/icareonto/education/resources/MAYA-EDU-0009>,
+        <https://w3id.org/icareonto/education/resources/MAYA-EDU-0010>,
+        <https://w3id.org/icareonto/education/resources/MAYA-EDU-0011>,
+        <https://w3id.org/icareonto/education/resources/MAYA-EDU-0013>,
+        <https://w3id.org/icareonto/education/resources/MAYA-EDU-0019>,
+        <https://w3id.org/icareonto/education/resources/MAYA-EDU-0020>,
+        <https://w3id.org/icareonto/education/resources/MAYA-EDU-0021>,
+        <https://w3id.org/icareonto/education/resources/MAYA-EDU-0030>,
+        <https://w3id.org/icareonto/education/resources/MAYA-EDU-0046>,
+        <https://w3id.org/icareonto/education/resources/MAYA-EDU-0077a>,
+        <https://w3id.org/icareonto/education/resources/MAYA-EDU-0077b>,
+        <https://w3id.org/icareonto/education/resources/MAYA-EDU-0077c>,
+        <https://w3id.org/icareonto/education/resources/MAYA-EDU-0077d>,
+        <https://w3id.org/icareonto/education/resources/MAYA-EDU-0077e>,
+        <https://w3id.org/icareonto/education/resources/MAYA-EDU-0099>,
+        <https://w3id.org/icareonto/education/resources/MAYA-EDU-0167>,
+        <https://w3id.org/icareonto/education/resources/MAYA-EDU-0167a>,
+        <https://w3id.org/icareonto/education/resources/MAYA-EDU-0170>,
+        <https://w3id.org/icareonto/education/resources/MAYA-EDU-0177>,
+        <https://w3id.org/icareonto/education/resources/MAYA-EDU-0180> .
 
-<http://maya-project.eu/icareonto/education/activity-templates/EDU-CV-FOLLOWUP> a icare:EducationActivity,
-        icare:HealthLiteracyIntervention,
-        owl:NamedIndividual ;
+<https://w3id.org/icareonto/education/activity-templates/EDU-CV-FOLLOWUP> a owl:NamedIndividual,
+        icare:EducationActivity,
+        icare:HealthLiteracyIntervention ;
     rdfs:label "Understanding cardiovascular follow-up" ;
-    icare:activityContributesToGoal <http://maya-project.eu/icareonto/education/activity-templates/EDU-CV-FOLLOWUP/goal> ;
+    icare:activityContributesToGoal <https://w3id.org/icareonto/education/activity-templates/EDU-CV-FOLLOWUP/goal> ;
     edu:learningObjective "Identify the purpose of cardiovascular follow-up and formulate a question for the care team about the participant's own follow-up." ;
     edu:learningStep "1. Introduce the topic using the participant's stated question and identified support need.",
         "2. Offer a suitable reviewed resource in the participant's language and explain its access conditions.",
@@ -57,22 +57,22 @@
     edu:templateStatus "Draft" ;
     icare:healthLiteracyInterventionAddressesNeed icare:CareTeamCommunicationSupportNeed,
         icare:InformationComprehensionSupportNeed ;
-    icare:healthLiteracyInterventionUsesResource <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0004>,
-        <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0017>,
-        <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0018>,
-        <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0077a>,
-        <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0077b>,
-        <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0077c>,
-        <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0077d>,
-        <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0077e>,
-        <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0170>,
-        <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0183> .
+    icare:healthLiteracyInterventionUsesResource <https://w3id.org/icareonto/education/resources/MAYA-EDU-0004>,
+        <https://w3id.org/icareonto/education/resources/MAYA-EDU-0017>,
+        <https://w3id.org/icareonto/education/resources/MAYA-EDU-0018>,
+        <https://w3id.org/icareonto/education/resources/MAYA-EDU-0077a>,
+        <https://w3id.org/icareonto/education/resources/MAYA-EDU-0077b>,
+        <https://w3id.org/icareonto/education/resources/MAYA-EDU-0077c>,
+        <https://w3id.org/icareonto/education/resources/MAYA-EDU-0077d>,
+        <https://w3id.org/icareonto/education/resources/MAYA-EDU-0077e>,
+        <https://w3id.org/icareonto/education/resources/MAYA-EDU-0170>,
+        <https://w3id.org/icareonto/education/resources/MAYA-EDU-0183> .
 
-<http://maya-project.eu/icareonto/education/activity-templates/EDU-HEALTHY-CHOICES> a icare:EducationActivity,
-        icare:HealthLiteracyIntervention,
-        owl:NamedIndividual ;
+<https://w3id.org/icareonto/education/activity-templates/EDU-HEALTHY-CHOICES> a owl:NamedIndividual,
+        icare:EducationActivity,
+        icare:HealthLiteracyIntervention ;
     rdfs:label "Making manageable everyday health choices" ;
-    icare:activityContributesToGoal <http://maya-project.eu/icareonto/education/activity-templates/EDU-HEALTHY-CHOICES/goal> ;
+    icare:activityContributesToGoal <https://w3id.org/icareonto/education/activity-templates/EDU-HEALTHY-CHOICES/goal> ;
     edu:learningObjective "Identify one practical nutrition or activity question or action relevant to the participant's interests and circumstances." ;
     edu:learningStep "1. Ask whether the participant wants information about food choices or physical activity.",
         "2. Select a resource matching that topic, the identified support need and the participant's preferences.",
@@ -83,31 +83,31 @@
     edu:templateStatus "Draft" ;
     icare:healthLiteracyInterventionAddressesNeed icare:InformationApplicationSupportNeed,
         icare:SelfManagementSupportNeed ;
-    icare:healthLiteracyInterventionUsesResource <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0005>,
-        <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0007>,
-        <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0008>,
-        <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0023>,
-        <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0046>,
-        <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0061>,
-        <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0077a>,
-        <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0077b>,
-        <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0077c>,
-        <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0077d>,
-        <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0077e>,
-        <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0167>,
-        <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0167a>,
-        <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0170>,
-        <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0176>,
-        <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0180>,
-        <http://maya-project.eu/icareonto/education/resources/MAYA-EDU-0181> .
+    icare:healthLiteracyInterventionUsesResource <https://w3id.org/icareonto/education/resources/MAYA-EDU-0005>,
+        <https://w3id.org/icareonto/education/resources/MAYA-EDU-0007>,
+        <https://w3id.org/icareonto/education/resources/MAYA-EDU-0008>,
+        <https://w3id.org/icareonto/education/resources/MAYA-EDU-0023>,
+        <https://w3id.org/icareonto/education/resources/MAYA-EDU-0046>,
+        <https://w3id.org/icareonto/education/resources/MAYA-EDU-0061>,
+        <https://w3id.org/icareonto/education/resources/MAYA-EDU-0077a>,
+        <https://w3id.org/icareonto/education/resources/MAYA-EDU-0077b>,
+        <https://w3id.org/icareonto/education/resources/MAYA-EDU-0077c>,
+        <https://w3id.org/icareonto/education/resources/MAYA-EDU-0077d>,
+        <https://w3id.org/icareonto/education/resources/MAYA-EDU-0077e>,
+        <https://w3id.org/icareonto/education/resources/MAYA-EDU-0167>,
+        <https://w3id.org/icareonto/education/resources/MAYA-EDU-0167a>,
+        <https://w3id.org/icareonto/education/resources/MAYA-EDU-0170>,
+        <https://w3id.org/icareonto/education/resources/MAYA-EDU-0176>,
+        <https://w3id.org/icareonto/education/resources/MAYA-EDU-0180>,
+        <https://w3id.org/icareonto/education/resources/MAYA-EDU-0181> .
 
-<http://maya-project.eu/icareonto/education/graphs/activities> a owl:Ontology ;
+<https://w3id.org/icareonto/education/graphs/activities> a owl:Ontology ;
     rdfs:label "MAYA draft educational activity templates"@en ;
     dcterms:contributor "MAYA consortium partners" ;
     dcterms:creator "Robert Gordon University" ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
     dcterms:rights "Copyright (c) 2026 Robert Gordon University and contributing MAYA consortium partners, for their respective contributions. CC BY 4.0 covers original metadata and activity content only; linked publications retain their provider terms."@en ;
-    owl:imports <http://maya-project.eu/icareonto/education/graphs/resources> .
+    owl:imports <https://w3id.org/icareonto/education/graphs/resources> .
 
 edu:accessConditions a owl:AnnotationProperty .
 
@@ -139,18 +139,18 @@ edu:resourceRole a owl:AnnotationProperty .
 
 edu:templateStatus a owl:AnnotationProperty .
 
-<http://maya-project.eu/icareonto/education/activity-templates/EDU-AFTER-TREATMENT/goal> a icare:Goal,
-        owl:NamedIndividual ;
+<https://w3id.org/icareonto/education/activity-templates/EDU-AFTER-TREATMENT/goal> a owl:NamedIndividual,
+        icare:Goal ;
     rdfs:label "Recognise an information or support need concerning life after treatment and identify a suitable source of support." ;
     icare:goalDescriptionText "Recognise an information or support need concerning life after treatment and identify a suitable source of support."^^xsd:string .
 
-<http://maya-project.eu/icareonto/education/activity-templates/EDU-CV-FOLLOWUP/goal> a icare:Goal,
-        owl:NamedIndividual ;
+<https://w3id.org/icareonto/education/activity-templates/EDU-CV-FOLLOWUP/goal> a owl:NamedIndividual,
+        icare:Goal ;
     rdfs:label "Identify the purpose of cardiovascular follow-up and formulate a question for the care team about the participant's own follow-up." ;
     icare:goalDescriptionText "Identify the purpose of cardiovascular follow-up and formulate a question for the care team about the participant's own follow-up."^^xsd:string .
 
-<http://maya-project.eu/icareonto/education/activity-templates/EDU-HEALTHY-CHOICES/goal> a icare:Goal,
-        owl:NamedIndividual ;
+<https://w3id.org/icareonto/education/activity-templates/EDU-HEALTHY-CHOICES/goal> a owl:NamedIndividual,
+        icare:Goal ;
     rdfs:label "Identify one practical nutrition or activity question or action relevant to the participant's interests and circumstances." ;
     icare:goalDescriptionText "Identify one practical nutrition or activity question or action relevant to the participant's interests and circumstances."^^xsd:string .
 

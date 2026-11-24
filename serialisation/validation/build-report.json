@@ -1,12 +1,14 @@
 {
-  "release": "2026-11-23",
+  "release": "2026-11-24",
   "ontology_version": "1.0.0",
+  "ontology_iri": "https://w3id.org/icareonto/",
+  "entity_namespace": "https://w3id.org/icareonto/",
   "release_status": "Published",
   "project_baseline": "iCARE Onto Version 1",
   "runtime_provenance_policy": "Development filenames, sheet references and mapping-register identifiers are retained only in validation sidecars, not in the ontology graphs.",
   "sources_sha256": {
-    "icareonto_review_workbook_v221126.xlsx": "2dc0443affa4f1b29f4e8635e48aa5491fe6a417101d933b2a1ce37c4a23208b",
-    "icareonto_alignment_mapping_workbook_v301026_4.xlsx": "615925bdf3a9e44404c06129220a2b6818694081e1fb15e41daa6bb664bbb771",
+    "icareonto_review_workbook.xlsx": "b6aba79f96f74dccbe131c6f690fa39ca556c3972e807c0431ab96c324dd4e10",
+    "icareonto_alignment_mapping_workbook_v301026_4.xlsx": "5fe73609392b17435c334831e024b157228d04efc9dc71f742e4ac1c658ff11d",
     "icareonto_final_consolidated_competency_questions_v5.xlsx": "e46f6ffc5a42bf46d1e1f64ee515f76e2e499665341b883afe98aa6ea3dd42c0"
   },
   "external_sources": [

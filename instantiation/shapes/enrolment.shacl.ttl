@@ -1,5 +1,5 @@
 @prefix sh: <http://www.w3.org/ns/shacl#> .
-@prefix icare: <http://maya-project.eu/icareonto/> .
+@prefix icare: <https://w3id.org/icareonto/> .
 @prefix profile: <https://example.org/maya/instantiation-profile/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -35,7 +35,7 @@ profile:EnrolmentShape a sh:NodeShape ;
     sh:sparql [
         sh:message "The enrolment's study must contain its site and any assigned phase or arm." ;
         sh:select """
-          PREFIX icare: <http://maya-project.eu/icareonto/>
+          PREFIX icare: <https://w3id.org/icareonto/>
           SELECT $this WHERE {
             $this icare:participantEnrolmentInStudy ?study ; icare:participantEnrolmentAtSite ?site .
             { FILTER NOT EXISTS { ?study icare:pilotStudyHasPilotSite ?site } }

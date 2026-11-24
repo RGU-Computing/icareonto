@@ -52,7 +52,7 @@ def check_publication():
     require("Developed by Robert Gordon University, with contributions from MAYA consortium partners." in scope,
             "Contributor acknowledgement is separate from copyright notice")
     ontology = Graph().parse(ROOT / "serialisation/icareonto.ttl", format="turtle")
-    require((URIRef("http://maya-project.eu/icareonto"), DCTERMS.license,
+    require((URIRef("https://w3id.org/icareonto/"), DCTERMS.license,
              URIRef("https://creativecommons.org/licenses/by/4.0/")) in ontology, "Ontology licence is machine-readable")
     catalogues = [ROOT / "serialisation/catalog-v001.xml", ROOT / "validation/catalog-v001.xml", ROOT / "validation/cq-tests/catalog-v001.xml", ROOT / "education/examples/demo/catalog-v001.xml"]
     data = ROOT / "education/data/catalogue"

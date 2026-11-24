@@ -50,7 +50,7 @@ class SectionChecks(unittest.TestCase):
     def test_clinical_profile_is_queryable_from_the_participant(self):
         self.run_record()
         rows = list(self.graph().query("""
-          PREFIX i: <http://maya-project.eu/icareonto/>
+          PREFIX i: <https://w3id.org/icareonto/>
           SELECT ?name WHERE { ?person i:personIdentifier ?identifier ;
             i:personHasClinicalProfile/i:clinicalProfileIncludesRecord ?record .
             FILTER(STR(?identifier) = "es-demo-aya-full")
@@ -61,7 +61,7 @@ class SectionChecks(unittest.TestCase):
     def test_cancer_diagnosis_and_exposure_remain_connected(self):
         self.run_record()
         rows = list(self.graph().query("""
-          PREFIX i: <http://maya-project.eu/icareonto/>
+          PREFIX i: <https://w3id.org/icareonto/>
           SELECT ?diagnosis ?dose ?unit WHERE {
             ?p i:hasCancerDiagnosis ?d ; i:personHasCancerTreatmentHistory/i:cancerTreatmentHistoryHasRecord ?r .
             ?d i:cancerTypeName ?diagnosis . ?r i:treatmentRecordTreatsDiagnosis ?d ; i:treatmentRecordIndicatesExposure ?e .
@@ -72,7 +72,7 @@ class SectionChecks(unittest.TestCase):
     def test_risk_input_connects_to_exposure_and_measurement(self):
         self.run_record()
         rows = list(self.graph().query("""
-          PREFIX i: <http://maya-project.eu/icareonto/>
+          PREFIX i: <https://w3id.org/icareonto/>
           SELECT ?score ?category ?value WHERE {
             ?p i:personHasRiskProfile ?profile . ?profile i:riskProfileIncludesRiskEstimate ?estimate .
             ?estimate i:riskScore ?score ; i:riskEstimateHasCategory ?category .
@@ -104,7 +104,7 @@ class SectionChecks(unittest.TestCase):
     def test_prescribed_and_performed_exercise_have_separate_expected_values(self):
         self.run_record()
         rows = list(self.graph().query("""
-          PREFIX i: <http://maya-project.eu/icareonto/>
+          PREFIX i: <https://w3id.org/icareonto/>
           SELECT ?prescribed ?performed WHERE {
             ?care i:carePlanIntendedFor ?person ; i:carePlanIncludesActivity ?intervention .
             ?intervention i:exerciseInterventionHasPrescription ?prescription ; i:activityRealisedBy ?actual .

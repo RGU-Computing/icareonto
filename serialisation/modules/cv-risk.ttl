@@ -1,6 +1,6 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix icare: <http://maya-project.eu/icareonto/> .
-@prefix meta: <http://maya-project.eu/icareonto/metadata#> .
+@prefix icare: <https://w3id.org/icareonto/> .
+@prefix meta: <https://w3id.org/icareonto/metadata#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
@@ -268,60 +268,60 @@ icare:AdverseCardiacEvent a owl:Class ;
     rdfs:isDefinedBy icare:cv-risk ;
     skos:definition "A cardiovascular event of concern for monitoring or prediction, such as heart failure, cardiomyopathy, arrhythmia, myocardial infarction, or hypertension-related complication."@en .
 
-icare:HighRisk a icare:RiskCategoryValue,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:HighRisk a owl:NamedIndividual,
+        skos:Concept,
+        icare:RiskCategoryValue ;
     rdfs:label "High risk"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:cv-risk ;
     skos:definition "A risk-category value indicating high risk."@en ;
     skos:inScheme icare:RiskCategoryValueScheme ;
     skos:prefLabel "High risk"@en ;
-    skos:topConceptOf icare:RiskCategoryValueScheme .
+    skos:topConceptOf icare:RiskCategoryValueScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:LowRisk a icare:RiskCategoryValue,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:LowRisk a owl:NamedIndividual,
+        skos:Concept,
+        icare:RiskCategoryValue ;
     rdfs:label "Low risk"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:cv-risk ;
     skos:definition "A risk-category value indicating low risk."@en ;
     skos:inScheme icare:RiskCategoryValueScheme ;
     skos:prefLabel "Low risk"@en ;
-    skos:topConceptOf icare:RiskCategoryValueScheme .
+    skos:topConceptOf icare:RiskCategoryValueScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:ModerateRisk a icare:RiskCategoryValue,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:ModerateRisk a owl:NamedIndividual,
+        skos:Concept,
+        icare:RiskCategoryValue ;
     rdfs:label "Moderate risk"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:cv-risk ;
     skos:definition "A risk-category value indicating moderate risk."@en ;
     skos:inScheme icare:RiskCategoryValueScheme ;
     skos:prefLabel "Moderate risk"@en ;
-    skos:topConceptOf icare:RiskCategoryValueScheme .
+    skos:topConceptOf icare:RiskCategoryValueScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:UnknownRisk a icare:RiskCategoryValue,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:UnknownRisk a owl:NamedIndividual,
+        skos:Concept,
+        icare:RiskCategoryValue ;
     rdfs:label "Unknown risk"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:cv-risk ;
     skos:definition "A risk-category value indicating unknown risk."@en ;
     skos:inScheme icare:RiskCategoryValueScheme ;
     skos:prefLabel "Unknown risk"@en ;
-    skos:topConceptOf icare:RiskCategoryValueScheme .
+    skos:topConceptOf icare:RiskCategoryValueScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:VeryHighRisk a icare:RiskCategoryValue,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:VeryHighRisk a owl:NamedIndividual,
+        skos:Concept,
+        icare:RiskCategoryValue ;
     rdfs:label "Very high risk"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:cv-risk ;
     skos:definition "A risk-category value indicating very high risk."@en ;
     skos:inScheme icare:RiskCategoryValueScheme ;
     skos:prefLabel "Very high risk"@en ;
-    skos:topConceptOf icare:RiskCategoryValueScheme .
+    skos:topConceptOf icare:RiskCategoryValueScheme ;
+    meta:reviewStatus "Proposed" .
 
 icare:RiskAssessmentMethod a owl:Class ;
     rdfs:label "Risk Assessment Method"@en ;
@@ -402,7 +402,6 @@ icare:RiskCategoryValueScheme a owl:NamedIndividual,
 
 icare:cv-risk a owl:Ontology ;
     rdfs:label "Cardiovascular Risk and Prediction"@en ;
-    meta:releaseStatus "Published" ;
     dcterms:contributor "MAYA consortium partners" ;
     dcterms:creator "Robert Gordon University" ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
@@ -411,10 +410,11 @@ icare:cv-risk a owl:Ontology ;
     owl:imports icare:cancer-history,
         icare:clinical-profile,
         icare:core,
-        <http://maya-project.eu/icareonto/imports/skos-reference>,
+        <https://w3id.org/icareonto/imports/skos-reference>,
         icare:measurement-biomarker,
         icare:metadata,
         icare:person-role ;
-    owl:versionIRI <http://maya-project.eu/icareonto/releases/1.0.0/cv-risk> ;
-    owl:versionInfo "1.0.0" .
+    owl:versionIRI <https://w3id.org/icareonto/releases/1.0.0/cv-risk> ;
+    owl:versionInfo "1.0.0" ;
+    meta:releaseStatus "Published" .
 

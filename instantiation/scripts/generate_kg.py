@@ -31,8 +31,8 @@ except ImportError:
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_SCHEMA = ROOT.parent / "serialisation"
 DEFAULT_BASE = "https://example.org/maya/instantiation/"
-IC = Namespace("http://maya-project.eu/icareonto/")
-ONTOLOGY = URIRef("http://maya-project.eu/icareonto")
+IC = Namespace("https://w3id.org/icareonto/")
+ONTOLOGY = URIRef("https://w3id.org/icareonto/")
 SH = Namespace("http://www.w3.org/ns/shacl#")
 GENERATOR_VERSION = "1.1"
 STATUS = {"screening": "ScreeningEnrolmentStatus", "enrolled": "EnrolledStatus", "active": "ActiveEnrolmentStatus", "completed": "CompletedEnrolmentStatus", "withdrawn": "WithdrawnEnrolmentStatus"}

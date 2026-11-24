@@ -1,6 +1,6 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix icare: <http://maya-project.eu/icareonto/> .
-@prefix meta: <http://maya-project.eu/icareonto/metadata#> .
+@prefix icare: <https://w3id.org/icareonto/> .
+@prefix meta: <https://w3id.org/icareonto/metadata#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
@@ -52,12 +52,12 @@ icare:criterionText a owl:DatatypeProperty ;
 
 icare:estimatedCompletionTime a owl:DatatypeProperty ;
     rdfs:label "estimated completion time"@en ;
-    meta:valueFormat "iso-duration" ;
-    meta:valuePattern "^-?P([0-9]+W|([0-9]+Y([0-9]+M)?([0-9]+D)?|[0-9]+M([0-9]+D)?|[0-9]+D)(T([0-9]+H([0-9]+M)?([0-9]+(\\.[0-9]+)?S)?|[0-9]+M([0-9]+(\\.[0-9]+)?S)?|[0-9]+(\\.[0-9]+)?S))?|T([0-9]+H([0-9]+M)?([0-9]+(\\.[0-9]+)?S)?|[0-9]+M([0-9]+(\\.[0-9]+)?S)?|[0-9]+(\\.[0-9]+)?S))$" ;
     rdfs:domain icare:KnowledgeResource ;
     rdfs:isDefinedBy icare:knowledge-resource ;
     rdfs:range xsd:string ;
-    skos:definition "Records the estimated time required to read, watch or complete a knowledge resource as an ISO 8601 duration string, for example PT10M for ten minutes."@en .
+    skos:definition "Records the estimated time required to read, watch or complete a knowledge resource as an ISO 8601 duration string, for example PT10M for ten minutes."@en ;
+    meta:valueFormat "iso-duration" ;
+    meta:valuePattern "^-?P([0-9]+W|([0-9]+Y([0-9]+M)?([0-9]+D)?|[0-9]+M([0-9]+D)?|[0-9]+D)(T([0-9]+H([0-9]+M)?([0-9]+(\\.[0-9]+)?S)?|[0-9]+M([0-9]+(\\.[0-9]+)?S)?|[0-9]+(\\.[0-9]+)?S))?|T([0-9]+H([0-9]+M)?([0-9]+(\\.[0-9]+)?S)?|[0-9]+M([0-9]+(\\.[0-9]+)?S)?|[0-9]+(\\.[0-9]+)?S))$" .
 
 icare:healthLiteracyInterventionUsesResource a owl:ObjectProperty ;
     rdfs:label "uses resource"@en ;
@@ -213,445 +213,445 @@ icare:recommendationText a owl:DatatypeProperty ;
     rdfs:range xsd:string ;
     skos:definition "Human-readable wording of the recommendation."@en .
 
-icare:AYASurvivorAudience a icare:ResourceAudienceType,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:AYASurvivorAudience a owl:NamedIndividual,
+        skos:Concept,
+        icare:ResourceAudienceType ;
     rdfs:label "AYA survivor audience"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:knowledge-resource ;
     skos:definition "A resource-audience type representing adolescent and young adult cancer survivors."@en ;
     skos:inScheme icare:ResourceAudienceTypeScheme ;
     skos:prefLabel "AYA survivor audience"@en ;
-    skos:topConceptOf icare:ResourceAudienceTypeScheme .
+    skos:topConceptOf icare:ResourceAudienceTypeScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:AdvancedComplexity a icare:ContentComplexityLevel,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:AdvancedComplexity a owl:NamedIndividual,
+        skos:Concept,
+        icare:ContentComplexityLevel ;
     rdfs:label "Advanced complexity"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:knowledge-resource ;
     skos:definition "A content-complexity level indicating advanced complexity."@en ;
     skos:inScheme icare:ContentComplexityLevelScheme ;
     skos:prefLabel "Advanced complexity"@en ;
-    skos:topConceptOf icare:ContentComplexityLevelScheme .
+    skos:topConceptOf icare:ContentComplexityLevelScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:Audio a icare:ResourceFormat,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:Audio a owl:NamedIndividual,
+        skos:Concept,
+        icare:ResourceFormat ;
     rdfs:label "Audio"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:knowledge-resource ;
     skos:definition "A resource format that uses audio as its primary presentation format."@en ;
     skos:inScheme icare:ResourceFormatScheme ;
     skos:prefLabel "Audio"@en ;
-    skos:topConceptOf icare:ResourceFormatScheme .
+    skos:topConceptOf icare:ResourceFormatScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:AudioNarration a icare:AccessibilityFeature,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:AudioNarration a owl:NamedIndividual,
+        skos:Concept,
+        icare:AccessibilityFeature ;
     rdfs:label "Audio narration"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:knowledge-resource ;
     skos:definition "An accessibility feature providing spoken narration of written or visual content."@en ;
     skos:inScheme icare:AccessibilityFeatureScheme ;
     skos:prefLabel "Audio narration"@en ;
-    skos:topConceptOf icare:AccessibilityFeatureScheme .
+    skos:topConceptOf icare:AccessibilityFeatureScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:Captions a icare:AccessibilityFeature,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:Captions a owl:NamedIndividual,
+        skos:Concept,
+        icare:AccessibilityFeature ;
     rdfs:label "Captions"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:knowledge-resource ;
     skos:definition "An accessibility feature providing synchronized textual representation of spoken or relevant audio content."@en ;
     skos:inScheme icare:AccessibilityFeatureScheme ;
     skos:prefLabel "Captions"@en ;
-    skos:topConceptOf icare:AccessibilityFeatureScheme .
+    skos:topConceptOf icare:AccessibilityFeatureScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:CardiovascularLateEffects a icare:ResourceTopic,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:CardiovascularLateEffects a owl:NamedIndividual,
+        skos:Concept,
+        icare:ResourceTopic ;
     rdfs:label "Cardiovascular late effects"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:knowledge-resource ;
     skos:definition "Effects of cancer and its treatment on the heart and blood vessels that persist or emerge after treatment, including associated risk factors, symptom awareness and long-term cardiovascular health."@en ;
     skos:inScheme icare:ResourceTopicScheme ;
     skos:prefLabel "Cardiovascular late effects"@en ;
-    skos:topConceptOf icare:ResourceTopicScheme .
+    skos:topConceptOf icare:ResourceTopicScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:CaregiverAudience a icare:ResourceAudienceType,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:CaregiverAudience a owl:NamedIndividual,
+        skos:Concept,
+        icare:ResourceAudienceType ;
     rdfs:label "Caregiver audience"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:knowledge-resource ;
     skos:definition "A resource-audience type representing people who provide practical, emotional or care-related support."@en ;
     skos:inScheme icare:ResourceAudienceTypeScheme ;
     skos:prefLabel "Caregiver audience"@en ;
-    skos:topConceptOf icare:ResourceAudienceTypeScheme .
+    skos:topConceptOf icare:ResourceAudienceTypeScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:ClinicianAudience a icare:ResourceAudienceType,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:ClinicianAudience a owl:NamedIndividual,
+        skos:Concept,
+        icare:ResourceAudienceType ;
     rdfs:label "Clinician audience"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:knowledge-resource ;
     skos:definition "A resource-audience type representing clinicians and other healthcare professionals."@en ;
     skos:inScheme icare:ResourceAudienceTypeScheme ;
     skos:prefLabel "Clinician audience"@en ;
-    skos:topConceptOf icare:ResourceAudienceTypeScheme .
+    skos:topConceptOf icare:ResourceAudienceTypeScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:ConditionalRecommendation a icare:RecommendationStrength,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:ConditionalRecommendation a owl:NamedIndividual,
+        skos:Concept,
+        icare:RecommendationStrength ;
     rdfs:label "Conditional recommendation"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:knowledge-resource ;
     skos:definition "A recommendation-strength value indicating that the appropriate action may depend on preferences, circumstances or additional judgement."@en ;
     skos:inScheme icare:RecommendationStrengthScheme ;
     skos:prefLabel "Conditional recommendation"@en ;
-    skos:topConceptOf icare:RecommendationStrengthScheme .
+    skos:topConceptOf icare:RecommendationStrengthScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:DigitalHealthPrivacyAndTrust a icare:ResourceTopic,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:DigitalHealthPrivacyAndTrust a owl:NamedIndividual,
+        skos:Concept,
+        icare:ResourceTopic ;
     rdfs:label "Digital health, privacy and trust"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:knowledge-resource ;
     skos:definition "Use of digital health technologies, privacy and personal-data use, and the credibility, transparency and reliability of digital health information and services."@en ;
     skos:inScheme icare:ResourceTopicScheme ;
     skos:prefLabel "Digital health, privacy and trust"@en ;
-    skos:topConceptOf icare:ResourceTopicScheme .
+    skos:topConceptOf icare:ResourceTopicScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:ExplainHealthTopic a icare:ResourcePurpose,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:ExplainHealthTopic a owl:NamedIndividual,
+        skos:Concept,
+        icare:ResourcePurpose ;
     rdfs:label "Explain health topic"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:knowledge-resource ;
     skos:definition "A resource purpose indicating that the resource is intended to explain a health topic."@en ;
     skos:inScheme icare:ResourcePurposeScheme ;
     skos:prefLabel "Explain health topic"@en ;
-    skos:topConceptOf icare:ResourcePurposeScheme .
+    skos:topConceptOf icare:ResourcePurposeScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:FamilyAudience a icare:ResourceAudienceType,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:FamilyAudience a owl:NamedIndividual,
+        skos:Concept,
+        icare:ResourceAudienceType ;
     rdfs:label "Family audience"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:knowledge-resource ;
     skos:definition "A resource-audience type representing family members of the person receiving care or support."@en ;
     skos:inScheme icare:ResourceAudienceTypeScheme ;
     skos:prefLabel "Family audience"@en ;
-    skos:topConceptOf icare:ResourceAudienceTypeScheme .
+    skos:topConceptOf icare:ResourceAudienceTypeScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:FollowUpCare a icare:ResourceTopic,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:FollowUpCare a owl:NamedIndividual,
+        skos:Concept,
+        icare:ResourceTopic ;
     rdfs:label "Follow-up care"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:knowledge-resource ;
     skos:definition "Ongoing care and support after primary cancer treatment, including monitoring, health management, psychosocial wellbeing and adjustment to everyday life."@en ;
     skos:inScheme icare:ResourceTopicScheme ;
     skos:prefLabel "Follow-up care"@en ;
-    skos:topConceptOf icare:ResourceTopicScheme .
+    skos:topConceptOf icare:ResourceTopicScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:FoundationalComplexity a icare:ContentComplexityLevel,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:FoundationalComplexity a owl:NamedIndividual,
+        skos:Concept,
+        icare:ContentComplexityLevel ;
     rdfs:label "Foundational complexity"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:knowledge-resource ;
     skos:definition "A content-complexity level indicating foundational complexity."@en ;
     skos:inScheme icare:ContentComplexityLevelScheme ;
     skos:prefLabel "Foundational complexity"@en ;
-    skos:topConceptOf icare:ContentComplexityLevelScheme .
+    skos:topConceptOf icare:ContentComplexityLevelScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:HighCertaintyEvidence a icare:EvidenceGrade,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:HighCertaintyEvidence a owl:NamedIndividual,
+        skos:Concept,
+        icare:EvidenceGrade ;
     rdfs:label "High certainty evidence"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:knowledge-resource ;
     skos:definition "An evidence grade indicating high certainty in the relevant body of evidence under the stated grading approach."@en ;
     skos:inScheme icare:EvidenceGradeScheme ;
     skos:prefLabel "High certainty evidence"@en ;
-    skos:topConceptOf icare:EvidenceGradeScheme .
+    skos:topConceptOf icare:EvidenceGradeScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:Infographic a icare:ResourceFormat,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:Infographic a owl:NamedIndividual,
+        skos:Concept,
+        icare:ResourceFormat ;
     rdfs:label "Infographic"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:knowledge-resource ;
     skos:definition "A resource format that uses infographic as its primary presentation format."@en ;
     skos:inScheme icare:ResourceFormatScheme ;
     skos:prefLabel "Infographic"@en ;
-    skos:topConceptOf icare:ResourceFormatScheme .
+    skos:topConceptOf icare:ResourceFormatScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:InteractiveDialogue a icare:ResourceFormat,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:InteractiveDialogue a owl:NamedIndividual,
+        skos:Concept,
+        icare:ResourceFormat ;
     rdfs:label "Interactive dialogue"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:knowledge-resource ;
     skos:definition "A resource format that uses interactive dialogue as its primary presentation format."@en ;
     skos:inScheme icare:ResourceFormatScheme ;
     skos:prefLabel "Interactive dialogue"@en ;
-    skos:topConceptOf icare:ResourceFormatScheme .
+    skos:topConceptOf icare:ResourceFormatScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:LowCertaintyEvidence a icare:EvidenceGrade,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:LowCertaintyEvidence a owl:NamedIndividual,
+        skos:Concept,
+        icare:EvidenceGrade ;
     rdfs:label "Low certainty evidence"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:knowledge-resource ;
     skos:definition "An evidence grade indicating low certainty in the relevant body of evidence under the stated grading approach."@en ;
     skos:inScheme icare:EvidenceGradeScheme ;
     skos:prefLabel "Low certainty evidence"@en ;
-    skos:topConceptOf icare:EvidenceGradeScheme .
+    skos:topConceptOf icare:EvidenceGradeScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:MentalHealthAndEmotionalWellbeing a icare:ResourceTopic,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:MentalHealthAndEmotionalWellbeing a owl:NamedIndividual,
+        skos:Concept,
+        icare:ResourceTopic ;
     rdfs:label "Mental health and emotional wellbeing"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:knowledge-resource ;
     skos:definition "Emotional and psychological aspects of living with and after cancer, including worry, stress, mood, coping, adjustment and access to appropriate support."@en ;
     skos:inScheme icare:ResourceTopicScheme ;
     skos:prefLabel "Mental health and emotional wellbeing"@en ;
-    skos:topConceptOf icare:ResourceTopicScheme .
+    skos:topConceptOf icare:ResourceTopicScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:ModerateCertaintyEvidence a icare:EvidenceGrade,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:ModerateCertaintyEvidence a owl:NamedIndividual,
+        skos:Concept,
+        icare:EvidenceGrade ;
     rdfs:label "Moderate certainty evidence"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:knowledge-resource ;
     skos:definition "An evidence grade indicating moderate certainty in the relevant body of evidence under the stated grading approach."@en ;
     skos:inScheme icare:EvidenceGradeScheme ;
     skos:prefLabel "Moderate certainty evidence"@en ;
-    skos:topConceptOf icare:EvidenceGradeScheme .
+    skos:topConceptOf icare:EvidenceGradeScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:MultimodalResource a icare:ResourceFormat,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:MultimodalResource a owl:NamedIndividual,
+        skos:Concept,
+        icare:ResourceFormat ;
     rdfs:label "Multimodal resource"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:knowledge-resource ;
     skos:definition "A resource format that uses multimodal resource as its primary presentation format."@en ;
     skos:inScheme icare:ResourceFormatScheme ;
     skos:prefLabel "Multimodal resource"@en ;
-    skos:topConceptOf icare:ResourceFormatScheme .
+    skos:topConceptOf icare:ResourceFormatScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:Nutrition a icare:ResourceTopic,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:Nutrition a owl:NamedIndividual,
+        skos:Concept,
+        icare:ResourceTopic ;
     rdfs:label "Nutrition"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:knowledge-resource ;
     skos:definition "Food, dietary patterns and nutritional needs relevant to cancer survivorship, including healthy eating, managing eating-related difficulties and understanding nutrition information."@en ;
     skos:inScheme icare:ResourceTopicScheme ;
     skos:prefLabel "Nutrition"@en ;
-    skos:topConceptOf icare:ResourceTopicScheme .
+    skos:topConceptOf icare:ResourceTopicScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:PhysicalActivity a icare:ResourceTopic,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:PhysicalActivity a owl:NamedIndividual,
+        skos:Concept,
+        icare:ResourceTopic ;
     rdfs:label "Physical activity"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:knowledge-resource ;
     skos:definition "Physical activity, exercise and sedentary behaviour relevant to fitness, physical functioning, wellbeing and long-term health during cancer survivorship."@en ;
     skos:inScheme icare:ResourceTopicScheme ;
     skos:prefLabel "Physical activity"@en ;
-    skos:topConceptOf icare:ResourceTopicScheme .
+    skos:topConceptOf icare:ResourceTopicScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:PlainLanguage a icare:AccessibilityFeature,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:PlainLanguage a owl:NamedIndividual,
+        skos:Concept,
+        icare:AccessibilityFeature ;
     rdfs:label "Plain language"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:knowledge-resource ;
     skos:definition "An accessibility feature presenting information using clear, direct and readily understandable language."@en ;
     skos:inScheme icare:AccessibilityFeatureScheme ;
     skos:prefLabel "Plain language"@en ;
-    skos:topConceptOf icare:AccessibilityFeatureScheme .
+    skos:topConceptOf icare:AccessibilityFeatureScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:PrepareForConsultation a icare:ResourcePurpose,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:PrepareForConsultation a owl:NamedIndividual,
+        skos:Concept,
+        icare:ResourcePurpose ;
     rdfs:label "Prepare for consultation"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:knowledge-resource ;
     skos:definition "A resource purpose indicating that the resource is intended to help a person prepare for a healthcare consultation."@en ;
     skos:inScheme icare:ResourcePurposeScheme ;
     skos:prefLabel "Prepare for consultation"@en ;
-    skos:topConceptOf icare:ResourcePurposeScheme .
+    skos:topConceptOf icare:ResourcePurposeScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:Quiz a icare:ResourceFormat,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:Quiz a owl:NamedIndividual,
+        skos:Concept,
+        icare:ResourceFormat ;
     rdfs:label "Quiz"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:knowledge-resource ;
     skos:definition "A resource format that uses quiz as its primary presentation format."@en ;
     skos:inScheme icare:ResourceFormatScheme ;
     skos:prefLabel "Quiz"@en ;
-    skos:topConceptOf icare:ResourceFormatScheme .
+    skos:topConceptOf icare:ResourceFormatScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:ScreenReaderCompatible a icare:AccessibilityFeature,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:ScreenReaderCompatible a owl:NamedIndividual,
+        skos:Concept,
+        icare:AccessibilityFeature ;
     rdfs:label "Screen-reader compatible"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:knowledge-resource ;
     skos:definition "An accessibility feature indicating that digital content is structured for use with screen-reading software."@en ;
     skos:inScheme icare:AccessibilityFeatureScheme ;
     skos:prefLabel "Screen-reader compatible"@en ;
-    skos:topConceptOf icare:AccessibilityFeatureScheme .
+    skos:topConceptOf icare:AccessibilityFeatureScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:SelfMonitoring a icare:ResourceTopic,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:SelfMonitoring a owl:NamedIndividual,
+        skos:Concept,
+        icare:ResourceTopic ;
     rdfs:label "Self-monitoring"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:knowledge-resource ;
     skos:definition "Observing, measuring and recording symptoms, health indicators or health-related behaviours, including understanding measurements, tracking changes and communicating findings to the care team."@en ;
     skos:inScheme icare:ResourceTopicScheme ;
     skos:prefLabel "Self-monitoring"@en ;
-    skos:topConceptOf icare:ResourceTopicScheme .
+    skos:topConceptOf icare:ResourceTopicScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:Smoking a icare:ResourceTopic,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:Smoking a owl:NamedIndividual,
+        skos:Concept,
+        icare:ResourceTopic ;
     rdfs:label "Smoking"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:knowledge-resource ;
     skos:definition "Tobacco smoking, its health implications, smoking cessation and avoidance of tobacco-smoke exposure."@en ;
     skos:inScheme icare:ResourceTopicScheme ;
     skos:prefLabel "Smoking"@en ;
-    skos:topConceptOf icare:ResourceTopicScheme .
+    skos:topConceptOf icare:ResourceTopicScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:StandardComplexity a icare:ContentComplexityLevel,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:StandardComplexity a owl:NamedIndividual,
+        skos:Concept,
+        icare:ContentComplexityLevel ;
     rdfs:label "Standard complexity"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:knowledge-resource ;
     skos:definition "A content-complexity level indicating standard complexity."@en ;
     skos:inScheme icare:ContentComplexityLevelScheme ;
     skos:prefLabel "Standard complexity"@en ;
-    skos:topConceptOf icare:ContentComplexityLevelScheme .
+    skos:topConceptOf icare:ContentComplexityLevelScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:StrongRecommendation a icare:RecommendationStrength,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:StrongRecommendation a owl:NamedIndividual,
+        skos:Concept,
+        icare:RecommendationStrength ;
     rdfs:label "Strong recommendation"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:knowledge-resource ;
     skos:definition "A recommendation-strength value indicating that the recommended action should generally be offered or followed when applicable."@en ;
     skos:inScheme icare:RecommendationStrengthScheme ;
     skos:prefLabel "Strong recommendation"@en ;
-    skos:topConceptOf icare:RecommendationStrengthScheme .
+    skos:topConceptOf icare:RecommendationStrengthScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:SupportBehaviourChange a icare:ResourcePurpose,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:SupportBehaviourChange a owl:NamedIndividual,
+        skos:Concept,
+        icare:ResourcePurpose ;
     rdfs:label "Support behaviour change"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:knowledge-resource ;
     skos:definition "A resource purpose indicating that the resource is intended to support a health-related behaviour change."@en ;
     skos:inScheme icare:ResourcePurposeScheme ;
     skos:prefLabel "Support behaviour change"@en ;
-    skos:topConceptOf icare:ResourcePurposeScheme .
+    skos:topConceptOf icare:ResourcePurposeScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:SupportCareNavigation a icare:ResourcePurpose,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:SupportCareNavigation a owl:NamedIndividual,
+        skos:Concept,
+        icare:ResourcePurpose ;
     rdfs:label "Support care navigation"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:knowledge-resource ;
     skos:definition "A resource purpose indicating that the resource is intended to support navigation of healthcare or support services."@en ;
     skos:inScheme icare:ResourcePurposeScheme ;
     skos:prefLabel "Support care navigation"@en ;
-    skos:topConceptOf icare:ResourcePurposeScheme .
+    skos:topConceptOf icare:ResourcePurposeScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:SupportDisclosure a icare:ResourcePurpose,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:SupportDisclosure a owl:NamedIndividual,
+        skos:Concept,
+        icare:ResourcePurpose ;
     rdfs:label "Support disclosure"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:knowledge-resource ;
     skos:definition "A resource purpose indicating that the resource is intended to support appropriate disclosure or communication of health information."@en ;
     skos:inScheme icare:ResourcePurposeScheme ;
     skos:prefLabel "Support disclosure"@en ;
-    skos:topConceptOf icare:ResourcePurposeScheme .
+    skos:topConceptOf icare:ResourcePurposeScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:SupportSelfManagement a icare:ResourcePurpose,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:SupportSelfManagement a owl:NamedIndividual,
+        skos:Concept,
+        icare:ResourcePurpose ;
     rdfs:label "Support self management"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:knowledge-resource ;
     skos:definition "A resource purpose indicating that the resource is intended to support health-related self-management."@en ;
     skos:inScheme icare:ResourcePurposeScheme ;
     skos:prefLabel "Support self management"@en ;
-    skos:topConceptOf icare:ResourcePurposeScheme .
+    skos:topConceptOf icare:ResourcePurposeScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:Transcript a icare:AccessibilityFeature,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:Transcript a owl:NamedIndividual,
+        skos:Concept,
+        icare:AccessibilityFeature ;
     rdfs:label "Transcript"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:knowledge-resource ;
     skos:definition "An accessibility feature providing a textual record of spoken or audiovisual content."@en ;
     skos:inScheme icare:AccessibilityFeatureScheme ;
     skos:prefLabel "Transcript"@en ;
-    skos:topConceptOf icare:AccessibilityFeatureScheme .
+    skos:topConceptOf icare:AccessibilityFeatureScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:VeryLowCertaintyEvidence a icare:EvidenceGrade,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:VeryLowCertaintyEvidence a owl:NamedIndividual,
+        skos:Concept,
+        icare:EvidenceGrade ;
     rdfs:label "Very low certainty evidence"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:knowledge-resource ;
     skos:definition "An evidence grade indicating very low certainty in the relevant body of evidence under the stated grading approach."@en ;
     skos:inScheme icare:EvidenceGradeScheme ;
     skos:prefLabel "Very low certainty evidence"@en ;
-    skos:topConceptOf icare:EvidenceGradeScheme .
+    skos:topConceptOf icare:EvidenceGradeScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:Video a icare:ResourceFormat,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:Video a owl:NamedIndividual,
+        skos:Concept,
+        icare:ResourceFormat ;
     rdfs:label "Video"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:knowledge-resource ;
     skos:definition "A resource format that uses video as its primary presentation format."@en ;
     skos:inScheme icare:ResourceFormatScheme ;
     skos:prefLabel "Video"@en ;
-    skos:topConceptOf icare:ResourceFormatScheme .
+    skos:topConceptOf icare:ResourceFormatScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:VisualSummary a icare:AccessibilityFeature,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:VisualSummary a owl:NamedIndividual,
+        skos:Concept,
+        icare:AccessibilityFeature ;
     rdfs:label "Visual summary"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:knowledge-resource ;
     skos:definition "An accessibility feature providing a concise visual representation of the main information."@en ;
     skos:inScheme icare:AccessibilityFeatureScheme ;
     skos:prefLabel "Visual summary"@en ;
-    skos:topConceptOf icare:AccessibilityFeatureScheme .
+    skos:topConceptOf icare:AccessibilityFeatureScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:WrittenText a icare:ResourceFormat,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:WrittenText a owl:NamedIndividual,
+        skos:Concept,
+        icare:ResourceFormat ;
     rdfs:label "Written text"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:knowledge-resource ;
     skos:definition "A resource format that uses written text as its primary presentation format."@en ;
     skos:inScheme icare:ResourceFormatScheme ;
     skos:prefLabel "Written text"@en ;
-    skos:topConceptOf icare:ResourceFormatScheme .
+    skos:topConceptOf icare:ResourceFormatScheme ;
+    meta:reviewStatus "Proposed" .
 
 icare:Contraindication a owl:Class ;
     rdfs:label "Contraindication"@en ;
@@ -806,7 +806,6 @@ icare:ResourceTopicScheme a owl:NamedIndividual,
 
 icare:knowledge-resource a owl:Ontology ;
     rdfs:label "Guideline and Knowledge Resource"@en ;
-    meta:releaseStatus "Published" ;
     dcterms:contributor "MAYA consortium partners" ;
     dcterms:creator "Robert Gordon University" ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
@@ -815,10 +814,11 @@ icare:knowledge-resource a owl:Ontology ;
     owl:imports icare:agent,
         icare:clinical-profile,
         icare:cv-risk,
-        <http://maya-project.eu/icareonto/imports/skos-reference>,
+        <https://w3id.org/icareonto/imports/skos-reference>,
         icare:intervention-careplan,
         icare:metadata,
         icare:social-context ;
-    owl:versionIRI <http://maya-project.eu/icareonto/releases/1.0.0/knowledge-resource> ;
-    owl:versionInfo "1.0.0" .
+    owl:versionIRI <https://w3id.org/icareonto/releases/1.0.0/knowledge-resource> ;
+    owl:versionInfo "1.0.0" ;
+    meta:releaseStatus "Published" .
 

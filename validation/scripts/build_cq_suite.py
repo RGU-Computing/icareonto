@@ -21,7 +21,7 @@ OUT = KG / "cq-tests"
 sys.path.insert(0, str(REPO / "serialisation/scripts"))
 from serialise_ontology import read_xlsx
 
-IC = Namespace("http://maya-project.eu/icareonto/")
+IC = Namespace("https://w3id.org/icareonto/")
 D = Namespace("https://example.org/maya/demo/es/")
 T = Namespace("https://example.org/maya/demo/cq-tests/")
 ENTRY = URIRef(str(T).rstrip("/"))
@@ -226,7 +226,7 @@ other_checkup = node("control-checkup", "MedicalCheckUpActivity", "Contrasting c
 rel(other_plan, "carePlanIntendedFor", other_person)
 rel(other_plan, "carePlanIncludesActivity", other_checkup)
 
-PREFIX = """PREFIX icare: <http://maya-project.eu/icareonto/>
+PREFIX = """PREFIX icare: <https://w3id.org/icareonto/>
 PREFIX demo: <https://example.org/maya/demo/es/>
 PREFIX test: <https://example.org/maya/demo/cq-tests/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -371,7 +371,7 @@ for case in cases:
         r = source[case["id"]]
         case.update(question=r["C"], theme=r["B"], expected_answer_type=r["D"], source_path=r["E"], modules=r["F"], primary_basis=r["G"], stakeholder_cq_ids=r.get("H", ""), proposal_cq_ids=r.get("I", ""))
         assert case["expected"], "Canonical tests must have authored nonempty expected answers"
-ontology_version = str(next(Graph().parse(REPO / "serialisation/icareonto.ttl").objects(URIRef(str(IC).rstrip("/")), OWL.versionInfo)))
+ontology_version = str(next(Graph().parse(REPO / "serialisation/icareonto.ttl").objects(URIRef(str(IC)), OWL.versionInfo)))
 (OUT / "cases.json").write_text(json.dumps({"ontology_version": ontology_version, "source_register": source_path.name,
     "source_sha256": hashlib.sha256(source_path.read_bytes()).hexdigest(),
     "fixture": "coverage.ttl plus imported Spanish survivor graph and ontology", "cases": cases}, indent=2) + "\n", encoding="utf-8")

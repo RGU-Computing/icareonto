@@ -18,11 +18,11 @@ from pathlib import Path
 from rdflib import BNode, Graph, Literal, Namespace, RDF, RDFS, OWL, SKOS, URIRef, XSD
 from rdflib.namespace import DCTERMS
 
-BASE = "http://maya-project.eu/icareonto/"
+BASE = "https://w3id.org/icareonto/"
 IC = Namespace(BASE)
 META = Namespace(BASE + "metadata#")
 PROV = Namespace("http://www.w3.org/ns/prov#")
-ROOT_IRI = URIRef(BASE.rstrip("/"))
+ROOT_IRI = URIRef(BASE)
 META_IRI = URIRef(BASE + "metadata")
 PROV_IRI = URIRef(BASE + "imports/prov-reference")
 SKOS_IRI = URIRef(BASE + "imports/skos-reference")
@@ -442,6 +442,7 @@ def build(args):
                                           ("imports/prov-o.ttl", "https://www.w3.org/ns/prov-o.ttl"))]
     datatypes = sorted({str(o) for g in all_graphs.values() for s, p, o in g.triples((None, RDFS.range, None)) if str(o).startswith(str(XSD))})
     report = {"release": args.release, "ontology_version": args.version,
+              "ontology_iri": str(ROOT_IRI), "entity_namespace": BASE,
               "release_status": "Published" if "-" not in args.version else "Pre-release", "project_baseline": "iCARE Onto Version 1",
               "runtime_provenance_policy": "Development filenames, sheet references and mapping-register identifiers are retained only in validation sidecars, not in the ontology graphs.",
               "sources_sha256": sources, "external_sources": external_sources, "module_count": len(modules),
@@ -463,7 +464,7 @@ def build(args):
 if __name__ == "__main__":
     repo = Path(__file__).resolve().parents[2]
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--ontology", type=Path, default=repo / "sources/icareonto_review_workbook_v221126.xlsx")
+    parser.add_argument("--ontology", type=Path, default=repo / "sources/icareonto_review_workbook.xlsx")
     parser.add_argument("--alignments", type=Path, default=repo / "sources/icareonto_alignment_mapping_workbook_v301026_4.xlsx")
     parser.add_argument("--cqs", type=Path, default=repo / "sources/icareonto_final_consolidated_competency_questions_v5.xlsx")
     parser.add_argument("--output", type=Path, default=repo / "serialisation")

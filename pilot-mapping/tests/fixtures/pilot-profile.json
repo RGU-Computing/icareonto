@@ -1,7 +1,7 @@
 {
   "accepted_mappings": [
     {
-      "class_iri": "http://maya-project.eu/icareonto/LanguagePreference",
+      "class_iri": "https://w3id.org/icareonto/LanguagePreference",
       "cosine_similarity": 0.43439117525049326,
       "decision": "accepted_for_demonstration",
       "label": "Language Preference",
@@ -12,7 +12,7 @@
       "source_refs": []
     },
     {
-      "class_iri": "http://maya-project.eu/icareonto/InformationPreference",
+      "class_iri": "https://w3id.org/icareonto/InformationPreference",
       "cosine_similarity": 0.2081693862265165,
       "decision": "accepted_for_demonstration",
       "label": "Information Preference",
@@ -23,7 +23,7 @@
       "source_refs": []
     },
     {
-      "class_iri": "http://maya-project.eu/icareonto/ParticipantEnrolment",
+      "class_iri": "https://w3id.org/icareonto/ParticipantEnrolment",
       "cosine_similarity": 0.515210552200553,
       "decision": "accepted_for_demonstration",
       "label": "Participant Enrolment",
@@ -34,7 +34,7 @@
       "source_refs": []
     },
     {
-      "class_iri": "http://maya-project.eu/icareonto/BloodPressureMeasurementProtocol",
+      "class_iri": "https://w3id.org/icareonto/BloodPressureMeasurementProtocol",
       "cosine_similarity": 0.5116500706395157,
       "decision": "accepted_for_demonstration",
       "label": "Blood Pressure Measurement Protocol",
@@ -45,7 +45,7 @@
       "source_refs": []
     },
     {
-      "class_iri": "http://maya-project.eu/icareonto/Questionnaire",
+      "class_iri": "https://w3id.org/icareonto/Questionnaire",
       "cosine_similarity": 0.651231727343833,
       "decision": "accepted_for_demonstration",
       "label": "Questionnaire",
@@ -56,7 +56,7 @@
       "source_refs": []
     },
     {
-      "class_iri": "http://maya-project.eu/icareonto/HealthLiteracyNeedType",
+      "class_iri": "https://w3id.org/icareonto/HealthLiteracyNeedType",
       "cosine_similarity": 0.4376508699612605,
       "decision": "accepted_for_demonstration",
       "label": "Health Literacy Need Type",
@@ -67,7 +67,7 @@
       "source_refs": []
     },
     {
-      "class_iri": "http://maya-project.eu/icareonto/AccessibilityFeature",
+      "class_iri": "https://w3id.org/icareonto/AccessibilityFeature",
       "cosine_similarity": 0.4998182482781146,
       "decision": "accepted_for_demonstration",
       "label": "Accessibility Feature",
@@ -78,7 +78,7 @@
       "source_refs": []
     },
     {
-      "class_iri": "http://maya-project.eu/icareonto/PerformedExerciseSession",
+      "class_iri": "https://w3id.org/icareonto/PerformedExerciseSession",
       "cosine_similarity": 0.5769906101818747,
       "decision": "accepted_for_demonstration",
       "label": "Performed Exercise Session",
@@ -89,7 +89,7 @@
       "source_refs": []
     },
     {
-      "class_iri": "http://maya-project.eu/icareonto/ExercisePrescription",
+      "class_iri": "https://w3id.org/icareonto/ExercisePrescription",
       "cosine_similarity": 0.7190424399322731,
       "decision": "accepted_for_demonstration",
       "label": "Exercise Prescription",
@@ -100,7 +100,7 @@
       "source_refs": []
     },
     {
-      "class_iri": "http://maya-project.eu/icareonto/CancerTreatmentHistory",
+      "class_iri": "https://w3id.org/icareonto/CancerTreatmentHistory",
       "cosine_similarity": 0.6751299039616528,
       "decision": "accepted_for_demonstration",
       "label": "Cancer Treatment History",
@@ -111,7 +111,7 @@
       "source_refs": []
     },
     {
-      "class_iri": "http://maya-project.eu/icareonto/ConsentRecord",
+      "class_iri": "https://w3id.org/icareonto/ConsentRecord",
       "cosine_similarity": 0.5690816308915508,
       "decision": "accepted_for_demonstration",
       "label": "Consent Record",
@@ -122,7 +122,7 @@
       "source_refs": []
     },
     {
-      "class_iri": "http://maya-project.eu/icareonto/EvidenceSource",
+      "class_iri": "https://w3id.org/icareonto/EvidenceSource",
       "cosine_similarity": 0.560795161542188,
       "decision": "accepted_for_demonstration",
       "label": "Evidence Source",
@@ -133,7 +133,7 @@
       "source_refs": []
     },
     {
-      "class_iri": "http://maya-project.eu/icareonto/NutritionInstruction",
+      "class_iri": "https://w3id.org/icareonto/NutritionInstruction",
       "cosine_similarity": 0.5939244788035232,
       "decision": "accepted_for_demonstration",
       "label": "Nutrition Instruction",
@@ -144,7 +144,7 @@
       "source_refs": []
     },
     {
-      "class_iri": "http://maya-project.eu/icareonto/Locale",
+      "class_iri": "https://w3id.org/icareonto/Locale",
       "cosine_similarity": 0.41384616373559097,
       "decision": "accepted_for_demonstration",
       "label": "Locale",
@@ -162,9 +162,9 @@
     "provenance-governance"
   ],
   "needs_sha256": "d37d4a62f3355efcebf5ec9d68743eed6aedebbd8a6b4392f8dea7c024970e15",
-  "ontology_sha256": "cf7c4860aa45dbd2c22a57811a3ed23c4178347811d6f22d43f7db52c4a7bd9c",
+  "ontology_sha256": "2466fc485fcb4acd0ccfee3cecf98358733f4ac64bd102b3cb746b32d4d16cf0",
   "pilot_id": "es-demo-01",
-  "ranking_sha256": "50780349e7b9871b237a22e9cccceadb61db2d0f956c03e986bb4e9bfdee4f28",
+  "ranking_sha256": "7e117784d643276b6d677d3089ae3d1cba08184d80bb00b08b9470404782d1a0",
   "relevant_modules": [
     "cancer-history",
     "core",
@@ -207,341 +207,341 @@
   "supporting_relationships": [
     {
       "domains": [
-        "http://maya-project.eu/icareonto/ExerciseAdherenceAssessment"
+        "https://w3id.org/icareonto/ExerciseAdherenceAssessment"
       ],
-      "property_iri": "http://maya-project.eu/icareonto/adherenceAssessmentEvaluatesPrescription",
+      "property_iri": "https://w3id.org/icareonto/adherenceAssessmentEvaluatesPrescription",
       "ranges": [
-        "http://maya-project.eu/icareonto/ExercisePrescription"
+        "https://w3id.org/icareonto/ExercisePrescription"
       ],
       "status": "adjacent_relation_for_profile_design_not_independently_reviewed"
     },
     {
       "domains": [
-        "http://maya-project.eu/icareonto/ExerciseAdherenceAssessment"
+        "https://w3id.org/icareonto/ExerciseAdherenceAssessment"
       ],
-      "property_iri": "http://maya-project.eu/icareonto/adherenceAssessmentUsesPerformedSession",
+      "property_iri": "https://w3id.org/icareonto/adherenceAssessmentUsesPerformedSession",
       "ranges": [
-        "http://maya-project.eu/icareonto/PerformedExerciseSession"
+        "https://w3id.org/icareonto/PerformedExerciseSession"
       ],
       "status": "adjacent_relation_for_profile_design_not_independently_reviewed"
     },
     {
       "domains": [
-        "http://maya-project.eu/icareonto/CancerTreatmentHistory"
+        "https://w3id.org/icareonto/CancerTreatmentHistory"
       ],
-      "property_iri": "http://maya-project.eu/icareonto/cancerTreatmentHistoryHasRecord",
+      "property_iri": "https://w3id.org/icareonto/cancerTreatmentHistoryHasRecord",
       "ranges": [
-        "http://maya-project.eu/icareonto/CancerTreatmentRecord"
+        "https://w3id.org/icareonto/CancerTreatmentRecord"
       ],
       "status": "adjacent_relation_for_profile_design_not_independently_reviewed"
     },
     {
       "domains": [
-        "http://maya-project.eu/icareonto/ConsentRecord"
+        "https://w3id.org/icareonto/ConsentRecord"
       ],
-      "property_iri": "http://maya-project.eu/icareonto/consentRecordAppliesToKnowledgeGraph",
+      "property_iri": "https://w3id.org/icareonto/consentRecordAppliesToKnowledgeGraph",
       "ranges": [
-        "http://maya-project.eu/icareonto/ParticipantKnowledgeGraph"
+        "https://w3id.org/icareonto/ParticipantKnowledgeGraph"
       ],
       "status": "adjacent_relation_for_profile_design_not_independently_reviewed"
     },
     {
       "domains": [
-        "http://maya-project.eu/icareonto/ConsentRecord"
+        "https://w3id.org/icareonto/ConsentRecord"
       ],
-      "property_iri": "http://maya-project.eu/icareonto/consentRecordGrantedBy",
+      "property_iri": "https://w3id.org/icareonto/consentRecordGrantedBy",
       "ranges": [
-        "http://maya-project.eu/icareonto/Person"
+        "https://w3id.org/icareonto/Person"
       ],
       "status": "adjacent_relation_for_profile_design_not_independently_reviewed"
     },
     {
       "domains": [
-        "http://maya-project.eu/icareonto/ConsentRecord"
+        "https://w3id.org/icareonto/ConsentRecord"
       ],
-      "property_iri": "http://maya-project.eu/icareonto/consentRecordHasStatus",
+      "property_iri": "https://w3id.org/icareonto/consentRecordHasStatus",
       "ranges": [
-        "http://maya-project.eu/icareonto/ConsentStatusValue"
+        "https://w3id.org/icareonto/ConsentStatusValue"
       ],
       "status": "adjacent_relation_for_profile_design_not_independently_reviewed"
     },
     {
       "domains": [
-        "http://maya-project.eu/icareonto/ConsentRecord"
+        "https://w3id.org/icareonto/ConsentRecord"
       ],
-      "property_iri": "http://maya-project.eu/icareonto/consentRecordValidDuring",
+      "property_iri": "https://w3id.org/icareonto/consentRecordValidDuring",
       "ranges": [
-        "http://maya-project.eu/icareonto/TimeInterval"
+        "https://w3id.org/icareonto/TimeInterval"
       ],
       "status": "adjacent_relation_for_profile_design_not_independently_reviewed"
     },
     {
       "domains": [
-        "http://maya-project.eu/icareonto/ExerciseIntervention"
+        "https://w3id.org/icareonto/ExerciseIntervention"
       ],
-      "property_iri": "http://maya-project.eu/icareonto/exerciseInterventionHasPrescription",
+      "property_iri": "https://w3id.org/icareonto/exerciseInterventionHasPrescription",
       "ranges": [
-        "http://maya-project.eu/icareonto/ExercisePrescription"
+        "https://w3id.org/icareonto/ExercisePrescription"
       ],
       "status": "adjacent_relation_for_profile_design_not_independently_reviewed"
     },
     {
       "domains": [
-        "http://maya-project.eu/icareonto/ExercisePrescription"
+        "https://w3id.org/icareonto/ExercisePrescription"
       ],
-      "property_iri": "http://maya-project.eu/icareonto/exercisePrescriptionIncludesActivity",
+      "property_iri": "https://w3id.org/icareonto/exercisePrescriptionIncludesActivity",
       "ranges": [
-        "http://maya-project.eu/icareonto/ExerciseActivity"
+        "https://w3id.org/icareonto/ExerciseActivity"
       ],
       "status": "adjacent_relation_for_profile_design_not_independently_reviewed"
     },
     {
       "domains": [
-        "http://maya-project.eu/icareonto/ExercisePrescription"
+        "https://w3id.org/icareonto/ExercisePrescription"
       ],
-      "property_iri": "http://maya-project.eu/icareonto/exercisePrescriptionSpecifiesActivity",
+      "property_iri": "https://w3id.org/icareonto/exercisePrescriptionSpecifiesActivity",
       "ranges": [
-        "http://maya-project.eu/icareonto/ExerciseActivity"
+        "https://w3id.org/icareonto/ExerciseActivity"
       ],
       "status": "adjacent_relation_for_profile_design_not_independently_reviewed"
     },
     {
       "domains": [
-        "http://maya-project.eu/icareonto/HealthLiteracyIntervention"
+        "https://w3id.org/icareonto/HealthLiteracyIntervention"
       ],
-      "property_iri": "http://maya-project.eu/icareonto/healthLiteracyInterventionAddressesNeed",
+      "property_iri": "https://w3id.org/icareonto/healthLiteracyInterventionAddressesNeed",
       "ranges": [
-        "http://maya-project.eu/icareonto/HealthLiteracyNeedType"
+        "https://w3id.org/icareonto/HealthLiteracyNeedType"
       ],
       "status": "adjacent_relation_for_profile_design_not_independently_reviewed"
     },
     {
       "domains": [
-        "http://maya-project.eu/icareonto/HealthLiteracyResource"
+        "https://w3id.org/icareonto/HealthLiteracyResource"
       ],
-      "property_iri": "http://maya-project.eu/icareonto/healthLiteracyResourceAddressesNeed",
+      "property_iri": "https://w3id.org/icareonto/healthLiteracyResourceAddressesNeed",
       "ranges": [
-        "http://maya-project.eu/icareonto/HealthLiteracyNeedType"
+        "https://w3id.org/icareonto/HealthLiteracyNeedType"
       ],
       "status": "adjacent_relation_for_profile_design_not_independently_reviewed"
     },
     {
       "domains": [
-        "http://maya-project.eu/icareonto/ObservationResult"
+        "https://w3id.org/icareonto/ObservationResult"
       ],
-      "property_iri": "http://maya-project.eu/icareonto/healthLiteracyResultIdentifiesNeed",
+      "property_iri": "https://w3id.org/icareonto/healthLiteracyResultIdentifiesNeed",
       "ranges": [
-        "http://maya-project.eu/icareonto/HealthLiteracyNeedType"
+        "https://w3id.org/icareonto/HealthLiteracyNeedType"
       ],
       "status": "adjacent_relation_for_profile_design_not_independently_reviewed"
     },
     {
       "domains": [
-        "http://maya-project.eu/icareonto/InformationPreference"
+        "https://w3id.org/icareonto/InformationPreference"
       ],
-      "property_iri": "http://maya-project.eu/icareonto/informationPreferenceHasDetailLevel",
+      "property_iri": "https://w3id.org/icareonto/informationPreferenceHasDetailLevel",
       "ranges": [
-        "http://maya-project.eu/icareonto/InformationDetailLevelValue"
+        "https://w3id.org/icareonto/InformationDetailLevelValue"
       ],
       "status": "adjacent_relation_for_profile_design_not_independently_reviewed"
     },
     {
       "domains": [
-        "http://maya-project.eu/icareonto/KnowledgeResource"
+        "https://w3id.org/icareonto/KnowledgeResource"
       ],
-      "property_iri": "http://maya-project.eu/icareonto/knowledgeResourceHasAccessibilityFeature",
+      "property_iri": "https://w3id.org/icareonto/knowledgeResourceHasAccessibilityFeature",
       "ranges": [
-        "http://maya-project.eu/icareonto/AccessibilityFeature"
+        "https://w3id.org/icareonto/AccessibilityFeature"
       ],
       "status": "adjacent_relation_for_profile_design_not_independently_reviewed"
     },
     {
       "domains": [
-        "http://maya-project.eu/icareonto/MeasurementEvent"
+        "https://w3id.org/icareonto/MeasurementEvent"
       ],
-      "property_iri": "http://maya-project.eu/icareonto/measurementEventOccursDuringPerformedSession",
+      "property_iri": "https://w3id.org/icareonto/measurementEventOccursDuringPerformedSession",
       "ranges": [
-        "http://maya-project.eu/icareonto/PerformedExerciseSession"
+        "https://w3id.org/icareonto/PerformedExerciseSession"
       ],
       "status": "adjacent_relation_for_profile_design_not_independently_reviewed"
     },
     {
       "domains": [
-        "http://maya-project.eu/icareonto/MeasurementInstrument"
+        "https://w3id.org/icareonto/MeasurementInstrument"
       ],
-      "property_iri": "http://maya-project.eu/icareonto/measurementInstrumentHasValidationEvidence",
+      "property_iri": "https://w3id.org/icareonto/measurementInstrumentHasValidationEvidence",
       "ranges": [
-        "http://maya-project.eu/icareonto/EvidenceSource"
+        "https://w3id.org/icareonto/EvidenceSource"
       ],
       "status": "adjacent_relation_for_profile_design_not_independently_reviewed"
     },
     {
       "domains": [
-        "http://maya-project.eu/icareonto/NutritionInstruction"
+        "https://w3id.org/icareonto/NutritionInstruction"
       ],
-      "property_iri": "http://maya-project.eu/icareonto/nutritionInstructionHasActionType",
+      "property_iri": "https://w3id.org/icareonto/nutritionInstructionHasActionType",
       "ranges": [
-        "http://maya-project.eu/icareonto/NutritionActionType"
+        "https://w3id.org/icareonto/NutritionActionType"
       ],
       "status": "adjacent_relation_for_profile_design_not_independently_reviewed"
     },
     {
       "domains": [
-        "http://maya-project.eu/icareonto/NutritionInstruction"
+        "https://w3id.org/icareonto/NutritionInstruction"
       ],
-      "property_iri": "http://maya-project.eu/icareonto/nutritionInstructionHasSchedule",
+      "property_iri": "https://w3id.org/icareonto/nutritionInstructionHasSchedule",
       "ranges": [
-        "http://maya-project.eu/icareonto/Schedule"
+        "https://w3id.org/icareonto/Schedule"
       ],
       "status": "adjacent_relation_for_profile_design_not_independently_reviewed"
     },
     {
       "domains": [
-        "http://maya-project.eu/icareonto/NutritionInstruction"
+        "https://w3id.org/icareonto/NutritionInstruction"
       ],
-      "property_iri": "http://maya-project.eu/icareonto/nutritionInstructionTargetsComponent",
+      "property_iri": "https://w3id.org/icareonto/nutritionInstructionTargetsComponent",
       "ranges": [
-        "http://maya-project.eu/icareonto/DietaryComponent"
+        "https://w3id.org/icareonto/DietaryComponent"
       ],
       "status": "adjacent_relation_for_profile_design_not_independently_reviewed"
     },
     {
       "domains": [
-        "http://maya-project.eu/icareonto/NutritionIntervention"
+        "https://w3id.org/icareonto/NutritionIntervention"
       ],
-      "property_iri": "http://maya-project.eu/icareonto/nutritionInterventionSpecifiesInstruction",
+      "property_iri": "https://w3id.org/icareonto/nutritionInterventionSpecifiesInstruction",
       "ranges": [
-        "http://maya-project.eu/icareonto/NutritionInstruction"
+        "https://w3id.org/icareonto/NutritionInstruction"
       ],
       "status": "adjacent_relation_for_profile_design_not_independently_reviewed"
     },
     {
       "domains": [
-        "http://maya-project.eu/icareonto/ParticipantEnrolment"
+        "https://w3id.org/icareonto/ParticipantEnrolment"
       ],
-      "property_iri": "http://maya-project.eu/icareonto/participantEnrolmentAssignedToArm",
+      "property_iri": "https://w3id.org/icareonto/participantEnrolmentAssignedToArm",
       "ranges": [
-        "http://maya-project.eu/icareonto/StudyArm"
+        "https://w3id.org/icareonto/StudyArm"
       ],
       "status": "adjacent_relation_for_profile_design_not_independently_reviewed"
     },
     {
       "domains": [
-        "http://maya-project.eu/icareonto/ParticipantEnrolment"
+        "https://w3id.org/icareonto/ParticipantEnrolment"
       ],
-      "property_iri": "http://maya-project.eu/icareonto/participantEnrolmentAtSite",
+      "property_iri": "https://w3id.org/icareonto/participantEnrolmentAtSite",
       "ranges": [
-        "http://maya-project.eu/icareonto/PilotSite"
+        "https://w3id.org/icareonto/PilotSite"
       ],
       "status": "adjacent_relation_for_profile_design_not_independently_reviewed"
     },
     {
       "domains": [
-        "http://maya-project.eu/icareonto/ParticipantEnrolment"
+        "https://w3id.org/icareonto/ParticipantEnrolment"
       ],
-      "property_iri": "http://maya-project.eu/icareonto/participantEnrolmentForPerson",
+      "property_iri": "https://w3id.org/icareonto/participantEnrolmentForPerson",
       "ranges": [
-        "http://maya-project.eu/icareonto/Person"
+        "https://w3id.org/icareonto/Person"
       ],
       "status": "adjacent_relation_for_profile_design_not_independently_reviewed"
     },
     {
       "domains": [
-        "http://maya-project.eu/icareonto/ParticipantEnrolment"
+        "https://w3id.org/icareonto/ParticipantEnrolment"
       ],
-      "property_iri": "http://maya-project.eu/icareonto/participantEnrolmentHasStatus",
+      "property_iri": "https://w3id.org/icareonto/participantEnrolmentHasStatus",
       "ranges": [
-        "http://maya-project.eu/icareonto/EnrolmentStatusValue"
+        "https://w3id.org/icareonto/EnrolmentStatusValue"
       ],
       "status": "adjacent_relation_for_profile_design_not_independently_reviewed"
     },
     {
       "domains": [
-        "http://maya-project.eu/icareonto/ParticipantEnrolment"
+        "https://w3id.org/icareonto/ParticipantEnrolment"
       ],
-      "property_iri": "http://maya-project.eu/icareonto/participantEnrolmentInPhase",
+      "property_iri": "https://w3id.org/icareonto/participantEnrolmentInPhase",
       "ranges": [
-        "http://maya-project.eu/icareonto/PilotPhase"
+        "https://w3id.org/icareonto/PilotPhase"
       ],
       "status": "adjacent_relation_for_profile_design_not_independently_reviewed"
     },
     {
       "domains": [
-        "http://maya-project.eu/icareonto/ParticipantEnrolment"
+        "https://w3id.org/icareonto/ParticipantEnrolment"
       ],
-      "property_iri": "http://maya-project.eu/icareonto/participantEnrolmentInStudy",
+      "property_iri": "https://w3id.org/icareonto/participantEnrolmentInStudy",
       "ranges": [
-        "http://maya-project.eu/icareonto/PilotStudy"
+        "https://w3id.org/icareonto/PilotStudy"
       ],
       "status": "adjacent_relation_for_profile_design_not_independently_reviewed"
     },
     {
       "domains": [
-        "http://maya-project.eu/icareonto/ParticipantEnrolment"
+        "https://w3id.org/icareonto/ParticipantEnrolment"
       ],
-      "property_iri": "http://maya-project.eu/icareonto/participantEnrolmentValidDuring",
+      "property_iri": "https://w3id.org/icareonto/participantEnrolmentValidDuring",
       "ranges": [
-        "http://maya-project.eu/icareonto/TimeInterval"
+        "https://w3id.org/icareonto/TimeInterval"
       ],
       "status": "adjacent_relation_for_profile_design_not_independently_reviewed"
     },
     {
       "domains": [
-        "http://maya-project.eu/icareonto/PerformedExerciseSession"
+        "https://w3id.org/icareonto/PerformedExerciseSession"
       ],
-      "property_iri": "http://maya-project.eu/icareonto/performedSessionIncludesActivity",
+      "property_iri": "https://w3id.org/icareonto/performedSessionIncludesActivity",
       "ranges": [
-        "http://maya-project.eu/icareonto/ExerciseActivity"
+        "https://w3id.org/icareonto/ExerciseActivity"
       ],
       "status": "adjacent_relation_for_profile_design_not_independently_reviewed"
     },
     {
       "domains": [
-        "http://maya-project.eu/icareonto/PerformedExerciseSession"
+        "https://w3id.org/icareonto/PerformedExerciseSession"
       ],
-      "property_iri": "http://maya-project.eu/icareonto/performedSessionMonitoredBy",
+      "property_iri": "https://w3id.org/icareonto/performedSessionMonitoredBy",
       "ranges": [
-        "http://maya-project.eu/icareonto/Device"
+        "https://w3id.org/icareonto/Device"
       ],
       "status": "adjacent_relation_for_profile_design_not_independently_reviewed"
     },
     {
       "domains": [
-        "http://maya-project.eu/icareonto/PerformedExerciseSession"
+        "https://w3id.org/icareonto/PerformedExerciseSession"
       ],
-      "property_iri": "http://maya-project.eu/icareonto/performedSessionRealises",
+      "property_iri": "https://w3id.org/icareonto/performedSessionRealises",
       "ranges": [
-        "http://maya-project.eu/icareonto/PlannedExerciseSession"
+        "https://w3id.org/icareonto/PlannedExerciseSession"
       ],
       "status": "adjacent_relation_for_profile_design_not_independently_reviewed"
     },
     {
       "domains": [
-        "http://maya-project.eu/icareonto/Person"
+        "https://w3id.org/icareonto/Person"
       ],
-      "property_iri": "http://maya-project.eu/icareonto/personHasCancerTreatmentHistory",
+      "property_iri": "https://w3id.org/icareonto/personHasCancerTreatmentHistory",
       "ranges": [
-        "http://maya-project.eu/icareonto/CancerTreatmentHistory"
+        "https://w3id.org/icareonto/CancerTreatmentHistory"
       ],
       "status": "adjacent_relation_for_profile_design_not_independently_reviewed"
     },
     {
       "domains": [
-        "http://maya-project.eu/icareonto/PilotSite"
+        "https://w3id.org/icareonto/PilotSite"
       ],
-      "property_iri": "http://maya-project.eu/icareonto/pilotSiteHasLocale",
+      "property_iri": "https://w3id.org/icareonto/pilotSiteHasLocale",
       "ranges": [
-        "http://maya-project.eu/icareonto/Locale"
+        "https://w3id.org/icareonto/Locale"
       ],
       "status": "adjacent_relation_for_profile_design_not_independently_reviewed"
     },
     {
       "domains": [
-        "http://maya-project.eu/icareonto/PlannedExerciseSession"
+        "https://w3id.org/icareonto/PlannedExerciseSession"
       ],
-      "property_iri": "http://maya-project.eu/icareonto/plannedSessionFollowsPrescription",
+      "property_iri": "https://w3id.org/icareonto/plannedSessionFollowsPrescription",
       "ranges": [
-        "http://maya-project.eu/icareonto/ExercisePrescription"
+        "https://w3id.org/icareonto/ExercisePrescription"
       ],
       "status": "adjacent_relation_for_profile_design_not_independently_reviewed"
     }

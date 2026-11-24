@@ -1,11 +1,11 @@
 # Publication package validation
 
-Refreshed against technical ontology version 1.0.0 on 23 November 2026 using the repository's bundled inputs, fixtures and dependency specifications. A clean temporary ontology rebuild was also compared with the distributed graphs. The published baseline preserves stable entity IRIs and the source term-review statuses; publication is separate from clinical domain review before pilot use.
+Refreshed against technical ontology version 1.0.0 on 24 November 2026 using the repository's bundled inputs, fixtures and dependency specifications. The ontology and all dependent assets now use `https://w3id.org/icareonto/`; local names and source term-review statuses are retained. A clean temporary ontology rebuild was compared with the distributed graphs. Publication is separate from clinical domain review before pilot use.
 
 | Activity | Result |
 |---|---|
 | Release source snapshots | Four bundled workbooks verified against the source manifest |
-| Source-to-ontology reconciliation | 4,700 checks passed |
+| Source reconciliation and package validation | All 4,700 assertions passed |
 | Ontology rebuild using bundled inputs | 22 rebuilt ontology graphs are semantically identical to the distributed graphs |
 | KG initialisation workflow | 49 checks passed |
 | Fillable-template and refresh interface | 18 checks passed |
@@ -26,8 +26,10 @@ Refreshed against technical ontology version 1.0.0 on 23 November 2026 using the
 
 The earlier populated-date profile finding is resolved by the source-model change to validated strings for the date and all three duration properties. The new tests include valid/invalid calendar dates, century/leap-year exceptions, malformed durations, legacy typed RDF rejection and unchanged outputs after a failed update. See [the tested policy and migration guide](../../instantiation/reports/DATATYPE_COMPATIBILITY.md) and [populated OWL results](../../instantiation/reports/temporal-owlapi-report.json). These technical results do not establish clinical/predictive validity.
 
-The fixed pilot-ranking baseline was regenerated against the packaged ontology; stale fingerprints were not bypassed. Exact text/model cache reuse is permitted, and live encoder integration was checked separately. The test baseline is distributed without embedding caches or model weights. Source model/encoder provenance is retained in `pilot-mapping/tests/fixtures/rankings.json`. Reusing fictional demonstration decisions does not constitute new operational approval.
+The fixed pilot-ranking baseline was regenerated and validated against the packaged ontology fingerprint. Exact text/model cache reuse is permitted, and live encoder integration was checked separately. The test baseline is distributed without embedding caches or model weights. Source model/encoder provenance is retained in `pilot-mapping/tests/fixtures/rankings.json`. Reusing fictional demonstration decisions does not constitute new operational approval.
 
 The distributed assets include a current resource catalogue and a compact fictional educational example. Runtime outputs, histories and caches are excluded by the repository's ignore rules.
 
 The core checks can be reproduced from the repository root with `python scripts/run_checks.py`. Live encoder integration is enabled with `--with-encoder` and the documented environment settings.
+
+The [namespace check record](../../serialisation/validation/namespace-check.json) compares the regenerated ontology with the earlier snapshot after the intended IRI substitution, verifies that local names and all other RDF assertions are retained, and confirms that bundled sources and public package files contain no remaining references to the earlier namespace. The [clean rebuild record](../../serialisation/validation/rebuild-check.json) records the comparison of all 22 generated ontology graphs. No compatibility aliases were added. Online w3id redirect registration and any repository hosting move are separate from these offline package checks.

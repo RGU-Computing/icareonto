@@ -2,6 +2,23 @@
 
 ## [1.0.0] – 2026-11-23
 
+### Namespace finalisation – 2026-11-24
+
+- Finalised the ontology IRI and entity namespace as `https://w3id.org/icareonto/`,
+  retaining local entity names and technical version 1.0.0. All tools, queries,
+  examples and controlled-vocabulary references use the new namespace directly;
+  no aliases or compatibility mappings to the earlier namespace are supplied.
+- Adopted `sources/icareonto_review_workbook.xlsx` as the stable ontology source
+  filename and refreshed the four source hashes. Removed workbook hyperlinks
+  while preserving IRI text, formulas and formatting, and updated alignment and
+  educational field-guide IRIs.
+- Regenerated the ontology, JSON-LD input reference, pilot-ranking fixtures,
+  educational catalogue and participant/CQ examples, with fresh workflow and
+  OWLAPI/HermiT evidence. The catalogue retains the same 41 resource entries.
+- Made saved-fixture evaluation the default for the Pilot Mapper; `--output`
+  explicitly selects another run so ignored local outputs cannot alter the
+  published evaluation baseline.
+
 ### Changed
 
 - Published the initial iCARE Onto Version 1 baseline as technical version

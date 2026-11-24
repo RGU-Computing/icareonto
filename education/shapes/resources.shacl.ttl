@@ -1,6 +1,6 @@
 @prefix sh: <http://www.w3.org/ns/shacl#> .
-@prefix icare: <http://maya-project.eu/icareonto/> .
-@prefix edu: <http://maya-project.eu/icareonto/education/metadata#> .
+@prefix icare: <https://w3id.org/icareonto/> .
+@prefix edu: <https://w3id.org/icareonto/education/metadata#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 

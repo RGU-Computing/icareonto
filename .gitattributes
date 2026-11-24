@@ -1,2 +1,2 @@
-# Python's CSV writer emits CRLF for the tab-separated validation tables.
-*.tsv whitespace=cr-at-eol
+# CSV output uses CRLF; trailing tabs preserve empty fields in TSV tables.
+*.tsv whitespace=cr-at-eol,-blank-at-eol

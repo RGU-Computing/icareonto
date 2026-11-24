@@ -1,6 +1,6 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix icare: <http://maya-project.eu/icareonto/> .
-@prefix meta: <http://maya-project.eu/icareonto/metadata#> .
+@prefix icare: <https://w3id.org/icareonto/> .
+@prefix meta: <https://w3id.org/icareonto/metadata#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -48,115 +48,115 @@ icare:participantKnowledgeGraphAboutPerson a owl:ObjectProperty ;
     rdfs:range icare:Person ;
     skos:definition "Identifies the person whose information is represented in the graph."@en .
 
-icare:ClinicianVerified a icare:VerificationStatusValue,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:ClinicianVerified a owl:NamedIndividual,
+        skos:Concept,
+        icare:VerificationStatusValue ;
     rdfs:label "Clinician verified"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:provenance-governance ;
     skos:definition "A verification status indicating that a clinician has reviewed and confirmed the information."@en ;
     skos:inScheme icare:VerificationStatusValueScheme ;
     skos:prefLabel "Clinician verified"@en ;
-    skos:topConceptOf icare:VerificationStatusValueScheme .
+    skos:topConceptOf icare:VerificationStatusValueScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:ConsentExpired a icare:ConsentStatusValue,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:ConsentExpired a owl:NamedIndividual,
+        skos:Concept,
+        icare:ConsentStatusValue ;
     rdfs:label "Consent expired"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:provenance-governance ;
     skos:definition "A consent status indicating that previously granted consent is no longer valid because its validity period ended."@en ;
     skos:inScheme icare:ConsentStatusValueScheme ;
     skos:prefLabel "Consent expired"@en ;
-    skos:topConceptOf icare:ConsentStatusValueScheme .
+    skos:topConceptOf icare:ConsentStatusValueScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:ConsentGranted a icare:ConsentStatusValue,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:ConsentGranted a owl:NamedIndividual,
+        skos:Concept,
+        icare:ConsentStatusValue ;
     rdfs:label "Consent granted"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:provenance-governance ;
     skos:definition "A consent status indicating that valid consent has been granted for the specified purpose and scope."@en ;
     skos:inScheme icare:ConsentStatusValueScheme ;
     skos:prefLabel "Consent granted"@en ;
-    skos:topConceptOf icare:ConsentStatusValueScheme .
+    skos:topConceptOf icare:ConsentStatusValueScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:ConsentPending a icare:ConsentStatusValue,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:ConsentPending a owl:NamedIndividual,
+        skos:Concept,
+        icare:ConsentStatusValue ;
     rdfs:label "Consent pending"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:provenance-governance ;
     skos:definition "A consent status indicating that a consent decision has not yet been completed."@en ;
     skos:inScheme icare:ConsentStatusValueScheme ;
     skos:prefLabel "Consent pending"@en ;
-    skos:topConceptOf icare:ConsentStatusValueScheme .
+    skos:topConceptOf icare:ConsentStatusValueScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:ConsentRefused a icare:ConsentStatusValue,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:ConsentRefused a owl:NamedIndividual,
+        skos:Concept,
+        icare:ConsentStatusValue ;
     rdfs:label "Consent refused"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:provenance-governance ;
     skos:definition "A consent status indicating that consent was requested and refused."@en ;
     skos:inScheme icare:ConsentStatusValueScheme ;
     skos:prefLabel "Consent refused"@en ;
-    skos:topConceptOf icare:ConsentStatusValueScheme .
+    skos:topConceptOf icare:ConsentStatusValueScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:ConsentWithdrawn a icare:ConsentStatusValue,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:ConsentWithdrawn a owl:NamedIndividual,
+        skos:Concept,
+        icare:ConsentStatusValue ;
     rdfs:label "Consent withdrawn"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:provenance-governance ;
     skos:definition "A consent status indicating that previously granted consent has been withdrawn."@en ;
     skos:inScheme icare:ConsentStatusValueScheme ;
     skos:prefLabel "Consent withdrawn"@en ;
-    skos:topConceptOf icare:ConsentStatusValueScheme .
+    skos:topConceptOf icare:ConsentStatusValueScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:Disputed a icare:VerificationStatusValue,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:Disputed a owl:NamedIndividual,
+        skos:Concept,
+        icare:VerificationStatusValue ;
     rdfs:label "Disputed"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:provenance-governance ;
     skos:definition "A verification status indicating that the information has been challenged or is subject to unresolved disagreement."@en ;
     skos:inScheme icare:VerificationStatusValueScheme ;
     skos:prefLabel "Disputed"@en ;
-    skos:topConceptOf icare:VerificationStatusValueScheme .
+    skos:topConceptOf icare:VerificationStatusValueScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:Unverified a icare:VerificationStatusValue,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:Unverified a owl:NamedIndividual,
+        skos:Concept,
+        icare:VerificationStatusValue ;
     rdfs:label "Unverified"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:provenance-governance ;
     skos:definition "A verification status indicating that the information has not been independently confirmed."@en ;
     skos:inScheme icare:VerificationStatusValueScheme ;
     skos:prefLabel "Unverified"@en ;
-    skos:topConceptOf icare:VerificationStatusValueScheme .
+    skos:topConceptOf icare:VerificationStatusValueScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:UserConfirmed a icare:VerificationStatusValue,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:UserConfirmed a owl:NamedIndividual,
+        skos:Concept,
+        icare:VerificationStatusValue ;
     rdfs:label "User confirmed"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:provenance-governance ;
     skos:definition "A verification status indicating that the person to whom the information relates has confirmed it."@en ;
     skos:inScheme icare:VerificationStatusValueScheme ;
     skos:prefLabel "User confirmed"@en ;
-    skos:topConceptOf icare:VerificationStatusValueScheme .
+    skos:topConceptOf icare:VerificationStatusValueScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:VerifiedAgainstClinicalRecord a icare:VerificationStatusValue,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:VerifiedAgainstClinicalRecord a owl:NamedIndividual,
+        skos:Concept,
+        icare:VerificationStatusValue ;
     rdfs:label "Verified against clinical record"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:provenance-governance ;
     skos:definition "A verification status indicating that the information has been confirmed against a clinical record."@en ;
     skos:inScheme icare:VerificationStatusValueScheme ;
     skos:prefLabel "Verified against clinical record"@en ;
-    skos:topConceptOf icare:VerificationStatusValueScheme .
+    skos:topConceptOf icare:VerificationStatusValueScheme ;
+    meta:reviewStatus "Proposed" .
 
 icare:ParticipantKnowledgeGraph a owl:Class ;
     rdfs:label "Participant Knowledge Graph"@en ;
@@ -202,17 +202,17 @@ icare:VerificationStatusValueScheme a owl:NamedIndividual,
 
 icare:provenance-governance a owl:Ontology ;
     rdfs:label "Provenance and Governance"@en ;
-    meta:releaseStatus "Published" ;
     dcterms:contributor "MAYA consortium partners" ;
     dcterms:creator "Robert Gordon University" ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
     dcterms:rights "Copyright (c) 2026 Robert Gordon University and contributing MAYA consortium partners, for their respective contributions. Third-party material retains its applicable terms."@en ;
     rdfs:comment "Represents participant knowledge graphs, consent records and controlled consent and verification statuses, aligned with PROV-O provenance concepts."@en ;
     owl:imports icare:core,
-        <http://maya-project.eu/icareonto/imports/prov-reference>,
-        <http://maya-project.eu/icareonto/imports/skos-reference>,
+        <https://w3id.org/icareonto/imports/prov-reference>,
+        <https://w3id.org/icareonto/imports/skos-reference>,
         icare:metadata,
         icare:person-role ;
-    owl:versionIRI <http://maya-project.eu/icareonto/releases/1.0.0/provenance-governance> ;
-    owl:versionInfo "1.0.0" .
+    owl:versionIRI <https://w3id.org/icareonto/releases/1.0.0/provenance-governance> ;
+    owl:versionInfo "1.0.0" ;
+    meta:releaseStatus "Published" .
 

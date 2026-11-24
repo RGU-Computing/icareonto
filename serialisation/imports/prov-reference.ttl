@@ -1,18 +1,9 @@
-@prefix icare: <http://maya-project.eu/icareonto/> .
-@prefix meta: <http://maya-project.eu/icareonto/metadata#> .
+@prefix icare: <https://w3id.org/icareonto/> .
+@prefix meta: <https://w3id.org/icareonto/metadata#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-
-<http://maya-project.eu/icareonto/imports/prov-reference> a owl:Ontology ;
-    rdfs:label "PROV-O reference subset"@en ;
-    meta:releaseStatus "Published" ;
-    rdfs:comment "Reference subset of W3C terms used by iCARE Onto. Term IRIs retain their external identity; this ontology provides the selected supporting axioms."@en ;
-    rdfs:seeAlso <https://www.w3.org/ns/prov-o.ttl> ;
-    owl:imports icare:metadata ;
-    owl:versionIRI <http://maya-project.eu/icareonto/releases/1.0.0/imports/prov-reference> ;
-    owl:versionInfo "1.0.0" .
 
 skos:altLabel a owl:AnnotationProperty .
 
@@ -33,6 +24,15 @@ prov:Collection a owl:Class ;
     rdfs:label "Collection" ;
     rdfs:isDefinedBy <http://www.w3.org/ns/prov-o#> ;
     rdfs:subClassOf prov:Entity .
+
+<https://w3id.org/icareonto/imports/prov-reference> a owl:Ontology ;
+    rdfs:label "PROV-O reference subset"@en ;
+    rdfs:comment "Reference subset of W3C terms used by iCARE Onto. Term IRIs retain their external identity; this ontology provides the selected supporting axioms."@en ;
+    rdfs:seeAlso <https://www.w3.org/ns/prov-o.ttl> ;
+    owl:imports icare:metadata ;
+    owl:versionIRI <https://w3id.org/icareonto/releases/1.0.0/imports/prov-reference> ;
+    owl:versionInfo "1.0.0" ;
+    meta:releaseStatus "Published" .
 
 prov:Entity a owl:Class ;
     rdfs:label "Entity" ;

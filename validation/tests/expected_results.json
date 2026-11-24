@@ -4,7 +4,7 @@
     {"id": "CQ-007", "expected": [{"diagnosis": "https://example.org/maya/demo/es/cancer-diagnosis"}]},
     {"id": "CQ-009", "expected": [{"exposure": "https://example.org/maya/demo/es/anthracycline-exposure"}]},
     {"id": "CQ-014", "expected": [{"resource": "https://example.org/maya/demo/es/resource-walking-es"}]},
-    {"id": "CQ-020", "expected": [{"need": "http://maya-project.eu/icareonto/InformationComprehensionSupportNeed"}]},
+    {"id": "CQ-020", "expected": [{"need": "https://w3id.org/icareonto/InformationComprehensionSupportNeed"}]},
     {"id": "CQ-021", "expected": [{"resource": "https://example.org/maya/demo/es/resource-late-effects-es"}]},
     {"id": "CQ-025", "expected": [{"language": "es-ES"}]},
     {"id": "CQ-026", "expected": [{"recommendation": "https://example.org/maya/demo/es/symptom-recommendation"}]},

@@ -1,33 +1,9 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix icare: <http://maya-project.eu/icareonto/> .
-@prefix meta: <http://maya-project.eu/icareonto/metadata#> .
+@prefix icare: <https://w3id.org/icareonto/> .
+@prefix meta: <https://w3id.org/icareonto/metadata#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-
-icare:metadata a owl:Ontology ;
-    rdfs:label "iCARE Onto metadata"@en ;
-    meta:releaseStatus "Published" ;
-    dcterms:contributor "MAYA consortium partners" ;
-    dcterms:creator "Robert Gordon University" ;
-    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-    dcterms:rights "Copyright (c) 2026 Robert Gordon University and contributing MAYA consortium partners, for their respective contributions. Third-party material retains its applicable terms."@en ;
-    rdfs:comment "Annotation vocabulary for ontology publication and term review status, and descriptive, bibliographic, language and rights metadata for knowledge resources."@en ;
-    rdfs:seeAlso <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/> ;
-    owl:versionIRI <http://maya-project.eu/icareonto/releases/1.0.0/metadata> ;
-    owl:versionInfo "1.0.0" .
-
-meta:releaseStatus a owl:AnnotationProperty ;
-    rdfs:label "release status"@en .
-
-meta:reviewStatus a owl:AnnotationProperty ;
-    rdfs:label "review status"@en .
-
-meta:valueFormat a owl:AnnotationProperty ;
-    rdfs:label "value format"@en .
-
-meta:valuePattern a owl:AnnotationProperty ;
-    rdfs:label "value pattern"@en .
 
 dcterms:bibliographicCitation a owl:AnnotationProperty ;
     rdfs:label "bibliographicCitation"@en .
@@ -73,4 +49,28 @@ skos:altLabel a owl:AnnotationProperty .
 skos:definition a owl:AnnotationProperty .
 
 skos:prefLabel a owl:AnnotationProperty .
+
+icare:metadata a owl:Ontology ;
+    rdfs:label "iCARE Onto metadata"@en ;
+    dcterms:contributor "MAYA consortium partners" ;
+    dcterms:creator "Robert Gordon University" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Copyright (c) 2026 Robert Gordon University and contributing MAYA consortium partners, for their respective contributions. Third-party material retains its applicable terms."@en ;
+    rdfs:comment "Annotation vocabulary for ontology publication and term review status, and descriptive, bibliographic, language and rights metadata for knowledge resources."@en ;
+    rdfs:seeAlso <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/> ;
+    owl:versionIRI <https://w3id.org/icareonto/releases/1.0.0/metadata> ;
+    owl:versionInfo "1.0.0" ;
+    meta:releaseStatus "Published" .
+
+meta:releaseStatus a owl:AnnotationProperty ;
+    rdfs:label "release status"@en .
+
+meta:reviewStatus a owl:AnnotationProperty ;
+    rdfs:label "review status"@en .
+
+meta:valueFormat a owl:AnnotationProperty ;
+    rdfs:label "value format"@en .
+
+meta:valuePattern a owl:AnnotationProperty ;
+    rdfs:label "value pattern"@en .
 

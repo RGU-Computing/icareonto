@@ -24,7 +24,7 @@ If an import appears unresolved, select the **local file** option in Protégé's
 
 ## Coverage and development inputs
 
-- **Ontology source:** `../sources/icareonto_review_workbook_v221126.xlsx`.
+- **Ontology source:** `../sources/icareonto_review_workbook.xlsx`.
 - **Approved alignments:** `../sources/icareonto_alignment_mapping_workbook_v301026_4.xlsx`, `Alignment Register` sheet.
 - **Competency questions:** `../sources/icareonto_final_consolidated_competency_questions_v5.xlsx`.
 - **Output:** 17 modules, 283 local classes, 284 local object properties, 137 local data properties, 304 controlled values and 62 concept schemes.
@@ -34,8 +34,8 @@ In the ontology source workbook, the controlled vocabulary detail sheet is the s
 
 ## Modelling decisions (using the ontology source workbook)
 
-1. Existing entity IRIs are preserved. For example, all modules share the existing entity namespace `http://maya-project.eu/icareonto/`; the module worksheet names do not create new entity namespaces.
-2. Stable module ontology and entity IRIs are preserved. Version IRIs identify `1.0.0`, separately from those stable IRIs. Development-source revision numbers do not define the ontology version.
+1. Entity IRIs follow the authoritative source workbook. All modules share the entity namespace `https://w3id.org/icareonto/`; the module worksheet names do not create new entity namespaces. The namespace finalisation preserves local names while replacing the earlier project-domain IRIs throughout the package.
+2. The root ontology IRI is `https://w3id.org/icareonto/`, including its trailing slash. Module ontology IRIs use that namespace followed by the module name. Version IRIs identify `1.0.0`, separately from those stable IRIs. Development-source revision numbers do not define the ontology version.
 3. Named parent relationships become `rdfs:subClassOf`; semicolon-separated parent lists preserve each explicitly named parent. Object and data properties retain their source domains, ranges and XSD datatypes. No cardinalities, inverse relations, closed enumerations or disjointness axioms are inferred from descriptions.
 4. Entity definitions use `skos:definition` once. `rdfs:comment` is reserved for distinct explanatory context, such as ontology descriptions and alignment rationale. Labels and alternative labels are preserved. The `metadata#releaseStatus` annotation records publication status; the separate `metadata#reviewStatus` annotation preserves the source review statuses of controlled concepts and semantic alignments. Development provenance is kept outside the ontology: entity source cells in `validation/entity-manifest.tsv`, value source cells in `validation/controlled-value-provenance.tsv`, alignment-register IDs in `validation/alignment-trace.tsv`, and source filenames/hashes in `validation/build-report.json`.
 5. Vocabulary categories remain OWL classes subclassing `skos:Concept`. Their values are named individuals, with labels, definitions, scheme membership, source status and explicit broader relationships. The schemes are not OWL classes. Lists are not treated as exhaustive or pairwise-distinct unless future modelling explicitly requires that.

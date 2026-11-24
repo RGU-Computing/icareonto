@@ -1,6 +1,6 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix icare: <http://maya-project.eu/icareonto/> .
-@prefix meta: <http://maya-project.eu/icareonto/metadata#> .
+@prefix icare: <https://w3id.org/icareonto/> .
+@prefix meta: <https://w3id.org/icareonto/metadata#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
@@ -183,16 +183,16 @@ icare:roleValidDuring a owl:ObjectProperty ;
     rdfs:range icare:TimeInterval ;
     skos:definition "Relates a role to the interval during which it applies."@en .
 
-icare:BriefInformation a icare:InformationDetailLevelValue,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:BriefInformation a owl:NamedIndividual,
+        skos:Concept,
+        icare:InformationDetailLevelValue ;
     rdfs:label "Brief information"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:person-role ;
     skos:definition "An information-detail preference indicating brief information."@en ;
     skos:inScheme icare:InformationDetailLevelValueScheme ;
     skos:prefLabel "Brief information"@en ;
-    skos:topConceptOf icare:InformationDetailLevelValueScheme .
+    skos:topConceptOf icare:InformationDetailLevelValueScheme ;
+    meta:reviewStatus "Proposed" .
 
 icare:CancerSurvivorRole a owl:Class ;
     rdfs:label "Cancer Survivor Role"@en ;
@@ -206,38 +206,38 @@ icare:ContactPreference a owl:Class ;
     rdfs:subClassOf icare:CommunicationPreference ;
     skos:definition "A preference describing preferred contact channels, timing, or communication method."@en .
 
-icare:DetailedInformation a icare:InformationDetailLevelValue,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:DetailedInformation a owl:NamedIndividual,
+        skos:Concept,
+        icare:InformationDetailLevelValue ;
     rdfs:label "Detailed information"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:person-role ;
     skos:definition "An information-detail preference indicating detailed information."@en ;
     skos:inScheme icare:InformationDetailLevelValueScheme ;
     skos:prefLabel "Detailed information"@en ;
-    skos:topConceptOf icare:InformationDetailLevelValueScheme .
+    skos:topConceptOf icare:InformationDetailLevelValueScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:EmailChannel a icare:CommunicationChannelType,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:EmailChannel a owl:NamedIndividual,
+        skos:Concept,
+        icare:CommunicationChannelType ;
     rdfs:label "Email channel"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:person-role ;
     skos:definition "A communication-channel type delivered through email."@en ;
     skos:inScheme icare:CommunicationChannelTypeScheme ;
     skos:prefLabel "Email channel"@en ;
-    skos:topConceptOf icare:CommunicationChannelTypeScheme .
+    skos:topConceptOf icare:CommunicationChannelTypeScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:InPersonChannel a icare:CommunicationChannelType,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:InPersonChannel a owl:NamedIndividual,
+        skos:Concept,
+        icare:CommunicationChannelType ;
     rdfs:label "In person channel"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:person-role ;
     skos:definition "A communication-channel type involving face-to-face interaction."@en ;
     skos:inScheme icare:CommunicationChannelTypeScheme ;
     skos:prefLabel "In person channel"@en ;
-    skos:topConceptOf icare:CommunicationChannelTypeScheme .
+    skos:topConceptOf icare:CommunicationChannelTypeScheme ;
+    meta:reviewStatus "Proposed" .
 
 icare:InformationPreference a owl:Class ;
     rdfs:label "Information Preference"@en ;
@@ -251,60 +251,60 @@ icare:LanguagePreference a owl:Class ;
     rdfs:subClassOf icare:PersonPreference ;
     skos:definition "A preference specifying the language in which a person prefers to receive communication, education, dialogue, or service content."@en .
 
-icare:MobileAppChannel a icare:CommunicationChannelType,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:MobileAppChannel a owl:NamedIndividual,
+        skos:Concept,
+        icare:CommunicationChannelType ;
     rdfs:label "Mobile app channel"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:person-role ;
     skos:definition "A communication-channel type delivered through a mobile application."@en ;
     skos:inScheme icare:CommunicationChannelTypeScheme ;
     skos:prefLabel "Mobile app channel"@en ;
-    skos:topConceptOf icare:CommunicationChannelTypeScheme .
+    skos:topConceptOf icare:CommunicationChannelTypeScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:SMSChannel a icare:CommunicationChannelType,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:SMSChannel a owl:NamedIndividual,
+        skos:Concept,
+        icare:CommunicationChannelType ;
     rdfs:label "SMS channel"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:person-role ;
     skos:definition "A communication-channel type delivered through SMS text messaging."@en ;
     skos:inScheme icare:CommunicationChannelTypeScheme ;
     skos:prefLabel "SMS channel"@en ;
-    skos:topConceptOf icare:CommunicationChannelTypeScheme .
+    skos:topConceptOf icare:CommunicationChannelTypeScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:SmartMirrorChannel a icare:CommunicationChannelType,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:SmartMirrorChannel a owl:NamedIndividual,
+        skos:Concept,
+        icare:CommunicationChannelType ;
     rdfs:label "Smart mirror channel"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:person-role ;
     skos:definition "A communication-channel type delivered through the smart-mirror interface."@en ;
     skos:inScheme icare:CommunicationChannelTypeScheme ;
     skos:prefLabel "Smart mirror channel"@en ;
-    skos:topConceptOf icare:CommunicationChannelTypeScheme .
+    skos:topConceptOf icare:CommunicationChannelTypeScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:StandardInformation a icare:InformationDetailLevelValue,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:StandardInformation a owl:NamedIndividual,
+        skos:Concept,
+        icare:InformationDetailLevelValue ;
     rdfs:label "Standard information"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:person-role ;
     skos:definition "An information-detail preference indicating standard information."@en ;
     skos:inScheme icare:InformationDetailLevelValueScheme ;
     skos:prefLabel "Standard information"@en ;
-    skos:topConceptOf icare:InformationDetailLevelValueScheme .
+    skos:topConceptOf icare:InformationDetailLevelValueScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:TelephoneChannel a icare:CommunicationChannelType,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:TelephoneChannel a owl:NamedIndividual,
+        skos:Concept,
+        icare:CommunicationChannelType ;
     rdfs:label "Telephone channel"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:person-role ;
     skos:definition "A communication-channel type delivered through a telephone call."@en ;
     skos:inScheme icare:CommunicationChannelTypeScheme ;
     skos:prefLabel "Telephone channel"@en ;
-    skos:topConceptOf icare:CommunicationChannelTypeScheme .
+    skos:topConceptOf icare:CommunicationChannelTypeScheme ;
+    meta:reviewStatus "Proposed" .
 
 icare:CommunicationPreference a owl:Class ;
     rdfs:label "Communication Preference"@en ;
@@ -363,15 +363,15 @@ icare:CommunicationChannelTypeScheme a owl:NamedIndividual,
 
 icare:person-role a owl:Ontology ;
     rdfs:label "Person and Role"@en ;
-    meta:releaseStatus "Published" ;
     dcterms:contributor "MAYA consortium partners" ;
     dcterms:creator "Robert Gordon University" ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
     dcterms:rights "Copyright (c) 2026 Robert Gordon University and contributing MAYA consortium partners, for their respective contributions. Third-party material retains its applicable terms."@en ;
     rdfs:comment "Represents people, their attributes, roles, and language, communication, contact and information preferences used to personalise care and dialogue."@en ;
     owl:imports icare:core,
-        <http://maya-project.eu/icareonto/imports/skos-reference>,
+        <https://w3id.org/icareonto/imports/skos-reference>,
         icare:metadata ;
-    owl:versionIRI <http://maya-project.eu/icareonto/releases/1.0.0/person-role> ;
-    owl:versionInfo "1.0.0" .
+    owl:versionIRI <https://w3id.org/icareonto/releases/1.0.0/person-role> ;
+    owl:versionInfo "1.0.0" ;
+    meta:releaseStatus "Published" .
 

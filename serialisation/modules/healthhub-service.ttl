@@ -1,6 +1,6 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix icare: <http://maya-project.eu/icareonto/> .
-@prefix meta: <http://maya-project.eu/icareonto/metadata#> .
+@prefix icare: <https://w3id.org/icareonto/> .
+@prefix meta: <https://w3id.org/icareonto/metadata#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
@@ -56,12 +56,12 @@ icare:healthHubProvidesService a owl:ObjectProperty ;
 
 icare:serviceUseDuration a owl:DatatypeProperty ;
     rdfs:label "service use duration"@en ;
-    meta:valueFormat "iso-duration" ;
-    meta:valuePattern "^-?P([0-9]+W|([0-9]+Y([0-9]+M)?([0-9]+D)?|[0-9]+M([0-9]+D)?|[0-9]+D)(T([0-9]+H([0-9]+M)?([0-9]+(\\.[0-9]+)?S)?|[0-9]+M([0-9]+(\\.[0-9]+)?S)?|[0-9]+(\\.[0-9]+)?S))?|T([0-9]+H([0-9]+M)?([0-9]+(\\.[0-9]+)?S)?|[0-9]+M([0-9]+(\\.[0-9]+)?S)?|[0-9]+(\\.[0-9]+)?S))$" ;
     rdfs:domain icare:ServiceUseEvent ;
     rdfs:isDefinedBy icare:healthhub-service ;
     rdfs:range xsd:string ;
-    skos:definition "Records the elapsed duration of a service-use event as an ISO 8601 duration string, for example PT15M for fifteen minutes, supporting analysis of service engagement."@en .
+    skos:definition "Records the elapsed duration of a service-use event as an ISO 8601 duration string, for example PT15M for fifteen minutes, supporting analysis of service engagement."@en ;
+    meta:valueFormat "iso-duration" ;
+    meta:valuePattern "^-?P([0-9]+W|([0-9]+Y([0-9]+M)?([0-9]+D)?|[0-9]+M([0-9]+D)?|[0-9]+D)(T([0-9]+H([0-9]+M)?([0-9]+(\\.[0-9]+)?S)?|[0-9]+M([0-9]+(\\.[0-9]+)?S)?|[0-9]+(\\.[0-9]+)?S))?|T([0-9]+H([0-9]+M)?([0-9]+(\\.[0-9]+)?S)?|[0-9]+M([0-9]+(\\.[0-9]+)?S)?|[0-9]+(\\.[0-9]+)?S))$" .
 
 icare:serviceUseEventHasUser a owl:ObjectProperty ;
     rdfs:label "has user"@en ;
@@ -84,71 +84,71 @@ icare:serviceUseEventUsesService a owl:ObjectProperty ;
     rdfs:range icare:DigitalService ;
     skos:definition "Identifies the service accessed during the event."@en .
 
-icare:DialogueServiceType a icare:DigitalServiceType,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:DialogueServiceType a owl:NamedIndividual,
+        skos:Concept,
+        icare:DigitalServiceType ;
     rdfs:label "Dialogue service"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:healthhub-service ;
     skos:definition "A digital-service type providing dialogue."@en ;
     skos:inScheme icare:DigitalServiceTypeScheme ;
     skos:prefLabel "Dialogue service"@en ;
-    skos:topConceptOf icare:DigitalServiceTypeScheme .
+    skos:topConceptOf icare:DigitalServiceTypeScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:ExerciseGuidanceServiceType a icare:DigitalServiceType,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:ExerciseGuidanceServiceType a owl:NamedIndividual,
+        skos:Concept,
+        icare:DigitalServiceType ;
     rdfs:label "Exercise guidance service"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:healthhub-service ;
     skos:definition "A digital-service type providing exercise guidance."@en ;
     skos:inScheme icare:DigitalServiceTypeScheme ;
     skos:prefLabel "Exercise guidance service"@en ;
-    skos:topConceptOf icare:DigitalServiceTypeScheme .
+    skos:topConceptOf icare:DigitalServiceTypeScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:HealthLiteracyServiceType a icare:DigitalServiceType,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:HealthLiteracyServiceType a owl:NamedIndividual,
+        skos:Concept,
+        icare:DigitalServiceType ;
     rdfs:label "Health literacy service"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:healthhub-service ;
     skos:definition "A digital-service type providing health literacy."@en ;
     skos:inScheme icare:DigitalServiceTypeScheme ;
     skos:prefLabel "Health literacy service"@en ;
-    skos:topConceptOf icare:DigitalServiceTypeScheme .
+    skos:topConceptOf icare:DigitalServiceTypeScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:NutritionCoachingServiceType a icare:DigitalServiceType,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:NutritionCoachingServiceType a owl:NamedIndividual,
+        skos:Concept,
+        icare:DigitalServiceType ;
     rdfs:label "Nutrition coaching service"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:healthhub-service ;
     skos:definition "A digital-service type providing nutrition coaching."@en ;
     skos:inScheme icare:DigitalServiceTypeScheme ;
     skos:prefLabel "Nutrition coaching service"@en ;
-    skos:topConceptOf icare:DigitalServiceTypeScheme .
+    skos:topConceptOf icare:DigitalServiceTypeScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:RemoteMonitoringServiceType a icare:DigitalServiceType,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:RemoteMonitoringServiceType a owl:NamedIndividual,
+        skos:Concept,
+        icare:DigitalServiceType ;
     rdfs:label "Remote monitoring service"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:healthhub-service ;
     skos:definition "A digital-service type providing remote monitoring."@en ;
     skos:inScheme icare:DigitalServiceTypeScheme ;
     skos:prefLabel "Remote monitoring service"@en ;
-    skos:topConceptOf icare:DigitalServiceTypeScheme .
+    skos:topConceptOf icare:DigitalServiceTypeScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:VideoConsultationServiceType a icare:DigitalServiceType,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:VideoConsultationServiceType a owl:NamedIndividual,
+        skos:Concept,
+        icare:DigitalServiceType ;
     rdfs:label "Video consultation service"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:healthhub-service ;
     skos:definition "A digital-service type providing video consultation."@en ;
     skos:inScheme icare:DigitalServiceTypeScheme ;
     skos:prefLabel "Video consultation service"@en ;
-    skos:topConceptOf icare:DigitalServiceTypeScheme .
+    skos:topConceptOf icare:DigitalServiceTypeScheme ;
+    meta:reviewStatus "Proposed" .
 
 icare:HealthHub a owl:Class ;
     rdfs:label "Health Hub"@en ;
@@ -184,17 +184,17 @@ icare:DigitalServiceTypeScheme a owl:NamedIndividual,
 
 icare:healthhub-service a owl:Ontology ;
     rdfs:label "Digital Service and iCARE Health Hub"@en ;
-    meta:releaseStatus "Published" ;
     dcterms:contributor "MAYA consortium partners" ;
     dcterms:creator "Robert Gordon University" ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
     dcterms:rights "Copyright (c) 2026 Robert Gordon University and contributing MAYA consortium partners, for their respective contributions. Third-party material retains its applicable terms."@en ;
     rdfs:comment "Represents HealthHub deployments, supported devices including smart mirrors, digital services and service types, service access and recorded service-use events."@en ;
     owl:imports icare:core,
-        <http://maya-project.eu/icareonto/imports/skos-reference>,
+        <https://w3id.org/icareonto/imports/skos-reference>,
         icare:intervention-careplan,
         icare:metadata,
         icare:person-role ;
-    owl:versionIRI <http://maya-project.eu/icareonto/releases/1.0.0/healthhub-service> ;
-    owl:versionInfo "1.0.0" .
+    owl:versionIRI <https://w3id.org/icareonto/releases/1.0.0/healthhub-service> ;
+    owl:versionInfo "1.0.0" ;
+    meta:releaseStatus "Published" .
 

@@ -53,12 +53,12 @@
       "status": "PASS",
       "expected": [
         {
-          "need": "http://maya-project.eu/icareonto/InformationComprehensionSupportNeed"
+          "need": "https://w3id.org/icareonto/InformationComprehensionSupportNeed"
         }
       ],
       "actual": [
         {
-          "need": "http://maya-project.eu/icareonto/InformationComprehensionSupportNeed"
+          "need": "https://w3id.org/icareonto/InformationComprehensionSupportNeed"
         }
       ]
     },

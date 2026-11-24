@@ -1,4 +1,4 @@
-PREFIX icare: <http://maya-project.eu/icareonto/>
+PREFIX icare: <https://w3id.org/icareonto/>
 PREFIX demo: <https://example.org/maya/demo/es/>
 SELECT ?recommendation WHERE {
   ?recommendation icare:recommendationAppliesToSymptom demo:fatigue .

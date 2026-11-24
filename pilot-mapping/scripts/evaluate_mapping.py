@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Evaluate saved rankings against separately specified demonstration references."""
+import argparse
 import csv
 from pathlib import Path
 import json
@@ -38,16 +39,19 @@ def evaluate(ranking, reference, needs, decisions):
 
 
 def main():
-    output, reports = pm.ROOT / "outputs", pm.ROOT / "reports"
     fixtures = pm.ROOT / "tests/fixtures"
-    if not (output / "rankings.json").is_file():
-        output = fixtures
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--output", type=Path, default=fixtures,
+                        help="Ranking/profile folder to evaluate; defaults to the published regression fixtures")
+    output, reports = parser.parse_args().output.resolve(), pm.ROOT / "reports"
     ranking = pm.kg.read_json(output / "rankings.json")
     reference = pm.kg.read_json(pm.ROOT / "tests/reference-mappings.json")
     needs = pm.kg.read_json(pm.ROOT / "examples/pilot-needs.json")
     decisions = pm.kg.read_json(pm.ROOT / "examples/demo-review-decisions.json")
     profile = pm.kg.read_json(output / "pilot-profile.json")
-    coverage_path = output / "generated/validation/profile-coverage.json" if output != fixtures else fixtures / "profile-coverage.json"
+    coverage_path = output / "profile-coverage.json"
+    if not coverage_path.is_file():
+        coverage_path = output / "generated/validation/profile-coverage.json"
     coverage = pm.kg.read_json(coverage_path)
     evaluation = evaluate(ranking, reference, needs, decisions)
     pm.save(reports / "evaluation.json", evaluation)

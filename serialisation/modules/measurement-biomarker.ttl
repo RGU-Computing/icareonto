@@ -1,6 +1,6 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix icare: <http://maya-project.eu/icareonto/> .
-@prefix meta: <http://maya-project.eu/icareonto/metadata#> .
+@prefix icare: <https://w3id.org/icareonto/> .
+@prefix meta: <https://w3id.org/icareonto/metadata#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
@@ -481,27 +481,27 @@ icare:unitSymbol a owl:DatatypeProperty ;
     rdfs:range xsd:string ;
     skos:definition "Records the human-readable symbol used to display the unit."@en .
 
-icare:AboveReferenceRange a icare:ThresholdCategory,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:AboveReferenceRange a owl:NamedIndividual,
+        skos:Concept,
+        icare:ThresholdCategory ;
     rdfs:label "Above reference range"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:measurement-biomarker ;
     skos:definition "A threshold category indicating that the observed value is above the applicable reference range."@en ;
     skos:inScheme icare:ThresholdCategoryScheme ;
     skos:prefLabel "Above reference range"@en ;
-    skos:topConceptOf icare:ThresholdCategoryScheme .
+    skos:topConceptOf icare:ThresholdCategoryScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:BelowReferenceRange a icare:ThresholdCategory,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:BelowReferenceRange a owl:NamedIndividual,
+        skos:Concept,
+        icare:ThresholdCategory ;
     rdfs:label "Below reference range"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:measurement-biomarker ;
     skos:definition "A threshold category indicating that the observed value is below the applicable reference range."@en ;
     skos:inScheme icare:ThresholdCategoryScheme ;
     skos:prefLabel "Below reference range"@en ;
-    skos:topConceptOf icare:ThresholdCategoryScheme .
+    skos:topConceptOf icare:ThresholdCategoryScheme ;
+    meta:reviewStatus "Proposed" .
 
 icare:Biomarker a owl:Class ;
     rdfs:label "Biomarker"@en ;
@@ -509,16 +509,16 @@ icare:Biomarker a owl:Class ;
     rdfs:subClassOf icare:MeasurableParameter ;
     skos:definition "A measurable biological indicator used to assess health status, disease process, treatment effect, organ function, or late-effect risk."@en .
 
-icare:CriticalResult a icare:ThresholdCategory,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:CriticalResult a owl:NamedIndividual,
+        skos:Concept,
+        icare:ThresholdCategory ;
     rdfs:label "Critical result"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:measurement-biomarker ;
     skos:definition "A threshold category indicating a result that meets a defined critical threshold and may require prompt review."@en ;
     skos:inScheme icare:ThresholdCategoryScheme ;
     skos:prefLabel "Critical result"@en ;
-    skos:topConceptOf icare:ThresholdCategoryScheme .
+    skos:topConceptOf icare:ThresholdCategoryScheme ;
+    meta:reviewStatus "Proposed" .
 
 icare:DerivedParameter a owl:Class ;
     rdfs:label "Derived Parameter"@en ;
@@ -526,38 +526,38 @@ icare:DerivedParameter a owl:Class ;
     rdfs:subClassOf icare:MeasurableParameter ;
     skos:definition "A measurable parameter calculated from other observations, such as BMI, average heart rate, heart-rate variability, or risk-relevant summary metrics."@en .
 
-icare:IncompleteMeasurement a icare:MeasurementQuality,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:IncompleteMeasurement a owl:NamedIndividual,
+        skos:Concept,
+        icare:MeasurementQuality ;
     rdfs:label "Incomplete measurement"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:measurement-biomarker ;
     skos:definition "A measurement-quality value indicating that required measurement information or steps are missing."@en ;
     skos:inScheme icare:MeasurementQualityScheme ;
     skos:prefLabel "Incomplete measurement"@en ;
-    skos:topConceptOf icare:MeasurementQualityScheme .
+    skos:topConceptOf icare:MeasurementQualityScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:IndeterminateResult a icare:ThresholdCategory,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:IndeterminateResult a owl:NamedIndividual,
+        skos:Concept,
+        icare:ThresholdCategory ;
     rdfs:label "Indeterminate result"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:measurement-biomarker ;
     skos:definition "A threshold category indicating that the result cannot be reliably classified against the applicable range or threshold."@en ;
     skos:inScheme icare:ThresholdCategoryScheme ;
     skos:prefLabel "Indeterminate result"@en ;
-    skos:topConceptOf icare:ThresholdCategoryScheme .
+    skos:topConceptOf icare:ThresholdCategoryScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:InvalidMeasurement a icare:MeasurementQuality,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:InvalidMeasurement a owl:NamedIndividual,
+        skos:Concept,
+        icare:MeasurementQuality ;
     rdfs:label "Invalid measurement"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:measurement-biomarker ;
     skos:definition "A measurement-quality value indicating that the measurement should not be used as a valid result."@en ;
     skos:inScheme icare:MeasurementQualityScheme ;
     skos:prefLabel "Invalid measurement"@en ;
-    skos:topConceptOf icare:MeasurementQualityScheme .
+    skos:topConceptOf icare:MeasurementQualityScheme ;
+    meta:reviewStatus "Proposed" .
 
 icare:MeasurementInstruction a owl:Class ;
     rdfs:label "Measurement Instruction"@en ;
@@ -570,16 +570,16 @@ icare:PhysiologicalParameter a owl:Class ;
     rdfs:subClassOf icare:MeasurableParameter ;
     skos:definition "A measurable parameter describing bodily function, physical state, or biological status."@en .
 
-icare:QualityNotAssessed a icare:MeasurementQuality,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:QualityNotAssessed a owl:NamedIndividual,
+        skos:Concept,
+        icare:MeasurementQuality ;
     rdfs:label "Quality not assessed"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:measurement-biomarker ;
     skos:definition "A measurement-quality value indicating that quality has not been evaluated."@en ;
     skos:inScheme icare:MeasurementQualityScheme ;
     skos:prefLabel "Quality not assessed"@en ;
-    skos:topConceptOf icare:MeasurementQualityScheme .
+    skos:topConceptOf icare:MeasurementQualityScheme ;
+    meta:reviewStatus "Proposed" .
 
 icare:SamplingProcedure a owl:Class ;
     rdfs:label "Sampling Procedure"@en ;
@@ -591,38 +591,38 @@ icare:Specimen a owl:Class ;
     rdfs:isDefinedBy icare:measurement-biomarker ;
     skos:definition "A biological specimen used in a laboratory measurement, such as blood, serum, plasma, urine, or saliva."@en .
 
-icare:SuspectMeasurement a icare:MeasurementQuality,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:SuspectMeasurement a owl:NamedIndividual,
+        skos:Concept,
+        icare:MeasurementQuality ;
     rdfs:label "Suspect measurement"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:measurement-biomarker ;
     skos:definition "A measurement-quality value indicating possible error or uncertainty requiring review."@en ;
     skos:inScheme icare:MeasurementQualityScheme ;
     skos:prefLabel "Suspect measurement"@en ;
-    skos:topConceptOf icare:MeasurementQualityScheme .
+    skos:topConceptOf icare:MeasurementQualityScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:ValidMeasurement a icare:MeasurementQuality,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:ValidMeasurement a owl:NamedIndividual,
+        skos:Concept,
+        icare:MeasurementQuality ;
     rdfs:label "Valid measurement"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:measurement-biomarker ;
     skos:definition "A measurement-quality value indicating that the measurement meets the applicable validity or quality requirements."@en ;
     skos:inScheme icare:MeasurementQualityScheme ;
     skos:prefLabel "Valid measurement"@en ;
-    skos:topConceptOf icare:MeasurementQualityScheme .
+    skos:topConceptOf icare:MeasurementQualityScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:WithinReferenceRange a icare:ThresholdCategory,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:WithinReferenceRange a owl:NamedIndividual,
+        skos:Concept,
+        icare:ThresholdCategory ;
     rdfs:label "Within reference range"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:measurement-biomarker ;
     skos:definition "A threshold category indicating that the observed value falls within the applicable reference range."@en ;
     skos:inScheme icare:ThresholdCategoryScheme ;
     skos:prefLabel "Within reference range"@en ;
-    skos:topConceptOf icare:ThresholdCategoryScheme .
+    skos:topConceptOf icare:ThresholdCategoryScheme ;
+    meta:reviewStatus "Proposed" .
 
 icare:AlertThreshold a owl:Class ;
     rdfs:label "Alert Threshold"@en ;
@@ -727,17 +727,17 @@ icare:MeasurableParameter a owl:Class ;
 
 icare:measurement-biomarker a owl:Ontology ;
     rdfs:label "Measurement and Biomarker"@en ;
-    meta:releaseStatus "Published" ;
     dcterms:contributor "MAYA consortium partners" ;
     dcterms:creator "Robert Gordon University" ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
     dcterms:rights "Copyright (c) 2026 Robert Gordon University and contributing MAYA consortium partners, for their respective contributions. Third-party material retains its applicable terms."@en ;
     rdfs:comment "Represents measurement events and results, measurable parameters and biomarkers, instruments, protocols, methods, contexts, sources, specimens, quality, thresholds and reference ranges."@en ;
     owl:imports icare:core,
-        <http://maya-project.eu/icareonto/imports/skos-reference>,
+        <https://w3id.org/icareonto/imports/skos-reference>,
         icare:knowledge-resource,
         icare:metadata,
         icare:person-role ;
-    owl:versionIRI <http://maya-project.eu/icareonto/releases/1.0.0/measurement-biomarker> ;
-    owl:versionInfo "1.0.0" .
+    owl:versionIRI <https://w3id.org/icareonto/releases/1.0.0/measurement-biomarker> ;
+    owl:versionInfo "1.0.0" ;
+    meta:releaseStatus "Published" .
 

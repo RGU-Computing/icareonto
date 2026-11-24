@@ -1,6 +1,6 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix icare: <http://maya-project.eu/icareonto/> .
-@prefix meta: <http://maya-project.eu/icareonto/metadata#> .
+@prefix icare: <https://w3id.org/icareonto/> .
+@prefix meta: <https://w3id.org/icareonto/metadata#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
@@ -317,27 +317,27 @@ icare:symptomRecordRecordsSymptom a owl:ObjectProperty ;
     rdfs:range icare:Symptom ;
     skos:definition "Relates a symptom record to the symptom being documented."@en .
 
-icare:ActiveClinicalStatus a icare:ClinicalStatus,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:ActiveClinicalStatus a owl:NamedIndividual,
+        skos:Concept,
+        icare:ClinicalStatus ;
     rdfs:label "Active clinical status"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:clinical-profile ;
     skos:definition "A clinical-status value indicating active status."@en ;
     skos:inScheme icare:ClinicalStatusScheme ;
     skos:prefLabel "Active clinical status"@en ;
-    skos:topConceptOf icare:ClinicalStatusScheme .
+    skos:topConceptOf icare:ClinicalStatusScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:ActiveMedicationStatus a icare:MedicationStatus,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:ActiveMedicationStatus a owl:NamedIndividual,
+        skos:Concept,
+        icare:MedicationStatus ;
     rdfs:label "Active medication status"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:clinical-profile ;
     skos:definition "A medication-status value indicating active status."@en ;
     skos:inScheme icare:MedicationStatusScheme ;
     skos:prefLabel "Active medication status"@en ;
-    skos:topConceptOf icare:MedicationStatusScheme .
+    skos:topConceptOf icare:MedicationStatusScheme ;
+    meta:reviewStatus "Proposed" .
 
 icare:ClinicalAssessmentRecord a owl:Class ;
     rdfs:label "Clinical Assessment Record"@en ;
@@ -351,148 +351,148 @@ icare:ClinicalFindingRecord a owl:Class ;
     rdfs:subClassOf icare:ClinicalRecord ;
     skos:definition "A record documenting a clinical finding derived from examination, interpretation, measurements, imaging, or assessment."@en .
 
-icare:CompletedMedicationStatus a icare:MedicationStatus,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:CompletedMedicationStatus a owl:NamedIndividual,
+        skos:Concept,
+        icare:MedicationStatus ;
     rdfs:label "Completed medication status"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:clinical-profile ;
     skos:definition "A medication-status value indicating completed status."@en ;
     skos:inScheme icare:MedicationStatusScheme ;
     skos:prefLabel "Completed medication status"@en ;
-    skos:topConceptOf icare:MedicationStatusScheme .
+    skos:topConceptOf icare:MedicationStatusScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:HistoricalClinicalStatus a icare:ClinicalStatus,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:HistoricalClinicalStatus a owl:NamedIndividual,
+        skos:Concept,
+        icare:ClinicalStatus ;
     rdfs:label "Historical clinical status"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:clinical-profile ;
     skos:definition "A clinical-status value indicating historical status."@en ;
     skos:inScheme icare:ClinicalStatusScheme ;
     skos:prefLabel "Historical clinical status"@en ;
-    skos:topConceptOf icare:ClinicalStatusScheme .
+    skos:topConceptOf icare:ClinicalStatusScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:HistoricalMedicationStatus a icare:MedicationStatus,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:HistoricalMedicationStatus a owl:NamedIndividual,
+        skos:Concept,
+        icare:MedicationStatus ;
     rdfs:label "Historical medication status"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:clinical-profile ;
     skos:definition "A medication-status value indicating historical status."@en ;
     skos:inScheme icare:MedicationStatusScheme ;
     skos:prefLabel "Historical medication status"@en ;
-    skos:topConceptOf icare:MedicationStatusScheme .
+    skos:topConceptOf icare:MedicationStatusScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:MildSeverity a icare:ClinicalSeverityLevel,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:MildSeverity a owl:NamedIndividual,
+        skos:Concept,
+        icare:ClinicalSeverityLevel ;
     rdfs:label "Mild severity"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:clinical-profile ;
     skos:definition "A clinical-severity level indicating mild clinical severity."@en ;
     skos:inScheme icare:ClinicalSeverityLevelScheme ;
     skos:prefLabel "Mild severity"@en ;
-    skos:topConceptOf icare:ClinicalSeverityLevelScheme .
+    skos:topConceptOf icare:ClinicalSeverityLevelScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:ModerateSeverity a icare:ClinicalSeverityLevel,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:ModerateSeverity a owl:NamedIndividual,
+        skos:Concept,
+        icare:ClinicalSeverityLevel ;
     rdfs:label "Moderate severity"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:clinical-profile ;
     skos:definition "A clinical-severity level indicating moderate clinical severity."@en ;
     skos:inScheme icare:ClinicalSeverityLevelScheme ;
     skos:prefLabel "Moderate severity"@en ;
-    skos:topConceptOf icare:ClinicalSeverityLevelScheme .
+    skos:topConceptOf icare:ClinicalSeverityLevelScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:PausedMedicationStatus a icare:MedicationStatus,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:PausedMedicationStatus a owl:NamedIndividual,
+        skos:Concept,
+        icare:MedicationStatus ;
     rdfs:label "Paused medication status"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:clinical-profile ;
     skos:definition "A medication-status value indicating paused status."@en ;
     skos:inScheme icare:MedicationStatusScheme ;
     skos:prefLabel "Paused medication status"@en ;
-    skos:topConceptOf icare:MedicationStatusScheme .
+    skos:topConceptOf icare:MedicationStatusScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:PlannedMedicationStatus a icare:MedicationStatus,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:PlannedMedicationStatus a owl:NamedIndividual,
+        skos:Concept,
+        icare:MedicationStatus ;
     rdfs:label "Planned medication status"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:clinical-profile ;
     skos:definition "A medication-status value indicating planned status."@en ;
     skos:inScheme icare:MedicationStatusScheme ;
     skos:prefLabel "Planned medication status"@en ;
-    skos:topConceptOf icare:MedicationStatusScheme .
+    skos:topConceptOf icare:MedicationStatusScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:RemissionClinicalStatus a icare:ClinicalStatus,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:RemissionClinicalStatus a owl:NamedIndividual,
+        skos:Concept,
+        icare:ClinicalStatus ;
     rdfs:label "Remission clinical status"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:clinical-profile ;
     skos:definition "A clinical-status value indicating remission status."@en ;
     skos:inScheme icare:ClinicalStatusScheme ;
     skos:prefLabel "Remission clinical status"@en ;
-    skos:topConceptOf icare:ClinicalStatusScheme .
+    skos:topConceptOf icare:ClinicalStatusScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:ResolvedClinicalStatus a icare:ClinicalStatus,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:ResolvedClinicalStatus a owl:NamedIndividual,
+        skos:Concept,
+        icare:ClinicalStatus ;
     rdfs:label "Resolved clinical status"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:clinical-profile ;
     skos:definition "A clinical-status value indicating resolved status."@en ;
     skos:inScheme icare:ClinicalStatusScheme ;
     skos:prefLabel "Resolved clinical status"@en ;
-    skos:topConceptOf icare:ClinicalStatusScheme .
+    skos:topConceptOf icare:ClinicalStatusScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:SevereSeverity a icare:ClinicalSeverityLevel,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:SevereSeverity a owl:NamedIndividual,
+        skos:Concept,
+        icare:ClinicalSeverityLevel ;
     rdfs:label "Severe severity"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:clinical-profile ;
     skos:definition "A clinical-severity level indicating severe clinical severity."@en ;
     skos:inScheme icare:ClinicalSeverityLevelScheme ;
     skos:prefLabel "Severe severity"@en ;
-    skos:topConceptOf icare:ClinicalSeverityLevelScheme .
+    skos:topConceptOf icare:ClinicalSeverityLevelScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:StoppedMedicationStatus a icare:MedicationStatus,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:StoppedMedicationStatus a owl:NamedIndividual,
+        skos:Concept,
+        icare:MedicationStatus ;
     rdfs:label "Stopped medication status"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:clinical-profile ;
     skos:definition "A medication-status value indicating stopped status."@en ;
     skos:inScheme icare:MedicationStatusScheme ;
     skos:prefLabel "Stopped medication status"@en ;
-    skos:topConceptOf icare:MedicationStatusScheme .
+    skos:topConceptOf icare:MedicationStatusScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:SuspectedClinicalStatus a icare:ClinicalStatus,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:SuspectedClinicalStatus a owl:NamedIndividual,
+        skos:Concept,
+        icare:ClinicalStatus ;
     rdfs:label "Suspected clinical status"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:clinical-profile ;
     skos:definition "A clinical-status value indicating suspected status."@en ;
     skos:inScheme icare:ClinicalStatusScheme ;
     skos:prefLabel "Suspected clinical status"@en ;
-    skos:topConceptOf icare:ClinicalStatusScheme .
+    skos:topConceptOf icare:ClinicalStatusScheme ;
+    meta:reviewStatus "Proposed" .
 
-icare:UnknownSeverity a icare:ClinicalSeverityLevel,
-        owl:NamedIndividual,
-        skos:Concept ;
+icare:UnknownSeverity a owl:NamedIndividual,
+        skos:Concept,
+        icare:ClinicalSeverityLevel ;
     rdfs:label "Unknown severity"@en ;
-    meta:reviewStatus "Proposed" ;
     rdfs:isDefinedBy icare:clinical-profile ;
     skos:definition "A clinical-severity level indicating unknown clinical severity."@en ;
     skos:inScheme icare:ClinicalSeverityLevelScheme ;
     skos:prefLabel "Unknown severity"@en ;
-    skos:topConceptOf icare:ClinicalSeverityLevelScheme .
+    skos:topConceptOf icare:ClinicalSeverityLevelScheme ;
+    meta:reviewStatus "Proposed" .
 
 icare:ClinicalInterpretation a owl:Class ;
     rdfs:label "Clinical Interpretation"@en ;
@@ -610,17 +610,17 @@ icare:MedicationStatusScheme a owl:NamedIndividual,
 
 icare:clinical-profile a owl:Ontology ;
     rdfs:label "Clinical Profile"@en ;
-    meta:releaseStatus "Published" ;
     dcterms:contributor "MAYA consortium partners" ;
     dcterms:creator "Robert Gordon University" ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
     dcterms:rights "Copyright (c) 2026 Robert Gordon University and contributing MAYA consortium partners, for their respective contributions. Third-party material retains its applicable terms."@en ;
     rdfs:comment "Represents person-level clinical profiles and source- and time-qualified records of conditions, symptoms, findings, medications, assessments, severity, status and interpretation."@en ;
     owl:imports icare:core,
-        <http://maya-project.eu/icareonto/imports/skos-reference>,
+        <https://w3id.org/icareonto/imports/skos-reference>,
         icare:measurement-biomarker,
         icare:metadata,
         icare:person-role ;
-    owl:versionIRI <http://maya-project.eu/icareonto/releases/1.0.0/clinical-profile> ;
-    owl:versionInfo "1.0.0" .
+    owl:versionIRI <https://w3id.org/icareonto/releases/1.0.0/clinical-profile> ;
+    owl:versionInfo "1.0.0" ;
+    meta:releaseStatus "Published" .
 

@@ -1,11 +1,27 @@
 {
   "ontology_version": "1.0.0",
-  "run_date": "2026-11-23",
+  "run_date": "2026-11-24",
   "graphs_compared": 22,
   "result": "PASS",
   "checks": [
     {
+      "file": "alignments/approved.ttl",
+      "isomorphic": true
+    },
+    {
       "file": "icareonto.ttl",
+      "isomorphic": true
+    },
+    {
+      "file": "imports/metadata.ttl",
+      "isomorphic": true
+    },
+    {
+      "file": "imports/prov-reference.ttl",
+      "isomorphic": true
+    },
+    {
+      "file": "imports/skos-reference.ttl",
       "isomorphic": true
     },
     {
@@ -74,22 +90,6 @@
     },
     {
       "file": "modules/social-context.ttl",
-      "isomorphic": true
-    },
-    {
-      "file": "alignments/approved.ttl",
-      "isomorphic": true
-    },
-    {
-      "file": "imports/metadata.ttl",
-      "isomorphic": true
-    },
-    {
-      "file": "imports/skos-reference.ttl",
-      "isomorphic": true
-    },
-    {
-      "file": "imports/prov-reference.ttl",
       "isomorphic": true
     }
   ]
