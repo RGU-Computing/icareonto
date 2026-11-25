@@ -12,7 +12,7 @@ The publication workflow produces a static RDF distribution at <https://rgu-comp
 
 The `gh-pages` branch is created and maintained by the workflow. It stores only the public distribution and preserved snapshots. GitHub Pages is deployed with the official Pages Actions; the branch provides durable release history between builds, rather than acting as the configured Pages build source.
 
-Use the manual workflow for the initial deployment from the committed default branch. The existing `v1.0.0` tag predates namespace finalisation; it must identify the intended namespace-finalised source before being used to publish a GitHub Release.
+Use the manual workflow for the initial deployment from the committed default branch. GitHub Release tags must identify the intended validated source commit; publishing does not move tags automatically.
 
 After deployment the workflow runs `scripts/check_publication_site.py`. It checks live media types, equivalent Turtle/RDF/XML exports and the current and archived ontology/catalogue import closures independently of w3id. A hosting response with an incorrect RDF media type causes the check to fail and must be resolved before the w3id request.
 
@@ -28,11 +28,15 @@ current/                         Current ontology documents
 releases/<version>/              Preserved ontology snapshots
 education/current/               Current educational metadata in RDF and JSON
 education/releases/<release-id>/ Preserved educational metadata snapshots
+agent-models/current/            Current ontology JSON models for conversational agents
+agent-models/releases/<id>/      Preserved agent export bundles
 publication.json                 Active versions and source commit
 index.html                       Access and licensing links
 ```
 
 The complete ontology document combines the imported axioms under a single ontology header. It includes term definitions directly, so a term IRI resolves to useful RDF without requiring a client to follow imports. Individual module documents remain available. The Turtle and RDF/XML exports express the same graph.
+
+Conversational-agent exports contain ontology structure and an index of canonical identifiers, definitions and data constraints. The exporter generates them during publication and preserves each content-identified bundle independently of the ontology's release number. Existing agent behaviour and memory settings are retained through the separate refresh command, not published in these bundles. See [the agent export guide](../integrations/conversational-agent/README.md).
 
 Archived ontology imports point to that ontology version. Archived educational imports point to the associated ontology version and catalogue snapshot. Current documents retain the stable current imports. The web distribution has its own manifests and is not the Education Resource Selector's operational loader package; use `education/data/catalogue/` in the source repository with that tool. Provider publications, participant records, source workbooks, caches and test data are not copied into the website.
 

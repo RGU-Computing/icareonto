@@ -159,6 +159,45 @@ class PublicationTests(unittest.TestCase):
         for relative in ['education/current', 'education/releases/' + release]:
             self.assertEqual(original.read_bytes(), (self.site / relative / 'catalogue.json').read_bytes())
 
+    def test_existing_rdf_site_can_gain_agent_exports_without_changing_archives(self):
+        previous = self.folder / 'previous'
+        shutil.copytree(self.site, previous)
+        shutil.rmtree(previous / 'agent-models')
+        active = json.loads((previous / 'publication.json').read_text())
+        for key in ['agent_bundle_id', 'agent_snapshot', 'preserved_agent_bundles']:
+            active.pop(key)
+        publication.save_json(previous / 'publication.json', active)
+        output = self.folder / 'extended'
+        result = publication.build(output, previous, commit='a' * 40)
+        self.assertTrue(result['agent_bundle_id'])
+        for relative in ['releases', 'education/releases']:
+            for path in (previous / relative).rglob('*'):
+                if path.is_file():
+                    self.assertEqual(path.read_bytes(), (output / path.relative_to(previous)).read_bytes())
+
+    def test_missing_agent_archive_is_not_silently_recreated(self):
+        previous = self.folder / 'previous'
+        shutil.copytree(self.site, previous)
+        shutil.rmtree(previous / 'agent-models/releases' / self.result['agent_bundle_id'])
+        with self.assertRaisesRegex(ValueError, 'Agent export history is incomplete'):
+            publication.build(self.folder / 'failed', previous, commit='b' * 40)
+
+    def test_new_agent_profile_keeps_the_previous_export(self):
+        stage = self.folder / 'site'
+        stage.mkdir()
+        publication.preserve_archives(self.site, stage)
+        exporter = publication.agent_exporter
+        profile = exporter.read_json(exporter.HERE / 'profile.json')
+        profile['models']['person_role']['title'] = 'Person and Role'
+        profile_path = self.folder / 'profile.json'
+        exporter.save_json(profile_path, profile)
+        candidate = self.folder / 'candidate'
+        new = exporter.export_bundle(candidate, profile_path=profile_path)
+        old_id = self.result['agent_bundle_id']
+        self.assertNotEqual(old_id, new['bundle_id'])
+        publication.install_snapshot(candidate, stage / 'agent-models/releases' / new['bundle_id'])
+        self.assertEqual({p.name for p in (stage / 'agent-models/releases').iterdir()}, {old_id, new['bundle_id']})
+
     def test_previous_ontology_version_cannot_replace_current(self):
         previous = self.folder / 'previous'
         shutil.copytree(self.site, previous)

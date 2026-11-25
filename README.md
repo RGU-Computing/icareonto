@@ -6,6 +6,8 @@ The ontology IRI and entity namespace are **`https://w3id.org/icareonto/`**. The
 
 The [publication workflow](publication/README.md) builds complete Turtle and RDF/XML documents, module files and educational metadata for GitHub Pages. It refreshes the current distribution while preserving versioned snapshots on the `gh-pages` branch. General w3id redirect rules avoid a redirect update for each routine release.
 
+The [conversational-agent adapter](integrations/conversational-agent/README.md) exports versioned ontology JSON models for copying or loading by a separate agent application. Its refresh command prepares candidate updates while preserving agent-owned memory and behaviour settings.
+
 | Tool                        | Purpose                                                                                                              | Documentation                              |
 | --------------------------- | -------------------------------------------------------------------------------------------------------------------- | ------------------------------------------ |
 | Ontology Serialiser         | Build the modular OWL ontology from the release source snapshots                                                     | [serialisation](serialisation/README.md)    |
@@ -61,6 +63,7 @@ Formal OWL checking is separate. The ontology, CQ fixtures, educational example 
 - `education/data/catalogue/`: one complete published catalogue snapshot, including its loader metadata.
 - `validation/`: shared synthetic CQ fixtures, queries, runners and reports.
 - `publication/`: publishing instructions and the w3id identifier configuration; generated website files are excluded from the default branch.
+- `integrations/conversational-agent/`: ontology-to-JSON exporter, identifier profile, protected refresh utility and tests.
 - `local/`: ignored working area for operational inputs and outputs.
 
 ## Licensing

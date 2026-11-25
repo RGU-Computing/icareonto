@@ -82,6 +82,17 @@ def verify_site(base_url):
             url = base_url + folder + '/' + name
             if url in checked and hashlib.sha256(checked[url]).hexdigest() != expected:
                 raise ValueError('Deployed document failed its manifest hash: ' + url)
+    if active.get('agent_bundle_id'):
+        for folder in ['agent-models/current', 'agent-models/releases/' + active['agent_bundle_id']]:
+            manifest = json.loads(fetch(folder + '/manifest.json', 'application/json'))
+            if manifest['bundle_id'] != active['agent_bundle_id'] or manifest['ontology']['version'] != active['ontology_version']:
+                raise ValueError('Agent export does not match the active publication')
+            for name, expected in manifest['files'].items():
+                if name.startswith('/') or '..' in name.split('/') or '\\' in name or ':' in name:
+                    raise ValueError('Unsafe agent export path')
+                content = fetch(folder + '/' + name, 'application/json')
+                if hashlib.sha256(content).hexdigest() != expected:
+                    raise ValueError('Deployed agent model failed its hash: ' + name)
     return {'status': 'PASS', 'base_url': base_url, 'ontology_version': active['ontology_version'],
             'catalogue_release': active['catalogue_release'], 'resources': len(resources['records']),
             'rdf_documents_loaded': len(visited), 'http_documents_checked': len(checked),

@@ -22,6 +22,8 @@ VERSION = re.compile(r'[0-9]+\.[0-9]+\.[0-9]+')
 CATALOGUE_ID = re.compile(r'[a-f0-9]{24}')
 sys.path.insert(0, str(ROOT / 'education/scripts'))
 import education_resources as education
+sys.path.insert(0, str(ROOT / 'integrations/conversational-agent'))
+import export_agent_models as agent_exporter
 
 
 def require(condition, message):
@@ -180,9 +182,21 @@ def preserve_archives(previous, stage):
                     'Unexpected archived release path')
             verify_snapshot(folder)
         shutil.copytree(parent, stage / relative)
+    # Existing deployments gain this new resource category without losing older RDF archives.
+    parent = previous / 'agent-models/releases'
+    known = active.get('preserved_agent_bundles')
+    if known is None:
+        require(not parent.exists(), 'Agent archives exist without a publication inventory')
+    else:
+        require(parent.is_dir() and not parent.is_symlink(), 'Agent archive directory is missing or unsafe')
+        require(set(known) == {p.name for p in parent.iterdir()}, 'Agent export history is incomplete')
+        for folder in parent.iterdir():
+            require(folder.is_dir() and not folder.is_symlink() and CATALOGUE_ID.fullmatch(folder.name), 'Unsafe agent archive path')
+            agent_exporter.verify_bundle(folder)
+        shutil.copytree(parent, stage / 'agent-models/releases')
 
 
-def landing_page(stage, version, catalogue_id):
+def landing_page(stage, version, catalogue_id, agent_bundle):
     versions = sorted(p.name for p in (stage / 'releases').iterdir())
     links = ''.join('<li><a href="releases/' + escape(v) + '/ontology.ttl">' + escape(v) + '</a></li>' for v in versions)
     html = '''<!doctype html>
@@ -198,11 +212,17 @@ def landing_page(stage, version, catalogue_id):
 <a href="education/current/catalogue.ttl">Turtle metadata</a> ·
 <a href="education/current/dataset.ttl">Dataset entry point</a></p>
 <p>Linked educational publications retain their providers’ terms. Inclusion does not establish suitability for every participant or site.</p>
+<h2>Conversational-agent ontology models</h2>
+<p><a href="agent-models/current/manifest.json">Current JSON manifest</a> ·
+<a href="agent-models/current/ontology-index.json">Identifiers and definitions</a> ·
+<a href="agent-models/releases/AGENT_BUNDLE/manifest.json">Pinned export manifest</a></p>
+<p>These exports contain ontology structure. Agent memory bindings and behavioural settings must be preserved when refreshing an existing agent.
+<a href="https://github.com/RGU-Computing/icareonto/tree/main/integrations/conversational-agent">Export and refresh instructions</a></p>
 <p><a href="https://github.com/RGU-Computing/icareonto">Documentation and source repository</a> ·
 <a href="LICENSE.md">Licensing</a> · Contact: <a href="mailto:maya.eu@rgu.ac.uk">maya.eu@rgu.ac.uk</a></p>
 </body></html>
 '''
-    (stage / 'index.html').write_text(html.replace('VERSION', escape(version)).replace('RELEASES', links).replace('CATALOGUE', escape(catalogue_id)), encoding='utf-8')
+    (stage / 'index.html').write_text(html.replace('VERSION', escape(version)).replace('RELEASES', links).replace('CATALOGUE', escape(catalogue_id)).replace('AGENT_BUNDLE', escape(agent_bundle)), encoding='utf-8')
 
 
 def build(output, previous=None, root=ROOT, commit=None):
@@ -242,13 +262,20 @@ def build(output, previous=None, root=ROOT, commit=None):
         candidate = Path(temporary) / 'education'
         education_snapshot(candidate, source, version, commit, True)
         education_status = install_snapshot(candidate, stage / 'education/releases' / source['release_id'])
+        previous_agent = previous / 'agent-models/current' if previous is not None and (previous / 'agent-models/current').is_dir() else None
+        agent_result = agent_exporter.export_bundle(stage / 'agent-models/current', root / 'serialisation',
+                                                    root / 'integrations/conversational-agent/profile.json', previous=previous_agent)
+        agent_id = agent_result['bundle_id']
+        agent_status = install_snapshot(stage / 'agent-models/current', stage / 'agent-models/releases' / agent_id)
         for name in ['LICENSE.md', 'LICENSES', 'THIRD_PARTY_NOTICES.md']:
             src, dst = root / name, stage / name
             shutil.copytree(src, dst) if src.is_dir() else shutil.copyfile(src, dst)
         (stage / '.nojekyll').touch()
-        landing_page(stage, version, source['release_id'])
+        landing_page(stage, version, source['release_id'], agent_id)
         report = {'status': 'PASS', 'ontology_version': version, 'catalogue_release': source['release_id'],
                   'source_commit': commit, 'ontology_snapshot': ontology_status, 'catalogue_snapshot': education_status,
+                  'agent_bundle_id': agent_id, 'agent_snapshot': agent_status,
+                  'preserved_agent_bundles': sorted(p.name for p in (stage / 'agent-models/releases').iterdir()),
                   'preserved_ontology_releases': sorted(p.name for p in (stage / 'releases').iterdir()),
                   'preserved_catalogue_releases': sorted(p.name for p in (stage / 'education/releases').iterdir())}
         save_json(stage / 'publication.json', report)

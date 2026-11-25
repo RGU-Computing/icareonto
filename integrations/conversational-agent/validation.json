@@ -1,0 +1,59 @@
+{
+  "bundle_id": "aa3f8c6adf4b2623603729d2",
+  "deployment": "Not performed. Commit changes and run the existing publication workflow.",
+  "export_models": 17,
+  "exporter": {
+    "sha256": "c5f5016b02cc3d56571a38fe97dfd4fd9791f3b636e3862402c6a78de04f6dbd",
+    "version": "1.0.0"
+  },
+  "exporter_tests_passed": 25,
+  "github_actions_lint": "PASS",
+  "independent_process_exports_identical": true,
+  "inline_descriptions": {
+    "nodes": true,
+    "relations": true,
+    "source": "Ontology skos:definition, falling back to rdfs:comment"
+  },
+  "ontology_sha256": "7c23ec4d7ed448004aaf43a35d88d2f972d2db5cb4bf602a5daec5940666aed8",
+  "ontology_version": "1.0.0",
+  "profile": {
+    "sha256": "ca1a8445712453c24051e9ad7c2275e8b05ed03978220fc57cf0dc8c0e78ebed",
+    "version": "1.0.0"
+  },
+  "publication_tests_passed": 19,
+  "published_archive_check": {
+    "agent_bundles_added_independently": true,
+    "existing_archive_files_preserved_byte_for_byte": 34
+  },
+  "reference_agent_refresh": {
+    "issues": [
+      {
+        "binding": "exercise.plans",
+        "message": "Binding target is absent from the ontology projection: exercise_plan",
+        "model_id": "exercise",
+        "status": "draft"
+      },
+      {
+        "binding": "knowledge.recommendation_reviews",
+        "message": "Binding target is absent from the ontology projection: recommendation_review",
+        "model_id": "knowledge_resource",
+        "status": "draft"
+      }
+    ],
+    "models": 10,
+    "preserved_active_bindings": [
+      "cancer_history.treatment_records",
+      "clinical_profile.medication_records",
+      "clinical_profile.condition_records"
+    ],
+    "source_files_unchanged": true,
+    "status": "REVIEW_REQUIRED"
+  },
+  "reproduce": [
+    "python -m unittest discover -s integrations/conversational-agent/tests -v",
+    "python -m unittest discover -s scripts/tests -v"
+  ],
+  "run_date": "2026-11-25",
+  "scope": "Local exporter, candidate refresh and publication integration. Conversational-agent application code and live deployment are not included in this check.",
+  "status": "PASS"
+}

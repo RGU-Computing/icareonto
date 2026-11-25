@@ -2,6 +2,14 @@
 
 ### Added
 
+- Conversational-agent JSON export, verified download and candidate refresh,
+  preserving agent-owned policies and memory bindings while reporting unsupported
+  references. Nodes and relations include ontology descriptions. Exports include
+  all selected ontology modules and a canonical IRI,
+  definition and datatype index.
+- Independently versioned agent export bundles in the publication workflow,
+  with current and preserved URLs and post-deployment integrity checks.
+
 - Automated GitHub Pages publication of current ontology documents and educational
   metadata, with preserved, integrity-checked release snapshots on `gh-pages`.
 - Complete Turtle and RDF/XML ontology exports for term resolution, version-pinned
